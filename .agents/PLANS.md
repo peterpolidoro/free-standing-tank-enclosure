@@ -23,9 +23,9 @@ still needs to be reconciled with the manager's Inventor requirement.
 - [x] Account for the 24-body count difference: hidden solids in eight occurrences
   of MCMASTER 47065T245. Verify all 44 native input hashes and identical STEP DATA
   between the original and stronger-provenance export.
-- [ ] Resolve 8.46%/12.30% native/STEP volume differences in MCMASTER 5537T293/5537T429,
-  then decide full baseline acceptance. Count/bounds agreement is not surface
-  equivalence. See validation/2026-10-21-native-pilot-review.md.
+- [x] Resolve the default-accuracy volume differences with VeryHigh measurements;
+  accept the frozen 37-part reference snapshot after matching reconstruction in
+  FreeCAD. See validation/2026-10-21-pilot-02-review.md. Physical/design review remains.
 - [ ] Agree on a destination for a new authored STEP, publish it, and validate in Inventor.
 - [ ] Verify refresh and concurrent-change behavior before importing the whole project.
 
@@ -45,7 +45,7 @@ assembly with Inventor 2025.3. Evidence, receipts and the Windows report are in
 `vault-cad-exchange/evidence/2026-10-21-windows-qualification-01/`. The import
 smoke test passed on both hosts in disposable copies; Linux also verified that
 43 assembly dependency records survive import and repeated imports are no-ops.
-The main lock now records the panel only. The Linux report and Windows follow-up
+The main lock now records the earlier panel plus 37 parts in references/enclosure/. The Linux report and Windows follow-up
 are in the sibling evidence run `2026-10-21-linux-validation-01`; compact results
 are tracked under validation/. Tools now pass 34 tests in Guix. No publication
 destination has been chosen and no Vault write has occurred. Changes are uncommitted
@@ -69,7 +69,7 @@ in the Linux checkouts; shared Git clones are unchanged.
   mounting holes, threads, cable/ventilation space or installation tolerances.
 - [x] Share original PDF, preview, text and model/evidence outside Git at
   `/janelia/sciserv/polidorop/Repositories/vault-cad-exchange/evidence/2026-10-21-linux-monitor-reference-01/`.
-- [ ] Windows: inspect reference STEP and create/validate a matching native
+- [x] Windows: inspect reference STEP and create/validate a matching native
   parameterized reference. The disposable assembly pilot and cache/input-hash
   checks now pass; targeted geometry questions remain. No production Vault write yet.
 - [ ] Confirm bowl outer/rim dimensions and display coverage: six bowls arranged
@@ -104,11 +104,29 @@ in the Linux checkouts; shared Git clones are unchanged.
   evidenced by Windows, not reconstructed from STEP.
 - [x] Integrate reviewed scripts and compact project results in Linux checkouts;
   preserve the monitor/manual work. No commits, pushes or shared-clone changes.
-- [ ] Windows: qualify Linux receipt/state guards and the offline receipt tests.
+- [x] Windows: qualify Linux receipt/state guards and all 11 offline receipt tests.
 - [ ] Windows/Linux: export distinct part/configuration geometry and parent-relative
   occurrence/BOM metadata; use mechanical-docs' draft contract as an adapter target.
-- [ ] Windows: create the native named-parameter monitor fixture and show a saved
+- [x] Windows: create the native named-parameter monitor fixture and show a saved
   dimension edit/recompute; imported-only geometry does not establish native authoring.
-- Only the panel is in the reference lock. Full assembly remains in shared evidence
-  pending the two-part comparison; per-part output is preferred before adding large
-  repeated assembly snapshots to Git. No production Vault write is enabled.
+- The reference lock now includes 37 accepted part assets plus the earlier panel.
+  Full monolithic STEP remains in shared evidence. No production Vault write is enabled.
+
+## Accepted snapshot and documentation handoff (pilot 02)
+
+- Peter committed/synchronized the prior work as tools 498279f / project 43f99b8.
+- [x] Linux: verify 40 receipt payloads, root/37 part source hashes, 155 local/world
+  transforms and all FreeCAD shapes; reconstruct and match all 479 solid signatures.
+- [x] Import all 37 part references with provenance; repeat imports are no-ops.
+- [x] Generate/save/reopen hierarchical reference FCStd under ignored .cache/;
+  preserve original STEP/header units and raw metadata in the Git snapshot.
+- [x] Windows: 29 native parameter checks; Linux native monitor STEP validation.
+- [ ] Documentation: correct FreeCAD mm normalization, map IDs/preserve metadata,
+  apply the root basis once, then load the first production example. Keep flexible
+  instance groups distinct. No physical stock or assembly sequence is inferred.
+- [ ] Windows: harden the prototype per-part exporter (all opened inputs including
+  groups, explicit model-state handling, path/collision/unknown-unit failures).
+- [ ] User/Windows: concrete publication destination and qualified STEP/native
+  check-in adapter. Service mode and production assembly edits remain unqualified.
+- New code, accepted part snapshot and reports are uncommitted in local CAD repos;
+  shared clones and mechanical-docs were not edited by this CAD review.

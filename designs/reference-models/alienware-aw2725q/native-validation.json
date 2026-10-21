@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "windows_evidence_run": "2026-10-21-windows-native-pilot-02",
+  "native_parameter_checks_passed": 29,
+  "native_generator": "vault-cad-tools/windows/Invoke-NativeParameterPilot.ps1",
+  "parameters_sha256": "d87e88562c332cb1d52f4578565b8f0433516ab298d264a27c8af1adc9d2fcfd",
+  "linux_step_verified_in_inventor": true,
+  "native_step_freecad": {
+    "valid": true,
+    "solids": 1,
+    "shells": 1,
+    "faces": 6,
+    "volume_mm3": 15758333.161461,
+    "bbox_mm": {
+      "min": [
+        -304.755,
+        -177.985,
+        -72.63
+      ],
+      "max": [
+        304.755,
+        177.985,
+        0.0
+      ],
+      "extent": [
+        609.51,
+        355.97,
+        72.63
+      ]
+    },
+    "sha256": "bc52ceb5315dd2c4eca393c3940caf1a990863b2f1dd0232833f1f8aff13e8f8"
+  },
+  "qualification": "Nominal envelope and native-feature proof only; no mounting/fit/cable/ventilation design or Vault publication."
+}

@@ -57,3 +57,13 @@ This FreeCAD reference supports open-source inspection. The Windows agent is
 asked to create a matching native Inventor reference with named dimensions and
 verify import/placement. Production design authoring and native Vault check-in
 remain separate qualification work.
+
+## Native Inventor proof (2026-10-21, pilot 02)
+
+The Windows agent ran `vault-cad-tools/windows/Invoke-NativeParameterPilot.ps1`
+with this parameters.json: six named user parameters, dimensioned sketches and
+an extrusion, native save/reopen, depth edit 72.63→80→72.63 mm, save and STEP
+export. All 29 checks passed without GUI interaction. The existing Linux STEP
+passed Inventor bounds/volume checks; the native export independently passes
+FreeCAD checks with the same nominal bounds and volume. See native-validation.json.
+Native IPT scratch files remain outside Git; this is a reference, not a finished mount.

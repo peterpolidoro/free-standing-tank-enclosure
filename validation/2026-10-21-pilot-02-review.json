@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-21",
+  "windows_evidence_run": "2026-10-21-windows-native-pilot-02",
+  "linux_evidence_run": "2026-10-21-linux-native-review-02",
+  "decision": "Accept the frozen per-part snapshot as open-source reference geometry; no production assembly procedure, stock or clearance approval.",
+  "snapshot": {
+    "schema_version": 1,
+    "verified_files": 40,
+    "parts": 37,
+    "assembly_groups_including_root": 17,
+    "occurrences": 155,
+    "units": {
+      "mm": 15,
+      "in": 21,
+      "cm": 1
+    },
+    "max_parent_composition_delta_mm": 1.659827830735594e-11,
+    "step_bytes": 20792064,
+    "largest_step_bytes": 3914098,
+    "new_reference_count": 37,
+    "total_reference_count": 38,
+    "repeat_imports_changed": 0,
+    "root_and_part_hashes_match_acquisition": true,
+    "intermediate_assembly_hashes_recorded_in_this_run": false,
+    "decision": "Accept frozen part snapshot for open-source reference geometry; validation signatures reproduce the prior acquisition-bound full STEP. General exporter hardening and documentation adapter remain separate."
+  },
+  "reconstructed_assembly": {
+    "valid": true,
+    "solids": 479,
+    "shells": 481,
+    "faces": 24126,
+    "volume_mm3": 116326056.68511435,
+    "bbox_mm": {
+      "min": [
+        -54.3571748362669,
+        -92.66746606292953,
+        -1248.1571748362776
+      ],
+      "max": [
+        1248.1571748363335,
+        2517.7750000000015,
+        54.3571748363223
+      ],
+      "extent": [
+        1302.5143496726005,
+        2610.442466062931,
+        1302.5143496725998
+      ]
+    }
+  },
+  "comparison_to_acquisition_bound_full_step": {
+    "sha256": "f5efa34104afca0338828edb9891a77550a2f28c609d87dfe05b0d3487070b46",
+    "method": "One-to-one centroid/bounds/volume signature comparison; ties within 1e-6 mm centroid resolved by bounds then volume. Not a surface-distance proof.",
+    "unmatched_reference_solids": 0,
+    "max_centroid_distance_mm": 1.0152599023694223e-11,
+    "max_bounds_delta_mm": 9.777068044058979e-12,
+    "max_volume_delta_mm3": 6.891787052154541e-08,
+    "matched_solids": 479
+  },
+  "native_step_very_high_accuracy_volumes": [
+    {
+      "part": "MCMASTER 5537T293_T-Slotted Framing",
+      "accuracy": "k_VeryHigh",
+      "native_cm3": 17.984225752273225,
+      "step_cm3": 17.983827912585134,
+      "delta_cm3": -0.00039783968809103953,
+      "relative_difference_percent": 0.0022121591086052294
+    },
+    {
+      "part": "MCMASTER 5537T429_T-Slotted Framing",
+      "accuracy": "k_VeryHigh",
+      "native_cm3": 25.791453389372464,
+      "step_cm3": 25.79090011439155,
+      "delta_cm3": -0.0005532749809127324,
+      "relative_difference_percent": 0.0021451872934803782
+    }
+  ],
+  "monitor_freecad": {
+    "valid": true,
+    "solids": 1,
+    "shells": 1,
+    "faces": 6,
+    "volume_mm3": 15758333.161461,
+    "bbox_mm": {
+      "min": [
+        -304.755,
+        -177.985,
+        -72.63
+      ],
+      "max": [
+        304.755,
+        177.985,
+        0.0
+      ],
+      "extent": [
+        609.51,
+        355.97,
+        72.63
+      ]
+    },
+    "sha256": "bc52ceb5315dd2c4eca393c3940caf1a990863b2f1dd0232833f1f8aff13e8f8"
+  },
+  "freecad_reference_save_reopen": {
+    "freecad_version": "1.1.3",
+    "scene_sha256": "ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070",
+    "output_sha256": "503ffff24afd8cd920236c6307101149866aa66a76d9223eef17e7af2b5a1c7b",
+    "occurrences": 155,
+    "assembly_groups": 17,
+    "measurement": {
+      "solids": 479,
+      "volume_mm3": 116326056.6851157,
+      "bounds_mm": [
+        -54.35717483626665,
+        -92.66746606292968,
+        -1248.1571748362778,
+        1248.1571748363335,
+        2517.7750000000015,
+        54.357174836261315
+      ]
+    },
+    "save_reopen_passed": true,
+    "qualification": "Generated reference with imported shapes/placements; no native constraints, design approval or assembly procedure."
+  },
+  "checks": {
+    "guix_portable_tests": 34,
+    "windows_portable_tests": 34,
+    "windows_offline_receipt_cases": 11,
+    "windows_patched_pilot_rerun_checks": 19,
+    "windows_native_parameter_checks": 29,
+    "real_receipt_negative_cases": 4
+  },
+  "limitations": [
+    "STEP geometry has no Inventor constraints or feature history. Native parameter authoring was separately demonstrated by the monitor fixture.",
+    "Per-body overlap was not established; FreeCAD and Inventor volume integration still differs for one purchased multibody part. Do not use these models as certified mass-property data.",
+    "Raw scene.json is not accepted by current mechanical-docs draft-1 loader: IDs, metadata and basis require an adapter.",
+    "FreeCAD imports STEP in mm; documentation meshing must not scale returned coordinates as though still in header units.",
+    "Current Export-PartAssets.ps1 is a scoped prototype; it lacks general strict hash/ref/state/collision enforcement. All 37 part and root hashes were independently verified for this snapshot, but intermediate assembly hashes were not rerecorded in this run.",
+    "All native automation ran in a logged-in Windows desktop; no Vault writes or service-mode qualification."
+  ]
+}

@@ -1,0 +1,377 @@
+﻿{
+    "schema_version":  1,
+    "generated_at":  "2026-10-21T19:09:18.1032542Z",
+    "exporter":  "windows/Export-PartAssets.ps1",
+    "inventor":  "2025.3 build 293356000",
+    "host":  "JAGERS-LW1",
+    "assembly":  {
+                     "document":  "C:\\Users\\polidorop\\Repositories\\github\\free-standing-tank-enclosure\\.cache\\vault-workspace\\DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\Free Standing Enclosure.iam",
+                     "sha256":  "d6d45e9a39cdc54e88029ab5c566ea3c8ce055aa2f2252380f214f483a206c24",
+                     "length_units":  "in",
+                     "model_state":  "[Primary]",
+                     "source":  {
+                                    "vault_id":  "28",
+                                    "version_id":  "991056",
+                                    "master_id":  "988153",
+                                    "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/Free Standing Enclosure.iam",
+                                    "native_sha256":  "d6d45e9a39cdc54e88029ab5c566ea3c8ce055aa2f2252380f214f483a206c24"
+                                }
+                 },
+    "counts":  {
+                   "distinct_parts":  37,
+                   "groups":  16,
+                   "leaf_occurrences":  155,
+                   "suppressed_occurrences":  0,
+                   "mirrored_occurrences":  0
+               },
+    "cross_check":  {
+                        "leaves_range_checked":  155,
+                        "max_range_box_deviation_cm":  0.019735728072634018,
+                        "note":  "definition RangeBox transformed by world vs proxy RangeBox; exact only for axis-aligned rotations",
+                        "instance_positions_overridden_vs_definition":  [
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/SLLB Enclosure 15in 47065T808_T-Slotted Framing:1",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645389627
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/SLLB Enclosure 22in 47065T808_T-Slotted Framing:1",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645306449
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/SLLB Enclosure 15in 47065T808_T-Slotted Framing:2",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645389094
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/SLLB Enclosure 22in 47065T808_T-Slotted Framing:2",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645368622
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/SLLB Enclosure 41in 47065T808_T-Slotted Framing:1",
+                                                                                "max_abs_cell_difference_cm":  0.71671062644782069
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/SLLB Enclosure 41in 47065T808_T-Slotted Framing:2",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645389561
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 3136N149_T-Slotted Framing:1",
+                                                                                "max_abs_cell_difference_cm":  0.71671062644792016
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 3136N149_T-Slotted Framing:2",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645214079
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:1",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645390249
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:2",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645366668
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:3",
+                                                                                "max_abs_cell_difference_cm":  0.7167106264536951
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:4",
+                                                                                "max_abs_cell_difference_cm":  0.716710626453263
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 9293K121_Constant-Force Spring:1",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645390293
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:1",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645378991
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:2",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645388739
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:3",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645386385
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:4",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645389561
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:1",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645389938
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw:1",
+                                                                                "max_abs_cell_difference_cm":  0.7167106264539056
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/SPRING ROLLER:1",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645390471
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:2",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645388162
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/ROLLER MOUNT PLATE:1",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645384076
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/ROLLER MOUNT PLATE:2",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645898687
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 9293K121_Constant-Force Spring:2",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645913164
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:3",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645915917
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw:2",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645912986
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/SPRING ROLLER:2",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645907213
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:4",
+                                                                                "max_abs_cell_difference_cm":  0.716710626459065
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/SPRING MOUNT PLATE:1",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645386607
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/SPRING MOUNT PLATE:2",
+                                                                                "max_abs_cell_difference_cm":  0.71671062645414008
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/CAMERA MOUNT PLATE:1",
+                                                                                "max_abs_cell_difference_cm":  0.71671062644779937
+                                                                            },
+                                                                            {
+                                                                                "id":  "CAMERA FRAME:1/CAMERA MOUNT PLATE - TELEDYNE KINETIX:1",
+                                                                                "max_abs_cell_difference_cm":  0.71671062644778516
+                                                                            },
+                                                                            {
+                                                                                "id":  "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:8",
+                                                                                "max_abs_cell_difference_cm":  1.8274158923790793
+                                                                            },
+                                                                            {
+                                                                                "id":  "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:9",
+                                                                                "max_abs_cell_difference_cm":  1.8274158923790864
+                                                                            },
+                                                                            {
+                                                                                "id":  "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:10",
+                                                                                "max_abs_cell_difference_cm":  0.22352789860337907
+                                                                            },
+                                                                            {
+                                                                                "id":  "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:11",
+                                                                                "max_abs_cell_difference_cm":  0.22352789860335065
+                                                                            },
+                                                                            {
+                                                                                "id":  "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:1",
+                                                                                "max_abs_cell_difference_cm":  1.8274158923790864
+                                                                            },
+                                                                            {
+                                                                                "id":  "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:2",
+                                                                                "max_abs_cell_difference_cm":  0.22352789860339328
+                                                                            },
+                                                                            {
+                                                                                "id":  "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:3",
+                                                                                "max_abs_cell_difference_cm":  0.22352789860337907
+                                                                            },
+                                                                            {
+                                                                                "id":  "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:4",
+                                                                                "max_abs_cell_difference_cm":  0.2235278986034217
+                                                                            },
+                                                                            {
+                                                                                "id":  "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:5",
+                                                                                "max_abs_cell_difference_cm":  0.22352789860318012
+                                                                            },
+                                                                            {
+                                                                                "id":  "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:6",
+                                                                                "max_abs_cell_difference_cm":  1.8274158923790793
+                                                                            },
+                                                                            {
+                                                                                "id":  "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:7",
+                                                                                "max_abs_cell_difference_cm":  1.8274158923790793
+                                                                            },
+                                                                            {
+                                                                                "id":  "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:8",
+                                                                                "max_abs_cell_difference_cm":  1.8274158923790722
+                                                                            }
+                                                                        ],
+                        "active_positional_representation":  "[Primary]",
+                        "walk_seconds":  83.1
+                    },
+    "warnings":  [
+
+                 ],
+    "files":  {
+                  "inventory-raw.json":  {
+                                             "sha256":  "f09d94e7e4b175bc4d9300196e3da6b3770851d0baadfbffa7d0061cc8d3f437",
+                                             "bytes":  55
+                                         },
+                  "native-snapshot.json":  {
+                                               "sha256":  "617ab368b8ab42ee5b1e654b5b8f727fda5bc50c16fdcaa72735732549539725",
+                                               "bytes":  1419683
+                                           },
+                  "scene.json":  {
+                                     "sha256":  "ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070",
+                                     "bytes":  785858
+                                 },
+                  "assets/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION__[Primary]__56fa5cf0.step":  {
+                                                                                                          "sha256":  "bf0439b918f46882083d34679145af4616b9ac00a754e46b4f62a11bfa028161",
+                                                                                                          "bytes":  19202
+                                                                                                      },
+                  "assets/CAMERA MOUNT PLATE - TELEDYNE KINETIX__[Primary]__b670923e.step":  {
+                                                                                                 "sha256":  "b6d274fdce0180a04441db99078cafdeb8a97da93a9bbaa52238d1e24a69560c",
+                                                                                                 "bytes":  30034
+                                                                                             },
+                  "assets/CAMERA MOUNT PLATE__[Primary]__94fc4c9b.step":  {
+                                                                              "sha256":  "f3298cdf813e823e83046e3f2790eb122b42eacbed7337d201f2c1f4bcef62d1",
+                                                                              "bytes":  28335
+                                                                          },
+                  "assets/CASTER MOUNTING PLATE__[Primary]__db2a93e4.step":  {
+                                                                                 "sha256":  "fb755fe68cfa0f7ead5df8f49d168254ca4234133ebdeaed97a52ac4c59ead8d",
+                                                                                 "bytes":  39988
+                                                                             },
+                  "assets/ENCLOSURE PANEL__[Primary]__e022258d.step":  {
+                                                                           "sha256":  "eaef81af995bb2bc1ec5a22510256b647ce6be29efa880f503f04b3a4ecf230c",
+                                                                           "bytes":  16542
+                                                                       },
+                  "assets/ENCLOSURE TOP PANEL__[Primary]__389173d2.step":  {
+                                                                               "sha256":  "2b1cdb9fbbc7e7ef6c5cc4526aa7ac6f552d4961ae085756788dd0316a947dc9",
+                                                                               "bytes":  24554
+                                                                           },
+                  "assets/HOLKIE LEVELING CASTER__[Primary]__72f0778a.step":  {
+                                                                                  "sha256":  "d76de07fea91d3b91129155a2d202ea895756d4bb69120ed3d1facb0e2ae23c7",
+                                                                                  "bytes":  3914098
+                                                                              },
+                  "assets/MCMASTER 3136N149_T-Slotted Framing__[Primary]__77d5b1ed.step":  {
+                                                                                               "sha256":  "29a5771d562d9c9110cb87ddabe7716cb7d91ed5c668f8c5094e1e9293a6acd9",
+                                                                                               "bytes":  22820
+                                                                                           },
+                  "assets/MCMASTER 47065T245__[Primary]__89f50e74.step":  {
+                                                                              "sha256":  "2daca7dae78f9180e1dfbb3b0be031bd8a3aa5a4ef486858ee59c943d9492383",
+                                                                              "bytes":  289079
+                                                                          },
+                  "assets/MCMASTER 47065T27_T-Slotted Framing__[Primary]__63467688.step":  {
+                                                                                               "sha256":  "c5727dab23232968f8181a0ca7eca01c2fe13d2892e26e036ec29a93018f1c8c",
+                                                                                               "bytes":  367935
+                                                                                           },
+                  "assets/MCMASTER 47065T845_Silver Corner Bracket__[Primary]__e1e40dd2.step":  {
+                                                                                                    "sha256":  "32bc143683d9cf68e4f2b9e2c6cddefc3937c651d357c8a82328f5f23e0cd806",
+                                                                                                    "bytes":  17618
+                                                                                                },
+                  "assets/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp__[Primary]__976424b5.step":  {
+                                                                                                           "sha256":  "161dd8ec37c3d7566f78d6a7ae139aa0e3d7d4eddecc6900b8ec5cd6739912aa",
+                                                                                                           "bytes":  1397868
+                                                                                                       },
+                  "assets/MCMASTER 5537T293_T-Slotted Framing__[Primary]__1c2935ff.step":  {
+                                                                                               "sha256":  "f7ab59b2a7ec3697026dffdb824f6d8ed11c69907dc9e34549a805f3c9b05def",
+                                                                                               "bytes":  3533293
+                                                                                           },
+                  "assets/MCMASTER 5537T429_T-Slotted Framing__[Primary]__72ff3dc4.step":  {
+                                                                                               "sha256":  "65dcf67cd5db49d88eb51965255f36b54af3f1cd16178d6594ac1eca9b58aa91",
+                                                                                               "bytes":  2558943
+                                                                                           },
+                  "assets/MCMASTER 5972K164_Ball Bearing__[Primary]__66eca704.step":  {
+                                                                                          "sha256":  "7799ac5c522148edda558a20a03e432a9c0cd48a571c233dd491ff69cd178558",
+                                                                                          "bytes":  391655
+                                                                                      },
+                  "assets/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw__[Primary]__591781bf.step":  {
+                                                                                                                  "sha256":  "46342b43153af853a7ba136780b678c1cf9cdfaa4663575ce830749de9bcc0c7",
+                                                                                                                  "bytes":  935767
+                                                                                                              },
+                  "assets/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer__[Primary]__34837649.step":  {
+                                                                                                                    "sha256":  "83f53c90f41e60c715fdd3448acdaf1e6dba5bbe1be0c3a7dd8fcdb3696cda77",
+                                                                                                                    "bytes":  13100
+                                                                                                                },
+                  "assets/MCMASTER 9293K121_Constant-Force Spring__[Primary]__a4593b94.step":  {
+                                                                                                   "sha256":  "3c247aa91b637d3a062f99a09efe9fef4e4d988f8472ef43574141d5f97f7d99",
+                                                                                                   "bytes":  238787
+                                                                                               },
+                  "assets/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount__[Primary]__fcf343fc.step":  {
+                                                                                                                            "sha256":  "38c86c8809035d9b9201a4d947edebe67196cfe4906ecc0e71cbbb187715c803",
+                                                                                                                            "bytes":  565863
+                                                                                                                        },
+                  "assets/MCMASTER_1950A67_Unthreaded-Hole Pull Handle__[Primary]__f36d1af7.step":  {
+                                                                                                        "sha256":  "38507216e963ea6a7f76407207917f9b540bbbf1017fa7781edfd4ec30f452bb",
+                                                                                                        "bytes":  2648297
+                                                                                                    },
+                  "assets/PANEL LOWER SUPPORT LEFT__[Primary]__08daa5a1.step":  {
+                                                                                    "sha256":  "9cd9a66e557b38c248b624aea78af68da7fbc97fd6a505a6b032363388bcd819",
+                                                                                    "bytes":  133699
+                                                                                },
+                  "assets/PANEL LOWER SUPPORT RIGHT__[Primary]__20c0f88f.step":  {
+                                                                                     "sha256":  "b8952f10539536faa340ef301af5a04d2dc4d2c4a4bb126e92dda15f4215014e",
+                                                                                     "bytes":  128992
+                                                                                 },
+                  "assets/ROLLER MOUNT PLATE__[Primary]__6a8f878a.step":  {
+                                                                              "sha256":  "c1d9346af52434493066ce4726c5697b1c208e91ee347629cdf8e2bcd88e25f1",
+                                                                              "bytes":  20967
+                                                                          },
+                  "assets/SHULZE 2W.353 TANK__[Primary]__00b2841c.step":  {
+                                                                              "sha256":  "e26fa1dd74097252f415dad137354b094e4141eee71bd95a09b2c8bf589b3dad",
+                                                                              "bytes":  27992
+                                                                          },
+                  "assets/SLLB Enclosure 15in 47065T808_T-Slotted Framing__[Primary]__64014b81.step":  {
+                                                                                                           "sha256":  "08646c8eb96e0c4322be83c70698e51cf078ddb2692a98b1df8d265d283b5124",
+                                                                                                           "bytes":  248842
+                                                                                                       },
+                  "assets/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing__[Primary]__0debaac0.step":  {
+                                                                                                            "sha256":  "74ffbd87c8b80110403f6cc16cadb240be019ba4acdb40c190d357444ce7dbd0",
+                                                                                                            "bytes":  252794
+                                                                                                        },
+                  "assets/SLLB Enclosure 22in 47065T808_T-Slotted Framing__[Primary]__567ca529.step":  {
+                                                                                                           "sha256":  "faea79b60badaa45181c7799d33bfa9976cc2e7aa0e7f491d8c96b839eb6531a",
+                                                                                                           "bytes":  248842
+                                                                                                       },
+                  "assets/SLLB Enclosure 41in 47065T808_T-Slotted Framing__[Primary]__f37ea6b9.step":  {
+                                                                                                           "sha256":  "ae6e3670d62ebee066caeca71cb2a8a31a1b72ea81fe164a61d2e7f82997a64d",
+                                                                                                           "bytes":  249504
+                                                                                                       },
+                  "assets/SLLB Enclosure 44in 47065T808_T-Slotted Framing__[Primary]__11d4d431.step":  {
+                                                                                                           "sha256":  "4df7a00b1bd2814d6b8b6eedf678dcdb790f96df5595e6773a14fb6d6bce7bb8",
+                                                                                                           "bytes":  248815
+                                                                                                       },
+                  "assets/SLLB Enclosure 96in 47065T808_T-Slotted Framing__[Primary]__f6258a3b.step":  {
+                                                                                                           "sha256":  "22c6afaa9d4046d53a7e4f9943c92c292b4969c41118a2850b27f5433acc2969",
+                                                                                                           "bytes":  248815
+                                                                                                       },
+                  "assets/SPRING MOUNT PLATE__[Primary]__eb93feb5.step":  {
+                                                                              "sha256":  "92136e41bed330ce5feaf9860679623e89856f1d42790811ced1be1e48f2a2bc",
+                                                                              "bytes":  22330
+                                                                          },
+                  "assets/SPRING ROLLER__[Primary]__25d6cebc.step":  {
+                                                                         "sha256":  "1f239b9dc3dfde0532d81a35280633a4f598f5a8ad194f3b71d119ff36684012",
+                                                                         "bytes":  20123
+                                                                     },
+                  "assets/T SLOT CORNER 47065T242__[Primary]__6dff85d6.step":  {
+                                                                                   "sha256":  "8ae9202837fac68fd8c61cd54c0a20edadc58a1fa336c6328288540e359e41a3",
+                                                                                   "bytes":  1634964
+                                                                               },
+                  "assets/TANK SUPPORT BRACKET__[Primary]__7481e885.step":  {
+                                                                                "sha256":  "ac56abb49480231f63c271181ea875c0b60c163cbfe632f058d3281308ab587c",
+                                                                                "bytes":  33134
+                                                                            },
+                  "assets/TANK SUPPORT PLATFORM__[Primary]__a3951cbf.step":  {
+                                                                                 "sha256":  "bcfe35dadbe1431c760bd9e9ef0cdd32c5fef0fc753d5a8ac35cc5960e0e3f2a",
+                                                                                 "bytes":  16212
+                                                                             },
+                  "assets/TOGGLE CLAMP MOUNT__[Primary]__4eb76845.step":  {
+                                                                              "sha256":  "f8171c9d76b250758a47873afa0d5b80f8e74e4b7e6860925c4666a69cce77b6",
+                                                                              "bytes":  43180
+                                                                          },
+                  "assets/TSLOT EXTRUSION 1X40.5 copy__[Primary]__72135c80.step":  {
+                                                                                       "sha256":  "bf0bf6ca4eb5b11a9478a73691bec1eba86db6720fe50d0110898053c5ad56aa",
+                                                                                       "bytes":  159081
+                                                                                   }
+              }
+}

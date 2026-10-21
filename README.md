@@ -11,13 +11,14 @@ model state `[Primary]`; 43 dependency versions in four folders. Windows
 exported the part `ENCLOSURE TOP PANEL.ipt` (version 991092) and the assembly to
 STEP with receipts. The panel is now in `references/ENCLOSURE TOP PANEL.step`:
 FreeCAD 1.1.3 finds one valid solid with matching 47 × 1/8 × 47 inch extents.
-The assembly loads as 479 valid solids. Windows accounted for the 24 extra native
-solids as hidden bodies in one McMaster part. Linux verified the new export
-against all 44 native input records and confirmed its STEP data matches the earlier
-export exactly. Two other McMaster parts show 8.46% and 12.30% volume differences
-between native and re-imported STEP; targeted checks remain before baseline
-acceptance. The full assembly stays in shared evidence. See the
-[latest review](validation/2026-10-21-native-pilot-review.md).
+The accepted [enclosure snapshot](references/enclosure/README.md) now contains 37
+distinct STEP parts and all 155 occurrences/placements. FreeCAD reconstruction
+reproduces the acquisition-bound full STEP's 479 solids, volume and bounds. The
+body-count gap was hidden geometry; the large Inventor volume differences were
+default-accuracy measurements. See the [latest review](validation/2026-10-21-pilot-02-review.md).
+The part files total 19.83 MiB, with a largest file of 3.73 MiB; the monolithic
+assembly remains in external evidence. `assembly/build_reference.py` generates
+a hierarchical FreeCAD reference under `.cache/` without adding it to Git.
 
 ## Monitor reference and design requirement
 
@@ -31,8 +32,9 @@ is available as a parametric FCStd and a one-solid STEP envelope, generated from
 the printed dimensions in Peter's supplier drawing. It includes an active-display
 reference in FCStd and records the 100 × 100 mm mounting spacing without guessing
 hole locations or fastening details. It is a stand-free layout reference, not a
-production part or a detailed housing. FreeCAD validation passed; Inventor checks
-are pending. A 3 × 2 array of nominal 160 mm bowls leaves only 12.93 mm total on
+production part or a detailed housing. FreeCAD and Inventor validation passed;
+Windows also demonstrated native named parameters, sketches, extrusion and a
+depth-edit/restore cycle without GUI work. A 3 × 2 array of nominal 160 mm bowls leaves only 12.93 mm total on
 the display's short axis for all gaps and margins, before allowing for larger rims.
 
 ## Visual assembly manual
@@ -42,8 +44,9 @@ step-by-step assembly manual, with a web version and printable PDF generated
 from one instruction source. See [assembly manual requirements](assembly/README.md).
 Part identities, quantities, subassemblies and placements must survive CAD export;
 assembly order and tool access require explicit review and a physical walkthrough.
-The separate `mechanical-docs` repository now contains a handoff and validated
-synthetic STEP fixture. The manual and renderer remain implementation work.
+The separate `mechanical-docs` repository has a working synthetic fixture pipeline
+for illustrated HTML/PDF. Production use needs its STEP-unit fix and an adapter
+for the new reference scene; the enclosure's actual assembly procedure is not authored.
 
 ## Ownership and layout
 
@@ -80,8 +83,8 @@ upload is implemented by this project's files.
 
 The project manifest provides FreeCAD for local authoring. The tools' smaller
 manifest is sufficient for metadata and transfer work. Neither installs Autodesk
-software. Automated FreeCAD import checks have run; full assembly completeness,
-visual review, and the reverse publication pilot remain outstanding.
+software. FreeCAD imports and assembly reconstruction checks pass. Visual/design
+review, production documentation and the reverse publication pilot remain outstanding.
 
 Use ordinary Git initially. `.gitattributes` preserves STEP bytes and disables
 automatic text merging. Large files may justify LFS later, but the initial

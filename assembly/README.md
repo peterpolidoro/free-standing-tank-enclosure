@@ -126,3 +126,16 @@ The manager's brief requires Inventor design work and final records in Vault.
 Generating documentation from validated STEP with open-source tools complements
 that requirement. Track documentation/tooling effort against the project's
 approximately 100-hour planning estimate and discuss forecast overruns with Jon.
+
+## Accepted CAD inputs (pilot 02)
+
+The frozen part snapshot is in `../references/enclosure/`: 37 part definitions,
+155 occurrences and 17 groups including the root. `build_reference.py` produces
+an ignored hierarchical FreeCAD reference from it. Validation:
+`../validation/2026-10-21-pilot-02-review.md`.
+
+Raw scene IDs/metadata and +Y-up basis need a documentation adapter. FreeCAD STEP
+import returns mm even for inch/cm files; the documentation importer needs its
+unit-normalization correction. No production instruction sequence, procurement
+quantities or stock values were inferred from the scene. Keep the raw snapshot
+immutable and author the eventual manual separately here.
