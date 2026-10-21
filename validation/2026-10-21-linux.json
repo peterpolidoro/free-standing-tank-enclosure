@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-21",
+  "freecad_version": "1.1.3",
+  "scope": "Automated headless geometry and provenance checks; no visual or design-intent approval.",
+  "windows_evidence_run": "2026-10-21-windows-qualification-01",
+  "part": {
+    "file": "ENCLOSURE TOP PANEL.step",
+    "sha256": "1661871cdd9296e59e9e4b8d851ec1f1f03851b95243cbf416c158111f0d4e9a",
+    "solids": 1,
+    "shells": 1,
+    "faces": 15,
+    "valid": true,
+    "volume_mm3": 4291598.524273579,
+    "bbox_mm": {
+      "min": [
+        -596.9,
+        -3.175,
+        -596.9
+      ],
+      "max": [
+        596.9,
+        0.0,
+        596.9
+      ],
+      "extent": [
+        1193.8,
+        3.175,
+        1193.8
+      ]
+    },
+    "source_version_id": "991092",
+    "decision": "Imported panel reference; checksum, validity, body count and axis extents agree with Windows evidence."
+  },
+  "assembly": {
+    "file": "Free Standing Enclosure.step",
+    "sha256": "fc9b75d262f1ceee41aeabdf47977b6a6f0c4cb149858717d89a5b7b1b32f8ed",
+    "solids": 479,
+    "shells": 481,
+    "faces": 24126,
+    "valid": true,
+    "volume_mm3": 116326056.68511519,
+    "bbox_mm": {
+      "min": [
+        -54.35717483626672,
+        -92.66746606292972,
+        -1248.1571748362765
+      ],
+      "max": [
+        1248.1571748363324,
+        2517.7749999999996,
+        54.357174836322365
+      ],
+      "extent": [
+        1302.514349672599,
+        2610.4424660629293,
+        1302.5143496725989
+      ]
+    },
+    "source_version_id": "991056",
+    "optimal_bbox_mm": {
+      "method": "optimalBoundingBox(useTriangulation=False, useShapeTolerance=False)",
+      "min": [
+        -53.975000100047765,
+        -91.1500005829223,
+        -1247.7750001000575
+      ],
+      "max": [
+        1247.7750001001134,
+        2517.7749999999996,
+        53.97500010010334
+      ],
+      "extent": [
+        1301.7500002001611,
+        2608.9250005829217,
+        1301.750000200161
+      ]
+    },
+    "top_level_components": [
+      {
+        "name": "CAMERA_FRAME",
+        "label": "CAMERA FRAME",
+        "type": "App::Part",
+        "solids": 124,
+        "valid": true,
+        "volume_mm3": 3728461.3022420057
+      },
+      {
+        "name": "TANK_SUPPORT_FRAME",
+        "label": "TANK SUPPORT FRAME",
+        "type": "App::Part",
+        "solids": 46,
+        "valid": true,
+        "volume_mm3": 24261250.05722742
+      },
+      {
+        "name": "FREE_STANDING_FRAME",
+        "label": "FREE STANDING FRAME",
+        "type": "App::Part",
+        "solids": 85,
+        "valid": true,
+        "volume_mm3": 15560329.13075271
+      },
+      {
+        "name": "PANEL_ASSEMBLY",
+        "label": "PANEL ASSEMBLY",
+        "type": "App::Part",
+        "solids": 3,
+        "valid": true,
+        "volume_mm3": 8999493.823330598
+      },
+      {
+        "name": "PANEL_ASSEMBLY001",
+        "label": "PANEL ASSEMBLY001",
+        "type": "App::Part",
+        "solids": 3,
+        "valid": true,
+        "volume_mm3": 8999493.823330589
+      },
+      {
+        "name": "PANEL_ASSEMBLY002",
+        "label": "PANEL ASSEMBLY002",
+        "type": "App::Part",
+        "solids": 3,
+        "valid": true,
+        "volume_mm3": 8999493.823330602
+      },
+      {
+        "name": "PANEL_ASSEMBLY003",
+        "label": "PANEL ASSEMBLY003",
+        "type": "App::Part",
+        "solids": 3,
+        "valid": true,
+        "volume_mm3": 8999493.823330611
+      },
+      {
+        "name": "Part__Feature267",
+        "label": "SHULZE 2W.353 TANK001",
+        "type": "Part::Feature",
+        "solids": 1,
+        "valid": true,
+        "volume_mm3": 8133979.342230692
+      },
+      {
+        "name": "TANK_SUPPORT_FRAME001",
+        "label": "TANK SUPPORT FRAME001",
+        "type": "App::Part",
+        "solids": 46,
+        "valid": true,
+        "volume_mm3": 24261250.057227384
+      },
+      {
+        "name": "Part__Feature314",
+        "label": "ENCLOSURE TOP PANEL",
+        "type": "Part::Feature",
+        "solids": 1,
+        "valid": true,
+        "volume_mm3": 4291598.524273661
+      },
+      {
+        "name": "TOGGLE_CLAMP_ASSEMBLY",
+        "label": "TOGGLE CLAMP ASSEMBLY",
+        "type": "App::Part",
+        "solids": 41,
+        "valid": true,
+        "volume_mm3": 42432.005355238645
+      },
+      {
+        "name": "TOGGLE_CLAMP_ASSEMBLY001",
+        "label": "TOGGLE CLAMP ASSEMBLY001",
+        "type": "App::Part",
+        "solids": 41,
+        "valid": true,
+        "volume_mm3": 42432.00535523858
+      },
+      {
+        "name": "TOGGLE_CLAMP_ASSEMBLY002",
+        "label": "TOGGLE CLAMP ASSEMBLY002",
+        "type": "App::Part",
+        "solids": 41,
+        "valid": true,
+        "volume_mm3": 42432.00535523857
+      },
+      {
+        "name": "TOGGLE_CLAMP_ASSEMBLY003",
+        "label": "TOGGLE CLAMP ASSEMBLY003",
+        "type": "App::Part",
+        "solids": 41,
+        "valid": true,
+        "volume_mm3": 42432.00535523857
+      }
+    ],
+    "native_reported_surface_body_count": 503,
+    "inventor_step_reported_surface_body_count": 479,
+    "inventor_native_rangebox_extent_mm": [
+      1301.750182488411,
+      2610.3697741033347,
+      1301.7501824884107
+    ],
+    "decision": "Not imported into main references: native/STEP body-count discrepancy and precise dimensional comparison remain unresolved."
+  },
+  "portable_tests": {
+    "passed": 34,
+    "environment": "Guix tools manifest"
+  },
+  "receipt_import_smoke": {
+    "part_and_assembly_idempotent": true,
+    "assembly_dependency_records_preserved": 43,
+    "assembly_checked_only_in_disposable_project": true
+  },
+  "limitations": [
+    "SurfaceBodies.Count in the Windows scripts is not filtered by IsSolid or visibility. Historical body counts must not be described as strict solid counts.",
+    "FreeCAD ordinary and optimal bounding boxes differ; native Inventor RangeBox may also be conservative. Compare precise native and STEP geometry on Windows before accepting assembly dimensions.",
+    "Windows cache-reuse guard added during Linux review still needs Windows execution. No Vault writes or new exports were performed on Linux."
+  ]
+}

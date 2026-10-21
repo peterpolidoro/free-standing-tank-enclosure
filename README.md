@@ -2,10 +2,19 @@
 
 STEP exchange pilot for the existing Vault assembly:
 
-`$/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/Free Standing Enclosure.iam`
+`$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/Free Standing Enclosure.iam`
 
-The path was supplied by Peter. Concrete Vault IDs, dependency versions, and model
-states have **not** been resolved. No CAD models have been imported yet.
+The path was supplied by Peter (without the leading `DATA` folder; the Vault
+server resolved it on 2026-10-21). Resolved identity: file-version 991056,
+master 988153, version 5, revision 0, state Work in Progress, folder 953863,
+model state `[Primary]`; 43 dependency versions in four folders. Windows
+exported the part `ENCLOSURE TOP PANEL.ipt` (version 991092) and the assembly to
+STEP with receipts. The panel is now in `references/ENCLOSURE TOP PANEL.step`:
+FreeCAD 1.1.3 finds one valid solid with matching 47 × 1/8 × 47 inch extents.
+The assembly loads as 479 valid solids, matching Inventor's STEP re-import, but
+the native report counted 503 unfiltered surface bodies. Its completeness and
+precise dimensional comparison remain open, so the assembly stays in the shared
+exchange area. See [Linux validation](validation/2026-10-21-linux.md).
 
 ## Ownership and layout
 
@@ -15,6 +24,7 @@ states have **not** been resolved. No CAD models have been imported yet.
 - `drawings/`: supporting drawings and specifications.
 - `vault-project.toml`: server identity and project locator; no credentials.
 - `vault-lock.json`: imported provenance and, eventually, verified publications.
+- `validation/`: geometry checks, acceptance decisions, and unresolved comparisons.
 - `.cache/`: ignored Inventor originals, API probes, and temporary conversions.
 
 To modify an imported design, preserve the reference and create a design under
@@ -40,7 +50,8 @@ upload is implemented by this project's files.
 
 The project manifest provides FreeCAD for local authoring. The tools' smaller
 manifest is sufficient for metadata and transfer work. Neither installs Autodesk
-software. FreeCAD import and Inventor round-trip validation remain pilot tasks.
+software. Automated FreeCAD import checks have run; full assembly completeness,
+visual review, and the reverse publication pilot remain outstanding.
 
 Use ordinary Git initially. `.gitattributes` preserves STEP bytes and disables
 automatic text merging. Large files may justify LFS later, but the initial

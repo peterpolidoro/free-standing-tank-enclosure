@@ -9,7 +9,7 @@ name = "free-standing-tank-enclosure"
 base_url = "http://svault5/AutodeskDM/Services/api/vault/v2/"
 name = "IDF VAULT"
 id = "28"
-root_assembly = "$/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/Free Standing Enclosure.iam"
+root_assembly = "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/Free Standing Enclosure.iam"
 
 [workflow]
 reference_directory = "references"

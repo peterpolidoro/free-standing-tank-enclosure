@@ -1,5 +1,96 @@
 {
   "publications": [],
-  "references": {},
+  "references": {
+    "references/ENCLOSURE TOP PANEL.step": {
+      "exporter": {
+        "application_protocol_type": 3,
+        "export_seconds": 0.3,
+        "exported_at": "2026-10-21T15:49:29.3649452Z",
+        "model_state": "[Primary]",
+        "name": "Autodesk Inventor STEP translator add-in via windows/Export-InventorStep.ps1 (COM automation)",
+        "native_saved": false,
+        "project_file": "C:\\Users\\polidorop\\Repositories\\github\\free-standing-tank-enclosure\\.cache\\vault-workspace\\vault-cad-exporter.ipj",
+        "protocol": "AP214",
+        "route": "separate hidden Inventor instance on JAGERS-LW1; Vault Job Processor not used",
+        "translator_options": {
+          "ApplicationProtocolType": 3,
+          "Author": "",
+          "Authorization": "",
+          "Description": "",
+          "ExportUCS": true,
+          "IncludeSketches": false,
+          "Organization": "",
+          "export_fit_tolerance": 0.001
+        },
+        "version": "Inventor 2025.3 build 293356000"
+      },
+      "output_bytes": 24533,
+      "sha256": "1661871cdd9296e59e9e4b8d851ec1f1f03851b95243cbf416c158111f0d4e9a",
+      "source": {
+        "acquisition": "Vault Data API GET file-versions/{id}/content, Windows-integrated session at 2026-10-21T15:33:56.2182185Z",
+        "checkin_date": "2026-09-10T19:50:06.813Z",
+        "folder_id": "953863",
+        "local_workspace_mirror": "C:\\Users\\polidorop\\Repositories\\github\\free-standing-tank-enclosure\\.cache\\vault-workspace\\DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE TOP PANEL.ipt",
+        "master_id": "991091",
+        "native_bytes": 109056,
+        "native_sha256": "55856dad7b39d7e9f7cd538124e404e9c14db981239abb1639aafc49ceb3b92a",
+        "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/ENCLOSURE TOP PANEL.ipt",
+        "revision": "0",
+        "state": "Work in Progress",
+        "vault_id": "28",
+        "version": 1,
+        "version_id": "991092"
+      },
+      "validation": {
+        "all_referenced_document_count": 0,
+        "distinct_leaf_documents": null,
+        "extent_cm": [
+          119.38,
+          0.3175,
+          119.38000000000002
+        ],
+        "extent_in": [
+          47,
+          0.125,
+          47.0
+        ],
+        "inventor_reimport": {
+          "extent_cm": [
+            119.38,
+            0.3175,
+            119.38
+          ],
+          "import_seconds": 6,
+          "leaf_body_count": null,
+          "leaf_occurrence_count": null,
+          "length_units": "in",
+          "occurrence_count": null,
+          "route": "Documents.Open (default options)",
+          "solid_body_count": 1
+        },
+        "leaf_body_count": null,
+        "leaf_occurrence_count": null,
+        "length_units": "in",
+        "model_state_count": 1,
+        "occurrence_count": null,
+        "range_box_cm": {
+          "max": [
+            59.68999999999999,
+            0,
+            59.69000000000002
+          ],
+          "min": [
+            -59.690000000000005,
+            -0.3175,
+            -59.690000000000005
+          ]
+        },
+        "solid_body_count": 1,
+        "subassembly_occurrences": null,
+        "suppressed_occurrences": null,
+        "unresolved_references": []
+      }
+    }
+  },
   "schema_version": 1
 }
