@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "model": "Alienware AW2725Q stand-free nominal envelope",
+  "purpose": "Reference layout only; not a manufactured part or mounting design",
+  "units": "mm",
+  "source": {
+    "filename": "aw2725q-monitor.pdf",
+    "sha256": "de45cb70722365eeb599702dc385929b0a916f4ca1f8e6d2bbacb1bfaa0d1cd0",
+    "title": "AW2725Q Outline Dimension",
+    "page": 1,
+    "dimensions": "Nominal",
+    "drawing": "Not to scale"
+  },
+  "dimensions_mm": {
+    "body_width": 609.51,
+    "body_height": 355.97,
+    "body_depth": 72.63,
+    "active_width": 589.97,
+    "active_height": 332.93,
+    "bezel_left": 9.77,
+    "bezel_right": 9.77,
+    "bezel_top": 6.04,
+    "bezel_bottom": 17.00,
+    "mount_pattern_horizontal": 100.0,
+    "mount_pattern_vertical": 100.0
+  },
+  "coordinate_system": {
+    "origin": "Center of the monitor body front bounding rectangle",
+    "x": "Right when viewing the screen in its normal landscape orientation",
+    "y": "Up when viewing the screen in its normal landscape orientation",
+    "z": "Outward from the screen toward the viewer; body occupies negative Z",
+    "front_plane_z_mm": 0.0,
+    "active_center_y_mm": 5.48
+  },
+  "approximations": [
+    "Body is a full rectangular prism of nominal outer dimensions, not the actual contoured housing.",
+    "Active display is a planar construction reference on Z=0; display recess is unspecified.",
+    "Stand, rear contour, ports, cable space, vents, buttons and corner radii are not modeled.",
+    "Mounting pattern spacing is recorded only; hole location relative to body datum, thread and engagement are not modeled.",
+    "No manufacturing tolerance or installation clearance is added."
+  ],
+  "layout_check": {
+    "status": "Unapproved concept from manager's approximate bowl dimensions",
+    "bowl_count": 6,
+    "columns": 3,
+    "rows": 2,
+    "assumed_bowl_outer_diameter_mm": 160.0,
+    "assumed_bowl_depth_mm": 20.0,
+    "note": "Confirm whether 160 mm includes the rim and whether the full bowl must lie over the active display."
+  }
+}

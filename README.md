@@ -11,10 +11,39 @@ model state `[Primary]`; 43 dependency versions in four folders. Windows
 exported the part `ENCLOSURE TOP PANEL.ipt` (version 991092) and the assembly to
 STEP with receipts. The panel is now in `references/ENCLOSURE TOP PANEL.step`:
 FreeCAD 1.1.3 finds one valid solid with matching 47 × 1/8 × 47 inch extents.
-The assembly loads as 479 valid solids, matching Inventor's STEP re-import, but
-the native report counted 503 unfiltered surface bodies. Its completeness and
-precise dimensional comparison remain open, so the assembly stays in the shared
-exchange area. See [Linux validation](validation/2026-10-21-linux.md).
+The assembly loads as 479 valid solids. Windows accounted for the 24 extra native
+solids as hidden bodies in one McMaster part. Linux verified the new export
+against all 44 native input records and confirmed its STEP data matches the earlier
+export exactly. Two other McMaster parts show 8.46% and 12.30% volume differences
+between native and re-imported STEP; targeted checks remain before baseline
+acceptance. The full assembly stays in shared evidence. See the
+[latest review](validation/2026-10-21-native-pilot-review.md).
+
+## Monitor reference and design requirement
+
+The manager's brief requires design work in Inventor and completed records in
+Vault. Native feature creation through the Inventor API is a proposed way to
+minimize GUI work while retaining editable native files. Acceptance of
+FreeCAD-authored production parts imported through STEP is not established.
+
+A [nominal AW2725Q monitor reference](designs/reference-models/alienware-aw2725q/README.md)
+is available as a parametric FCStd and a one-solid STEP envelope, generated from
+the printed dimensions in Peter's supplier drawing. It includes an active-display
+reference in FCStd and records the 100 × 100 mm mounting spacing without guessing
+hole locations or fastening details. It is a stand-free layout reference, not a
+production part or a detailed housing. FreeCAD validation passed; Inventor checks
+are pending. A 3 × 2 array of nominal 160 mm bowls leaves only 12.93 mm total on
+the display's short axis for all gaps and margins, before allowing for larger rims.
+
+## Visual assembly manual
+
+The project also aims to provide a primarily visual parts inventory and
+step-by-step assembly manual, with a web version and printable PDF generated
+from one instruction source. See [assembly manual requirements](assembly/README.md).
+Part identities, quantities, subassemblies and placements must survive CAD export;
+assembly order and tool access require explicit review and a physical walkthrough.
+The separate `mechanical-docs` repository now contains a handoff and validated
+synthetic STEP fixture. The manual and renderer remain implementation work.
 
 ## Ownership and layout
 
@@ -22,6 +51,7 @@ exchange area. See [Linux validation](validation/2026-10-21-linux.md).
 - `designs/`: editable FreeCAD documents or CAD scripts authored here.
 - `step/`: authored STEP deliverables eligible for publication back to Vault.
 - `drawings/`: supporting drawings and specifications.
+- `assembly/`: visual manual requirements and future inventory/sequence sources.
 - `vault-project.toml`: server identity and project locator; no credentials.
 - `vault-lock.json`: imported provenance and, eventually, verified publications.
 - `validation/`: geometry checks, acceptance decisions, and unresolved comparisons.

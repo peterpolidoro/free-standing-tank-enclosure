@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-21",
+  "windows_evidence_run": "2026-10-21-windows-native-pilot-01",
+  "linux_evidence_run": "2026-10-21-linux-native-review-01",
+  "assembly_review": {
+    "schema_version": 1,
+    "verified_export_sha256": "f5efa34104afca0338828edb9891a77550a2f28c609d87dfe05b0d3487070b46",
+    "output_bytes": 21617953,
+    "previous_export_sha256": "fc9b75d262f1ceee41aeabdf47977b6a6f0c4cb149858717d89a5b7b1b32f8ed",
+    "step_data_sections_identical": true,
+    "step_data_sha256": "723b51adaa50b5917425a04527193653191bf376157c4e9149f1ee1c41a1a0a5",
+    "opened_inputs_verified_against_acquisition_and_inventory": 44,
+    "dependency_records_verified": 43,
+    "native_leaf_count": 155,
+    "native_solid_count": 503,
+    "native_body_visible_solid_count": 479,
+    "step_solid_count": 479,
+    "basename_collisions_observed": false,
+    "decision": "Provenance and body-count explanation accepted; hold full assembly baseline pending targeted per-component volume/surface checks. Geometry available in shared evidence for exploratory inspection.",
+    "limitations": [
+      "Counts and extents do not establish exact surface equivalence or manufacturing tolerances.",
+      "Windows volume-accuracy and curved-face bounds explanations remain hypotheses; no repeat high-accuracy mass-property comparison was performed.",
+      "Comparison script groups by basenames and body visibility, not persistent identities or inherited occurrence visibility; use the forthcoming occurrence manifest for BOM/manual."
+    ],
+    "volume_differences_cm3": [
+      {
+        "part": "MCMASTER 5537T429_T-Slotted Framing",
+        "occurrences": 2,
+        "native": 25.86443000102174,
+        "step": 29.045499728827632,
+        "percent": 12.299013462427848
+      },
+      {
+        "part": "MCMASTER 5537T293_T-Slotted Framing",
+        "occurrences": 2,
+        "native": 16.581075110681514,
+        "step": 17.984525602798588,
+        "percent": 8.464170644839381
+      }
+    ]
+  },
+  "native_pilot_freecad": {
+    "freecad_version": "1.1.3",
+    "sha256": "1cf8f08f0686e307f512afb15670a0a18842292fa5f2e3d7fb665ede8a46b68e",
+    "solid_count": 2,
+    "valid": true,
+    "solids": [
+      {
+        "name": "PANEL_A",
+        "valid": true,
+        "volume_mm3": 4291598.524273579,
+        "min_mm": [
+          -596.9,
+          -3.175,
+          -596.9
+        ],
+        "max_mm": [
+          596.9,
+          0.0,
+          596.9
+        ],
+        "placement_matches_report": true
+      },
+      {
+        "name": "PANEL_B",
+        "valid": true,
+        "volume_mm3": 4291598.52427358,
+        "min_mm": [
+          -495.29999999999995,
+          22.224999999999998,
+          -596.9
+        ],
+        "max_mm": [
+          698.5,
+          25.40000000000009,
+          596.9
+        ],
+        "placement_matches_report": true
+      }
+    ],
+    "overlap_mm3": 0.0,
+    "limitation": "Validates exported geometry and placements, not native constraint or feature semantics."
+  },
+  "portable_tests": {
+    "passed": 34,
+    "environment": "Guix tools manifest"
+  },
+  "windows_results": {
+    "initial_pilot_checks": 23,
+    "rerun_checks": 19,
+    "fresh_cache_guard_passed": true
+  },
+  "linux_powershell_changes": "Receipt-join validation, changed-input pilot guard and filename validation added; Windows execution and 11 new offline receipt cases pending. No PowerShell runtime on Linux.",
+  "vault_writes": false,
+  "receipt_import_smoke": {
+    "disposable_project": true,
+    "idempotent": true,
+    "native_inputs_preserved": 44,
+    "dependencies_preserved": 43
+  }
+}
