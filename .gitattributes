@@ -1,0 +1,11 @@
+* text=auto
+*.md text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+# Preserve bytes and require deliberate geometry conflict resolution.
+*.step -text -diff -merge
+*.stp -text -diff -merge
+*.STEP -text -diff -merge
+*.STP -text -diff -merge
+*.FCStd -text -diff -merge
+*.fcstd -text -diff -merge

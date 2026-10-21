@@ -1,0 +1,10 @@
+.cache/
+.vault-cad-operation.lock
+.vault-cad-*
+.agents/handoff.local.md
+.env
+__pycache__/
+*.py[cod]
+*.FCStd1
+*.FCBak
+.pixi/

@@ -1,0 +1,18 @@
+schema_version = 1
+
+[project]
+name = "free-standing-tank-enclosure"
+
+[vault]
+# Server/vault identity comes from the Windows capability report; authenticate
+# and resolve the assembly to concrete file IDs before exporting.
+base_url = "http://svault5/AutodeskDM/Services/api/vault/v2/"
+name = "IDF VAULT"
+id = "28"
+root_assembly = "$/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/Free Standing Enclosure.iam"
+
+[workflow]
+reference_directory = "references"
+design_directory = "designs"
+deliverable_directory = "step"
+# Initial tools support ordinary Git assets; LFS publication needs a later adapter.
