@@ -1,0 +1,40 @@
+{
+ "view": "joint-clamp-to-mount-80584ace",
+ "width": 1600,
+ "height": 1200,
+ "occurrences": [
+  {
+   "id": "TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
+   "box_px": [
+    570.2,
+    352.5,
+    1285.7,
+    987.8
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]",
+   "box_px": [
+    314.3,
+    120.0,
+    787.1,
+    1080.0
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:2",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
+   "box_px": [
+    0,
+    352.1,
+    530.8,
+    987.5
+   ],
+   "corners_in_frame": 6
+  }
+ ]
+}

@@ -1,0 +1,403 @@
+{
+ "view": "group-camera-frame-1-05712af3",
+ "width": 1600,
+ "height": 1200,
+ "occurrences": [
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 5537T293_T-Slotted Framing:1",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5537T293_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    128.7,
+    335.0,
+    174.0,
+    432.8
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 5537T429_T-Slotted Framing:1",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5537T429_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    128.0,
+    602.0,
+    232.2,
+    744.0
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/SLLB Enclosure 15in 47065T808_T-Slotted Framing:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    139.2,
+    338.7,
+    197.1,
+    731.0
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/SLLB Enclosure 22in 47065T808_T-Slotted Framing:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 22in 47065T808_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    165.5,
+    127.5,
+    583.2,
+    387.3
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 5537T293_T-Slotted Framing:2",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5537T293_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    1051.1,
+    685.4,
+    1096.4,
+    783.2
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 5537T429_T-Slotted Framing:2",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5537T429_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    993.0,
+    930.5,
+    1097.2,
+    1072.5
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/SLLB Enclosure 15in 47065T808_T-Slotted Framing:2",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    1028.0,
+    676.3,
+    1085.9,
+    1068.7
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/SLLB Enclosure 22in 47065T808_T-Slotted Framing:2",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 22in 47065T808_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    1054.3,
+    465.1,
+    1472.0,
+    724.9
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/SLLB Enclosure 41in 47065T808_T-Slotted Framing:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 41in 47065T808_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    548.1,
+    144.3,
+    1429.9,
+    520.2
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/SLLB Enclosure 41in 47065T808_T-Slotted Framing:2",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 41in 47065T808_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    170.8,
+    350.7,
+    1052.6,
+    726.6
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 3136N149_T-Slotted Framing:1",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 3136N149_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    437.5,
+    168.9,
+    669.1,
+    280.6
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 3136N149_T-Slotted Framing:2",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 3136N149_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    1231.6,
+    470.5,
+    1463.2,
+    582.2
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:1",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    148.4,
+    420.8,
+    375.8,
+    608.7
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:2",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    146.9,
+    278.1,
+    346.0,
+    594.3
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:3",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    1035.7,
+    615.8,
+    1234.8,
+    931.9
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:4",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    849.3,
+    627.6,
+    1076.7,
+    934.3
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 9293K121_Constant-Force Spring:1",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9293K121_Constant-Force Spring.ipt|[Primary]",
+   "box_px": [
+    138.1,
+    288.1,
+    200.8,
+    375.4
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:1",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]",
+   "box_px": [
+    998.1,
+    701.8,
+    1052.7,
+    763.0
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:2",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]",
+   "box_px": [
+    1056.3,
+    699.3,
+    1110.3,
+    760.7
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:3",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]",
+   "box_px": [
+    167.5,
+    361.6,
+    221.4,
+    423.1
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:4",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]",
+   "box_px": [
+    172.4,
+    388.2,
+    227.0,
+    449.3
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:1",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]",
+   "box_px": [
+    156.2,
+    319.1,
+    176.4,
+    350.4
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw:1",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt|[Primary]",
+   "box_px": [
+    152.5,
+    320.9,
+    200.8,
+    356.5
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/SPRING ROLLER:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING ROLLER.ipt|[Primary]",
+   "box_px": [
+    139.4,
+    298.7,
+    200.9,
+    373.7
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:2",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]",
+   "box_px": [
+    171.8,
+    325.0,
+    192.0,
+    356.3
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/ROLLER MOUNT PLATE:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ROLLER MOUNT PLATE.ipt|[Primary]",
+   "box_px": [
+    171.4,
+    289.8,
+    251.2,
+    369.2
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/ROLLER MOUNT PLATE:2",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ROLLER MOUNT PLATE.ipt|[Primary]",
+   "box_px": [
+    1097.1,
+    641.4,
+    1176.9,
+    720.8
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 9293K121_Constant-Force Spring:2",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9293K121_Constant-Force Spring.ipt|[Primary]",
+   "box_px": [
+    1095.5,
+    651.8,
+    1158.1,
+    739.1
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:3",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]",
+   "box_px": [
+    1120.4,
+    687.4,
+    1146.6,
+    716.9
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw:2",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt|[Primary]",
+   "box_px": [
+    1096.7,
+    681.1,
+    1149.5,
+    715.3
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/SPRING ROLLER:2",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING ROLLER.ipt|[Primary]",
+   "box_px": [
+    1092.3,
+    665.3,
+    1167.0,
+    736.1
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:4",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]",
+   "box_px": [
+    1104.8,
+    681.5,
+    1131.0,
+    710.9
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/SPRING MOUNT PLATE:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING MOUNT PLATE.ipt|[Primary]",
+   "box_px": [
+    131.1,
+    267.3,
+    167.1,
+    339.4
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/SPRING MOUNT PLATE:2",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING MOUNT PLATE.ipt|[Primary]",
+   "box_px": [
+    1088.5,
+    631.0,
+    1124.5,
+    703.0
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/CAMERA MOUNT PLATE:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE.ipt|[Primary]",
+   "box_px": [
+    939.8,
+    280.7,
+    1028.4,
+    400.5
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "CAMERA FRAME:1/CAMERA MOUNT PLATE - TELEDYNE KINETIX:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt|[Primary]",
+   "box_px": [
+    836.1,
+    204.7,
+    924.8,
+    312.3
+   ],
+   "corners_in_frame": 8
+  }
+ ]
+}

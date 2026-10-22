@@ -1,0 +1,249 @@
+{
+ "view": "joint-support-frame-corners-b1810765",
+ "width": 1600,
+ "height": 1200,
+ "occurrences": [
+  {
+   "id": "TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
+   "box_px": [
+    256.6,
+    120.0,
+    1343.4,
+    1080.0
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
+   "box_px": [
+    0,
+    0,
+    801.2,
+    908.7
+   ],
+   "corners_in_frame": 4
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:2",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
+   "box_px": [
+    798.9,
+    0,
+    1600,
+    -6062.6
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:3",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
+   "box_px": [
+    0,
+    0,
+    801.2,
+    -6062.6
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:4",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
+   "box_px": [
+    798.9,
+    0,
+    1600,
+    908.7
+   ],
+   "corners_in_frame": 4
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:2",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
+   "box_px": [
+    12174.6,
+    0,
+    1600,
+    -5753.1
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:3",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
+   "box_px": [
+    256.6,
+    0,
+    1343.4,
+    -12586.1
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:4",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
+   "box_px": [
+    0,
+    0,
+    -10574.6,
+    -5753.1
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:1",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
+   "box_px": [
+    0,
+    1160.9,
+    507.0,
+    1200
+   ],
+   "corners_in_frame": 1
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:2",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
+   "box_px": [
+    0,
+    0,
+    -11652.1,
+    -5134.8
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:3",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
+   "box_px": [
+    1093.1,
+    0,
+    1600,
+    -12778.2
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:4",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
+   "box_px": [
+    13252.2,
+    0,
+    1600,
+    -5806.9
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:1",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
+   "box_px": [
+    1093.1,
+    0,
+    1600,
+    -12931.0
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:2",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
+   "box_px": [
+    13252.2,
+    0,
+    1600,
+    -5959.7
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:3",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
+   "box_px": [
+    0,
+    0,
+    -11652.1,
+    -5287.6
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:4",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
+   "box_px": [
+    0,
+    1330.7,
+    507.0,
+    1200
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/TANK SUPPORT PLATFORM:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT PLATFORM.ipt|[Primary]",
+   "box_px": [
+    0,
+    0,
+    1600,
+    737.8
+   ],
+   "corners_in_frame": 2
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/SHULZE 2W.353 TANK:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\2W.353\\SHULZE 2W.353 TANK.ipt|[Primary]",
+   "box_px": [
+    0,
+    0,
+    1600,
+    -20.0
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]",
+   "box_px": [
+    11786.9,
+    0,
+    1600,
+    -5558.4
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:2",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]",
+   "box_px": [
+    0,
+    0,
+    -10186.9,
+    -5222.3
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:3",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]",
+   "box_px": [
+    67.4,
+    0,
+    1600,
+    -12277.7
+   ],
+   "corners_in_frame": 0
+  },
+  {
+   "id": "TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:4",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]",
+   "box_px": [
+    0,
+    236.0,
+    1532.6,
+    1200
+   ],
+   "corners_in_frame": 4
+  }
+ ]
+}

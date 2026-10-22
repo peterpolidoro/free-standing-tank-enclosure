@@ -64,6 +64,25 @@ compound models. Their internal hardware may already be supplied. Conversely,
 no separate mounting screw in a group does not prove that the screw is absent
 from its parent assembly, embedded kit, drawing, virtual BOM or package.
 
+## Phase 1 build and verification list (Peter, 2026-10-22)
+
+Peter assembles the enclosure first without the tanks and without the backlight, and
+defers the monitor, bowl and tank-frame design. `../build-scope.json` records that scope:
+the three tank occurrences are deferred, the two tank support frames are conditional
+(install now only if they cannot be added after the panels), and no modeled part is
+identified as the backlight. `../phase_parts_list.py` writes `phase-1-parts.csv`: per
+part the CAD count, the phase-1 count (110 occurrences), the conditional count (42, tank
+frames only) and the deferred count (3 tanks), with blank columns for the physical count.
+Use it with the picture cards of the current inventory PDF to verify stock; parts not
+found go on the order list after their specification is confirmed.
+
+`../draft_instructions.py` writes `../instructions.json`, a DRAFT modular order by
+subassembly and height (bottom frame, casters, columns, mid rails, top frame, lower
+supports, toggle clamps, camera frame in three steps, four panels, top panel, then the
+conditional tank frames and the deferred tanks). It is a starting point for the
+documentation, not a validated sequence: Peter records the real order while building and
+the file is edited to match.
+
 ## Intended build changes (Peter, 2026-10-22)
 
 The modified build replaces the tank(s) in the model and the light box shown on

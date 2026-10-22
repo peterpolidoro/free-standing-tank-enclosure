@@ -1,0 +1,382 @@
+{
+  "schema_version": "draft-1",
+  "scene": "scene.json",
+  "id": "free-standing-enclosure-phase-1-draft",
+  "title": "Free Standing Enclosure, phase 1 (no tanks, no backlight): DRAFT modular order",
+  "review_state": "draft",
+  "views": [
+    {
+      "id": "overview",
+      "projection": "orthographic",
+      "eye": [
+        -2103.0,
+        -2778.0,
+        3238.0
+      ],
+      "target": [
+        597.0,
+        597.0,
+        1213.0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "top-region",
+      "projection": "orthographic",
+      "eye": [
+        -1603.0,
+        -2153.0,
+        3900
+      ],
+      "target": [
+        597.0,
+        597.0,
+        2250
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "bottom-frame",
+      "requires": [],
+      "add": [
+        "FREE STANDING FRAME:1/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing:1",
+        "FREE STANDING FRAME:1/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing:2",
+        "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:1",
+        "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:2",
+        "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:3",
+        "FREE STANDING FRAME:1/MCMASTER 47065T245:1",
+        "FREE STANDING FRAME:1/MCMASTER 47065T245:2",
+        "FREE STANDING FRAME:1/MCMASTER 47065T245:3",
+        "FREE STANDING FRAME:1/MCMASTER 47065T245:4"
+      ],
+      "view": "overview",
+      "caption": "Lay out the bottom frame: lower rails and corner connectors. Order among rails is free; square the frame before tightening. Hardware: see joints main_frame_joints."
+    },
+    {
+      "id": "casters",
+      "requires": [
+        "bottom-frame"
+      ],
+      "add": [
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:1/HOLKIE LEVELING CASTER:1",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:2/CASTER MOUNTING PLATE:1",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:2/HOLKIE LEVELING CASTER:1",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:3/CASTER MOUNTING PLATE:1",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:3/HOLKIE LEVELING CASTER:1",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:4/CASTER MOUNTING PLATE:1",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:4/HOLKIE LEVELING CASTER:1"
+      ],
+      "view": "overview",
+      "caption": "Bolt each caster to its mounting plate and attach the four plates under the bottom frame corners (joints caster_to_plate, caster_plate_to_frame). Hardware unverified."
+    },
+    {
+      "id": "columns",
+      "requires": [
+        "casters"
+      ],
+      "add": [
+        "FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:1",
+        "FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:2",
+        "FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:3",
+        "FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:4"
+      ],
+      "view": "overview",
+      "caption": "Stand the four 96 in columns on the bottom frame corners."
+    },
+    {
+      "id": "middle-rails",
+      "requires": [
+        "columns"
+      ],
+      "add": [
+        "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:10",
+        "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:11",
+        "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:8",
+        "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:9",
+        "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:1",
+        "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:2",
+        "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:3",
+        "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:4",
+        "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:5",
+        "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:6",
+        "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:7",
+        "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:8"
+      ],
+      "view": "overview",
+      "caption": "Add the mid-height rails and extrusions between the columns."
+    },
+    {
+      "id": "top-frame",
+      "requires": [
+        "middle-rails"
+      ],
+      "add": [
+        "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:4",
+        "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:5",
+        "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:6",
+        "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:7",
+        "FREE STANDING FRAME:1/MCMASTER 47065T245:5",
+        "FREE STANDING FRAME:1/MCMASTER 47065T245:6",
+        "FREE STANDING FRAME:1/MCMASTER 47065T245:7",
+        "FREE STANDING FRAME:1/MCMASTER 47065T245:8"
+      ],
+      "view": "top-region",
+      "caption": "Close the top frame: upper rails and corner connectors."
+    },
+    {
+      "id": "lower-supports",
+      "requires": [
+        "top-frame"
+      ],
+      "add": [
+        "FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:1",
+        "FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:2",
+        "FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:3",
+        "FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:4",
+        "FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:1",
+        "FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:2",
+        "FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:3",
+        "FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:4"
+      ],
+      "view": "overview",
+      "caption": "Fit the eight panel lower supports (left and right) to the frame (joint lower_support_to_frame)."
+    },
+    {
+      "id": "toggle-clamps",
+      "requires": [
+        "lower-supports"
+      ],
+      "add": [
+        "TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1",
+        "TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:2",
+        "TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1",
+        "TOGGLE CLAMP ASSEMBLY:2/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1",
+        "TOGGLE CLAMP ASSEMBLY:2/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:2",
+        "TOGGLE CLAMP ASSEMBLY:2/TOGGLE CLAMP MOUNT:1",
+        "TOGGLE CLAMP ASSEMBLY:3/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1",
+        "TOGGLE CLAMP ASSEMBLY:3/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:2",
+        "TOGGLE CLAMP ASSEMBLY:3/TOGGLE CLAMP MOUNT:1",
+        "TOGGLE CLAMP ASSEMBLY:4/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1",
+        "TOGGLE CLAMP ASSEMBLY:4/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:2",
+        "TOGGLE CLAMP ASSEMBLY:4/TOGGLE CLAMP MOUNT:1"
+      ],
+      "view": "overview",
+      "caption": "Assemble the four toggle-clamp mounts (two clamps each) and attach them to the columns (joints clamp_to_mount, clamp_mount_to_frame)."
+    },
+    {
+      "id": "camera-frame-structure",
+      "requires": [
+        "toggle-clamps"
+      ],
+      "add": [
+        "CAMERA FRAME:1/MCMASTER 3136N149_T-Slotted Framing:1",
+        "CAMERA FRAME:1/MCMASTER 3136N149_T-Slotted Framing:2",
+        "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:1",
+        "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:2",
+        "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:3",
+        "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:4",
+        "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:1",
+        "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:2",
+        "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:3",
+        "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:4",
+        "CAMERA FRAME:1/MCMASTER 5537T293_T-Slotted Framing:1",
+        "CAMERA FRAME:1/MCMASTER 5537T293_T-Slotted Framing:2",
+        "CAMERA FRAME:1/MCMASTER 5537T429_T-Slotted Framing:1",
+        "CAMERA FRAME:1/MCMASTER 5537T429_T-Slotted Framing:2",
+        "CAMERA FRAME:1/SLLB Enclosure 15in 47065T808_T-Slotted Framing:1",
+        "CAMERA FRAME:1/SLLB Enclosure 15in 47065T808_T-Slotted Framing:2",
+        "CAMERA FRAME:1/SLLB Enclosure 22in 47065T808_T-Slotted Framing:1",
+        "CAMERA FRAME:1/SLLB Enclosure 22in 47065T808_T-Slotted Framing:2",
+        "CAMERA FRAME:1/SLLB Enclosure 41in 47065T808_T-Slotted Framing:1",
+        "CAMERA FRAME:1/SLLB Enclosure 41in 47065T808_T-Slotted Framing:2"
+      ],
+      "view": "top-region",
+      "caption": "Assemble the camera frame extrusions and corner brackets (joint camera_frame_joints)."
+    },
+    {
+      "id": "camera-frame-mechanism",
+      "requires": [
+        "camera-frame-structure"
+      ],
+      "add": [
+        "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:1",
+        "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:2",
+        "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:3",
+        "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:4",
+        "CAMERA FRAME:1/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw:1",
+        "CAMERA FRAME:1/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw:2",
+        "CAMERA FRAME:1/MCMASTER 9293K121_Constant-Force Spring:1",
+        "CAMERA FRAME:1/MCMASTER 9293K121_Constant-Force Spring:2",
+        "CAMERA FRAME:1/ROLLER MOUNT PLATE:1",
+        "CAMERA FRAME:1/ROLLER MOUNT PLATE:2",
+        "CAMERA FRAME:1/SPRING MOUNT PLATE:1",
+        "CAMERA FRAME:1/SPRING MOUNT PLATE:2",
+        "CAMERA FRAME:1/SPRING ROLLER:1",
+        "CAMERA FRAME:1/SPRING ROLLER:2"
+      ],
+      "view": "top-region",
+      "caption": "Fit the roller and spring mechanism: roller plates, spring plates, rollers, bearings, shoulder screws, springs (joint spring_roller)."
+    },
+    {
+      "id": "camera-plates",
+      "requires": [
+        "camera-frame-mechanism"
+      ],
+      "add": [
+        "CAMERA FRAME:1/CAMERA MOUNT PLATE:1",
+        "CAMERA FRAME:1/CAMERA MOUNT PLATE - TELEDYNE KINETIX:1"
+      ],
+      "view": "top-region",
+      "caption": "Fit the camera mount plates (joints camera_plates, camera_attachment). The camera itself is not in CAD."
+    },
+    {
+      "id": "panel-1",
+      "requires": [
+        "camera-plates"
+      ],
+      "add": [
+        "PANEL ASSEMBLY:1/ENCLOSURE PANEL:1",
+        "PANEL ASSEMBLY:1/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1",
+        "PANEL ASSEMBLY:1/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:2"
+      ],
+      "view": "overview",
+      "caption": "Fit two pull handles to panel 1 (joint handle_to_panel) and hang the panel on its lower supports and toggle clamps (joint panel_retention)."
+    },
+    {
+      "id": "panel-2",
+      "requires": [
+        "panel-1"
+      ],
+      "add": [
+        "PANEL ASSEMBLY:2/ENCLOSURE PANEL:1",
+        "PANEL ASSEMBLY:2/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1",
+        "PANEL ASSEMBLY:2/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:2"
+      ],
+      "view": "overview",
+      "caption": "Fit two pull handles to panel 2 (joint handle_to_panel) and hang the panel on its lower supports and toggle clamps (joint panel_retention)."
+    },
+    {
+      "id": "panel-3",
+      "requires": [
+        "panel-2"
+      ],
+      "add": [
+        "PANEL ASSEMBLY:3/ENCLOSURE PANEL:1",
+        "PANEL ASSEMBLY:3/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1",
+        "PANEL ASSEMBLY:3/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:2"
+      ],
+      "view": "overview",
+      "caption": "Fit two pull handles to panel 3 (joint handle_to_panel) and hang the panel on its lower supports and toggle clamps (joint panel_retention)."
+    },
+    {
+      "id": "panel-4",
+      "requires": [
+        "panel-3"
+      ],
+      "add": [
+        "PANEL ASSEMBLY:4/ENCLOSURE PANEL:1",
+        "PANEL ASSEMBLY:4/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1",
+        "PANEL ASSEMBLY:4/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:2"
+      ],
+      "view": "overview",
+      "caption": "Fit two pull handles to panel 4 (joint handle_to_panel) and hang the panel on its lower supports and toggle clamps (joint panel_retention)."
+    },
+    {
+      "id": "top-panel",
+      "requires": [
+        "panel-4"
+      ],
+      "add": [
+        "ENCLOSURE TOP PANEL:1"
+      ],
+      "view": "top-region",
+      "caption": "Place the top panel (joint top_panel: nothing in CAD retains it)."
+    },
+    {
+      "id": "conditional-tank-support-frame-1",
+      "requires": [
+        "top-panel"
+      ],
+      "add": [
+        "TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:1",
+        "TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:2",
+        "TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:3",
+        "TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:4",
+        "TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:1",
+        "TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:2",
+        "TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:3",
+        "TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:4",
+        "TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:1",
+        "TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:2",
+        "TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:3",
+        "TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:4",
+        "TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:1",
+        "TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:2",
+        "TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:3",
+        "TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:4",
+        "TANK SUPPORT FRAME:1/TANK SUPPORT PLATFORM:1",
+        "TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:1",
+        "TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:2",
+        "TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:3",
+        "TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:4"
+      ],
+      "view": "overview",
+      "caption": "CONDITIONAL (build-scope.json): TANK SUPPORT FRAME:1, the tank support frame. Install now only if it cannot be installed after the panels; otherwise defer with the tanks. Joints support_frame_corners, support_brackets, vibration_mounts."
+    },
+    {
+      "id": "conditional-tank-support-frame-2",
+      "requires": [
+        "conditional-tank-support-frame-1"
+      ],
+      "add": [
+        "TANK SUPPORT FRAME:2/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:1",
+        "TANK SUPPORT FRAME:2/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:2",
+        "TANK SUPPORT FRAME:2/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:3",
+        "TANK SUPPORT FRAME:2/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:4",
+        "TANK SUPPORT FRAME:2/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:1",
+        "TANK SUPPORT FRAME:2/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:2",
+        "TANK SUPPORT FRAME:2/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:3",
+        "TANK SUPPORT FRAME:2/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:4",
+        "TANK SUPPORT FRAME:2/T SLOT CORNER 47065T242:1",
+        "TANK SUPPORT FRAME:2/T SLOT CORNER 47065T242:2",
+        "TANK SUPPORT FRAME:2/T SLOT CORNER 47065T242:3",
+        "TANK SUPPORT FRAME:2/T SLOT CORNER 47065T242:4",
+        "TANK SUPPORT FRAME:2/TANK SUPPORT BRACKET:1",
+        "TANK SUPPORT FRAME:2/TANK SUPPORT BRACKET:2",
+        "TANK SUPPORT FRAME:2/TANK SUPPORT BRACKET:3",
+        "TANK SUPPORT FRAME:2/TANK SUPPORT BRACKET:4",
+        "TANK SUPPORT FRAME:2/TANK SUPPORT PLATFORM:1",
+        "TANK SUPPORT FRAME:2/TSLOT EXTRUSION 1X40.5 copy:1",
+        "TANK SUPPORT FRAME:2/TSLOT EXTRUSION 1X40.5 copy:2",
+        "TANK SUPPORT FRAME:2/TSLOT EXTRUSION 1X40.5 copy:3",
+        "TANK SUPPORT FRAME:2/TSLOT EXTRUSION 1X40.5 copy:4"
+      ],
+      "view": "overview",
+      "caption": "CONDITIONAL (build-scope.json): TANK SUPPORT FRAME:2, the tank support frame. Install now only if it cannot be installed after the panels; otherwise defer with the tanks. Joints support_frame_corners, support_brackets, vibration_mounts."
+    },
+    {
+      "id": "deferred-tanks",
+      "requires": [
+        "conditional-tank-support-frame-2"
+      ],
+      "add": [
+        "TANK SUPPORT FRAME:1/SHULZE 2W.353 TANK:1",
+        "SHULZE 2W.353 TANK:1",
+        "TANK SUPPORT FRAME:2/SHULZE 2W.353 TANK:1"
+      ],
+      "view": "overview",
+      "caption": "DEFERRED (build-scope.json): the tanks are not part of phase 1 and are listed here only because every CAD occurrence must appear once. They are to be replaced by monitors and bowls."
+    }
+  ]
+}

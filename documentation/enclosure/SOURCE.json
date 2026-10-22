@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "published_at": "2026-10-22T18:59:32+00:00",
+  "built_from": "/janelia/sciserv/polidorop/Repositories/vault-cad-exchange/evidence/2026-10-22-documentation-enclosure-supplement-03/manual",
+  "evidence_run": "2026-10-22-documentation-enclosure-supplement-03",
+  "build_receipt": {
+    "generated_at_utc": "2026-10-22T18:37:43Z",
+    "input_hashes": {
+      "scene.json": "ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070",
+      "inventory.json": "0eed5897bb238c1334e92e19927db8573480f3c7d4778099fa02b09e605298de",
+      "supplement.json": "c9950ec3f72db98f8d3563adaec0fb48ba50fce689fbb905dbe050ce0e4081ba",
+      "assets/MCMASTER 5537T293_T-Slotted Framing__[Primary]__1c2935ff.step": "f7ab59b2a7ec3697026dffdb824f6d8ed11c69907dc9e34549a805f3c9b05def",
+      "assets/MCMASTER 5537T429_T-Slotted Framing__[Primary]__72ff3dc4.step": "65dcf67cd5db49d88eb51965255f36b54af3f1cd16178d6594ac1eca9b58aa91",
+      "assets/SLLB Enclosure 15in 47065T808_T-Slotted Framing__[Primary]__64014b81.step": "08646c8eb96e0c4322be83c70698e51cf078ddb2692a98b1df8d265d283b5124",
+      "assets/SLLB Enclosure 22in 47065T808_T-Slotted Framing__[Primary]__567ca529.step": "faea79b60badaa45181c7799d33bfa9976cc2e7aa0e7f491d8c96b839eb6531a",
+      "assets/SLLB Enclosure 41in 47065T808_T-Slotted Framing__[Primary]__f37ea6b9.step": "ae6e3670d62ebee066caeca71cb2a8a31a1b72ea81fe164a61d2e7f82997a64d",
+      "assets/MCMASTER 3136N149_T-Slotted Framing__[Primary]__77d5b1ed.step": "29a5771d562d9c9110cb87ddabe7716cb7d91ed5c668f8c5094e1e9293a6acd9",
+      "assets/MCMASTER 47065T27_T-Slotted Framing__[Primary]__63467688.step": "c5727dab23232968f8181a0ca7eca01c2fe13d2892e26e036ec29a93018f1c8c",
+      "assets/MCMASTER 9293K121_Constant-Force Spring__[Primary]__a4593b94.step": "3c247aa91b637d3a062f99a09efe9fef4e4d988f8472ef43574141d5f97f7d99",
+      "assets/MCMASTER 47065T845_Silver Corner Bracket__[Primary]__e1e40dd2.step": "32bc143683d9cf68e4f2b9e2c6cddefc3937c651d357c8a82328f5f23e0cd806",
+      "assets/MCMASTER 5972K164_Ball Bearing__[Primary]__66eca704.step": "7799ac5c522148edda558a20a03e432a9c0cd48a571c233dd491ff69cd178558",
+      "assets/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw__[Primary]__591781bf.step": "46342b43153af853a7ba136780b678c1cf9cdfaa4663575ce830749de9bcc0c7",
+      "assets/SPRING ROLLER__[Primary]__25d6cebc.step": "1f239b9dc3dfde0532d81a35280633a4f598f5a8ad194f3b71d119ff36684012",
+      "assets/ROLLER MOUNT PLATE__[Primary]__6a8f878a.step": "c1d9346af52434493066ce4726c5697b1c208e91ee347629cdf8e2bcd88e25f1",
+      "assets/SPRING MOUNT PLATE__[Primary]__eb93feb5.step": "92136e41bed330ce5feaf9860679623e89856f1d42790811ced1be1e48f2a2bc",
+      "assets/CAMERA MOUNT PLATE__[Primary]__94fc4c9b.step": "f3298cdf813e823e83046e3f2790eb122b42eacbed7337d201f2c1f4bcef62d1",
+      "assets/CAMERA MOUNT PLATE - TELEDYNE KINETIX__[Primary]__b670923e.step": "b6d274fdce0180a04441db99078cafdeb8a97da93a9bbaa52238d1e24a69560c",
+      "assets/TSLOT EXTRUSION 1X40.5 copy__[Primary]__72135c80.step": "bf0bf6ca4eb5b11a9478a73691bec1eba86db6720fe50d0110898053c5ad56aa",
+      "assets/T SLOT CORNER 47065T242__[Primary]__6dff85d6.step": "8ae9202837fac68fd8c61cd54c0a20edadc58a1fa336c6328288540e359e41a3",
+      "assets/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount__[Primary]__fcf343fc.step": "38c86c8809035d9b9201a4d947edebe67196cfe4906ecc0e71cbbb187715c803",
+      "assets/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer__[Primary]__34837649.step": "83f53c90f41e60c715fdd3448acdaf1e6dba5bbe1be0c3a7dd8fcdb3696cda77",
+      "assets/TANK SUPPORT PLATFORM__[Primary]__a3951cbf.step": "bcfe35dadbe1431c760bd9e9ef0cdd32c5fef0fc753d5a8ac35cc5960e0e3f2a",
+      "assets/SHULZE 2W.353 TANK__[Primary]__00b2841c.step": "e26fa1dd74097252f415dad137354b094e4141eee71bd95a09b2c8bf589b3dad",
+      "assets/TANK SUPPORT BRACKET__[Primary]__7481e885.step": "ac56abb49480231f63c271181ea875c0b60c163cbfe632f058d3281308ab587c",
+      "assets/SLLB Enclosure 44in 47065T808_T-Slotted Framing__[Primary]__11d4d431.step": "4df7a00b1bd2814d6b8b6eedf678dcdb790f96df5595e6773a14fb6d6bce7bb8",
+      "assets/MCMASTER 47065T245__[Primary]__89f50e74.step": "2daca7dae78f9180e1dfbb3b0be031bd8a3aa5a4ef486858ee59c943d9492383",
+      "assets/SLLB Enclosure 96in 47065T808_T-Slotted Framing__[Primary]__f6258a3b.step": "22c6afaa9d4046d53a7e4f9943c92c292b4969c41118a2850b27f5433acc2969",
+      "assets/HOLKIE LEVELING CASTER__[Primary]__72f0778a.step": "d76de07fea91d3b91129155a2d202ea895756d4bb69120ed3d1facb0e2ae23c7",
+      "assets/CASTER MOUNTING PLATE__[Primary]__db2a93e4.step": "fb755fe68cfa0f7ead5df8f49d168254ca4234133ebdeaed97a52ac4c59ead8d",
+      "assets/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing__[Primary]__0debaac0.step": "74ffbd87c8b80110403f6cc16cadb240be019ba4acdb40c190d357444ce7dbd0",
+      "assets/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION__[Primary]__56fa5cf0.step": "bf0439b918f46882083d34679145af4616b9ac00a754e46b4f62a11bfa028161",
+      "assets/PANEL LOWER SUPPORT LEFT__[Primary]__08daa5a1.step": "9cd9a66e557b38c248b624aea78af68da7fbc97fd6a505a6b032363388bcd819",
+      "assets/PANEL LOWER SUPPORT RIGHT__[Primary]__20c0f88f.step": "b8952f10539536faa340ef301af5a04d2dc4d2c4a4bb126e92dda15f4215014e",
+      "assets/ENCLOSURE PANEL__[Primary]__e022258d.step": "eaef81af995bb2bc1ec5a22510256b647ce6be29efa880f503f04b3a4ecf230c",
+      "assets/MCMASTER_1950A67_Unthreaded-Hole Pull Handle__[Primary]__f36d1af7.step": "38507216e963ea6a7f76407207917f9b540bbbf1017fa7781edfd4ec30f452bb",
+      "assets/ENCLOSURE TOP PANEL__[Primary]__389173d2.step": "2b1cdb9fbbc7e7ef6c5cc4526aa7ac6f552d4961ae085756788dd0316a947dc9",
+      "assets/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp__[Primary]__976424b5.step": "161dd8ec37c3d7566f78d6a7ae139aa0e3d7d4eddecc6900b8ec5cd6739912aa",
+      "assets/TOGGLE CLAMP MOUNT__[Primary]__4eb76845.step": "f8171c9d76b250758a47873afa0d5b80f8e74e4b7e6860925c4666a69cce77b6"
+    },
+    "render_receipt": {
+      "path": "build/enclosure-snapshot-991056/renders8/render-receipt.json",
+      "bytes": 432161,
+      "sha256": "f6222e48596a0a2ef9015e3286a8903eb0faf2408dd3c55ba4801ab517796fae"
+    },
+    "meshes_receipt": {
+      "path": "build/enclosure-snapshot-991056/meshes/meshes.json",
+      "bytes": 293356,
+      "sha256": "91c004502b7a089aac81b6d07810e5eae461b3174bfaaca41c468ba3a5a6f414"
+    },
+    "pdf": {
+      "ran": true,
+      "command": "/gnu/store/2h1f6iz6yhmaiy7xsqikp5rrw7znpkr2-profile/bin/typst compile --root build/enclosure-snapshot-991056/manual6 build/enclosure-snapshot-991056/manual6/manual.typ build/enclosure-snapshot-991056/manual6/free-standing-enclosure-991056-inventory.pdf",
+      "returncode": 0,
+      "stderr": "",
+      "typst_version": "typst 0.15.0 (unknown commit)",
+      "pdf": {
+        "path": "free-standing-enclosure-991056-inventory.pdf",
+        "bytes": 23460790,
+        "sha256": "1c033c86e388aa579c087d5db4e11bba0082258869ea3d556ef93c78061bc3e6"
+      }
+    },
+    "groups": [
+      "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+      "PANEL ASSEMBLY:1",
+      "TOGGLE CLAMP ASSEMBLY:1",
+      "TANK SUPPORT FRAME:1",
+      "CAMERA FRAME:1",
+      "FREE STANDING FRAME:1"
+    ],
+    "joints": [
+      "caster_to_plate",
+      "caster_plate_to_frame",
+      "handle_to_panel",
+      "clamp_to_mount",
+      "clamp_mount_to_frame",
+      "lower_support_to_frame",
+      "main_frame_joints",
+      "camera_frame_joints",
+      "support_frame_corners",
+      "support_brackets",
+      "vibration_mounts",
+      "camera_plates",
+      "spring_roller",
+      "camera_attachment",
+      "top_panel",
+      "panel_retention"
+    ],
+    "supplement_rows": 20
+  },
+  "check_report": {
+    "all_passed": true,
+    "pdf_pages": 36,
+    "generated_at_utc": "2026-10-22T18:37:43Z"
+  },
+  "pdf_sha256": {
+    "free-standing-enclosure-991056-inventory.pdf": "1c033c86e388aa579c087d5db4e11bba0082258869ea3d556ef93c78061bc3e6",
+    "free-standing-enclosure-991056-inventory-appendix.pdf": "25a82f8a4f349c847d345976ff3beeadea5a6a8a57b00a07682afd852fbdb12a"
+  },
+  "image_count": 67,
+  "qualification": "draft documentation generated from the committed sources; not a physically validated procedure"
+}

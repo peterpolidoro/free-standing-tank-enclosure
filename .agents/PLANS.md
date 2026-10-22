@@ -56,6 +56,12 @@ Tools remain clean at `0705b40`. The previous "dirty on 683c0ba" notes are histo
 - [x] FIRST LIVE VAULT ADD (2026-10-22T18:23:24Z): `step/AW2725Q-nominal-envelope.step` is Vault master
   994251 / version 994252 in the project folder (953863); verified by Windows, re-checked
   on Linux, recorded in `vault-lock.json` `publications` by `import-publish-result`.
+- [x] Peter (2026-10-22, later): phase 1 = enclosure without tanks/backlight; monitor, bowl and
+  tank-frame design deferred. Linux added `assembly/build-scope.json`, `phase_parts_list.py`
+  (`procurement/phase-1-parts.csv`: 110 phase-1, 42 conditional, 3 deferred occurrences) and
+  `draft_instructions.py` -> `instructions.json` (draft modular order, validated by the loader).
+  Documentation asked for build-scope support and step renders; Peter corrects the order from
+  the physical build. Windows told to stop monitor placement beyond work in progress.
 - [ ] Windows: placement pilot of two monitor envelopes on the lower platform in a disposable
   copy, exported for Linux review; then an adapter design document before any native
   check-in. The real monitor support, acrylic and bowl design remain undesigned.

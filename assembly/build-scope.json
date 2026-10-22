@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "scene": "references/enclosure/scene.json",
+  "phase": "phase-1",
+  "title": "Enclosure without tanks and backlight",
+  "decided_by": "Peter, 2026-10-22",
+  "review_state": "draft",
+  "deferred_occurrence_ids": [
+    "SHULZE 2W.353 TANK:1",
+    "TANK SUPPORT FRAME:1/SHULZE 2W.353 TANK:1",
+    "TANK SUPPORT FRAME:2/SHULZE 2W.353 TANK:1"
+  ],
+  "conditional_groups": [
+    {
+      "id": "TANK SUPPORT FRAME:1",
+      "rule": "install in phase 1 only if it cannot be installed after the frame and panels are assembled; otherwise defer with the tanks",
+      "decided": null
+    },
+    {
+      "id": "TANK SUPPORT FRAME:2",
+      "rule": "install in phase 1 only if it cannot be installed after the frame and panels are assembled; otherwise defer with the tanks",
+      "decided": null
+    }
+  ],
+  "backlight": "no modeled part is identified as the backlight or light box; nothing further is excluded until Peter names the occurrences",
+  "deferred_design": ["monitor supports and acrylic", "bowls and bowl frame", "tank frame changes"],
+  "note": "Phase 1 assembles the frame, casters, panels with handles, toggle clamps, lower supports, camera frame and top panel. Deferred items stay in the CAD scene and in the CAD counts; this file only scopes the build and its documentation."
+}

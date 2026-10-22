@@ -12,3 +12,7 @@
 
 # Raw exporter metadata is covered by byte-level receipts; keep CRLF/BOM intact.
 /references/enclosure/*.json -text whitespace=cr-at-eol
+
+# Generated documentation packages are tracked as binaries.
+*.png -text -diff
+*.pdf -text -diff

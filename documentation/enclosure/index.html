@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Standing Enclosure (Vault file-version 991056) native snapshot: parts inventory</title>
+<style>
+:root { --ink: #111; --muted: #555; --line: #999; --accent: #d9480f; --card: #fff; --bg: #f4f4f5; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--bg); }
+main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 64px; }
+h1 { font-size: 2rem; margin: 0 0 .25rem; }
+h2 { font-size: 1.4rem; margin: 2rem 0 .75rem; border-bottom: 2px solid var(--ink); padding-bottom: .25rem; }
+.status { border: 2px solid var(--ink); background: var(--card); padding: 10px 14px; margin: 16px 0; }
+.status p { margin: .25rem 0; }
+.status .state { font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.hint { color: var(--muted); font-size: .9rem; }
+.label { display: inline-block; min-width: 2rem; height: 2rem; line-height: 2rem; text-align: center; border-radius: 50%; border: 2px solid var(--ink); font-weight: 700; margin-right: .5rem; }
+.label.sup { border-radius: 4px; border-style: dashed; font-size: .85rem; padding: 0 .3rem; }
+.kicker { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+table.supplement { width: 100%; border-collapse: collapse; background: var(--card); font-size: .9rem; }
+table.supplement th, table.supplement td { border: 1px solid var(--line); padding: 6px 8px; vertical-align: top; text-align: left; }
+table.supplement .count-box { width: 3.6rem; height: 2rem; }
+.hardware { grid-column: 1 / -1; border-top: 1px dashed var(--line); padding-top: 8px; }
+.hardware h4 { margin: 0 0 6px; font-size: .9rem; color: var(--accent); }
+.hardware ul { margin: 0; padding-left: 1.2rem; }
+section.joint { background: var(--card); border: 2px solid var(--ink); margin: 24px 0; padding: 16px; display: grid; grid-template-columns: 1fr 300px; gap: 16px; }
+section.joint header { grid-column: 1 / -1; display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+section.joint .note { grid-column: 1 / -1; }
+.count-box { display: inline-block; width: 4.5rem; height: 2.4rem; border: 2px solid var(--ink); vertical-align: middle; background: #fff; }
+input.count { width: 4.5rem; height: 2.4rem; font-size: 1.2rem; text-align: center; }
+.parts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+article.part { background: var(--card); border: 1.5px solid var(--ink); padding: 10px; display: grid; grid-template-rows: auto auto 1fr auto; gap: 6px; }
+article.part .pic { display: grid; grid-template-columns: 1fr; gap: 6px; background: #fff; align-items: center; }
+article.part .pic.long { grid-template-columns: 2fr 1fr; }
+article.part img { width: 100%; height: auto; max-height: 230px; object-fit: contain; display: block; background: #fff; }
+article.part h3 { margin: 0; font-size: 1rem; line-height: 1.25; display: flex; align-items: center; gap: .4rem; }
+article.part .size { color: var(--muted); font-size: .9rem; }
+article.part .review { color: var(--accent); }
+article.part .qty-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; border-top: 1px solid var(--line); padding-top: 6px; }
+.cadqty { font-size: 1.9rem; font-weight: 800; line-height: 1; }
+.cadqty small { display: block; font-size: .65rem; font-weight: 500; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+figure { margin: 0; background: var(--card); padding: 8px; border: 1px solid var(--line); }
+figure img { width: 100%; height: auto; display: block; background: #fff; }
+figcaption { color: var(--muted); font-size: .9rem; padding-top: 4px; }
+.overview-wrap { position: relative; }
+.overview-wrap svg.callouts { position: absolute; left: 8px; top: 8px; width: calc(100% - 16px); height: auto; }
+.callouts a rect { fill: transparent; stroke: transparent; stroke-width: 3; }
+.callouts a:hover rect, .callouts a:focus rect { stroke: var(--accent); fill: rgba(217,72,15,.08); }
+.callouts text { font: 700 44px sans-serif; fill: #fff; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.callouts circle { fill: var(--accent); stroke: #fff; stroke-width: 3; }
+section.group { background: var(--card); border: 2px solid var(--ink); margin: 24px 0; padding: 16px; display: grid; grid-template-columns: 1fr 300px; gap: 16px; }
+section.group header { grid-column: 1 / -1; display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+section.group .note { grid-column: 1 / -1; }
+table.group-parts { width: 100%; border-collapse: collapse; }
+table.group-parts td { border-bottom: 1px solid var(--line); padding: 6px 4px; vertical-align: middle; }
+table.group-parts img { width: 64px; height: 64px; object-fit: contain; background: #fff; border: 1px solid var(--line); }
+table.group-parts .qty { font-size: 1.5rem; font-weight: 800; text-align: center; }
+section.step { background: var(--card); border: 2px solid var(--ink); margin: 24px 0; padding: 16px; display: grid; grid-template-columns: 220px 1fr; grid-template-rows: auto auto; gap: 16px; }
+section.step header { grid-column: 1 / -1; display: flex; align-items: baseline; gap: 16px; }
+.step-number { font-size: 3rem; font-weight: 800; line-height: 1; border: 3px solid var(--ink); padding: 4px 14px; }
+.step-title { font-size: 1.1rem; color: var(--muted); }
+.needed { border: 1px dashed var(--line); padding: 8px; }
+.needed h3 { margin: 0 0 8px; font-size: .9rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.needed .item { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.needed img { width: 90px; height: 90px; object-fit: contain; background: #fff; border: 1px solid var(--line); }
+.needed .qty { font-size: 1.8rem; font-weight: 800; }
+.step-images { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.step-images.with-result { grid-template-columns: 2.2fr 1fr; align-items: start; }
+.caption { grid-column: 1 / -1; font-size: 1.05rem; }
+dl.receipt { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; font-size: .85rem; }
+dl.receipt dt { font-weight: 600; } dl.receipt dd { margin: 0; overflow-wrap: anywhere; font-family: ui-monospace, monospace; }
+table.appendix { width: 100%; border-collapse: collapse; font-size: .78rem; }
+table.appendix th, table.appendix td { border: 1px solid var(--line); padding: 4px 6px; vertical-align: top; text-align: left; overflow-wrap: anywhere; }
+table.appendix code { font-size: .75rem; }
+@media (max-width: 720px) { section.step, section.group, section.joint { grid-template-columns: 1fr; } .step-images.with-result { grid-template-columns: 1fr; } }
+@media print {
+  @page { size: A4; margin: 12mm; }
+  body { background: #fff; font-size: 11pt; }
+  main { max-width: none; padding: 0; }
+  .web-only { display: none !important; }
+  .parts-grid { grid-template-columns: repeat(3, 1fr); }
+  article.part, figure, table.group-parts tr, table.appendix tr, table.supplement tr { break-inside: avoid; page-break-inside: avoid; }
+  section.step, section.group, section.joint, h2.appendix, h2.supplement { break-before: page; page-break-before: always; border-width: 1.5pt; }
+  h2.parts { break-before: page; page-break-before: always; }
+  a { color: inherit; text-decoration: none; }
+}
+@media screen { .print-only { display: none !important; } }
+</style>
+</head>
+<body>
+<main>
+<h1>Free Standing Enclosure (Vault file-version 991056) native snapshot: parts inventory</h1>
+<p class="hint">Scene <code>free-standing-enclosure-991056</code>: Free Standing Enclosure (Vault file-version 991056) native snapshot. Document <code>free-standing-enclosure-991056-inventory</code>. Generated 2026-10-22T18:37:42Z.</p>
+<div class="status" role="note">
+<p class="state">draft</p>
+<p>Parts inventory and overview only: no assembly sequence has been authored or reviewed for this scene.</p>
+<p>Geometry and hierarchy come from the CAD export named in the build record. Quantities are CAD instance counts, not purchase quantities, kits, stock or an approved bill of materials.</p>
+<p>Project note: The tank(s) and the lower light box are to be replaced in the modified build by two Alienware AW2725Q monitors under an acrylic panel and bowl frames (Peter, 2026-10-22; intent, not a designer confirmation; the light-box occurrences are not yet identified). CAD counts are unchanged.</p>
+<p>Subassembly pages and joint close-ups are inspection views of parts at their CAD positions; they are not assembly steps and imply no sequence, fasteners or tool access.</p>
+<p>Supplementary items (20 rows, 16 for the existing design, 4 for new design in the appendix only) are hardware not modelled in CAD: listed separately for review, never added to CAD quantities, unknown quantities left unknown; not an approved bill of materials.</p>
+<p>CAD ambiguity: 1 pair(s) of occurrences of the same part share one position (SHULZE 2W.353 TANK). All source instances are kept and counted; review the intended configuration before treating the count as stock.</p>
+<p>Stock is unknown until counted and recorded (on_hand_each with counted_by and counted_date). The counted box is for a paper count only.</p>
+</div>
+<h2 class="parts" id="parts">Parts</h2>
+<p class="hint">CAD qty is the number of instances of the part in the CAD model (reference-only geometry excluded). It is not a purchase quantity: purchased kits, pack sizes, spares and stock are not reconciled. Write the quantity you count in the box.</p>
+<p class="hint">Inventory status: draft: required = installed occurrences in the CAD scene (reference-only geometry excluded); not a purchase list, kits not reconciled; physical stock not counted; stock record from assembly/procurement/modeled-parts.csv (unknown = null, never 0).</p>
+<div class="parts-grid">
+<article class="part" id="part-data-common-mcmaster-mcmaster-5537t293-t-slotted-1c2935ff" data-part="DATA\COMMON\McMaster\MCMASTER 5537T293_T-Slotted Framing.ipt|[Primary]" data-required="2" data-label="1">
+<h3><span class="label">1</span><span>MCMASTER 5537T293 T-Slotted Framing</span></h3>
+<div class="pic"><img src="images/part-data-common-mcmaster-mcmaster-5537t293-t-slotted-1c2935ff.png" alt="MCMASTER 5537T293 T-Slotted Framing"></div>
+<div class="size">overall 80 × 32 × 28.4 mm<br>Zinc · 9 bodies<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">2<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for MCMASTER 5537T293 T-Slotted Framing (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-common-mcmaster-mcmaster-5537t429-t-slotted-72ff3dc4" data-part="DATA\COMMON\McMaster\MCMASTER 5537T429_T-Slotted Framing.ipt|[Primary]" data-required="2" data-label="2">
+<h3><span class="label">2</span><span>MCMASTER 5537T429 T-Slotted Framing</span></h3>
+<div class="pic"><img src="images/part-data-common-mcmaster-mcmaster-5537t429-t-slotted-72ff3dc4.png" alt="MCMASTER 5537T429 T-Slotted Framing"></div>
+<div class="size">overall 103 × 99.2 × 32 mm<br>Zinc · 11 bodies<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">2<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for MCMASTER 5537T429 T-Slotted Framing (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-64014b81" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt|[Primary]" data-required="2" data-label="3">
+<h3><span class="label">3</span><span>SLLB Enclosure 15in 47065T808 T-Slotted Framing</span></h3>
+<div class="pic long"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-64014b81.png" alt="SLLB Enclosure 15in 47065T808 T-Slotted Framing, long view"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-64014b81-end.png" alt="SLLB Enclosure 15in 47065T808 T-Slotted Framing, end view"></div>
+<div class="size">overall 381 × 38.1 × 38.1 mm<br>ALUMINUM, 6061-T651<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">2<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for SLLB Enclosure 15in 47065T808 T-Slotted Framing (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-567ca529" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 22in 47065T808_T-Slotted Framing.ipt|[Primary]" data-required="2" data-label="4">
+<h3><span class="label">4</span><span>SLLB Enclosure 22in 47065T808 T-Slotted Framing</span></h3>
+<div class="pic long"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-567ca529.png" alt="SLLB Enclosure 22in 47065T808 T-Slotted Framing, long view"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-567ca529-end.png" alt="SLLB Enclosure 22in 47065T808 T-Slotted Framing, end view"></div>
+<div class="size">overall 559 × 38.1 × 38.1 mm<br>ALUMINUM, 6061-T651<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">2<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for SLLB Enclosure 22in 47065T808 T-Slotted Framing (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-f37ea6b9" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 41in 47065T808_T-Slotted Framing.ipt|[Primary]" data-required="2" data-label="5">
+<h3><span class="label">5</span><span>SLLB Enclosure 41in 47065T808 T-Slotted Framing</span></h3>
+<div class="pic long"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-f37ea6b9.png" alt="SLLB Enclosure 41in 47065T808 T-Slotted Framing, long view"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-f37ea6b9-end.png" alt="SLLB Enclosure 41in 47065T808 T-Slotted Framing, end view"></div>
+<div class="size">overall 1032 × 38.1 × 38.1 mm<br>ALUMINUM, 6061-T651<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">2<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for SLLB Enclosure 41in 47065T808 T-Slotted Framing (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-common-mcmaster-mcmaster-3136n149-t-slotted-77d5b1ed" data-part="DATA\COMMON\McMaster\MCMASTER 3136N149_T-Slotted Framing.ipt|[Primary]" data-required="2" data-label="6">
+<h3><span class="label">6</span><span>MCMASTER 3136N149 T-Slotted Framing</span></h3>
+<div class="pic"><img src="images/part-data-common-mcmaster-mcmaster-3136n149-t-slotted-77d5b1ed.png" alt="MCMASTER 3136N149 T-Slotted Framing"></div>
+<div class="size">overall 152 × 152 × 6.3 mm<br>ALUMINUM, 6061-T651<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">2<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for MCMASTER 3136N149 T-Slotted Framing (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-common-mcmaster-mcmaster-47065t27-t-slotted-63467688" data-part="DATA\COMMON\McMaster\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]" data-required="4" data-label="7">
+<h3><span class="label">7</span><span>MCMASTER 47065T27 T-Slotted Framing</span></h3>
+<div class="pic long"><img src="images/part-data-common-mcmaster-mcmaster-47065t27-t-slotted-63467688.png" alt="MCMASTER 47065T27 T-Slotted Framing, long view"><img src="images/part-data-common-mcmaster-mcmaster-47065t27-t-slotted-63467688-end.png" alt="MCMASTER 47065T27 T-Slotted Framing, end view"></div>
+<div class="size">overall 305 × 38.1 × 38.1 mm<br>ALUMINUM, 6061-T651<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">4<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for MCMASTER 47065T27 T-Slotted Framing (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-common-mcmaster-mcmaster-9293k121-constant-a4593b94" data-part="DATA\COMMON\McMaster\MCMASTER 9293K121_Constant-Force Spring.ipt|[Primary]" data-required="2" data-label="8">
+<h3><span class="label">8</span><span>MCMASTER 9293K121 Constant-Force Spring</span></h3>
+<div class="pic"><img src="images/part-data-common-mcmaster-mcmaster-9293k121-constant-a4593b94.png" alt="MCMASTER 9293K121 Constant-Force Spring"></div>
+<div class="size">overall 59.9 × 52.6 × 31.8 mm<br>Generic<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">2<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for MCMASTER 9293K121 Constant-Force Spring (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-common-mcmaster-mcmaster-47065t845-silver-c-e1e40dd2" data-part="DATA\COMMON\McMaster\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]" data-required="4" data-label="9">
+<h3><span class="label">9</span><span>MCMASTER 47065T845 Silver Corner Bracket</span></h3>
+<div class="pic"><img src="images/part-data-common-mcmaster-mcmaster-47065t845-silver-c-e1e40dd2.png" alt="MCMASTER 47065T845 Silver Corner Bracket"></div>
+<div class="size">overall 38.1 × 38.1 × 33.3 mm<br>ALUMINUM, 6061-T651<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">4<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for MCMASTER 47065T845 Silver Corner Bracket (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-common-mcmaster-mcmaster-5972k164-ball-bear-66eca704" data-part="DATA\COMMON\McMaster\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]" data-required="4" data-label="10">
+<h3><span class="label">10</span><span>MCMASTER 5972K164 Ball Bearing</span></h3>
+<div class="pic"><img src="images/part-data-common-mcmaster-mcmaster-5972k164-ball-bear-66eca704.png" alt="MCMASTER 5972K164 Ball Bearing"></div>
+<div class="size">overall 22 × 22 × 6 mm<br>P/N MCMASTER 5972K164_Ball Bearing · Generic · 14 bodies<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">4<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for MCMASTER 5972K164 Ball Bearing (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-common-mcmaster-mcmaster-90265a164-18-8-sta-591781bf" data-part="DATA\COMMON\McMaster\MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt|[Primary]" data-required="2" data-label="11">
+<h3><span class="label">11</span><span>MCMASTER 90265A164 18-8 Stainless Steel Shoulder Screw</span></h3>
+<div class="pic"><img src="images/part-data-common-mcmaster-mcmaster-90265a164-18-8-sta-591781bf.png" alt="MCMASTER 90265A164 18-8 Stainless Steel Shoulder Screw"></div>
+<div class="size">overall 45.3 × 16 × 16 mm<br>P/N MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw · Generic<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">2<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for MCMASTER 90265A164 18-8 Stainless Steel Shoulder Screw (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-25d6cebc" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SPRING ROLLER.ipt|[Primary]" data-required="2" data-label="12">
+<h3><span class="label">12</span><span>SPRING ROLLER</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-25d6cebc.png" alt="SPRING ROLLER"></div>
+<div class="size">overall 48 × 48 × 34.3 mm (1.89 × 1.89 × 1.35 in)<br>ABS, BLACK<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">2<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for SPRING ROLLER (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-6a8f878a" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\ROLLER MOUNT PLATE.ipt|[Primary]" data-required="2" data-label="13">
+<h3><span class="label">13</span><span>ROLLER MOUNT PLATE</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-6a8f878a.png" alt="ROLLER MOUNT PLATE"></div>
+<div class="size">overall 108 × 38.1 × 6.3 mm (4.25 × 1.5 × 0.25 in)<br>ALUMINUM, 6061-T651<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">2<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for ROLLER MOUNT PLATE (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-eb93feb5" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SPRING MOUNT PLATE.ipt|[Primary]" data-required="2" data-label="14">
+<h3><span class="label">14</span><span>SPRING MOUNT PLATE</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-eb93feb5.png" alt="SPRING MOUNT PLATE"></div>
+<div class="size">overall 60 × 38.1 × 6.3 mm (2.362 × 1.5 × 0.25 in)<br>P/N SPRING MOUNT PLATE · ALUMINUM, 6061-T651<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">2<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for SPRING MOUNT PLATE (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-94fc4c9b" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\CAMERA MOUNT PLATE.ipt|[Primary]" data-required="1" data-label="15">
+<h3><span class="label">15</span><span>CAMERA MOUNT PLATE</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-94fc4c9b.png" alt="CAMERA MOUNT PLATE"></div>
+<div class="size">overall 102 × 88.9 × 6.3 mm (4 × 3.5 × 0.25 in)<br>P/N CAMERA MOUNT PLATE · ALUMINUM, 6061-T651<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">1<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for CAMERA MOUNT PLATE (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-b670923e" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt|[Primary]" data-required="1" data-label="16">
+<h3><span class="label">16</span><span>CAMERA MOUNT PLATE - TELEDYNE KINETIX</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-b670923e.png" alt="CAMERA MOUNT PLATE - TELEDYNE KINETIX"></div>
+<div class="size">overall 102 × 76.2 × 6.3 mm (4 × 3 × 0.25 in)<br>ALUMINUM, 6061-T651<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">1<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for CAMERA MOUNT PLATE - TELEDYNE KINETIX (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-72135c80" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]" data-required="8" data-label="17">
+<h3><span class="label">17</span><span>TSLOT EXTRUSION 1X40.5 copy</span></h3>
+<div class="pic long"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-72135c80.png" alt="TSLOT EXTRUSION 1X40.5 copy, long view"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-72135c80-end.png" alt="TSLOT EXTRUSION 1X40.5 copy, end view"></div>
+<div class="size">overall 1029 × 25.4 × 25.4 mm (40.5 × 1 × 1 in)<br>Generic<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">8<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for TSLOT EXTRUSION 1X40.5 copy (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-6dff85d6" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\T SLOT CORNER 47065T242.ipt|[Primary]" data-required="8" data-label="18">
+<h3><span class="label">18</span><span>T SLOT CORNER 47065T242</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-6dff85d6.png" alt="T SLOT CORNER 47065T242"></div>
+<div class="size">overall 47.4 × 47.4 × 25.2 mm (1.868 × 1.868 × 0.992 in)<br>P/N 47065T242_T-Slotted Framing · Generic · 5 bodies<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">8<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for T SLOT CORNER 47065T242 (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc" data-part="DATA\COMMON\McMaster\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]" data-required="8" data-label="19">
+<h3><span class="label">19</span><span>MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount</span></h3>
+<div class="pic"><img src="images/part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc.png" alt="MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount"></div>
+<div class="size">overall 25.7 × 25.4 × 25.4 mm (1.013 × 1 × 1 in)<br>P/N 9378K24_Natural Rubber Vibration-Damping Sandwich Mount · Generic · 3 bodies<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">8<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649" data-part="DATA\COMMON\McMaster\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]" data-required="8" data-label="20">
+<h3><span class="label">20</span><span>MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer</span></h3>
+<div class="pic"><img src="images/part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649.png" alt="MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer"></div>
+<div class="size">overall 25.4 × 25.4 × 1.3 mm (1 × 1 × 0.05 in)<br>P/N 90313A107_18-8 Stainless Steel Oversized Washer · STAINLESS STEEL, 18-8<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">8<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-a3951cbf" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TANK SUPPORT PLATFORM.ipt|[Primary]" data-required="2" data-label="21">
+<h3><span class="label">21</span><span>TANK SUPPORT PLATFORM</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-a3951cbf.png" alt="TANK SUPPORT PLATFORM"></div>
+<div class="size">overall 1080 × 1080 × 12.7 mm (42.5 × 42.5 × 0.5 in)<br>P/N TANK SUPPORT PLATFORM · ACRYLIC, CLEAR<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">2<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for TANK SUPPORT PLATFORM (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\2W.353\SHULZE 2W.353 TANK.ipt|[Primary]" data-required="3" data-label="22">
+<h3><span class="label">22</span><span>SHULZE 2W.353 TANK</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c.png" alt="SHULZE 2W.353 TANK"></div>
+<div class="size">overall 991 × 991 × 82.6 mm (39 × 39 × 3.25 in)<br>Acrylic, Clear<br>on hand unknown<br>intended configuration confirmed: no<br><strong class="review">⚠ 1 coincident instance pair(s) in CAD: review before counting as stock</strong></div>
+<div class="qty-row"><div class="cadqty">3<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for SHULZE 2W.353 TANK (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TANK SUPPORT BRACKET.ipt|[Primary]" data-required="8" data-label="23">
+<h3><span class="label">23</span><span>TANK SUPPORT BRACKET</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png" alt="TANK SUPPORT BRACKET"></div>
+<div class="size">overall 114 × 63.5 × 6.3 mm (4.5 × 2.5 × 0.25 in)<br>ALUMINUM, 6061-T651<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">8<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for TANK SUPPORT BRACKET (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]" data-required="11" data-label="24">
+<h3><span class="label">24</span><span>SLLB Enclosure 44in 47065T808 T-Slotted Framing</span></h3>
+<div class="pic long"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431.png" alt="SLLB Enclosure 44in 47065T808 T-Slotted Framing, long view"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431-end.png" alt="SLLB Enclosure 44in 47065T808 T-Slotted Framing, end view"></div>
+<div class="size">overall 1118 × 38.1 × 38.1 mm<br>P/N SLLB Enclosure 44in 47065T808_T-Slotted Framing · Generic<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">11<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for SLLB Enclosure 44in 47065T808 T-Slotted Framing (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74" data-part="DATA\COMMON\McMaster\MCMASTER 47065T245.ipt|[Primary]" data-required="8" data-label="25">
+<h3><span class="label">25</span><span>MCMASTER 47065T245</span></h3>
+<div class="pic"><img src="images/part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png" alt="MCMASTER 47065T245"></div>
+<div class="size">overall 41.1 × 41.1 × 41.1 mm<br>P/N MCMASTER 47065T245 · Generic · 4 bodies<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">8<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for MCMASTER 47065T245 (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt|[Primary]" data-required="4" data-label="26">
+<h3><span class="label">26</span><span>SLLB Enclosure 96in 47065T808 T-Slotted Framing</span></h3>
+<div class="pic long"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b.png" alt="SLLB Enclosure 96in 47065T808 T-Slotted Framing, long view"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b-end.png" alt="SLLB Enclosure 96in 47065T808 T-Slotted Framing, end view"></div>
+<div class="size">overall 2438 × 38.1 × 38.1 mm<br>Generic<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">4<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for SLLB Enclosure 96in 47065T808 T-Slotted Framing (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a" data-part="DATA\PROJECTS\_PROJECTS BY LAB\JAYARAMAN (LAB)\FLOW TUNNEL\HOLKIE LEVELING CASTER.ipt|[Primary]" data-required="4" data-label="27">
+<h3><span class="label">27</span><span>HOLKIE LEVELING CASTER</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png" alt="HOLKIE LEVELING CASTER"></div>
+<div class="size">overall 104 × 86.2 × 73.5 mm (4.094 × 3.395 × 2.893 in)<br>P/N HOLKIE LEVELING CASTER · Generic · 10 bodies<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">4<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for HOLKIE LEVELING CASTER (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4" data-part="DATA\PROJECTS\_PROJECTS BY LAB\JAYARAMAN (LAB)\FLOW TUNNEL\CASTER MOUNTING PLATE.ipt|[Primary]" data-required="4" data-label="28">
+<h3><span class="label">28</span><span>CASTER MOUNTING PLATE</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png" alt="CASTER MOUNTING PLATE"></div>
+<div class="size">overall 100 × 100 × 6.3 mm (3.953 × 3.953 × 0.25 in)<br>ALUMINUM, 6061-T651<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">4<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for CASTER MOUNTING PLATE (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt|[Primary]" data-required="2" data-label="29">
+<h3><span class="label">29</span><span>SLLB Enclosure 2.5in 47065T808 T-Slotted Framing</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0.png" alt="SLLB Enclosure 2.5in 47065T808 T-Slotted Framing"></div>
+<div class="size">overall 63.5 × 38.1 × 38.1 mm<br>Generic<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">2<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for SLLB Enclosure 2.5in 47065T808 T-Slotted Framing (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0" data-part="DATA\COMMON\McMaster\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]" data-required="8" data-label="30">
+<h3><span class="label">30</span><span>47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</span></h3>
+<div class="pic"><img src="images/part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0.png" alt="47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION"></div>
+<div class="size">overall 114 × 114 × 6.3 mm<br>Aluminum<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">8<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\PANEL LOWER SUPPORT LEFT.ipt|[Primary]" data-required="4" data-label="31">
+<h3><span class="label">31</span><span>PANEL LOWER SUPPORT LEFT</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png" alt="PANEL LOWER SUPPORT LEFT"></div>
+<div class="size">overall 63.5 × 52.7 × 51.1 mm (2.5 × 2.075 × 2.01 in)<br>Generic<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">4<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for PANEL LOWER SUPPORT LEFT (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\PANEL LOWER SUPPORT RIGHT.ipt|[Primary]" data-required="4" data-label="32">
+<h3><span class="label">32</span><span>PANEL LOWER SUPPORT RIGHT</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f.png" alt="PANEL LOWER SUPPORT RIGHT"></div>
+<div class="size">overall 63.5 × 52.7 × 51.1 mm (2.5 × 2.075 × 2.01 in)<br>ABS, BLACK<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">4<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for PANEL LOWER SUPPORT RIGHT (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\ENCLOSURE PANEL.ipt|[Primary]" data-required="4" data-label="33">
+<h3><span class="label">33</span><span>ENCLOSURE PANEL</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d.png" alt="ENCLOSURE PANEL"></div>
+<div class="size">overall 2438 × 1143 × 3.2 mm (96 × 45 × 0.125 in)<br>ALUMINUM COMPOSITE MATERIAL<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">4<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for ENCLOSURE PANEL (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7" data-part="DATA\COMMON\McMaster\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]" data-required="8" data-label="34">
+<h3><span class="label">34</span><span>MCMASTER 1950A67 Unthreaded-Hole Pull Handle</span></h3>
+<div class="pic"><img src="images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png" alt="MCMASTER 1950A67 Unthreaded-Hole Pull Handle"></div>
+<div class="size">overall 170 × 51.1 × 31.2 mm (6.71 × 2.014 × 1.23 in)<br>P/N MCMASTER_1950A67_Unthreaded-Hole Pull Handle · Generic<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">8<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for MCMASTER 1950A67 Unthreaded-Hole Pull Handle (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-389173d2" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\ENCLOSURE TOP PANEL.ipt|[Primary]" data-required="1" data-label="35">
+<h3><span class="label">35</span><span>ENCLOSURE TOP PANEL</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-389173d2.png" alt="ENCLOSURE TOP PANEL"></div>
+<div class="size">overall 1194 × 1194 × 3.2 mm (47 × 47 × 0.125 in)<br>P/N ENCLOSURE TOP PANEL · ALUMINUM COMPOSITE MATERIAL<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">1<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for ENCLOSURE TOP PANEL (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5" data-part="DATA\COMMON\McMaster\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]" data-required="8" data-label="36">
+<h3><span class="label">36</span><span>MCMASTER 5004A11 Compact Hold-Down Toggle Clamp</span></h3>
+<div class="pic"><img src="images/part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png" alt="MCMASTER 5004A11 Compact Hold-Down Toggle Clamp"></div>
+<div class="size">overall 56.5 × 35.7 × 28.4 mm (2.224 × 1.407 × 1.12 in)<br>P/N 5004A11_Compact Hold-Down Toggle Clamp · Generic · 20 bodies<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">8<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for MCMASTER 5004A11 Compact Hold-Down Toggle Clamp (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+<article class="part" id="part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845" data-part="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TOGGLE CLAMP MOUNT.ipt|[Primary]" data-required="4" data-label="37">
+<h3><span class="label">37</span><span>TOGGLE CLAMP MOUNT</span></h3>
+<div class="pic"><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png" alt="TOGGLE CLAMP MOUNT"></div>
+<div class="size">overall 76.2 × 30.5 × 30.5 mm (3 × 1.2 × 1.2 in)<br>ABS, BLACK<br>on hand unknown<br>intended configuration confirmed: no</div>
+<div class="qty-row"><div class="cadqty">4<small>CAD qty, each</small></div><div><input class="count web-only" type="number" min="0" value="" aria-label="paper count for TOGGLE CLAMP MOUNT (not stored)"><span class="count-box print-only"></span><small class="hint" style="display:block;text-align:center">counted</small></div></div>
+</article>
+</div>
+<p class="hint">The counted box is for a paper count only; recorded stock is on_hand_each in the project&#x27;s manifests.</p>
+<h2 class="supplement" id="supplement">Supplementary items (not modelled in CAD)</h2>
+<p class="hint">Supplementary items are hardware, consumables or purchased items that are not modelled in CAD. They are listed for review and are never added to CAD quantities; an unknown quantity stays unknown. This is not an approved bill of materials. Status: draft: rows converted from the project procurement sheet; candidate item families, not an approved BOM; quantities unknown unless stated; never added to CAD counts.</p>
+<table class="supplement"><thead><tr><th>#</th><th>Item</th><th>Kind, status</th><th>Required</th><th>Stock</th><th>Included with</th><th>Config. confirmed</th><th>counted</th></tr></thead><tbody>
+<tr id="sup-sup-001" data-sitem="SUP-001" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S1</span></td><td><strong>Caster-to-mounting-plate fastening</strong><br><code>SUP-001</code> · joint <code>caster_to_plate</code><br><span class="hint">attaches to: CASTER ASSEMBLY:1, CASTER ASSEMBLY:2, CASTER ASSEMBLY:3, CASTER ASSEMBLY:4</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 4 caster assemblies; attachment points per caster unverified</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-002" data-sitem="SUP-002" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S2</span></td><td><strong>Caster-plate-to-frame fastening</strong><br><code>SUP-002</code> · joint <code>caster_plate_to_frame</code><br><span class="hint">attaches to: FREE STANDING FRAME:1, CASTER ASSEMBLY:1, CASTER ASSEMBLY:2, CASTER ASSEMBLY:3, CASTER ASSEMBLY:4</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 4 plates; frame attachments per plate unverified</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-003" data-sitem="SUP-003" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S3</span></td><td><strong>Pull-handle-to-panel fastening</strong><br><code>SUP-003</code> · joint <code>handle_to_panel</code><br><span class="hint">attaches to: PANEL ASSEMBLY:1, PANEL ASSEMBLY:2, PANEL ASSEMBLY:3, PANEL ASSEMBLY:4</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 8 handles on 4 panels; fastening points per handle unverified</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-004" data-sitem="SUP-004" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S4</span></td><td><strong>Toggle-clamp-to-mount fastening</strong><br><code>SUP-004</code> · joint <code>clamp_to_mount</code><br><span class="hint">attaches to: TOGGLE CLAMP ASSEMBLY:1, TOGGLE CLAMP ASSEMBLY:2, TOGGLE CLAMP ASSEMBLY:3, TOGGLE CLAMP ASSEMBLY:4</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 8 clamps on 4 mounts; points per clamp unverified</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-005" data-sitem="SUP-005" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S5</span></td><td><strong>Toggle-clamp-mount-to-frame fastening</strong><br><code>SUP-005</code> · joint <code>clamp_mount_to_frame</code><br><span class="hint">attaches to: TOGGLE CLAMP ASSEMBLY:1, TOGGLE CLAMP ASSEMBLY:2, TOGGLE CLAMP ASSEMBLY:3, TOGGLE CLAMP ASSEMBLY:4</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 4 mounts; points per mount unverified</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-006" data-sitem="SUP-006" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S6</span></td><td><strong>Panel-lower-support fastening</strong><br><code>SUP-006</code> · joint <code>lower_support_to_frame</code><br><span class="hint">attaches to: FREE STANDING FRAME:1</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 4 left + 4 right supports; points per support unverified</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-007" data-sitem="SUP-007" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S7</span></td><td><strong>Main-frame connector hardware and joint completeness</strong><br><code>SUP-007</code> · joint <code>main_frame_joints</code><br><span class="hint">attaches to: FREE STANDING FRAME:1</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 11 long rails + 4 columns + 2 short rails; joint count requires review</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-008" data-sitem="SUP-008" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S8</span></td><td><strong>Camera-frame connector and bracket hardware</strong><br><code>SUP-008</code> · joint <code>camera_frame_joints</code><br><span class="hint">attaches to: CAMERA FRAME:1</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 4 named 47065T845 brackets plus other connector/sliding parts</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-009" data-sitem="SUP-009" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S9</span></td><td><strong>Tank-support-frame corner hardware</strong><br><code>SUP-009</code> · joint <code>support_frame_corners</code><br><span class="hint">attaches to: TANK SUPPORT FRAME:1, TANK SUPPORT FRAME:2</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 8 modeled corner connectors across 2 support frames</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-010" data-sitem="SUP-010" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S10</span></td><td><strong>Tank-support-bracket attachment hardware</strong><br><code>SUP-010</code> · joint <code>support_brackets</code><br><span class="hint">attaches to: TANK SUPPORT FRAME:1, TANK SUPPORT FRAME:2</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 8 brackets across 2 support frames</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-011" data-sitem="SUP-011" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S11</span></td><td><strong>Vibration-mount retention hardware</strong><br><code>SUP-011</code> · joint <code>vibration_mounts</code><br><span class="hint">attaches to: TANK SUPPORT FRAME:1, TANK SUPPORT FRAME:2</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 8 mounts + 8 oversized washers modeled</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-012" data-sitem="SUP-012" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S12</span></td><td><strong>Camera, spring and roller plate attachment hardware</strong><br><code>SUP-012</code> · joint <code>camera_plates</code><br><span class="hint">attaches to: CAMERA FRAME:1</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 2 roller plates + 2 spring plates + 2 different camera plates</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-013" data-sitem="SUP-013" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S13</span></td><td><strong>Spring end and roller/bearing retention hardware</strong><br><code>SUP-013</code> · joint <code>spring_roller</code><br><span class="hint">attaches to: CAMERA FRAME:1</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 2 springs + 2 rollers + 4 bearings + 2 shoulder screws modeled</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-014" data-sitem="SUP-014" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S14</span></td><td><strong>Camera-to-mount attachment</strong><br><code>SUP-014</code> · joint <code>camera_attachment</code><br><span class="hint">attaches to: CAMERA FRAME:1</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: Camera plate variants present; actual camera selection unconfirmed</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-015" data-sitem="SUP-015" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S15</span></td><td><strong>Top-panel retention and edge/support interface</strong><br><code>SUP-015</code> · joint <code>top_panel</code><br><span class="hint">attaches to: ENCLOSURE TOP PANEL:1</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 1 enclosure top panel</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+<tr id="sup-sup-016" data-sitem="SUP-016" data-scope="existing" data-status="candidate_requires_review"><td><span class="label sup">S16</span></td><td><strong>Removable-panel retention interface</strong><br><code>SUP-016</code> · joint <code>panel_retention</code><br><span class="hint">attaches to: FREE STANDING FRAME:1, PANEL ASSEMBLY:1, PANEL ASSEMBLY:2, PANEL ASSEMBLY:3, PANEL ASSEMBLY:4, TOGGLE CLAMP ASSEMBLY:1, TOGGLE CLAMP ASSEMBLY:2, TOGGLE CLAMP ASSEMBLY:3, TOGGLE CLAMP ASSEMBLY:4</span></td><td>item family, no SKU<br>candidate, requires review</td><td>required unknown (family, not specified); basis: 4 panels, 8 lower supports, 8 toggle clamps</td><td>on hand unknown</td><td>—</td><td>no</td><td><span class="count-box"></span></td></tr>
+</tbody></table>
+<p class="hint">4 new-design row(s) are listed in the appendix (not printed in this compact document).</p>
+<h2 id="subassemblies">Subassemblies (inspection views)</h2>
+<p class="hint">Each view shows one subassembly alone with its parts at their CAD positions. These are parts views for inspection, not assembly steps: no order, fasteners or tool access is implied.</p>
+<section class="group" id="group-free-standing-frame-1-caster-assembly-1-0f4aa3c4" data-group="FREE STANDING FRAME:1/CASTER ASSEMBLY:1" data-index="1">
+<header><div class="step-number">1</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">CASTER ASSEMBLY:1</div><div class="step-title"><code>FREE STANDING FRAME:1/CASTER ASSEMBLY:1</code> · under <code>FREE STANDING FRAME:1</code></div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/group-free-standing-frame-1-caster-assembly-1-0f4aa3c4.png" alt="Subassembly 1: CASTER ASSEMBLY:1">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4"><title>FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1: part 28</title><rect x="274" y="96" width="1052" height="522"/><circle cx="300" cy="122" r="26"/><text x="300" y="122" style="font-size:31px">28</text></a>
+<a href="#part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a"><title>FREE STANDING FRAME:1/CASTER ASSEMBLY:1/HOLKIE LEVELING CASTER:1: part 27</title><rect x="362" y="126" width="945" height="978"/><circle cx="388" cy="152" r="26"/><text x="388" y="152" style="font-size:31px">27</text></a>
+</svg>
+</div><figcaption>inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\JAYARAMAN (LAB)\FLOW TUNNEL\HOLKIE LEVELING CASTER.ipt|[Primary]" data-qty="1"><td><span class="label">27</span></td><td><img src="images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png" alt="HOLKIE LEVELING CASTER"></td><td>HOLKIE LEVELING CASTER</td><td class="qty">×1</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\JAYARAMAN (LAB)\FLOW TUNNEL\CASTER MOUNTING PLATE.ipt|[Primary]" data-qty="1"><td><span class="label">28</span></td><td><img src="images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png" alt="CASTER MOUNTING PLATE"></td><td>CASTER MOUNTING PLATE</td><td class="qty">×1</td></tr>
+</tbody></table>
+<p class="note hint">2 occurrence(s) in this subassembly; ids in manual.json.</p>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sgroup="FREE STANDING FRAME:1/CASTER ASSEMBLY:1" data-sitem="SUP-001"><a href="#sup-sup-001"><span class="label sup">S1</span></a> Caster-to-mounting-plate fastening · candidate, requires review · required unknown (family, not specified); basis: 4 caster assemblies; attachment points per caster unverified · joint <code>caster_to_plate</code></li>
+<li data-sgroup="FREE STANDING FRAME:1/CASTER ASSEMBLY:1" data-sitem="SUP-002"><a href="#sup-sup-002"><span class="label sup">S2</span></a> Caster-plate-to-frame fastening · candidate, requires review · required unknown (family, not specified); basis: 4 plates; frame attachments per plate unverified · joint <code>caster_plate_to_frame</code></li>
+</ul></div>
+</section>
+<section class="group" id="group-panel-assembly-1-2d4465d7" data-group="PANEL ASSEMBLY:1" data-index="2">
+<header><div class="step-number">2</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">PANEL ASSEMBLY:1</div><div class="step-title"><code>PANEL ASSEMBLY:1</code> · under <code>root</code></div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/group-panel-assembly-1-2d4465d7.png" alt="Subassembly 2: PANEL ASSEMBLY:1">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d"><title>PANEL ASSEMBLY:1/ENCLOSURE PANEL:1: part 33</title><rect x="582" y="96" width="435" height="1008"/><circle cx="608" cy="122" r="26"/><text x="608" y="122" style="font-size:31px">33</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7"><title>PANEL ASSEMBLY:1/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1: part 34</title><rect x="651" y="551" width="20" height="74"/><circle cx="677" cy="577" r="26"/><text x="677" y="577" style="font-size:31px">34</text></a>
+</svg>
+</div><figcaption>inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\ENCLOSURE PANEL.ipt|[Primary]" data-qty="1"><td><span class="label">33</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d.png" alt="ENCLOSURE PANEL"></td><td>ENCLOSURE PANEL</td><td class="qty">×1</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]" data-qty="2"><td><span class="label">34</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png" alt="MCMASTER 1950A67 Unthreaded-Hole Pull Handle"></td><td>MCMASTER 1950A67 Unthreaded-Hole Pull Handle</td><td class="qty">×2</td></tr>
+</tbody></table>
+<p class="note hint">3 occurrence(s) in this subassembly; ids in manual.json.</p>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sgroup="PANEL ASSEMBLY:1" data-sitem="SUP-003"><a href="#sup-sup-003"><span class="label sup">S3</span></a> Pull-handle-to-panel fastening · candidate, requires review · required unknown (family, not specified); basis: 8 handles on 4 panels; fastening points per handle unverified · joint <code>handle_to_panel</code></li>
+<li data-sgroup="PANEL ASSEMBLY:1" data-sitem="SUP-016"><a href="#sup-sup-016"><span class="label sup">S16</span></a> Removable-panel retention interface · candidate, requires review · required unknown (family, not specified); basis: 4 panels, 8 lower supports, 8 toggle clamps · joint <code>panel_retention</code></li>
+</ul></div>
+</section>
+<section class="group" id="group-toggle-clamp-assembly-1-133f2199" data-group="TOGGLE CLAMP ASSEMBLY:1" data-index="3">
+<header><div class="step-number">3</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">TOGGLE CLAMP ASSEMBLY:1</div><div class="step-title"><code>TOGGLE CLAMP ASSEMBLY:1</code> · under <code>root</code></div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/group-toggle-clamp-assembly-1-133f2199.png" alt="Subassembly 3: TOGGLE CLAMP ASSEMBLY:1">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845"><title>TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1: part 37</title><rect x="687" y="96" width="495" height="1008"/><circle cx="713" cy="122" r="26"/><text x="713" y="122" style="font-size:31px">37</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5"><title>TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1: part 36</title><rect x="446" y="473" width="764" height="626"/><circle cx="472" cy="499" r="26"/><text x="472" y="499" style="font-size:31px">36</text></a>
+</svg>
+</div><figcaption>inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]" data-qty="2"><td><span class="label">36</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png" alt="MCMASTER 5004A11 Compact Hold-Down Toggle Clamp"></td><td>MCMASTER 5004A11 Compact Hold-Down Toggle Clamp</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TOGGLE CLAMP MOUNT.ipt|[Primary]" data-qty="1"><td><span class="label">37</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png" alt="TOGGLE CLAMP MOUNT"></td><td>TOGGLE CLAMP MOUNT</td><td class="qty">×1</td></tr>
+</tbody></table>
+<p class="note hint">3 occurrence(s) in this subassembly; ids in manual.json.</p>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sgroup="TOGGLE CLAMP ASSEMBLY:1" data-sitem="SUP-004"><a href="#sup-sup-004"><span class="label sup">S4</span></a> Toggle-clamp-to-mount fastening · candidate, requires review · required unknown (family, not specified); basis: 8 clamps on 4 mounts; points per clamp unverified · joint <code>clamp_to_mount</code></li>
+<li data-sgroup="TOGGLE CLAMP ASSEMBLY:1" data-sitem="SUP-005"><a href="#sup-sup-005"><span class="label sup">S5</span></a> Toggle-clamp-mount-to-frame fastening · candidate, requires review · required unknown (family, not specified); basis: 4 mounts; points per mount unverified · joint <code>clamp_mount_to_frame</code></li>
+<li data-sgroup="TOGGLE CLAMP ASSEMBLY:1" data-sitem="SUP-016"><a href="#sup-sup-016"><span class="label sup">S16</span></a> Removable-panel retention interface · candidate, requires review · required unknown (family, not specified); basis: 4 panels, 8 lower supports, 8 toggle clamps · joint <code>panel_retention</code></li>
+</ul></div>
+</section>
+<section class="group" id="group-tank-support-frame-1-524083a4" data-group="TANK SUPPORT FRAME:1" data-index="4">
+<header><div class="step-number">4</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">TANK SUPPORT FRAME:1</div><div class="step-title"><code>TANK SUPPORT FRAME:1</code> · under <code>root</code></div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/group-tank-support-frame-1-524083a4.png" alt="Subassembly 4: TANK SUPPORT FRAME:1">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-a3951cbf"><title>TANK SUPPORT FRAME:1/TANK SUPPORT PLATFORM:1: part 21</title><rect x="261" y="104" width="1079" height="961"/><circle cx="287" cy="130" r="26"/><text x="287" y="130" style="font-size:31px">21</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c"><title>TANK SUPPORT FRAME:1/SHULZE 2W.353 TANK:1: part 22</title><rect x="305" y="116" width="990" height="905"/><circle cx="331" cy="142" r="26"/><text x="331" y="142" style="font-size:31px">22</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-72135c80"><title>TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:3: part 17</title><rect x="753" y="118" width="572" height="435"/><circle cx="779" cy="144" r="26"/><text x="779" y="144" style="font-size:31px">17</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc"><title>TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:3: part 19</title><rect x="1342" y="564" width="25" height="31"/><circle cx="1368" cy="590" r="26"/><text x="1368" y="590" style="font-size:31px">19</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885"><title>TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:1: part 23</title><rect x="814" y="1017" width="91" height="79"/><circle cx="840" cy="1043" r="26"/><text x="840" y="1043" style="font-size:31px">23</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-6dff85d6"><title>TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:2: part 18</title><rect x="823" y="1023" width="47" height="50"/><circle cx="849" cy="1049" r="26"/><text x="849" y="1049" style="font-size:31px">18</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649"><title>TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:2: part 20</title><rect x="863" y="1077" width="25" height="23"/><circle cx="889" cy="1103" r="26"/><text x="889" y="1103" style="font-size:31px">20</text></a>
+</svg>
+</div><figcaption>inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]" data-qty="4"><td><span class="label">17</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-72135c80.png" alt="TSLOT EXTRUSION 1X40.5 copy"></td><td>TSLOT EXTRUSION 1X40.5 copy</td><td class="qty">×4</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\T SLOT CORNER 47065T242.ipt|[Primary]" data-qty="4"><td><span class="label">18</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-6dff85d6.png" alt="T SLOT CORNER 47065T242"></td><td>T SLOT CORNER 47065T242</td><td class="qty">×4</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]" data-qty="4"><td><span class="label">19</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc.png" alt="MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount"></td><td>MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount</td><td class="qty">×4</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]" data-qty="4"><td><span class="label">20</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649.png" alt="MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer"></td><td>MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer</td><td class="qty">×4</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TANK SUPPORT PLATFORM.ipt|[Primary]" data-qty="1"><td><span class="label">21</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-a3951cbf.png" alt="TANK SUPPORT PLATFORM"></td><td>TANK SUPPORT PLATFORM</td><td class="qty">×1</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\2W.353\SHULZE 2W.353 TANK.ipt|[Primary]" data-qty="1"><td><span class="label">22</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c.png" alt="SHULZE 2W.353 TANK"></td><td>SHULZE 2W.353 TANK</td><td class="qty">×1</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TANK SUPPORT BRACKET.ipt|[Primary]" data-qty="4"><td><span class="label">23</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png" alt="TANK SUPPORT BRACKET"></td><td>TANK SUPPORT BRACKET</td><td class="qty">×4</td></tr>
+</tbody></table>
+<p class="note hint">22 occurrence(s) in this subassembly; ids in manual.json.</p>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sgroup="TANK SUPPORT FRAME:1" data-sitem="SUP-009"><a href="#sup-sup-009"><span class="label sup">S9</span></a> Tank-support-frame corner hardware · candidate, requires review · required unknown (family, not specified); basis: 8 modeled corner connectors across 2 support frames · joint <code>support_frame_corners</code></li>
+<li data-sgroup="TANK SUPPORT FRAME:1" data-sitem="SUP-010"><a href="#sup-sup-010"><span class="label sup">S10</span></a> Tank-support-bracket attachment hardware · candidate, requires review · required unknown (family, not specified); basis: 8 brackets across 2 support frames · joint <code>support_brackets</code></li>
+<li data-sgroup="TANK SUPPORT FRAME:1" data-sitem="SUP-011"><a href="#sup-sup-011"><span class="label sup">S11</span></a> Vibration-mount retention hardware · candidate, requires review · required unknown (family, not specified); basis: 8 mounts + 8 oversized washers modeled · joint <code>vibration_mounts</code></li>
+</ul></div>
+</section>
+<section class="group" id="group-camera-frame-1-05712af3" data-group="CAMERA FRAME:1" data-index="5">
+<header><div class="step-number">5</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">CAMERA FRAME:1</div><div class="step-title"><code>CAMERA FRAME:1</code> · under <code>root</code></div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/group-camera-frame-1-05712af3.png" alt="Subassembly 5: CAMERA FRAME:1">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-567ca529"><title>CAMERA FRAME:1/SLLB Enclosure 22in 47065T808_T-Slotted Framing:1: part 4</title><rect x="166" y="128" width="418" height="260"/><circle cx="192" cy="154" r="26"/><text x="192" y="154" style="font-size:31px">4</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-f37ea6b9"><title>CAMERA FRAME:1/SLLB Enclosure 41in 47065T808_T-Slotted Framing:1: part 5</title><rect x="548" y="144" width="882" height="376"/><circle cx="574" cy="170" r="26"/><text x="574" y="170" style="font-size:31px">5</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-b670923e"><title>CAMERA FRAME:1/CAMERA MOUNT PLATE - TELEDYNE KINETIX:1: part 16</title><rect x="836" y="205" width="89" height="108"/><circle cx="862" cy="231" r="26"/><text x="862" y="231" style="font-size:31px">16</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-eb93feb5"><title>CAMERA FRAME:1/SPRING MOUNT PLATE:1: part 14</title><rect x="131" y="267" width="36" height="72"/><circle cx="157" cy="293" r="26"/><text x="157" y="293" style="font-size:31px">14</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-94fc4c9b"><title>CAMERA FRAME:1/CAMERA MOUNT PLATE:1: part 15</title><rect x="940" y="281" width="89" height="120"/><circle cx="966" cy="307" r="26"/><text x="966" y="307" style="font-size:31px">15</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-9293k121-constant-a4593b94"><title>CAMERA FRAME:1/MCMASTER 9293K121_Constant-Force Spring:1: part 8</title><rect x="138" y="288" width="63" height="87"/><circle cx="164" cy="314" r="26"/><text x="164" y="314" style="font-size:31px">8</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-3136n149-t-slotted-77d5b1ed"><title>CAMERA FRAME:1/MCMASTER 3136N149_T-Slotted Framing:2: part 6</title><rect x="1232" y="470" width="232" height="112"/><circle cx="1258" cy="496" r="26"/><text x="1258" y="496" style="font-size:31px">6</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-47065t27-t-slotted-63467688"><title>CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:4: part 7</title><rect x="849" y="628" width="227" height="307"/><circle cx="875" cy="654" r="26"/><text x="875" y="654" style="font-size:31px">7</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-6a8f878a"><title>CAMERA FRAME:1/ROLLER MOUNT PLATE:2: part 13</title><rect x="1097" y="641" width="80" height="79"/><circle cx="1123" cy="667" r="26"/><text x="1123" y="667" style="font-size:31px">13</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-25d6cebc"><title>CAMERA FRAME:1/SPRING ROLLER:2: part 12</title><rect x="1092" y="665" width="75" height="71"/><circle cx="1118" cy="691" r="26"/><text x="1118" y="691" style="font-size:31px">12</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-64014b81"><title>CAMERA FRAME:1/SLLB Enclosure 15in 47065T808_T-Slotted Framing:2: part 3</title><rect x="1028" y="676" width="58" height="392"/><circle cx="1054" cy="702" r="26"/><text x="1054" y="702" style="font-size:31px">3</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-90265a164-18-8-sta-591781bf"><title>CAMERA FRAME:1/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw:2: part 11</title><rect x="1097" y="681" width="53" height="34"/><circle cx="1123" cy="707" r="26"/><text x="1123" y="707" style="font-size:31px">11</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-5537t293-t-slotted-1c2935ff"><title>CAMERA FRAME:1/MCMASTER 5537T293_T-Slotted Framing:2: part 1</title><rect x="1051" y="685" width="45" height="98"/><circle cx="1077" cy="711" r="26"/><text x="1077" y="711" style="font-size:31px">1</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-5972k164-ball-bear-66eca704"><title>CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:3: part 10</title><rect x="1120" y="687" width="26" height="30"/><circle cx="1146" cy="713" r="26"/><text x="1146" y="713" style="font-size:31px">10</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-47065t845-silver-c-e1e40dd2"><title>CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:1: part 9</title><rect x="998" y="702" width="55" height="61"/><circle cx="1024" cy="728" r="26"/><text x="1024" y="728" style="font-size:31px">9</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-5537t429-t-slotted-72ff3dc4"><title>CAMERA FRAME:1/MCMASTER 5537T429_T-Slotted Framing:2: part 2</title><rect x="993" y="930" width="104" height="142"/><circle cx="1019" cy="956" r="26"/><text x="1019" y="956" style="font-size:31px">2</text></a>
+</svg>
+</div><figcaption>inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 5537T293_T-Slotted Framing.ipt|[Primary]" data-qty="2"><td><span class="label">1</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-5537t293-t-slotted-1c2935ff.png" alt="MCMASTER 5537T293 T-Slotted Framing"></td><td>MCMASTER 5537T293 T-Slotted Framing</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 5537T429_T-Slotted Framing.ipt|[Primary]" data-qty="2"><td><span class="label">2</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-5537t429-t-slotted-72ff3dc4.png" alt="MCMASTER 5537T429 T-Slotted Framing"></td><td>MCMASTER 5537T429 T-Slotted Framing</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt|[Primary]" data-qty="2"><td><span class="label">3</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-64014b81.png" alt="SLLB Enclosure 15in 47065T808 T-Slotted Framing"></td><td>SLLB Enclosure 15in 47065T808 T-Slotted Framing</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 22in 47065T808_T-Slotted Framing.ipt|[Primary]" data-qty="2"><td><span class="label">4</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-567ca529.png" alt="SLLB Enclosure 22in 47065T808 T-Slotted Framing"></td><td>SLLB Enclosure 22in 47065T808 T-Slotted Framing</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 41in 47065T808_T-Slotted Framing.ipt|[Primary]" data-qty="2"><td><span class="label">5</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-f37ea6b9.png" alt="SLLB Enclosure 41in 47065T808 T-Slotted Framing"></td><td>SLLB Enclosure 41in 47065T808 T-Slotted Framing</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 3136N149_T-Slotted Framing.ipt|[Primary]" data-qty="2"><td><span class="label">6</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-3136n149-t-slotted-77d5b1ed.png" alt="MCMASTER 3136N149 T-Slotted Framing"></td><td>MCMASTER 3136N149 T-Slotted Framing</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]" data-qty="4"><td><span class="label">7</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-47065t27-t-slotted-63467688.png" alt="MCMASTER 47065T27 T-Slotted Framing"></td><td>MCMASTER 47065T27 T-Slotted Framing</td><td class="qty">×4</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 9293K121_Constant-Force Spring.ipt|[Primary]" data-qty="2"><td><span class="label">8</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-9293k121-constant-a4593b94.png" alt="MCMASTER 9293K121 Constant-Force Spring"></td><td>MCMASTER 9293K121 Constant-Force Spring</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]" data-qty="4"><td><span class="label">9</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-47065t845-silver-c-e1e40dd2.png" alt="MCMASTER 47065T845 Silver Corner Bracket"></td><td>MCMASTER 47065T845 Silver Corner Bracket</td><td class="qty">×4</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]" data-qty="4"><td><span class="label">10</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-5972k164-ball-bear-66eca704.png" alt="MCMASTER 5972K164 Ball Bearing"></td><td>MCMASTER 5972K164 Ball Bearing</td><td class="qty">×4</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt|[Primary]" data-qty="2"><td><span class="label">11</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-90265a164-18-8-sta-591781bf.png" alt="MCMASTER 90265A164 18-8 Stainless Steel Shoulder Screw"></td><td>MCMASTER 90265A164 18-8 Stainless Steel Shoulder Screw</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SPRING ROLLER.ipt|[Primary]" data-qty="2"><td><span class="label">12</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-25d6cebc.png" alt="SPRING ROLLER"></td><td>SPRING ROLLER</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\ROLLER MOUNT PLATE.ipt|[Primary]" data-qty="2"><td><span class="label">13</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-6a8f878a.png" alt="ROLLER MOUNT PLATE"></td><td>ROLLER MOUNT PLATE</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SPRING MOUNT PLATE.ipt|[Primary]" data-qty="2"><td><span class="label">14</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-eb93feb5.png" alt="SPRING MOUNT PLATE"></td><td>SPRING MOUNT PLATE</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\CAMERA MOUNT PLATE.ipt|[Primary]" data-qty="1"><td><span class="label">15</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-94fc4c9b.png" alt="CAMERA MOUNT PLATE"></td><td>CAMERA MOUNT PLATE</td><td class="qty">×1</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt|[Primary]" data-qty="1"><td><span class="label">16</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-b670923e.png" alt="CAMERA MOUNT PLATE - TELEDYNE KINETIX"></td><td>CAMERA MOUNT PLATE - TELEDYNE KINETIX</td><td class="qty">×1</td></tr>
+</tbody></table>
+<p class="note hint">36 occurrence(s) in this subassembly; ids in manual.json.</p>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sgroup="CAMERA FRAME:1" data-sitem="SUP-008"><a href="#sup-sup-008"><span class="label sup">S8</span></a> Camera-frame connector and bracket hardware · candidate, requires review · required unknown (family, not specified); basis: 4 named 47065T845 brackets plus other connector/sliding parts · joint <code>camera_frame_joints</code></li>
+<li data-sgroup="CAMERA FRAME:1" data-sitem="SUP-012"><a href="#sup-sup-012"><span class="label sup">S12</span></a> Camera, spring and roller plate attachment hardware · candidate, requires review · required unknown (family, not specified); basis: 2 roller plates + 2 spring plates + 2 different camera plates · joint <code>camera_plates</code></li>
+<li data-sgroup="CAMERA FRAME:1" data-sitem="SUP-013"><a href="#sup-sup-013"><span class="label sup">S13</span></a> Spring end and roller/bearing retention hardware · candidate, requires review · required unknown (family, not specified); basis: 2 springs + 2 rollers + 4 bearings + 2 shoulder screws modeled · joint <code>spring_roller</code></li>
+<li data-sgroup="CAMERA FRAME:1" data-sitem="SUP-014"><a href="#sup-sup-014"><span class="label sup">S14</span></a> Camera-to-mount attachment · candidate, requires review · required unknown (family, not specified); basis: Camera plate variants present; actual camera selection unconfirmed · joint <code>camera_attachment</code></li>
+</ul></div>
+</section>
+<section class="group" id="group-free-standing-frame-1-887affd3" data-group="FREE STANDING FRAME:1" data-index="6">
+<header><div class="step-number">6</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">FREE STANDING FRAME:1</div><div class="step-title"><code>FREE STANDING FRAME:1</code> · under <code>root</code></div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/group-free-standing-frame-1-887affd3.png" alt="Subassembly 6: FREE STANDING FRAME:1">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b"><title>FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:3: part 26</title><rect x="815" y="349" width="18" height="717"/><circle cx="841" cy="375" r="26"/><text x="841" y="375" style="font-size:31px">26</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431"><title>FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:2: part 24</title><rect x="777" y="819" width="288" height="122"/><circle cx="803" cy="845" r="26"/><text x="803" y="845" style="font-size:31px">24</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1"><title>FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:3: part 31</title><rect x="1051" y="903" width="24" height="29"/><circle cx="1077" cy="929" r="26"/><text x="1077" y="929" style="font-size:31px">31</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74"><title>FREE STANDING FRAME:1/MCMASTER 47065T245:3: part 25</title><rect x="1056" y="925" width="19" height="21"/><circle cx="1082" cy="951" r="26"/><text x="1082" y="951" style="font-size:31px">25</text></a>
+<a href="#part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0"><title>FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:8: part 30</title><rect x="804" y="932" width="30" height="45"/><circle cx="830" cy="958" r="26"/><text x="830" y="958" style="font-size:31px">30</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0"><title>FREE STANDING FRAME:1/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing:1: part 29</title><rect x="535" y="951" width="24" height="22"/><circle cx="561" cy="977" r="26"/><text x="561" y="977" style="font-size:31px">29</text></a>
+<a href="#part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4"><title>FREE STANDING FRAME:1/CASTER ASSEMBLY:3/CASTER MOUNTING PLATE:1: part 28</title><rect x="526" y="952" width="46" height="23"/><circle cx="552" cy="978" r="26"/><text x="552" y="978" style="font-size:31px">28</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f"><title>FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:1: part 32</title><rect x="806" y="1037" width="24" height="29"/><circle cx="832" cy="1063" r="26"/><text x="832" y="1063" style="font-size:31px">32</text></a>
+<a href="#part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a"><title>FREE STANDING FRAME:1/CASTER ASSEMBLY:4/HOLKIE LEVELING CASTER:1: part 27</title><rect x="801" y="1061" width="42" height="43"/><circle cx="827" cy="1087" r="26"/><text x="827" y="1087" style="font-size:31px">27</text></a>
+</svg>
+</div><figcaption>inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]" data-qty="11"><td><span class="label">24</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431.png" alt="SLLB Enclosure 44in 47065T808 T-Slotted Framing"></td><td>SLLB Enclosure 44in 47065T808 T-Slotted Framing</td><td class="qty">×11</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 47065T245.ipt|[Primary]" data-qty="8"><td><span class="label">25</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png" alt="MCMASTER 47065T245"></td><td>MCMASTER 47065T245</td><td class="qty">×8</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt|[Primary]" data-qty="4"><td><span class="label">26</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b.png" alt="SLLB Enclosure 96in 47065T808 T-Slotted Framing"></td><td>SLLB Enclosure 96in 47065T808 T-Slotted Framing</td><td class="qty">×4</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\JAYARAMAN (LAB)\FLOW TUNNEL\HOLKIE LEVELING CASTER.ipt|[Primary]" data-qty="4"><td><span class="label">27</span></td><td><img src="images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png" alt="HOLKIE LEVELING CASTER"></td><td>HOLKIE LEVELING CASTER</td><td class="qty">×4</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\JAYARAMAN (LAB)\FLOW TUNNEL\CASTER MOUNTING PLATE.ipt|[Primary]" data-qty="4"><td><span class="label">28</span></td><td><img src="images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png" alt="CASTER MOUNTING PLATE"></td><td>CASTER MOUNTING PLATE</td><td class="qty">×4</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt|[Primary]" data-qty="2"><td><span class="label">29</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0.png" alt="SLLB Enclosure 2.5in 47065T808 T-Slotted Framing"></td><td>SLLB Enclosure 2.5in 47065T808 T-Slotted Framing</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]" data-qty="8"><td><span class="label">30</span></td><td><img src="images/part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0.png" alt="47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION"></td><td>47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</td><td class="qty">×8</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\PANEL LOWER SUPPORT LEFT.ipt|[Primary]" data-qty="4"><td><span class="label">31</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png" alt="PANEL LOWER SUPPORT LEFT"></td><td>PANEL LOWER SUPPORT LEFT</td><td class="qty">×4</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\PANEL LOWER SUPPORT RIGHT.ipt|[Primary]" data-qty="4"><td><span class="label">32</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f.png" alt="PANEL LOWER SUPPORT RIGHT"></td><td>PANEL LOWER SUPPORT RIGHT</td><td class="qty">×4</td></tr>
+</tbody></table>
+<p class="note hint">49 occurrence(s) in this subassembly; ids in manual.json.</p>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sgroup="FREE STANDING FRAME:1" data-sitem="SUP-001"><a href="#sup-sup-001"><span class="label sup">S1</span></a> Caster-to-mounting-plate fastening · candidate, requires review · required unknown (family, not specified); basis: 4 caster assemblies; attachment points per caster unverified · joint <code>caster_to_plate</code></li>
+<li data-sgroup="FREE STANDING FRAME:1" data-sitem="SUP-002"><a href="#sup-sup-002"><span class="label sup">S2</span></a> Caster-plate-to-frame fastening · candidate, requires review · required unknown (family, not specified); basis: 4 plates; frame attachments per plate unverified · joint <code>caster_plate_to_frame</code></li>
+<li data-sgroup="FREE STANDING FRAME:1" data-sitem="SUP-006"><a href="#sup-sup-006"><span class="label sup">S6</span></a> Panel-lower-support fastening · candidate, requires review · required unknown (family, not specified); basis: 4 left + 4 right supports; points per support unverified · joint <code>lower_support_to_frame</code></li>
+<li data-sgroup="FREE STANDING FRAME:1" data-sitem="SUP-007"><a href="#sup-sup-007"><span class="label sup">S7</span></a> Main-frame connector hardware and joint completeness · candidate, requires review · required unknown (family, not specified); basis: 11 long rails + 4 columns + 2 short rails; joint count requires review · joint <code>main_frame_joints</code></li>
+<li data-sgroup="FREE STANDING FRAME:1" data-sitem="SUP-016"><a href="#sup-sup-016"><span class="label sup">S16</span></a> Removable-panel retention interface · candidate, requires review · required unknown (family, not specified); basis: 4 panels, 8 lower supports, 8 toggle clamps · joint <code>panel_retention</code></li>
+</ul></div>
+</section>
+<h2 id="joints">Joint close-ups (inspection views)</h2>
+<p class="hint">Each close-up frames the occurrences that form one project joint at their CAD positions; the rest of the context assembly is drawn subdued or hidden. Inspection views, not steps: no fastener, order or tool access is implied.</p>
+<section class="joint" id="joint-caster-to-plate-4da81a1b" data-joint="caster_to_plate" data-index="1">
+<header><div class="step-number">1</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>caster_to_plate</code></div><div class="step-title">context <code>FREE STANDING FRAME:1/CASTER ASSEMBLY:1</code> (faded, 0 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-caster-to-plate-4da81a1b.png" alt="Joint 1: caster_to_plate">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4"><title>FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1: part 28</title><rect x="250" y="120" width="1100" height="315"/><circle cx="276" cy="146" r="26"/><text x="276" y="146" style="font-size:31px">28</text></a>
+<a href="#part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a"><title>FREE STANDING FRAME:1/CASTER ASSEMBLY:1/HOLKIE LEVELING CASTER:1: part 27</title><rect x="269" y="207" width="974" height="873"/><circle cx="295" cy="233" r="26"/><text x="295" y="233" style="font-size:31px">27</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="FREE STANDING FRAME:1/CASTER ASSEMBLY:1/HOLKIE LEVELING CASTER:1"><td><span class="label">27</span></td><td><img src="images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png" alt="HOLKIE LEVELING CASTER"></td><td>HOLKIE LEVELING CASTER<br><code class="hint">FREE STANDING FRAME:1/CASTER ASSEMBLY:1/HOLKIE LEVELING CASTER:1</code></td></tr>
+<tr data-joint-occ="FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1"><td><span class="label">28</span></td><td><img src="images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png" alt="CASTER MOUNTING PLATE"></td><td>CASTER MOUNTING PLATE<br><code class="hint">FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-caster-to-plate-4da81a1b" data-sitem="SUP-001"><a href="#sup-sup-001"><span class="label sup">S1</span></a> Caster-to-mounting-plate fastening · candidate, requires review · required unknown (family, not specified); basis: 4 caster assemblies; attachment points per caster unverified · joint <code>caster_to_plate</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-caster-plate-to-frame-b5403f0f" data-joint="caster_plate_to_frame" data-index="2">
+<header><div class="step-number">2</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>caster_plate_to_frame</code></div><div class="step-title">context <code>FREE STANDING FRAME:1</code> (faded, 48 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-caster-plate-to-frame-b5403f0f.png" alt="Joint 2: caster_plate_to_frame">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f"><title>FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:3: part 32</title><rect x="313" y="0" width="661" height="241"/><circle cx="339" cy="26" r="26"/><text x="339" y="26" style="font-size:31px">32</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b"><title>FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:1: part 26</title><rect x="557" y="0" width="486" height="202"/><circle cx="583" cy="26" r="26"/><text x="583" y="26" style="font-size:31px">26</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1"><title>FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:2: part 31</title><rect x="626" y="0" width="661" height="241"/><circle cx="652" cy="26" r="26"/><text x="652" y="26" style="font-size:31px">31</text></a>
+<a href="#part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0"><title>FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:8: part 30</title><rect x="517" y="21" width="769" height="1179"/><circle cx="543" cy="47" r="26"/><text x="543" y="47" style="font-size:31px">30</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74"><title>FREE STANDING FRAME:1/MCMASTER 47065T245:2: part 25</title><rect x="538" y="56" width="524" height="487"/><circle cx="564" cy="82" r="26"/><text x="564" y="82" style="font-size:31px">25</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431"><title>FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:1: part 24</title><rect x="800" y="142" width="800" height="1058"/><circle cx="826" cy="168" r="26"/><text x="826" y="168" style="font-size:31px">24</text></a>
+<a href="#part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4"><title>FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1: part 28</title><rect x="160" y="416" width="1280" height="369"/><circle cx="186" cy="442" r="26"/><text x="186" y="442" style="font-size:31px">28</text></a>
+<a href="#part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a"><title>FREE STANDING FRAME:1/CASTER ASSEMBLY:1/HOLKIE LEVELING CASTER:1: part 27</title><rect x="182" y="462" width="1133" height="738"/><circle cx="208" cy="488" r="26"/><text x="208" y="488" style="font-size:31px">27</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1"><td><span class="label">28</span></td><td><img src="images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png" alt="CASTER MOUNTING PLATE"></td><td>CASTER MOUNTING PLATE<br><code class="hint">FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-caster-plate-to-frame-b5403f0f" data-sitem="SUP-002"><a href="#sup-sup-002"><span class="label sup">S2</span></a> Caster-plate-to-frame fastening · candidate, requires review · required unknown (family, not specified); basis: 4 plates; frame attachments per plate unverified · joint <code>caster_plate_to_frame</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-handle-to-panel-7eb6b2a9" data-joint="handle_to_panel" data-index="3">
+<header><div class="step-number">3</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>handle_to_panel</code></div><div class="step-title">context <code>PANEL ASSEMBLY:1</code> (faded, 2 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-handle-to-panel-7eb6b2a9.png" alt="Joint 3: handle_to_panel">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7"><title>PANEL ASSEMBLY:1/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1: part 34</title><rect x="640" y="120" width="321" height="960"/><circle cx="666" cy="146" r="26"/><text x="666" y="146" style="font-size:31px">34</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="PANEL ASSEMBLY:1/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1"><td><span class="label">34</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png" alt="MCMASTER 1950A67 Unthreaded-Hole Pull Handle"></td><td>MCMASTER 1950A67 Unthreaded-Hole Pull Handle<br><code class="hint">PANEL ASSEMBLY:1/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-handle-to-panel-7eb6b2a9" data-sitem="SUP-003"><a href="#sup-sup-003"><span class="label sup">S3</span></a> Pull-handle-to-panel fastening · candidate, requires review · required unknown (family, not specified); basis: 8 handles on 4 panels; fastening points per handle unverified · joint <code>handle_to_panel</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-clamp-to-mount-80584ace" data-joint="clamp_to_mount" data-index="4">
+<header><div class="step-number">4</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>clamp_to_mount</code></div><div class="step-title">context <code>TOGGLE CLAMP ASSEMBLY:1</code> (faded, 1 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-clamp-to-mount-80584ace.png" alt="Joint 4: clamp_to_mount">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845"><title>TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1: part 37</title><rect x="314" y="120" width="473" height="960"/><circle cx="340" cy="146" r="26"/><text x="340" y="146" style="font-size:31px">37</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5"><title>TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1: part 36</title><rect x="570" y="352" width="716" height="635"/><circle cx="596" cy="378" r="26"/><text x="596" y="378" style="font-size:31px">36</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1"><td><span class="label">36</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png" alt="MCMASTER 5004A11 Compact Hold-Down Toggle Clamp"></td><td>MCMASTER 5004A11 Compact Hold-Down Toggle Clamp<br><code class="hint">TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1</code></td></tr>
+<tr data-joint-occ="TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1"><td><span class="label">37</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png" alt="TOGGLE CLAMP MOUNT"></td><td>TOGGLE CLAMP MOUNT<br><code class="hint">TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-clamp-to-mount-80584ace" data-sitem="SUP-004"><a href="#sup-sup-004"><span class="label sup">S4</span></a> Toggle-clamp-to-mount fastening · candidate, requires review · required unknown (family, not specified); basis: 8 clamps on 4 mounts; points per clamp unverified · joint <code>clamp_to_mount</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-clamp-mount-to-frame-d49eee17" data-joint="clamp_mount_to_frame" data-index="5">
+<header><div class="step-number">5</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>clamp_mount_to_frame</code></div><div class="step-title">context <code>FREE STANDING FRAME:1</code> (faded, 49 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-clamp-mount-to-frame-d49eee17.png" alt="Joint 5: clamp_mount_to_frame">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845"><title>TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1: part 37</title><rect x="531" y="120" width="538" height="960"/><circle cx="557" cy="146" r="26"/><text x="557" y="146" style="font-size:31px">37</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1"><td><span class="label">37</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png" alt="TOGGLE CLAMP MOUNT"></td><td>TOGGLE CLAMP MOUNT<br><code class="hint">TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-clamp-mount-to-frame-d49eee17" data-sitem="SUP-005"><a href="#sup-sup-005"><span class="label sup">S5</span></a> Toggle-clamp-mount-to-frame fastening · candidate, requires review · required unknown (family, not specified); basis: 4 mounts; points per mount unverified · joint <code>clamp_mount_to_frame</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-lower-support-to-frame-f99a8bd8" data-joint="lower_support_to_frame" data-index="6">
+<header><div class="step-number">6</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>lower_support_to_frame</code></div><div class="step-title">context <code>FREE STANDING FRAME:1</code> (faded, 48 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-lower-support-to-frame-f99a8bd8.png" alt="Joint 6: lower_support_to_frame">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b"><title>FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:2: part 26</title><rect x="303" y="0" width="600" height="1071"/><circle cx="329" cy="26" r="26"/><text x="329" y="26" style="font-size:31px">26</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f"><title>FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:2: part 32</title><rect x="5" y="114" width="816" height="960"/><circle cx="31" cy="140" r="26"/><text x="31" y="140" style="font-size:31px">32</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1"><title>FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:1: part 31</title><rect x="391" y="120" width="817" height="960"/><circle cx="417" cy="146" r="26"/><text x="417" y="146" style="font-size:31px">31</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0"><title>FREE STANDING FRAME:1/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing:1: part 29</title><rect x="615" y="670" width="808" height="530"/><circle cx="641" cy="696" r="26"/><text x="641" y="696" style="font-size:31px">29</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74"><title>FREE STANDING FRAME:1/MCMASTER 47065T245:1: part 25</title><rect x="280" y="800" width="647" height="400"/><circle cx="306" cy="826" r="26"/><text x="306" y="826" style="font-size:31px">25</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:1"><td><span class="label">31</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png" alt="PANEL LOWER SUPPORT LEFT"></td><td>PANEL LOWER SUPPORT LEFT<br><code class="hint">FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:1</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-lower-support-to-frame-f99a8bd8" data-sitem="SUP-006"><a href="#sup-sup-006"><span class="label sup">S6</span></a> Panel-lower-support fastening · candidate, requires review · required unknown (family, not specified); basis: 4 left + 4 right supports; points per support unverified · joint <code>lower_support_to_frame</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-main-frame-joints-33ab23f4" data-joint="main_frame_joints" data-index="7">
+<header><div class="step-number">7</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>main_frame_joints</code></div><div class="step-title">context <code>FREE STANDING FRAME:1</code> (faded, 48 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-main-frame-joints-33ab23f4.png" alt="Joint 7: main_frame_joints">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431"><title>FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:1: part 24</title><rect x="0" y="0" width="800" height="896"/><circle cx="26" cy="26" r="26"/><text x="26" y="26" style="font-size:31px">24</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b"><title>FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:2: part 26</title><rect x="388" y="0" width="824" height="559"/><circle cx="414" cy="26" r="26"/><text x="414" y="26" style="font-size:31px">26</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0"><title>FREE STANDING FRAME:1/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing:1: part 29</title><rect x="800" y="0" width="800" height="896"/><circle cx="826" cy="26" r="26"/><text x="826" y="26" style="font-size:31px">29</text></a>
+<a href="#part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4"><title>FREE STANDING FRAME:1/CASTER ASSEMBLY:3/CASTER MOUNTING PLATE:1: part 28</title><rect x="0" y="108" width="1600" height="1058"/><circle cx="26" cy="134" r="26"/><text x="26" y="134" style="font-size:31px">28</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74"><title>FREE STANDING FRAME:1/MCMASTER 47065T245:1: part 25</title><rect x="355" y="120" width="889" height="960"/><circle cx="381" cy="146" r="26"/><text x="381" y="146" style="font-size:31px">25</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="FREE STANDING FRAME:1/MCMASTER 47065T245:1"><td><span class="label">25</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png" alt="MCMASTER 47065T245"></td><td>MCMASTER 47065T245<br><code class="hint">FREE STANDING FRAME:1/MCMASTER 47065T245:1</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-main-frame-joints-33ab23f4" data-sitem="SUP-007"><a href="#sup-sup-007"><span class="label sup">S7</span></a> Main-frame connector hardware and joint completeness · candidate, requires review · required unknown (family, not specified); basis: 11 long rails + 4 columns + 2 short rails; joint count requires review · joint <code>main_frame_joints</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-camera-frame-joints-7c74766b" data-joint="camera_frame_joints" data-index="8">
+<header><div class="step-number">8</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>camera_frame_joints</code></div><div class="step-title">context <code>CAMERA FRAME:1</code> (faded, 35 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-camera-frame-joints-7c74766b.png" alt="Joint 8: camera_frame_joints">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-common-mcmaster-mcmaster-47065t845-silver-c-e1e40dd2"><title>CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:1: part 9</title><rect x="361" y="120" width="878" height="960"/><circle cx="387" cy="146" r="26"/><text x="387" y="146" style="font-size:31px">9</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:1"><td><span class="label">9</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-47065t845-silver-c-e1e40dd2.png" alt="MCMASTER 47065T845 Silver Corner Bracket"></td><td>MCMASTER 47065T845 Silver Corner Bracket<br><code class="hint">CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:1</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-camera-frame-joints-7c74766b" data-sitem="SUP-008"><a href="#sup-sup-008"><span class="label sup">S8</span></a> Camera-frame connector and bracket hardware · candidate, requires review · required unknown (family, not specified); basis: 4 named 47065T845 brackets plus other connector/sliding parts · joint <code>camera_frame_joints</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-support-frame-corners-b1810765" data-joint="support_frame_corners" data-index="9">
+<header><div class="step-number">9</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>support_frame_corners</code></div><div class="step-title">context <code>TANK SUPPORT FRAME:1</code> (faded, 21 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-support-frame-corners-b1810765.png" alt="Joint 9: support_frame_corners">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-72135c80"><title>TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:1: part 17</title><rect x="0" y="0" width="801" height="909"/><circle cx="26" cy="26" r="26"/><text x="26" y="26" style="font-size:31px">17</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-6dff85d6"><title>TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:1: part 18</title><rect x="257" y="120" width="1087" height="960"/><circle cx="283" cy="146" r="26"/><text x="283" y="146" style="font-size:31px">18</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885"><title>TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:4: part 23</title><rect x="0" y="236" width="1533" height="964"/><circle cx="26" cy="262" r="26"/><text x="26" y="262" style="font-size:31px">23</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:1"><td><span class="label">18</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-6dff85d6.png" alt="T SLOT CORNER 47065T242"></td><td>T SLOT CORNER 47065T242<br><code class="hint">TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:1</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-support-frame-corners-b1810765" data-sitem="SUP-009"><a href="#sup-sup-009"><span class="label sup">S9</span></a> Tank-support-frame corner hardware · candidate, requires review · required unknown (family, not specified); basis: 8 modeled corner connectors across 2 support frames · joint <code>support_frame_corners</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-support-brackets-9a12767f" data-joint="support_brackets" data-index="10">
+<header><div class="step-number">10</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>support_brackets</code></div><div class="step-title">context <code>TANK SUPPORT FRAME:1</code> (faded, 21 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-support-brackets-9a12767f.png" alt="Joint 10: support_brackets">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-72135c80"><title>TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:2: part 17</title><rect x="617" y="0" width="983" height="612"/><circle cx="643" cy="26" r="26"/><text x="643" y="26" style="font-size:31px">17</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-6dff85d6"><title>TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:2: part 18</title><rect x="278" y="161" width="679" height="534"/><circle cx="304" cy="187" r="26"/><text x="304" y="187" style="font-size:31px">18</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885"><title>TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:1: part 23</title><rect x="160" y="284" width="1280" height="633"/><circle cx="186" cy="310" r="26"/><text x="186" y="310" style="font-size:31px">23</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc"><title>TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:4: part 19</title><rect x="797" y="752" width="366" height="396"/><circle cx="823" cy="778" r="26"/><text x="823" y="778" style="font-size:31px">19</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649"><title>TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:2: part 20</title><rect x="797" y="868" width="366" height="176"/><circle cx="823" cy="894" r="26"/><text x="823" y="894" style="font-size:31px">20</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:1"><td><span class="label">23</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png" alt="TANK SUPPORT BRACKET"></td><td>TANK SUPPORT BRACKET<br><code class="hint">TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:1</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-support-brackets-9a12767f" data-sitem="SUP-010"><a href="#sup-sup-010"><span class="label sup">S10</span></a> Tank-support-bracket attachment hardware · candidate, requires review · required unknown (family, not specified); basis: 8 brackets across 2 support frames · joint <code>support_brackets</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-vibration-mounts-d531e499" data-joint="vibration_mounts" data-index="11">
+<header><div class="step-number">11</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>vibration_mounts</code></div><div class="step-title">context <code>TANK SUPPORT FRAME:1</code> (faded, 20 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-vibration-mounts-d531e499.png" alt="Joint 11: vibration_mounts">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc"><title>TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:1: part 19</title><rect x="333" y="120" width="934" height="960"/><circle cx="359" cy="146" r="26"/><text x="359" y="146" style="font-size:31px">19</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649"><title>TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:4: part 20</title><rect x="333" y="427" width="934" height="377"/><circle cx="359" cy="453" r="26"/><text x="359" y="453" style="font-size:31px">20</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:1"><td><span class="label">19</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc.png" alt="MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount"></td><td>MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount<br><code class="hint">TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:1</code></td></tr>
+<tr data-joint-occ="TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:4"><td><span class="label">20</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649.png" alt="MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer"></td><td>MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer<br><code class="hint">TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:4</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-vibration-mounts-d531e499" data-sitem="SUP-011"><a href="#sup-sup-011"><span class="label sup">S11</span></a> Vibration-mount retention hardware · candidate, requires review · required unknown (family, not specified); basis: 8 mounts + 8 oversized washers modeled · joint <code>vibration_mounts</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-camera-plates-b342e7ec" data-joint="camera_plates" data-index="12">
+<header><div class="step-number">12</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>camera_plates</code></div><div class="step-title">context <code>CAMERA FRAME:1</code> (faded, 34 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-camera-plates-b342e7ec.png" alt="Joint 12: camera_plates">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-b670923e"><title>CAMERA FRAME:1/CAMERA MOUNT PLATE - TELEDYNE KINETIX:1: part 16</title><rect x="160" y="222" width="577" height="450"/><circle cx="186" cy="248" r="26"/><text x="186" y="248" style="font-size:31px">16</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-94fc4c9b"><title>CAMERA FRAME:1/CAMERA MOUNT PLATE:1: part 15</title><rect x="863" y="459" width="577" height="519"/><circle cx="889" cy="485" r="26"/><text x="889" y="485" style="font-size:31px">15</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="CAMERA FRAME:1/CAMERA MOUNT PLATE:1"><td><span class="label">15</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-94fc4c9b.png" alt="CAMERA MOUNT PLATE"></td><td>CAMERA MOUNT PLATE<br><code class="hint">CAMERA FRAME:1/CAMERA MOUNT PLATE:1</code></td></tr>
+<tr data-joint-occ="CAMERA FRAME:1/CAMERA MOUNT PLATE - TELEDYNE KINETIX:1"><td><span class="label">16</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-b670923e.png" alt="CAMERA MOUNT PLATE - TELEDYNE KINETIX"></td><td>CAMERA MOUNT PLATE - TELEDYNE KINETIX<br><code class="hint">CAMERA FRAME:1/CAMERA MOUNT PLATE - TELEDYNE KINETIX:1</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-camera-plates-b342e7ec" data-sitem="SUP-012"><a href="#sup-sup-012"><span class="label sup">S12</span></a> Camera, spring and roller plate attachment hardware · candidate, requires review · required unknown (family, not specified); basis: 2 roller plates + 2 spring plates + 2 different camera plates · joint <code>camera_plates</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-spring-roller-de2a1790" data-joint="spring_roller" data-index="13">
+<header><div class="step-number">13</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>spring_roller</code></div><div class="step-title">context <code>CAMERA FRAME:1</code> (faded, 31 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-spring-roller-de2a1790.png" alt="Joint 13: spring_roller">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-567ca529"><title>CAMERA FRAME:1/SLLB Enclosure 22in 47065T808_T-Slotted Framing:1: part 4</title><rect x="0" y="0" width="1592" height="899"/><circle cx="26" cy="26" r="26"/><text x="26" y="26" style="font-size:31px">4</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-eb93feb5"><title>CAMERA FRAME:1/SPRING MOUNT PLATE:1: part 14</title><rect x="890" y="0" width="366" height="673"/><circle cx="916" cy="26" r="26"/><text x="916" y="26" style="font-size:31px">14</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-6a8f878a"><title>CAMERA FRAME:1/ROLLER MOUNT PLATE:1: part 13</title><rect x="131" y="39" width="1009" height="827"/><circle cx="157" cy="65" r="26"/><text x="157" y="65" style="font-size:31px">13</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-9293k121-constant-a4593b94"><title>CAMERA FRAME:1/MCMASTER 9293K121_Constant-Force Spring:1: part 8</title><rect x="450" y="120" width="724" height="960"/><circle cx="476" cy="146" r="26"/><text x="476" y="146" style="font-size:31px">8</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-25d6cebc"><title>CAMERA FRAME:1/SPRING ROLLER:1: part 12</title><rect x="427" y="247" width="704" height="827"/><circle cx="453" cy="273" r="26"/><text x="453" y="273" style="font-size:31px">12</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-90265a164-18-8-sta-591781bf"><title>CAMERA FRAME:1/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw:1: part 11</title><rect x="589" y="425" width="507" height="409"/><circle cx="615" cy="451" r="26"/><text x="615" y="451" style="font-size:31px">11</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-5972k164-ball-bear-66eca704"><title>CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:2: part 10</title><rect x="772" y="434" width="244" height="340"/><circle cx="798" cy="460" r="26"/><text x="798" y="460" style="font-size:31px">10</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-47065t845-silver-c-e1e40dd2"><title>CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:3: part 9</title><rect x="964" y="619" width="608" height="581"/><circle cx="990" cy="645" r="26"/><text x="990" y="645" style="font-size:31px">9</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="CAMERA FRAME:1/SPRING ROLLER:1"><td><span class="label">12</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-25d6cebc.png" alt="SPRING ROLLER"></td><td>SPRING ROLLER<br><code class="hint">CAMERA FRAME:1/SPRING ROLLER:1</code></td></tr>
+<tr data-joint-occ="CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:2"><td><span class="label">10</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-5972k164-ball-bear-66eca704.png" alt="MCMASTER 5972K164 Ball Bearing"></td><td>MCMASTER 5972K164 Ball Bearing<br><code class="hint">CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:2</code></td></tr>
+<tr data-joint-occ="CAMERA FRAME:1/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw:1"><td><span class="label">11</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-90265a164-18-8-sta-591781bf.png" alt="MCMASTER 90265A164 18-8 Stainless Steel Shoulder Screw"></td><td>MCMASTER 90265A164 18-8 Stainless Steel Shoulder Screw<br><code class="hint">CAMERA FRAME:1/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw:1</code></td></tr>
+<tr data-joint-occ="CAMERA FRAME:1/MCMASTER 9293K121_Constant-Force Spring:1"><td><span class="label">8</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-9293k121-constant-a4593b94.png" alt="MCMASTER 9293K121 Constant-Force Spring"></td><td>MCMASTER 9293K121 Constant-Force Spring<br><code class="hint">CAMERA FRAME:1/MCMASTER 9293K121_Constant-Force Spring:1</code></td></tr>
+<tr data-joint-occ="CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:1"><td><span class="label">10</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-5972k164-ball-bear-66eca704.png" alt="MCMASTER 5972K164 Ball Bearing"></td><td>MCMASTER 5972K164 Ball Bearing<br><code class="hint">CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:1</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-spring-roller-de2a1790" data-sitem="SUP-013"><a href="#sup-sup-013"><span class="label sup">S13</span></a> Spring end and roller/bearing retention hardware · candidate, requires review · required unknown (family, not specified); basis: 2 springs + 2 rollers + 4 bearings + 2 shoulder screws modeled · joint <code>spring_roller</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-camera-attachment-00846eca" data-joint="camera_attachment" data-index="14">
+<header><div class="step-number">14</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>camera_attachment</code></div><div class="step-title">context <code>CAMERA FRAME:1</code> (faded, 34 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-camera-attachment-00846eca.png" alt="Joint 14: camera_attachment">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-b670923e"><title>CAMERA FRAME:1/CAMERA MOUNT PLATE - TELEDYNE KINETIX:1: part 16</title><rect x="863" y="222" width="577" height="450"/><circle cx="889" cy="248" r="26"/><text x="889" y="248" style="font-size:31px">16</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-94fc4c9b"><title>CAMERA FRAME:1/CAMERA MOUNT PLATE:1: part 15</title><rect x="160" y="459" width="577" height="519"/><circle cx="186" cy="485" r="26"/><text x="186" y="485" style="font-size:31px">15</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="CAMERA FRAME:1/CAMERA MOUNT PLATE:1"><td><span class="label">15</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-94fc4c9b.png" alt="CAMERA MOUNT PLATE"></td><td>CAMERA MOUNT PLATE<br><code class="hint">CAMERA FRAME:1/CAMERA MOUNT PLATE:1</code></td></tr>
+<tr data-joint-occ="CAMERA FRAME:1/CAMERA MOUNT PLATE - TELEDYNE KINETIX:1"><td><span class="label">16</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-b670923e.png" alt="CAMERA MOUNT PLATE - TELEDYNE KINETIX"></td><td>CAMERA MOUNT PLATE - TELEDYNE KINETIX<br><code class="hint">CAMERA FRAME:1/CAMERA MOUNT PLATE - TELEDYNE KINETIX:1</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-camera-attachment-00846eca" data-sitem="SUP-014"><a href="#sup-sup-014"><span class="label sup">S14</span></a> Camera-to-mount attachment · candidate, requires review · required unknown (family, not specified); basis: Camera plate variants present; actual camera selection unconfirmed · joint <code>camera_attachment</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-top-panel-c690cb86" data-joint="top_panel" data-index="15">
+<header><div class="step-number">15</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>top_panel</code></div><div class="step-title">context <code>root</code> (faded, 154 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-top-panel-c690cb86.png" alt="Joint 15: top_panel">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-389173d2"><title>ENCLOSURE TOP PANEL:1: part 35</title><rect x="160" y="209" width="1280" height="782"/><circle cx="186" cy="235" r="26"/><text x="186" y="235" style="font-size:31px">35</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d"><title>PANEL ASSEMBLY:3/ENCLOSURE PANEL:1: part 33</title><rect x="757" y="218" width="670" height="982"/><circle cx="783" cy="244" r="26"/><text x="783" y="244" style="font-size:31px">33</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431"><title>FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:5: part 24</title><rect x="746" y="222" width="672" height="368"/><circle cx="772" cy="248" r="26"/><text x="772" y="248" style="font-size:31px">24</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b"><title>FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:1: part 26</title><rect x="724" y="234" width="41" height="966"/><circle cx="750" cy="260" r="26"/><text x="750" y="260" style="font-size:31px">26</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-567ca529"><title>CAMERA FRAME:1/SLLB Enclosure 22in 47065T808_T-Slotted Framing:1: part 4</title><rect x="203" y="506" width="295" height="233"/><circle cx="229" cy="532" r="26"/><text x="229" y="532" style="font-size:31px">4</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-f37ea6b9"><title>CAMERA FRAME:1/SLLB Enclosure 41in 47065T808_T-Slotted Framing:1: part 5</title><rect x="473" y="522" width="622" height="343"/><circle cx="499" cy="548" r="26"/><text x="499" y="548" style="font-size:31px">5</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-3136n149-t-slotted-77d5b1ed"><title>CAMERA FRAME:1/MCMASTER 3136N149_T-Slotted Framing:1: part 6</title><rect x="395" y="533" width="163" height="103"/><circle cx="421" cy="559" r="26"/><text x="421" y="559" style="font-size:31px">6</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-b670923e"><title>CAMERA FRAME:1/CAMERA MOUNT PLATE - TELEDYNE KINETIX:1: part 16</title><rect x="676" y="590" width="62" height="78"/><circle cx="702" cy="616" r="26"/><text x="702" y="616" style="font-size:31px">16</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-94fc4c9b"><title>CAMERA FRAME:1/CAMERA MOUNT PLATE:1: part 15</title><rect x="749" y="650" width="62" height="86"/><circle cx="775" cy="676" r="26"/><text x="775" y="676" style="font-size:31px">15</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-9293k121-constant-a4593b94"><title>CAMERA FRAME:1/MCMASTER 9293K121_Constant-Force Spring:1: part 8</title><rect x="184" y="662" width="44" height="64"/><circle cx="210" cy="688" r="26"/><text x="210" y="688" style="font-size:31px">8</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-90265a164-18-8-sta-591781bf"><title>CAMERA FRAME:1/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw:1: part 11</title><rect x="194" y="685" width="34" height="29"/><circle cx="220" cy="711" r="26"/><text x="220" y="711" style="font-size:31px">11</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-5537t293-t-slotted-1c2935ff"><title>CAMERA FRAME:1/MCMASTER 5537T293_T-Slotted Framing:1: part 1</title><rect x="177" y="701" width="32" height="68"/><circle cx="203" cy="727" r="26"/><text x="203" y="727" style="font-size:31px">1</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-64014b81"><title>CAMERA FRAME:1/SLLB Enclosure 15in 47065T808_T-Slotted Framing:1: part 3</title><rect x="184" y="705" width="41" height="255"/><circle cx="210" cy="731" r="26"/><text x="210" y="731" style="font-size:31px">3</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-5537t429-t-slotted-72ff3dc4"><title>CAMERA FRAME:1/MCMASTER 5537T429_T-Slotted Framing:1: part 2</title><rect x="177" y="869" width="73" height="103"/><circle cx="203" cy="895" r="26"/><text x="203" y="895" style="font-size:31px">2</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7"><title>PANEL ASSEMBLY:2/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1: part 34</title><rect x="585" y="960" width="45" height="129"/><circle cx="611" cy="986" r="26"/><text x="611" y="986" style="font-size:31px">34</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74"><title>FREE STANDING FRAME:1/MCMASTER 47065T245:5: part 25</title><rect x="834" y="964" width="44" height="52"/><circle cx="860" cy="990" r="26"/><text x="860" y="990" style="font-size:31px">25</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-47065t27-t-slotted-63467688"><title>CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:4: part 7</title><rect x="685" y="974" width="160" height="216"/><circle cx="711" cy="1000" r="26"/><text x="711" y="1000" style="font-size:31px">7</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-6a8f878a"><title>CAMERA FRAME:1/ROLLER MOUNT PLATE:2: part 13</title><rect x="860" y="990" width="56" height="63"/><circle cx="886" cy="1016" r="26"/><text x="886" y="1016" style="font-size:31px">13</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-eb93feb5"><title>CAMERA FRAME:1/SPRING MOUNT PLATE:2: part 14</title><rect x="854" y="998" width="25" height="50"/><circle cx="880" cy="1024" r="26"/><text x="880" y="1024" style="font-size:31px">14</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-25d6cebc"><title>CAMERA FRAME:1/SPRING ROLLER:2: part 12</title><rect x="856" y="1017" width="53" height="47"/><circle cx="882" cy="1043" r="26"/><text x="882" y="1043" style="font-size:31px">12</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-5972k164-ball-bear-66eca704"><title>CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:4: part 10</title><rect x="865" y="1027" width="18" height="18"/><circle cx="891" cy="1053" r="26"/><text x="891" y="1053" style="font-size:31px">10</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-47065t845-silver-c-e1e40dd2"><title>CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:1: part 9</title><rect x="790" y="1036" width="38" height="46"/><circle cx="816" cy="1062" r="26"/><text x="816" y="1062" style="font-size:31px">9</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5"><title>TOGGLE CLAMP ASSEMBLY:3/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1: part 36</title><rect x="1412" y="1078" width="50" height="47"/><circle cx="1438" cy="1104" r="26"/><text x="1438" y="1104" style="font-size:31px">36</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845"><title>TOGGLE CLAMP ASSEMBLY:3/TOGGLE CLAMP MOUNT:1: part 37</title><rect x="1414" y="1085" width="33" height="66"/><circle cx="1440" cy="1111" r="26"/><text x="1440" y="1111" style="font-size:31px">37</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="ENCLOSURE TOP PANEL:1"><td><span class="label">35</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-389173d2.png" alt="ENCLOSURE TOP PANEL"></td><td>ENCLOSURE TOP PANEL<br><code class="hint">ENCLOSURE TOP PANEL:1</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-top-panel-c690cb86" data-sitem="SUP-015"><a href="#sup-sup-015"><span class="label sup">S15</span></a> Top-panel retention and edge/support interface · candidate, requires review · required unknown (family, not specified); basis: 1 enclosure top panel · joint <code>top_panel</code></li>
+</ul></div>
+</section>
+<section class="joint" id="joint-panel-retention-b0e31116" data-joint="panel_retention" data-index="16">
+<header><div class="step-number">16</div><div><div class="kicker">Joint close-up</div><div style="font-size:1.2rem;font-weight:700"><code>panel_retention</code></div><div class="step-title">context <code>FREE STANDING FRAME:1</code> (faded, 47 other occurrence(s))</div></div></header>
+<figure><div class="overview-wrap">
+<img src="images/joint-panel-retention-b0e31116.png" alt="Joint 16: panel_retention">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0"><title>FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:6: part 30</title><rect x="162" y="0" width="1010" height="418"/><circle cx="188" cy="26" r="26"/><text x="188" y="26" style="font-size:31px">30</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b"><title>FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:2: part 26</title><rect x="481" y="0" width="638" height="1004"/><circle cx="507" cy="26" r="26"/><text x="507" y="26" style="font-size:31px">26</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f"><title>FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:2: part 32</title><rect x="160" y="164" width="868" height="872"/><circle cx="186" cy="190" r="26"/><text x="186" y="190" style="font-size:31px">32</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1"><title>FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:1: part 31</title><rect x="572" y="164" width="868" height="872"/><circle cx="598" cy="190" r="26"/><text x="598" y="190" style="font-size:31px">31</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74"><title>FREE STANDING FRAME:1/MCMASTER 47065T245:1: part 25</title><rect x="456" y="875" width="688" height="325"/><circle cx="482" cy="901" r="26"/><text x="482" y="901" style="font-size:31px">25</text></a>
+</svg>
+</div><figcaption>inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied.</figcaption></figure>
+<table class="group-parts"><tbody>
+<tr data-joint-occ="FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:1"><td><span class="label">31</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png" alt="PANEL LOWER SUPPORT LEFT"></td><td>PANEL LOWER SUPPORT LEFT<br><code class="hint">FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:1</code></td></tr>
+<tr data-joint-occ="FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:2"><td><span class="label">32</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f.png" alt="PANEL LOWER SUPPORT RIGHT"></td><td>PANEL LOWER SUPPORT RIGHT<br><code class="hint">FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:2</code></td></tr>
+</tbody></table>
+<div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
+<li data-sjoint="joint-panel-retention-b0e31116" data-sitem="SUP-016"><a href="#sup-sup-016"><span class="label sup">S16</span></a> Removable-panel retention interface · candidate, requires review · required unknown (family, not specified); basis: 4 panels, 8 lower supports, 8 toggle clamps · joint <code>panel_retention</code></li>
+</ul></div>
+</section>
+<h2 id="overview">Finished assembly</h2>
+<figure><div class="overview-wrap">
+<img src="images/overview.png" alt="Overview of the finished assembly">
+<svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-389173d2"><title>ENCLOSURE TOP PANEL:1: part 35</title><rect x="519" y="84" width="562" height="257"/><circle cx="545" cy="110" r="26"/><text x="545" y="110" style="font-size:31px">35</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d"><title>PANEL ASSEMBLY:3/ENCLOSURE PANEL:1: part 33</title><rect x="781" y="87" width="294" height="837"/><circle cx="807" cy="113" r="26"/><text x="807" y="113" style="font-size:31px">33</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b"><title>FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:1: part 26</title><rect x="766" y="96" width="18" height="733"/><circle cx="792" cy="122" r="26"/><text x="792" y="122" style="font-size:31px">26</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-567ca529"><title>CAMERA FRAME:1/SLLB Enclosure 22in 47065T808_T-Slotted Framing:1: part 4</title><rect x="538" y="193" width="129" height="80"/><circle cx="564" cy="219" r="26"/><text x="564" y="219" style="font-size:31px">4</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-3136n149-t-slotted-77d5b1ed"><title>CAMERA FRAME:1/MCMASTER 3136N149_T-Slotted Framing:1: part 6</title><rect x="622" y="206" width="72" height="35"/><circle cx="648" cy="232" r="26"/><text x="648" y="232" style="font-size:31px">6</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-b670923e"><title>CAMERA FRAME:1/CAMERA MOUNT PLATE - TELEDYNE KINETIX:1: part 16</title><rect x="746" y="217" width="28" height="33"/><circle cx="772" cy="243" r="26"/><text x="772" y="243" style="font-size:31px">16</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-94fc4c9b"><title>CAMERA FRAME:1/CAMERA MOUNT PLATE:1: part 15</title><rect x="778" y="241" width="27" height="37"/><circle cx="804" cy="267" r="26"/><text x="804" y="267" style="font-size:31px">15</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-5537t293-t-slotted-1c2935ff"><title>CAMERA FRAME:1/MCMASTER 5537T293_T-Slotted Framing:1: part 1</title><rect x="527" y="257" width="14" height="30"/><circle cx="553" cy="283" r="26"/><text x="553" y="283" style="font-size:31px">1</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-64014b81"><title>CAMERA FRAME:1/SLLB Enclosure 15in 47065T808_T-Slotted Framing:1: part 3</title><rect x="530" y="258" width="18" height="122"/><circle cx="556" cy="284" r="26"/><text x="556" y="284" style="font-size:31px">3</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-f37ea6b9"><title>CAMERA FRAME:1/SLLB Enclosure 41in 47065T808_T-Slotted Framing:2: part 5</title><rect x="540" y="262" width="273" height="116"/><circle cx="566" cy="288" r="26"/><text x="566" y="288" style="font-size:31px">5</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-5537t429-t-slotted-72ff3dc4"><title>CAMERA FRAME:1/MCMASTER 5537T429_T-Slotted Framing:1: part 2</title><rect x="526" y="340" width="32" height="44"/><circle cx="552" cy="366" r="26"/><text x="552" y="366" style="font-size:31px">2</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-47065t27-t-slotted-63467688"><title>CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:4: part 7</title><rect x="750" y="348" width="70" height="95"/><circle cx="776" cy="374" r="26"/><text x="776" y="374" style="font-size:31px">7</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-eb93feb5"><title>CAMERA FRAME:1/SPRING MOUNT PLATE:2: part 14</title><rect x="824" y="349" width="11" height="22"/><circle cx="850" cy="375" r="26"/><text x="850" y="375" style="font-size:31px">14</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-6a8f878a"><title>CAMERA FRAME:1/ROLLER MOUNT PLATE:2: part 13</title><rect x="826" y="352" width="25" height="25"/><circle cx="852" cy="378" r="26"/><text x="852" y="378" style="font-size:31px">13</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-9293k121-constant-a4593b94"><title>CAMERA FRAME:1/MCMASTER 9293K121_Constant-Force Spring:2: part 8</title><rect x="826" y="355" width="19" height="27"/><circle cx="852" cy="381" r="26"/><text x="852" y="381" style="font-size:31px">8</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-25d6cebc"><title>CAMERA FRAME:1/SPRING ROLLER:2: part 12</title><rect x="825" y="360" width="23" height="22"/><circle cx="851" cy="386" r="26"/><text x="851" y="386" style="font-size:31px">12</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-90265a164-18-8-sta-591781bf"><title>CAMERA FRAME:1/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw:2: part 11</title><rect x="826" y="364" width="16" height="11"/><circle cx="852" cy="390" r="26"/><text x="852" y="390" style="font-size:31px">11</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-5972k164-ball-bear-66eca704"><title>CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:3: part 10</title><rect x="834" y="366" width="8" height="9"/><circle cx="860" cy="392" r="26"/><text x="860" y="392" style="font-size:31px">10</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-47065t845-silver-c-e1e40dd2"><title>CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:1: part 9</title><rect x="796" y="371" width="17" height="19"/><circle cx="822" cy="397" r="26"/><text x="822" y="397" style="font-size:31px">9</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5"><title>TOGGLE CLAMP ASSEMBLY:3/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1: part 36</title><rect x="1069" y="459" width="22" height="18"/><circle cx="1095" cy="485" r="26"/><text x="1095" y="485" style="font-size:31px">36</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845"><title>TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1: part 37</title><rect x="516" y="481" width="14" height="29"/><circle cx="542" cy="507" r="26"/><text x="542" y="507" style="font-size:31px">37</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7"><title>PANEL ASSEMBLY:2/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:2: part 34</title><rect x="554" y="526" width="20" height="59"/><circle cx="580" cy="552" r="26"/><text x="580" y="552" style="font-size:31px">34</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c"><title>TANK SUPPORT FRAME:1/SHULZE 2W.353 TANK:1: part 22</title><rect x="567" y="586" width="466" height="237"/><circle cx="593" cy="612" r="26"/><text x="593" y="612" style="font-size:31px">22</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-a3951cbf"><title>TANK SUPPORT FRAME:1/TANK SUPPORT PLATFORM:1: part 21</title><rect x="546" y="600" width="508" height="235"/><circle cx="572" cy="626" r="26"/><text x="572" y="626" style="font-size:31px">21</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885"><title>TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:2: part 23</title><rect x="750" y="607" width="43" height="20"/><circle cx="776" cy="633" r="26"/><text x="776" y="633" style="font-size:31px">23</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-72135c80"><title>TANK SUPPORT FRAME:2/TSLOT EXTRUSION 1X40.5 copy:2: part 17</title><rect x="778" y="702" width="269" height="111"/><circle cx="804" cy="728" r="26"/><text x="804" y="728" style="font-size:31px">17</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649"><title>TANK SUPPORT FRAME:2/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:1: part 20</title><rect x="782" y="707" width="12" height="6"/><circle cx="808" cy="733" r="26"/><text x="808" y="733" style="font-size:31px">20</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-6dff85d6"><title>TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:1: part 18</title><rect x="546" y="725" width="22" height="18"/><circle cx="572" cy="751" r="26"/><text x="572" y="751" style="font-size:31px">18</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc"><title>TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:1: part 19</title><rect x="533" y="732" width="12" height="13"/><circle cx="559" cy="758" r="26"/><text x="559" y="758" style="font-size:31px">19</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431"><title>FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:2: part 24</title><rect x="776" y="825" width="295" height="125"/><circle cx="802" cy="851" r="26"/><text x="802" y="851" style="font-size:31px">24</text></a>
+<a href="#part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a"><title>FREE STANDING FRAME:1/CASTER ASSEMBLY:1/HOLKIE LEVELING CASTER:1: part 27</title><rect x="757" y="834" width="42" height="44"/><circle cx="783" cy="860" r="26"/><text x="783" y="860" style="font-size:31px">27</text></a>
+<a href="#part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74"><title>FREE STANDING FRAME:1/MCMASTER 47065T245:3: part 25</title><rect x="1061" y="932" width="19" height="21"/><circle cx="1087" cy="958" r="26"/><text x="1087" y="958" style="font-size:31px">25</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f"><title>FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:2: part 32</title><rect x="518" y="933" width="24" height="30"/><circle cx="544" cy="959" r="26"/><text x="544" y="959" style="font-size:31px">32</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1"><title>FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:1: part 31</title><rect x="519" y="938" width="24" height="30"/><circle cx="545" cy="964" r="26"/><text x="545" y="964" style="font-size:31px">31</text></a>
+<a href="#part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0"><title>FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:8: part 30</title><rect x="804" y="940" width="31" height="46"/><circle cx="830" cy="966" r="26"/><text x="830" y="966" style="font-size:31px">30</text></a>
+<a href="#part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0"><title>FREE STANDING FRAME:1/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing:2: part 29</title><rect x="800" y="1063" width="24" height="22"/><circle cx="826" cy="1089" r="26"/><text x="826" y="1089" style="font-size:31px">29</text></a>
+<a href="#part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4"><title>FREE STANDING FRAME:1/CASTER ASSEMBLY:4/CASTER MOUNTING PLATE:1: part 28</title><rect x="800" y="1067" width="47" height="24"/><circle cx="826" cy="1093" r="26"/><text x="826" y="1093" style="font-size:31px">28</text></a>
+</svg>
+</div><figcaption>All parts at their CAD positions. On the web, click a numbered callout to jump to the part.</figcaption></figure>
+<h2 id="steps">Steps</h2><p class="hint">No assembly sequence has been authored for this scene.</p>
+<h2 id="record">Build record</h2>
+<dl class="receipt">
+<dt>generated</dt><dd>2026-10-22T18:37:42Z</dd>
+<dt>scene</dt><dd>free-standing-enclosure-991056: Free Standing Enclosure (Vault file-version 991056) native snapshot (37 parts, 155 occurrences, 17 assemblies)</dd>
+<dt>source kind</dt><dd>autodesk-inventor-vault-snapshot</dd>
+<dt>source root_version_id</dt><dd>991056</dd>
+<dt>source exporter</dt><dd>windows/Export-PartAssets.ps1 on Inventor 2025.3</dd>
+<dt>source qualification</dt><dd>geometry/hierarchy snapshot; not a reviewed assembly procedure or stock inventory</dd>
+<dt>source occurrence_id_scope</dt><dd>snapshot-scoped occurrence paths (Inventor occurrence names); stable only within this snapshot</dd>
+<dt>scene.json</dt><dd>ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070</dd>
+<dt>inventory.json</dt><dd>0eed5897bb238c1334e92e19927db8573480f3c7d4778099fa02b09e605298de</dd>
+<dt>supplement.json</dt><dd>c9950ec3f72db98f8d3563adaec0fb48ba50fce689fbb905dbe050ce0e4081ba</dd>
+<dt>assets</dt><dd>37 STEP files, hashes in manual.json</dd>
+<dt>FreeCAD</dt><dd>1.1.3; deflection 0.05 mm / 10.0°, budget 50000 triangles per part; meshes.json 91c004502b7a089aac81b6d07810e5eae461b3174bfaaca41c468ba3a5a6f414</dd>
+<dt>Blender</dt><dd>4.5.14 LTS, engine CYCLES, denoiser OPENIMAGEDENOISE, samples 64, long side 1600 px; line art on up to 600000 visible triangles; settings de5362725e51f850f9ae2abe69e598ccfc9de12271f91db3d29b9426bc8bb3bb</dd>
+<dt>reused views</dt><dd>66 of 67 images copied from build/enclosure-snapshot-991056/renders7/render-receipt.json (same inputs, meshes and engine); per-view record in manual.json</dd>
+<dt>images</dt><dd>67 render(s), hashes in manual.json</dd>
+<dt>supplement.json</dt><dd>20 row(s): 16 existing design, 4 new design; never added to CAD quantities</dd>
+<dt>generator</dt><dd>python 3.12.12; platform Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41; package mechanical-docs</dd>
+</dl>
+<p class="hint">Review state draft; physical assembly not validated. Hotspot files for interactive use: hotspots/overview.json, hotspots/group-free-standing-frame-1-caster-assembly-1-0f4aa3c4.json, hotspots/group-panel-assembly-1-2d4465d7.json, hotspots/group-toggle-clamp-assembly-1-133f2199.json, hotspots/group-tank-support-frame-1-524083a4.json, hotspots/group-camera-frame-1-05712af3.json, hotspots/group-free-standing-frame-1-887affd3.json, hotspots/joint-caster-to-plate-4da81a1b.json, hotspots/joint-caster-plate-to-frame-b5403f0f.json, hotspots/joint-handle-to-panel-7eb6b2a9.json, hotspots/joint-clamp-to-mount-80584ace.json, hotspots/joint-clamp-mount-to-frame-d49eee17.json, hotspots/joint-lower-support-to-frame-f99a8bd8.json, hotspots/joint-main-frame-joints-33ab23f4.json, hotspots/joint-camera-frame-joints-7c74766b.json, hotspots/joint-support-frame-corners-b1810765.json, hotspots/joint-support-brackets-9a12767f.json, hotspots/joint-vibration-mounts-d531e499.json, hotspots/joint-camera-plates-b342e7ec.json, hotspots/joint-spring-roller-de2a1790.json, hotspots/joint-camera-attachment-00846eca.json, hotspots/joint-top-panel-c690cb86.json, hotspots/joint-panel-retention-b0e31116.json (web only).</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+ "view": "group-free-standing-frame-1-caster-assembly-1-0f4aa3c4",
+ "width": 1600,
+ "height": 1200,
+ "occurrences": [
+  {
+   "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:1/HOLKIE LEVELING CASTER:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]",
+   "box_px": [
+    361.5,
+    126.2,
+    1306.4,
+    1104.0
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]",
+   "box_px": [
+    274.0,
+    96.0,
+    1326.0,
+    617.6
+   ],
+   "corners_in_frame": 8
+  }
+ ]
+}

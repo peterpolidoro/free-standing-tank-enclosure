@@ -1,0 +1,29 @@
+{
+ "view": "joint-caster-to-plate-4da81a1b",
+ "width": 1600,
+ "height": 1200,
+ "occurrences": [
+  {
+   "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:1/HOLKIE LEVELING CASTER:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]",
+   "box_px": [
+    268.9,
+    206.7,
+    1242.7,
+    1080.0
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]",
+   "box_px": [
+    249.9,
+    120.0,
+    1350.1,
+    435.0
+   ],
+   "corners_in_frame": 8
+  }
+ ]
+}

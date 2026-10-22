@@ -1,0 +1,40 @@
+{
+ "view": "group-panel-assembly-1-2d4465d7",
+ "width": 1600,
+ "height": 1200,
+ "occurrences": [
+  {
+   "id": "PANEL ASSEMBLY:1/ENCLOSURE PANEL:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]",
+   "box_px": [
+    582.3,
+    96.0,
+    1017.7,
+    1104.0
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "PANEL ASSEMBLY:1/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]",
+   "box_px": [
+    650.7,
+    550.6,
+    670.4,
+    624.4
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "PANEL ASSEMBLY:1/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:2",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]",
+   "box_px": [
+    921.4,
+    581.4,
+    941.0,
+    655.3
+   ],
+   "corners_in_frame": 8
+  }
+ ]
+}

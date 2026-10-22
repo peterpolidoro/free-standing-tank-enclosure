@@ -51,6 +51,22 @@ existing-output refusal and malformed/tampered input rejection. It did not rebui
 all production images/PDFs with this new config. The earlier 12-page production
 inventory PDF and all 38 renders were independently checked against their receipts.
 
+## Publish the built manual into the repository
+
+Peter wants the generated documentation stored in this project repository. After a
+build whose `check` passed, copy it into the tracked `documentation/` directory:
+
+```sh
+python3 assembly/publish_manual.py --manual "$cad_project/.cache/manual/manual" \
+  --appendix-pdf "$cad_project/.cache/manual/manual-appendix/<id>.pdf" --name enclosure
+```
+
+The script verifies every copied file by hash, refuses a failed check report, keeps the
+HTML, images, hotspots, PDFs, receipts and `manual.json` (not the check rasters) and
+writes `documentation/enclosure/SOURCE.json`. Commit the package together with the
+sources it was built from. A package from a documentation-agent evidence run is
+published the same way with `--evidence-run <name>`.
+
 ## Source-byte preservation
 
 The original PowerShell metadata has UTF-8 BOMs and CRLF line endings. Earlier
