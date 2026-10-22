@@ -95,10 +95,18 @@ def prepare(tools, output=None):
                 inside(ROOT, str(p.relative_to(ROOT)))
                 shutil.copyfile(p, staging / name)
         sheets = {"supplementary-bom.csv": pm.SUPPLEMENT_CSV, "modeled-parts.csv": pm.MODELED_CSV, "joint-audit.json": pm.JOINT_AUDIT}
+        if (ROOT / "assembly/project-notes.json").exists():
+            sheets["project-notes.json"] = ROOT / "assembly/project-notes.json"
         raw_scene = read(source / "scene.json")
         if not authored["inventory.json"].exists():
             # CAD counts from the scene plus the stock record from the procurement sheet (unknown = null, never 0)
             inventory = pm.extend_inventory(inventory_template(sc), pm.stock_extension(pm.read_rows(pm.MODELED_CSV)), raw_scene)
+            notes_file = ROOT / "assembly/project-notes.json"
+            if notes_file.exists():
+                notes = read(notes_file)
+                if notes.get("schema_version") != 1 or not isinstance(notes.get("notes"), list) or not all(isinstance(n, str) and n.strip() for n in notes["notes"]):
+                    raise ValueError("assembly/project-notes.json must hold schema_version 1 and a list of non-empty sentences")
+                inventory["notes"] = list(notes["notes"])
             (staging / "inventory.json").write_text(json.dumps(inventory, indent=2) + "\n")
         # supplementary (non-geometric) items: converted from the procurement sheet every time, never hand-edited here
         supplement = pm.build_supplement(raw_scene, pm.read_rows(pm.SUPPLEMENT_CSV), read(pm.JOINT_AUDIT))

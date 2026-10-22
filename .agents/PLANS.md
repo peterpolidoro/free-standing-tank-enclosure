@@ -47,8 +47,16 @@ Tools remain clean at `0705b40`. The previous "dirty on 683c0ba" notes are histo
   adopts the six inspection groups. Staged `.cache/manual/project-supplement-01`
   loads in mechanical-docs (20 rows, 0 stock counts, 16 joint views). Overlay for
   the documentation build: `evidence/2026-10-22-linux-supplement-mapping-01/`.
-- [ ] Documentation: build the enclosure with that overlay using `--reuse`; review
-  the joint close-ups; Linux then adjusts instances/directions where a view fails.
+- [x] Documentation built the enclosure with the overlay (16 joint close-ups, 36/54-page
+  PDFs, all checks pass); Linux adjusted the 7 views that hid the attachment, raised the
+  outline budget to 600000 and added `assembly/project-notes.json` (printed note on the
+  intended build change). Rebuild requested; the documentation agent has not read it yet.
+- [x] FIRST LIVE VAULT ADD (2026-10-22T18:23:24Z): `step/AW2725Q-nominal-envelope.step` is Vault master
+  994251 / version 994252 in the project folder (953863); verified by Windows, re-checked
+  on Linux, recorded in `vault-lock.json` `publications` by `import-publish-result`.
+- [ ] Windows: placement pilot of two monitor envelopes on the lower platform in a disposable
+  copy, exported for Linux review; then an adapter design document before any native
+  check-in. The real monitor support, acrylic and bowl design remain undesigned.
 
 ## Session wrap-up (2026-10-22, supersedes earlier current-checkpoint notes)
 
