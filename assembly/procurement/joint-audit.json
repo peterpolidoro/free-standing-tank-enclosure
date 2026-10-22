@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source_scene_sha256": "ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070",
   "review_state": "draft",
-  "scope": "Known model interfaces and requested modifications; not a proof of BOM completeness.",
+  "scope": "Known model interfaces and requested modifications; not a proof of BOM completeness. Native BOM audit 2026-10-22 added per joint under native_audit; still not a proof of hardware completeness.",
   "joints": [
     {
       "id": "caster_to_plate",
@@ -20,8 +20,60 @@
       ],
       "observation": "Each caster group contains caster and plate only. Caster is a compound purchased model.",
       "quantity_basis": "4 caster assemblies; attachment points per caster unverified",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Inspect caster drawing/kit bag and plate holes; determine bolt/nut/washer stack and whether hardware is supplied."
+      "conclusion": "Native audit 2026-10-22: no hardware row; only compound purchased models with unnamed bodies are present. Whether the vendor supplies mounting hardware is undecidable from CAD; vendor documentation or the physical kit decides.",
+      "next_check": "Inspect caster drawing/kit bag and plate holes; determine bolt/nut/washer stack and whether hardware is supplied.",
+      "native_audit": {
+        "category": "e",
+        "category_meaning": "unknown",
+        "confidence": "low: undecidable from CAD",
+        "basis": "compound (multi-body) parts are present but their bodies are unnamed and no vendor kit data is in the model; whether hardware is supplied in the kit is undecidable from CAD; no drawing or presentation is associated with any version of the acquired files, so category b cannot apply",
+        "groups_found": [
+          "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+          "FREE STANDING FRAME:1/CASTER ASSEMBLY:2",
+          "FREE STANDING FRAME:1/CASTER ASSEMBLY:3",
+          "FREE STANDING FRAME:1/CASTER ASSEMBLY:4"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [
+          {
+            "component": "HOLKIE LEVELING CASTER.ipt",
+            "group_id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+            "solid_bodies": 10,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "HOLKIE LEVELING CASTER.ipt",
+            "group_id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:2",
+            "solid_bodies": 10,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "HOLKIE LEVELING CASTER.ipt",
+            "group_id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:3",
+            "solid_bodies": 10,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "HOLKIE LEVELING CASTER.ipt",
+            "group_id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:4",
+            "solid_bodies": 10,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          }
+        ],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "caster_plate_to_frame",
@@ -40,8 +92,69 @@
       ],
       "observation": "No separate fasteners in caster groups; parent frame connectors may cover some joints.",
       "quantity_basis": "4 plates; frame attachments per plate unverified",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Identify slot versus tapped-end mounting; confirm extrusion series, threads, engagement and supplied hardware."
+      "conclusion": "Native audit 2026-10-22: no hardware row; only compound purchased models with unnamed bodies are present. Whether the vendor supplies mounting hardware is undecidable from CAD; vendor documentation or the physical kit decides.",
+      "next_check": "Identify slot versus tapped-end mounting; confirm extrusion series, threads, engagement and supplied hardware.",
+      "native_audit": {
+        "category": "e",
+        "category_meaning": "unknown",
+        "confidence": "low: undecidable from CAD",
+        "basis": "compound (multi-body) parts are present but their bodies are unnamed and no vendor kit data is in the model; whether hardware is supplied in the kit is undecidable from CAD; no drawing or presentation is associated with any version of the acquired files, so category b cannot apply",
+        "groups_found": [
+          "FREE STANDING FRAME:1",
+          "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+          "FREE STANDING FRAME:1/CASTER ASSEMBLY:2",
+          "FREE STANDING FRAME:1/CASTER ASSEMBLY:3",
+          "FREE STANDING FRAME:1/CASTER ASSEMBLY:4"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [
+          {
+            "component": "MCMASTER 47065T245.ipt",
+            "group_id": "FREE STANDING FRAME:1",
+            "solid_bodies": 4,
+            "hidden_solid_bodies": 3,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "HOLKIE LEVELING CASTER.ipt",
+            "group_id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+            "solid_bodies": 10,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "HOLKIE LEVELING CASTER.ipt",
+            "group_id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:2",
+            "solid_bodies": 10,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "HOLKIE LEVELING CASTER.ipt",
+            "group_id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:3",
+            "solid_bodies": 10,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "HOLKIE LEVELING CASTER.ipt",
+            "group_id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:4",
+            "solid_bodies": 10,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          }
+        ],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "handle_to_panel",
@@ -59,8 +172,27 @@
       ],
       "observation": "Each panel group contains one panel and two handles only; filenames describe unthreaded holes.",
       "quantity_basis": "8 handles on 4 panels; fastening points per handle unverified",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Inspect both sides of panel and handle drawing; choose bolt/nut/washer stack for actual panel thickness."
+      "conclusion": "Native audit 2026-10-22: no hardware for this joint exists in any native BOM view, virtual component or drawing (no drawings exist in Vault). Nothing is supplied by CAD; if fastening is required it must be specified from the physical parts and vendor data.",
+      "next_check": "Inspect both sides of panel and handle drawing; choose bolt/nut/washer stack for actual panel thickness.",
+      "native_audit": {
+        "category": "d",
+        "category_meaning": "absent from all native sources",
+        "confidence": "high that CAD has nothing; unknown whether hardware is supplied",
+        "basis": "no row, virtual component, compound part or drawing parts list in any native source inspected; no drawing or presentation is associated with any version of the acquired files, so category b cannot apply",
+        "groups_found": [
+          "PANEL ASSEMBLY:1",
+          "PANEL ASSEMBLY:2",
+          "PANEL ASSEMBLY:3",
+          "PANEL ASSEMBLY:4"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "clamp_to_mount",
@@ -78,8 +210,60 @@
       ],
       "observation": "Each clamp group contains two compound clamps and one mount only.",
       "quantity_basis": "8 clamps on 4 mounts; points per clamp unverified",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Distinguish factory clamp adjustment hardware from base mounting screws; inspect mount holes/inserts and kit contents."
+      "conclusion": "Native audit 2026-10-22: no hardware row; only compound purchased models with unnamed bodies are present. Whether the vendor supplies mounting hardware is undecidable from CAD; vendor documentation or the physical kit decides.",
+      "next_check": "Distinguish factory clamp adjustment hardware from base mounting screws; inspect mount holes/inserts and kit contents.",
+      "native_audit": {
+        "category": "e",
+        "category_meaning": "unknown",
+        "confidence": "low: undecidable from CAD",
+        "basis": "compound (multi-body) parts are present but their bodies are unnamed and no vendor kit data is in the model; whether hardware is supplied in the kit is undecidable from CAD; no drawing or presentation is associated with any version of the acquired files, so category b cannot apply",
+        "groups_found": [
+          "TOGGLE CLAMP ASSEMBLY:1",
+          "TOGGLE CLAMP ASSEMBLY:2",
+          "TOGGLE CLAMP ASSEMBLY:3",
+          "TOGGLE CLAMP ASSEMBLY:4"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [
+          {
+            "component": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt",
+            "group_id": "TOGGLE CLAMP ASSEMBLY:1",
+            "solid_bodies": 20,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt",
+            "group_id": "TOGGLE CLAMP ASSEMBLY:2",
+            "solid_bodies": 20,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt",
+            "group_id": "TOGGLE CLAMP ASSEMBLY:3",
+            "solid_bodies": 20,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt",
+            "group_id": "TOGGLE CLAMP ASSEMBLY:4",
+            "solid_bodies": 20,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          }
+        ],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "clamp_mount_to_frame",
@@ -96,8 +280,60 @@
       ],
       "observation": "No separate mounting fasteners in clamp groups.",
       "quantity_basis": "4 mounts; points per mount unverified",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Inspect printed mount connection and slots; identify inserts/T-nuts and bolt stack if needed."
+      "conclusion": "Native audit 2026-10-22: no hardware row; only compound purchased models with unnamed bodies are present. Whether the vendor supplies mounting hardware is undecidable from CAD; vendor documentation or the physical kit decides.",
+      "next_check": "Inspect printed mount connection and slots; identify inserts/T-nuts and bolt stack if needed.",
+      "native_audit": {
+        "category": "e",
+        "category_meaning": "unknown",
+        "confidence": "low: undecidable from CAD",
+        "basis": "compound (multi-body) parts are present but their bodies are unnamed and no vendor kit data is in the model; whether hardware is supplied in the kit is undecidable from CAD; no drawing or presentation is associated with any version of the acquired files, so category b cannot apply",
+        "groups_found": [
+          "TOGGLE CLAMP ASSEMBLY:1",
+          "TOGGLE CLAMP ASSEMBLY:2",
+          "TOGGLE CLAMP ASSEMBLY:3",
+          "TOGGLE CLAMP ASSEMBLY:4"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [
+          {
+            "component": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt",
+            "group_id": "TOGGLE CLAMP ASSEMBLY:1",
+            "solid_bodies": 20,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt",
+            "group_id": "TOGGLE CLAMP ASSEMBLY:2",
+            "solid_bodies": 20,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt",
+            "group_id": "TOGGLE CLAMP ASSEMBLY:3",
+            "solid_bodies": 20,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt",
+            "group_id": "TOGGLE CLAMP ASSEMBLY:4",
+            "solid_bodies": 20,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          }
+        ],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "lower_support_to_frame",
@@ -112,8 +348,33 @@
       ],
       "observation": "Eight support occurrences in main frame; no standalone matching fastener identified by scene names.",
       "quantity_basis": "4 left + 4 right supports; points per support unverified",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Inspect supports for integral clip versus screw attachment; determine left/right fastening scheme before adding hardware."
+      "conclusion": "Native audit 2026-10-22: no hardware row; only compound purchased models with unnamed bodies are present. Whether the vendor supplies mounting hardware is undecidable from CAD; vendor documentation or the physical kit decides.",
+      "next_check": "Inspect supports for integral clip versus screw attachment; determine left/right fastening scheme before adding hardware.",
+      "native_audit": {
+        "category": "e",
+        "category_meaning": "unknown",
+        "confidence": "low: undecidable from CAD",
+        "basis": "compound (multi-body) parts are present but their bodies are unnamed and no vendor kit data is in the model; whether hardware is supplied in the kit is undecidable from CAD; no drawing or presentation is associated with any version of the acquired files, so category b cannot apply",
+        "groups_found": [
+          "FREE STANDING FRAME:1"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [
+          {
+            "component": "MCMASTER 47065T245.ipt",
+            "group_id": "FREE STANDING FRAME:1",
+            "solid_bodies": 4,
+            "hidden_solid_bodies": 3,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          }
+        ],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "main_frame_joints",
@@ -131,8 +392,33 @@
       ],
       "observation": "Eight 47065T245 occurrences have hidden bodies; other connectors may have integrated hardware.",
       "quantity_basis": "11 long rails + 4 columns + 2 short rails; joint count requires review",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Map every rail-end joint; verify connector kit contents, slot/end machining, captive hardware and any unmodeled brackets."
+      "conclusion": "Native audit 2026-10-22: no hardware row; only compound purchased models with unnamed bodies are present. Whether the vendor supplies mounting hardware is undecidable from CAD; vendor documentation or the physical kit decides.",
+      "next_check": "Map every rail-end joint; verify connector kit contents, slot/end machining, captive hardware and any unmodeled brackets.",
+      "native_audit": {
+        "category": "e",
+        "category_meaning": "unknown",
+        "confidence": "low: undecidable from CAD",
+        "basis": "compound (multi-body) parts are present but their bodies are unnamed and no vendor kit data is in the model; whether hardware is supplied in the kit is undecidable from CAD; no drawing or presentation is associated with any version of the acquired files, so category b cannot apply",
+        "groups_found": [
+          "FREE STANDING FRAME:1"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [
+          {
+            "component": "MCMASTER 47065T245.ipt",
+            "group_id": "FREE STANDING FRAME:1",
+            "solid_bodies": 4,
+            "hidden_solid_bodies": 3,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          }
+        ],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "camera_frame_joints",
@@ -150,8 +436,56 @@
       ],
       "observation": "Sliding/connector models contain multiple bodies; bracket attachment hardware not separately identified.",
       "quantity_basis": "4 named 47065T845 brackets plus other connector/sliding parts",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Check each connector product drawing and kit before counting extra screws/T-nuts; inspect camera-frame-to-main-frame joints."
+      "conclusion": "Native audit 2026-10-22: hardware-named rows exist in the native BOM of these groups and are exported; the BOM cannot assign them to this joint. Map them to joints physically before counting anything as missing or buying more.",
+      "next_check": "Check each connector product drawing and kit before counting extra screws/T-nuts; inspect camera-frame-to-main-frame joints.",
+      "native_audit": {
+        "category": "a2",
+        "category_meaning": "in native BOM and exported",
+        "confidence": "high",
+        "basis": "hardware-named rows exist in the native BOM of the named groups and are exported parts; whether those rows belong to THIS joint rather than another joint in the same group is not decidable from the BOM (see hardware_named_rows_exported)",
+        "groups_found": [
+          "CAMERA FRAME:1"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [
+          {
+            "component": "MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "item_quantity": 2,
+            "total_quantity": "2"
+          }
+        ],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [
+          {
+            "component": "MCMASTER 5537T293_T-Slotted Framing.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "solid_bodies": 9,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5537T429_T-Slotted Framing.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "solid_bodies": 11,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5972K164_Ball Bearing.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "solid_bodies": 14,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          }
+        ],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "support_frame_corners",
@@ -167,8 +501,71 @@
       ],
       "observation": "Each 47065T242 has five visible bodies; these may already represent kit hardware.",
       "quantity_basis": "8 modeled corner connectors across 2 support frames",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Confirm assembly selection and kit bill; count loose/missing contents against kit without double-counting."
+      "conclusion": "Native audit 2026-10-22: hardware-named rows exist in the native BOM of these groups and are exported; the BOM cannot assign them to this joint. Map them to joints physically before counting anything as missing or buying more.",
+      "next_check": "Confirm assembly selection and kit bill; count loose/missing contents against kit without double-counting.",
+      "native_audit": {
+        "category": "a2",
+        "category_meaning": "in native BOM and exported",
+        "confidence": "high",
+        "basis": "hardware-named rows exist in the native BOM of the named groups and are exported parts; whether those rows belong to THIS joint rather than another joint in the same group is not decidable from the BOM (see hardware_named_rows_exported)",
+        "groups_found": [
+          "TANK SUPPORT FRAME:1",
+          "TANK SUPPORT FRAME:2"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [
+          {
+            "component": "MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt",
+            "group_id": "TANK SUPPORT FRAME:1",
+            "item_quantity": 4,
+            "total_quantity": "4"
+          },
+          {
+            "component": "MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt",
+            "group_id": "TANK SUPPORT FRAME:2",
+            "item_quantity": 4,
+            "total_quantity": "4"
+          }
+        ],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [
+          {
+            "component": "T SLOT CORNER 47065T242.ipt",
+            "group_id": "TANK SUPPORT FRAME:1",
+            "solid_bodies": 5,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt",
+            "group_id": "TANK SUPPORT FRAME:1",
+            "solid_bodies": 3,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "T SLOT CORNER 47065T242.ipt",
+            "group_id": "TANK SUPPORT FRAME:2",
+            "solid_bodies": 5,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt",
+            "group_id": "TANK SUPPORT FRAME:2",
+            "solid_bodies": 3,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          }
+        ],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "support_brackets",
@@ -184,8 +581,71 @@
       ],
       "observation": "Brackets are modeled; their full fastening stacks are not identified from names.",
       "quantity_basis": "8 brackets across 2 support frames",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Review bracket-to-frame and bracket-to-platform joints, holes and purchased hardware."
+      "conclusion": "Native audit 2026-10-22: hardware-named rows exist in the native BOM of these groups and are exported; the BOM cannot assign them to this joint. Map them to joints physically before counting anything as missing or buying more.",
+      "next_check": "Review bracket-to-frame and bracket-to-platform joints, holes and purchased hardware.",
+      "native_audit": {
+        "category": "a2",
+        "category_meaning": "in native BOM and exported",
+        "confidence": "high",
+        "basis": "hardware-named rows exist in the native BOM of the named groups and are exported parts; whether those rows belong to THIS joint rather than another joint in the same group is not decidable from the BOM (see hardware_named_rows_exported)",
+        "groups_found": [
+          "TANK SUPPORT FRAME:1",
+          "TANK SUPPORT FRAME:2"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [
+          {
+            "component": "MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt",
+            "group_id": "TANK SUPPORT FRAME:1",
+            "item_quantity": 4,
+            "total_quantity": "4"
+          },
+          {
+            "component": "MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt",
+            "group_id": "TANK SUPPORT FRAME:2",
+            "item_quantity": 4,
+            "total_quantity": "4"
+          }
+        ],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [
+          {
+            "component": "T SLOT CORNER 47065T242.ipt",
+            "group_id": "TANK SUPPORT FRAME:1",
+            "solid_bodies": 5,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt",
+            "group_id": "TANK SUPPORT FRAME:1",
+            "solid_bodies": 3,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "T SLOT CORNER 47065T242.ipt",
+            "group_id": "TANK SUPPORT FRAME:2",
+            "solid_bodies": 5,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt",
+            "group_id": "TANK SUPPORT FRAME:2",
+            "solid_bodies": 3,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          }
+        ],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "vibration_mounts",
@@ -201,8 +661,71 @@
       ],
       "observation": "Washers are already modeled; no separately named matching nuts in this scene.",
       "quantity_basis": "8 mounts + 8 oversized washers modeled",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Determine stud/thread arrangement and retained sides; check included nuts/other washers and support configuration."
+      "conclusion": "Native audit 2026-10-22: hardware-named rows exist in the native BOM of these groups and are exported; the BOM cannot assign them to this joint. Map them to joints physically before counting anything as missing or buying more.",
+      "next_check": "Determine stud/thread arrangement and retained sides; check included nuts/other washers and support configuration.",
+      "native_audit": {
+        "category": "a2",
+        "category_meaning": "in native BOM and exported",
+        "confidence": "high",
+        "basis": "hardware-named rows exist in the native BOM of the named groups and are exported parts; whether those rows belong to THIS joint rather than another joint in the same group is not decidable from the BOM (see hardware_named_rows_exported)",
+        "groups_found": [
+          "TANK SUPPORT FRAME:1",
+          "TANK SUPPORT FRAME:2"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [
+          {
+            "component": "MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt",
+            "group_id": "TANK SUPPORT FRAME:1",
+            "item_quantity": 4,
+            "total_quantity": "4"
+          },
+          {
+            "component": "MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt",
+            "group_id": "TANK SUPPORT FRAME:2",
+            "item_quantity": 4,
+            "total_quantity": "4"
+          }
+        ],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [
+          {
+            "component": "T SLOT CORNER 47065T242.ipt",
+            "group_id": "TANK SUPPORT FRAME:1",
+            "solid_bodies": 5,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt",
+            "group_id": "TANK SUPPORT FRAME:1",
+            "solid_bodies": 3,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "T SLOT CORNER 47065T242.ipt",
+            "group_id": "TANK SUPPORT FRAME:2",
+            "solid_bodies": 5,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt",
+            "group_id": "TANK SUPPORT FRAME:2",
+            "solid_bodies": 3,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          }
+        ],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "camera_plates",
@@ -219,8 +742,56 @@
       ],
       "observation": "Plates are modeled; general mounting screws/T-nuts are not separately identified.",
       "quantity_basis": "2 roller plates + 2 spring plates + 2 different camera plates",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Determine whether camera plates are stacked or alternatives; map plate-to-frame and plate-to-plate fastening points."
+      "conclusion": "Native audit 2026-10-22: hardware-named rows exist in the native BOM of these groups and are exported; the BOM cannot assign them to this joint. Map them to joints physically before counting anything as missing or buying more.",
+      "next_check": "Determine whether camera plates are stacked or alternatives; map plate-to-frame and plate-to-plate fastening points.",
+      "native_audit": {
+        "category": "a2",
+        "category_meaning": "in native BOM and exported",
+        "confidence": "high",
+        "basis": "hardware-named rows exist in the native BOM of the named groups and are exported parts; whether those rows belong to THIS joint rather than another joint in the same group is not decidable from the BOM (see hardware_named_rows_exported)",
+        "groups_found": [
+          "CAMERA FRAME:1"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [
+          {
+            "component": "MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "item_quantity": 2,
+            "total_quantity": "2"
+          }
+        ],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [
+          {
+            "component": "MCMASTER 5537T293_T-Slotted Framing.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "solid_bodies": 9,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5537T429_T-Slotted Framing.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "solid_bodies": 11,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5972K164_Ball Bearing.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "solid_bodies": 14,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          }
+        ],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "spring_roller",
@@ -237,8 +808,56 @@
       ],
       "observation": "Two shoulder screws already exist; bearing internals are compound geometry.",
       "quantity_basis": "2 springs + 2 rollers + 4 bearings + 2 shoulder screws modeled",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Verify shoulder screw threads, spacers/retainers and both spring-end attachments; do not purchase bearing internals separately."
+      "conclusion": "Native audit 2026-10-22: hardware-named rows exist in the native BOM of these groups and are exported; the BOM cannot assign them to this joint. Map them to joints physically before counting anything as missing or buying more.",
+      "next_check": "Verify shoulder screw threads, spacers/retainers and both spring-end attachments; do not purchase bearing internals separately.",
+      "native_audit": {
+        "category": "a2",
+        "category_meaning": "in native BOM and exported",
+        "confidence": "high",
+        "basis": "hardware-named rows exist in the native BOM of the named groups and are exported parts; whether those rows belong to THIS joint rather than another joint in the same group is not decidable from the BOM (see hardware_named_rows_exported)",
+        "groups_found": [
+          "CAMERA FRAME:1"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [
+          {
+            "component": "MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "item_quantity": 2,
+            "total_quantity": "2"
+          }
+        ],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [
+          {
+            "component": "MCMASTER 5537T293_T-Slotted Framing.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "solid_bodies": 9,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5537T429_T-Slotted Framing.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "solid_bodies": 11,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5972K164_Ball Bearing.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "solid_bodies": 14,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          }
+        ],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "camera_attachment",
@@ -253,8 +872,56 @@
       ],
       "observation": "Camera itself is not among the 37 part definitions.",
       "quantity_basis": "Camera plate variants present; actual camera selection unconfirmed",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Confirm camera supplied/needed and its selected interface drawing, screws and available thread depth."
+      "conclusion": "Native audit 2026-10-22: hardware-named rows exist in the native BOM of these groups and are exported; the BOM cannot assign them to this joint. Map them to joints physically before counting anything as missing or buying more.",
+      "next_check": "Confirm camera supplied/needed and its selected interface drawing, screws and available thread depth.",
+      "native_audit": {
+        "category": "a2",
+        "category_meaning": "in native BOM and exported",
+        "confidence": "high",
+        "basis": "hardware-named rows exist in the native BOM of the named groups and are exported parts; whether those rows belong to THIS joint rather than another joint in the same group is not decidable from the BOM (see hardware_named_rows_exported)",
+        "groups_found": [
+          "CAMERA FRAME:1"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [
+          {
+            "component": "MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "item_quantity": 2,
+            "total_quantity": "2"
+          }
+        ],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [
+          {
+            "component": "MCMASTER 5537T293_T-Slotted Framing.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "solid_bodies": 9,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5537T429_T-Slotted Framing.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "solid_bodies": 11,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5972K164_Ball Bearing.ipt",
+            "group_id": "CAMERA FRAME:1",
+            "solid_bodies": 14,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          }
+        ],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "top_panel",
@@ -268,8 +935,22 @@
       ],
       "observation": "Panel is at scene root; retention hardware not identified.",
       "quantity_basis": "1 enclosure top panel",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Check whether panel rests, clips or screws into frame; do not invent fasteners for intentionally removable panels."
+      "conclusion": "Native audit 2026-10-22: no hardware for this joint exists in any native BOM view, virtual component or drawing (no drawings exist in Vault). Nothing is supplied by CAD; if fastening is required it must be specified from the physical parts and vendor data.",
+      "next_check": "Check whether panel rests, clips or screws into frame; do not invent fasteners for intentionally removable panels.",
+      "native_audit": {
+        "category": "d",
+        "category_meaning": "absent from all native sources",
+        "confidence": "high that CAD has nothing; unknown whether hardware is supplied",
+        "basis": "no row, virtual component, compound part or drawing parts list in any native source inspected; no drawing or presentation is associated with any version of the acquired files, so category b cannot apply",
+        "groups_found": [],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "panel_retention",
@@ -294,8 +975,73 @@
       ],
       "observation": "Model includes supports and clamps that may form the complete retention mechanism.",
       "quantity_basis": "4 panels, 8 lower supports, 8 toggle clamps",
-      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Check mating pads, wear strips or stops only if required; avoid counting clamp hardware again under this row."
+      "conclusion": "Native audit 2026-10-22: no hardware row; only compound purchased models with unnamed bodies are present. Whether the vendor supplies mounting hardware is undecidable from CAD; vendor documentation or the physical kit decides.",
+      "next_check": "Check mating pads, wear strips or stops only if required; avoid counting clamp hardware again under this row.",
+      "native_audit": {
+        "category": "e",
+        "category_meaning": "unknown",
+        "confidence": "low: undecidable from CAD",
+        "basis": "compound (multi-body) parts are present but their bodies are unnamed and no vendor kit data is in the model; whether hardware is supplied in the kit is undecidable from CAD; no drawing or presentation is associated with any version of the acquired files, so category b cannot apply",
+        "groups_found": [
+          "FREE STANDING FRAME:1",
+          "PANEL ASSEMBLY:1",
+          "PANEL ASSEMBLY:2",
+          "PANEL ASSEMBLY:3",
+          "PANEL ASSEMBLY:4",
+          "TOGGLE CLAMP ASSEMBLY:1",
+          "TOGGLE CLAMP ASSEMBLY:2",
+          "TOGGLE CLAMP ASSEMBLY:3",
+          "TOGGLE CLAMP ASSEMBLY:4"
+        ],
+        "groups_not_in_audit": [],
+        "hardware_named_rows_exported": [],
+        "hardware_named_rows_not_exported": [],
+        "compound_parts": [
+          {
+            "component": "MCMASTER 47065T245.ipt",
+            "group_id": "FREE STANDING FRAME:1",
+            "solid_bodies": 4,
+            "hidden_solid_bodies": 3,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt",
+            "group_id": "TOGGLE CLAMP ASSEMBLY:1",
+            "solid_bodies": 20,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt",
+            "group_id": "TOGGLE CLAMP ASSEMBLY:2",
+            "solid_bodies": 20,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt",
+            "group_id": "TOGGLE CLAMP ASSEMBLY:3",
+            "solid_bodies": 20,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          },
+          {
+            "component": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt",
+            "group_id": "TOGGLE CLAMP ASSEMBLY:4",
+            "solid_bodies": 20,
+            "hidden_solid_bodies": 0,
+            "bom_structure": "Normal",
+            "named_bodies": false
+          }
+        ],
+        "virtual_components": 0,
+        "drawings": "none exist in Vault for any version of the 44 source masters",
+        "no_inference": "thread, length, grade and quantity are not inferred from appearance"
+      }
     },
     {
       "id": "monitor_mount",
@@ -306,7 +1052,11 @@
       "observation": "Current accepted enclosure scene has no monitor mount or AW2725Q occurrences.",
       "quantity_basis": "2 monitors requested; mount design not yet selected",
       "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Design support/removal method and acrylic interface; identify fabrication parts, brackets and connection hardware after design review."
+      "next_check": "Design support/removal method and acrylic interface; identify fabrication parts, brackets and connection hardware after design review.",
+      "native_audit": {
+        "category": null,
+        "note": "new-design scope; not audited (no native geometry exists)"
+      }
     },
     {
       "id": "monitor_fasteners",
@@ -317,7 +1067,11 @@
       "observation": "Reference drawing records 100 x 100 mm spacing only; no fastening specification.",
       "quantity_basis": "2 monitors; VESA hole count/thread/engagement must be verified",
       "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Check AW2725Q manufacturer mounting requirements and real monitor; choose length from bracket stack plus allowed engagement, not hole spacing."
+      "next_check": "Check AW2725Q manufacturer mounting requirements and real monitor; choose length from bracket stack plus allowed engagement, not hole spacing.",
+      "native_audit": {
+        "category": null,
+        "note": "new-design scope; not audited (no native geometry exists)"
+      }
     },
     {
       "id": "bowl_frame",
@@ -328,7 +1082,11 @@
       "observation": "Bowls/frame are not in this frozen scene.",
       "quantity_basis": "Approximately 12 bowls (6 per monitor), pending customer dimensions",
       "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Confirm outer/rim dimensions and final layout; prototype before specifying quantities/materials for final purchase."
+      "next_check": "Confirm outer/rim dimensions and final layout; prototype before specifying quantities/materials for final purchase.",
+      "native_audit": {
+        "category": null,
+        "note": "new-design scope; not audited (no native geometry exists)"
+      }
     },
     {
       "id": "cabling_supplies",
@@ -339,7 +1097,83 @@
       "observation": "No cable/consumable models or physical inventory in this snapshot.",
       "quantity_basis": "Routing and available supplied cables unreviewed",
       "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
-      "next_check": "Survey supplied cables, power/access needs and routing; add individual ties, clips, pads or other consumables only when specified."
+      "next_check": "Survey supplied cables, power/access needs and routing; add individual ties, clips, pads or other consumables only when specified.",
+      "native_audit": {
+        "category": null,
+        "note": "new-design scope; not audited (no native geometry exists)"
+      }
+    }
+  ],
+  "native_audit": {
+    "evidence_run": "vault-cad-exchange/evidence/2026-10-22-windows-native-bom-audit-01",
+    "generated_at": "2026-10-22T16:37:27.536877+00:00",
+    "read_only": true,
+    "inputs_unchanged_after_run": true,
+    "native_parts_only_matches_exported_parts": true,
+    "virtual_components": 0,
+    "suppressed_occurrences": 0,
+    "excluded_occurrences": 0,
+    "reference_occurrences": 0,
+    "parts_with_purchased_or_inseparable_structure": 0,
+    "drawings_in_vault_for_any_version_of_44_masters": 0,
+    "external_parent_assemblies": 16,
+    "categories": {
+      "a": "in native BOM, not exported",
+      "a2": "in native BOM and exported",
+      "b": "drawing parts list only",
+      "c": "supplied inside a purchased kit per model/vendor data",
+      "d": "absent from all native sources",
+      "e": "unknown"
+    },
+    "caveats": [
+      "CAD instance counts and native BOM quantities are not purchase quantities or stock.",
+      "hardware_named is a name-based identification of modeled rows, not a specification.",
+      "Absence of a row proves only that CAD does not model the item; kit contents must be checked physically or against vendor documents."
+    ]
+  },
+  "coincident_occurrences": [
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\2W.353\\SHULZE 2W.353 TANK.ipt|[Primary]",
+      "occurrences": [
+        "TANK SUPPORT FRAME:1/SHULZE 2W.353 TANK:1",
+        "SHULZE 2W.353 TANK:1"
+      ],
+      "translation_difference_mm": 6.394884621840902e-13,
+      "rotation_difference": 6.123233995736822e-17,
+      "native_state": {
+        "bom_structure": [
+          "Normal",
+          "Normal"
+        ],
+        "visible": [
+          true,
+          true
+        ],
+        "suppressed": [
+          false,
+          false
+        ],
+        "reference": [
+          false,
+          false
+        ],
+        "grounded": [
+          false,
+          false
+        ],
+        "constraints": [
+          3,
+          3
+        ]
+      },
+      "parts_only_total_at_root": "3",
+      "vault_history_versions": {
+        "953935": 1,
+        "988145": 3
+      },
+      "conclusion": "unresolved",
+      "evidence_run": "vault-cad-exchange/evidence/2026-10-22-windows-native-bom-audit-01",
+      "action": "designer confirmation required before any required quantity is set; do not delete either source occurrence"
     }
   ]
 }

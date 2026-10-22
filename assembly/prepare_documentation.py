@@ -15,6 +15,9 @@ import subprocess
 import sys
 import tempfile
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import procurement_manifests as pm  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -91,8 +94,15 @@ def prepare(tools, output=None):
             if p.exists():
                 inside(ROOT, str(p.relative_to(ROOT)))
                 shutil.copyfile(p, staging / name)
+        sheets = {"supplementary-bom.csv": pm.SUPPLEMENT_CSV, "modeled-parts.csv": pm.MODELED_CSV, "joint-audit.json": pm.JOINT_AUDIT}
+        raw_scene = read(source / "scene.json")
         if not authored["inventory.json"].exists():
-            (staging / "inventory.json").write_text(json.dumps(inventory_template(sc), indent=2) + "\n")
+            # CAD counts from the scene plus the stock record from the procurement sheet (unknown = null, never 0)
+            inventory = pm.extend_inventory(inventory_template(sc), pm.stock_extension(pm.read_rows(pm.MODELED_CSV)), raw_scene)
+            (staging / "inventory.json").write_text(json.dumps(inventory, indent=2) + "\n")
+        # supplementary (non-geometric) items: converted from the procurement sheet every time, never hand-edited here
+        supplement = pm.build_supplement(raw_scene, pm.read_rows(pm.SUPPLEMENT_CSV), read(pm.JOINT_AUDIT))
+        (staging / "supplement.json").write_text(json.dumps(supplement, indent=2, ensure_ascii=False) + "\n")
         project = load_project(staging)
         settings, _ = load_settings(staging)
         for rel, record in files.items():
@@ -107,6 +117,11 @@ def prepare(tools, output=None):
             "mechanical_docs_dirty": bool(subprocess.check_output(["git", "-C", str(tools), "status", "--porcelain"], text=True).strip()),
             "authored_inputs": {n: sha(p) for n, p in authored.items() if p.exists()},
             "inventory_generated": not authored["inventory.json"].exists(),
+            "procurement_sheets": {n: sha(p) for n, p in sheets.items()},
+            "supplement_rows": len(supplement["items"]),
+            "stock_counts_recorded": sum(1 for it in project.inventory.items if getattr(it, "on_hand_each", None) is not None) if project.inventory else 0,
+            "joint_views": len(settings.get("joint_views") or []),
+            "inspection_groups": len(settings.get("inspection_groups") or []),
             "counts": {"parts": len(sc.parts), "assemblies": len(sc.assemblies), "occurrences": len(sc.occurrences)},
             "has_instructions": project.instructions is not None,
             "render_engine": settings["engine"],

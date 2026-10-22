@@ -7,6 +7,49 @@ STEP-based access through Git and open-source tools, and a primarily visual
 inventory and assembly manual. The acceptable production authoring workflow
 still needs to be reconciled with the manager's Inventor requirement.
 
+## Coordinator resumed (2026-10-22T16:47:10Z)
+
+Peter committed the project preparation work as `6dc874a` and synchronized the
+shared project clone; mechanical-docs is committed at `3ab5214` with the
+documentation agent now implementing the supplementary-inventory contract on top.
+Tools remain clean at `0705b40`. The previous "dirty on 683c0ba" notes are historical.
+
+- [x] Relay the authorized read-only native BOM/kit/drawing audit to Windows and
+  send the documentation agent the supplementary-manifest decisions and joint ids
+  (coordination messages `20261022T161838Z-linux-*`).
+- [x] Windows delivered the audit (`evidence/2026-10-22-windows-native-bom-audit-01/`).
+  Linux cross-checks: root parts-only view = the 37 exported parts, quantities
+  equal `cad_occurrences` for all 37 (155 total); all 16 existing-scope joints
+  classified (7 a2, 7 e, 2 d); no drawings exist in Vault for any version of the
+  44 masters; no virtual/suppressed/excluded/reference items; coincident tank
+  unresolved by CAD. Findings folded into `assembly/procurement/` (README section,
+  `joint-audit.json` `native_audit`, CSV evidence and identification columns).
+- [x] Windows patch `dd415d54...` (full replacement on tools 0705b40, supersedes
+  f45d968e...) applies cleanly in an isolated clone; 60 portable tests pass there.
+  Scene contract regression (`suppressed`/`mirrored`) acknowledged and restored.
+- [ ] Integrate that patch into the Linux tools worktree after the independent
+  static review; then older Inventor scripts migrate to the session helper.
+- [x] Peter (2026-10-22): tank(s) and the lower-panel light box are replaced by the
+  two monitors and bowls in the modified build (intent, not designer-confirmed);
+  hidden bodies and outside drawings are unknown to him and stay low priority.
+  Which occurrences form the light box is still unidentified.
+- [x] Peter (2026-10-22): first live publication pilot = `step/AW2725Q-nominal-envelope.step`
+  into `$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE` (recorded in
+  `vault-project.toml [publication]`). Sequence after commit/push: Linux
+  `prepare-publish`; Windows (after M1-M3/P1 fixes) snapshot, plan, single live add,
+  exact-byte re-download, result; Linux result ingest (to implement). No other writes.
+- [ ] Vendor documentation or physical kit inspection for the eight compound
+  purchased parts; physical stock count; only then a priced purchase shortlist.
+- [x] Documentation delivered the supplement validator (23 fields) and the joint
+  close-up mechanism on the fixture (102 tests). Linux: `assembly/procurement_manifests.py`
+  converts the CSVs to `supplement.json` and the inventory stock record at staging
+  time; `assembly/propose_joint_views.py` generated 16 joint views; `render.json`
+  adopts the six inspection groups. Staged `.cache/manual/project-supplement-01`
+  loads in mechanical-docs (20 rows, 0 stock counts, 16 joint views). Overlay for
+  the documentation build: `evidence/2026-10-22-linux-supplement-mapping-01/`.
+- [ ] Documentation: build the enclosure with that overlay using `--reuse`; review
+  the joint close-ups; Linux then adjusts instances/directions where a view fails.
+
 ## Session wrap-up (2026-10-22, supersedes earlier current-checkpoint notes)
 
 Both external agents finished. Read the shared `coordination/NEXT-AGENT.md` for
