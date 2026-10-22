@@ -22,7 +22,7 @@ SPECS = {
     "caster_plate_to_frame": {"primary": ["FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1"], "context": "FREE STANDING FRAME:1", "direction": [-0.7, 0.7, -0.25]},  # from below the plate so the rail end does not hide the contact face
     "handle_to_panel": {"primary": ["PANEL ASSEMBLY:1/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1"], "context": "PANEL ASSEMBLY:1", "direction": [-0.85, -0.3, 0.4]},  # grazing along the panel so its edge shows
     "clamp_to_mount": {"primary": ["TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1", "TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1"], "z": 0.6},
-    "clamp_mount_to_frame": {"primary": ["TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1"], "context": "root", "z": 1.6},  # steep from above: the corner column reads as a cross-section beside the mount, panels edge-on
+    "clamp_mount_to_frame": {"primary": ["TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1"], "context": ["FREE STANDING FRAME:1"], "z": 1.6},  # steep from above along the corner column; only the frame is faded, panels hidden (list context, 2026-10-22)
     "lower_support_to_frame": {"primary": ["FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:1"], "context": "FREE STANDING FRAME:1", "z": 0.4},
     "main_frame_joints": {"primary": ["FREE STANDING FRAME:1/MCMASTER 47065T245:1"], "context": "FREE STANDING FRAME:1", "z": 0.5},
     "camera_frame_joints": {"primary": ["CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:1"], "context": "CAMERA FRAME:1", "inward": True, "z": 0.45},  # from inside the camera frame
@@ -88,7 +88,12 @@ def main():
                         cands.append((d, oid))
             ids += [oid for _, oid in sorted(cands)[: s.get("max_near", len(cands))]]
         ctx = s.get("context")
-        if ctx is not None:
+        if isinstance(ctx, list):
+            # list context: assembly and/or occurrence ids that are drawn faded; need not contain the subject
+            for cid in ctx:
+                if cid not in asm and cid not in occ:
+                    sys.exit(f"{jid}: unknown context id {cid}")
+        elif ctx is not None:
             if ctx not in asm:
                 sys.exit(f"{jid}: unknown context {ctx}")
             for oid in ids:

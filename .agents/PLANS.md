@@ -50,7 +50,9 @@ Tools remain clean at `0705b40`. The previous "dirty on 683c0ba" notes are histo
 - [x] Documentation built the enclosure with the overlay (16 joint close-ups, 36/54-page
   PDFs, all checks pass); Linux adjusted the 7 views that hid the attachment, raised the
   outline budget to 600000 and added `assembly/project-notes.json` (printed note on the
-  intended build change). Rebuild requested; the documentation agent has not read it yet.
+  intended build change). Rebuilt twice: all 16 close-ups now show their attachment (14 with
+  outlines), 36/53-page PDFs, all checks pass; `clamp_mount_to_frame` uses a frame-only list
+  context. Evidence `2026-10-22-documentation-enclosure-supplement-03`; mechanical-docs 8172a92.
 - [x] FIRST LIVE VAULT ADD (2026-10-22T18:23:24Z): `step/AW2725Q-nominal-envelope.step` is Vault master
   994251 / version 994252 in the project folder (953863); verified by Windows, re-checked
   on Linux, recorded in `vault-lock.json` `publications` by `import-publish-result`.
