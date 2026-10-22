@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "freecad_version": "1.1.3",
+  "scene_sha256": "ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070",
+  "units": "mm",
+  "up_axis": "+Z",
+  "basis": "native (x,y,z) -> (x,-z,y); origin unchanged",
+  "solid_count": 479,
+  "coincident_same_part_pairs": [
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\2W.353\\SHULZE 2W.353 TANK.ipt|[Primary]",
+      "occurrence_ids": [
+        "TANK SUPPORT FRAME:1/SHULZE 2W.353 TANK:1",
+        "SHULZE 2W.353 TANK:1"
+      ],
+      "max_rotation_element_delta": 6.123233995736822e-17,
+      "max_translation_delta_mm": 6.821210263296962e-13,
+      "action": "Review native BOM/configuration; preserve both source occurrences pending confirmation."
+    }
+  ],
+  "two_monitor_footprints_mm": {
+    "side_by_side_landscape": [
+      1219.02,
+      355.97,
+      72.63
+    ],
+    "front_to_back_landscape": [
+      609.51,
+      711.94,
+      72.63
+    ]
+  },
+  "six_bowls_per_screen": {
+    "assumed_outer_diameter_mm": 160,
+    "columns": 3,
+    "rows": 2,
+    "active_width_mm": 589.97,
+    "active_height_mm": 332.93,
+    "total_horizontal_gap_and_margin_budget_mm": 109.97000000000003,
+    "total_vertical_gap_and_margin_budget_mm": 12.930000000000007
+  },
+  "limits": [
+    "Optimal axis-aligned envelopes, not certified clearance or insertion-path tests.",
+    "Monitor is a nominal rectangular body; mounts, cables, vents, tolerances and support loads excluded.",
+    "Bowl diameter is the manager's approximate value; whether it includes a rim is unknown.",
+    "CAD counts do not prove stock, purchased quantities or complete hardware."
+  ],
+  "occurrence_count": 155,
+  "group_count": 17,
+  "assemblies": [
+    {
+      "id": "root",
+      "occurrences": 155,
+      "distinct_parts": 37,
+      "bounds_mm": {
+        "min": [
+          -53.975000100047716,
+          -53.97500010010328,
+          -91.15000058292229
+        ],
+        "max": [
+          1247.7750001001143,
+          1247.7750001000586,
+          2517.7750000000015
+        ],
+        "extent": [
+          1301.750000200162,
+          1301.7500002001618,
+          2608.9250005829235
+        ]
+      }
+    },
+    {
+      "id": "CAMERA FRAME:1",
+      "occurrences": 36,
+      "distinct_parts": 16,
+      "bounds_mm": {
+        "min": [
+          0.3250000000037705,
+          -0.00012005973707385209,
+          2017.9973275232976
+        ],
+        "max": [
+          1193.1689339828483,
+          596.9000000000044,
+          2457.1728831265564
+        ],
+        "extent": [
+          1192.8439339828446,
+          596.9001200597415,
+          439.1755556032588
+        ]
+      }
+    },
+    {
+      "id": "TANK SUPPORT FRAME:1",
+      "occurrences": 22,
+      "distinct_parts": 7,
+      "bounds_mm": {
+        "min": [
+          6.549999900063212,
+          57.04897721084343,
+          751.6999998999995
+        ],
+        "max": [
+          1187.4500001000688,
+          1137.1510227890815,
+          904.0999999999999
+        ],
+        "extent": [
+          1180.9000002000055,
+          1080.102045578238,
+          152.4000001000004
+        ]
+      }
+    },
+    {
+      "id": "FREE STANDING FRAME:1",
+      "occurrences": 49,
+      "distinct_parts": 9,
+      "bounds_mm": {
+        "min": [
+          -12.954000100038469,
+          -12.954000100073182,
+          -91.15000058292229
+        ],
+        "max": [
+          1206.7540001000996,
+          1206.7540001000643,
+          2514.6000000000877
+        ],
+        "extent": [
+          1219.708000200138,
+          1219.7080002001376,
+          2605.7500005830098
+        ]
+      }
+    },
+    {
+      "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+      "occurrences": 2,
+      "distinct_parts": 2,
+      "bounds_mm": {
+        "min": [
+          -6.587883517986102,
+          1093.3999999999953,
+          -91.15000058291838
+        ],
+        "max": [
+          100.40000000007305,
+          1193.7999999999975,
+          2.0635715358707777e-12
+        ],
+        "extent": [
+          106.98788351805915,
+          100.40000000000214,
+          91.15000058292044
+        ]
+      }
+    },
+    {
+      "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:2",
+      "occurrences": 2,
+      "distinct_parts": 2,
+      "bounds_mm": {
+        "min": [
+          1093.4000000000667,
+          1093.3999999999216,
+          -91.15000058292063
+        ],
+        "max": [
+          1193.8000000000688,
+          1200.387883517981,
+          -9.834355552129992e-14
+        ],
+        "extent": [
+          100.40000000000214,
+          106.98788351805933,
+          91.15000058292053
+        ]
+      }
+    },
+    {
+      "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:3",
+      "occurrences": 2,
+      "distinct_parts": 2,
+      "bounds_mm": {
+        "min": [
+          -2.2026824808563106e-13,
+          -6.587883518057643,
+          -91.15000058292034
+        ],
+        "max": [
+          100.40000000000002,
+          100.40000000000008,
+          9.579004256465854e-14
+        ],
+        "extent": [
+          100.40000000000023,
+          106.98788351805771,
+          91.15000058292044
+        ]
+      }
+    },
+    {
+      "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:4",
+      "occurrences": 2,
+      "distinct_parts": 2,
+      "bounds_mm": {
+        "min": [
+          1093.3999999999921,
+          -7.358016973491033e-11,
+          -91.15000058292229
+        ],
+        "max": [
+          1200.3878835180515,
+          100.39999999992845,
+          -1.7787920006753238e-12
+        ],
+        "extent": [
+          106.98788351805933,
+          100.40000000000204,
+          91.15000058292051
+        ]
+      }
+    },
+    {
+      "id": "PANEL ASSEMBLY:1",
+      "occurrences": 3,
+      "distinct_parts": 2,
+      "bounds_mm": {
+        "min": [
+          25.40000000000191,
+          -53.97500010010328,
+          76.19999999989136
+        ],
+        "max": [
+          1168.4000000002377,
+          1.0924596288303698e-12,
+          2514.6000000000017
+        ],
+        "extent": [
+          1143.0000000002358,
+          53.975000100104374,
+          2438.4000000001106
+        ]
+      }
+    },
+    {
+      "id": "PANEL ASSEMBLY:2",
+      "occurrences": 3,
+      "distinct_parts": 2,
+      "bounds_mm": {
+        "min": [
+          -53.975000100047716,
+          25.39999999977215,
+          76.19999999989182
+        ],
+        "max": [
+          5.476438419421385e-11,
+          1168.400000000011,
+          2514.600000000003
+        ],
+        "extent": [
+          53.97500010010248,
+          1143.0000000002387,
+          2438.4000000001115
+        ]
+      }
+    },
+    {
+      "id": "PANEL ASSEMBLY:3",
+      "occurrences": 3,
+      "distinct_parts": 2,
+      "bounds_mm": {
+        "min": [
+          25.3999999998299,
+          1193.7999999999543,
+          76.19999999989369
+        ],
+        "max": [
+          1168.4000000000644,
+          1247.7750001000586,
+          2514.6000000000035
+        ],
+        "extent": [
+          1143.0000000002346,
+          53.97500010010435,
+          2438.4000000001097
+        ]
+      }
+    },
+    {
+      "id": "PANEL ASSEMBLY:4",
+      "occurrences": 3,
+      "distinct_parts": 2,
+      "bounds_mm": {
+        "min": [
+          1193.8000000000122,
+          25.399999999948818,
+          76.19999999989341
+        ],
+        "max": [
+          1247.7750001001143,
+          1168.4000000001797,
+          2514.6000000000013
+        ],
+        "extent": [
+          53.97500010010208,
+          1143.000000000231,
+          2438.400000000108
+        ]
+      }
+    },
+    {
+      "id": "TANK SUPPORT FRAME:2",
+      "occurrences": 22,
+      "distinct_parts": 7,
+      "bounds_mm": {
+        "min": [
+          56.94897721090466,
+          6.449999899920342,
+          431.7572462207032
+        ],
+        "max": [
+          1137.0510227891427,
+          1187.3500000999322,
+          584.1572463207036
+        ],
+        "extent": [
+          1080.1020455782382,
+          1180.9000002000118,
+          152.4000001000004
+        ]
+      }
+    },
+    {
+      "id": "TOGGLE CLAMP ASSEMBLY:1",
+      "occurrences": 3,
+      "distinct_parts": 2,
+      "bounds_mm": {
+        "min": [
+          -42.07714587567736,
+          -42.0771459756801,
+          1562.7212384413458
+        ],
+        "max": [
+          52.68675628422881,
+          52.68675628422675,
+          1638.921238441346
+        ],
+        "extent": [
+          94.76390215990617,
+          94.76390225990684,
+          76.20000000000027
+        ]
+      }
+    },
+    {
+      "id": "TOGGLE CLAMP ASSEMBLY:2",
+      "occurrences": 3,
+      "distinct_parts": 2,
+      "bounds_mm": {
+        "min": [
+          -42.077145975623765,
+          1141.1132437157823,
+          1562.7212384413479
+        ],
+        "max": [
+          52.686756284283085,
+          1235.8771458756885,
+          1638.9212384413481
+        ],
+        "extent": [
+          94.76390225990684,
+          94.76390215990614,
+          76.20000000000027
+        ]
+      }
+    },
+    {
+      "id": "TOGGLE CLAMP ASSEMBLY:3",
+      "occurrences": 3,
+      "distinct_parts": 2,
+      "bounds_mm": {
+        "min": [
+          1141.113243715838,
+          1141.1132437157278,
+          1562.7212384413476
+        ],
+        "max": [
+          1235.8771459757445,
+          1235.8771458756346,
+          1638.921238441348
+        ],
+        "extent": [
+          94.76390225990644,
+          94.76390215990682,
+          76.20000000000027
+        ]
+      }
+    },
+    {
+      "id": "TOGGLE CLAMP ASSEMBLY:4",
+      "occurrences": 3,
+      "distinct_parts": 2,
+      "bounds_mm": {
+        "min": [
+          1141.1132437157842,
+          -42.07714587573353,
+          1562.7212384413456
+        ],
+        "max": [
+          1235.8771459756913,
+          52.686756284172645,
+          1638.9212384413458
+        ],
+        "extent": [
+          94.76390225990713,
+          94.76390215990617,
+          76.20000000000027
+        ]
+      }
+    }
+  ],
+  "full_survey_sha256": "81671ba0f6dc655a8de3dd78a25ca5d482aab9e96c93c2b313b6110693444e9b",
+  "full_survey_evidence": "vault-cad-exchange/evidence/2026-10-22-linux-project-preparation-01/survey.json"
+}

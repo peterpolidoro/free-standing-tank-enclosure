@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "snapshot": "references/enclosure",
+  "scene_sha256": "ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070",
+  "export_receipt_sha256": "a8b0fecf5318185fef9c55f4eff9af7c5ffdfb7ed0dabcfca28900ecf6b36e4f",
+  "mechanical_docs_tested_commit": "27f9581",
+  "output": ".cache/manual/project",
+  "qualification": "Draft CAD inventory and inspection views. Physical stock and assembly order have not been reviewed."
+}

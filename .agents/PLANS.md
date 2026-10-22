@@ -7,6 +7,86 @@ STEP-based access through Git and open-source tools, and a primarily visual
 inventory and assembly manual. The acceptable production authoring workflow
 still needs to be reconciled with the manager's Inventor requirement.
 
+## Session wrap-up (2026-10-22, supersedes earlier current-checkpoint notes)
+
+Both external agents finished. Read the shared `coordination/NEXT-AGENT.md` for
+full recovery paths, patch hashes, role messages and the continuation order.
+
+- Windows delivered a full replacement patch against tools 0705b40, SHA-256
+  f45d968e885f49d70b34b1d21ad2618d9fb36a71e42ef83f227d61d4e7217d51.
+  It reports closure of the four cleanup/harness review cases and adds an offline
+  publication planner plus a dry-run-only SDK executor. Applied/tested only in an
+  isolated Linux clone (55 tests pass); full code review/integration remains.
+- Windows explicitly did NOT start the native BOM/drawing/attachment audit. This
+  is the next Windows priority and already within Peter's requested read-only work.
+  A new runtime/task relay is needed; no new user approval for reading is implied.
+- Documentation delivered six group inspection views, long-extrusion/end views,
+  a 16-page draft inventory (25 with appendix) and coincident-tank finding. Fresh
+  Linux tests: 84 pass, 2 FreeCAD-only tests skipped; agent reports those 2 passed
+  separately. Supplementary inventory is proposed, NOT implemented.
+- Wrap-up verified 15 artifact checks: 51 render image hashes, both PDF/HTML data
+  packages, Windows 40 payload hashes and 37 unchanged geometry DATA sections,
+  and 155 unchanged identities/placements/BOM classifications. New Windows scene
+  omits the earlier suppressed/mirrored fields; retain accepted snapshot and
+  review that contract difference before importing anything.
+- Complete standalone HTML/PDF packages were assembled in new handoff evidence
+  from checksum-matched images. Original shared manuals omitted their images;
+  no re-render or changes to earlier evidence were needed.
+- All local source changes remain uncommitted. Tools/shared clones remain clean;
+  Windows work is preserved as its patch, project and mechanical-docs as full
+  recovery patches in `evidence/2026-10-22-session-handoff-01/`.
+
+Next: read-only native BOM/kit/attachment audit and intended tank configuration;
+review/integrate Windows patch; agree supplementary inventory contract and project
+mapping; adopt/review docs render overlay; reconcile physical stock and purchase
+specifications. Full assembly procedure, production monitor/bowl design and live
+Vault publication remain unfinished. No commits, pushes, orders or Vault writes.
+
+## Earlier checkpoint (2026-10-22)
+
+Previous dated sections are historical progress notes. Current bases are project
+`683c0ba`, tools `0705b40`, documentation `27f9581`; Peter synchronized the shared
+project clone. This session leaves new project work uncommitted and does not
+modify shared Git checkouts or Vault.
+
+- [x] Review Windows hardening-02 evidence: completed checkpoint, not a lost run.
+  Full replacement patch is preserved; integration waits for focused cleanup and
+  harness failure cases. Windows agent has restarted per Peter.
+- [x] Verify documentation production artifacts and loader: 37 parts, 155 instances,
+  17 groups, mm normalization and one basis conversion. 76 tests pass at the
+  reviewed checkpoint; 12-page inventory PDF exists. Documentation agent is
+  improving pictorial inventory and isolated inspection views.
+- [x] Create a project-specific documentation recipe/stager with source hashes,
+  independent copies, preserved stock, no implicit assembly steps, and Cycles
+  outline budget. Fifteen preparation/Git/procurement checks pass against clean
+  documentation commit 27f9581. Full new-config rendering has not been repeated.
+- [x] Diagnose fresh-clone receipt failures: Git normalized raw CRLF metadata.
+  Preserve original four JSON files with an attributes override; verify all 40
+  payload hashes through both LF and CRLF-configured Git checkouts. Include the
+  exact raw JSON blobs in the next commit; do not merely commit attributes.
+- [x] Survey the accepted STEP geometry in FreeCAD: 479 solids, 155 placements,
+  17 group bounds. Flag one pair of coincident same-part tank instances; do not
+  remove either or derive purchasing quantities before native/configuration review.
+- [x] Create a 37-row modeled stock worksheet and 20 candidate attachment/design
+  audits. Unknown stock/required/order quantities remain blank. These complement
+  the CAD inventory; they are not an approved purchase BOM.
+- [ ] Windows: read-only native structured/parts-only BOM, virtual/suppressed/
+  reference components and associated drawing audit, ahead of optional offline
+  upload-adapter expansion after the cleanup fixes.
+- [ ] Documentation: attachment close-ups and supplementary inventory contract;
+  preserve kit boundaries and unknown quantities.
+- [ ] Reconcile intended assembly configuration, kit contents and physical stock;
+  confirm every missing hardware SKU/quantity before preparing a purchase shortlist.
+- [ ] Design/review monitor supports, removal paths, acrylic interface and bowl
+  rim/layout; front-to-back nominal footprint is promising but not a fit approval.
+- [ ] Author and physically validate actual assembly order/tool access. Any live
+  Vault write still needs a concrete destination/payload and qualified adapter.
+
+Details: `assembly/documentation-workflow.md`, `assembly/procurement/README.md`,
+`validation/2026-10-22-reference-survey.md`. Shared coordination records the two
+active agent assignments and user requests. The current evidence run is
+`vault-cad-exchange/evidence/2026-10-22-linux-project-preparation-01/`.
+
 ## Progress (2026-10-21)
 
 - [x] Repository layout, STEP Git attributes, and project locator established.

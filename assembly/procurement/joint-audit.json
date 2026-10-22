@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "source_scene_sha256": "ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070",
+  "review_state": "draft",
+  "scope": "Known model interfaces and requested modifications; not a proof of BOM completeness.",
+  "joints": [
+    {
+      "id": "caster_to_plate",
+      "supplementary_item_id": "SUP-001",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:2",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:3",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:4"
+      ],
+      "observation": "Each caster group contains caster and plate only. Caster is a compound purchased model.",
+      "quantity_basis": "4 caster assemblies; attachment points per caster unverified",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Inspect caster drawing/kit bag and plate holes; determine bolt/nut/washer stack and whether hardware is supplied."
+    },
+    {
+      "id": "caster_plate_to_frame",
+      "supplementary_item_id": "SUP-002",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "FREE STANDING FRAME:1",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:2",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:3",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:4"
+      ],
+      "observation": "No separate fasteners in caster groups; parent frame connectors may cover some joints.",
+      "quantity_basis": "4 plates; frame attachments per plate unverified",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Identify slot versus tapped-end mounting; confirm extrusion series, threads, engagement and supplied hardware."
+    },
+    {
+      "id": "handle_to_panel",
+      "supplementary_item_id": "SUP-003",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]",
+        "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "PANEL ASSEMBLY:1",
+        "PANEL ASSEMBLY:2",
+        "PANEL ASSEMBLY:3",
+        "PANEL ASSEMBLY:4"
+      ],
+      "observation": "Each panel group contains one panel and two handles only; filenames describe unthreaded holes.",
+      "quantity_basis": "8 handles on 4 panels; fastening points per handle unverified",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Inspect both sides of panel and handle drawing; choose bolt/nut/washer stack for actual panel thickness."
+    },
+    {
+      "id": "clamp_to_mount",
+      "supplementary_item_id": "SUP-004",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "TOGGLE CLAMP ASSEMBLY:1",
+        "TOGGLE CLAMP ASSEMBLY:2",
+        "TOGGLE CLAMP ASSEMBLY:3",
+        "TOGGLE CLAMP ASSEMBLY:4"
+      ],
+      "observation": "Each clamp group contains two compound clamps and one mount only.",
+      "quantity_basis": "8 clamps on 4 mounts; points per clamp unverified",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Distinguish factory clamp adjustment hardware from base mounting screws; inspect mount holes/inserts and kit contents."
+    },
+    {
+      "id": "clamp_mount_to_frame",
+      "supplementary_item_id": "SUP-005",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "TOGGLE CLAMP ASSEMBLY:1",
+        "TOGGLE CLAMP ASSEMBLY:2",
+        "TOGGLE CLAMP ASSEMBLY:3",
+        "TOGGLE CLAMP ASSEMBLY:4"
+      ],
+      "observation": "No separate mounting fasteners in clamp groups.",
+      "quantity_basis": "4 mounts; points per mount unverified",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Inspect printed mount connection and slots; identify inserts/T-nuts and bolt stack if needed."
+    },
+    {
+      "id": "lower_support_to_frame",
+      "supplementary_item_id": "SUP-006",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT LEFT.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT RIGHT.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "FREE STANDING FRAME:1"
+      ],
+      "observation": "Eight support occurrences in main frame; no standalone matching fastener identified by scene names.",
+      "quantity_basis": "4 left + 4 right supports; points per support unverified",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Inspect supports for integral clip versus screw attachment; determine left/right fastening scheme before adding hardware."
+    },
+    {
+      "id": "main_frame_joints",
+      "supplementary_item_id": "SUP-007",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
+        "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt|[Primary]",
+        "DATA\\COMMON\\McMaster\\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "FREE STANDING FRAME:1"
+      ],
+      "observation": "Eight 47065T245 occurrences have hidden bodies; other connectors may have integrated hardware.",
+      "quantity_basis": "11 long rails + 4 columns + 2 short rails; joint count requires review",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Map every rail-end joint; verify connector kit contents, slot/end machining, captive hardware and any unmodeled brackets."
+    },
+    {
+      "id": "camera_frame_joints",
+      "supplementary_item_id": "SUP-008",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\COMMON\\McMaster\\MCMASTER 5537T293_T-Slotted Framing.ipt|[Primary]",
+        "DATA\\COMMON\\McMaster\\MCMASTER 5537T429_T-Slotted Framing.ipt|[Primary]",
+        "DATA\\COMMON\\McMaster\\MCMASTER 3136N149_T-Slotted Framing.ipt|[Primary]",
+        "DATA\\COMMON\\McMaster\\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]",
+        "DATA\\COMMON\\McMaster\\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "CAMERA FRAME:1"
+      ],
+      "observation": "Sliding/connector models contain multiple bodies; bracket attachment hardware not separately identified.",
+      "quantity_basis": "4 named 47065T845 brackets plus other connector/sliding parts",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Check each connector product drawing and kit before counting extra screws/T-nuts; inspect camera-frame-to-main-frame joints."
+    },
+    {
+      "id": "support_frame_corners",
+      "supplementary_item_id": "SUP-009",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "TANK SUPPORT FRAME:1",
+        "TANK SUPPORT FRAME:2"
+      ],
+      "observation": "Each 47065T242 has five visible bodies; these may already represent kit hardware.",
+      "quantity_basis": "8 modeled corner connectors across 2 support frames",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Confirm assembly selection and kit bill; count loose/missing contents against kit without double-counting."
+    },
+    {
+      "id": "support_brackets",
+      "supplementary_item_id": "SUP-010",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT PLATFORM.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "TANK SUPPORT FRAME:1",
+        "TANK SUPPORT FRAME:2"
+      ],
+      "observation": "Brackets are modeled; their full fastening stacks are not identified from names.",
+      "quantity_basis": "8 brackets across 2 support frames",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Review bracket-to-frame and bracket-to-platform joints, holes and purchased hardware."
+    },
+    {
+      "id": "vibration_mounts",
+      "supplementary_item_id": "SUP-011",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
+        "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "TANK SUPPORT FRAME:1",
+        "TANK SUPPORT FRAME:2"
+      ],
+      "observation": "Washers are already modeled; no separately named matching nuts in this scene.",
+      "quantity_basis": "8 mounts + 8 oversized washers modeled",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Determine stud/thread arrangement and retained sides; check included nuts/other washers and support configuration."
+    },
+    {
+      "id": "camera_plates",
+      "supplementary_item_id": "SUP-012",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ROLLER MOUNT PLATE.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING MOUNT PLATE.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "CAMERA FRAME:1"
+      ],
+      "observation": "Plates are modeled; general mounting screws/T-nuts are not separately identified.",
+      "quantity_basis": "2 roller plates + 2 spring plates + 2 different camera plates",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Determine whether camera plates are stacked or alternatives; map plate-to-frame and plate-to-plate fastening points."
+    },
+    {
+      "id": "spring_roller",
+      "supplementary_item_id": "SUP-013",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\COMMON\\McMaster\\MCMASTER 9293K121_Constant-Force Spring.ipt|[Primary]",
+        "DATA\\COMMON\\McMaster\\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]",
+        "DATA\\COMMON\\McMaster\\MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING ROLLER.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "CAMERA FRAME:1"
+      ],
+      "observation": "Two shoulder screws already exist; bearing internals are compound geometry.",
+      "quantity_basis": "2 springs + 2 rollers + 4 bearings + 2 shoulder screws modeled",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Verify shoulder screw threads, spacers/retainers and both spring-end attachments; do not purchase bearing internals separately."
+    },
+    {
+      "id": "camera_attachment",
+      "supplementary_item_id": "SUP-014",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "CAMERA FRAME:1"
+      ],
+      "observation": "Camera itself is not among the 37 part definitions.",
+      "quantity_basis": "Camera plate variants present; actual camera selection unconfirmed",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Confirm camera supplied/needed and its selected interface drawing, screws and available thread depth."
+    },
+    {
+      "id": "top_panel",
+      "supplementary_item_id": "SUP-015",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE TOP PANEL.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "root"
+      ],
+      "observation": "Panel is at scene root; retention hardware not identified.",
+      "quantity_basis": "1 enclosure top panel",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Check whether panel rests, clips or screws into frame; do not invent fasteners for intentionally removable panels."
+    },
+    {
+      "id": "panel_retention",
+      "supplementary_item_id": "SUP-016",
+      "scope": "existing",
+      "part_ids": [
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT LEFT.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT RIGHT.ipt|[Primary]",
+        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]",
+        "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]"
+      ],
+      "parent_group_ids": [
+        "FREE STANDING FRAME:1",
+        "PANEL ASSEMBLY:1",
+        "PANEL ASSEMBLY:2",
+        "PANEL ASSEMBLY:3",
+        "PANEL ASSEMBLY:4",
+        "TOGGLE CLAMP ASSEMBLY:1",
+        "TOGGLE CLAMP ASSEMBLY:2",
+        "TOGGLE CLAMP ASSEMBLY:3",
+        "TOGGLE CLAMP ASSEMBLY:4"
+      ],
+      "observation": "Model includes supports and clamps that may form the complete retention mechanism.",
+      "quantity_basis": "4 panels, 8 lower supports, 8 toggle clamps",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Check mating pads, wear strips or stops only if required; avoid counting clamp hardware again under this row."
+    },
+    {
+      "id": "monitor_mount",
+      "supplementary_item_id": "SUP-017",
+      "scope": "new_design",
+      "part_ids": [],
+      "parent_group_ids": [],
+      "observation": "Current accepted enclosure scene has no monitor mount or AW2725Q occurrences.",
+      "quantity_basis": "2 monitors requested; mount design not yet selected",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Design support/removal method and acrylic interface; identify fabrication parts, brackets and connection hardware after design review."
+    },
+    {
+      "id": "monitor_fasteners",
+      "supplementary_item_id": "SUP-018",
+      "scope": "new_design",
+      "part_ids": [],
+      "parent_group_ids": [],
+      "observation": "Reference drawing records 100 x 100 mm spacing only; no fastening specification.",
+      "quantity_basis": "2 monitors; VESA hole count/thread/engagement must be verified",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Check AW2725Q manufacturer mounting requirements and real monitor; choose length from bracket stack plus allowed engagement, not hole spacing."
+    },
+    {
+      "id": "bowl_frame",
+      "supplementary_item_id": "SUP-019",
+      "scope": "new_design",
+      "part_ids": [],
+      "parent_group_ids": [],
+      "observation": "Bowls/frame are not in this frozen scene.",
+      "quantity_basis": "Approximately 12 bowls (6 per monitor), pending customer dimensions",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Confirm outer/rim dimensions and final layout; prototype before specifying quantities/materials for final purchase."
+    },
+    {
+      "id": "cabling_supplies",
+      "supplementary_item_id": "SUP-020",
+      "scope": "new_design",
+      "part_ids": [],
+      "parent_group_ids": [],
+      "observation": "No cable/consumable models or physical inventory in this snapshot.",
+      "quantity_basis": "Routing and available supplied cables unreviewed",
+      "conclusion": "Candidate attachment review; absence/included-kit status not yet confirmed.",
+      "next_check": "Survey supplied cables, power/access needs and routing; add individual ties, clips, pads or other consumables only when specified."
+    }
+  ]
+}

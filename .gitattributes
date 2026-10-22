@@ -9,3 +9,6 @@
 *.STP -text -diff -merge
 *.FCStd -text -diff -merge
 *.fcstd -text -diff -merge
+
+# Raw exporter metadata is covered by byte-level receipts; keep CRLF/BOM intact.
+/references/enclosure/*.json -text whitespace=cr-at-eol

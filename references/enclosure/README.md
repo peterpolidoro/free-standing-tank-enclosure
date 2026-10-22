@@ -7,13 +7,15 @@ Accepted as open-source reference geometry after Linux/Windows checks; see
 
 - `assets/`: local-frame STEP geometry, protected by the project reference lock.
 - `native-snapshot.json`: raw cm-based native instance/hierarchy, source and BOM data.
-- `scene.json`: raw exporter scene, mm placements with native +Y up; it needs an
-  adapter before use with the current mechanical-docs draft-1 loader.
-- `inventory-raw.json`: CAD counts and classifications, not procurement/stock.
+- `scene.json`: raw exporter scene, mm placements with native +Y up; supported directly
+  by mechanical-docs at reviewed commit 27f9581.
+- `inventory-raw.json`: original malformed inventory (OrderedDictionary string);
+  preserved as evidence. Derive CAD counts from the validated scene instead.
 - `export-receipt.json`: original hashes/sizes for the 40 exported payload/metadata
   files; this README is a Linux addition, outside that original receipt.
 
-Do not edit reference files in place. Work under designs/ and export authored STEP
+Raw JSON bytes (including BOM/CRLF) are preserved by `.gitattributes` so the
+original receipt survives Git checkout. Do not edit reference files in place. Work under designs/ and export authored STEP
 under step/. Preserve original header units (in/mm/cm); FreeCAD reads them into mm.
 The existing earlier panel reference outside this directory remains unchanged.
 

@@ -1,0 +1,13 @@
+{
+  "schema_version": "draft-1",
+  "engine": "CYCLES",
+  "cycles_samples": 64,
+  "thumbnail_px": 600,
+  "long_side_px": 1600,
+  "lines": {
+    "enabled": true,
+    "max_triangles": 400000,
+    "preview_max_triangles": 400000
+  },
+  "note": "Keep outlines on small parts; omit expensive Freestyle on dense overview views. Mesh/pose checks and Cycles quality remain in effect."
+}

@@ -7,8 +7,11 @@ disassembly. Produce a web version and a printable PDF from the same instruction
 source. Minimal prose, part images, numerals, arrows and clear symbols should make
 the instructions useful even when the reader cannot read the accompanying text.
 
-This file records requirements and the proposed interface. No instruction renderer,
-verified assembly sequence, website or PDF manual has been implemented yet.
+The reusable `mechanical-docs` pipeline now processes the accepted enclosure
+snapshot and has produced a draft pictorial inventory in HTML and a 12-page PDF.
+No production assembly sequence has been authored or physically validated.
+Use [the build recipe](documentation-workflow.md) for reproducible staging and
+[the stock/completeness audit](procurement/README.md) for purchasing preparation.
 
 ## Inputs to preserve during CAD exchange
 
@@ -32,12 +35,12 @@ The manual needs part identities and assembly structure in addition to geometry:
   needed to distinguish similar-looking pieces. Model omissions such as fasteners,
   ties or adhesive still need explicit manual/inventory entries when required.
 
-Per-part STEP plus an assembly manifest is the proposed representation, not an
-existing exporter contract. A structured full-assembly STEP can be an initial
-input if identity and placements survive validation. Do not infer a trustworthy
-BOM by counting solids in a flattened STEP. The current 503-native-SurfaceBodies
-versus 479-STEP-solids discrepancy remains unresolved, so the existing enclosure
-export cannot yet establish a complete inventory.
+Per-part STEP plus an assembly manifest is implemented for the accepted frozen
+snapshot: 37 part definitions, 155 occurrences and 17 groups. The 24-body gap
+between native and exported solid counts was explained by hidden geometry; the
+FreeCAD reconstruction matches all 479 exported solids. Do not infer a BOM by
+counting solids: compound purchased parts and omitted hardware still require
+review, as do coincident tank instances identified in the new geometry survey.
 
 ## What a technician should receive
 
@@ -84,8 +87,8 @@ support during assembly, cables and any required flexing separately.
 Use explicit review states: draft, CAD-reviewed, and physically build-validated.
 Peter/technician should walk through a real build, record corrections and confirm
 that the sequence avoids unnecessary removal/rework before it is called validated.
-The current native assembly/export completeness work is still a prerequisite for
-claiming that the full manual or BOM covers every component.
+The native BOM, supplementary hardware audit and physical stock reconciliation
+remain prerequisites for claiming that the manual covers every required component.
 
 ## Proposed open-source implementation
 
@@ -109,11 +112,11 @@ Project-specific inventory, step sequence, camera definitions, illustrations'
 source configuration and validation records belong under this project's
 `assembly/`. Preserve the original CAD files and source references.
 
-A reusable, Autodesk-independent renderer may warrant its own repository, such
-as `assembly-manual-tools`; that is a proposal, and no new repository exists from
-this task. Vault-specific extraction stays in `vault-cad-tools`. Another agent
-can develop the documentation tools in its own checkout against a small fixture
-while the Windows agent qualifies CAD export and native updates.
+Reusable Autodesk-independent documentation tools live in `mechanical-docs`.
+Vault-specific extraction stays in `vault-cad-tools`. The documentation agent
+owns that tools checkout; Linux CAD owns this project and the Windows agent owns
+its separate tools checkout. Coordination and large evidence files stay in the
+shared `vault-cad-exchange` mailbox outside Git.
 
 Version the compact source data and build scripts. Derive meshes and high-resolution
 renders instead of duplicating every assembly state as another CAD file. Keep
@@ -134,8 +137,10 @@ The frozen part snapshot is in `../references/enclosure/`: 37 part definitions,
 an ignored hierarchical FreeCAD reference from it. Validation:
 `../validation/2026-10-21-pilot-02-review.md`.
 
-Raw scene IDs/metadata and +Y-up basis need a documentation adapter. FreeCAD STEP
-import returns mm even for inch/cm files; the documentation importer needs its
-unit-normalization correction. No production instruction sequence, procurement
-quantities or stock values were inferred from the scene. Keep the raw snapshot
-immutable and author the eventual manual separately here.
+The raw scene loads directly in mechanical-docs at reviewed commit `27f9581`.
+It preserves IDs/metadata, composes flexible group instances, applies the +Y-to-+Z
+basis once, and correctly normalizes inch/mm/cm STEP assets through FreeCAD mm.
+No production instruction sequence, purchasing quantities or stock values were
+inferred. Keep the raw snapshot immutable and author the manual separately here.
+Raw exporter JSON bytes are exempt from Git line-ending conversion because their
+original checksum receipts must also survive a fresh clone.

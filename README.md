@@ -44,9 +44,14 @@ step-by-step assembly manual, with a web version and printable PDF generated
 from one instruction source. See [assembly manual requirements](assembly/README.md).
 Part identities, quantities, subassemblies and placements must survive CAD export;
 assembly order and tool access require explicit review and a physical walkthrough.
-The separate `mechanical-docs` repository has a working synthetic fixture pipeline
-for illustrated HTML/PDF. Production use needs its STEP-unit fix and an adapter
-for the new reference scene; the enclosure's actual assembly procedure is not authored.
+The separate `mechanical-docs` repository now loads the accepted snapshot directly
+and has produced a draft enclosure inventory in HTML and a 12-page PDF. The
+unit correction and basis handling are validated. Use the
+[documentation build recipe](assembly/documentation-workflow.md) and
+[stock/completeness sheets](assembly/procurement/README.md). The actual assembly
+procedure and complete procurement BOM still need review. A
+[dimensional survey](validation/2026-10-22-reference-survey.md) flags coincident
+tank instances that must not be blindly counted as purchases.
 
 ## Ownership and layout
 
@@ -54,7 +59,7 @@ for the new reference scene; the enclosure's actual assembly procedure is not au
 - `designs/`: editable FreeCAD documents or CAD scripts authored here.
 - `step/`: authored STEP deliverables eligible for publication back to Vault.
 - `drawings/`: supporting drawings and specifications.
-- `assembly/`: visual manual requirements and future inventory/sequence sources.
+- `assembly/`: manual sources/build recipe, geometry survey, and procurement audit sheets.
 - `vault-project.toml`: server identity and project locator; no credentials.
 - `vault-lock.json`: imported provenance and, eventually, verified publications.
 - `validation/`: geometry checks, acceptance decisions, and unresolved comparisons.
@@ -84,7 +89,8 @@ upload is implemented by this project's files.
 The project manifest provides FreeCAD for local authoring. The tools' smaller
 manifest is sufficient for metadata and transfer work. Neither installs Autodesk
 software. FreeCAD imports and assembly reconstruction checks pass. Visual/design
-review, production documentation and the reverse publication pilot remain outstanding.
+review, a complete hardware BOM, physical stock count, assembly procedure and the
+reverse publication pilot remain outstanding.
 
 Use ordinary Git initially. `.gitattributes` preserves STEP bytes and disables
 automatic text merging. Large files may justify LFS later, but the initial
