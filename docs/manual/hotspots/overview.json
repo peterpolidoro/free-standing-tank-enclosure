@@ -7,10 +7,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 5537T293_T-Slotted Framing:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5537T293_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    526.7,
-    257.4,
-    540.7,
-    287.7
+    768.4,
+    350.2,
+    782.4,
+    380.5
    ],
    "corners_in_frame": 8
   },
@@ -18,10 +18,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 5537T429_T-Slotted Framing:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5537T429_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    526.5,
-    340.0,
-    558.8,
-    384.0
+    768.1,
+    428.4,
+    800.8,
+    472.0
    ],
    "corners_in_frame": 8
   },
@@ -29,10 +29,10 @@
    "id": "CAMERA FRAME:1/SLLB Enclosure 15in 47065T808_T-Slotted Framing:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    530.0,
-    258.5,
-    547.9,
-    380.0
+    771.7,
+    347.6,
+    789.7,
+    470.9
    ],
    "corners_in_frame": 8
   },
@@ -40,10 +40,10 @@
    "id": "CAMERA FRAME:1/SLLB Enclosure 22in 47065T808_T-Slotted Framing:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 22in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    538.1,
-    193.2,
-    667.4,
-    273.6
+    654.6,
+    285.5,
+    781.7,
+    362.5
    ],
    "corners_in_frame": 8
   },
@@ -51,10 +51,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 5537T293_T-Slotted Framing:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5537T293_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    812.2,
-    365.9,
-    826.2,
-    396.1
+    1059.8,
+    251.2,
+    1073.8,
+    281.6
    ],
    "corners_in_frame": 8
   },
@@ -62,10 +62,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 5537T429_T-Slotted Framing:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5537T429_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    794.2,
-    441.7,
-    826.4,
-    485.6
+    1041.4,
+    335.7,
+    1074.0,
+    379.2
    ],
    "corners_in_frame": 8
   },
@@ -73,10 +73,10 @@
    "id": "CAMERA FRAME:1/SLLB Enclosure 15in 47065T808_T-Slotted Framing:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    805.0,
-    363.0,
-    822.9,
-    484.4
+    1052.5,
+    252.2,
+    1070.5,
+    375.6
    ],
    "corners_in_frame": 8
   },
@@ -84,10 +84,10 @@
    "id": "CAMERA FRAME:1/SLLB Enclosure 22in 47065T808_T-Slotted Framing:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 22in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    813.2,
-    297.7,
-    942.4,
-    378.1
+    935.4,
+    190.1,
+    1062.5,
+    267.2
    ],
    "corners_in_frame": 8
   },
@@ -95,10 +95,10 @@
    "id": "CAMERA FRAME:1/SLLB Enclosure 41in 47065T808_T-Slotted Framing:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 41in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    656.5,
-    198.4,
-    929.4,
-    314.7
+    667.2,
+    195.1,
+    945.5,
+    302.7
    ],
    "corners_in_frame": 8
   },
@@ -106,10 +106,10 @@
    "id": "CAMERA FRAME:1/SLLB Enclosure 41in 47065T808_T-Slotted Framing:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 41in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    539.7,
-    262.3,
-    812.6,
-    378.6
+    781.7,
+    255.8,
+    1060.0,
+    363.4
    ],
    "corners_in_frame": 8
   },
@@ -117,10 +117,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 3136N149_T-Slotted Framing:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 3136N149_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    622.3,
-    206.0,
-    694.0,
-    240.6
+    657.3,
+    288.3,
+    729.1,
+    320.7
    ],
    "corners_in_frame": 8
   },
@@ -128,10 +128,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 3136N149_T-Slotted Framing:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 3136N149_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    868.0,
-    299.3,
-    939.7,
-    333.9
+    908.2,
+    203.1,
+    980.0,
+    235.5
    ],
    "corners_in_frame": 8
   },
@@ -139,10 +139,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    532.8,
-    284.0,
-    603.2,
-    342.1
+    774.6,
+    334.2,
+    846.1,
+    428.8
    ],
    "corners_in_frame": 8
   },
@@ -150,10 +150,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    532.4,
-    239.8,
-    594.0,
-    337.6
+    726.5,
+    330.0,
+    787.3,
+    428.0
    ],
    "corners_in_frame": 8
   },
@@ -161,10 +161,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:3",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    807.4,
-    344.3,
-    869.0,
-    442.1
+    1007.4,
+    234.7,
+    1068.2,
+    332.7
    ],
    "corners_in_frame": 8
   },
@@ -172,10 +172,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 47065T27_T-Slotted Framing:4",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    749.7,
-    348.0,
-    820.1,
-    442.9
+    996.1,
+    275.8,
+    1067.6,
+    336.9
    ],
    "corners_in_frame": 8
   },
@@ -183,10 +183,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 9293K121_Constant-Force Spring:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9293K121_Constant-Force Spring.ipt|[Primary]",
    "box_px": [
-    529.6,
-    242.9,
-    549.0,
-    269.9
+    749.3,
+    339.9,
+    768.6,
+    366.7
    ],
    "corners_in_frame": 8
   },
@@ -194,10 +194,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]",
    "box_px": [
-    795.8,
-    370.9,
-    812.7,
-    389.9
+    1043.1,
+    267.5,
+    1060.0,
+    286.1
    ],
    "corners_in_frame": 8
   },
@@ -205,10 +205,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]",
    "box_px": [
-    813.8,
-    370.1,
-    830.5,
-    389.2
+    1045.2,
+    259.8,
+    1061.9,
+    278.6
    ],
    "corners_in_frame": 8
   },
@@ -216,10 +216,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:3",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]",
    "box_px": [
-    538.7,
-    265.6,
-    555.4,
-    284.7
+    764.3,
+    355.1,
+    781.0,
+    373.9
    ],
    "corners_in_frame": 8
   },
@@ -227,10 +227,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 47065T845_Silver Corner Bracket:4",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]",
    "box_px": [
-    540.3,
-    273.9,
-    557.1,
-    292.8
+    782.2,
+    356.0,
+    799.1,
+    374.7
    ],
    "corners_in_frame": 8
   },
@@ -238,10 +238,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]",
    "box_px": [
-    535.2,
-    252.5,
-    541.5,
-    262.2
+    753.8,
+    350.5,
+    760.0,
+    360.2
    ],
    "corners_in_frame": 8
   },
@@ -249,10 +249,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt|[Primary]",
    "box_px": [
-    534.1,
-    253.0,
-    549.0,
-    264.1
+    752.6,
+    348.9,
+    767.7,
+    359.6
    ],
    "corners_in_frame": 8
   },
@@ -260,10 +260,10 @@
    "id": "CAMERA FRAME:1/SPRING ROLLER:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING ROLLER.ipt|[Primary]",
    "box_px": [
-    530.0,
-    246.2,
-    549.1,
-    269.4
+    748.6,
+    343.5,
+    767.6,
+    366.4
    ],
    "corners_in_frame": 8
   },
@@ -271,10 +271,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]",
    "box_px": [
-    540.1,
-    254.3,
-    546.3,
-    264.0
+    758.7,
+    348.8,
+    764.9,
+    358.5
    ],
    "corners_in_frame": 8
   },
@@ -282,10 +282,10 @@
    "id": "CAMERA FRAME:1/ROLLER MOUNT PLATE:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ROLLER MOUNT PLATE.ipt|[Primary]",
    "box_px": [
-    539.9,
-    243.4,
-    564.6,
-    268.0
+    744.0,
+    337.2,
+    768.3,
+    361.3
    ],
    "corners_in_frame": 8
   },
@@ -293,10 +293,10 @@
    "id": "CAMERA FRAME:1/ROLLER MOUNT PLATE:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ROLLER MOUNT PLATE.ipt|[Primary]",
    "box_px": [
-    826.4,
-    352.2,
-    851.1,
-    376.8
+    1036.5,
+    237.9,
+    1060.8,
+    262.0
    ],
    "corners_in_frame": 8
   },
@@ -304,10 +304,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 9293K121_Constant-Force Spring:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9293K121_Constant-Force Spring.ipt|[Primary]",
    "box_px": [
-    825.9,
-    355.4,
-    845.3,
-    382.5
+    1051.8,
+    237.2,
+    1071.1,
+    264.0
    ],
    "corners_in_frame": 8
   },
@@ -315,10 +315,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:3",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]",
    "box_px": [
-    833.6,
-    366.5,
-    841.7,
-    375.6
+    1058.5,
+    247.0,
+    1066.5,
+    256.3
    ],
    "corners_in_frame": 8
   },
@@ -326,10 +326,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt|[Primary]",
    "box_px": [
-    826.3,
-    364.5,
-    842.6,
-    375.1
+    1051.0,
+    247.6,
+    1067.5,
+    257.9
    ],
    "corners_in_frame": 8
   },
@@ -337,10 +337,10 @@
    "id": "CAMERA FRAME:1/SPRING ROLLER:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING ROLLER.ipt|[Primary]",
    "box_px": [
-    824.9,
-    359.6,
-    848.0,
-    381.5
+    1049.8,
+    241.0,
+    1072.8,
+    263.1
    ],
    "corners_in_frame": 8
   },
@@ -348,10 +348,10 @@
    "id": "CAMERA FRAME:1/MCMASTER 5972K164_Ball Bearing:4",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]",
    "box_px": [
-    828.8,
-    364.6,
-    836.9,
-    373.7
+    1053.6,
+    248.7,
+    1061.6,
+    257.9
    ],
    "corners_in_frame": 8
   },
@@ -359,10 +359,10 @@
    "id": "CAMERA FRAME:1/SPRING MOUNT PLATE:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING MOUNT PLATE.ipt|[Primary]",
    "box_px": [
-    527.5,
-    236.5,
-    538.6,
-    258.8
+    759.5,
+    332.9,
+    770.8,
+    355.2
    ],
    "corners_in_frame": 8
   },
@@ -370,10 +370,10 @@
    "id": "CAMERA FRAME:1/SPRING MOUNT PLATE:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING MOUNT PLATE.ipt|[Primary]",
    "box_px": [
-    823.7,
-    349.0,
-    834.9,
-    371.3
+    1062.0,
+    230.2,
+    1073.3,
+    252.5
    ],
    "corners_in_frame": 8
   },
@@ -381,10 +381,10 @@
    "id": "CAMERA FRAME:1/CAMERA MOUNT PLATE:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE.ipt|[Primary]",
    "box_px": [
-    777.7,
-    240.6,
-    805.1,
-    277.7
+    781.4,
+    237.9,
+    809.3,
+    274.7
    ],
    "corners_in_frame": 8
   },
@@ -392,10 +392,10 @@
    "id": "CAMERA FRAME:1/CAMERA MOUNT PLATE - TELEDYNE KINETIX:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt|[Primary]",
    "box_px": [
-    745.6,
-    217.1,
-    773.1,
-    250.4
+    748.6,
+    237.5,
+    776.6,
+    270.4
    ],
    "corners_in_frame": 8
   },
@@ -403,10 +403,10 @@
    "id": "TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
    "box_px": [
-    551.6,
-    607.2,
-    778.1,
-    737.5
+    550.8,
+    711.1,
+    773.1,
+    835.4
    ],
    "corners_in_frame": 8
   },
@@ -414,10 +414,10 @@
    "id": "TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
    "box_px": [
-    822.0,
-    709.9,
-    1048.5,
-    840.2
+    826.9,
+    617.4,
+    1049.1,
+    741.7
    ],
    "corners_in_frame": 8
   },
@@ -425,10 +425,10 @@
    "id": "TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:3",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
    "box_px": [
-    778.1,
-    606.7,
-    1047.4,
-    717.5
+    552.2,
+    616.8,
+    827.0,
+    718.8
    ],
    "corners_in_frame": 8
   },
@@ -436,10 +436,10 @@
    "id": "TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:4",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
    "box_px": [
-    552.7,
-    730.0,
-    822.1,
-    840.7
+    773.0,
+    733.9,
+    1047.8,
+    835.9
    ],
    "corners_in_frame": 8
   },
@@ -447,10 +447,10 @@
    "id": "TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
    "box_px": [
-    546.0,
-    725.0,
-    568.2,
-    742.6
+    761.8,
+    821.2,
+    784.0,
+    838.2
    ],
    "corners_in_frame": 8
   },
@@ -458,10 +458,10 @@
    "id": "TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
    "box_px": [
-    811.1,
-    825.7,
-    833.2,
-    843.3
+    1032.4,
+    729.3,
+    1054.6,
+    746.4
    ],
    "corners_in_frame": 8
   },
@@ -469,10 +469,10 @@
    "id": "TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:3",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
    "box_px": [
-    1031.9,
-    704.9,
-    1054.1,
-    722.4
+    815.9,
+    614.5,
+    838.1,
+    631.6
    ],
    "corners_in_frame": 8
   },
@@ -480,10 +480,10 @@
    "id": "TANK SUPPORT FRAME:1/T SLOT CORNER 47065T242:4",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
    "box_px": [
-    766.9,
-    604.2,
-    789.1,
-    621.8
+    545.3,
+    706.3,
+    567.6,
+    723.4
    ],
    "corners_in_frame": 8
   },
@@ -491,10 +491,10 @@
    "id": "TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
    "box_px": [
-    533.2,
-    732.0,
-    545.2,
-    745.0
+    753.1,
+    839.5,
+    765.1,
+    852.3
    ],
    "corners_in_frame": 8
   },
@@ -502,10 +502,10 @@
    "id": "TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
    "box_px": [
-    758.5,
-    608.7,
-    770.5,
-    621.7
+    532.2,
+    722.4,
+    544.2,
+    735.2
    ],
    "corners_in_frame": 8
   },
@@ -513,10 +513,10 @@
    "id": "TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:3",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
    "box_px": [
-    1055.0,
-    721.3,
-    1066.9,
-    734.3
+    834.9,
+    619.7,
+    846.9,
+    632.5
    ],
    "corners_in_frame": 8
   },
@@ -524,10 +524,10 @@
    "id": "TANK SUPPORT FRAME:1/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:4",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
    "box_px": [
-    829.7,
-    844.6,
-    841.6,
-    857.6
+    1055.8,
+    736.8,
+    1067.7,
+    749.6
    ],
    "corners_in_frame": 8
   },
@@ -535,10 +535,10 @@
    "id": "TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
    "box_px": [
-    1055.0,
-    725.1,
-    1066.9,
-    730.9
+    834.9,
+    623.5,
+    846.9,
+    629.0
    ],
    "corners_in_frame": 8
   },
@@ -546,10 +546,10 @@
    "id": "TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
    "box_px": [
-    829.7,
-    848.4,
-    841.6,
-    854.2
+    1055.8,
+    740.7,
+    1067.7,
+    746.1
    ],
    "corners_in_frame": 8
   },
@@ -557,10 +557,10 @@
    "id": "TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:3",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
    "box_px": [
-    758.5,
-    612.5,
-    770.5,
-    618.3
+    532.2,
+    726.3,
+    544.2,
+    731.7
    ],
    "corners_in_frame": 8
   },
@@ -568,10 +568,10 @@
    "id": "TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:4",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
    "box_px": [
-    533.2,
-    735.8,
-    545.2,
-    741.6
+    753.1,
+    843.4,
+    765.1,
+    848.9
    ],
    "corners_in_frame": 8
   },
@@ -579,10 +579,10 @@
    "id": "TANK SUPPORT FRAME:1/TANK SUPPORT PLATFORM:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT PLATFORM.ipt|[Primary]",
    "box_px": [
-    546.2,
-    600.5,
-    1053.9,
-    835.7
+    545.5,
+    610.7,
+    1054.5,
+    830.5
    ],
    "corners_in_frame": 8
   },
@@ -590,10 +590,10 @@
    "id": "TANK SUPPORT FRAME:1/SHULZE 2W.353 TANK:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\2W.353\\SHULZE 2W.353 TANK.ipt|[Primary]",
    "box_px": [
-    567.1,
-    585.5,
-    1033.0,
-    822.4
+    566.5,
+    594.5,
+    1033.6,
+    817.7
    ],
    "corners_in_frame": 8
   },
@@ -601,10 +601,10 @@
    "id": "TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]",
    "box_px": [
-    806.9,
-    829.6,
-    849.8,
-    850.0
+    1024.5,
+    730.6,
+    1067.7,
+    749.8
    ],
    "corners_in_frame": 8
   },
@@ -612,10 +612,10 @@
    "id": "TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]",
    "box_px": [
-    750.4,
-    606.8,
-    793.3,
-    627.3
+    532.2,
+    712.6,
+    575.5,
+    731.7
    ],
    "corners_in_frame": 8
   },
@@ -623,10 +623,10 @@
    "id": "TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:3",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]",
    "box_px": [
-    1024.0,
-    710.8,
-    1066.9,
-    731.2
+    811.6,
+    617.8,
+    854.9,
+    636.9
    ],
    "corners_in_frame": 8
   },
@@ -634,10 +634,10 @@
    "id": "TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:4",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]",
    "box_px": [
-    533.2,
-    725.6,
-    576.1,
-    746.1
+    745.1,
+    825.5,
+    788.3,
+    844.6
    ],
    "corners_in_frame": 8
   },
@@ -645,10 +645,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    527.4,
-    825.5,
-    776.1,
-    971.3
+    526.5,
+    944.3,
+    770.7,
+    1083.4
    ],
    "corners_in_frame": 8
   },
@@ -656,10 +656,10 @@
    "id": "FREE STANDING FRAME:1/MCMASTER 47065T245:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
    "box_px": [
-    519.2,
-    955.0,
-    538.6,
-    976.0
+    760.1,
+    1066.9,
+    779.5,
+    1087.7
    ],
    "corners_in_frame": 8
   },
@@ -667,10 +667,10 @@
    "id": "FREE STANDING FRAME:1/MCMASTER 47065T245:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
    "box_px": [
-    765.7,
-    820.2,
-    785.0,
-    841.2
+    518.6,
+    938.8,
+    537.9,
+    959.5
    ],
    "corners_in_frame": 8
   },
@@ -678,10 +678,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    776.1,
-    824.8,
-    1071.0,
-    949.5
+    528.5,
+    840.7,
+    829.3,
+    955.8
    ],
    "corners_in_frame": 8
   },
@@ -689,10 +689,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:3",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    823.9,
-    938.2,
-    1072.6,
-    1083.9
+    829.3,
+    841.5,
+    1073.5,
+    980.7
    ],
    "corners_in_frame": 8
   },
@@ -700,10 +700,10 @@
    "id": "FREE STANDING FRAME:1/MCMASTER 47065T245:3",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
    "box_px": [
-    1061.4,
-    932.5,
-    1080.8,
-    953.6
+    820.5,
+    836.4,
+    839.9,
+    857.1
    ],
    "corners_in_frame": 8
   },
@@ -711,10 +711,10 @@
    "id": "FREE STANDING FRAME:1/MCMASTER 47065T245:4",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
    "box_px": [
-    815.0,
-    1067.3,
-    834.3,
-    1088.4
+    1062.1,
+    964.5,
+    1081.4,
+    985.2
    ],
    "corners_in_frame": 8
   },
@@ -722,10 +722,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    766.3,
-    96.3,
-    784.3,
-    829.3
+    518.6,
+    199.3,
+    536.5,
+    947.6
    ],
    "corners_in_frame": 8
   },
@@ -733,10 +733,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    519.2,
-    231.4,
-    537.2,
-    964.4
+    760.7,
+    327.7,
+    778.7,
+    1076.1
    ],
    "corners_in_frame": 8
   },
@@ -744,10 +744,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:3",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    815.7,
-    344.1,
-    833.7,
-    1077.0
+    1063.5,
+    225.0,
+    1081.4,
+    973.3
    ],
    "corners_in_frame": 8
   },
@@ -755,10 +755,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 96in 47065T808_T-Slotted Framing:4",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    1062.8,
-    208.9,
-    1080.8,
-    941.9
+    821.3,
+    96.5,
+    839.3,
+    844.9
    ],
    "corners_in_frame": 8
   },
@@ -766,10 +766,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:4",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    823.9,
-    202.0,
-    1072.6,
-    347.8
+    829.3,
+    89.2,
+    1073.5,
+    228.4
    ],
    "corners_in_frame": 8
   },
@@ -777,10 +777,10 @@
    "id": "FREE STANDING FRAME:1/MCMASTER 47065T245:5",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
    "box_px": [
-    815.0,
-    332.1,
-    834.3,
-    353.1
+    1062.1,
+    213.1,
+    1081.4,
+    233.8
    ],
    "corners_in_frame": 8
   },
@@ -788,10 +788,10 @@
    "id": "FREE STANDING FRAME:1/MCMASTER 47065T245:6",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
    "box_px": [
-    1061.4,
-    197.3,
-    1080.8,
-    218.3
+    820.5,
+    85.0,
+    839.9,
+    105.7
    ],
    "corners_in_frame": 8
   },
@@ -799,10 +799,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:5",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    776.1,
-    88.7,
-    1071.0,
-    213.4
+    528.5,
+    88.4,
+    829.3,
+    203.5
    ],
    "corners_in_frame": 8
   },
@@ -810,10 +810,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:6",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    527.4,
-    89.4,
-    776.1,
-    235.1
+    526.5,
+    192.0,
+    770.7,
+    331.1
    ],
    "corners_in_frame": 8
   },
@@ -821,10 +821,10 @@
    "id": "FREE STANDING FRAME:1/MCMASTER 47065T245:7",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
    "box_px": [
-    765.7,
-    84.9,
-    785.0,
-    106.0
+    518.6,
+    187.5,
+    537.9,
+    208.2
    ],
    "corners_in_frame": 8
   },
@@ -832,10 +832,10 @@
    "id": "FREE STANDING FRAME:1/MCMASTER 47065T245:8",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
    "box_px": [
-    519.2,
-    219.8,
-    538.6,
-    240.8
+    760.1,
+    315.6,
+    779.5,
+    336.3
    ],
    "corners_in_frame": 8
   },
@@ -843,10 +843,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:7",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    529.0,
-    223.8,
-    823.9,
-    348.5
+    770.7,
+    216.8,
+    1071.5,
+    332.0
    ],
    "corners_in_frame": 8
   },
@@ -854,10 +854,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:8",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    529.0,
-    839.5,
-    823.9,
-    964.2
+    770.7,
+    846.0,
+    1071.5,
+    961.2
    ],
    "corners_in_frame": 8
   },
@@ -865,10 +865,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:9",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    776.1,
-    704.4,
-    1071.0,
-    829.1
+    528.5,
+    717.6,
+    829.3,
+    832.8
    ],
    "corners_in_frame": 8
   },
@@ -876,10 +876,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:10",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    823.9,
-    722.7,
-    1072.6,
-    868.4
+    829.3,
+    621.3,
+    1073.5,
+    760.4
    ],
    "corners_in_frame": 8
   },
@@ -887,10 +887,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:11",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    527.4,
-    610.0,
-    776.1,
-    755.8
+    526.5,
+    724.0,
+    770.7,
+    863.2
    ],
    "corners_in_frame": 8
   },
@@ -898,10 +898,10 @@
    "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:1/HOLKIE LEVELING CASTER:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]",
    "box_px": [
-    756.9,
-    833.8,
-    799.4,
-    877.7
+    517.0,
+    948.3,
+    559.6,
+    991.5
    ],
    "corners_in_frame": 8
   },
@@ -909,10 +909,10 @@
    "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]",
    "box_px": [
-    753.0,
-    832.4,
-    800.2,
-    855.8
+    518.6,
+    946.1,
+    565.9,
+    968.1
    ],
    "corners_in_frame": 8
   },
@@ -920,10 +920,10 @@
    "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:2/HOLKIE LEVELING CASTER:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]",
    "box_px": [
-    1040.9,
-    942.6,
-    1081.9,
-    987.2
+    810.4,
+    850.1,
+    851.6,
+    894.0
    ],
    "corners_in_frame": 8
   },
@@ -931,10 +931,10 @@
    "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:2/CASTER MOUNTING PLATE:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]",
    "box_px": [
-    1033.5,
-    939.0,
-    1080.8,
-    962.4
+    805.0,
+    848.8,
+    852.3,
+    870.9
    ],
    "corners_in_frame": 8
   },
@@ -942,10 +942,10 @@
    "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:3/HOLKIE LEVELING CASTER:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]",
    "box_px": [
-    518.1,
-    962.6,
-    559.1,
-    1007.1
+    748.4,
+    1072.2,
+    789.6,
+    1116.0
    ],
    "corners_in_frame": 8
   },
@@ -953,10 +953,10 @@
    "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:3/CASTER MOUNTING PLATE:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]",
    "box_px": [
-    519.2,
-    960.3,
-    566.5,
-    983.7
+    747.7,
+    1067.6,
+    795.0,
+    1089.6
    ],
    "corners_in_frame": 8
   },
@@ -964,10 +964,10 @@
    "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:4/HOLKIE LEVELING CASTER:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]",
    "box_px": [
-    800.6,
-    1072.1,
-    843.1,
-    1116.0
+    1040.4,
+    974.6,
+    1083.0,
+    1017.8
    ],
    "corners_in_frame": 8
   },
@@ -975,10 +975,10 @@
    "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:4/CASTER MOUNTING PLATE:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]",
    "box_px": [
-    799.8,
-    1066.8,
-    847.0,
-    1090.3
+    1034.1,
+    970.4,
+    1081.4,
+    992.4
    ],
    "corners_in_frame": 8
   },
@@ -986,10 +986,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    529.0,
-    960.0,
-    553.5,
-    981.9
+    770.7,
+    1062.8,
+    795.3,
+    1084.3
    ],
    "corners_in_frame": 8
   },
@@ -997,10 +997,10 @@
    "id": "FREE STANDING FRAME:1/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt|[Primary]",
    "box_px": [
-    799.5,
-    1062.7,
-    823.9,
-    1084.7
+    1046.8,
+    969.1,
+    1071.5,
+    990.5
    ],
    "corners_in_frame": 8
   },
@@ -1008,10 +1008,10 @@
    "id": "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:1",
    "part_id": "DATA\\COMMON\\McMaster\\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]",
    "box_px": [
-    765.0,
-    705.1,
-    795.7,
-    751.0
+    526.5,
+    814.4,
+    557.8,
+    860.0
    ],
    "corners_in_frame": 8
   },
@@ -1019,10 +1019,10 @@
    "id": "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:2",
    "part_id": "DATA\\COMMON\\McMaster\\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]",
    "box_px": [
-    529.0,
-    735.5,
-    555.1,
-    783.5
+    754.8,
+    839.2,
+    780.4,
+    887.2
    ],
    "corners_in_frame": 8
   },
@@ -1030,10 +1030,10 @@
    "id": "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:3",
    "part_id": "DATA\\COMMON\\McMaster\\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]",
    "box_px": [
-    759.8,
-    609.3,
-    785.9,
-    657.2
+    528.5,
+    719.2,
+    554.1,
+    767.2
    ],
    "corners_in_frame": 8
   },
@@ -1041,10 +1041,10 @@
    "id": "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:4",
    "part_id": "DATA\\COMMON\\McMaster\\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]",
    "box_px": [
-    1044.9,
-    717.6,
-    1071.0,
-    765.5
+    819.6,
+    620.4,
+    845.2,
+    668.4
    ],
    "corners_in_frame": 8
   },
@@ -1052,10 +1052,10 @@
    "id": "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:5",
    "part_id": "DATA\\COMMON\\McMaster\\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]",
    "box_px": [
-    814.1,
-    843.8,
-    840.2,
-    891.8
+    1045.9,
+    740.4,
+    1071.5,
+    788.4
    ],
    "corners_in_frame": 8
   },
@@ -1063,10 +1063,10 @@
    "id": "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:6",
    "part_id": "DATA\\COMMON\\McMaster\\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]",
    "box_px": [
-    1041.9,
-    810.3,
-    1072.6,
-    856.2
+    809.3,
+    718.4,
+    840.6,
+    764.0
    ],
    "corners_in_frame": 8
   },
@@ -1074,10 +1074,10 @@
    "id": "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:7",
    "part_id": "DATA\\COMMON\\McMaster\\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]",
    "box_px": [
-    527.4,
-    835.1,
-    558.1,
-    880.9
+    759.4,
+    937.9,
+    790.7,
+    983.5
    ],
    "corners_in_frame": 8
   },
@@ -1085,10 +1085,10 @@
    "id": "FREE STANDING FRAME:1/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:8",
    "part_id": "DATA\\COMMON\\McMaster\\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]",
    "box_px": [
-    804.3,
-    940.3,
-    835.0,
-    986.2
+    1042.2,
+    841.9,
+    1073.5,
+    887.5
    ],
    "corners_in_frame": 8
   },
@@ -1096,10 +1096,10 @@
    "id": "FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT LEFT.ipt|[Primary]",
    "box_px": [
-    519.2,
-    938.4,
-    543.7,
-    968.4
+    763.6,
+    1046.9,
+    788.1,
+    1076.6
    ],
    "corners_in_frame": 8
   },
@@ -1107,10 +1107,10 @@
    "id": "FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT RIGHT.ipt|[Primary]",
    "box_px": [
-    806.5,
-    1047.5,
-    830.9,
-    1077.5
+    1056.8,
+    947.4,
+    1081.3,
+    977.0
    ],
    "corners_in_frame": 8
   },
@@ -1118,10 +1118,10 @@
    "id": "FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT LEFT.ipt|[Primary]",
    "box_px": [
-    757.6,
-    802.2,
-    781.9,
-    832.2
+    517.4,
+    921.9,
+    541.8,
+    951.6
    ],
    "corners_in_frame": 8
   },
@@ -1129,10 +1129,10 @@
    "id": "FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT RIGHT.ipt|[Primary]",
    "box_px": [
-    518.2,
-    933.1,
-    542.6,
-    963.2
+    752.0,
+    1046.3,
+    776.4,
+    1076.0
    ],
    "corners_in_frame": 8
   },
@@ -1140,10 +1140,10 @@
    "id": "FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:3",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT LEFT.ipt|[Primary]",
    "box_px": [
-    1056.3,
-    910.9,
-    1080.8,
-    940.8
+    811.9,
+    817.5,
+    836.4,
+    847.1
    ],
    "corners_in_frame": 8
   },
@@ -1151,10 +1151,10 @@
    "id": "FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:3",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT RIGHT.ipt|[Primary]",
    "box_px": [
-    769.1,
-    801.7,
-    793.5,
-    831.7
+    518.7,
+    917.0,
+    543.2,
+    946.7
    ],
    "corners_in_frame": 8
   },
@@ -1162,10 +1162,10 @@
    "id": "FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:4",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT LEFT.ipt|[Primary]",
    "box_px": [
-    818.1,
-    1047.0,
-    842.4,
-    1077.0
+    1058.2,
+    942.4,
+    1082.6,
+    972.1
    ],
    "corners_in_frame": 8
   },
@@ -1173,10 +1173,10 @@
    "id": "FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:4",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT RIGHT.ipt|[Primary]",
    "box_px": [
-    1057.4,
-    916.1,
-    1081.8,
-    946.1
+    823.6,
+    818.0,
+    848.0,
+    847.7
    ],
    "corners_in_frame": 8
   },
@@ -1184,10 +1184,10 @@
    "id": "PANEL ASSEMBLY:1/ENCLOSURE PANEL:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]",
    "box_px": [
-    525.1,
-    227.0,
-    819.0,
-    1063.6
+    775.4,
+    219.9,
+    1075.5,
+    1062.6
    ],
    "corners_in_frame": 8
   },
@@ -1195,10 +1195,10 @@
    "id": "PANEL ASSEMBLY:1/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]",
    "box_px": [
-    565.6,
-    584.0,
-    584.5,
-    643.6
+    828.5,
+    645.8,
+    847.3,
+    706.0
    ],
    "corners_in_frame": 8
   },
@@ -1206,10 +1206,10 @@
    "id": "PANEL ASSEMBLY:1/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]",
    "box_px": [
-    748.1,
-    653.3,
-    766.9,
-    713.0
+    1014.8,
+    582.5,
+    1033.6,
+    642.7
    ],
    "corners_in_frame": 8
   },
@@ -1217,10 +1217,10 @@
    "id": "PANEL ASSEMBLY:2/ENCLOSURE PANEL:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]",
    "box_px": [
-    523.9,
-    87.6,
-    769.0,
-    946.4
+    523.0,
+    193.9,
+    763.4,
+    1062.0
    ],
    "corners_in_frame": 8
   },
@@ -1228,10 +1228,10 @@
    "id": "PANEL ASSEMBLY:2/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]",
    "box_px": [
-    705.7,
-    443.2,
-    725.4,
-    502.4
+    551.7,
+    560.9,
+    571.6,
+    620.7
    ],
    "corners_in_frame": 8
   },
@@ -1239,10 +1239,10 @@
    "id": "PANEL ASSEMBLY:2/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]",
    "box_px": [
-    553.6,
-    526.3,
-    573.4,
-    585.6
+    700.7,
+    640.0,
+    720.6,
+    699.7
    ],
    "corners_in_frame": 8
   },
@@ -1250,10 +1250,10 @@
    "id": "PANEL ASSEMBLY:3/ENCLOSURE PANEL:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]",
    "box_px": [
-    781.0,
-    87.0,
-    1074.9,
-    923.6
+    524.5,
+    86.9,
+    824.6,
+    929.6
    ],
    "corners_in_frame": 8
   },
@@ -1261,10 +1261,10 @@
    "id": "PANEL ASSEMBLY:3/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]",
    "box_px": [
-    1015.5,
-    507.0,
-    1034.4,
-    566.7
+    752.7,
+    443.5,
+    771.5,
+    503.7
    ],
    "corners_in_frame": 8
   },
@@ -1272,10 +1272,10 @@
    "id": "PANEL ASSEMBLY:3/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]",
    "box_px": [
-    833.1,
-    437.7,
-    851.9,
-    497.3
+    566.4,
+    506.7,
+    585.2,
+    566.9
    ],
    "corners_in_frame": 8
   },
@@ -1283,10 +1283,10 @@
    "id": "PANEL ASSEMBLY:4/ENCLOSURE PANEL:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]",
    "box_px": [
-    831.0,
-    204.3,
-    1076.1,
-    1063.1
+    836.6,
+    87.5,
+    1077.0,
+    955.5
    ],
    "corners_in_frame": 8
   },
@@ -1294,10 +1294,10 @@
    "id": "PANEL ASSEMBLY:4/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]",
    "box_px": [
-    874.6,
-    648.3,
-    894.3,
-    707.5
+    1028.4,
+    528.8,
+    1048.3,
+    588.5
    ],
    "corners_in_frame": 8
   },
@@ -1305,10 +1305,10 @@
    "id": "PANEL ASSEMBLY:4/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]",
    "box_px": [
-    1026.6,
-    565.1,
-    1046.4,
-    624.3
+    879.4,
+    449.7,
+    899.3,
+    509.5
    ],
    "corners_in_frame": 8
   },
@@ -1316,10 +1316,10 @@
    "id": "SHULZE 2W.353 TANK:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\2W.353\\SHULZE 2W.353 TANK.ipt|[Primary]",
    "box_px": [
-    567.1,
-    585.5,
-    1033.0,
-    822.4
+    566.5,
+    594.5,
+    1033.6,
+    817.7
    ],
    "corners_in_frame": 8
   },
@@ -1327,10 +1327,10 @@
    "id": "TANK SUPPORT FRAME:2/TSLOT EXTRUSION 1X40.5 copy:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
    "box_px": [
-    552.7,
-    825.1,
-    822.0,
-    935.9
+    773.1,
+    831.1,
+    1047.9,
+    933.1
    ],
    "corners_in_frame": 8
   },
@@ -1338,10 +1338,10 @@
    "id": "TANK SUPPORT FRAME:2/TSLOT EXTRUSION 1X40.5 copy:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
    "box_px": [
-    778.0,
-    701.8,
-    1047.4,
-    812.6
+    552.2,
+    714.0,
+    827.0,
+    816.0
    ],
    "corners_in_frame": 8
   },
@@ -1349,10 +1349,10 @@
    "id": "TANK SUPPORT FRAME:2/TSLOT EXTRUSION 1X40.5 copy:3",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
    "box_px": [
-    551.6,
-    702.3,
-    778.1,
-    832.7
+    550.9,
+    808.3,
+    773.1,
+    932.6
    ],
    "corners_in_frame": 8
   },
@@ -1360,10 +1360,10 @@
    "id": "TANK SUPPORT FRAME:2/TSLOT EXTRUSION 1X40.5 copy:4",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
    "box_px": [
-    822.0,
-    805.0,
-    1048.4,
-    935.4
+    826.9,
+    714.6,
+    1049.2,
+    838.9
    ],
    "corners_in_frame": 8
   },
@@ -1371,10 +1371,10 @@
    "id": "TANK SUPPORT FRAME:2/T SLOT CORNER 47065T242:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
    "box_px": [
-    811.0,
-    920.8,
-    833.2,
-    938.4
+    1032.5,
+    826.5,
+    1054.7,
+    843.6
    ],
    "corners_in_frame": 8
   },
@@ -1382,10 +1382,10 @@
    "id": "TANK SUPPORT FRAME:2/T SLOT CORNER 47065T242:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
    "box_px": [
-    1031.9,
-    800.0,
-    1054.0,
-    817.6
+    816.0,
+    711.7,
+    838.2,
+    728.8
    ],
    "corners_in_frame": 8
   },
@@ -1393,10 +1393,10 @@
    "id": "TANK SUPPORT FRAME:2/T SLOT CORNER 47065T242:3",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
    "box_px": [
-    766.9,
-    699.3,
-    789.0,
-    716.9
+    545.4,
+    803.6,
+    567.6,
+    820.6
    ],
    "corners_in_frame": 8
   },
@@ -1404,10 +1404,10 @@
    "id": "TANK SUPPORT FRAME:2/T SLOT CORNER 47065T242:4",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
    "box_px": [
-    546.0,
-    820.1,
-    568.2,
-    837.7
+    761.9,
+    918.4,
+    784.1,
+    935.4
    ],
    "corners_in_frame": 8
   },
@@ -1415,10 +1415,10 @@
    "id": "TANK SUPPORT FRAME:2/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
    "box_px": [
-    805.7,
-    940.7,
-    817.7,
-    953.7
+    1053.1,
+    844.2,
+    1065.1,
+    857.0
    ],
    "corners_in_frame": 8
   },
@@ -1426,10 +1426,10 @@
    "id": "TANK SUPPORT FRAME:2/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
    "box_px": [
-    535.3,
-    838.0,
-    547.3,
-    851.0
+    777.1,
+    937.9,
+    789.1,
+    950.7
    ],
    "corners_in_frame": 8
   },
@@ -1437,10 +1437,10 @@
    "id": "TANK SUPPORT FRAME:2/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:3",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
    "box_px": [
-    782.4,
-    702.9,
-    794.3,
-    715.9
+    534.9,
+    809.5,
+    546.9,
+    822.3
    ],
    "corners_in_frame": 8
   },
@@ -1448,10 +1448,10 @@
    "id": "TANK SUPPORT FRAME:2/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount:4",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
    "box_px": [
-    1052.8,
-    805.6,
-    1064.7,
-    818.6
+    811.0,
+    715.8,
+    823.0,
+    728.6
    ],
    "corners_in_frame": 8
   },
@@ -1459,10 +1459,10 @@
    "id": "TANK SUPPORT FRAME:2/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
    "box_px": [
-    782.4,
-    706.6,
-    794.3,
-    712.5
+    534.9,
+    813.3,
+    546.9,
+    818.8
    ],
    "corners_in_frame": 8
   },
@@ -1470,10 +1470,10 @@
    "id": "TANK SUPPORT FRAME:2/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
    "box_px": [
-    1052.8,
-    809.4,
-    1064.7,
-    815.2
+    811.0,
+    719.6,
+    823.0,
+    725.1
    ],
    "corners_in_frame": 8
   },
@@ -1481,10 +1481,10 @@
    "id": "TANK SUPPORT FRAME:2/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:3",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
    "box_px": [
-    535.3,
-    841.8,
-    547.3,
-    847.6
+    777.1,
+    941.7,
+    789.1,
+    947.2
    ],
    "corners_in_frame": 8
   },
@@ -1492,10 +1492,10 @@
    "id": "TANK SUPPORT FRAME:2/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:4",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
    "box_px": [
-    805.7,
-    944.5,
-    817.7,
-    950.3
+    1053.1,
+    848.0,
+    1065.1,
+    853.5
    ],
    "corners_in_frame": 8
   },
@@ -1503,10 +1503,10 @@
    "id": "TANK SUPPORT FRAME:2/TANK SUPPORT PLATFORM:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT PLATFORM.ipt|[Primary]",
    "box_px": [
-    546.2,
-    695.6,
-    1053.9,
-    930.8
+    545.5,
+    707.9,
+    1054.5,
+    927.7
    ],
    "corners_in_frame": 8
   },
@@ -1514,10 +1514,10 @@
    "id": "TANK SUPPORT FRAME:2/SHULZE 2W.353 TANK:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\2W.353\\SHULZE 2W.353 TANK.ipt|[Primary]",
    "box_px": [
-    567.1,
-    680.6,
-    1033.0,
-    917.5
+    566.5,
+    691.7,
+    1033.6,
+    914.9
    ],
    "corners_in_frame": 8
   },
@@ -1525,10 +1525,10 @@
    "id": "TANK SUPPORT FRAME:2/TANK SUPPORT BRACKET:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]",
    "box_px": [
-    1024.0,
-    800.0,
-    1064.7,
-    821.4
+    801.0,
+    713.8,
+    841.6,
+    734.1
    ],
    "corners_in_frame": 8
   },
@@ -1536,10 +1536,10 @@
    "id": "TANK SUPPORT FRAME:2/TANK SUPPORT BRACKET:2",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]",
    "box_px": [
-    535.3,
-    825.7,
-    576.1,
-    847.2
+    758.4,
+    922.7,
+    799.0,
+    943.0
    ],
    "corners_in_frame": 8
   },
@@ -1547,10 +1547,10 @@
    "id": "TANK SUPPORT FRAME:2/TANK SUPPORT BRACKET:3",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]",
    "box_px": [
-    763.4,
-    701.0,
+    534.9,
     804.1,
-    722.4
+    575.5,
+    824.4
    ],
    "corners_in_frame": 8
   },
@@ -1558,10 +1558,10 @@
    "id": "TANK SUPPORT FRAME:2/TANK SUPPORT BRACKET:4",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]",
    "box_px": [
-    795.9,
-    924.7,
-    836.7,
-    946.2
+    1024.5,
+    832.4,
+    1065.1,
+    852.7
    ],
    "corners_in_frame": 8
   },
@@ -1569,10 +1569,10 @@
    "id": "ENCLOSURE TOP PANEL:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE TOP PANEL.ipt|[Primary]",
    "box_px": [
-    519.2,
+    518.6,
     84.0,
-    1080.8,
-    340.9
+    1081.4,
+    323.8
    ],
    "corners_in_frame": 8
   },
@@ -1580,10 +1580,10 @@
    "id": "TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
    "box_px": [
-    509.3,
-    492.3,
-    531.4,
-    510.5
+    769.1,
+    593.1,
+    791.3,
+    610.7
    ],
    "corners_in_frame": 8
   },
@@ -1591,10 +1591,10 @@
    "id": "TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]",
    "box_px": [
-    516.3,
-    481.4,
-    530.6,
-    510.6
+    762.0,
+    585.0,
+    776.4,
+    614.2
    ],
    "corners_in_frame": 8
   },
@@ -1602,10 +1602,10 @@
    "id": "TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
    "box_px": [
-    507.6,
-    481.7,
-    528.9,
-    500.2
+    746.7,
+    591.8,
+    767.9,
+    609.8
    ],
    "corners_in_frame": 8
   },
@@ -1613,10 +1613,10 @@
    "id": "TOGGLE CLAMP ASSEMBLY:2/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
    "box_px": [
-    752.4,
-    347.8,
-    773.7,
-    366.3
+    506.7,
+    464.5,
+    527.9,
+    482.6
    ],
    "corners_in_frame": 8
   },
@@ -1624,10 +1624,10 @@
    "id": "TOGGLE CLAMP ASSEMBLY:2/TOGGLE CLAMP MOUNT:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]",
    "box_px": [
-    767.7,
-    343.9,
-    782.0,
-    373.1
+    515.6,
+    454.3,
+    529.9,
+    483.5
    ],
    "corners_in_frame": 8
   },
@@ -1635,10 +1635,10 @@
    "id": "TOGGLE CLAMP ASSEMBLY:2/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
    "box_px": [
-    774.9,
-    347.0,
-    797.0,
-    365.2
+    508.7,
+    455.0,
+    531.0,
+    472.6
    ],
    "corners_in_frame": 8
   },
@@ -1646,10 +1646,10 @@
    "id": "TOGGLE CLAMP ASSEMBLY:3/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
    "box_px": [
-    1068.6,
-    458.6,
-    1090.7,
-    476.8
+    808.7,
+    353.2,
+    830.9,
+    370.8
    ],
    "corners_in_frame": 8
   },
@@ -1657,10 +1657,10 @@
    "id": "TOGGLE CLAMP ASSEMBLY:3/TOGGLE CLAMP MOUNT:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]",
    "box_px": [
-    1069.4,
-    458.5,
-    1083.7,
-    487.7
+    823.6,
+    349.7,
+    838.0,
+    378.9
    ],
    "corners_in_frame": 8
   },
@@ -1668,10 +1668,10 @@
    "id": "TOGGLE CLAMP ASSEMBLY:3/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
    "box_px": [
-    1071.1,
-    468.9,
-    1092.4,
-    487.4
+    832.1,
+    354.1,
+    853.3,
+    372.2
    ],
    "corners_in_frame": 8
   },
@@ -1679,10 +1679,10 @@
    "id": "TOGGLE CLAMP ASSEMBLY:4/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
    "box_px": [
-    826.3,
-    602.8,
-    847.6,
-    621.3
+    1072.1,
+    481.3,
+    1093.3,
+    499.4
    ],
    "corners_in_frame": 8
   },
@@ -1690,10 +1690,10 @@
    "id": "TOGGLE CLAMP ASSEMBLY:4/TOGGLE CLAMP MOUNT:1",
    "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]",
    "box_px": [
-    818.0,
-    596.0,
-    832.3,
-    625.2
+    1070.1,
+    480.4,
+    1084.4,
+    509.6
    ],
    "corners_in_frame": 8
   },
@@ -1701,10 +1701,10 @@
    "id": "TOGGLE CLAMP ASSEMBLY:4/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:2",
    "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
    "box_px": [
-    803.0,
-    603.9,
-    825.1,
-    622.0
+    1069.0,
+    491.3,
+    1091.3,
+    508.9
    ],
    "corners_in_frame": 8
   }

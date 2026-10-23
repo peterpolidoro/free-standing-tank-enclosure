@@ -22,7 +22,7 @@ close-ups.
 
 ## Read
 
-- [Parts](parts.md): every modelled part with its picture, size, CAD quantity and where it is used.
+- [Parts](parts.md): every modelled part with its picture, size, CAD quantity, this-build quantity and where it is used.
 - [Joint close-ups](joints.md) and the [supplementary items](supplement.md) not modelled in CAD.
 - The whole manual on one page: [manual/index.html](manual/index.html), with paper count boxes; for print {{PDFS}}.
 - [Phase 1 verification list](../assembly/procurement/phase-1-parts.csv): what to count
@@ -30,8 +30,8 @@ close-ups.
   ([build scope](../assembly/build-scope.json)).
 - [Stock and completeness audit](../assembly/procurement/README.md): modeled parts,
   candidate missing hardware, what the native Inventor BOM audit found.
-- [Draft assembly order](../assembly/instructions.json): a modular proposal; the real
-  order is recorded from the physical build.
+- [Draft assembly steps](steps.md): a modular proposal rendered step by step, with the
+  phase-1 build scope; the real order is recorded from the physical build.
 - [Build record](record.md) and [how the documentation is built](../assembly/documentation-workflow.md)
   from the accepted CAD snapshot with the `mechanical-docs` pipeline.
 

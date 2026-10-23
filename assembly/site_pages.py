@@ -3,7 +3,7 @@
 Reads docs/manual/manual.json (with its hotspots and, when present, the viewer data
 and the exploded view) and the committed scene for subassembly instance counts, and
 writes docs/index.md, docs/subassemblies/<slug>.md, docs/parts.md, docs/joints.md,
-docs/supplement.md and docs/record.md. The front page shows the whole assembly with
+docs/supplement.md, docs/steps.md (the draft assembly order with the build scope) and docs/record.md. The front page shows the whole assembly with
 numbered callouts that link to one page per subassembly definition; with the viewer
 data (docs/manual/viewer/) it becomes a <model-viewer> model that turns, with the
 same numbered hotspots, an SVG fallback without WebGL and a plain picture on the forge,
@@ -262,12 +262,13 @@ if(window.customElements)customElements.whenDefined('model-viewer').then(functio
         return "\n".join(rows)
 
     # ---- pages ----------------------------------------------------------------------------
-    def status_block(self, full=True, base=""):
+    def status_block(self, full=True, base="", note=None):
         """The manual's status lines (they already include the project notes); on the inner
         pages a one-line reminder that links to the full block on the front page."""
         if not full:
+            note = note or "Inspection views and CAD instance counts, not assembly steps, stock or a purchase list"
             return (f'!!! warning "{E(self.m["review_state"].capitalize())} documentation"\n\n'
-                    f"    Inspection views and CAD instance counts, not assembly steps, stock or a purchase list; "
+                    f"    {note}; "
                     f"the full status is on the [front page]({base}index.md) and the [build record]({base}record.md).\n")
         lines = [f'!!! warning "{E(self.m["review_state"].capitalize())} documentation"', ""]
         for s in self.m["status_lines"]:
@@ -360,8 +361,8 @@ if(window.customElements)customElements.whenDefined('model-viewer').then(functio
     def parts_page(self):
         base = "../"
         o = [MARK, "# Parts", "", self.status_block(full=False), "",
-             f"{self.m['cad_qty_note']} {self.m['inventory_status']}.", "",
-             "| # | Picture | Part | Size, material | CAD qty | Stock | Used in |", "| ---: | --- | --- | --- | ---: | --- | --- |"]
+             f"{self.m['cad_qty_note']} {self.m['inventory_status']}.", "", self.scope_note(), "",
+             "| # | Picture | Part | Size, material | CAD qty | This build | Stock | Used in |", "| ---: | --- | --- | --- | ---: | ---: | --- | --- |"]
         used = {}
         for u in self.units:
             for part, qty in self.unit_parts(u):
@@ -374,8 +375,63 @@ if(window.customElements)customElements.whenDefined('model-viewer').then(functio
             note = f'<br><strong>⚠ {E(p["review_note"])}</strong>' if p.get("review_note") else ""
             stock = p.get("stock_text") or "on hand unknown"
             o.append(f'| <span id="part-{p["label"]}"></span>{p["label"]} | {pics} | {E(p["label_text"])}{note} | {E(details)} | '
-                     f'{p["required"]} {E(p["unit"])} | {E(stock)} | {", ".join(used.get(p["label"], []))} |')
+                     f'{p["required"]} {E(p["unit"])} | {self.scope_text(p)} | {E(stock)} | {", ".join(used.get(p["label"], []))} |')
         o += ["", self.m["count_box_note"], "", "Print the [compact PDF](manual/" + next((n.name for n in sorted(self.manual_dir.glob('*.pdf')) if 'appendix' not in n.name), '') + ") for paper count boxes."]
+        return "\n".join(o) + "\n"
+
+    # ---- build scope and steps -----------------------------------------------------------
+    def scope_text(self, p):
+        """This-build quantity of a part with its conditional and deferred counts (phase 1)."""
+        if "this_build" not in p:
+            return "—"
+        extra = [f"{p['conditional']} conditional" for _ in [0] if p.get("conditional")]
+        extra += [f"{p['deferred']} deferred" for _ in [0] if p.get("deferred")]
+        return f"{p['this_build']}" + (f"<br><small>{', '.join(extra)}</small>" if extra else "")
+
+    def scope_note(self):
+        b = self.m.get("build_scope")
+        if not b:
+            return ""
+        return (f"**This build** is {E(b['phase'])}: {E(b['title'])} (decided by {E(b['decided_by'])}; {E(b['review_state'])}). "
+                f"The column counts the occurrences installed in this phase; conditional items wait for a decision and deferred items "
+                f"stay in the CAD model and its counts ([build scope](../assembly/build-scope.json)).")
+
+    def steps_page(self):
+        steps = self.m.get("steps") or []
+        o = [MARK, "# Draft assembly steps", "",
+             self.status_block(full=False, note="A draft order proposed from the CAD geometry, not physically validated; CAD counts, not stock or a purchase list"), ""]
+        if not steps:
+            return "\n".join(o + ["No assembly steps are recorded."]) + "\n"
+        o += ["A modular proposal from the CAD geometry, not a validated order: the real sequence is recorded from the "
+              "physical build and this page is regenerated from it. Already-installed parts are drawn ghosted; the parts of the step "
+              "are solid. Each step names the parts it adds with their labels on the [parts page](parts.md); fasteners are on the "
+              "[joint close-ups](joints.md) and [supplementary items](supplement.md).", ""]
+        kinds = {"build": "", "conditional": " (conditional)", "deferred": " (deferred, not in this build)"}
+        o += ["| # | Step | Kind | Adds |", "| ---: | --- | --- | ---: |"]
+        for st in steps:
+            o.append(f"| {st['index']} | [{E(st['id'])}](#step-{st['index']}) | {E(st['kind'])} | {len(st['add'])} |")
+        o.append("")
+        for st in steps:
+            o.append(f"## Step {st['index']}: {st['id']}{kinds.get(st['kind'], '')} {{ #step-{st['index']} }}")
+            o.append("")
+            o.append(f"![Step {st['index']}](manual/images/{st['image']})")
+            o.append("")
+            o.append(E(st["caption"]))
+            if st.get("rule"):
+                o.append("")
+                o.append(f"**Condition:** {E(st['rule'])}")
+            if st.get("requires"):
+                o.append("")
+                o.append("Requires: " + ", ".join(f"step `{r}`" for r in st["requires"]) + ".")
+            o.append("")
+            o.append("| # | Picture | Part | Qty |")
+            o.append("| ---: | --- | --- | ---: |")
+            for p in st["parts_needed"]:
+                o.append(f"| {p['label']} | <img src=\"manual/images/{E(p['thumbnail'])}\" width=\"56\" alt=\"\"> | "
+                         f"[{E(p['name'])}](parts.md#part-{p['label']}) | {p['qty']} |")
+            o.append("")
+            o.append(f"Installed after this step: {len(st['installed_after'])} of {len(self.scene['occurrences']) if self.scene else '?'} occurrences.")
+            o.append("")
         return "\n".join(o) + "\n"
 
     def joints_page(self):
@@ -444,7 +500,8 @@ if(window.customElements)customElements.whenDefined('model-viewer').then(functio
             if MARK in old.read_text(encoding="utf-8"):
                 old.unlink()
         pages = {DOCS / "index.md": self.index_page(), DOCS / "parts.md": self.parts_page(), DOCS / "joints.md": self.joints_page(),
-                 DOCS / "supplement.md": self.supplement_page(), DOCS / "record.md": self.record_page()}
+                 DOCS / "supplement.md": self.supplement_page(), DOCS / "record.md": self.record_page(),
+                 DOCS / "steps.md": self.steps_page()}
         for u in self.units:
             pages[sub / f"{u['slug']}.md"] = self.unit_page(u)
         for path, text in pages.items():

@@ -9,70 +9,70 @@
 
 
 <figure class="ov"><div class="ov-wrap"><img src="../../manual/images/group-free-standing-frame-1-887affd3.png" alt="FREE STANDING FRAME: inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied."><svg class="callouts" viewBox="0 0 1600 1200" aria-label="Numbered callouts; each number is a link">
-<a href="../../parts/#part-24"><title>24: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="777" y="819" width="288" height="122"/><circle cx="803" cy="845" r="26"/><text x="803" y="845">24</text></a>
-<a href="../../parts/#part-24"><title>24: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="777" y="100" width="288" height="122"/><circle cx="803" cy="126" r="26"/><text x="803" y="126">24</text></a>
-<a href="../../parts/#part-24"><title>24: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="777" y="702" width="288" height="122"/><circle cx="803" cy="728" r="26"/><text x="803" y="728">24</text></a>
-<a href="../../parts/#part-24"><title>24: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="535" y="232" width="288" height="122"/><circle cx="561" cy="258" r="26"/><text x="561" y="258">24</text></a>
-<a href="../../parts/#part-24"><title>24: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="535" y="834" width="288" height="122"/><circle cx="561" cy="860" r="26"/><text x="561" y="860">24</text></a>
-<a href="../../parts/#part-24"><title>24: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="534" y="820" width="243" height="142"/><circle cx="560" cy="846" r="26"/><text x="560" y="846">24</text></a>
-<a href="../../parts/#part-24"><title>24: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="823" y="210" width="243" height="142"/><circle cx="849" cy="236" r="26"/><text x="849" y="236">24</text></a>
-<a href="../../parts/#part-24"><title>24: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="534" y="609" width="243" height="142"/><circle cx="560" cy="635" r="26"/><text x="560" y="635">24</text></a>
-<a href="../../parts/#part-24"><title>24: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="534" y="100" width="243" height="142"/><circle cx="560" cy="126" r="26"/><text x="560" y="126">24</text></a>
-<a href="../../parts/#part-24"><title>24: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="823" y="720" width="243" height="142"/><circle cx="849" cy="746" r="26"/><text x="849" y="746">24</text></a>
-<a href="../../parts/#part-24"><title>24: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="823" y="930" width="243" height="142"/><circle cx="849" cy="956" r="26"/><text x="849" y="956">24</text></a>
-<a href="../../parts/#part-26"><title>26: SLLB Enclosure 96in 47065T808 T-Slotted Framing</title><rect x="815" y="349" width="18" height="717"/><circle cx="841" cy="375" r="26"/><text x="841" y="375">26</text></a>
-<a href="../../parts/#part-26"><title>26: SLLB Enclosure 96in 47065T808 T-Slotted Framing</title><rect x="767" y="107" width="18" height="717"/><circle cx="793" cy="133" r="26"/><text x="793" y="133">26</text></a>
-<a href="../../parts/#part-26"><title>26: SLLB Enclosure 96in 47065T808 T-Slotted Framing</title><rect x="526" y="239" width="18" height="717"/><circle cx="552" cy="265" r="26"/><text x="552" y="265">26</text></a>
-<a href="../../parts/#part-26"><title>26: SLLB Enclosure 96in 47065T808 T-Slotted Framing</title><rect x="1057" y="217" width="18" height="717"/><circle cx="1083" cy="243" r="26"/><text x="1083" y="243">26</text></a>
-<a href="../../parts/#part-27"><title>27: HOLKIE LEVELING CASTER</title><rect x="801" y="1061" width="42" height="43"/><circle cx="827" cy="1087" r="26"/><text x="827" y="1087">27</text></a>
-<a href="../../parts/#part-27"><title>27: HOLKIE LEVELING CASTER</title><rect x="758" y="828" width="42" height="43"/><circle cx="784" cy="854" r="26"/><text x="784" y="854">27</text></a>
-<a href="../../parts/#part-27"><title>27: HOLKIE LEVELING CASTER</title><rect x="524" y="954" width="40" height="44"/><circle cx="550" cy="980" r="26"/><text x="550" y="980">27</text></a>
-<a href="../../parts/#part-27"><title>27: HOLKIE LEVELING CASTER</title><rect x="1036" y="934" width="40" height="44"/><circle cx="1062" cy="960" r="26"/><text x="1062" y="960">27</text></a>
-<a href="../../parts/#part-30"><title>30: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="804" y="932" width="30" height="45"/><circle cx="830" cy="958" r="26"/><text x="830" y="958">30</text></a>
-<a href="../../parts/#part-30"><title>30: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="766" y="702" width="30" height="45"/><circle cx="792" cy="728" r="26"/><text x="792" y="728">30</text></a>
-<a href="../../parts/#part-30"><title>30: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="534" y="829" width="30" height="45"/><circle cx="560" cy="855" r="26"/><text x="560" y="855">30</text></a>
-<a href="../../parts/#part-30"><title>30: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="1036" y="805" width="30" height="45"/><circle cx="1062" cy="831" r="26"/><text x="1062" y="831">30</text></a>
-<a href="../../parts/#part-30"><title>30: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="535" y="732" width="26" height="47"/><circle cx="561" cy="758" r="26"/><text x="561" y="758">30</text></a>
-<a href="../../parts/#part-30"><title>30: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="761" y="609" width="26" height="47"/><circle cx="787" cy="635" r="26"/><text x="787" y="635">30</text></a>
-<a href="../../parts/#part-30"><title>30: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="1039" y="714" width="26" height="47"/><circle cx="1065" cy="740" r="26"/><text x="1065" y="740">30</text></a>
-<a href="../../parts/#part-30"><title>30: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="814" y="838" width="26" height="47"/><circle cx="840" cy="864" r="26"/><text x="840" y="864">30</text></a>
-<a href="../../parts/#part-28"><title>28: CASTER MOUNTING PLATE</title><rect x="526" y="952" width="46" height="23"/><circle cx="552" cy="978" r="26"/><text x="552" y="978">28</text></a>
-<a href="../../parts/#part-28"><title>28: CASTER MOUNTING PLATE</title><rect x="1028" y="931" width="46" height="23"/><circle cx="1054" cy="957" r="26"/><text x="1054" y="957">28</text></a>
-<a href="../../parts/#part-28"><title>28: CASTER MOUNTING PLATE</title><rect x="800" y="1056" width="46" height="23"/><circle cx="826" cy="1082" r="26"/><text x="826" y="1082">28</text></a>
-<a href="../../parts/#part-28"><title>28: CASTER MOUNTING PLATE</title><rect x="754" y="827" width="46" height="23"/><circle cx="780" cy="853" r="26"/><text x="780" y="853">28</text></a>
-<a href="../../parts/#part-31"><title>31: PANEL LOWER SUPPORT LEFT</title><rect x="1051" y="903" width="24" height="29"/><circle cx="1077" cy="929" r="26"/><text x="1077" y="929">31</text></a>
-<a href="../../parts/#part-32"><title>32: PANEL LOWER SUPPORT RIGHT</title><rect x="806" y="1037" width="24" height="29"/><circle cx="832" cy="1063" r="26"/><text x="832" y="1063">32</text></a>
-<a href="../../parts/#part-32"><title>32: PANEL LOWER SUPPORT RIGHT</title><rect x="770" y="797" width="24" height="29"/><circle cx="796" cy="823" r="26"/><text x="796" y="823">32</text></a>
-<a href="../../parts/#part-31"><title>31: PANEL LOWER SUPPORT LEFT</title><rect x="526" y="930" width="24" height="29"/><circle cx="552" cy="956" r="26"/><text x="552" y="956">31</text></a>
-<a href="../../parts/#part-31"><title>31: PANEL LOWER SUPPORT LEFT</title><rect x="758" y="797" width="24" height="29"/><circle cx="784" cy="823" r="26"/><text x="784" y="823">31</text></a>
-<a href="../../parts/#part-32"><title>32: PANEL LOWER SUPPORT RIGHT</title><rect x="524" y="925" width="24" height="29"/><circle cx="550" cy="951" r="26"/><text x="550" y="951">32</text></a>
-<a href="../../parts/#part-31"><title>31: PANEL LOWER SUPPORT LEFT</title><rect x="818" y="1037" width="24" height="29"/><circle cx="844" cy="1063" r="26"/><text x="844" y="1063">31</text></a>
-<a href="../../parts/#part-32"><title>32: PANEL LOWER SUPPORT RIGHT</title><rect x="1052" y="909" width="24" height="29"/><circle cx="1078" cy="935" r="26"/><text x="1078" y="935">32</text></a>
-<a href="../../parts/#part-29"><title>29: SLLB Enclosure 2.5in 47065T808 T-Slotted Framing</title><rect x="535" y="951" width="24" height="22"/><circle cx="561" cy="977" r="26"/><text x="561" y="977">29</text></a>
-<a href="../../parts/#part-29"><title>29: SLLB Enclosure 2.5in 47065T808 T-Slotted Framing</title><rect x="800" y="1052" width="24" height="22"/><circle cx="826" cy="1078" r="26"/><text x="826" y="1078">29</text></a>
-<a href="../../parts/#part-25"><title>25: MCMASTER 47065T245</title><rect x="1056" y="925" width="19" height="21"/><circle cx="1082" cy="951" r="26"/><text x="1082" y="951">25</text></a>
-<a href="../../parts/#part-25"><title>25: MCMASTER 47065T245</title><rect x="1056" y="206" width="19" height="21"/><circle cx="1082" cy="232" r="26"/><text x="1082" y="232">25</text></a>
-<a href="../../parts/#part-25"><title>25: MCMASTER 47065T245</title><rect x="526" y="947" width="19" height="21"/><circle cx="552" cy="973" r="26"/><text x="552" y="973">25</text></a>
-<a href="../../parts/#part-25"><title>25: MCMASTER 47065T245</title><rect x="766" y="815" width="19" height="21"/><circle cx="792" cy="841" r="26"/><text x="792" y="841">25</text></a>
-<a href="../../parts/#part-25"><title>25: MCMASTER 47065T245</title><rect x="766" y="96" width="19" height="21"/><circle cx="792" cy="122" r="26"/><text x="792" y="122">25</text></a>
-<a href="../../parts/#part-25"><title>25: MCMASTER 47065T245</title><rect x="526" y="228" width="19" height="21"/><circle cx="552" cy="254" r="26"/><text x="552" y="254">25</text></a>
-<a href="../../parts/#part-25"><title>25: MCMASTER 47065T245</title><rect x="815" y="338" width="19" height="21"/><circle cx="841" cy="364" r="26"/><text x="841" y="364">25</text></a>
-<a href="../../parts/#part-25"><title>25: MCMASTER 47065T245</title><rect x="815" y="1056" width="19" height="21"/><circle cx="841" cy="1082" r="26"/><text x="841" y="1082">25</text></a>
+<a href="../../parts/#part-23"><title>23: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="777" y="819" width="288" height="122"/><circle cx="803" cy="845" r="26"/><text x="803" y="845">23</text></a>
+<a href="../../parts/#part-23"><title>23: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="777" y="100" width="288" height="122"/><circle cx="803" cy="126" r="26"/><text x="803" y="126">23</text></a>
+<a href="../../parts/#part-23"><title>23: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="777" y="702" width="288" height="122"/><circle cx="803" cy="728" r="26"/><text x="803" y="728">23</text></a>
+<a href="../../parts/#part-23"><title>23: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="535" y="232" width="288" height="122"/><circle cx="561" cy="258" r="26"/><text x="561" y="258">23</text></a>
+<a href="../../parts/#part-23"><title>23: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="535" y="834" width="288" height="122"/><circle cx="561" cy="860" r="26"/><text x="561" y="860">23</text></a>
+<a href="../../parts/#part-23"><title>23: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="534" y="820" width="243" height="142"/><circle cx="560" cy="846" r="26"/><text x="560" y="846">23</text></a>
+<a href="../../parts/#part-23"><title>23: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="823" y="210" width="243" height="142"/><circle cx="849" cy="236" r="26"/><text x="849" y="236">23</text></a>
+<a href="../../parts/#part-23"><title>23: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="534" y="609" width="243" height="142"/><circle cx="560" cy="635" r="26"/><text x="560" y="635">23</text></a>
+<a href="../../parts/#part-23"><title>23: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="534" y="100" width="243" height="142"/><circle cx="560" cy="126" r="26"/><text x="560" y="126">23</text></a>
+<a href="../../parts/#part-23"><title>23: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="823" y="720" width="243" height="142"/><circle cx="849" cy="746" r="26"/><text x="849" y="746">23</text></a>
+<a href="../../parts/#part-23"><title>23: SLLB Enclosure 44in 47065T808 T-Slotted Framing</title><rect x="823" y="930" width="243" height="142"/><circle cx="849" cy="956" r="26"/><text x="849" y="956">23</text></a>
+<a href="../../parts/#part-25"><title>25: SLLB Enclosure 96in 47065T808 T-Slotted Framing</title><rect x="815" y="349" width="18" height="717"/><circle cx="841" cy="375" r="26"/><text x="841" y="375">25</text></a>
+<a href="../../parts/#part-25"><title>25: SLLB Enclosure 96in 47065T808 T-Slotted Framing</title><rect x="767" y="107" width="18" height="717"/><circle cx="793" cy="133" r="26"/><text x="793" y="133">25</text></a>
+<a href="../../parts/#part-25"><title>25: SLLB Enclosure 96in 47065T808 T-Slotted Framing</title><rect x="526" y="239" width="18" height="717"/><circle cx="552" cy="265" r="26"/><text x="552" y="265">25</text></a>
+<a href="../../parts/#part-25"><title>25: SLLB Enclosure 96in 47065T808 T-Slotted Framing</title><rect x="1057" y="217" width="18" height="717"/><circle cx="1083" cy="243" r="26"/><text x="1083" y="243">25</text></a>
+<a href="../../parts/#part-26"><title>26: HOLKIE LEVELING CASTER</title><rect x="801" y="1061" width="42" height="43"/><circle cx="827" cy="1087" r="26"/><text x="827" y="1087">26</text></a>
+<a href="../../parts/#part-26"><title>26: HOLKIE LEVELING CASTER</title><rect x="758" y="828" width="42" height="43"/><circle cx="784" cy="854" r="26"/><text x="784" y="854">26</text></a>
+<a href="../../parts/#part-26"><title>26: HOLKIE LEVELING CASTER</title><rect x="524" y="954" width="40" height="44"/><circle cx="550" cy="980" r="26"/><text x="550" y="980">26</text></a>
+<a href="../../parts/#part-26"><title>26: HOLKIE LEVELING CASTER</title><rect x="1036" y="934" width="40" height="44"/><circle cx="1062" cy="960" r="26"/><text x="1062" y="960">26</text></a>
+<a href="../../parts/#part-29"><title>29: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="804" y="932" width="30" height="45"/><circle cx="830" cy="958" r="26"/><text x="830" y="958">29</text></a>
+<a href="../../parts/#part-29"><title>29: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="766" y="702" width="30" height="45"/><circle cx="792" cy="728" r="26"/><text x="792" y="728">29</text></a>
+<a href="../../parts/#part-29"><title>29: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="534" y="829" width="30" height="45"/><circle cx="560" cy="855" r="26"/><text x="560" y="855">29</text></a>
+<a href="../../parts/#part-29"><title>29: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="1036" y="805" width="30" height="45"/><circle cx="1062" cy="831" r="26"/><text x="1062" y="831">29</text></a>
+<a href="../../parts/#part-29"><title>29: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="535" y="732" width="26" height="47"/><circle cx="561" cy="758" r="26"/><text x="561" y="758">29</text></a>
+<a href="../../parts/#part-29"><title>29: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="761" y="609" width="26" height="47"/><circle cx="787" cy="635" r="26"/><text x="787" y="635">29</text></a>
+<a href="../../parts/#part-29"><title>29: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="1039" y="714" width="26" height="47"/><circle cx="1065" cy="740" r="26"/><text x="1065" y="740">29</text></a>
+<a href="../../parts/#part-29"><title>29: 47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION</title><rect x="814" y="838" width="26" height="47"/><circle cx="840" cy="864" r="26"/><text x="840" y="864">29</text></a>
+<a href="../../parts/#part-27"><title>27: CASTER MOUNTING PLATE</title><rect x="526" y="952" width="46" height="23"/><circle cx="552" cy="978" r="26"/><text x="552" y="978">27</text></a>
+<a href="../../parts/#part-27"><title>27: CASTER MOUNTING PLATE</title><rect x="1028" y="931" width="46" height="23"/><circle cx="1054" cy="957" r="26"/><text x="1054" y="957">27</text></a>
+<a href="../../parts/#part-27"><title>27: CASTER MOUNTING PLATE</title><rect x="800" y="1056" width="46" height="23"/><circle cx="826" cy="1082" r="26"/><text x="826" y="1082">27</text></a>
+<a href="../../parts/#part-27"><title>27: CASTER MOUNTING PLATE</title><rect x="754" y="827" width="46" height="23"/><circle cx="780" cy="853" r="26"/><text x="780" y="853">27</text></a>
+<a href="../../parts/#part-30"><title>30: PANEL LOWER SUPPORT LEFT</title><rect x="1051" y="903" width="24" height="29"/><circle cx="1077" cy="929" r="26"/><text x="1077" y="929">30</text></a>
+<a href="../../parts/#part-31"><title>31: PANEL LOWER SUPPORT RIGHT</title><rect x="806" y="1037" width="24" height="29"/><circle cx="832" cy="1063" r="26"/><text x="832" y="1063">31</text></a>
+<a href="../../parts/#part-31"><title>31: PANEL LOWER SUPPORT RIGHT</title><rect x="770" y="797" width="24" height="29"/><circle cx="796" cy="823" r="26"/><text x="796" y="823">31</text></a>
+<a href="../../parts/#part-30"><title>30: PANEL LOWER SUPPORT LEFT</title><rect x="526" y="930" width="24" height="29"/><circle cx="552" cy="956" r="26"/><text x="552" y="956">30</text></a>
+<a href="../../parts/#part-30"><title>30: PANEL LOWER SUPPORT LEFT</title><rect x="758" y="797" width="24" height="29"/><circle cx="784" cy="823" r="26"/><text x="784" y="823">30</text></a>
+<a href="../../parts/#part-31"><title>31: PANEL LOWER SUPPORT RIGHT</title><rect x="524" y="925" width="24" height="29"/><circle cx="550" cy="951" r="26"/><text x="550" y="951">31</text></a>
+<a href="../../parts/#part-30"><title>30: PANEL LOWER SUPPORT LEFT</title><rect x="818" y="1037" width="24" height="29"/><circle cx="844" cy="1063" r="26"/><text x="844" y="1063">30</text></a>
+<a href="../../parts/#part-31"><title>31: PANEL LOWER SUPPORT RIGHT</title><rect x="1052" y="909" width="24" height="29"/><circle cx="1078" cy="935" r="26"/><text x="1078" y="935">31</text></a>
+<a href="../../parts/#part-28"><title>28: SLLB Enclosure 2.5in 47065T808 T-Slotted Framing</title><rect x="535" y="951" width="24" height="22"/><circle cx="561" cy="977" r="26"/><text x="561" y="977">28</text></a>
+<a href="../../parts/#part-28"><title>28: SLLB Enclosure 2.5in 47065T808 T-Slotted Framing</title><rect x="800" y="1052" width="24" height="22"/><circle cx="826" cy="1078" r="26"/><text x="826" y="1078">28</text></a>
+<a href="../../parts/#part-24"><title>24: MCMASTER 47065T245</title><rect x="1056" y="925" width="19" height="21"/><circle cx="1082" cy="951" r="26"/><text x="1082" y="951">24</text></a>
+<a href="../../parts/#part-24"><title>24: MCMASTER 47065T245</title><rect x="1056" y="206" width="19" height="21"/><circle cx="1082" cy="232" r="26"/><text x="1082" y="232">24</text></a>
+<a href="../../parts/#part-24"><title>24: MCMASTER 47065T245</title><rect x="526" y="947" width="19" height="21"/><circle cx="552" cy="973" r="26"/><text x="552" y="973">24</text></a>
+<a href="../../parts/#part-24"><title>24: MCMASTER 47065T245</title><rect x="766" y="815" width="19" height="21"/><circle cx="792" cy="841" r="26"/><text x="792" y="841">24</text></a>
+<a href="../../parts/#part-24"><title>24: MCMASTER 47065T245</title><rect x="766" y="96" width="19" height="21"/><circle cx="792" cy="122" r="26"/><text x="792" y="122">24</text></a>
+<a href="../../parts/#part-24"><title>24: MCMASTER 47065T245</title><rect x="526" y="228" width="19" height="21"/><circle cx="552" cy="254" r="26"/><text x="552" y="254">24</text></a>
+<a href="../../parts/#part-24"><title>24: MCMASTER 47065T245</title><rect x="815" y="338" width="19" height="21"/><circle cx="841" cy="364" r="26"/><text x="841" y="364">24</text></a>
+<a href="../../parts/#part-24"><title>24: MCMASTER 47065T245</title><rect x="815" y="1056" width="19" height="21"/><circle cx="841" cy="1082" r="26"/><text x="841" y="1082">24</text></a>
 </svg></div><figcaption>FREE STANDING FRAME: inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied. The numbers are links.</figcaption></figure>
 
 ## Parts
 
 | # | Picture | Part | Per subassembly | Total |
 | ---: | --- | --- | ---: | ---: |
-| 24 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431.png" width="72" alt=""> | [SLLB Enclosure 44in 47065T808 T-Slotted Framing](../parts.md#part-24)<br><small>overall 1118 × 38.1 × 38.1 mm</small> | 11 | 11 |
-| 25 | <img src="../../manual/images/part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png" width="72" alt=""> | [MCMASTER 47065T245](../parts.md#part-25)<br><small>overall 41.1 × 41.1 × 41.1 mm</small> | 8 | 8 |
-| 26 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b.png" width="72" alt=""> | [SLLB Enclosure 96in 47065T808 T-Slotted Framing](../parts.md#part-26)<br><small>overall 2438 × 38.1 × 38.1 mm</small> | 4 | 4 |
-| 27 | <img src="../../manual/images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png" width="72" alt=""> | [HOLKIE LEVELING CASTER](../parts.md#part-27)<br><small>overall 104 × 86.2 × 73.5 mm (4.094 × 3.395 × 2.893 in)</small> | 4 | 4 |
-| 28 | <img src="../../manual/images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png" width="72" alt=""> | [CASTER MOUNTING PLATE](../parts.md#part-28)<br><small>overall 100 × 100 × 6.3 mm (3.953 × 3.953 × 0.25 in)</small> | 4 | 4 |
-| 29 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0.png" width="72" alt=""> | [SLLB Enclosure 2.5in 47065T808 T-Slotted Framing](../parts.md#part-29)<br><small>overall 63.5 × 38.1 × 38.1 mm</small> | 2 | 2 |
-| 30 | <img src="../../manual/images/part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0.png" width="72" alt=""> | [47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION](../parts.md#part-30)<br><small>overall 114 × 114 × 6.3 mm</small> | 8 | 8 |
-| 31 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png" width="72" alt=""> | [PANEL LOWER SUPPORT LEFT](../parts.md#part-31)<br><small>overall 63.5 × 52.7 × 51.1 mm (2.5 × 2.075 × 2.01 in)</small> | 4 | 4 |
-| 32 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f.png" width="72" alt=""> | [PANEL LOWER SUPPORT RIGHT](../parts.md#part-32)<br><small>overall 63.5 × 52.7 × 51.1 mm (2.5 × 2.075 × 2.01 in)</small> | 4 | 4 |
+| 23 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431.png" width="72" alt=""> | [SLLB Enclosure 44in 47065T808 T-Slotted Framing](../parts.md#part-23)<br><small>overall 1118 × 38.1 × 38.1 mm</small> | 11 | 11 |
+| 24 | <img src="../../manual/images/part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png" width="72" alt=""> | [MCMASTER 47065T245](../parts.md#part-24)<br><small>overall 41.1 × 41.1 × 41.1 mm</small> | 8 | 8 |
+| 25 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b.png" width="72" alt=""> | [SLLB Enclosure 96in 47065T808 T-Slotted Framing](../parts.md#part-25)<br><small>overall 2438 × 38.1 × 38.1 mm</small> | 4 | 4 |
+| 26 | <img src="../../manual/images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png" width="72" alt=""> | [HOLKIE LEVELING CASTER](../parts.md#part-26)<br><small>overall 104 × 86.2 × 73.5 mm (4.094 × 3.395 × 2.893 in)</small> | 4 | 4 |
+| 27 | <img src="../../manual/images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png" width="72" alt=""> | [CASTER MOUNTING PLATE](../parts.md#part-27)<br><small>overall 100 × 100 × 6.3 mm (3.953 × 3.953 × 0.25 in)</small> | 4 | 4 |
+| 28 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0.png" width="72" alt=""> | [SLLB Enclosure 2.5in 47065T808 T-Slotted Framing](../parts.md#part-28)<br><small>overall 63.5 × 38.1 × 38.1 mm</small> | 2 | 2 |
+| 29 | <img src="../../manual/images/part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0.png" width="72" alt=""> | [47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION](../parts.md#part-29)<br><small>overall 114 × 114 × 6.3 mm</small> | 8 | 8 |
+| 30 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png" width="72" alt=""> | [PANEL LOWER SUPPORT LEFT](../parts.md#part-30)<br><small>overall 63.5 × 52.7 × 51.1 mm (2.5 × 2.075 × 2.01 in)</small> | 4 | 4 |
+| 31 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f.png" width="72" alt=""> | [PANEL LOWER SUPPORT RIGHT](../parts.md#part-31)<br><small>overall 63.5 × 52.7 × 51.1 mm (2.5 × 2.075 × 2.01 in)</small> | 4 | 4 |
 
 CAD quantities are instance counts in the model, not stock and not a purchase list.
 
@@ -90,35 +90,35 @@ CAD quantities are instance counts in the model, not stock and not a purchase li
 
 ![Joint 2: caster_plate_to_frame](../manual/images/joint-caster-plate-to-frame-b5403f0f.png)
 
-Occurrences at their CAD poses; context FREE STANDING FRAME:1. Parts: 28 CASTER MOUNTING PLATE ×1.
+Occurrences at their CAD poses; context FREE STANDING FRAME:1. Parts: 27 CASTER MOUNTING PLATE ×1.
 - **S2** Caster-plate-to-frame fastening: required unknown (family, not specified); basis: 4 plates; frame attachments per plate unverified
 
 ### Joint 5: clamp_mount_to_frame
 
 ![Joint 5: clamp_mount_to_frame](../manual/images/joint-clamp-mount-to-frame-d49eee17.png)
 
-Occurrences at their CAD poses; context FREE STANDING FRAME:1. Parts: 37 TOGGLE CLAMP MOUNT ×1.
+Occurrences at their CAD poses; context FREE STANDING FRAME:1. Parts: 36 TOGGLE CLAMP MOUNT ×1.
 - **S5** Toggle-clamp-mount-to-frame fastening: required unknown (family, not specified); basis: 4 mounts; points per mount unverified
 
 ### Joint 6: lower_support_to_frame
 
 ![Joint 6: lower_support_to_frame](../manual/images/joint-lower-support-to-frame-f99a8bd8.png)
 
-Occurrences at their CAD poses; context FREE STANDING FRAME:1. Parts: 31 PANEL LOWER SUPPORT LEFT ×1.
+Occurrences at their CAD poses; context FREE STANDING FRAME:1. Parts: 30 PANEL LOWER SUPPORT LEFT ×1.
 - **S6** Panel-lower-support fastening: required unknown (family, not specified); basis: 4 left + 4 right supports; points per support unverified
 
 ### Joint 7: main_frame_joints
 
 ![Joint 7: main_frame_joints](../manual/images/joint-main-frame-joints-33ab23f4.png)
 
-Occurrences at their CAD poses; context FREE STANDING FRAME:1. Parts: 25 MCMASTER 47065T245 ×1.
+Occurrences at their CAD poses; context FREE STANDING FRAME:1. Parts: 24 MCMASTER 47065T245 ×1.
 - **S7** Main-frame connector hardware and joint completeness: required unknown (family, not specified); basis: 11 long rails + 4 columns + 2 short rails; joint count requires review
 
 ### Joint 16: panel_retention
 
 ![Joint 16: panel_retention](../manual/images/joint-panel-retention-b0e31116.png)
 
-Occurrences at their CAD poses; context FREE STANDING FRAME:1. Parts: 31 PANEL LOWER SUPPORT LEFT ×1, 32 PANEL LOWER SUPPORT RIGHT ×1.
+Occurrences at their CAD poses; context FREE STANDING FRAME:1. Parts: 30 PANEL LOWER SUPPORT LEFT ×1, 31 PANEL LOWER SUPPORT RIGHT ×1.
 - **S16** Removable-panel retention interface: required unknown (family, not specified); basis: 4 panels, 8 lower supports, 8 toggle clamps
 
 

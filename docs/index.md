@@ -11,7 +11,15 @@ enclosure itself is assembled.
 
 !!! warning "Draft documentation"
 
-    Parts inventory and overview only: no assembly sequence has been authored or reviewed for this scene.
+    Review state: draft. This sequence has not been physically validated and the order is a draft to be corrected after the build.
+
+    Build scope phase-1: Enclosure without tanks and backlight (decided by Peter, 2026-10-22; draft). 110 of 155 installed occurrences are in this build, 42 conditional (undecided), 3 deferred; CAD counts are unchanged and the deferred items stay in the model.
+
+    Phase note: Phase 1 assembles the frame, casters, panels with handles, toggle clamps, lower supports, camera frame and top panel. Deferred items stay in the CAD scene and in the CAD counts; this file only scopes the build and its documentation.
+
+    Backlight: no modeled part is identified as the backlight or light box; nothing further is excluded until Peter names the occurrences
+
+    Deferred design: monitor supports and acrylic; bowls and bowl frame; tank frame changes.
 
     Geometry and hierarchy come from the CAD export named in the build record. Quantities are CAD instance counts, not purchase quantities, kits, stock or an approved bill of materials.
 
@@ -23,6 +31,8 @@ enclosure itself is assembled.
 
     CAD ambiguity: 1 pair(s) of occurrences of the same part share one position (SHULZE 2W.353 TANK). All source instances are kept and counted; review the intended configuration before treating the count as stock.
 
+    Approach arrows are unverified render hints; they do not prove an insertion path or tool access.
+
     Stock is unknown until counted and recorded (on_hand_each with counted_by and counted_date). The counted box is for a paper count only.
 
 
@@ -31,15 +41,59 @@ that turns when the viewer data has been built, or the overview render; each num
 link to the subassembly's page with its parts, the hardware still to review and its joint
 close-ups.
 
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+<script>
+(function(){try{var c=document.createElement('canvas');if('customElements' in window&&(c.getContext('webgl2')||c.getContext('webgl')))document.documentElement.classList.add('webgl');}catch(e){}})();
+</script>
+<div class="asm-3d">
+<model-viewer id="assembly" src="manual/viewer/assembled.glb?v=6ad5a2752766" alt="The enclosure" camera-controls touch-action="pan-y"
+ camera-orbit="35deg 70deg auto" field-of-view="30deg" shadow-intensity="0.5" exposure="0.8" interaction-prompt="none"
+ style="width:100%;height:560px;background:#fff;border-radius:8px">
+<a class="hotspot" slot="hotspot-1" data-position="0.04584 -0.04363 -1.14534" data-normal="0.345 -0.699 0.626" data-n="1" href="subassemblies/caster-assembly/" title="CASTER ASSEMBLY" aria-label="1: CASTER ASSEMBLY"></a>
+<a class="hotspot" slot="hotspot-2" data-position="0.59690 1.29540 0.00317" data-normal="-0.000 -0.000 1.000" data-n="2" href="subassemblies/panel-assembly/" title="PANEL ASSEMBLY" aria-label="2: PANEL ASSEMBLY"></a>
+<a class="hotspot" slot="hotspot-3" data-position="0.00000 1.60082 -0.00530" data-normal="1.000 -0.000 0.000" data-n="3" href="subassemblies/toggle-clamp-assembly/" title="TOGGLE CLAMP ASSEMBLY" aria-label="3: TOGGLE CLAMP ASSEMBLY"></a>
+<a class="hotspot" slot="hotspot-4" data-position="0.59700 0.82790 -0.59710" data-normal="0.000 1.000 -0.000" data-n="4" href="subassemblies/tank-support-frame/" title="TANK SUPPORT FRAME" aria-label="4: TANK SUPPORT FRAME"></a>
+<a class="hotspot" slot="hotspot-5" data-position="0.59674 2.36187 -0.54630" data-normal="0.000 -0.424 0.905" data-n="5" href="subassemblies/camera-frame/" title="CAMERA FRAME" aria-label="5: CAMERA FRAME"></a>
+<a class="hotspot" slot="hotspot-6" data-position="1.15604 0.76241 -0.59690" data-normal="-0.885 0.466 -0.000" data-n="6" href="subassemblies/free-standing-frame/" title="FREE STANDING FRAME" aria-label="6: FREE STANDING FRAME"></a>
+<a class="hotspot" slot="hotspot-7" data-position="0.59690 0.82790 -0.59690" data-normal="-0.000 1.000 -0.000" data-n="7" href="subassemblies/root-level-parts/" title="Root-level parts" aria-label="7: Root-level parts"></a>
+</model-viewer>
+<p class="asm-hint">Drag to turn, scroll to zoom; the numbers are links. <button type="button" id="asm-toggle" class="md-button">Show exploded</button></p>
+<script>
+(function(){var mv=document.getElementById('assembly');if(!mv)return;
+var states={"assembled": {"src": "manual/viewer/assembled.glb?v=6ad5a2752766", "hotspots": {"1": {"p": "0.04584 -0.04363 -1.14534", "nrm": "0.345 -0.699 0.626"}, "2": {"p": "0.59690 1.29540 0.00317", "nrm": "-0.000 -0.000 1.000"}, "3": {"p": "0.00000 1.60082 -0.00530", "nrm": "1.000 -0.000 0.000"}, "4": {"p": "0.59700 0.82790 -0.59710", "nrm": "0.000 1.000 -0.000"}, "5": {"p": "0.59674 2.36187 -0.54630", "nrm": "0.000 -0.424 0.905"}, "6": {"p": "1.15604 0.76241 -0.59690", "nrm": "-0.885 0.466 -0.000"}, "7": {"p": "0.59690 0.82790 -0.59690", "nrm": "-0.000 1.000 -0.000"}}}, "exploded": {"src": "manual/viewer/exploded.glb?v=11c71ebbeaf7", "hotspots": {"1": {"p": "0.04584 -0.04363 -1.14534", "nrm": "0.345 -0.699 0.626"}, "2": {"p": "0.59690 1.36107 0.50229", "nrm": "-0.000 -0.000 1.000"}, "3": {"p": "-0.47328 1.91083 0.46797", "nrm": "1.000 -0.000 0.000"}, "4": {"p": "0.59708 0.51957 -0.59726", "nrm": "0.000 1.000 -0.000"}, "5": {"p": "0.59662 3.18128 -0.30754", "nrm": "0.000 -0.424 0.905"}, "6": {"p": "1.15604 0.76241 -0.59690", "nrm": "-0.885 0.466 -0.000"}, "7": {"p": "0.59690 2.18488 -0.59690", "nrm": "-0.000 1.000 -0.000"}}}};var state='assembled';var btn=document.getElementById('asm-toggle');
+if(btn)btn.addEventListener('click',function(){state=state==='assembled'?'exploded':'assembled';mv.setAttribute('src',states[state].src);
+var hs=states[state].hotspots;mv.querySelectorAll('a.hotspot').forEach(function(a){var h=hs[a.dataset.n];if(h){a.dataset.position=h.p;a.dataset.normal=h.nrm;}});
+btn.textContent=state==='assembled'?'Show exploded':'Show assembled';});
+var fallback=function(){document.documentElement.classList.remove('webgl');};
+mv.addEventListener('error',fallback);var t=setTimeout(fallback,20000);
+if(window.customElements)customElements.whenDefined('model-viewer').then(function(){clearTimeout(t);});})();
+</script>
+</div>
+<div class="asm-2d">
 <figure class="ov"><div class="ov-wrap"><img src="manual/images/overview.png" alt="The finished assembly, all parts at their CAD positions."><svg class="callouts" viewBox="0 0 1600 1200" aria-label="Numbered callouts; each number is a link">
-<a href="subassemblies/free-standing-frame/"><title>6: FREE STANDING FRAME (1 in the project)</title><rect x="518" y="85" width="564" height="1031"/><circle cx="544" cy="111" r="26"/><text x="544" y="111">6</text></a>
-<a href="subassemblies/root-level-parts/"><title>7: Root-level parts (1 in the project)</title><rect x="519" y="84" width="562" height="738"/><circle cx="545" cy="110" r="26"/><text x="545" y="110">7</text></a>
-<a href="subassemblies/panel-assembly/"><title>2: PANEL ASSEMBLY (4 in the project)</title><rect x="525" y="227" width="294" height="837"/><circle cx="551" cy="253" r="26"/><text x="551" y="253">2</text></a>
-<a href="subassemblies/tank-support-frame/"><title>4: TANK SUPPORT FRAME (2 in the project)</title><rect x="533" y="586" width="534" height="272"/><circle cx="559" cy="612" r="26"/><text x="559" y="612">4</text></a>
-<a href="subassemblies/camera-frame/"><title>5: CAMERA FRAME (1 in the project)</title><rect x="526" y="193" width="416" height="292"/><circle cx="552" cy="219" r="26"/><text x="552" y="219">5</text></a>
-<a href="subassemblies/caster-assembly/"><title>1: CASTER ASSEMBLY (4 in the project)</title><rect x="753" y="832" width="47" height="45"/><circle cx="779" cy="858" r="26"/><text x="779" y="858">1</text></a>
-<a href="subassemblies/toggle-clamp-assembly/"><title>3: TOGGLE CLAMP ASSEMBLY (4 in the project)</title><rect x="508" y="481" width="24" height="29"/><circle cx="534" cy="507" r="26"/><text x="534" y="507">3</text></a>
-</svg></div><figcaption>The finished assembly, all parts at their CAD positions. The numbers are links.</figcaption></figure>
+<a href="subassemblies/free-standing-frame/"><title>6: FREE STANDING FRAME (1 in the project)</title><rect x="517" y="85" width="566" height="1031"/><circle cx="543" cy="111" r="26"/><text x="543" y="111">6</text></a>
+<a href="subassemblies/root-level-parts/"><title>7: Root-level parts (1 in the project)</title><rect x="519" y="84" width="563" height="734"/><circle cx="545" cy="110" r="26"/><text x="545" y="110">7</text></a>
+<a href="subassemblies/panel-assembly/"><title>2: PANEL ASSEMBLY (4 in the project)</title><rect x="775" y="220" width="300" height="843"/><circle cx="801" cy="246" r="26"/><text x="801" y="246">2</text></a>
+<a href="subassemblies/tank-support-frame/"><title>4: TANK SUPPORT FRAME (2 in the project)</title><rect x="532" y="594" width="536" height="258"/><circle cx="558" cy="620" r="26"/><text x="558" y="620">4</text></a>
+<a href="subassemblies/camera-frame/"><title>5: CAMERA FRAME (1 in the project)</title><rect x="655" y="190" width="419" height="282"/><circle cx="681" cy="216" r="26"/><text x="681" y="216">5</text></a>
+<a href="subassemblies/caster-assembly/"><title>1: CASTER ASSEMBLY (4 in the project)</title><rect x="517" y="946" width="49" height="45"/><circle cx="543" cy="972" r="26"/><text x="543" y="972">1</text></a>
+<a href="subassemblies/toggle-clamp-assembly/"><title>3: TOGGLE CLAMP ASSEMBLY (4 in the project)</title><rect x="747" y="585" width="45" height="29"/><circle cx="773" cy="611" r="26"/><text x="773" y="611">3</text></a>
+</svg></div><figcaption>The finished assembly, all parts at their CAD positions. The numbers are links.</figcaption></figure><figure class="ov"><div class="ov-wrap"><img src="manual/images/exploded.png" alt="Exploded view: each subassembly moved as a rigid body; illustration only, not an assembly order."><svg class="callouts" viewBox="0 0 1600 1200" aria-label="Numbered callouts; each number is a link">
+<a href="subassemblies/free-standing-frame/"><title>6: FREE STANDING FRAME</title><rect x="598" y="374" width="404" height="738"/><circle cx="624" cy="400" r="26"/><text x="624" y="400">6</text></a>
+<a href="subassemblies/root-level-parts/"><title>7: parts directly under the root</title><rect x="599" y="84" width="402" height="529"/><circle cx="625" cy="110" r="26"/><text x="625" y="110">7</text></a>
+<a href="subassemblies/panel-assembly/"><title>2: PANEL ASSEMBLY</title><rect x="863" y="319" width="210" height="599"/><circle cx="889" cy="345" r="26"/><text x="889" y="345">2</text></a>
+<a href="subassemblies/tank-support-frame/"><title>4: TANK SUPPORT FRAME</title><rect x="609" y="798" width="382" height="195"/><circle cx="635" cy="824" r="26"/><text x="635" y="824">4</text></a>
+<a href="subassemblies/camera-frame/"><title>5: CAMERA FRAME</title><rect x="568" y="297" width="298" height="209"/><circle cx="594" cy="323" r="26"/><text x="594" y="323">5</text></a>
+<a href="subassemblies/caster-assembly/"><title>1: CASTER ASSEMBLY</title><rect x="967" y="985" width="35" height="34"/><circle cx="993" cy="1011" r="26"/><text x="993" y="1011">1</text></a>
+<a href="subassemblies/toggle-clamp-assembly/"><title>3: TOGGLE CLAMP ASSEMBLY</title><rect x="817" y="746" width="32" height="21"/><circle cx="843" cy="772" r="26"/><text x="843" y="772">3</text></a>
+</svg></div><figcaption>Exploded view: each subassembly moved as a rigid body; illustration only, not an assembly order. The numbers are links.</figcaption></figure>
+</div>
+<div class="asm-plain" markdown>
+
+![The finished assembly](manual/images/overview.png)
+
+</div>
+
 
 | # | Subassembly | In the project | Parts in one | Page |
 | ---: | --- | ---: | ---: | --- |
@@ -53,16 +107,16 @@ close-ups.
 
 ## Read
 
-- [Parts](parts.md): every modelled part with its picture, size, CAD quantity and where it is used.
+- [Parts](parts.md): every modelled part with its picture, size, CAD quantity, this-build quantity and where it is used.
 - [Joint close-ups](joints.md) and the [supplementary items](supplement.md) not modelled in CAD.
-- The whole manual on one page: [manual/index.html](manual/index.html), with paper count boxes; for print [appendix PDF](manual/free-standing-enclosure-991056-inventory-appendix.pdf) · [compact PDF](manual/free-standing-enclosure-991056-inventory.pdf).
+- The whole manual on one page: [manual/index.html](manual/index.html), with paper count boxes; for print [appendix PDF](manual/free-standing-enclosure-phase-1-draft-appendix.pdf) · [compact PDF](manual/free-standing-enclosure-phase-1-draft.pdf).
 - [Phase 1 verification list](../assembly/procurement/phase-1-parts.csv): what to count
   before ordering, with the enclosure built first without tanks and backlight
   ([build scope](../assembly/build-scope.json)).
 - [Stock and completeness audit](../assembly/procurement/README.md): modeled parts,
   candidate missing hardware, what the native Inventor BOM audit found.
-- [Draft assembly order](../assembly/instructions.json): a modular proposal; the real
-  order is recorded from the physical build.
+- [Draft assembly steps](steps.md): a modular proposal rendered step by step, with the
+  phase-1 build scope; the real order is recorded from the physical build.
 - [Build record](record.md) and [how the documentation is built](../assembly/documentation-workflow.md)
   from the accepted CAD snapshot with the `mechanical-docs` pipeline.
 

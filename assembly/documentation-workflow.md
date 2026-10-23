@@ -64,7 +64,7 @@ python3 assembly/publish_manual.py --manual "$cad_project/.cache/manual/manual" 
 
 The script verifies every copied file by hash, refuses a failed check report, keeps the
 HTML, images, hotspots, PDFs, receipts and `manual.json` (not the check rasters) and
-writes `docs/manual/SOURCE.json`, then regenerates the site pages with `assembly/site_pages.py`
+writes `docs/manual/SOURCE.json`, then regenerates the site pages with `assembly/site_pages.py` (front page, subassembly pages, parts with the this-build column, joints, supplement, draft steps, record)
 (front page with numbered subassembly callouts, one page per subassembly definition with the
 instance count from the committed scene, parts, joints, supplementary items, build record; the
 model-viewer block appears when the build ships `viewer/assembled.glb`, `viewer/exploded.glb`

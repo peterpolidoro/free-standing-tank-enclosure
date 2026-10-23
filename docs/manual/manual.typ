@@ -6,22 +6,59 @@
 #let countbox = box(width: 16mm, height: 9mm, stroke: 1.2pt + black)
 #let badge(n) = box(width: 7.5mm, height: 7.5mm, radius: 4mm, stroke: 1.5pt + black, align(center + horizon, text(weight: "bold", size: 10pt, str(n))))
 #let sbadge(s) = box(height: 6.5mm, radius: 1mm, inset: (x: 1.5mm), stroke: (paint: black, thickness: 1pt, dash: "dashed"), align(center + horizon, text(weight: "bold", size: 8.5pt, s)))
-= Free Standing Enclosure (Vault file-version 991056) native snapshot: parts inventory
-Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault file-version 991056) native snapshot. Document #raw("free-standing-enclosure-991056-inventory"). Generated 2026-10-23T14:47:47Z.
+#let cbadge(n) = box(width: 8mm, height: 8mm, radius: 4mm, fill: rgb("#d9480f"), stroke: 1.5pt + white, align(center + horizon, text(weight: "bold", size: 10pt, fill: white, str(n))))
+= Free Standing Enclosure, phase 1 (no tanks, no backlight): DRAFT modular order
+Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault file-version 991056) native snapshot. Document #raw("free-standing-enclosure-phase-1-draft"). Generated 2026-10-23T15:40:18Z.
 
 #block(width: 100%, stroke: 1.5pt + black, inset: 8pt)[
   #text(weight: "bold", size: 12pt)[DRAFT]
-  \ Parts inventory and overview only: no assembly sequence has been authored or reviewed for this scene.
+  \ Review state: draft. This sequence has not been physically validated and the order is a draft to be corrected after the build.
+  \ Build scope phase-1: Enclosure without tanks and backlight (decided by Peter, 2026-10-22; draft). 110 of 155 installed occurrences are in this build, 42 conditional (undecided), 3 deferred; CAD counts are unchanged and the deferred items stay in the model.
+  \ Phase note: Phase 1 assembles the frame, casters, panels with handles, toggle clamps, lower supports, camera frame and top panel. Deferred items stay in the CAD scene and in the CAD counts; this file only scopes the build and its documentation.
+  \ Backlight: no modeled part is identified as the backlight or light box; nothing further is excluded until Peter names the occurrences
+  \ Deferred design: monitor supports and acrylic; bowls and bowl frame; tank frame changes.
   \ Geometry and hierarchy come from the CAD export named in the build record. Quantities are CAD instance counts, not purchase quantities, kits, stock or an approved bill of materials.
   \ Project note: The tank(s) and the lower light box are to be replaced in the modified build by two Alienware AW2725Q monitors under an acrylic panel and bowl frames (Peter, 2026-10-22; intent, not a designer confirmation; the light-box occurrences are not yet identified). CAD counts are unchanged.
   \ Subassembly pages and joint close-ups are inspection views of parts at their CAD positions; they are not assembly steps and imply no sequence, fasteners or tool access.
   \ Supplementary items (20 rows, 16 for the existing design, 4 for new design in the appendix only) are hardware not modelled in CAD: listed separately for review, never added to CAD quantities, unknown quantities left unknown; not an approved bill of materials.
   \ CAD ambiguity: 1 pair(s) of occurrences of the same part share one position (SHULZE 2W.353 TANK). All source instances are kept and counted; review the intended configuration before treating the count as stock.
+  \ Approach arrows are unverified render hints; they do not prove an insertion path or tool access.
   \ Stock is unknown until counted and recorded (on\_hand\_each with counted\_by and counted\_date). The counted box is for a paper count only.
 ]
 
+== Finished assembly
+#figure(image("images/overview.png", width: 100%, height: 120mm, fit: "contain"), caption: [All parts at their CAD positions.])
+
+#pagebreak(weak: true)
+== Subassemblies, drawn apart
+#text(size: 9pt)[exploded illustration: the top-level groups moved apart as rigid bodies by the recorded offsets; not an assembly step, no order, fastener or tool access implied. The numbers are the subassembly pages of this document, one callout per subassembly on one of its instances.]
+
+#box(width: 186mm, height: 139.50mm)[
+  #image("images/exploded.png", width: 186mm, height: 139.50mm, fit: "contain")
+  #place(top + left, dx: 110.76mm, dy: 112.69mm)[#cbadge(1)]
+  #place(top + left, dx: 108.53mm, dy: 67.95mm)[#cbadge(2)]
+  #place(top + left, dx: 92.78mm, dy: 83.98mm)[#cbadge(3)]
+  #place(top + left, dx: 89.00mm, dy: 99.79mm)[#cbadge(4)]
+  #place(top + left, dx: 74.45mm, dy: 41.08mm)[#cbadge(5)]
+  #place(top + left, dx: 99.29mm, dy: 44.93mm)[#cbadge(6)]
+  #place(top + left, dx: 89.00mm, dy: 16.46mm)[#cbadge(7)]
+]
+#text(size: 8pt, fill: luma(90))[Illustration offsets only (recorded in manual.json); nothing here is an assembly order.]
+
+#table(columns: (11mm, 1fr, 50mm, 20mm), stroke: 0.5pt + luma(140), align: (center + horizon, left + horizon, left + horizon, center + horizon),
+  table.header([*\#*], [*Subassembly*], [*Instances*], [*Page*]),
+  [#cbadge(1)], [*CASTER ASSEMBLY* (4 in this project) \ #text(size: 7.5pt, fill: luma(90))[callout on #raw("FREE STANDING FRAME:1/CASTER ASSEMBLY:2")]], [#text(size: 7.5pt)[#raw("FREE STANDING FRAME:1/CASTER ASSEMBLY:1"), #raw("FREE STANDING FRAME:1/CASTER ASSEMBLY:2"), #raw("FREE STANDING FRAME:1/CASTER ASSEMBLY:3"), #raw("FREE STANDING FRAME:1/CASTER ASSEMBLY:4")]], [#context link(<group-1>)[page #query(<group-1>).first().location().page()]],
+  [#cbadge(2)], [*PANEL ASSEMBLY* (4 in this project) \ #text(size: 7.5pt, fill: luma(90))[callout on #raw("PANEL ASSEMBLY:3")]], [#text(size: 7.5pt)[#raw("PANEL ASSEMBLY:1"), #raw("PANEL ASSEMBLY:2"), #raw("PANEL ASSEMBLY:3"), #raw("PANEL ASSEMBLY:4")]], [#context link(<group-2>)[page #query(<group-2>).first().location().page()]],
+  [#cbadge(3)], [*TOGGLE CLAMP ASSEMBLY* (4 in this project) \ #text(size: 7.5pt, fill: luma(90))[callout on #raw("TOGGLE CLAMP ASSEMBLY:4")]], [#text(size: 7.5pt)[#raw("TOGGLE CLAMP ASSEMBLY:1"), #raw("TOGGLE CLAMP ASSEMBLY:2"), #raw("TOGGLE CLAMP ASSEMBLY:3"), #raw("TOGGLE CLAMP ASSEMBLY:4")]], [#context link(<group-3>)[page #query(<group-3>).first().location().page()]],
+  [#cbadge(4)], [*TANK SUPPORT FRAME* (2 in this project) \ #text(size: 7.5pt, fill: luma(90))[callout on #raw("TANK SUPPORT FRAME:1")]], [#text(size: 7.5pt)[#raw("TANK SUPPORT FRAME:1"), #raw("TANK SUPPORT FRAME:2")]], [#context link(<group-4>)[page #query(<group-4>).first().location().page()]],
+  [#cbadge(5)], [*CAMERA FRAME* (1 in this project) \ #text(size: 7.5pt, fill: luma(90))[callout on #raw("CAMERA FRAME:1")]], [#text(size: 7.5pt)[#raw("CAMERA FRAME:1")]], [#context link(<group-5>)[page #query(<group-5>).first().location().page()]],
+  [#cbadge(6)], [*FREE STANDING FRAME* (1 in this project) \ #text(size: 7.5pt, fill: luma(90))[callout on #raw("FREE STANDING FRAME:1")]], [#text(size: 7.5pt)[#raw("FREE STANDING FRAME:1")]], [#context link(<group-6>)[page #query(<group-6>).first().location().page()]],
+  [#cbadge(7)], [*Parts directly under the root* \ #badge(34) ENCLOSURE TOP PANEL ×1 \ #badge(37) SHULZE 2W.353 TANK ×1], [#text(size: 7.5pt)[#raw("SHULZE 2W.353 TANK:1"), #raw("ENCLOSURE TOP PANEL:1")]], [see Parts],
+)
+
+#pagebreak(weak: true)
 == Parts
-#text(size: 9pt)[CAD qty is the number of instances of the part in the CAD model (reference-only geometry excluded). It is not a purchase quantity: purchased kits, pack sizes, spares and stock are not reconciled. Write the quantity you count in the box.]
+#text(size: 9pt)[CAD qty is the number of instances of the part in the CAD model (reference-only geometry excluded). It is not a purchase quantity: purchased kits, pack sizes, spares and stock are not reconciled. The large number is the quantity for phase-1 (this build); conditional and deferred quantities are stated beside it. Write the quantity you count in the box.]
 
 #grid(columns: (1fr, 1fr, 1fr), column-gutter: 4mm, row-gutter: 4mm,
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -34,7 +71,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 2 each]],
+      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 2 \ CAD qty 2 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -47,7 +84,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 2 each]],
+      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 2 \ CAD qty 2 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -60,7 +97,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 2 each]],
+      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 2 \ CAD qty 2 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -73,7 +110,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 2 each]],
+      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 2 \ CAD qty 2 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -86,7 +123,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 2 each]],
+      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 2 \ CAD qty 2 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -99,7 +136,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 2 each]],
+      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 2 \ CAD qty 2 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -112,7 +149,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 4 each]],
+      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 4 \ CAD qty 4 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -125,7 +162,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 2 each]],
+      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 2 \ CAD qty 2 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -138,7 +175,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 4 each]],
+      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 4 \ CAD qty 4 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -151,7 +188,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 4 each]],
+      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 4 \ CAD qty 4 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -164,7 +201,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 2 each]],
+      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 2 \ CAD qty 2 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -177,7 +214,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 2 each]],
+      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 2 \ CAD qty 2 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -190,7 +227,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 2 each]],
+      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 2 \ CAD qty 2 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -203,7 +240,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 2 each]],
+      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 2 \ CAD qty 2 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -216,7 +253,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[1] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 1 each]],
+      [#text(size: 17pt, weight: "bold")[1] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 1 \ CAD qty 1 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -229,7 +266,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[1] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 1 each]],
+      [#text(size: 17pt, weight: "bold")[1] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 1 \ CAD qty 1 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -242,7 +279,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[8] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 8 each]],
+      [#text(size: 17pt, weight: "bold")[0] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 0 \ CAD qty 8 each · conditional 8]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -255,7 +292,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[8] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 8 each]],
+      [#text(size: 17pt, weight: "bold")[0] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 0 \ CAD qty 8 each · conditional 8]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -268,7 +305,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[8] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 8 each]],
+      [#text(size: 17pt, weight: "bold")[0] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 0 \ CAD qty 8 each · conditional 8]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -281,7 +318,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[8] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 8 each]],
+      [#text(size: 17pt, weight: "bold")[0] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 0 \ CAD qty 8 each · conditional 8]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
@@ -294,25 +331,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 2 each]],
+      [#text(size: 17pt, weight: "bold")[0] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 0 \ CAD qty 2 each · conditional 2]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(22) #h(2pt) #text(weight: "bold", size: 9pt)[SHULZE 2W.353 TANK]]
-    #v(1pt)
-    #image("images/part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c.png", width: 100%, height: 34mm, fit: "contain")
-    #v(1pt)
-    #box(width: 100%, height: 20mm, clip: true)[#text(size: 7.5pt, fill: luma(60))[overall 991 × 991 × 82.6 mm (39 × 39 × 3.25 in) \ Acrylic, Clear \ on hand unknown \ intended configuration confirmed: no \ #text(weight: "bold", fill: rgb("#b4400a"))[⚠ 1 coincident instance pair(s) in CAD: review before counting as stock]]]
-    #v(1fr)
-    #line(length: 100%, stroke: 0.4pt + luma(150))
-    #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[3] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 3 each]],
-      stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
-  ],
-  block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
-    #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(23) #h(2pt) #text(weight: "bold", size: 9pt)[TANK SUPPORT BRACKET]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(22) #h(2pt) #text(weight: "bold", size: 9pt)[TANK SUPPORT BRACKET]]
     #v(1pt)
     #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png", width: 100%, height: 34mm, fit: "contain")
     #v(1pt)
@@ -320,12 +344,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[8] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 8 each]],
+      [#text(size: 17pt, weight: "bold")[0] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 0 \ CAD qty 8 each · conditional 8]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(24) #h(2pt) #text(weight: "bold", size: 9pt)[SLLB Enclosure 44in 47065T808 T-Slotted Framing]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(23) #h(2pt) #text(weight: "bold", size: 9pt)[SLLB Enclosure 44in 47065T808 T-Slotted Framing]]
     #v(1pt)
     #grid(columns: (2fr, 1fr), column-gutter: 1.5mm, image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431.png", width: 100%, height: 34mm, fit: "contain"), image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431-end.png", width: 100%, height: 34mm, fit: "contain"))
     #v(1pt)
@@ -333,12 +357,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[11] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 11 each]],
+      [#text(size: 17pt, weight: "bold")[11] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 11 \ CAD qty 11 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(25) #h(2pt) #text(weight: "bold", size: 9pt)[MCMASTER 47065T245]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(24) #h(2pt) #text(weight: "bold", size: 9pt)[MCMASTER 47065T245]]
     #v(1pt)
     #image("images/part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png", width: 100%, height: 34mm, fit: "contain")
     #v(1pt)
@@ -346,12 +370,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[8] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 8 each]],
+      [#text(size: 17pt, weight: "bold")[8] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 8 \ CAD qty 8 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(26) #h(2pt) #text(weight: "bold", size: 9pt)[SLLB Enclosure 96in 47065T808 T-Slotted Framing]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(25) #h(2pt) #text(weight: "bold", size: 9pt)[SLLB Enclosure 96in 47065T808 T-Slotted Framing]]
     #v(1pt)
     #grid(columns: (2fr, 1fr), column-gutter: 1.5mm, image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b.png", width: 100%, height: 34mm, fit: "contain"), image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b-end.png", width: 100%, height: 34mm, fit: "contain"))
     #v(1pt)
@@ -359,12 +383,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 4 each]],
+      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 4 \ CAD qty 4 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(27) #h(2pt) #text(weight: "bold", size: 9pt)[HOLKIE LEVELING CASTER]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(26) #h(2pt) #text(weight: "bold", size: 9pt)[HOLKIE LEVELING CASTER]]
     #v(1pt)
     #image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png", width: 100%, height: 34mm, fit: "contain")
     #v(1pt)
@@ -372,12 +396,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 4 each]],
+      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 4 \ CAD qty 4 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(28) #h(2pt) #text(weight: "bold", size: 9pt)[CASTER MOUNTING PLATE]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(27) #h(2pt) #text(weight: "bold", size: 9pt)[CASTER MOUNTING PLATE]]
     #v(1pt)
     #image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png", width: 100%, height: 34mm, fit: "contain")
     #v(1pt)
@@ -385,12 +409,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 4 each]],
+      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 4 \ CAD qty 4 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(29) #h(2pt) #text(weight: "bold", size: 9pt)[SLLB Enclosure 2.5in 47065T808 T-Slotted Framing]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(28) #h(2pt) #text(weight: "bold", size: 9pt)[SLLB Enclosure 2.5in 47065T808 T-Slotted Framing]]
     #v(1pt)
     #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0.png", width: 100%, height: 34mm, fit: "contain")
     #v(1pt)
@@ -398,12 +422,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 2 each]],
+      [#text(size: 17pt, weight: "bold")[2] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 2 \ CAD qty 2 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(30) #h(2pt) #text(weight: "bold", size: 9pt)[47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(29) #h(2pt) #text(weight: "bold", size: 9pt)[47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION]]
     #v(1pt)
     #image("images/part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0.png", width: 100%, height: 34mm, fit: "contain")
     #v(1pt)
@@ -411,12 +435,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[8] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 8 each]],
+      [#text(size: 17pt, weight: "bold")[8] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 8 \ CAD qty 8 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(31) #h(2pt) #text(weight: "bold", size: 9pt)[PANEL LOWER SUPPORT LEFT]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(30) #h(2pt) #text(weight: "bold", size: 9pt)[PANEL LOWER SUPPORT LEFT]]
     #v(1pt)
     #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png", width: 100%, height: 34mm, fit: "contain")
     #v(1pt)
@@ -424,12 +448,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 4 each]],
+      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 4 \ CAD qty 4 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(32) #h(2pt) #text(weight: "bold", size: 9pt)[PANEL LOWER SUPPORT RIGHT]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(31) #h(2pt) #text(weight: "bold", size: 9pt)[PANEL LOWER SUPPORT RIGHT]]
     #v(1pt)
     #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f.png", width: 100%, height: 34mm, fit: "contain")
     #v(1pt)
@@ -437,12 +461,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 4 each]],
+      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 4 \ CAD qty 4 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(33) #h(2pt) #text(weight: "bold", size: 9pt)[ENCLOSURE PANEL]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(32) #h(2pt) #text(weight: "bold", size: 9pt)[ENCLOSURE PANEL]]
     #v(1pt)
     #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d.png", width: 100%, height: 34mm, fit: "contain")
     #v(1pt)
@@ -450,12 +474,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 4 each]],
+      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 4 \ CAD qty 4 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(34) #h(2pt) #text(weight: "bold", size: 9pt)[MCMASTER 1950A67 Unthreaded-Hole Pull Handle]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(33) #h(2pt) #text(weight: "bold", size: 9pt)[MCMASTER 1950A67 Unthreaded-Hole Pull Handle]]
     #v(1pt)
     #image("images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png", width: 100%, height: 34mm, fit: "contain")
     #v(1pt)
@@ -463,12 +487,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[8] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 8 each]],
+      [#text(size: 17pt, weight: "bold")[8] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 8 \ CAD qty 8 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(35) #h(2pt) #text(weight: "bold", size: 9pt)[ENCLOSURE TOP PANEL]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(34) #h(2pt) #text(weight: "bold", size: 9pt)[ENCLOSURE TOP PANEL]]
     #v(1pt)
     #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-389173d2.png", width: 100%, height: 34mm, fit: "contain")
     #v(1pt)
@@ -476,12 +500,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[1] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 1 each]],
+      [#text(size: 17pt, weight: "bold")[1] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 1 \ CAD qty 1 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(36) #h(2pt) #text(weight: "bold", size: 9pt)[MCMASTER 5004A11 Compact Hold-Down Toggle Clamp]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(35) #h(2pt) #text(weight: "bold", size: 9pt)[MCMASTER 5004A11 Compact Hold-Down Toggle Clamp]]
     #v(1pt)
     #image("images/part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png", width: 100%, height: 34mm, fit: "contain")
     #v(1pt)
@@ -489,12 +513,12 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[8] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 8 each]],
+      [#text(size: 17pt, weight: "bold")[8] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 8 \ CAD qty 8 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
   block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
     #set par(spacing: 0pt); #set block(spacing: 0pt)
-    #box(width: 100%, height: 13mm, clip: true)[#badge(37) #h(2pt) #text(weight: "bold", size: 9pt)[TOGGLE CLAMP MOUNT]]
+    #box(width: 100%, height: 13mm, clip: true)[#badge(36) #h(2pt) #text(weight: "bold", size: 9pt)[TOGGLE CLAMP MOUNT]]
     #v(1pt)
     #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png", width: 100%, height: 34mm, fit: "contain")
     #v(1pt)
@@ -502,11 +526,77 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
     #v(1fr)
     #line(length: 100%, stroke: 0.4pt + luma(150))
     #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
-      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[CAD qty 4 each]],
+      [#text(size: 17pt, weight: "bold")[4] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 4 \ CAD qty 4 each]],
       stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
   ],
 )
 #text(size: 8pt, fill: luma(90))[The counted box is for a paper count only; recorded stock is on\_hand\_each in the project's manifests.]
+
+== Deferred (not in this build)
+#text(size: 9pt)[These parts stay in the CAD model and its counts but are not part of phase-1: Enclosure without tanks and backlight.]
+
+#grid(columns: (1fr, 1fr, 1fr), column-gutter: 4mm, row-gutter: 4mm,
+  block(width: 100%, height: 84mm, stroke: 1pt + black, inset: 4pt, clip: true, breakable: false)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #box(width: 100%, height: 13mm, clip: true)[#badge(37) #h(2pt) #text(weight: "bold", size: 9pt)[SHULZE 2W.353 TANK]]
+    #v(1pt)
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c.png", width: 100%, height: 34mm, fit: "contain")
+    #v(1pt)
+    #box(width: 100%, height: 20mm, clip: true)[#text(size: 7.5pt, fill: luma(60))[overall 991 × 991 × 82.6 mm (39 × 39 × 3.25 in) \ Acrylic, Clear \ on hand unknown \ intended configuration confirmed: no \ #text(weight: "bold", fill: rgb("#b4400a"))[⚠ 1 coincident instance pair(s) in CAD: review before counting as stock]]]
+    #v(1fr)
+    #line(length: 100%, stroke: 0.4pt + luma(150))
+    #grid(columns: (1fr, auto), column-gutter: 2mm, align: (left + horizon, right + horizon),
+      [#text(size: 17pt, weight: "bold")[0] #h(2pt) #text(size: 6.5pt, fill: luma(60))[this build 0 \ CAD qty 3 each · deferred 3]],
+      stack(dir: ltr, spacing: 2pt, align(horizon, text(size: 6.5pt, fill: luma(60))[counted]), countbox))
+  ],
+)
+
+#pagebreak(weak: true)
+== Verification checklist: phase-1
+#text(size: 8.5pt)[Enclosure without tanks and backlight (draft, decided by Peter, 2026-10-22). Tick what you have for this build; quantities are CAD instance counts for the phase, not purchase quantities. Deferred parts are listed last for completeness.]
+
+#set text(size: 7pt)
+#table(columns: (6mm, 9mm, 1fr, 11mm, 11mm, 13mm, 16mm, 15mm, 17mm, 13mm), stroke: 0.4pt + luma(140), inset: 2pt, align: (center + horizon, center + horizon, left + horizon, center + horizon, center + horizon, center + horizon, left + horizon, left + horizon, left + horizon, center + horizon),
+  table.header([*\#*], [], [*Part*], [*this build*], [*cond.*], [*counted*], [*by*], [*date*], [*location*], [*missing*]),
+  [1], [#image("images/part-data-common-mcmaster-mcmaster-5537t293-t-slotted-1c2935ff.png", width: 8mm, height: 5mm, fit: "contain")], [MCMASTER 5537T293 T-Slotted Framing #text(fill: luma(110))[(CAD 2)]], [*2*], [—], [], [], [], [], [],
+  [2], [#image("images/part-data-common-mcmaster-mcmaster-5537t429-t-slotted-72ff3dc4.png", width: 8mm, height: 5mm, fit: "contain")], [MCMASTER 5537T429 T-Slotted Framing #text(fill: luma(110))[(CAD 2)]], [*2*], [—], [], [], [], [], [],
+  [3], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-64014b81.png", width: 8mm, height: 5mm, fit: "contain")], [SLLB Enclosure 15in 47065T808 T-Slotted Framing #text(fill: luma(110))[(CAD 2)]], [*2*], [—], [], [], [], [], [],
+  [4], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-567ca529.png", width: 8mm, height: 5mm, fit: "contain")], [SLLB Enclosure 22in 47065T808 T-Slotted Framing #text(fill: luma(110))[(CAD 2)]], [*2*], [—], [], [], [], [], [],
+  [5], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-f37ea6b9.png", width: 8mm, height: 5mm, fit: "contain")], [SLLB Enclosure 41in 47065T808 T-Slotted Framing #text(fill: luma(110))[(CAD 2)]], [*2*], [—], [], [], [], [], [],
+  [6], [#image("images/part-data-common-mcmaster-mcmaster-3136n149-t-slotted-77d5b1ed.png", width: 8mm, height: 5mm, fit: "contain")], [MCMASTER 3136N149 T-Slotted Framing #text(fill: luma(110))[(CAD 2)]], [*2*], [—], [], [], [], [], [],
+  [7], [#image("images/part-data-common-mcmaster-mcmaster-47065t27-t-slotted-63467688.png", width: 8mm, height: 5mm, fit: "contain")], [MCMASTER 47065T27 T-Slotted Framing #text(fill: luma(110))[(CAD 4)]], [*4*], [—], [], [], [], [], [],
+  [8], [#image("images/part-data-common-mcmaster-mcmaster-9293k121-constant-a4593b94.png", width: 8mm, height: 5mm, fit: "contain")], [MCMASTER 9293K121 Constant-Force Spring #text(fill: luma(110))[(CAD 2)]], [*2*], [—], [], [], [], [], [],
+  [9], [#image("images/part-data-common-mcmaster-mcmaster-47065t845-silver-c-e1e40dd2.png", width: 8mm, height: 5mm, fit: "contain")], [MCMASTER 47065T845 Silver Corner Bracket #text(fill: luma(110))[(CAD 4)]], [*4*], [—], [], [], [], [], [],
+  [10], [#image("images/part-data-common-mcmaster-mcmaster-5972k164-ball-bear-66eca704.png", width: 8mm, height: 5mm, fit: "contain")], [MCMASTER 5972K164 Ball Bearing #text(fill: luma(110))[(CAD 4)]], [*4*], [—], [], [], [], [], [],
+  [11], [#image("images/part-data-common-mcmaster-mcmaster-90265a164-18-8-sta-591781bf.png", width: 8mm, height: 5mm, fit: "contain")], [MCMASTER 90265A164 18-8 Stainless Steel Shoulder Screw #text(fill: luma(110))[(CAD 2)]], [*2*], [—], [], [], [], [], [],
+  [12], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-25d6cebc.png", width: 8mm, height: 5mm, fit: "contain")], [SPRING ROLLER #text(fill: luma(110))[(CAD 2)]], [*2*], [—], [], [], [], [], [],
+  [13], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-6a8f878a.png", width: 8mm, height: 5mm, fit: "contain")], [ROLLER MOUNT PLATE #text(fill: luma(110))[(CAD 2)]], [*2*], [—], [], [], [], [], [],
+  [14], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-eb93feb5.png", width: 8mm, height: 5mm, fit: "contain")], [SPRING MOUNT PLATE #text(fill: luma(110))[(CAD 2)]], [*2*], [—], [], [], [], [], [],
+  [15], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-94fc4c9b.png", width: 8mm, height: 5mm, fit: "contain")], [CAMERA MOUNT PLATE #text(fill: luma(110))[(CAD 1)]], [*1*], [—], [], [], [], [], [],
+  [16], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-b670923e.png", width: 8mm, height: 5mm, fit: "contain")], [CAMERA MOUNT PLATE - TELEDYNE KINETIX #text(fill: luma(110))[(CAD 1)]], [*1*], [—], [], [], [], [], [],
+  [17], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-72135c80.png", width: 8mm, height: 5mm, fit: "contain")], [TSLOT EXTRUSION 1X40.5 copy #text(fill: luma(110))[(CAD 8)]], [*0*], [8], [], [], [], [], [],
+  [18], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-6dff85d6.png", width: 8mm, height: 5mm, fit: "contain")], [T SLOT CORNER 47065T242 #text(fill: luma(110))[(CAD 8)]], [*0*], [8], [], [], [], [], [],
+  [19], [#image("images/part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc.png", width: 8mm, height: 5mm, fit: "contain")], [MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount #text(fill: luma(110))[(CAD 8)]], [*0*], [8], [], [], [], [], [],
+  [20], [#image("images/part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649.png", width: 8mm, height: 5mm, fit: "contain")], [MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer #text(fill: luma(110))[(CAD 8)]], [*0*], [8], [], [], [], [], [],
+  [21], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-a3951cbf.png", width: 8mm, height: 5mm, fit: "contain")], [TANK SUPPORT PLATFORM #text(fill: luma(110))[(CAD 2)]], [*0*], [2], [], [], [], [], [],
+  [22], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png", width: 8mm, height: 5mm, fit: "contain")], [TANK SUPPORT BRACKET #text(fill: luma(110))[(CAD 8)]], [*0*], [8], [], [], [], [], [],
+  [23], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431.png", width: 8mm, height: 5mm, fit: "contain")], [SLLB Enclosure 44in 47065T808 T-Slotted Framing #text(fill: luma(110))[(CAD 11)]], [*11*], [—], [], [], [], [], [],
+  [24], [#image("images/part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png", width: 8mm, height: 5mm, fit: "contain")], [MCMASTER 47065T245 #text(fill: luma(110))[(CAD 8)]], [*8*], [—], [], [], [], [], [],
+  [25], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b.png", width: 8mm, height: 5mm, fit: "contain")], [SLLB Enclosure 96in 47065T808 T-Slotted Framing #text(fill: luma(110))[(CAD 4)]], [*4*], [—], [], [], [], [], [],
+  [26], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png", width: 8mm, height: 5mm, fit: "contain")], [HOLKIE LEVELING CASTER #text(fill: luma(110))[(CAD 4)]], [*4*], [—], [], [], [], [], [],
+  [27], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png", width: 8mm, height: 5mm, fit: "contain")], [CASTER MOUNTING PLATE #text(fill: luma(110))[(CAD 4)]], [*4*], [—], [], [], [], [], [],
+  [28], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0.png", width: 8mm, height: 5mm, fit: "contain")], [SLLB Enclosure 2.5in 47065T808 T-Slotted Framing #text(fill: luma(110))[(CAD 2)]], [*2*], [—], [], [], [], [], [],
+  [29], [#image("images/part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0.png", width: 8mm, height: 5mm, fit: "contain")], [47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION #text(fill: luma(110))[(CAD 8)]], [*8*], [—], [], [], [], [], [],
+  [30], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png", width: 8mm, height: 5mm, fit: "contain")], [PANEL LOWER SUPPORT LEFT #text(fill: luma(110))[(CAD 4)]], [*4*], [—], [], [], [], [], [],
+  [31], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f.png", width: 8mm, height: 5mm, fit: "contain")], [PANEL LOWER SUPPORT RIGHT #text(fill: luma(110))[(CAD 4)]], [*4*], [—], [], [], [], [], [],
+  [32], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d.png", width: 8mm, height: 5mm, fit: "contain")], [ENCLOSURE PANEL #text(fill: luma(110))[(CAD 4)]], [*4*], [—], [], [], [], [], [],
+  [33], [#image("images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png", width: 8mm, height: 5mm, fit: "contain")], [MCMASTER 1950A67 Unthreaded-Hole Pull Handle #text(fill: luma(110))[(CAD 8)]], [*8*], [—], [], [], [], [], [],
+  [34], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-389173d2.png", width: 8mm, height: 5mm, fit: "contain")], [ENCLOSURE TOP PANEL #text(fill: luma(110))[(CAD 1)]], [*1*], [—], [], [], [], [], [],
+  [35], [#image("images/part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png", width: 8mm, height: 5mm, fit: "contain")], [MCMASTER 5004A11 Compact Hold-Down Toggle Clamp #text(fill: luma(110))[(CAD 8)]], [*8*], [—], [], [], [], [], [],
+  [36], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png", width: 8mm, height: 5mm, fit: "contain")], [TOGGLE CLAMP MOUNT #text(fill: luma(110))[(CAD 4)]], [*4*], [—], [], [], [], [], [],
+  [37], [#image("images/part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c.png", width: 8mm, height: 5mm, fit: "contain")], [SHULZE 2W.353 TANK #text(fill: luma(110))[(CAD 3)]], [#text(fill: luma(120))[deferred]], [—], [], [], [], [], [],
+)
+#set text(size: 10.5pt)
 
 #pagebreak(weak: true)
 == Supplementary items (not modelled in CAD)
@@ -545,8 +635,8 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #table(columns: (auto, 22mm, 1fr, 22mm, 24mm), align: (center + horizon, center + horizon, left + horizon, center + horizon, center + horizon), stroke: 0.5pt + luma(140),
   table.header([*\#*], [*Picture*], [*Part*], [*Per subassembly*], [*For all 4*]),
-  [#badge(27)], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png", width: 20mm, height: 14mm, fit: "contain")], [HOLKIE LEVELING CASTER], [#text(size: 14pt, weight: "bold")[×1]], [#text(size: 14pt, weight: "bold")[×4]],
-  [#badge(28)], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png", width: 20mm, height: 14mm, fit: "contain")], [CASTER MOUNTING PLATE], [#text(size: 14pt, weight: "bold")[×1]], [#text(size: 14pt, weight: "bold")[×4]],
+  [#badge(26)], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png", width: 20mm, height: 14mm, fit: "contain")], [HOLKIE LEVELING CASTER], [#text(size: 14pt, weight: "bold")[×1]], [#text(size: 14pt, weight: "bold")[×4]],
+  [#badge(27)], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png", width: 20mm, height: 14mm, fit: "contain")], [CASTER MOUNTING PLATE], [#text(size: 14pt, weight: "bold")[×1]], [#text(size: 14pt, weight: "bold")[×4]],
 )
 #text(size: 8pt, fill: luma(90))[4 identical instances of this subassembly in the CAD model; the last column is the CAD count for all 4 (an instance count, not a purchase quantity).]
 #text(size: 8pt, fill: luma(90))[2 occurrence(s) in the shown instance; ids in manual.json.]
@@ -565,8 +655,8 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #table(columns: (auto, 22mm, 1fr, 22mm, 24mm), align: (center + horizon, center + horizon, left + horizon, center + horizon, center + horizon), stroke: 0.5pt + luma(140),
   table.header([*\#*], [*Picture*], [*Part*], [*Per subassembly*], [*For all 4*]),
-  [#badge(33)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d.png", width: 20mm, height: 14mm, fit: "contain")], [ENCLOSURE PANEL], [#text(size: 14pt, weight: "bold")[×1]], [#text(size: 14pt, weight: "bold")[×4]],
-  [#badge(34)], [#image("images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png", width: 20mm, height: 14mm, fit: "contain")], [MCMASTER 1950A67 Unthreaded-Hole Pull Handle], [#text(size: 14pt, weight: "bold")[×2]], [#text(size: 14pt, weight: "bold")[×8]],
+  [#badge(32)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d.png", width: 20mm, height: 14mm, fit: "contain")], [ENCLOSURE PANEL], [#text(size: 14pt, weight: "bold")[×1]], [#text(size: 14pt, weight: "bold")[×4]],
+  [#badge(33)], [#image("images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png", width: 20mm, height: 14mm, fit: "contain")], [MCMASTER 1950A67 Unthreaded-Hole Pull Handle], [#text(size: 14pt, weight: "bold")[×2]], [#text(size: 14pt, weight: "bold")[×8]],
 )
 #text(size: 8pt, fill: luma(90))[4 identical instances of this subassembly in the CAD model; the last column is the CAD count for all 4 (an instance count, not a purchase quantity).]
 #text(size: 8pt, fill: luma(90))[3 occurrence(s) in the shown instance; ids in manual.json.]
@@ -585,8 +675,8 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #table(columns: (auto, 22mm, 1fr, 22mm, 24mm), align: (center + horizon, center + horizon, left + horizon, center + horizon, center + horizon), stroke: 0.5pt + luma(140),
   table.header([*\#*], [*Picture*], [*Part*], [*Per subassembly*], [*For all 4*]),
-  [#badge(36)], [#image("images/part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png", width: 20mm, height: 14mm, fit: "contain")], [MCMASTER 5004A11 Compact Hold-Down Toggle Clamp], [#text(size: 14pt, weight: "bold")[×2]], [#text(size: 14pt, weight: "bold")[×8]],
-  [#badge(37)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png", width: 20mm, height: 14mm, fit: "contain")], [TOGGLE CLAMP MOUNT], [#text(size: 14pt, weight: "bold")[×1]], [#text(size: 14pt, weight: "bold")[×4]],
+  [#badge(35)], [#image("images/part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png", width: 20mm, height: 14mm, fit: "contain")], [MCMASTER 5004A11 Compact Hold-Down Toggle Clamp], [#text(size: 14pt, weight: "bold")[×2]], [#text(size: 14pt, weight: "bold")[×8]],
+  [#badge(36)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png", width: 20mm, height: 14mm, fit: "contain")], [TOGGLE CLAMP MOUNT], [#text(size: 14pt, weight: "bold")[×1]], [#text(size: 14pt, weight: "bold")[×4]],
 )
 #text(size: 8pt, fill: luma(90))[4 identical instances of this subassembly in the CAD model; the last column is the CAD count for all 4 (an instance count, not a purchase quantity).]
 #text(size: 8pt, fill: luma(90))[3 occurrence(s) in the shown instance; ids in manual.json.]
@@ -611,8 +701,8 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
   [#badge(19)], [#image("images/part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc.png", width: 20mm, height: 14mm, fit: "contain")], [MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount], [#text(size: 14pt, weight: "bold")[×4]], [#text(size: 14pt, weight: "bold")[×8]],
   [#badge(20)], [#image("images/part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649.png", width: 20mm, height: 14mm, fit: "contain")], [MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer], [#text(size: 14pt, weight: "bold")[×4]], [#text(size: 14pt, weight: "bold")[×8]],
   [#badge(21)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-a3951cbf.png", width: 20mm, height: 14mm, fit: "contain")], [TANK SUPPORT PLATFORM], [#text(size: 14pt, weight: "bold")[×1]], [#text(size: 14pt, weight: "bold")[×2]],
-  [#badge(22)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c.png", width: 20mm, height: 14mm, fit: "contain")], [SHULZE 2W.353 TANK], [#text(size: 14pt, weight: "bold")[×1]], [#text(size: 14pt, weight: "bold")[×2]],
-  [#badge(23)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png", width: 20mm, height: 14mm, fit: "contain")], [TANK SUPPORT BRACKET], [#text(size: 14pt, weight: "bold")[×4]], [#text(size: 14pt, weight: "bold")[×8]],
+  [#badge(22)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png", width: 20mm, height: 14mm, fit: "contain")], [TANK SUPPORT BRACKET], [#text(size: 14pt, weight: "bold")[×4]], [#text(size: 14pt, weight: "bold")[×8]],
+  [#badge(37)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c.png", width: 20mm, height: 14mm, fit: "contain")], [SHULZE 2W.353 TANK], [#text(size: 14pt, weight: "bold")[×1]], [#text(size: 14pt, weight: "bold")[×2]],
 )
 #text(size: 8pt, fill: luma(90))[2 identical instances of this subassembly in the CAD model; the last column is the CAD count for all 2 (an instance count, not a purchase quantity).]
 #text(size: 8pt, fill: luma(90))[22 occurrence(s) in the shown instance; ids in manual.json.]
@@ -624,7 +714,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #pagebreak(weak: true)
 == Subassembly 5: CAMERA FRAME (1 in this project) <group-5>
-#text(size: 8pt, fill: luma(90))[shown: #raw("CAMERA FRAME:1") under #raw("root") · definition from the exporter's document]
+#text(size: 8pt, fill: luma(90))[shown: #raw("CAMERA FRAME:1") under #raw("root") · definition from the exporter's document · flexible assembly: positions may differ per instance; 32 position(s) overridden against the definition]
 
 #text(size: 9pt)[inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied.]
 
@@ -659,7 +749,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #pagebreak(weak: true)
 == Subassembly 6: FREE STANDING FRAME (1 in this project) <group-6>
-#text(size: 8pt, fill: luma(90))[shown: #raw("FREE STANDING FRAME:1") under #raw("root") · definition from the exporter's document]
+#text(size: 8pt, fill: luma(90))[shown: #raw("FREE STANDING FRAME:1") under #raw("root") · definition from the exporter's document · flexible assembly: positions may differ per instance; 12 position(s) overridden against the definition]
 
 #text(size: 9pt)[inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied.]
 
@@ -667,15 +757,15 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #table(columns: (auto, 22mm, 1fr, 22mm), align: (center + horizon, center + horizon, left + horizon, center + horizon), stroke: 0.5pt + luma(140),
   table.header([*\#*], [*Picture*], [*Part*], [*In this subassembly*]),
-  [#badge(24)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431.png", width: 20mm, height: 14mm, fit: "contain")], [SLLB Enclosure 44in 47065T808 T-Slotted Framing], [#text(size: 14pt, weight: "bold")[×11]],
-  [#badge(25)], [#image("images/part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png", width: 20mm, height: 14mm, fit: "contain")], [MCMASTER 47065T245], [#text(size: 14pt, weight: "bold")[×8]],
-  [#badge(26)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b.png", width: 20mm, height: 14mm, fit: "contain")], [SLLB Enclosure 96in 47065T808 T-Slotted Framing], [#text(size: 14pt, weight: "bold")[×4]],
-  [#badge(27)], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png", width: 20mm, height: 14mm, fit: "contain")], [HOLKIE LEVELING CASTER], [#text(size: 14pt, weight: "bold")[×4]],
-  [#badge(28)], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png", width: 20mm, height: 14mm, fit: "contain")], [CASTER MOUNTING PLATE], [#text(size: 14pt, weight: "bold")[×4]],
-  [#badge(29)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0.png", width: 20mm, height: 14mm, fit: "contain")], [SLLB Enclosure 2.5in 47065T808 T-Slotted Framing], [#text(size: 14pt, weight: "bold")[×2]],
-  [#badge(30)], [#image("images/part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0.png", width: 20mm, height: 14mm, fit: "contain")], [47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION], [#text(size: 14pt, weight: "bold")[×8]],
-  [#badge(31)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png", width: 20mm, height: 14mm, fit: "contain")], [PANEL LOWER SUPPORT LEFT], [#text(size: 14pt, weight: "bold")[×4]],
-  [#badge(32)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f.png", width: 20mm, height: 14mm, fit: "contain")], [PANEL LOWER SUPPORT RIGHT], [#text(size: 14pt, weight: "bold")[×4]],
+  [#badge(23)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431.png", width: 20mm, height: 14mm, fit: "contain")], [SLLB Enclosure 44in 47065T808 T-Slotted Framing], [#text(size: 14pt, weight: "bold")[×11]],
+  [#badge(24)], [#image("images/part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png", width: 20mm, height: 14mm, fit: "contain")], [MCMASTER 47065T245], [#text(size: 14pt, weight: "bold")[×8]],
+  [#badge(25)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b.png", width: 20mm, height: 14mm, fit: "contain")], [SLLB Enclosure 96in 47065T808 T-Slotted Framing], [#text(size: 14pt, weight: "bold")[×4]],
+  [#badge(26)], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png", width: 20mm, height: 14mm, fit: "contain")], [HOLKIE LEVELING CASTER], [#text(size: 14pt, weight: "bold")[×4]],
+  [#badge(27)], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png", width: 20mm, height: 14mm, fit: "contain")], [CASTER MOUNTING PLATE], [#text(size: 14pt, weight: "bold")[×4]],
+  [#badge(28)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0.png", width: 20mm, height: 14mm, fit: "contain")], [SLLB Enclosure 2.5in 47065T808 T-Slotted Framing], [#text(size: 14pt, weight: "bold")[×2]],
+  [#badge(29)], [#image("images/part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0.png", width: 20mm, height: 14mm, fit: "contain")], [47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION], [#text(size: 14pt, weight: "bold")[×8]],
+  [#badge(30)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png", width: 20mm, height: 14mm, fit: "contain")], [PANEL LOWER SUPPORT LEFT], [#text(size: 14pt, weight: "bold")[×4]],
+  [#badge(31)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f.png", width: 20mm, height: 14mm, fit: "contain")], [PANEL LOWER SUPPORT RIGHT], [#text(size: 14pt, weight: "bold")[×4]],
 )
 #text(size: 8pt, fill: luma(90))[49 occurrence(s) in the shown instance; ids in manual.json.]
 
@@ -696,8 +786,8 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #table(columns: (auto, 22mm, 1fr), align: (center + horizon, center + horizon, left + horizon), stroke: 0.5pt + luma(140),
   table.header([*\#*], [*Picture*], [*Occurrence in this joint*]),
-  [#badge(27)], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png", width: 20mm, height: 14mm, fit: "contain")], [HOLKIE LEVELING CASTER \ #text(size: 7.5pt, fill: luma(90))[#raw("FREE STANDING FRAME:1/CASTER ASSEMBLY:1/HOLKIE LEVELING CASTER:1")]],
-  [#badge(28)], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png", width: 20mm, height: 14mm, fit: "contain")], [CASTER MOUNTING PLATE \ #text(size: 7.5pt, fill: luma(90))[#raw("FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1")]],
+  [#badge(26)], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png", width: 20mm, height: 14mm, fit: "contain")], [HOLKIE LEVELING CASTER \ #text(size: 7.5pt, fill: luma(90))[#raw("FREE STANDING FRAME:1/CASTER ASSEMBLY:1/HOLKIE LEVELING CASTER:1")]],
+  [#badge(27)], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png", width: 20mm, height: 14mm, fit: "contain")], [CASTER MOUNTING PLATE \ #text(size: 7.5pt, fill: luma(90))[#raw("FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1")]],
 )
 
 #text(size: 9pt, weight: "bold", fill: rgb("#b4400a"))[Hardware to review at this joint (not an approved BOM)]
@@ -713,7 +803,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #table(columns: (auto, 22mm, 1fr), align: (center + horizon, center + horizon, left + horizon), stroke: 0.5pt + luma(140),
   table.header([*\#*], [*Picture*], [*Occurrence in this joint*]),
-  [#badge(28)], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png", width: 20mm, height: 14mm, fit: "contain")], [CASTER MOUNTING PLATE \ #text(size: 7.5pt, fill: luma(90))[#raw("FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1")]],
+  [#badge(27)], [#image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png", width: 20mm, height: 14mm, fit: "contain")], [CASTER MOUNTING PLATE \ #text(size: 7.5pt, fill: luma(90))[#raw("FREE STANDING FRAME:1/CASTER ASSEMBLY:1/CASTER MOUNTING PLATE:1")]],
 )
 
 #text(size: 9pt, weight: "bold", fill: rgb("#b4400a"))[Hardware to review at this joint (not an approved BOM)]
@@ -729,7 +819,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #table(columns: (auto, 22mm, 1fr), align: (center + horizon, center + horizon, left + horizon), stroke: 0.5pt + luma(140),
   table.header([*\#*], [*Picture*], [*Occurrence in this joint*]),
-  [#badge(34)], [#image("images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png", width: 20mm, height: 14mm, fit: "contain")], [MCMASTER 1950A67 Unthreaded-Hole Pull Handle \ #text(size: 7.5pt, fill: luma(90))[#raw("PANEL ASSEMBLY:1/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1")]],
+  [#badge(33)], [#image("images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png", width: 20mm, height: 14mm, fit: "contain")], [MCMASTER 1950A67 Unthreaded-Hole Pull Handle \ #text(size: 7.5pt, fill: luma(90))[#raw("PANEL ASSEMBLY:1/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1")]],
 )
 
 #text(size: 9pt, weight: "bold", fill: rgb("#b4400a"))[Hardware to review at this joint (not an approved BOM)]
@@ -745,8 +835,8 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #table(columns: (auto, 22mm, 1fr), align: (center + horizon, center + horizon, left + horizon), stroke: 0.5pt + luma(140),
   table.header([*\#*], [*Picture*], [*Occurrence in this joint*]),
-  [#badge(36)], [#image("images/part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png", width: 20mm, height: 14mm, fit: "contain")], [MCMASTER 5004A11 Compact Hold-Down Toggle Clamp \ #text(size: 7.5pt, fill: luma(90))[#raw("TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1")]],
-  [#badge(37)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png", width: 20mm, height: 14mm, fit: "contain")], [TOGGLE CLAMP MOUNT \ #text(size: 7.5pt, fill: luma(90))[#raw("TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1")]],
+  [#badge(35)], [#image("images/part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png", width: 20mm, height: 14mm, fit: "contain")], [MCMASTER 5004A11 Compact Hold-Down Toggle Clamp \ #text(size: 7.5pt, fill: luma(90))[#raw("TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1")]],
+  [#badge(36)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png", width: 20mm, height: 14mm, fit: "contain")], [TOGGLE CLAMP MOUNT \ #text(size: 7.5pt, fill: luma(90))[#raw("TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1")]],
 )
 
 #text(size: 9pt, weight: "bold", fill: rgb("#b4400a"))[Hardware to review at this joint (not an approved BOM)]
@@ -762,7 +852,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #table(columns: (auto, 22mm, 1fr), align: (center + horizon, center + horizon, left + horizon), stroke: 0.5pt + luma(140),
   table.header([*\#*], [*Picture*], [*Occurrence in this joint*]),
-  [#badge(37)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png", width: 20mm, height: 14mm, fit: "contain")], [TOGGLE CLAMP MOUNT \ #text(size: 7.5pt, fill: luma(90))[#raw("TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1")]],
+  [#badge(36)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png", width: 20mm, height: 14mm, fit: "contain")], [TOGGLE CLAMP MOUNT \ #text(size: 7.5pt, fill: luma(90))[#raw("TOGGLE CLAMP ASSEMBLY:1/TOGGLE CLAMP MOUNT:1")]],
 )
 
 #text(size: 9pt, weight: "bold", fill: rgb("#b4400a"))[Hardware to review at this joint (not an approved BOM)]
@@ -778,7 +868,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #table(columns: (auto, 22mm, 1fr), align: (center + horizon, center + horizon, left + horizon), stroke: 0.5pt + luma(140),
   table.header([*\#*], [*Picture*], [*Occurrence in this joint*]),
-  [#badge(31)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png", width: 20mm, height: 14mm, fit: "contain")], [PANEL LOWER SUPPORT LEFT \ #text(size: 7.5pt, fill: luma(90))[#raw("FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:1")]],
+  [#badge(30)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png", width: 20mm, height: 14mm, fit: "contain")], [PANEL LOWER SUPPORT LEFT \ #text(size: 7.5pt, fill: luma(90))[#raw("FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:1")]],
 )
 
 #text(size: 9pt, weight: "bold", fill: rgb("#b4400a"))[Hardware to review at this joint (not an approved BOM)]
@@ -794,7 +884,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #table(columns: (auto, 22mm, 1fr), align: (center + horizon, center + horizon, left + horizon), stroke: 0.5pt + luma(140),
   table.header([*\#*], [*Picture*], [*Occurrence in this joint*]),
-  [#badge(25)], [#image("images/part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png", width: 20mm, height: 14mm, fit: "contain")], [MCMASTER 47065T245 \ #text(size: 7.5pt, fill: luma(90))[#raw("FREE STANDING FRAME:1/MCMASTER 47065T245:1")]],
+  [#badge(24)], [#image("images/part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png", width: 20mm, height: 14mm, fit: "contain")], [MCMASTER 47065T245 \ #text(size: 7.5pt, fill: luma(90))[#raw("FREE STANDING FRAME:1/MCMASTER 47065T245:1")]],
 )
 
 #text(size: 9pt, weight: "bold", fill: rgb("#b4400a"))[Hardware to review at this joint (not an approved BOM)]
@@ -842,7 +932,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #table(columns: (auto, 22mm, 1fr), align: (center + horizon, center + horizon, left + horizon), stroke: 0.5pt + luma(140),
   table.header([*\#*], [*Picture*], [*Occurrence in this joint*]),
-  [#badge(23)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png", width: 20mm, height: 14mm, fit: "contain")], [TANK SUPPORT BRACKET \ #text(size: 7.5pt, fill: luma(90))[#raw("TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:1")]],
+  [#badge(22)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png", width: 20mm, height: 14mm, fit: "contain")], [TANK SUPPORT BRACKET \ #text(size: 7.5pt, fill: luma(90))[#raw("TANK SUPPORT FRAME:1/TANK SUPPORT BRACKET:1")]],
 )
 
 #text(size: 9pt, weight: "bold", fill: rgb("#b4400a"))[Hardware to review at this joint (not an approved BOM)]
@@ -929,7 +1019,7 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #table(columns: (auto, 22mm, 1fr), align: (center + horizon, center + horizon, left + horizon), stroke: 0.5pt + luma(140),
   table.header([*\#*], [*Picture*], [*Occurrence in this joint*]),
-  [#badge(35)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-389173d2.png", width: 20mm, height: 14mm, fit: "contain")], [ENCLOSURE TOP PANEL \ #text(size: 7.5pt, fill: luma(90))[#raw("ENCLOSURE TOP PANEL:1")]],
+  [#badge(34)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-389173d2.png", width: 20mm, height: 14mm, fit: "contain")], [ENCLOSURE TOP PANEL \ #text(size: 7.5pt, fill: luma(90))[#raw("ENCLOSURE TOP PANEL:1")]],
 )
 
 #text(size: 9pt, weight: "bold", fill: rgb("#b4400a"))[Hardware to review at this joint (not an approved BOM)]
@@ -945,25 +1035,380 @@ Scene #raw("free-standing-enclosure-991056"): Free Standing Enclosure (Vault fil
 
 #table(columns: (auto, 22mm, 1fr), align: (center + horizon, center + horizon, left + horizon), stroke: 0.5pt + luma(140),
   table.header([*\#*], [*Picture*], [*Occurrence in this joint*]),
-  [#badge(31)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png", width: 20mm, height: 14mm, fit: "contain")], [PANEL LOWER SUPPORT LEFT \ #text(size: 7.5pt, fill: luma(90))[#raw("FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:1")]],
-  [#badge(32)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f.png", width: 20mm, height: 14mm, fit: "contain")], [PANEL LOWER SUPPORT RIGHT \ #text(size: 7.5pt, fill: luma(90))[#raw("FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:2")]],
+  [#badge(30)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png", width: 20mm, height: 14mm, fit: "contain")], [PANEL LOWER SUPPORT LEFT \ #text(size: 7.5pt, fill: luma(90))[#raw("FREE STANDING FRAME:1/PANEL LOWER SUPPORT LEFT:1")]],
+  [#badge(31)], [#image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f.png", width: 20mm, height: 14mm, fit: "contain")], [PANEL LOWER SUPPORT RIGHT \ #text(size: 7.5pt, fill: luma(90))[#raw("FREE STANDING FRAME:1/PANEL LOWER SUPPORT RIGHT:2")]],
 )
 
 #text(size: 9pt, weight: "bold", fill: rgb("#b4400a"))[Hardware to review at this joint (not an approved BOM)]
 - #sbadge[S16] Removable-panel retention interface · candidate, requires review · required unknown (family, not specified); basis: 4 panels, 8 lower supports, 8 toggle clamps · joint #raw("panel_retention")
 
-#pagebreak(weak: true)
-== Finished assembly
-#figure(image("images/overview.png", width: 100%), caption: [All parts at their CAD positions.])
+#pagebreak()
+== Step 1
+#text(size: 8pt, fill: luma(90))[\[bottom-frame\]]
 
-== Steps
-No assembly sequence has been authored for this scene.
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(28) #h(2pt) #text(size: 16pt, weight: "bold")[×2] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0.png", width: 26mm, height: 20mm, fit: "contain") \
+    #badge(23) #h(2pt) #text(size: 16pt, weight: "bold")[×3] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431.png", width: 26mm, height: 20mm, fit: "contain") \
+    #badge(24) #h(2pt) #text(size: 16pt, weight: "bold")[×4] \
+    #image("images/part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png", width: 26mm, height: 20mm, fit: "contain") \
+  ],
+  figure(image("images/step-01-bottom-frame.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Lay out the bottom frame: lower rails and corner connectors. Order among rails is free; square the frame before tightening. Hardware: see joints main\_frame\_joints.]
+
+#pagebreak()
+== Step 2
+#text(size: 8pt, fill: luma(90))[\[casters\] after bottom-frame]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(27) #h(2pt) #text(size: 16pt, weight: "bold")[×4] \
+    #image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png", width: 26mm, height: 20mm, fit: "contain") \
+    #badge(26) #h(2pt) #text(size: 16pt, weight: "bold")[×4] \
+    #image("images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png", width: 26mm, height: 20mm, fit: "contain") \
+  ],
+  figure(image("images/step-02-casters.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Bolt each caster to its mounting plate and attach the four plates under the bottom frame corners (joints caster\_to\_plate, caster\_plate\_to\_frame). Hardware unverified.]
+
+#pagebreak()
+== Step 3
+#text(size: 8pt, fill: luma(90))[\[columns\] after casters]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(25) #h(2pt) #text(size: 16pt, weight: "bold")[×4] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b.png", width: 26mm, height: 20mm, fit: "contain") \
+  ],
+  figure(image("images/step-03-columns.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Stand the four 96 in columns on the bottom frame corners.]
+
+#pagebreak()
+== Step 4
+#text(size: 8pt, fill: luma(90))[\[middle-rails\] after columns]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(23) #h(2pt) #text(size: 16pt, weight: "bold")[×4] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431.png", width: 26mm, height: 20mm, fit: "contain") \
+    #badge(29) #h(2pt) #text(size: 16pt, weight: "bold")[×8] \
+    #image("images/part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0.png", width: 26mm, height: 20mm, fit: "contain") \
+  ],
+  figure(image("images/step-04-middle-rails.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Add the mid-height rails and extrusions between the columns.]
+
+#pagebreak()
+== Step 5
+#text(size: 8pt, fill: luma(90))[\[top-frame\] after middle-rails]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(23) #h(2pt) #text(size: 16pt, weight: "bold")[×4] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431.png", width: 26mm, height: 20mm, fit: "contain") \
+    #badge(24) #h(2pt) #text(size: 16pt, weight: "bold")[×4] \
+    #image("images/part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png", width: 26mm, height: 20mm, fit: "contain") \
+  ],
+  figure(image("images/step-05-top-frame.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Close the top frame: upper rails and corner connectors.]
+
+#pagebreak()
+== Step 6
+#text(size: 8pt, fill: luma(90))[\[lower-supports\] after top-frame]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(30) #h(2pt) #text(size: 16pt, weight: "bold")[×4] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png", width: 26mm, height: 20mm, fit: "contain") \
+    #badge(31) #h(2pt) #text(size: 16pt, weight: "bold")[×4] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f.png", width: 26mm, height: 20mm, fit: "contain") \
+  ],
+  figure(image("images/step-06-lower-supports.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Fit the eight panel lower supports (left and right) to the frame (joint lower\_support\_to\_frame).]
+
+#pagebreak()
+== Step 7
+#text(size: 8pt, fill: luma(90))[\[toggle-clamps\] after lower-supports]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(35) #h(2pt) #text(size: 16pt, weight: "bold")[×8] \
+    #image("images/part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png", width: 26mm, height: 20mm, fit: "contain") \
+    #badge(36) #h(2pt) #text(size: 16pt, weight: "bold")[×4] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png", width: 26mm, height: 20mm, fit: "contain") \
+  ],
+  figure(image("images/step-07-toggle-clamps.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Assemble the four toggle-clamp mounts (two clamps each) and attach them to the columns (joints clamp\_to\_mount, clamp\_mount\_to\_frame).]
+
+#pagebreak()
+== Step 8
+#text(size: 8pt, fill: luma(90))[\[camera-frame-structure\] after toggle-clamps]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(6) #h(2pt) #text(size: 12pt, weight: "bold")[×2] \
+    #image("images/part-data-common-mcmaster-mcmaster-3136n149-t-slotted-77d5b1ed.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(7) #h(2pt) #text(size: 12pt, weight: "bold")[×4] \
+    #image("images/part-data-common-mcmaster-mcmaster-47065t27-t-slotted-63467688.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(9) #h(2pt) #text(size: 12pt, weight: "bold")[×4] \
+    #image("images/part-data-common-mcmaster-mcmaster-47065t845-silver-c-e1e40dd2.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(1) #h(2pt) #text(size: 12pt, weight: "bold")[×2] \
+    #image("images/part-data-common-mcmaster-mcmaster-5537t293-t-slotted-1c2935ff.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(2) #h(2pt) #text(size: 12pt, weight: "bold")[×2] \
+    #image("images/part-data-common-mcmaster-mcmaster-5537t429-t-slotted-72ff3dc4.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(3) #h(2pt) #text(size: 12pt, weight: "bold")[×2] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-64014b81.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(4) #h(2pt) #text(size: 12pt, weight: "bold")[×2] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-567ca529.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(5) #h(2pt) #text(size: 12pt, weight: "bold")[×2] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-f37ea6b9.png", width: 16mm, height: 12mm, fit: "contain") \
+  ],
+  figure(image("images/step-08-camera-frame-structure.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Assemble the camera frame extrusions and corner brackets (joint camera\_frame\_joints).]
+
+#pagebreak()
+== Step 9
+#text(size: 8pt, fill: luma(90))[\[camera-frame-mechanism\] after camera-frame-structure]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(10) #h(2pt) #text(size: 12pt, weight: "bold")[×4] \
+    #image("images/part-data-common-mcmaster-mcmaster-5972k164-ball-bear-66eca704.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(11) #h(2pt) #text(size: 12pt, weight: "bold")[×2] \
+    #image("images/part-data-common-mcmaster-mcmaster-90265a164-18-8-sta-591781bf.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(8) #h(2pt) #text(size: 12pt, weight: "bold")[×2] \
+    #image("images/part-data-common-mcmaster-mcmaster-9293k121-constant-a4593b94.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(13) #h(2pt) #text(size: 12pt, weight: "bold")[×2] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-6a8f878a.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(14) #h(2pt) #text(size: 12pt, weight: "bold")[×2] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-eb93feb5.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(12) #h(2pt) #text(size: 12pt, weight: "bold")[×2] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-25d6cebc.png", width: 16mm, height: 12mm, fit: "contain") \
+  ],
+  figure(image("images/step-09-camera-frame-mechanism.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Fit the roller and spring mechanism: roller plates, spring plates, rollers, bearings, shoulder screws, springs (joint spring\_roller).]
+
+#pagebreak()
+== Step 10
+#text(size: 8pt, fill: luma(90))[\[camera-plates\] after camera-frame-mechanism]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(15) #h(2pt) #text(size: 16pt, weight: "bold")[×1] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-94fc4c9b.png", width: 26mm, height: 20mm, fit: "contain") \
+    #badge(16) #h(2pt) #text(size: 16pt, weight: "bold")[×1] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-b670923e.png", width: 26mm, height: 20mm, fit: "contain") \
+  ],
+  figure(image("images/step-10-camera-plates.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Fit the camera mount plates (joints camera\_plates, camera\_attachment). The camera itself is not in CAD.]
+
+#pagebreak()
+== Step 11
+#text(size: 8pt, fill: luma(90))[\[panel-1\] after camera-plates]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(32) #h(2pt) #text(size: 16pt, weight: "bold")[×1] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d.png", width: 26mm, height: 20mm, fit: "contain") \
+    #badge(33) #h(2pt) #text(size: 16pt, weight: "bold")[×2] \
+    #image("images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png", width: 26mm, height: 20mm, fit: "contain") \
+  ],
+  figure(image("images/step-11-panel-1.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Fit two pull handles to panel 1 (joint handle\_to\_panel) and hang the panel on its lower supports and toggle clamps (joint panel\_retention).]
+
+#pagebreak()
+== Step 12
+#text(size: 8pt, fill: luma(90))[\[panel-2\] after panel-1]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(32) #h(2pt) #text(size: 16pt, weight: "bold")[×1] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d.png", width: 26mm, height: 20mm, fit: "contain") \
+    #badge(33) #h(2pt) #text(size: 16pt, weight: "bold")[×2] \
+    #image("images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png", width: 26mm, height: 20mm, fit: "contain") \
+  ],
+  figure(image("images/step-12-panel-2.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Fit two pull handles to panel 2 (joint handle\_to\_panel) and hang the panel on its lower supports and toggle clamps (joint panel\_retention).]
+
+#pagebreak()
+== Step 13
+#text(size: 8pt, fill: luma(90))[\[panel-3\] after panel-2]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(32) #h(2pt) #text(size: 16pt, weight: "bold")[×1] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d.png", width: 26mm, height: 20mm, fit: "contain") \
+    #badge(33) #h(2pt) #text(size: 16pt, weight: "bold")[×2] \
+    #image("images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png", width: 26mm, height: 20mm, fit: "contain") \
+  ],
+  figure(image("images/step-13-panel-3.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Fit two pull handles to panel 3 (joint handle\_to\_panel) and hang the panel on its lower supports and toggle clamps (joint panel\_retention).]
+
+#pagebreak()
+== Step 14
+#text(size: 8pt, fill: luma(90))[\[panel-4\] after panel-3]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(32) #h(2pt) #text(size: 16pt, weight: "bold")[×1] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d.png", width: 26mm, height: 20mm, fit: "contain") \
+    #badge(33) #h(2pt) #text(size: 16pt, weight: "bold")[×2] \
+    #image("images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png", width: 26mm, height: 20mm, fit: "contain") \
+  ],
+  figure(image("images/step-14-panel-4.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Fit two pull handles to panel 4 (joint handle\_to\_panel) and hang the panel on its lower supports and toggle clamps (joint panel\_retention).]
+
+#pagebreak()
+== Step 15
+#text(size: 8pt, fill: luma(90))[\[top-panel\] after panel-4]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(34) #h(2pt) #text(size: 16pt, weight: "bold")[×1] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-389173d2.png", width: 26mm, height: 20mm, fit: "contain") \
+  ],
+  figure(image("images/step-15-top-panel.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[Place the top panel (joint top\_panel: nothing in CAD retains it).]
+
+#pagebreak()
+== Step 16
+#text(size: 8pt, fill: luma(90))[\[conditional-tank-support-frame-1\] after top-panel]
+#text(size: 9pt, weight: "bold", fill: rgb("#b4400a"))[CONDITIONAL: install in phase 1 only if it cannot be installed after the frame and panels are assembled; otherwise defer with the tanks]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(20) #h(2pt) #text(size: 12pt, weight: "bold")[×4] \
+    #image("images/part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(19) #h(2pt) #text(size: 12pt, weight: "bold")[×4] \
+    #image("images/part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(18) #h(2pt) #text(size: 12pt, weight: "bold")[×4] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-6dff85d6.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(22) #h(2pt) #text(size: 12pt, weight: "bold")[×4] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(21) #h(2pt) #text(size: 12pt, weight: "bold")[×1] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-a3951cbf.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(17) #h(2pt) #text(size: 12pt, weight: "bold")[×4] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-72135c80.png", width: 16mm, height: 12mm, fit: "contain") \
+  ],
+  figure(image("images/step-16-conditional-tank-support-frame-1.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[CONDITIONAL (build-scope.json): TANK SUPPORT FRAME:1, the tank support frame. Install now only if it cannot be installed after the panels; otherwise defer with the tanks. Joints support\_frame\_corners, support\_brackets, vibration\_mounts.]
+
+#pagebreak()
+== Step 17
+#text(size: 8pt, fill: luma(90))[\[conditional-tank-support-frame-2\] after conditional-tank-support-frame-1]
+#text(size: 9pt, weight: "bold", fill: rgb("#b4400a"))[CONDITIONAL: install in phase 1 only if it cannot be installed after the frame and panels are assembled; otherwise defer with the tanks]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(20) #h(2pt) #text(size: 12pt, weight: "bold")[×4] \
+    #image("images/part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(19) #h(2pt) #text(size: 12pt, weight: "bold")[×4] \
+    #image("images/part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(18) #h(2pt) #text(size: 12pt, weight: "bold")[×4] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-6dff85d6.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(22) #h(2pt) #text(size: 12pt, weight: "bold")[×4] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(21) #h(2pt) #text(size: 12pt, weight: "bold")[×1] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-a3951cbf.png", width: 16mm, height: 12mm, fit: "contain") \
+    #badge(17) #h(2pt) #text(size: 12pt, weight: "bold")[×4] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-enclos-72135c80.png", width: 16mm, height: 12mm, fit: "contain") \
+  ],
+  figure(image("images/step-17-conditional-tank-support-frame-2.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[CONDITIONAL (build-scope.json): TANK SUPPORT FRAME:2, the tank support frame. Install now only if it cannot be installed after the panels; otherwise defer with the tanks. Joints support\_frame\_corners, support\_brackets, vibration\_mounts.]
+
+#pagebreak()
+= Deferred steps (not in this build)
+#text(size: 9pt)[These steps place items outside phase-1; they are shown seated on the finished build for completeness and are not part of the build sequence above.]
+
+== Step 18
+#text(size: 8pt, fill: luma(90))[\[deferred-tanks\] after conditional-tank-support-frame-2]
+#text(size: 9pt, weight: "bold", fill: rgb("#b4400a"))[DEFERRED: not in this build]
+
+#grid(columns: (34mm, 1fr), column-gutter: 6mm, row-gutter: 4mm,
+  block(stroke: (paint: luma(120), dash: "dashed"), inset: 5pt, width: 100%)[
+    #set par(spacing: 0pt); #set block(spacing: 0pt)
+    #text(size: 7.5pt, fill: luma(80))[PARTS NEEDED] \
+    #badge(37) #h(2pt) #text(size: 16pt, weight: "bold")[×3] \
+    #image("images/part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c.png", width: 26mm, height: 20mm, fit: "contain") \
+  ],
+  figure(image("images/step-18-deferred-tanks.png", width: 100%), caption: [Place as shown.]),
+)
+
+#text(size: 12pt)[DEFERRED (build-scope.json): the tanks are not part of phase 1 and are listed here only because every CAD occurrence must appear once. They are to be replaced by monitors and bowls.]
 
 #pagebreak(weak: true)
 == Build record
 #set text(size: 8pt)
 #table(columns: (30%, 1fr), stroke: 0.4pt + luma(160), align: left + horizon,
-  [generated], [2026-10-23T14:47:47Z],
+  [generated], [2026-10-23T15:40:18Z],
   [scene], [free-standing-enclosure-991056: Free Standing Enclosure (Vault file-version 991056) native snapshot (37 parts, 155 occurrences, 17 assemblies)],
   [source kind], [autodesk-inventor-vault-snapshot],
   [source root\_version\_id], [991056],
@@ -971,13 +1416,27 @@ No assembly sequence has been authored for this scene.
   [source qualification], [geometry/hierarchy snapshot; not a reviewed assembly procedure or stock inventory],
   [source occurrence\_id\_scope], [snapshot-scoped occurrence paths (Inventor occurrence names); stable only within this snapshot],
   [scene.json], [`ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070`],
+  [instructions.json], [`9de40bb2e8925e5f456645efd9c465bfc3576103fd1ac0d4f3bf45e6d5c6d3f5`],
   [inventory.json], [`0eed5897bb238c1334e92e19927db8573480f3c7d4778099fa02b09e605298de`],
   [supplement.json], [`c9950ec3f72db98f8d3563adaec0fb48ba50fce689fbb905dbe050ce0e4081ba`],
+  [build-scope.json], [`b835cb40d41f9b05eadb57ca58dfdaf7ae0a05deddb1c951bcc009325f2d4911`],
   [assets], [37 STEP files; hashes in manual.json],
   [FreeCAD], [1.1.3; deflection 0.05 mm / 10.0°, budget 50000 triangles per part; meshes.json #raw("91c004502b7a089aac81b6d07810e5eae461b3174bfaaca41c468ba3a5a6f414")],
-  [Blender], [4.5.14 LTS, engine CYCLES, denoiser OPENIMAGEDENOISE, samples 64, long side 1600 px; line art on up to 600000 visible triangles; settings #raw("de5362725e51f850f9ae2abe69e598ccfc9de12271f91db3d29b9426bc8bb3bb")],
-  [reused views], [66 of 67 images copied from an earlier run with the same inputs, meshes and engine (build/enclosure-snapshot-991056/renders7/render-receipt.json); per-view record in manual.json],
-  [images], [67 renders; hashes in manual.json],
+  [Blender], [4.5.14 LTS, engine CYCLES, denoiser OPENIMAGEDENOISE, samples 64, long side 1600 px; line art on up to 600000 visible triangles; settings #raw("94534a5410b48956efa4f48c2626ab3b0f08ae3cb5c1c6c6495fc0dc789e620b")],
+  [reused views], [68 of 86 images copied from an earlier run with the same inputs, meshes and engine (build/enclosure-snapshot-991056/renders10/render-receipt.json); per-view record in manual.json],
+  [render warning], [step-07-toggle-clamps: 909744 visible triangles exceed lines.max\_triangles (600000); rendered without line art],
+  [render warning], [step-08-camera-frame-structure: 1180312 visible triangles exceed lines.max\_triangles (600000); rendered without line art],
+  [render warning], [step-09-camera-frame-mechanism: 1379408 visible triangles exceed lines.max\_triangles (600000); rendered without line art],
+  [render warning], [step-10-camera-plates: 1382084 visible triangles exceed lines.max\_triangles (600000); rendered without line art],
+  [render warning], [step-11-panel-1: 1473284 visible triangles exceed lines.max\_triangles (600000); rendered without line art],
+  [render warning], [step-12-panel-2: 1564484 visible triangles exceed lines.max\_triangles (600000); rendered without line art],
+  [render warning], [step-13-panel-3: 1655684 visible triangles exceed lines.max\_triangles (600000); rendered without line art],
+  [render warning], [step-14-panel-4: 1746884 visible triangles exceed lines.max\_triangles (600000); rendered without line art],
+  [render warning], [step-15-top-panel: 1749932 visible triangles exceed lines.max\_triangles (600000); rendered without line art],
+  [render warning], [step-16-conditional-tank-support-frame-1: 2092304 visible triangles exceed lines.max\_triangles (600000); rendered without line art],
+  [render warning], [step-17-conditional-tank-support-frame-2: 2434676 visible triangles exceed lines.max\_triangles (600000); rendered without line art],
+  [render warning], [step-18-deferred-tanks: 2436488 visible triangles exceed lines.max\_triangles (600000); rendered without line art],
+  [images], [86 renders; hashes in manual.json],
   [supplement.json], [20 row(s): 16 existing design, 4 new design; never added to CAD quantities],
   [generator], [python 3.12.12; platform Linux-6.12.113+deb13-amd64-x86\_64-with-glibc2.41; package mechanical-docs],
 )

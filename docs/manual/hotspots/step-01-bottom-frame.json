@@ -1,0 +1,106 @@
+{
+ "view": "step-01-bottom-frame",
+ "width": 1600,
+ "height": 1200,
+ "occurrences": [
+  {
+   "id": "FREE STANDING FRAME:1/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    770.7,
+    1062.8,
+    795.3,
+    1084.3
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "FREE STANDING FRAME:1/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing:2",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    1046.8,
+    969.1,
+    1071.5,
+    990.5
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:1",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    526.5,
+    944.3,
+    770.7,
+    1083.4
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:2",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    528.5,
+    840.7,
+    829.3,
+    955.8
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:3",
+   "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
+   "box_px": [
+    829.3,
+    841.5,
+    1073.5,
+    980.7
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "FREE STANDING FRAME:1/MCMASTER 47065T245:1",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
+   "box_px": [
+    760.1,
+    1066.9,
+    779.5,
+    1087.7
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "FREE STANDING FRAME:1/MCMASTER 47065T245:2",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
+   "box_px": [
+    518.6,
+    938.8,
+    537.9,
+    959.5
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "FREE STANDING FRAME:1/MCMASTER 47065T245:3",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
+   "box_px": [
+    820.5,
+    836.4,
+    839.9,
+    857.1
+   ],
+   "corners_in_frame": 8
+  },
+  {
+   "id": "FREE STANDING FRAME:1/MCMASTER 47065T245:4",
+   "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
+   "box_px": [
+    1062.1,
+    964.5,
+    1081.4,
+    985.2
+   ],
+   "corners_in_frame": 8
+  }
+ ]
+}

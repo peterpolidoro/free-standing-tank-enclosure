@@ -9,16 +9,16 @@
 
 
 <figure class="ov"><div class="ov-wrap"><img src="../../manual/images/group-free-standing-frame-1-caster-assembly-1-0f4aa3c4.png" alt="CASTER ASSEMBLY: inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied."><svg class="callouts" viewBox="0 0 1600 1200" aria-label="Numbered callouts; each number is a link">
-<a href="../../parts/#part-27"><title>27: HOLKIE LEVELING CASTER</title><rect x="362" y="126" width="945" height="978"/><circle cx="388" cy="152" r="26"/><text x="388" y="152">27</text></a>
-<a href="../../parts/#part-28"><title>28: CASTER MOUNTING PLATE</title><rect x="274" y="96" width="1052" height="522"/><circle cx="300" cy="122" r="26"/><text x="300" y="122">28</text></a>
+<a href="../../parts/#part-26"><title>26: HOLKIE LEVELING CASTER</title><rect x="362" y="126" width="945" height="978"/><circle cx="388" cy="152" r="26"/><text x="388" y="152">26</text></a>
+<a href="../../parts/#part-27"><title>27: CASTER MOUNTING PLATE</title><rect x="274" y="96" width="1052" height="522"/><circle cx="300" cy="122" r="26"/><text x="300" y="122">27</text></a>
 </svg></div><figcaption>CASTER ASSEMBLY: inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied. The numbers are links.</figcaption></figure>
 
 ## Parts
 
 | # | Picture | Part | Per subassembly | For all 4 |
 | ---: | --- | --- | ---: | ---: |
-| 27 | <img src="../../manual/images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png" width="72" alt=""> | [HOLKIE LEVELING CASTER](../parts.md#part-27)<br><small>overall 104 × 86.2 × 73.5 mm (4.094 × 3.395 × 2.893 in)</small> | 1 | 4 |
-| 28 | <img src="../../manual/images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png" width="72" alt=""> | [CASTER MOUNTING PLATE](../parts.md#part-28)<br><small>overall 100 × 100 × 6.3 mm (3.953 × 3.953 × 0.25 in)</small> | 1 | 4 |
+| 26 | <img src="../../manual/images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png" width="72" alt=""> | [HOLKIE LEVELING CASTER](../parts.md#part-26)<br><small>overall 104 × 86.2 × 73.5 mm (4.094 × 3.395 × 2.893 in)</small> | 1 | 4 |
+| 27 | <img src="../../manual/images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png" width="72" alt=""> | [CASTER MOUNTING PLATE](../parts.md#part-27)<br><small>overall 100 × 100 × 6.3 mm (3.953 × 3.953 × 0.25 in)</small> | 1 | 4 |
 
 CAD quantities are instance counts in the model, not stock and not a purchase list.
 
@@ -33,7 +33,7 @@ CAD quantities are instance counts in the model, not stock and not a purchase li
 
 ![Joint 1: caster_to_plate](../manual/images/joint-caster-to-plate-4da81a1b.png)
 
-Occurrences at their CAD poses; context CASTER ASSEMBLY:1. Parts: 27 HOLKIE LEVELING CASTER ×1, 28 CASTER MOUNTING PLATE ×1.
+Occurrences at their CAD poses; context CASTER ASSEMBLY:1. Parts: 26 HOLKIE LEVELING CASTER ×1, 27 CASTER MOUNTING PLATE ×1.
 - **S1** Caster-to-mounting-plate fastening: required unknown (family, not specified); basis: 4 caster assemblies; attachment points per caster unverified
 
 

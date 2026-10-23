@@ -10,15 +10,15 @@
 
 <figure class="ov"><div class="ov-wrap"><img src="../../manual/images/group-tank-support-frame-1-524083a4.png" alt="TANK SUPPORT FRAME: inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied."><svg class="callouts" viewBox="0 0 1600 1200" aria-label="Numbered callouts; each number is a link">
 <a href="../../parts/#part-21"><title>21: TANK SUPPORT PLATFORM</title><rect x="261" y="104" width="1079" height="961"/><circle cx="287" cy="130" r="26"/><text x="287" y="130">21</text></a>
-<a href="../../parts/#part-22"><title>22: SHULZE 2W.353 TANK</title><rect x="305" y="116" width="990" height="905"/><circle cx="331" cy="142" r="26"/><text x="331" y="142">22</text></a>
+<a href="../../parts/#part-37"><title>37: SHULZE 2W.353 TANK</title><rect x="305" y="116" width="990" height="905"/><circle cx="331" cy="142" r="26"/><text x="331" y="142">37</text></a>
 <a href="../../parts/#part-17"><title>17: TSLOT EXTRUSION 1X40.5 copy</title><rect x="753" y="118" width="572" height="435"/><circle cx="779" cy="144" r="26"/><text x="779" y="144">17</text></a>
 <a href="../../parts/#part-17"><title>17: TSLOT EXTRUSION 1X40.5 copy</title><rect x="274" y="628" width="572" height="435"/><circle cx="300" cy="654" r="26"/><text x="300" y="654">17</text></a>
 <a href="../../parts/#part-17"><title>17: TSLOT EXTRUSION 1X40.5 copy</title><rect x="847" y="545" width="481" height="516"/><circle cx="873" cy="571" r="26"/><text x="873" y="571">17</text></a>
 <a href="../../parts/#part-17"><title>17: TSLOT EXTRUSION 1X40.5 copy</title><rect x="272" y="120" width="481" height="516"/><circle cx="298" cy="146" r="26"/><text x="298" y="146">17</text></a>
-<a href="../../parts/#part-23"><title>23: TANK SUPPORT BRACKET</title><rect x="814" y="1017" width="91" height="79"/><circle cx="840" cy="1043" r="26"/><text x="840" y="1043">23</text></a>
-<a href="../../parts/#part-23"><title>23: TANK SUPPORT BRACKET</title><rect x="1276" y="526" width="91" height="79"/><circle cx="1302" cy="552" r="26"/><text x="1302" y="552">23</text></a>
-<a href="../../parts/#part-23"><title>23: TANK SUPPORT BRACKET</title><rect x="694" y="96" width="91" height="79"/><circle cx="720" cy="122" r="26"/><text x="720" y="122">23</text></a>
-<a href="../../parts/#part-23"><title>23: TANK SUPPORT BRACKET</title><rect x="233" y="587" width="91" height="79"/><circle cx="259" cy="613" r="26"/><text x="259" y="613">23</text></a>
+<a href="../../parts/#part-22"><title>22: TANK SUPPORT BRACKET</title><rect x="814" y="1017" width="91" height="79"/><circle cx="840" cy="1043" r="26"/><text x="840" y="1043">22</text></a>
+<a href="../../parts/#part-22"><title>22: TANK SUPPORT BRACKET</title><rect x="1276" y="526" width="91" height="79"/><circle cx="1302" cy="552" r="26"/><text x="1302" y="552">22</text></a>
+<a href="../../parts/#part-22"><title>22: TANK SUPPORT BRACKET</title><rect x="694" y="96" width="91" height="79"/><circle cx="720" cy="122" r="26"/><text x="720" y="122">22</text></a>
+<a href="../../parts/#part-22"><title>22: TANK SUPPORT BRACKET</title><rect x="233" y="587" width="91" height="79"/><circle cx="259" cy="613" r="26"/><text x="259" y="613">22</text></a>
 <a href="../../parts/#part-18"><title>18: T SLOT CORNER 47065T242</title><rect x="823" y="1023" width="47" height="50"/><circle cx="849" cy="1049" r="26"/><text x="849" y="1049">18</text></a>
 <a href="../../parts/#part-18"><title>18: T SLOT CORNER 47065T242</title><rect x="1293" y="524" width="47" height="50"/><circle cx="1319" cy="550" r="26"/><text x="1319" y="550">18</text></a>
 <a href="../../parts/#part-18"><title>18: T SLOT CORNER 47065T242</title><rect x="730" y="108" width="47" height="50"/><circle cx="756" cy="134" r="26"/><text x="756" y="134">18</text></a>
@@ -42,8 +42,8 @@
 | 19 | <img src="../../manual/images/part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc.png" width="72" alt=""> | [MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount](../parts.md#part-19)<br><small>overall 25.7 × 25.4 × 25.4 mm (1.013 × 1 × 1 in)</small> | 4 | 8 |
 | 20 | <img src="../../manual/images/part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649.png" width="72" alt=""> | [MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer](../parts.md#part-20)<br><small>overall 25.4 × 25.4 × 1.3 mm (1 × 1 × 0.05 in)</small> | 4 | 8 |
 | 21 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-a3951cbf.png" width="72" alt=""> | [TANK SUPPORT PLATFORM](../parts.md#part-21)<br><small>overall 1080 × 1080 × 12.7 mm (42.5 × 42.5 × 0.5 in)</small> | 1 | 2 |
-| 22 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c.png" width="72" alt=""> | [SHULZE 2W.353 TANK](../parts.md#part-22)<br><small>overall 991 × 991 × 82.6 mm (39 × 39 × 3.25 in)</small> | 1 | 2 |
-| 23 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png" width="72" alt=""> | [TANK SUPPORT BRACKET](../parts.md#part-23)<br><small>overall 114 × 63.5 × 6.3 mm (4.5 × 2.5 × 0.25 in)</small> | 4 | 8 |
+| 22 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png" width="72" alt=""> | [TANK SUPPORT BRACKET](../parts.md#part-22)<br><small>overall 114 × 63.5 × 6.3 mm (4.5 × 2.5 × 0.25 in)</small> | 4 | 8 |
+| 37 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c.png" width="72" alt=""> | [SHULZE 2W.353 TANK](../parts.md#part-37)<br><small>overall 991 × 991 × 82.6 mm (39 × 39 × 3.25 in)</small> | 1 | 2 |
 
 CAD quantities are instance counts in the model, not stock and not a purchase list.
 
@@ -66,7 +66,7 @@ Occurrences at their CAD poses; context TANK SUPPORT FRAME:1. Parts: 18 T SLOT C
 
 ![Joint 10: support_brackets](../manual/images/joint-support-brackets-9a12767f.png)
 
-Occurrences at their CAD poses; context TANK SUPPORT FRAME:1. Parts: 23 TANK SUPPORT BRACKET ×1.
+Occurrences at their CAD poses; context TANK SUPPORT FRAME:1. Parts: 22 TANK SUPPORT BRACKET ×1.
 - **S10** Tank-support-bracket attachment hardware: required unknown (family, not specified); basis: 8 brackets across 2 support frames
 
 ### Joint 11: vibration_mounts

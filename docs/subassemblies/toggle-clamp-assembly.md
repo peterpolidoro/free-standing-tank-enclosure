@@ -9,17 +9,17 @@
 
 
 <figure class="ov"><div class="ov-wrap"><img src="../../manual/images/group-toggle-clamp-assembly-1-133f2199.png" alt="TOGGLE CLAMP ASSEMBLY: inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied."><svg class="callouts" viewBox="0 0 1600 1200" aria-label="Numbered callouts; each number is a link">
-<a href="../../parts/#part-37"><title>37: TOGGLE CLAMP MOUNT</title><rect x="687" y="96" width="495" height="1008"/><circle cx="713" cy="122" r="26"/><text x="713" y="122">37</text></a>
-<a href="../../parts/#part-36"><title>36: MCMASTER 5004A11 Compact Hold-Down Toggle Clamp</title><rect x="446" y="473" width="764" height="626"/><circle cx="472" cy="499" r="26"/><text x="472" y="499">36</text></a>
-<a href="../../parts/#part-36"><title>36: MCMASTER 5004A11 Compact Hold-Down Toggle Clamp</title><rect x="390" y="106" width="734" height="640"/><circle cx="416" cy="132" r="26"/><text x="416" y="132">36</text></a>
+<a href="../../parts/#part-36"><title>36: TOGGLE CLAMP MOUNT</title><rect x="687" y="96" width="495" height="1008"/><circle cx="713" cy="122" r="26"/><text x="713" y="122">36</text></a>
+<a href="../../parts/#part-35"><title>35: MCMASTER 5004A11 Compact Hold-Down Toggle Clamp</title><rect x="446" y="473" width="764" height="626"/><circle cx="472" cy="499" r="26"/><text x="472" y="499">35</text></a>
+<a href="../../parts/#part-35"><title>35: MCMASTER 5004A11 Compact Hold-Down Toggle Clamp</title><rect x="390" y="106" width="734" height="640"/><circle cx="416" cy="132" r="26"/><text x="416" y="132">35</text></a>
 </svg></div><figcaption>TOGGLE CLAMP ASSEMBLY: inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied. The numbers are links.</figcaption></figure>
 
 ## Parts
 
 | # | Picture | Part | Per subassembly | For all 4 |
 | ---: | --- | --- | ---: | ---: |
-| 36 | <img src="../../manual/images/part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png" width="72" alt=""> | [MCMASTER 5004A11 Compact Hold-Down Toggle Clamp](../parts.md#part-36)<br><small>overall 56.5 × 35.7 × 28.4 mm (2.224 × 1.407 × 1.12 in)</small> | 2 | 8 |
-| 37 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png" width="72" alt=""> | [TOGGLE CLAMP MOUNT](../parts.md#part-37)<br><small>overall 76.2 × 30.5 × 30.5 mm (3 × 1.2 × 1.2 in)</small> | 1 | 4 |
+| 35 | <img src="../../manual/images/part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png" width="72" alt=""> | [MCMASTER 5004A11 Compact Hold-Down Toggle Clamp](../parts.md#part-35)<br><small>overall 56.5 × 35.7 × 28.4 mm (2.224 × 1.407 × 1.12 in)</small> | 2 | 8 |
+| 36 | <img src="../../manual/images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png" width="72" alt=""> | [TOGGLE CLAMP MOUNT](../parts.md#part-36)<br><small>overall 76.2 × 30.5 × 30.5 mm (3 × 1.2 × 1.2 in)</small> | 1 | 4 |
 
 CAD quantities are instance counts in the model, not stock and not a purchase list.
 
@@ -35,7 +35,7 @@ CAD quantities are instance counts in the model, not stock and not a purchase li
 
 ![Joint 4: clamp_to_mount](../manual/images/joint-clamp-to-mount-80584ace.png)
 
-Occurrences at their CAD poses; context TOGGLE CLAMP ASSEMBLY:1. Parts: 36 MCMASTER 5004A11 Compact Hold-Down Toggle Clamp ×1, 37 TOGGLE CLAMP MOUNT ×1.
+Occurrences at their CAD poses; context TOGGLE CLAMP ASSEMBLY:1. Parts: 35 MCMASTER 5004A11 Compact Hold-Down Toggle Clamp ×1, 36 TOGGLE CLAMP MOUNT ×1.
 - **S4** Toggle-clamp-to-mount fastening: required unknown (family, not specified); basis: 8 clamps on 4 mounts; points per clamp unverified
 
 

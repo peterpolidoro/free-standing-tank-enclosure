@@ -3,7 +3,15 @@
 
 !!! warning "Draft documentation"
 
-    Parts inventory and overview only: no assembly sequence has been authored or reviewed for this scene.
+    Review state: draft. This sequence has not been physically validated and the order is a draft to be corrected after the build.
+
+    Build scope phase-1: Enclosure without tanks and backlight (decided by Peter, 2026-10-22; draft). 110 of 155 installed occurrences are in this build, 42 conditional (undecided), 3 deferred; CAD counts are unchanged and the deferred items stay in the model.
+
+    Phase note: Phase 1 assembles the frame, casters, panels with handles, toggle clamps, lower supports, camera frame and top panel. Deferred items stay in the CAD scene and in the CAD counts; this file only scopes the build and its documentation.
+
+    Backlight: no modeled part is identified as the backlight or light box; nothing further is excluded until Peter names the occurrences
+
+    Deferred design: monitor supports and acrylic; bowls and bowl frame; tank frame changes.
 
     Geometry and hierarchy come from the CAD export named in the build record. Quantities are CAD instance counts, not purchase quantities, kits, stock or an approved bill of materials.
 
@@ -15,10 +23,12 @@
 
     CAD ambiguity: 1 pair(s) of occurrences of the same part share one position (SHULZE 2W.353 TANK). All source instances are kept and counted; review the intended configuration before treating the count as stock.
 
+    Approach arrows are unverified render hints; they do not prove an insertion path or tool access.
+
     Stock is unknown until counted and recorded (on_hand_each with counted_by and counted_date). The counted box is for a paper count only.
 
 
-Manual `free-standing-enclosure-991056-inventory` generated 2026-10-23T14:47:47Z by {&#x27;python&#x27;: &#x27;3.12.12&#x27;, &#x27;platform&#x27;: &#x27;Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41&#x27;, &#x27;package&#x27;: &#x27;mechanical-docs&#x27;}.
+Manual `free-standing-enclosure-phase-1-draft` generated 2026-10-23T15:40:18Z by {&#x27;python&#x27;: &#x27;3.12.12&#x27;, &#x27;platform&#x27;: &#x27;Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41&#x27;, &#x27;package&#x27;: &#x27;mechanical-docs&#x27;}.
 
 ## Source
 
@@ -29,10 +39,10 @@ Manual `free-standing-enclosure-991056-inventory` generated 2026-10-23T14:47:47Z
 
 ## Publication
 
-- Published 2026-10-23T15:12:06+00:00 from evidence run `2026-10-23-documentation-manual-fixes-01`.
-- Check report: all passed = True, PDF pages 37.
-- `free-standing-enclosure-991056-inventory.pdf` sha256 `d9aae57414ca3a3c00914e3ae6f8e39f405c684b71c1c10d22c3bbf2d91d0b2d`
-- `free-standing-enclosure-991056-inventory-appendix.pdf` sha256 `7a81a4549d9e958e8decdc3b2c763f537522c36ab4af5d8ca81f86622b8ca0ad`
+- Published 2026-10-23T16:35:12+00:00 from evidence run `2026-10-23-documentation-phase-1-01`.
+- Check report: all passed = True, PDF pages 59.
+- `free-standing-enclosure-phase-1-draft.pdf` sha256 `c52cd208a9ab724117c18259bcaa34e8e76d1dce226dcc3194cecf3186fe9741`
+- `free-standing-enclosure-phase-1-draft-appendix.pdf` sha256 `f730a0191fb396779b08ba65ab10584e9feea2f6384ab690d9a9c30bd008d3d3`
 - [SOURCE.json](manual/SOURCE.json) · [build-receipt.json](manual/build-receipt.json) · [check-report.json](manual/check-report.json) · [single-page manual](manual/index.html)
 
 ## Findings

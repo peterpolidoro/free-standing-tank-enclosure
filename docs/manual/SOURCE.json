@@ -1,14 +1,16 @@
 {
   "schema_version": 1,
-  "published_at": "2026-10-23T15:12:06+00:00",
-  "built_from": "/janelia/sciserv/polidorop/Repositories/vault-cad-exchange/evidence/2026-10-23-documentation-manual-fixes-01/manual",
-  "evidence_run": "2026-10-23-documentation-manual-fixes-01",
+  "published_at": "2026-10-23T16:35:12+00:00",
+  "built_from": "/janelia/sciserv/polidorop/Repositories/vault-cad-exchange/evidence/2026-10-23-documentation-phase-1-01/manual",
+  "evidence_run": "2026-10-23-documentation-phase-1-01",
   "build_receipt": {
-    "generated_at_utc": "2026-10-23T14:47:48Z",
+    "generated_at_utc": "2026-10-23T15:40:19Z",
     "input_hashes": {
       "scene.json": "ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070",
+      "instructions.json": "9de40bb2e8925e5f456645efd9c465bfc3576103fd1ac0d4f3bf45e6d5c6d3f5",
       "inventory.json": "0eed5897bb238c1334e92e19927db8573480f3c7d4778099fa02b09e605298de",
       "supplement.json": "c9950ec3f72db98f8d3563adaec0fb48ba50fce689fbb905dbe050ce0e4081ba",
+      "build-scope.json": "b835cb40d41f9b05eadb57ca58dfdaf7ae0a05deddb1c951bcc009325f2d4911",
       "assets/MCMASTER 5537T293_T-Slotted Framing__[Primary]__1c2935ff.step": "f7ab59b2a7ec3697026dffdb824f6d8ed11c69907dc9e34549a805f3c9b05def",
       "assets/MCMASTER 5537T429_T-Slotted Framing__[Primary]__72ff3dc4.step": "65dcf67cd5db49d88eb51965255f36b54af3f1cd16178d6594ac1eca9b58aa91",
       "assets/SLLB Enclosure 15in 47065T808_T-Slotted Framing__[Primary]__64014b81.step": "08646c8eb96e0c4322be83c70698e51cf078ddb2692a98b1df8d265d283b5124",
@@ -48,9 +50,9 @@
       "assets/TOGGLE CLAMP MOUNT__[Primary]__4eb76845.step": "f8171c9d76b250758a47873afa0d5b80f8e74e4b7e6860925c4666a69cce77b6"
     },
     "render_receipt": {
-      "path": "build/enclosure-snapshot-991056/renders8/render-receipt.json",
-      "bytes": 432161,
-      "sha256": "f6222e48596a0a2ef9015e3286a8903eb0faf2408dd3c55ba4801ab517796fae"
+      "path": "build/enclosure-snapshot-991056/renders11/render-receipt.json",
+      "bytes": 797169,
+      "sha256": "9072d8113b6971734dbc891b8a6a3252cd05ef5b01ed3861052bcfa76d9b7c08"
     },
     "meshes_receipt": {
       "path": "build/enclosure-snapshot-991056/meshes/meshes.json",
@@ -59,14 +61,14 @@
     },
     "pdf": {
       "ran": true,
-      "command": "/gnu/store/2h1f6iz6yhmaiy7xsqikp5rrw7znpkr2-profile/bin/typst compile --root build/enclosure-snapshot-991056/manual7 build/enclosure-snapshot-991056/manual7/manual.typ build/enclosure-snapshot-991056/manual7/free-standing-enclosure-991056-inventory.pdf",
+      "command": "/gnu/store/2h1f6iz6yhmaiy7xsqikp5rrw7znpkr2-profile/bin/typst compile --root build/enclosure-snapshot-991056/manual10 build/enclosure-snapshot-991056/manual10/manual.typ build/enclosure-snapshot-991056/manual10/free-standing-enclosure-phase-1-draft.pdf",
       "returncode": 0,
       "stderr": "",
       "typst_version": "typst 0.15.0 (unknown commit)",
       "pdf": {
-        "path": "free-standing-enclosure-991056-inventory.pdf",
-        "bytes": 23470340,
-        "sha256": "d9aae57414ca3a3c00914e3ae6f8e39f405c684b71c1c10d22c3bbf2d91d0b2d"
+        "path": "free-standing-enclosure-phase-1-draft.pdf",
+        "bytes": 34951370,
+        "sha256": "c52cd208a9ab724117c18259bcaa34e8e76d1dce226dcc3194cecf3186fe9741"
       }
     },
     "groups": [
@@ -99,13 +101,13 @@
   },
   "check_report": {
     "all_passed": true,
-    "pdf_pages": 37,
-    "generated_at_utc": "2026-10-23T14:47:49Z"
+    "pdf_pages": 59,
+    "generated_at_utc": "2026-10-23T15:40:20Z"
   },
   "pdf_sha256": {
-    "free-standing-enclosure-991056-inventory.pdf": "d9aae57414ca3a3c00914e3ae6f8e39f405c684b71c1c10d22c3bbf2d91d0b2d",
-    "free-standing-enclosure-991056-inventory-appendix.pdf": "7a81a4549d9e958e8decdc3b2c763f537522c36ab4af5d8ca81f86622b8ca0ad"
+    "free-standing-enclosure-phase-1-draft.pdf": "c52cd208a9ab724117c18259bcaa34e8e76d1dce226dcc3194cecf3186fe9741",
+    "free-standing-enclosure-phase-1-draft-appendix.pdf": "f730a0191fb396779b08ba65ab10584e9feea2f6384ab690d9a9c30bd008d3d3"
   },
-  "image_count": 67,
+  "image_count": 86,
   "qualification": "draft documentation generated from the committed sources; not a physically validated procedure"
 }

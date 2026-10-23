@@ -1,0 +1,439 @@
+{
+  "schema_version": 1,
+  "frame": "glTF: metres, +Y up; scene (+Z up, mm) via gltf.to_gltf_frame",
+  "scene_id": "free-standing-enclosure-991056",
+  "manual_id": "free-standing-enclosure-phase-1-draft",
+  "states": {
+    "assembled": {
+      "glb": "viewer/assembled.glb",
+      "triangles": 1023702,
+      "offsets_mm": {}
+    },
+    "exploded": {
+      "glb": "viewer/exploded.glb",
+      "triangles": 1023702,
+      "offsets_mm": {
+        "CAMERA FRAME:1": [
+          -0.122,
+          -238.76,
+          819.418
+        ],
+        "TANK SUPPORT FRAME:1": [
+          0.08,
+          0.16,
+          -308.33
+        ],
+        "FREE STANDING FRAME:1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "PANEL ASSEMBLY:1": [
+          0.0,
+          -499.11,
+          65.67
+        ],
+        "PANEL ASSEMBLY:2": [
+          -499.11,
+          -0.0,
+          65.67
+        ],
+        "PANEL ASSEMBLY:3": [
+          -0.0,
+          499.11,
+          65.67
+        ],
+        "PANEL ASSEMBLY:4": [
+          499.11,
+          0.0,
+          65.67
+        ],
+        "TANK SUPPORT FRAME:2": [
+          0.08,
+          -0.0,
+          -564.284
+        ],
+        "TOGGLE CLAMP ASSEMBLY:1": [
+          -473.276,
+          -473.276,
+          310.007
+        ],
+        "TOGGLE CLAMP ASSEMBLY:2": [
+          -473.276,
+          473.276,
+          310.007
+        ],
+        "TOGGLE CLAMP ASSEMBLY:3": [
+          473.276,
+          473.276,
+          310.007
+        ],
+        "TOGGLE CLAMP ASSEMBLY:4": [
+          473.276,
+          -473.276,
+          310.007
+        ],
+        "root-parts": [
+          -0.0,
+          0.0,
+          1356.98
+        ]
+      }
+    }
+  },
+  "triangle_budget": 200000,
+  "subassemblies": [
+    {
+      "number": 1,
+      "definition": "CASTER ASSEMBLY",
+      "instance_ids": [
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:2",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:3",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:4"
+      ],
+      "shown_instance": "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+      "instances_identical": true,
+      "anchors": {
+        "assembled": {
+          "position_m": [
+            0.04584,
+            -0.04363,
+            -1.14534
+          ],
+          "normal": [
+            0.3453,
+            -0.6993,
+            0.6259
+          ]
+        },
+        "exploded": {
+          "position_m": [
+            0.04584,
+            -0.04363,
+            -1.14534
+          ],
+          "normal": [
+            0.3453,
+            -0.6993,
+            0.6259
+          ]
+        }
+      },
+      "overview_box_px": {
+        "assembled": [
+          517.0,
+          946.1,
+          565.9,
+          991.5
+        ],
+        "exploded": [
+          766.3,
+          909.0,
+          800.2,
+          941.4
+        ]
+      }
+    },
+    {
+      "number": 2,
+      "definition": "PANEL ASSEMBLY",
+      "instance_ids": [
+        "PANEL ASSEMBLY:1",
+        "PANEL ASSEMBLY:2",
+        "PANEL ASSEMBLY:3",
+        "PANEL ASSEMBLY:4"
+      ],
+      "shown_instance": "PANEL ASSEMBLY:1",
+      "instances_identical": true,
+      "anchors": {
+        "assembled": {
+          "position_m": [
+            0.5969,
+            1.2954,
+            0.00317
+          ],
+          "normal": [
+            -0.0,
+            -0.0,
+            1.0
+          ]
+        },
+        "exploded": {
+          "position_m": [
+            0.5969,
+            1.36107,
+            0.50229
+          ],
+          "normal": [
+            -0.0,
+            -0.0,
+            1.0
+          ]
+        }
+      },
+      "overview_box_px": {
+        "assembled": [
+          775.4,
+          219.9,
+          1075.5,
+          1062.6
+        ],
+        "exploded": [
+          526.7,
+          503.2,
+          737.2,
+          1102.4
+        ]
+      }
+    },
+    {
+      "number": 3,
+      "definition": "TOGGLE CLAMP ASSEMBLY",
+      "instance_ids": [
+        "TOGGLE CLAMP ASSEMBLY:1",
+        "TOGGLE CLAMP ASSEMBLY:2",
+        "TOGGLE CLAMP ASSEMBLY:3",
+        "TOGGLE CLAMP ASSEMBLY:4"
+      ],
+      "shown_instance": "TOGGLE CLAMP ASSEMBLY:1",
+      "instances_identical": true,
+      "anchors": {
+        "assembled": {
+          "position_m": [
+            0.0,
+            1.60082,
+            -0.0053
+          ],
+          "normal": [
+            1.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "exploded": {
+          "position_m": [
+            -0.47328,
+            1.91083,
+            0.46797
+          ],
+          "normal": [
+            1.0,
+            -0.0,
+            0.0
+          ]
+        }
+      },
+      "overview_box_px": {
+        "assembled": [
+          746.7,
+          585.0,
+          791.3,
+          614.2
+        ],
+        "exploded": [
+          431.1,
+          598.2,
+          448.2,
+          619.1
+        ]
+      }
+    },
+    {
+      "number": 4,
+      "definition": "TANK SUPPORT FRAME",
+      "instance_ids": [
+        "TANK SUPPORT FRAME:1",
+        "TANK SUPPORT FRAME:2"
+      ],
+      "shown_instance": "TANK SUPPORT FRAME:1",
+      "instances_identical": true,
+      "anchors": {
+        "assembled": {
+          "position_m": [
+            0.597,
+            0.8279,
+            -0.5971
+          ],
+          "normal": [
+            0.0,
+            1.0,
+            -0.0
+          ]
+        },
+        "exploded": {
+          "position_m": [
+            0.59708,
+            0.51957,
+            -0.59726
+          ],
+          "normal": [
+            0.0,
+            1.0,
+            -0.0
+          ]
+        }
+      },
+      "overview_box_px": {
+        "assembled": [
+          532.2,
+          594.5,
+          1067.7,
+          852.3
+        ],
+        "exploded": [
+          608.9,
+          797.7,
+          991.2,
+          992.6
+        ]
+      }
+    },
+    {
+      "number": 5,
+      "definition": "CAMERA FRAME",
+      "instance_ids": [
+        "CAMERA FRAME:1"
+      ],
+      "shown_instance": "CAMERA FRAME:1",
+      "instances_identical": true,
+      "anchors": {
+        "assembled": {
+          "position_m": [
+            0.59674,
+            2.36187,
+            -0.5463
+          ],
+          "normal": [
+            0.0,
+            -0.4245,
+            0.9054
+          ]
+        },
+        "exploded": {
+          "position_m": [
+            0.59662,
+            3.18128,
+            -0.30754
+          ],
+          "normal": [
+            0.0,
+            -0.4245,
+            0.9054
+          ]
+        }
+      },
+      "overview_box_px": {
+        "assembled": [
+          654.6,
+          190.1,
+          1074.0,
+          472.0
+        ],
+        "exploded": [
+          567.5,
+          296.7,
+          865.4,
+          506.1
+        ]
+      }
+    },
+    {
+      "number": 6,
+      "definition": "FREE STANDING FRAME",
+      "instance_ids": [
+        "FREE STANDING FRAME:1"
+      ],
+      "shown_instance": "FREE STANDING FRAME:1",
+      "instances_identical": true,
+      "anchors": {
+        "assembled": {
+          "position_m": [
+            1.15604,
+            0.76241,
+            -0.5969
+          ],
+          "normal": [
+            -0.8849,
+            0.4657,
+            -0.0
+          ]
+        },
+        "exploded": {
+          "position_m": [
+            1.15604,
+            0.76241,
+            -0.5969
+          ],
+          "normal": [
+            -0.8849,
+            0.4657,
+            -0.0
+          ]
+        }
+      },
+      "overview_box_px": {
+        "assembled": [
+          517.0,
+          85.0,
+          1083.0,
+          1116.0
+        ],
+        "exploded": [
+          598.1,
+          373.6,
+          1001.9,
+          1112.1
+        ]
+      }
+    }
+  ],
+  "root_parts": {
+    "number": 7,
+    "definition": "parts directly under root",
+    "occurrence_ids": [
+      "SHULZE 2W.353 TANK:1",
+      "ENCLOSURE TOP PANEL:1"
+    ],
+    "anchors": {
+      "assembled": {
+        "position_m": [
+          0.5969,
+          0.8279,
+          -0.5969
+        ],
+        "normal": [
+          -0.0,
+          1.0,
+          -0.0
+        ]
+      },
+      "exploded": {
+        "position_m": [
+          0.5969,
+          2.18488,
+          -0.5969
+        ],
+        "normal": [
+          -0.0,
+          1.0,
+          -0.0
+        ]
+      }
+    },
+    "overview_box_px": {
+      "assembled": [
+        518.6,
+        84.0,
+        1081.4,
+        817.7
+      ],
+      "exploded": [
+        598.9,
+        84.0,
+        1001.1,
+        612.9
+      ]
+    }
+  }
+}

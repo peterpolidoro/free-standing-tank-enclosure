@@ -10,7 +10,7 @@
 
 ![Joint 1: caster_to_plate](manual/images/joint-caster-to-plate-4da81a1b.png)
 
-inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: FREE STANDING FRAME:1/CASTER ASSEMBLY:1. Parts: 27 HOLKIE LEVELING CASTER ×1, 28 CASTER MOUNTING PLATE ×1.
+inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: FREE STANDING FRAME:1/CASTER ASSEMBLY:1. Parts: 26 HOLKIE LEVELING CASTER ×1, 27 CASTER MOUNTING PLATE ×1.
 
 **Hardware to review at this joint (not an approved BOM)**
 
@@ -20,7 +20,7 @@ inspection view, not a step: the joint&#x27;s occurrences at their CAD poses wit
 
 ![Joint 2: caster_plate_to_frame](manual/images/joint-caster-plate-to-frame-b5403f0f.png)
 
-inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: FREE STANDING FRAME:1. Parts: 28 CASTER MOUNTING PLATE ×1.
+inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: FREE STANDING FRAME:1. Parts: 27 CASTER MOUNTING PLATE ×1.
 
 **Hardware to review at this joint (not an approved BOM)**
 
@@ -30,7 +30,7 @@ inspection view, not a step: the joint&#x27;s occurrences at their CAD poses wit
 
 ![Joint 3: handle_to_panel](manual/images/joint-handle-to-panel-7eb6b2a9.png)
 
-inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: PANEL ASSEMBLY:1. Parts: 34 MCMASTER 1950A67 Unthreaded-Hole Pull Handle ×1.
+inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: PANEL ASSEMBLY:1. Parts: 33 MCMASTER 1950A67 Unthreaded-Hole Pull Handle ×1.
 
 **Hardware to review at this joint (not an approved BOM)**
 
@@ -40,7 +40,7 @@ inspection view, not a step: the joint&#x27;s occurrences at their CAD poses wit
 
 ![Joint 4: clamp_to_mount](manual/images/joint-clamp-to-mount-80584ace.png)
 
-inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: TOGGLE CLAMP ASSEMBLY:1. Parts: 36 MCMASTER 5004A11 Compact Hold-Down Toggle Clamp ×1, 37 TOGGLE CLAMP MOUNT ×1.
+inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: TOGGLE CLAMP ASSEMBLY:1. Parts: 35 MCMASTER 5004A11 Compact Hold-Down Toggle Clamp ×1, 36 TOGGLE CLAMP MOUNT ×1.
 
 **Hardware to review at this joint (not an approved BOM)**
 
@@ -50,7 +50,7 @@ inspection view, not a step: the joint&#x27;s occurrences at their CAD poses wit
 
 ![Joint 5: clamp_mount_to_frame](manual/images/joint-clamp-mount-to-frame-d49eee17.png)
 
-inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: FREE STANDING FRAME:1. Parts: 37 TOGGLE CLAMP MOUNT ×1.
+inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: FREE STANDING FRAME:1. Parts: 36 TOGGLE CLAMP MOUNT ×1.
 
 **Hardware to review at this joint (not an approved BOM)**
 
@@ -60,7 +60,7 @@ inspection view, not a step: the joint&#x27;s occurrences at their CAD poses wit
 
 ![Joint 6: lower_support_to_frame](manual/images/joint-lower-support-to-frame-f99a8bd8.png)
 
-inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: FREE STANDING FRAME:1. Parts: 31 PANEL LOWER SUPPORT LEFT ×1.
+inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: FREE STANDING FRAME:1. Parts: 30 PANEL LOWER SUPPORT LEFT ×1.
 
 **Hardware to review at this joint (not an approved BOM)**
 
@@ -70,7 +70,7 @@ inspection view, not a step: the joint&#x27;s occurrences at their CAD poses wit
 
 ![Joint 7: main_frame_joints](manual/images/joint-main-frame-joints-33ab23f4.png)
 
-inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: FREE STANDING FRAME:1. Parts: 25 MCMASTER 47065T245 ×1.
+inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: FREE STANDING FRAME:1. Parts: 24 MCMASTER 47065T245 ×1.
 
 **Hardware to review at this joint (not an approved BOM)**
 
@@ -100,7 +100,7 @@ inspection view, not a step: the joint&#x27;s occurrences at their CAD poses wit
 
 ![Joint 10: support_brackets](manual/images/joint-support-brackets-9a12767f.png)
 
-inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: TANK SUPPORT FRAME:1. Parts: 23 TANK SUPPORT BRACKET ×1.
+inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: TANK SUPPORT FRAME:1. Parts: 22 TANK SUPPORT BRACKET ×1.
 
 **Hardware to review at this joint (not an approved BOM)**
 
@@ -150,7 +150,7 @@ inspection view, not a step: the joint&#x27;s occurrences at their CAD poses wit
 
 ![Joint 15: top_panel](manual/images/joint-top-panel-c690cb86.png)
 
-inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: root. Parts: 35 ENCLOSURE TOP PANEL ×1.
+inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: root. Parts: 34 ENCLOSURE TOP PANEL ×1.
 
 **Hardware to review at this joint (not an approved BOM)**
 
@@ -160,7 +160,7 @@ inspection view, not a step: the joint&#x27;s occurrences at their CAD poses wit
 
 ![Joint 16: panel_retention](manual/images/joint-panel-retention-b0e31116.png)
 
-inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: FREE STANDING FRAME:1. Parts: 31 PANEL LOWER SUPPORT LEFT ×1, 32 PANEL LOWER SUPPORT RIGHT ×1.
+inspection view, not a step: the joint&#x27;s occurrences at their CAD poses with the rest of the context subdued; no fastener, sequence or tool access implied. Context: FREE STANDING FRAME:1. Parts: 30 PANEL LOWER SUPPORT LEFT ×1, 31 PANEL LOWER SUPPORT RIGHT ×1.
 
 **Hardware to review at this joint (not an approved BOM)**
 

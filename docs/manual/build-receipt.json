@@ -1,13 +1,15 @@
 {
   "kind": "mechanical-docs-build-receipt",
-  "generated_at_utc": "2026-10-23T14:47:48Z",
+  "generated_at_utc": "2026-10-23T15:40:19Z",
   "python": "3.12.12",
   "platform": "Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41",
   "project_dir": "/home/peter/Repositories/orb-weaver/mechanical-docs/build/enclosure-snapshot-991056/project",
   "input_hashes": {
     "scene.json": "ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070",
+    "instructions.json": "9de40bb2e8925e5f456645efd9c465bfc3576103fd1ac0d4f3bf45e6d5c6d3f5",
     "inventory.json": "0eed5897bb238c1334e92e19927db8573480f3c7d4778099fa02b09e605298de",
     "supplement.json": "c9950ec3f72db98f8d3563adaec0fb48ba50fce689fbb905dbe050ce0e4081ba",
+    "build-scope.json": "b835cb40d41f9b05eadb57ca58dfdaf7ae0a05deddb1c951bcc009325f2d4911",
     "assets/MCMASTER 5537T293_T-Slotted Framing__[Primary]__1c2935ff.step": "f7ab59b2a7ec3697026dffdb824f6d8ed11c69907dc9e34549a805f3c9b05def",
     "assets/MCMASTER 5537T429_T-Slotted Framing__[Primary]__72ff3dc4.step": "65dcf67cd5db49d88eb51965255f36b54af3f1cd16178d6594ac1eca9b58aa91",
     "assets/SLLB Enclosure 15in 47065T808_T-Slotted Framing__[Primary]__64014b81.step": "08646c8eb96e0c4322be83c70698e51cf078ddb2692a98b1df8d265d283b5124",
@@ -47,9 +49,9 @@
     "assets/TOGGLE CLAMP MOUNT__[Primary]__4eb76845.step": "f8171c9d76b250758a47873afa0d5b80f8e74e4b7e6860925c4666a69cce77b6"
   },
   "render_receipt": {
-    "path": "build/enclosure-snapshot-991056/renders8/render-receipt.json",
-    "bytes": 432161,
-    "sha256": "f6222e48596a0a2ef9015e3286a8903eb0faf2408dd3c55ba4801ab517796fae"
+    "path": "build/enclosure-snapshot-991056/renders11/render-receipt.json",
+    "bytes": 797169,
+    "sha256": "9072d8113b6971734dbc891b8a6a3252cd05ef5b01ed3861052bcfa76d9b7c08"
   },
   "meshes_receipt": {
     "path": "build/enclosure-snapshot-991056/meshes/meshes.json",
@@ -83,24 +85,150 @@
     "top_panel",
     "panel_retention"
   ],
+  "exploded_view": {
+    "offsets_mm": {
+      "CAMERA FRAME:1": [
+        -0.122,
+        -238.76,
+        819.418
+      ],
+      "TANK SUPPORT FRAME:1": [
+        0.08,
+        0.16,
+        -308.33
+      ],
+      "FREE STANDING FRAME:1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "PANEL ASSEMBLY:1": [
+        0.0,
+        -499.11,
+        65.67
+      ],
+      "PANEL ASSEMBLY:2": [
+        -499.11,
+        -0.0,
+        65.67
+      ],
+      "PANEL ASSEMBLY:3": [
+        -0.0,
+        499.11,
+        65.67
+      ],
+      "PANEL ASSEMBLY:4": [
+        499.11,
+        0.0,
+        65.67
+      ],
+      "TANK SUPPORT FRAME:2": [
+        0.08,
+        -0.0,
+        -564.284
+      ],
+      "TOGGLE CLAMP ASSEMBLY:1": [
+        -473.276,
+        -473.276,
+        310.007
+      ],
+      "TOGGLE CLAMP ASSEMBLY:2": [
+        -473.276,
+        473.276,
+        310.007
+      ],
+      "TOGGLE CLAMP ASSEMBLY:3": [
+        473.276,
+        473.276,
+        310.007
+      ],
+      "TOGGLE CLAMP ASSEMBLY:4": [
+        473.276,
+        -473.276,
+        310.007
+      ],
+      "root-parts": [
+        -0.0,
+        0.0,
+        1356.98
+      ]
+    },
+    "callouts": [
+      [
+        1,
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:1"
+      ],
+      [
+        2,
+        "PANEL ASSEMBLY:1"
+      ],
+      [
+        3,
+        "TOGGLE CLAMP ASSEMBLY:1"
+      ],
+      [
+        4,
+        "TANK SUPPORT FRAME:1"
+      ],
+      [
+        5,
+        "CAMERA FRAME:1"
+      ],
+      [
+        6,
+        "FREE STANDING FRAME:1"
+      ],
+      [
+        7,
+        "root-parts"
+      ]
+    ]
+  },
+  "viewer": {
+    "viewer/assembled.glb": {
+      "path": "viewer/assembled.glb",
+      "bytes": 7183668,
+      "sha256": "6ad5a275276626af4da2c50144b57d103b9cae461632583897a23b26d28c40b8"
+    },
+    "viewer/exploded.glb": {
+      "path": "viewer/exploded.glb",
+      "bytes": 7185476,
+      "sha256": "11c71ebbeaf7f19f957340045ef733c8a0db38bb6edf2ba9927dd2addbf6e59c"
+    },
+    "viewer/hotspots.json": {
+      "path": "viewer/hotspots.json",
+      "bytes": 8525,
+      "sha256": "e4eb25ebd108b1817068e5125b3b4471474e94bcf85874dfda6345c2060df956"
+    },
+    "viewer/viewer-receipt.json": {
+      "path": "viewer/viewer-receipt.json",
+      "bytes": 25683,
+      "sha256": "24e09945f24be266f2f8d54093c16a0ff469076208967a265f2990b3b5be5ceb"
+    }
+  },
   "supplement_rows": 20,
   "outputs": {
     "manual.json": {
       "path": "manual.json",
-      "bytes": 376791,
-      "sha256": "d8d33369e91eb576202e4002cf28858a7c0815e5661b52bdb4b5a3b47fb58f5c"
+      "bytes": 672205,
+      "sha256": "c9bf1df0929c94e8e1160ec1b18de61d795b590517674e038daca49da86ec302"
     },
     "index.html": {
       "path": "index.html",
-      "bytes": 167881,
-      "sha256": "c95d24510332194462c58d0f79850a09bc4c87b07ec8e0417a57279146cf641b"
+      "bytes": 234616,
+      "sha256": "5362766e7e31e0cad78b7048117d5960f7d616e917955093239c7a3ccbb917ec"
     },
     "manual.typ": {
       "path": "manual.typ",
-      "bytes": 97150,
-      "sha256": "65a9e207aa7029b06db023b04226072624fbc4a9163673d342ec898e845efdfb"
+      "bytes": 136046,
+      "sha256": "084a26bf32aa20f6ba5b0228dd9ababb90b8f8579b13443f020d8960e1241f69"
     },
     "images": {
+      "exploded.png": {
+        "path": "images/exploded.png",
+        "bytes": 1185121,
+        "sha256": "be0068dea82dc02a107c7b49cb7417cfa8458d57f83d3987fe83df4bddf2a706"
+      },
       "group-camera-frame-1-05712af3.png": {
         "path": "images/group-camera-frame-1-05712af3.png",
         "bytes": 1540143,
@@ -213,8 +341,8 @@
       },
       "overview.png": {
         "path": "images/overview.png",
-        "bytes": 1015288,
-        "sha256": "36f004257acd44840dc84ee7b800bbdaf91058af62423642231c6a796af40203"
+        "bytes": 805388,
+        "sha256": "60bd0407fc85e8c8e914f52a569261c57ed66c814a1c747dff8a0fafc079ca7f"
       },
       "part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0.png": {
         "path": "images/part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0.png",
@@ -435,19 +563,109 @@
         "path": "images/part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b.png",
         "bytes": 200089,
         "sha256": "d295b6c9c67e7a7ee8390ab6bdedb138392cbefabf7b32ccb18a622213768f7f"
+      },
+      "step-01-bottom-frame.png": {
+        "path": "images/step-01-bottom-frame.png",
+        "bytes": 454268,
+        "sha256": "fc3da036e5094d103aff15da5c4434c9cf65cc5546f1320ab1a551a9b2448db9"
+      },
+      "step-02-casters.png": {
+        "path": "images/step-02-casters.png",
+        "bytes": 504519,
+        "sha256": "7f32505ecf9a0d538008c85109c4e8e378a79a5216a32109a1d2f91a1f33e46d"
+      },
+      "step-03-columns.png": {
+        "path": "images/step-03-columns.png",
+        "bytes": 752329,
+        "sha256": "547a46b00fc17821818e8d7d7bdfba25c58b814178503828b36d223a3c428888"
+      },
+      "step-04-middle-rails.png": {
+        "path": "images/step-04-middle-rails.png",
+        "bytes": 882344,
+        "sha256": "affd3e7459f630644007f5fafacea6f29c03a0ce5564c57d59e34c97b7bfbc09"
+      },
+      "step-05-top-frame.png": {
+        "path": "images/step-05-top-frame.png",
+        "bytes": 957126,
+        "sha256": "6e9a8951e135ad4110155d340c69bc974c8985356ec105228172fc085c371502"
+      },
+      "step-06-lower-supports.png": {
+        "path": "images/step-06-lower-supports.png",
+        "bytes": 1000630,
+        "sha256": "2ffc697a192ea189284df06401f781ea48cadbe461fc53ea2c5b346f7b3057e1"
+      },
+      "step-07-toggle-clamps.png": {
+        "path": "images/step-07-toggle-clamps.png",
+        "bytes": 981856,
+        "sha256": "4fdf2ccd1f5cf5cf7ec721806be7e3f020d3cd43d635d879d84b0dcd721b8c91"
+      },
+      "step-08-camera-frame-structure.png": {
+        "path": "images/step-08-camera-frame-structure.png",
+        "bytes": 1000845,
+        "sha256": "c6c111eb7c40fbe2bb976a6bb7c17e1dc5b70bb8f5c55239c84f7824fe0b4158"
+      },
+      "step-09-camera-frame-mechanism.png": {
+        "path": "images/step-09-camera-frame-mechanism.png",
+        "bytes": 1034411,
+        "sha256": "220d1b77d62621ab16349e65948f9e28b963c2e668923fed0515fb688e0a1473"
+      },
+      "step-10-camera-plates.png": {
+        "path": "images/step-10-camera-plates.png",
+        "bytes": 1034773,
+        "sha256": "e36e7990acf12e0dbe4bb3e1aca8e6c4c855f8def44817937273f54098101dfa"
+      },
+      "step-11-panel-1.png": {
+        "path": "images/step-11-panel-1.png",
+        "bytes": 922775,
+        "sha256": "ec5629f709a408750ec61e61727c3be5bc15c9be7055f7f6fa40588ab4d76ddd"
+      },
+      "step-12-panel-2.png": {
+        "path": "images/step-12-panel-2.png",
+        "bytes": 1069645,
+        "sha256": "0396ce5ed2ca0024ea99f3a676e8f151434fe6171168f7268fee730b115c95bf"
+      },
+      "step-13-panel-3.png": {
+        "path": "images/step-13-panel-3.png",
+        "bytes": 1143428,
+        "sha256": "c919d2f8b5baa4e619f6a58014586638153605ef1061472099acaae4f6d8e362"
+      },
+      "step-14-panel-4.png": {
+        "path": "images/step-14-panel-4.png",
+        "bytes": 1296161,
+        "sha256": "d8f9958dfd7a72376fcd36324609603a37fd16c18184691737eaa76e45f6b3d7"
+      },
+      "step-15-top-panel.png": {
+        "path": "images/step-15-top-panel.png",
+        "bytes": 1304434,
+        "sha256": "054f8d2d374fe037722d668d8cc0ebf4b7f4b9d1924dd033351bfdf35edbc3e0"
+      },
+      "step-16-conditional-tank-support-frame-1.png": {
+        "path": "images/step-16-conditional-tank-support-frame-1.png",
+        "bytes": 1391483,
+        "sha256": "0051c0d40387b0f010753d968e6078060b66883709e76746d5b3e98889f8dbba"
+      },
+      "step-17-conditional-tank-support-frame-2.png": {
+        "path": "images/step-17-conditional-tank-support-frame-2.png",
+        "bytes": 1392789,
+        "sha256": "9214c60968289d3a7ed025ac9e6451b3b3fb07c6115860226217c993dd9d58c3"
+      },
+      "step-18-deferred-tanks.png": {
+        "path": "images/step-18-deferred-tanks.png",
+        "bytes": 1390815,
+        "sha256": "18658589f90d1ea4649ae5d780ea474774de178bc4712e11512ec34d878c5c20"
       }
     }
   },
   "pdf": {
     "ran": true,
-    "command": "/gnu/store/2h1f6iz6yhmaiy7xsqikp5rrw7znpkr2-profile/bin/typst compile --root build/enclosure-snapshot-991056/manual7 build/enclosure-snapshot-991056/manual7/manual.typ build/enclosure-snapshot-991056/manual7/free-standing-enclosure-991056-inventory.pdf",
+    "command": "/gnu/store/2h1f6iz6yhmaiy7xsqikp5rrw7znpkr2-profile/bin/typst compile --root build/enclosure-snapshot-991056/manual10 build/enclosure-snapshot-991056/manual10/manual.typ build/enclosure-snapshot-991056/manual10/free-standing-enclosure-phase-1-draft.pdf",
     "returncode": 0,
     "stderr": "",
     "typst_version": "typst 0.15.0 (unknown commit)",
     "pdf": {
-      "path": "free-standing-enclosure-991056-inventory.pdf",
-      "bytes": 23470340,
-      "sha256": "d9aae57414ca3a3c00914e3ae6f8e39f405c684b71c1c10d22c3bbf2d91d0b2d"
+      "path": "free-standing-enclosure-phase-1-draft.pdf",
+      "bytes": 34951370,
+      "sha256": "c52cd208a9ab724117c18259bcaa34e8e76d1dce226dcc3194cecf3186fe9741"
     }
   },
   "review_state": "draft",
