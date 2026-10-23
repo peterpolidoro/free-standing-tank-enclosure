@@ -1,7 +1,7 @@
 {
   "kind": "mechanical-docs-check-report",
-  "generated_at_utc": "2026-10-22T18:37:43Z",
-  "out_dir": "build/enclosure-snapshot-991056/manual6",
+  "generated_at_utc": "2026-10-23T14:47:49Z",
+  "out_dir": "build/enclosure-snapshot-991056/manual7",
   "checks": [
     {
       "name": "manual.json: subassembly part quantities within CAD quantities",
@@ -1003,6 +1003,76 @@
       }
     },
     {
+      "name": "HTML subassembly instance counts match manual.json",
+      "status": "passed",
+      "detail": {
+        "html": [
+          [
+            "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+            4,
+            true
+          ],
+          [
+            "PANEL ASSEMBLY:1",
+            4,
+            true
+          ],
+          [
+            "TOGGLE CLAMP ASSEMBLY:1",
+            4,
+            true
+          ],
+          [
+            "TANK SUPPORT FRAME:1",
+            2,
+            true
+          ],
+          [
+            "CAMERA FRAME:1",
+            1,
+            false
+          ],
+          [
+            "FREE STANDING FRAME:1",
+            1,
+            false
+          ]
+        ],
+        "ref": [
+          [
+            "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+            4,
+            true
+          ],
+          [
+            "PANEL ASSEMBLY:1",
+            4,
+            true
+          ],
+          [
+            "TOGGLE CLAMP ASSEMBLY:1",
+            4,
+            true
+          ],
+          [
+            "TANK SUPPORT FRAME:1",
+            2,
+            true
+          ],
+          [
+            "CAMERA FRAME:1",
+            1,
+            false
+          ],
+          [
+            "FREE STANDING FRAME:1",
+            1,
+            false
+          ]
+        ]
+      }
+    },
+    {
       "name": "HTML supplementary rows match manual.json",
       "status": "passed",
       "detail": {
@@ -1669,6 +1739,28 @@
       }
     },
     {
+      "name": "PDF subassembly instance counts match manual.json",
+      "status": "passed",
+      "detail": {
+        "pdf": [
+          4,
+          4,
+          4,
+          2,
+          1,
+          1
+        ],
+        "ref": [
+          4,
+          4,
+          4,
+          2,
+          1,
+          1
+        ]
+      }
+    },
+    {
       "name": "PDF joint headings are 1..K in order",
       "status": "passed",
       "detail": {
@@ -1722,7 +1814,7 @@
     {
       "name": "PDF has at least one page per step, subassembly and joint plus front matter",
       "status": "passed",
-      "detail": "36 pages for 0 steps, 6 subassemblies and 16 joints"
+      "detail": "37 pages for 0 steps, 6 subassemblies and 16 joints"
     },
     {
       "name": "PDF embeds images",
@@ -1768,7 +1860,8 @@
         "checks/page-33.png",
         "checks/page-34.png",
         "checks/page-35.png",
-        "checks/page-36.png"
+        "checks/page-36.png",
+        "checks/page-37.png"
       ]
     },
     {
@@ -1777,7 +1870,7 @@
       "detail": "no steps: inventory-only document"
     }
   ],
-  "pdf_pages": 36,
+  "pdf_pages": 37,
   "not_checked": [
     "legibility of the images and pages (inspect checks/ output)",
     "insertion path, tool access, physical assembly"

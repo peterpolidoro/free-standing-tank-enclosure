@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "published_at": "2026-10-22T18:59:32+00:00",
-  "built_from": "/janelia/sciserv/polidorop/Repositories/vault-cad-exchange/evidence/2026-10-22-documentation-enclosure-supplement-03/manual",
-  "evidence_run": "2026-10-22-documentation-enclosure-supplement-03",
+  "published_at": "2026-10-23T15:12:06+00:00",
+  "built_from": "/janelia/sciserv/polidorop/Repositories/vault-cad-exchange/evidence/2026-10-23-documentation-manual-fixes-01/manual",
+  "evidence_run": "2026-10-23-documentation-manual-fixes-01",
   "build_receipt": {
-    "generated_at_utc": "2026-10-22T18:37:43Z",
+    "generated_at_utc": "2026-10-23T14:47:48Z",
     "input_hashes": {
       "scene.json": "ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070",
       "inventory.json": "0eed5897bb238c1334e92e19927db8573480f3c7d4778099fa02b09e605298de",
@@ -59,14 +59,14 @@
     },
     "pdf": {
       "ran": true,
-      "command": "/gnu/store/2h1f6iz6yhmaiy7xsqikp5rrw7znpkr2-profile/bin/typst compile --root build/enclosure-snapshot-991056/manual6 build/enclosure-snapshot-991056/manual6/manual.typ build/enclosure-snapshot-991056/manual6/free-standing-enclosure-991056-inventory.pdf",
+      "command": "/gnu/store/2h1f6iz6yhmaiy7xsqikp5rrw7znpkr2-profile/bin/typst compile --root build/enclosure-snapshot-991056/manual7 build/enclosure-snapshot-991056/manual7/manual.typ build/enclosure-snapshot-991056/manual7/free-standing-enclosure-991056-inventory.pdf",
       "returncode": 0,
       "stderr": "",
       "typst_version": "typst 0.15.0 (unknown commit)",
       "pdf": {
         "path": "free-standing-enclosure-991056-inventory.pdf",
-        "bytes": 23460790,
-        "sha256": "1c033c86e388aa579c087d5db4e11bba0082258869ea3d556ef93c78061bc3e6"
+        "bytes": 23470340,
+        "sha256": "d9aae57414ca3a3c00914e3ae6f8e39f405c684b71c1c10d22c3bbf2d91d0b2d"
       }
     },
     "groups": [
@@ -99,12 +99,12 @@
   },
   "check_report": {
     "all_passed": true,
-    "pdf_pages": 36,
-    "generated_at_utc": "2026-10-22T18:37:43Z"
+    "pdf_pages": 37,
+    "generated_at_utc": "2026-10-23T14:47:49Z"
   },
   "pdf_sha256": {
-    "free-standing-enclosure-991056-inventory.pdf": "1c033c86e388aa579c087d5db4e11bba0082258869ea3d556ef93c78061bc3e6",
-    "free-standing-enclosure-991056-inventory-appendix.pdf": "25a82f8a4f349c847d345976ff3beeadea5a6a8a57b00a07682afd852fbdb12a"
+    "free-standing-enclosure-991056-inventory.pdf": "d9aae57414ca3a3c00914e3ae6f8e39f405c684b71c1c10d22c3bbf2d91d0b2d",
+    "free-standing-enclosure-991056-inventory-appendix.pdf": "7a81a4549d9e958e8decdc3b2c763f537522c36ab4af5d8ca81f86622b8ca0ad"
   },
   "image_count": 67,
   "qualification": "draft documentation generated from the committed sources; not a physically validated procedure"

@@ -1,0 +1,796 @@
+{
+  "schema_version": 1,
+  "scene": "references/enclosure/scene.json",
+  "scene_sha256": "ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070",
+  "status": "draft: every row is the CAD claim or unknown until a person confirms or corrects it with evidence",
+  "rules": {
+    "statuses": [
+      "unknown",
+      "cad_claimed",
+      "confirmed",
+      "corrected",
+      "orphan"
+    ],
+    "consumers": "use material/finish when status is confirmed or corrected; otherwise fall back to cad_claim and label it a claim; print the claim beside a correction",
+    "render_appearance": "preset name for glTF and renders; null means the pipeline fallback (CAD colour, then a neutral material)"
+  },
+  "parts": [
+    {
+      "part_id": "DATA\\COMMON\\McMaster\\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]",
+      "name": "47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION",
+      "cad_claim": {
+        "material": "Aluminum",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE.ipt|[Primary]",
+      "name": "CAMERA MOUNT PLATE",
+      "cad_claim": {
+        "material": "ALUMINUM, 6061-T651",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt|[Primary]",
+      "name": "CAMERA MOUNT PLATE - TELEDYNE KINETIX",
+      "cad_claim": {
+        "material": "ALUMINUM, 6061-T651",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]",
+      "name": "CASTER MOUNTING PLATE",
+      "cad_claim": {
+        "material": "ALUMINUM, 6061-T651",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]",
+      "name": "ENCLOSURE PANEL",
+      "cad_claim": {
+        "material": "ALUMINUM COMPOSITE MATERIAL",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE TOP PANEL.ipt|[Primary]",
+      "name": "ENCLOSURE TOP PANEL",
+      "cad_claim": {
+        "material": "ALUMINUM COMPOSITE MATERIAL",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]",
+      "name": "HOLKIE LEVELING CASTER",
+      "cad_claim": {
+        "material": "Generic",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": true,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "unknown",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 3136N149_T-Slotted Framing.ipt|[Primary]",
+      "name": "MCMASTER 3136N149_T-Slotted Framing",
+      "cad_claim": {
+        "material": "ALUMINUM, 6061-T651",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
+      "name": "MCMASTER 47065T245",
+      "cad_claim": {
+        "material": "Generic",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": true,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "unknown",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]",
+      "name": "MCMASTER 47065T27_T-Slotted Framing",
+      "cad_claim": {
+        "material": "ALUMINUM, 6061-T651",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]",
+      "name": "MCMASTER 47065T845_Silver Corner Bracket",
+      "cad_claim": {
+        "material": "ALUMINUM, 6061-T651",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
+      "name": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp",
+      "cad_claim": {
+        "material": "Generic",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": true,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "unknown",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5537T293_T-Slotted Framing.ipt|[Primary]",
+      "name": "MCMASTER 5537T293_T-Slotted Framing",
+      "cad_claim": {
+        "material": "Zinc",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5537T429_T-Slotted Framing.ipt|[Primary]",
+      "name": "MCMASTER 5537T429_T-Slotted Framing",
+      "cad_claim": {
+        "material": "Zinc",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]",
+      "name": "MCMASTER 5972K164_Ball Bearing",
+      "cad_claim": {
+        "material": "Generic",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": true,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "unknown",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt|[Primary]",
+      "name": "MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw",
+      "cad_claim": {
+        "material": "Generic",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": true,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "unknown",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
+      "name": "MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer",
+      "cad_claim": {
+        "material": "STAINLESS STEEL, 18-8",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9293K121_Constant-Force Spring.ipt|[Primary]",
+      "name": "MCMASTER 9293K121_Constant-Force Spring",
+      "cad_claim": {
+        "material": "Generic",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": true,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "unknown",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
+      "name": "MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount",
+      "cad_claim": {
+        "material": "Generic",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": true,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "unknown",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]",
+      "name": "MCMASTER_1950A67_Unthreaded-Hole Pull Handle",
+      "cad_claim": {
+        "material": "Generic",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": true,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "unknown",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT LEFT.ipt|[Primary]",
+      "name": "PANEL LOWER SUPPORT LEFT",
+      "cad_claim": {
+        "material": "Generic",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": true,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "unknown",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT RIGHT.ipt|[Primary]",
+      "name": "PANEL LOWER SUPPORT RIGHT",
+      "cad_claim": {
+        "material": "ABS, BLACK",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ROLLER MOUNT PLATE.ipt|[Primary]",
+      "name": "ROLLER MOUNT PLATE",
+      "cad_claim": {
+        "material": "ALUMINUM, 6061-T651",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\2W.353\\SHULZE 2W.353 TANK.ipt|[Primary]",
+      "name": "SHULZE 2W.353 TANK",
+      "cad_claim": {
+        "material": "Acrylic, Clear",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt|[Primary]",
+      "name": "SLLB Enclosure 15in 47065T808_T-Slotted Framing",
+      "cad_claim": {
+        "material": "ALUMINUM, 6061-T651",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt|[Primary]",
+      "name": "SLLB Enclosure 2.5in 47065T808_T-Slotted Framing",
+      "cad_claim": {
+        "material": "Generic",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": true,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "unknown",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 22in 47065T808_T-Slotted Framing.ipt|[Primary]",
+      "name": "SLLB Enclosure 22in 47065T808_T-Slotted Framing",
+      "cad_claim": {
+        "material": "ALUMINUM, 6061-T651",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 41in 47065T808_T-Slotted Framing.ipt|[Primary]",
+      "name": "SLLB Enclosure 41in 47065T808_T-Slotted Framing",
+      "cad_claim": {
+        "material": "ALUMINUM, 6061-T651",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
+      "name": "SLLB Enclosure 44in 47065T808_T-Slotted Framing",
+      "cad_claim": {
+        "material": "Generic",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": true,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "unknown",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt|[Primary]",
+      "name": "SLLB Enclosure 96in 47065T808_T-Slotted Framing",
+      "cad_claim": {
+        "material": "Generic",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": true,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "unknown",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING MOUNT PLATE.ipt|[Primary]",
+      "name": "SPRING MOUNT PLATE",
+      "cad_claim": {
+        "material": "ALUMINUM, 6061-T651",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING ROLLER.ipt|[Primary]",
+      "name": "SPRING ROLLER",
+      "cad_claim": {
+        "material": "ABS, BLACK",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
+      "name": "T SLOT CORNER 47065T242",
+      "cad_claim": {
+        "material": "Generic",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": true,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "unknown",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]",
+      "name": "TANK SUPPORT BRACKET",
+      "cad_claim": {
+        "material": "ALUMINUM, 6061-T651",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT PLATFORM.ipt|[Primary]",
+      "name": "TANK SUPPORT PLATFORM",
+      "cad_claim": {
+        "material": "ACRYLIC, CLEAR",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]",
+      "name": "TOGGLE CLAMP MOUNT",
+      "cad_claim": {
+        "material": "ABS, BLACK",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": false,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "cad_claimed",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    },
+    {
+      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
+      "name": "TSLOT EXTRUSION 1X40.5 copy",
+      "cad_claim": {
+        "material": "Generic",
+        "appearance": null,
+        "density_g_cm3": null,
+        "is_default": true,
+        "source": "windows/Export-PartAssets.ps1 on Inventor 2025.3: iProperty Material (appearance, density not exported yet)"
+      },
+      "material": null,
+      "finish": null,
+      "mass_basis": null,
+      "status": "unknown",
+      "evidence": null,
+      "decided_by": null,
+      "decided_date": null,
+      "render": {
+        "appearance": null
+      }
+    }
+  ]
+}

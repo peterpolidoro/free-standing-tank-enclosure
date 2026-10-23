@@ -1,6 +1,6 @@
 {
   "kind": "mechanical-docs-manual",
-  "generated_at_utc": "2026-10-22T18:37:42Z",
+  "generated_at_utc": "2026-10-23T14:47:47Z",
   "id": "free-standing-enclosure-991056-inventory",
   "title": "Free Standing Enclosure (Vault file-version 991056) native snapshot: parts inventory",
   "scene": {
@@ -50,7 +50,8 @@
         ],
         "max_deviation": 2.5011104298755527e-12
       }
-    ]
+    ],
+    "definition_grouping": []
   },
   "project_notes": [
     "The tank(s) and the lower light box are to be replaced in the modified build by two Alienware AW2725Q monitors under an acrylic panel and bowl frames (Peter, 2026-10-22; intent, not a designer confirmation; the light-box occurrences are not yet identified). CAD counts are unchanged."
@@ -2597,6 +2598,67 @@
       "flexible": null,
       "image": "group-free-standing-frame-1-caster-assembly-1-0f4aa3c4.png",
       "view_id": "group-free-standing-frame-1-caster-assembly-1-0f4aa3c4",
+      "definition": "CASTER ASSEMBLY",
+      "definition_basis": "document",
+      "definition_document": "C:\\Users\\polidorop\\Repositories\\github\\free-standing-tank-enclosure\\.cache\\vault-workspace\\DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER ASSEMBLY.iam",
+      "instance_ids": [
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:2",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:3",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:4"
+      ],
+      "instance_count": 4,
+      "shown_instance": "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+      "other_instance_ids": [
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:2",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:3",
+        "FREE STANDING FRAME:1/CASTER ASSEMBLY:4"
+      ],
+      "instances_identical": true,
+      "instances_differ_because": "",
+      "instance_detail": [
+        {
+          "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
+          "occurrences": 2,
+          "parts": {
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]": 1,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]": 1
+          },
+          "flexible": false,
+          "overridden": 0
+        },
+        {
+          "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:2",
+          "occurrences": 2,
+          "parts": {
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]": 1,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]": 1
+          },
+          "flexible": false,
+          "overridden": 0
+        },
+        {
+          "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:3",
+          "occurrences": 2,
+          "parts": {
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]": 1,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]": 1
+          },
+          "flexible": false,
+          "overridden": 0
+        },
+        {
+          "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:4",
+          "occurrences": 2,
+          "parts": {
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]": 1,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]": 1
+          },
+          "flexible": false,
+          "overridden": 0
+        }
+      ],
+      "heading": "CASTER ASSEMBLY (4 in this project)",
       "occurrences": [
         {
           "id": "FREE STANDING FRAME:1/CASTER ASSEMBLY:1/HOLKIE LEVELING CASTER:1",
@@ -2618,6 +2680,13 @@
           "name": "HOLKIE LEVELING CASTER",
           "label_text": "HOLKIE LEVELING CASTER",
           "qty": 1,
+          "total_qty": 4,
+          "per_instance": [
+            1,
+            1,
+            1,
+            1
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png"
         },
         {
@@ -2626,6 +2695,13 @@
           "name": "CASTER MOUNTING PLATE",
           "label_text": "CASTER MOUNTING PLATE",
           "qty": 1,
+          "total_qty": 4,
+          "per_instance": [
+            1,
+            1,
+            1,
+            1
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png"
         }
       ],
@@ -2664,6 +2740,67 @@
       "flexible": null,
       "image": "group-panel-assembly-1-2d4465d7.png",
       "view_id": "group-panel-assembly-1-2d4465d7",
+      "definition": "PANEL ASSEMBLY",
+      "definition_basis": "document",
+      "definition_document": "C:\\Users\\polidorop\\Repositories\\github\\free-standing-tank-enclosure\\.cache\\vault-workspace\\DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL ASSEMBLY.iam",
+      "instance_ids": [
+        "PANEL ASSEMBLY:1",
+        "PANEL ASSEMBLY:2",
+        "PANEL ASSEMBLY:3",
+        "PANEL ASSEMBLY:4"
+      ],
+      "instance_count": 4,
+      "shown_instance": "PANEL ASSEMBLY:1",
+      "other_instance_ids": [
+        "PANEL ASSEMBLY:2",
+        "PANEL ASSEMBLY:3",
+        "PANEL ASSEMBLY:4"
+      ],
+      "instances_identical": true,
+      "instances_differ_because": "",
+      "instance_detail": [
+        {
+          "id": "PANEL ASSEMBLY:1",
+          "occurrences": 3,
+          "parts": {
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]": 1,
+            "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]": 2
+          },
+          "flexible": false,
+          "overridden": 0
+        },
+        {
+          "id": "PANEL ASSEMBLY:2",
+          "occurrences": 3,
+          "parts": {
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]": 1,
+            "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]": 2
+          },
+          "flexible": false,
+          "overridden": 0
+        },
+        {
+          "id": "PANEL ASSEMBLY:3",
+          "occurrences": 3,
+          "parts": {
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]": 1,
+            "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]": 2
+          },
+          "flexible": false,
+          "overridden": 0
+        },
+        {
+          "id": "PANEL ASSEMBLY:4",
+          "occurrences": 3,
+          "parts": {
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]": 1,
+            "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]": 2
+          },
+          "flexible": false,
+          "overridden": 0
+        }
+      ],
+      "heading": "PANEL ASSEMBLY (4 in this project)",
       "occurrences": [
         {
           "id": "PANEL ASSEMBLY:1/ENCLOSURE PANEL:1",
@@ -2691,6 +2828,13 @@
           "name": "ENCLOSURE PANEL",
           "label_text": "ENCLOSURE PANEL",
           "qty": 1,
+          "total_qty": 4,
+          "per_instance": [
+            1,
+            1,
+            1,
+            1
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d.png"
         },
         {
@@ -2699,6 +2843,13 @@
           "name": "MCMASTER_1950A67_Unthreaded-Hole Pull Handle",
           "label_text": "MCMASTER 1950A67 Unthreaded-Hole Pull Handle",
           "qty": 2,
+          "total_qty": 8,
+          "per_instance": [
+            2,
+            2,
+            2,
+            2
+          ],
           "thumbnail": "part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png"
         }
       ],
@@ -2737,6 +2888,67 @@
       "flexible": null,
       "image": "group-toggle-clamp-assembly-1-133f2199.png",
       "view_id": "group-toggle-clamp-assembly-1-133f2199",
+      "definition": "TOGGLE CLAMP ASSEMBLY",
+      "definition_basis": "document",
+      "definition_document": "C:\\Users\\polidorop\\Repositories\\github\\free-standing-tank-enclosure\\.cache\\vault-workspace\\DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP ASSEMBLY.iam",
+      "instance_ids": [
+        "TOGGLE CLAMP ASSEMBLY:1",
+        "TOGGLE CLAMP ASSEMBLY:2",
+        "TOGGLE CLAMP ASSEMBLY:3",
+        "TOGGLE CLAMP ASSEMBLY:4"
+      ],
+      "instance_count": 4,
+      "shown_instance": "TOGGLE CLAMP ASSEMBLY:1",
+      "other_instance_ids": [
+        "TOGGLE CLAMP ASSEMBLY:2",
+        "TOGGLE CLAMP ASSEMBLY:3",
+        "TOGGLE CLAMP ASSEMBLY:4"
+      ],
+      "instances_identical": true,
+      "instances_differ_because": "",
+      "instance_detail": [
+        {
+          "id": "TOGGLE CLAMP ASSEMBLY:1",
+          "occurrences": 3,
+          "parts": {
+            "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]": 2,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]": 1
+          },
+          "flexible": false,
+          "overridden": 0
+        },
+        {
+          "id": "TOGGLE CLAMP ASSEMBLY:2",
+          "occurrences": 3,
+          "parts": {
+            "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]": 2,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]": 1
+          },
+          "flexible": false,
+          "overridden": 0
+        },
+        {
+          "id": "TOGGLE CLAMP ASSEMBLY:3",
+          "occurrences": 3,
+          "parts": {
+            "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]": 2,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]": 1
+          },
+          "flexible": false,
+          "overridden": 0
+        },
+        {
+          "id": "TOGGLE CLAMP ASSEMBLY:4",
+          "occurrences": 3,
+          "parts": {
+            "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]": 2,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]": 1
+          },
+          "flexible": false,
+          "overridden": 0
+        }
+      ],
+      "heading": "TOGGLE CLAMP ASSEMBLY (4 in this project)",
       "occurrences": [
         {
           "id": "TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1",
@@ -2764,6 +2976,13 @@
           "name": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp",
           "label_text": "MCMASTER 5004A11 Compact Hold-Down Toggle Clamp",
           "qty": 2,
+          "total_qty": 8,
+          "per_instance": [
+            2,
+            2,
+            2,
+            2
+          ],
           "thumbnail": "part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png"
         },
         {
@@ -2772,6 +2991,13 @@
           "name": "TOGGLE CLAMP MOUNT",
           "label_text": "TOGGLE CLAMP MOUNT",
           "qty": 1,
+          "total_qty": 4,
+          "per_instance": [
+            1,
+            1,
+            1,
+            1
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png"
         }
       ],
@@ -2818,6 +3044,53 @@
       "flexible": null,
       "image": "group-tank-support-frame-1-524083a4.png",
       "view_id": "group-tank-support-frame-1-524083a4",
+      "definition": "TANK SUPPORT FRAME",
+      "definition_basis": "document",
+      "definition_document": "C:\\Users\\polidorop\\Repositories\\github\\free-standing-tank-enclosure\\.cache\\vault-workspace\\DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT FRAME.iam",
+      "instance_ids": [
+        "TANK SUPPORT FRAME:1",
+        "TANK SUPPORT FRAME:2"
+      ],
+      "instance_count": 2,
+      "shown_instance": "TANK SUPPORT FRAME:1",
+      "other_instance_ids": [
+        "TANK SUPPORT FRAME:2"
+      ],
+      "instances_identical": true,
+      "instances_differ_because": "",
+      "instance_detail": [
+        {
+          "id": "TANK SUPPORT FRAME:1",
+          "occurrences": 22,
+          "parts": {
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]": 4,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]": 4,
+            "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]": 4,
+            "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]": 4,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT PLATFORM.ipt|[Primary]": 1,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\2W.353\\SHULZE 2W.353 TANK.ipt|[Primary]": 1,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]": 4
+          },
+          "flexible": false,
+          "overridden": 0
+        },
+        {
+          "id": "TANK SUPPORT FRAME:2",
+          "occurrences": 22,
+          "parts": {
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]": 4,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]": 4,
+            "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]": 4,
+            "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]": 4,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT PLATFORM.ipt|[Primary]": 1,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\2W.353\\SHULZE 2W.353 TANK.ipt|[Primary]": 1,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]": 4
+          },
+          "flexible": false,
+          "overridden": 0
+        }
+      ],
+      "heading": "TANK SUPPORT FRAME (2 in this project)",
       "occurrences": [
         {
           "id": "TANK SUPPORT FRAME:1/TSLOT EXTRUSION 1X40.5 copy:1",
@@ -2959,6 +3232,11 @@
           "name": "TSLOT EXTRUSION 1X40.5 copy",
           "label_text": "TSLOT EXTRUSION 1X40.5 copy",
           "qty": 4,
+          "total_qty": 8,
+          "per_instance": [
+            4,
+            4
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-72135c80.png"
         },
         {
@@ -2967,6 +3245,11 @@
           "name": "T SLOT CORNER 47065T242",
           "label_text": "T SLOT CORNER 47065T242",
           "qty": 4,
+          "total_qty": 8,
+          "per_instance": [
+            4,
+            4
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-6dff85d6.png"
         },
         {
@@ -2975,6 +3258,11 @@
           "name": "MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount",
           "label_text": "MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount",
           "qty": 4,
+          "total_qty": 8,
+          "per_instance": [
+            4,
+            4
+          ],
           "thumbnail": "part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc.png"
         },
         {
@@ -2983,6 +3271,11 @@
           "name": "MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer",
           "label_text": "MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer",
           "qty": 4,
+          "total_qty": 8,
+          "per_instance": [
+            4,
+            4
+          ],
           "thumbnail": "part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649.png"
         },
         {
@@ -2991,6 +3284,11 @@
           "name": "TANK SUPPORT PLATFORM",
           "label_text": "TANK SUPPORT PLATFORM",
           "qty": 1,
+          "total_qty": 2,
+          "per_instance": [
+            1,
+            1
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-a3951cbf.png"
         },
         {
@@ -2999,6 +3297,11 @@
           "name": "SHULZE 2W.353 TANK",
           "label_text": "SHULZE 2W.353 TANK",
           "qty": 1,
+          "total_qty": 2,
+          "per_instance": [
+            1,
+            1
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c.png"
         },
         {
@@ -3007,6 +3310,11 @@
           "name": "TANK SUPPORT BRACKET",
           "label_text": "TANK SUPPORT BRACKET",
           "qty": 4,
+          "total_qty": 8,
+          "per_instance": [
+            4,
+            4
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png"
         }
       ],
@@ -3053,6 +3361,44 @@
       "flexible": null,
       "image": "group-camera-frame-1-05712af3.png",
       "view_id": "group-camera-frame-1-05712af3",
+      "definition": "CAMERA FRAME",
+      "definition_basis": "document",
+      "definition_document": "C:\\Users\\polidorop\\Repositories\\github\\free-standing-tank-enclosure\\.cache\\vault-workspace\\DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA FRAME.iam",
+      "instance_ids": [
+        "CAMERA FRAME:1"
+      ],
+      "instance_count": 1,
+      "shown_instance": "CAMERA FRAME:1",
+      "other_instance_ids": [],
+      "instances_identical": false,
+      "instances_differ_because": "flexible assembly: positions may differ per instance; positions overridden against the definition",
+      "instance_detail": [
+        {
+          "id": "CAMERA FRAME:1",
+          "occurrences": 36,
+          "parts": {
+            "DATA\\COMMON\\McMaster\\MCMASTER 5537T293_T-Slotted Framing.ipt|[Primary]": 2,
+            "DATA\\COMMON\\McMaster\\MCMASTER 5537T429_T-Slotted Framing.ipt|[Primary]": 2,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt|[Primary]": 2,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 22in 47065T808_T-Slotted Framing.ipt|[Primary]": 2,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 41in 47065T808_T-Slotted Framing.ipt|[Primary]": 2,
+            "DATA\\COMMON\\McMaster\\MCMASTER 3136N149_T-Slotted Framing.ipt|[Primary]": 2,
+            "DATA\\COMMON\\McMaster\\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]": 4,
+            "DATA\\COMMON\\McMaster\\MCMASTER 9293K121_Constant-Force Spring.ipt|[Primary]": 2,
+            "DATA\\COMMON\\McMaster\\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]": 4,
+            "DATA\\COMMON\\McMaster\\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]": 4,
+            "DATA\\COMMON\\McMaster\\MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt|[Primary]": 2,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING ROLLER.ipt|[Primary]": 2,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ROLLER MOUNT PLATE.ipt|[Primary]": 2,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING MOUNT PLATE.ipt|[Primary]": 2,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE.ipt|[Primary]": 1,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt|[Primary]": 1
+          },
+          "flexible": true,
+          "overridden": 32
+        }
+      ],
+      "heading": "CAMERA FRAME (1 in this project)",
       "occurrences": [
         {
           "id": "CAMERA FRAME:1/MCMASTER 5537T293_T-Slotted Framing:1",
@@ -3278,6 +3624,10 @@
           "name": "MCMASTER 5537T293_T-Slotted Framing",
           "label_text": "MCMASTER 5537T293 T-Slotted Framing",
           "qty": 2,
+          "total_qty": null,
+          "per_instance": [
+            2
+          ],
           "thumbnail": "part-data-common-mcmaster-mcmaster-5537t293-t-slotted-1c2935ff.png"
         },
         {
@@ -3286,6 +3636,10 @@
           "name": "MCMASTER 5537T429_T-Slotted Framing",
           "label_text": "MCMASTER 5537T429 T-Slotted Framing",
           "qty": 2,
+          "total_qty": null,
+          "per_instance": [
+            2
+          ],
           "thumbnail": "part-data-common-mcmaster-mcmaster-5537t429-t-slotted-72ff3dc4.png"
         },
         {
@@ -3294,6 +3648,10 @@
           "name": "SLLB Enclosure 15in 47065T808_T-Slotted Framing",
           "label_text": "SLLB Enclosure 15in 47065T808 T-Slotted Framing",
           "qty": 2,
+          "total_qty": null,
+          "per_instance": [
+            2
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-64014b81.png"
         },
         {
@@ -3302,6 +3660,10 @@
           "name": "SLLB Enclosure 22in 47065T808_T-Slotted Framing",
           "label_text": "SLLB Enclosure 22in 47065T808 T-Slotted Framing",
           "qty": 2,
+          "total_qty": null,
+          "per_instance": [
+            2
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-567ca529.png"
         },
         {
@@ -3310,6 +3672,10 @@
           "name": "SLLB Enclosure 41in 47065T808_T-Slotted Framing",
           "label_text": "SLLB Enclosure 41in 47065T808 T-Slotted Framing",
           "qty": 2,
+          "total_qty": null,
+          "per_instance": [
+            2
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-f37ea6b9.png"
         },
         {
@@ -3318,6 +3684,10 @@
           "name": "MCMASTER 3136N149_T-Slotted Framing",
           "label_text": "MCMASTER 3136N149 T-Slotted Framing",
           "qty": 2,
+          "total_qty": null,
+          "per_instance": [
+            2
+          ],
           "thumbnail": "part-data-common-mcmaster-mcmaster-3136n149-t-slotted-77d5b1ed.png"
         },
         {
@@ -3326,6 +3696,10 @@
           "name": "MCMASTER 47065T27_T-Slotted Framing",
           "label_text": "MCMASTER 47065T27 T-Slotted Framing",
           "qty": 4,
+          "total_qty": null,
+          "per_instance": [
+            4
+          ],
           "thumbnail": "part-data-common-mcmaster-mcmaster-47065t27-t-slotted-63467688.png"
         },
         {
@@ -3334,6 +3708,10 @@
           "name": "MCMASTER 9293K121_Constant-Force Spring",
           "label_text": "MCMASTER 9293K121 Constant-Force Spring",
           "qty": 2,
+          "total_qty": null,
+          "per_instance": [
+            2
+          ],
           "thumbnail": "part-data-common-mcmaster-mcmaster-9293k121-constant-a4593b94.png"
         },
         {
@@ -3342,6 +3720,10 @@
           "name": "MCMASTER 47065T845_Silver Corner Bracket",
           "label_text": "MCMASTER 47065T845 Silver Corner Bracket",
           "qty": 4,
+          "total_qty": null,
+          "per_instance": [
+            4
+          ],
           "thumbnail": "part-data-common-mcmaster-mcmaster-47065t845-silver-c-e1e40dd2.png"
         },
         {
@@ -3350,6 +3732,10 @@
           "name": "MCMASTER 5972K164_Ball Bearing",
           "label_text": "MCMASTER 5972K164 Ball Bearing",
           "qty": 4,
+          "total_qty": null,
+          "per_instance": [
+            4
+          ],
           "thumbnail": "part-data-common-mcmaster-mcmaster-5972k164-ball-bear-66eca704.png"
         },
         {
@@ -3358,6 +3744,10 @@
           "name": "MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw",
           "label_text": "MCMASTER 90265A164 18-8 Stainless Steel Shoulder Screw",
           "qty": 2,
+          "total_qty": null,
+          "per_instance": [
+            2
+          ],
           "thumbnail": "part-data-common-mcmaster-mcmaster-90265a164-18-8-sta-591781bf.png"
         },
         {
@@ -3366,6 +3756,10 @@
           "name": "SPRING ROLLER",
           "label_text": "SPRING ROLLER",
           "qty": 2,
+          "total_qty": null,
+          "per_instance": [
+            2
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-25d6cebc.png"
         },
         {
@@ -3374,6 +3768,10 @@
           "name": "ROLLER MOUNT PLATE",
           "label_text": "ROLLER MOUNT PLATE",
           "qty": 2,
+          "total_qty": null,
+          "per_instance": [
+            2
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-6a8f878a.png"
         },
         {
@@ -3382,6 +3780,10 @@
           "name": "SPRING MOUNT PLATE",
           "label_text": "SPRING MOUNT PLATE",
           "qty": 2,
+          "total_qty": null,
+          "per_instance": [
+            2
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-eb93feb5.png"
         },
         {
@@ -3390,6 +3792,10 @@
           "name": "CAMERA MOUNT PLATE",
           "label_text": "CAMERA MOUNT PLATE",
           "qty": 1,
+          "total_qty": null,
+          "per_instance": [
+            1
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-94fc4c9b.png"
         },
         {
@@ -3398,6 +3804,10 @@
           "name": "CAMERA MOUNT PLATE - TELEDYNE KINETIX",
           "label_text": "CAMERA MOUNT PLATE - TELEDYNE KINETIX",
           "qty": 1,
+          "total_qty": null,
+          "per_instance": [
+            1
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-b670923e.png"
         }
       ],
@@ -3452,6 +3862,37 @@
       "flexible": null,
       "image": "group-free-standing-frame-1-887affd3.png",
       "view_id": "group-free-standing-frame-1-887affd3",
+      "definition": "FREE STANDING FRAME",
+      "definition_basis": "document",
+      "definition_document": "C:\\Users\\polidorop\\Repositories\\github\\free-standing-tank-enclosure\\.cache\\vault-workspace\\DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\FREE STANDING FRAME.iam",
+      "instance_ids": [
+        "FREE STANDING FRAME:1"
+      ],
+      "instance_count": 1,
+      "shown_instance": "FREE STANDING FRAME:1",
+      "other_instance_ids": [],
+      "instances_identical": false,
+      "instances_differ_because": "flexible assembly: positions may differ per instance; positions overridden against the definition",
+      "instance_detail": [
+        {
+          "id": "FREE STANDING FRAME:1",
+          "occurrences": 49,
+          "parts": {
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]": 11,
+            "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]": 8,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt|[Primary]": 4,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]": 4,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]": 4,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt|[Primary]": 2,
+            "DATA\\COMMON\\McMaster\\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]": 8,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT LEFT.ipt|[Primary]": 4,
+            "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT RIGHT.ipt|[Primary]": 4
+          },
+          "flexible": true,
+          "overridden": 12
+        }
+      ],
+      "heading": "FREE STANDING FRAME (1 in this project)",
       "occurrences": [
         {
           "id": "FREE STANDING FRAME:1/SLLB Enclosure 44in 47065T808_T-Slotted Framing:1",
@@ -3755,6 +4196,10 @@
           "name": "SLLB Enclosure 44in 47065T808_T-Slotted Framing",
           "label_text": "SLLB Enclosure 44in 47065T808 T-Slotted Framing",
           "qty": 11,
+          "total_qty": null,
+          "per_instance": [
+            11
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431.png"
         },
         {
@@ -3763,6 +4208,10 @@
           "name": "MCMASTER 47065T245",
           "label_text": "MCMASTER 47065T245",
           "qty": 8,
+          "total_qty": null,
+          "per_instance": [
+            8
+          ],
           "thumbnail": "part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png"
         },
         {
@@ -3771,6 +4220,10 @@
           "name": "SLLB Enclosure 96in 47065T808_T-Slotted Framing",
           "label_text": "SLLB Enclosure 96in 47065T808 T-Slotted Framing",
           "qty": 4,
+          "total_qty": null,
+          "per_instance": [
+            4
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b.png"
         },
         {
@@ -3779,6 +4232,10 @@
           "name": "HOLKIE LEVELING CASTER",
           "label_text": "HOLKIE LEVELING CASTER",
           "qty": 4,
+          "total_qty": null,
+          "per_instance": [
+            4
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png"
         },
         {
@@ -3787,6 +4244,10 @@
           "name": "CASTER MOUNTING PLATE",
           "label_text": "CASTER MOUNTING PLATE",
           "qty": 4,
+          "total_qty": null,
+          "per_instance": [
+            4
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png"
         },
         {
@@ -3795,6 +4256,10 @@
           "name": "SLLB Enclosure 2.5in 47065T808_T-Slotted Framing",
           "label_text": "SLLB Enclosure 2.5in 47065T808 T-Slotted Framing",
           "qty": 2,
+          "total_qty": null,
+          "per_instance": [
+            2
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-0debaac0.png"
         },
         {
@@ -3803,6 +4268,10 @@
           "name": "47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION",
           "label_text": "47065T271 ALUMINUM T-SLOTTED FRAMING EXTRUSION",
           "qty": 8,
+          "total_qty": null,
+          "per_instance": [
+            8
+          ],
           "thumbnail": "part-data-common-mcmaster-47065t271-aluminum-t-slotte-56fa5cf0.png"
         },
         {
@@ -3811,6 +4280,10 @@
           "name": "PANEL LOWER SUPPORT LEFT",
           "label_text": "PANEL LOWER SUPPORT LEFT",
           "qty": 4,
+          "total_qty": null,
+          "per_instance": [
+            4
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png"
         },
         {
@@ -3819,6 +4292,10 @@
           "name": "PANEL LOWER SUPPORT RIGHT",
           "label_text": "PANEL LOWER SUPPORT RIGHT",
           "qty": 4,
+          "total_qty": null,
+          "per_instance": [
+            4
+          ],
           "thumbnail": "part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f.png"
         }
       ],

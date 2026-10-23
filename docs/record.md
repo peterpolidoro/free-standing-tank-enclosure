@@ -18,7 +18,7 @@
     Stock is unknown until counted and recorded (on_hand_each with counted_by and counted_date). The counted box is for a paper count only.
 
 
-Manual `free-standing-enclosure-991056-inventory` generated 2026-10-22T18:37:42Z by {&#x27;python&#x27;: &#x27;3.12.12&#x27;, &#x27;platform&#x27;: &#x27;Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41&#x27;, &#x27;package&#x27;: &#x27;mechanical-docs&#x27;}.
+Manual `free-standing-enclosure-991056-inventory` generated 2026-10-23T14:47:47Z by {&#x27;python&#x27;: &#x27;3.12.12&#x27;, &#x27;platform&#x27;: &#x27;Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41&#x27;, &#x27;package&#x27;: &#x27;mechanical-docs&#x27;}.
 
 ## Source
 
@@ -29,10 +29,10 @@ Manual `free-standing-enclosure-991056-inventory` generated 2026-10-22T18:37:42Z
 
 ## Publication
 
-- Published 2026-10-22T18:59:32+00:00 from evidence run `2026-10-22-documentation-enclosure-supplement-03`.
-- Check report: all passed = True, PDF pages 36.
-- `free-standing-enclosure-991056-inventory.pdf` sha256 `1c033c86e388aa579c087d5db4e11bba0082258869ea3d556ef93c78061bc3e6`
-- `free-standing-enclosure-991056-inventory-appendix.pdf` sha256 `25a82f8a4f349c847d345976ff3beeadea5a6a8a57b00a07682afd852fbdb12a`
+- Published 2026-10-23T15:12:06+00:00 from evidence run `2026-10-23-documentation-manual-fixes-01`.
+- Check report: all passed = True, PDF pages 37.
+- `free-standing-enclosure-991056-inventory.pdf` sha256 `d9aae57414ca3a3c00914e3ae6f8e39f405c684b71c1c10d22c3bbf2d91d0b2d`
+- `free-standing-enclosure-991056-inventory-appendix.pdf` sha256 `7a81a4549d9e958e8decdc3b2c763f537522c36ab4af5d8ca81f86622b8ca0ad`
 - [SOURCE.json](manual/SOURCE.json) · [build-receipt.json](manual/build-receipt.json) · [check-report.json](manual/check-report.json) · [single-page manual](manual/index.html)
 
 ## Findings

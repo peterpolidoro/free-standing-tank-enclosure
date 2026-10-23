@@ -54,6 +54,8 @@ section.group header { grid-column: 1 / -1; display: flex; align-items: baseline
 section.group .note { grid-column: 1 / -1; }
 table.group-parts { width: 100%; border-collapse: collapse; }
 table.group-parts td { border-bottom: 1px solid var(--line); padding: 6px 4px; vertical-align: middle; }
+table.group-parts th { font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); text-align: left; padding: 2px 4px; }
+section.group .instances { font-weight: 500; color: var(--muted); font-size: 1rem; }
 table.group-parts img { width: 64px; height: 64px; object-fit: contain; background: #fff; border: 1px solid var(--line); }
 table.group-parts .qty { font-size: 1.5rem; font-weight: 800; text-align: center; }
 section.step { background: var(--card); border: 2px solid var(--ink); margin: 24px 0; padding: 16px; display: grid; grid-template-columns: 220px 1fr; grid-template-rows: auto auto; gap: 16px; }
@@ -91,7 +93,7 @@ table.appendix code { font-size: .75rem; }
 <body>
 <main>
 <h1>Free Standing Enclosure (Vault file-version 991056) native snapshot: parts inventory</h1>
-<p class="hint">Scene <code>free-standing-enclosure-991056</code>: Free Standing Enclosure (Vault file-version 991056) native snapshot. Document <code>free-standing-enclosure-991056-inventory</code>. Generated 2026-10-22T18:37:42Z.</p>
+<p class="hint">Scene <code>free-standing-enclosure-991056</code>: Free Standing Enclosure (Vault file-version 991056) native snapshot. Document <code>free-standing-enclosure-991056-inventory</code>. Generated 2026-10-23T14:47:47Z.</p>
 <div class="status" role="note">
 <p class="state">draft</p>
 <p>Parts inventory and overview only: no assembly sequence has been authored or reviewed for this scene.</p>
@@ -353,8 +355,8 @@ table.appendix code { font-size: .75rem; }
 <p class="hint">4 new-design row(s) are listed in the appendix (not printed in this compact document).</p>
 <h2 id="subassemblies">Subassemblies (inspection views)</h2>
 <p class="hint">Each view shows one subassembly alone with its parts at their CAD positions. These are parts views for inspection, not assembly steps: no order, fasteners or tool access is implied.</p>
-<section class="group" id="group-free-standing-frame-1-caster-assembly-1-0f4aa3c4" data-group="FREE STANDING FRAME:1/CASTER ASSEMBLY:1" data-index="1">
-<header><div class="step-number">1</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">CASTER ASSEMBLY:1</div><div class="step-title"><code>FREE STANDING FRAME:1/CASTER ASSEMBLY:1</code> · under <code>FREE STANDING FRAME:1</code></div></div></header>
+<section class="group" id="group-free-standing-frame-1-caster-assembly-1-0f4aa3c4" data-group="FREE STANDING FRAME:1/CASTER ASSEMBLY:1" data-index="1" data-instance-count="4" data-identical="true">
+<header><div class="step-number">1</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">CASTER ASSEMBLY <span class="instances">(4 in this project)</span></div><div class="step-title">shown: <code>FREE STANDING FRAME:1/CASTER ASSEMBLY:1</code> · under <code>FREE STANDING FRAME:1</code> · other instances: <code>FREE STANDING FRAME:1/CASTER ASSEMBLY:2</code>, <code>FREE STANDING FRAME:1/CASTER ASSEMBLY:3</code>, <code>FREE STANDING FRAME:1/CASTER ASSEMBLY:4</code> · definition from the exporter's document</div></div></header>
 <figure><div class="overview-wrap">
 <img src="images/group-free-standing-frame-1-caster-assembly-1-0f4aa3c4.png" alt="Subassembly 1: CASTER ASSEMBLY:1">
 <svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
@@ -362,18 +364,21 @@ table.appendix code { font-size: .75rem; }
 <a href="#part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a"><title>FREE STANDING FRAME:1/CASTER ASSEMBLY:1/HOLKIE LEVELING CASTER:1: part 27</title><rect x="362" y="126" width="945" height="978"/><circle cx="388" cy="152" r="26"/><text x="388" y="152" style="font-size:31px">27</text></a>
 </svg>
 </div><figcaption>inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied.</figcaption></figure>
-<table class="group-parts"><tbody>
-<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\JAYARAMAN (LAB)\FLOW TUNNEL\HOLKIE LEVELING CASTER.ipt|[Primary]" data-qty="1"><td><span class="label">27</span></td><td><img src="images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png" alt="HOLKIE LEVELING CASTER"></td><td>HOLKIE LEVELING CASTER</td><td class="qty">×1</td></tr>
-<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\JAYARAMAN (LAB)\FLOW TUNNEL\CASTER MOUNTING PLATE.ipt|[Primary]" data-qty="1"><td><span class="label">28</span></td><td><img src="images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png" alt="CASTER MOUNTING PLATE"></td><td>CASTER MOUNTING PLATE</td><td class="qty">×1</td></tr>
+<table class="group-parts">
+<thead><tr><th></th><th></th><th>Part</th><th>Per subassembly</th><th>For all 4</th></tr></thead>
+<tbody>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\JAYARAMAN (LAB)\FLOW TUNNEL\HOLKIE LEVELING CASTER.ipt|[Primary]" data-qty="1" data-total="4"><td><span class="label">27</span></td><td><img src="images/part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a.png" alt="HOLKIE LEVELING CASTER"></td><td>HOLKIE LEVELING CASTER</td><td class="qty">×1</td><td class="qty">×4</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\JAYARAMAN (LAB)\FLOW TUNNEL\CASTER MOUNTING PLATE.ipt|[Primary]" data-qty="1" data-total="4"><td><span class="label">28</span></td><td><img src="images/part-data-projects-projects-by-lab-jayaraman-lab-flow-db2a93e4.png" alt="CASTER MOUNTING PLATE"></td><td>CASTER MOUNTING PLATE</td><td class="qty">×1</td><td class="qty">×4</td></tr>
 </tbody></table>
-<p class="note hint">2 occurrence(s) in this subassembly; ids in manual.json.</p>
+<p class="note hint">4 identical instances of this subassembly in the CAD model; the last column is the CAD count for all 4 (an instance count, not a purchase quantity).</p>
+<p class="note hint">2 occurrence(s) in the shown instance; ids in manual.json.</p>
 <div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
 <li data-sgroup="FREE STANDING FRAME:1/CASTER ASSEMBLY:1" data-sitem="SUP-001"><a href="#sup-sup-001"><span class="label sup">S1</span></a> Caster-to-mounting-plate fastening · candidate, requires review · required unknown (family, not specified); basis: 4 caster assemblies; attachment points per caster unverified · joint <code>caster_to_plate</code></li>
 <li data-sgroup="FREE STANDING FRAME:1/CASTER ASSEMBLY:1" data-sitem="SUP-002"><a href="#sup-sup-002"><span class="label sup">S2</span></a> Caster-plate-to-frame fastening · candidate, requires review · required unknown (family, not specified); basis: 4 plates; frame attachments per plate unverified · joint <code>caster_plate_to_frame</code></li>
 </ul></div>
 </section>
-<section class="group" id="group-panel-assembly-1-2d4465d7" data-group="PANEL ASSEMBLY:1" data-index="2">
-<header><div class="step-number">2</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">PANEL ASSEMBLY:1</div><div class="step-title"><code>PANEL ASSEMBLY:1</code> · under <code>root</code></div></div></header>
+<section class="group" id="group-panel-assembly-1-2d4465d7" data-group="PANEL ASSEMBLY:1" data-index="2" data-instance-count="4" data-identical="true">
+<header><div class="step-number">2</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">PANEL ASSEMBLY <span class="instances">(4 in this project)</span></div><div class="step-title">shown: <code>PANEL ASSEMBLY:1</code> · under <code>root</code> · other instances: <code>PANEL ASSEMBLY:2</code>, <code>PANEL ASSEMBLY:3</code>, <code>PANEL ASSEMBLY:4</code> · definition from the exporter's document</div></div></header>
 <figure><div class="overview-wrap">
 <img src="images/group-panel-assembly-1-2d4465d7.png" alt="Subassembly 2: PANEL ASSEMBLY:1">
 <svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
@@ -381,18 +386,21 @@ table.appendix code { font-size: .75rem; }
 <a href="#part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7"><title>PANEL ASSEMBLY:1/MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1: part 34</title><rect x="651" y="551" width="20" height="74"/><circle cx="677" cy="577" r="26"/><text x="677" y="577" style="font-size:31px">34</text></a>
 </svg>
 </div><figcaption>inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied.</figcaption></figure>
-<table class="group-parts"><tbody>
-<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\ENCLOSURE PANEL.ipt|[Primary]" data-qty="1"><td><span class="label">33</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d.png" alt="ENCLOSURE PANEL"></td><td>ENCLOSURE PANEL</td><td class="qty">×1</td></tr>
-<tr data-gpart="DATA\COMMON\McMaster\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]" data-qty="2"><td><span class="label">34</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png" alt="MCMASTER 1950A67 Unthreaded-Hole Pull Handle"></td><td>MCMASTER 1950A67 Unthreaded-Hole Pull Handle</td><td class="qty">×2</td></tr>
+<table class="group-parts">
+<thead><tr><th></th><th></th><th>Part</th><th>Per subassembly</th><th>For all 4</th></tr></thead>
+<tbody>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\ENCLOSURE PANEL.ipt|[Primary]" data-qty="1" data-total="4"><td><span class="label">33</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-e022258d.png" alt="ENCLOSURE PANEL"></td><td>ENCLOSURE PANEL</td><td class="qty">×1</td><td class="qty">×4</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]" data-qty="2" data-total="8"><td><span class="label">34</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-1950a67-unthreaded-f36d1af7.png" alt="MCMASTER 1950A67 Unthreaded-Hole Pull Handle"></td><td>MCMASTER 1950A67 Unthreaded-Hole Pull Handle</td><td class="qty">×2</td><td class="qty">×8</td></tr>
 </tbody></table>
-<p class="note hint">3 occurrence(s) in this subassembly; ids in manual.json.</p>
+<p class="note hint">4 identical instances of this subassembly in the CAD model; the last column is the CAD count for all 4 (an instance count, not a purchase quantity).</p>
+<p class="note hint">3 occurrence(s) in the shown instance; ids in manual.json.</p>
 <div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
 <li data-sgroup="PANEL ASSEMBLY:1" data-sitem="SUP-003"><a href="#sup-sup-003"><span class="label sup">S3</span></a> Pull-handle-to-panel fastening · candidate, requires review · required unknown (family, not specified); basis: 8 handles on 4 panels; fastening points per handle unverified · joint <code>handle_to_panel</code></li>
 <li data-sgroup="PANEL ASSEMBLY:1" data-sitem="SUP-016"><a href="#sup-sup-016"><span class="label sup">S16</span></a> Removable-panel retention interface · candidate, requires review · required unknown (family, not specified); basis: 4 panels, 8 lower supports, 8 toggle clamps · joint <code>panel_retention</code></li>
 </ul></div>
 </section>
-<section class="group" id="group-toggle-clamp-assembly-1-133f2199" data-group="TOGGLE CLAMP ASSEMBLY:1" data-index="3">
-<header><div class="step-number">3</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">TOGGLE CLAMP ASSEMBLY:1</div><div class="step-title"><code>TOGGLE CLAMP ASSEMBLY:1</code> · under <code>root</code></div></div></header>
+<section class="group" id="group-toggle-clamp-assembly-1-133f2199" data-group="TOGGLE CLAMP ASSEMBLY:1" data-index="3" data-instance-count="4" data-identical="true">
+<header><div class="step-number">3</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">TOGGLE CLAMP ASSEMBLY <span class="instances">(4 in this project)</span></div><div class="step-title">shown: <code>TOGGLE CLAMP ASSEMBLY:1</code> · under <code>root</code> · other instances: <code>TOGGLE CLAMP ASSEMBLY:2</code>, <code>TOGGLE CLAMP ASSEMBLY:3</code>, <code>TOGGLE CLAMP ASSEMBLY:4</code> · definition from the exporter's document</div></div></header>
 <figure><div class="overview-wrap">
 <img src="images/group-toggle-clamp-assembly-1-133f2199.png" alt="Subassembly 3: TOGGLE CLAMP ASSEMBLY:1">
 <svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
@@ -400,19 +408,22 @@ table.appendix code { font-size: .75rem; }
 <a href="#part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5"><title>TOGGLE CLAMP ASSEMBLY:1/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp:1: part 36</title><rect x="446" y="473" width="764" height="626"/><circle cx="472" cy="499" r="26"/><text x="472" y="499" style="font-size:31px">36</text></a>
 </svg>
 </div><figcaption>inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied.</figcaption></figure>
-<table class="group-parts"><tbody>
-<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]" data-qty="2"><td><span class="label">36</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png" alt="MCMASTER 5004A11 Compact Hold-Down Toggle Clamp"></td><td>MCMASTER 5004A11 Compact Hold-Down Toggle Clamp</td><td class="qty">×2</td></tr>
-<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TOGGLE CLAMP MOUNT.ipt|[Primary]" data-qty="1"><td><span class="label">37</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png" alt="TOGGLE CLAMP MOUNT"></td><td>TOGGLE CLAMP MOUNT</td><td class="qty">×1</td></tr>
+<table class="group-parts">
+<thead><tr><th></th><th></th><th>Part</th><th>Per subassembly</th><th>For all 4</th></tr></thead>
+<tbody>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]" data-qty="2" data-total="8"><td><span class="label">36</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-5004a11-compact-ho-976424b5.png" alt="MCMASTER 5004A11 Compact Hold-Down Toggle Clamp"></td><td>MCMASTER 5004A11 Compact Hold-Down Toggle Clamp</td><td class="qty">×2</td><td class="qty">×8</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TOGGLE CLAMP MOUNT.ipt|[Primary]" data-qty="1" data-total="4"><td><span class="label">37</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-4eb76845.png" alt="TOGGLE CLAMP MOUNT"></td><td>TOGGLE CLAMP MOUNT</td><td class="qty">×1</td><td class="qty">×4</td></tr>
 </tbody></table>
-<p class="note hint">3 occurrence(s) in this subassembly; ids in manual.json.</p>
+<p class="note hint">4 identical instances of this subassembly in the CAD model; the last column is the CAD count for all 4 (an instance count, not a purchase quantity).</p>
+<p class="note hint">3 occurrence(s) in the shown instance; ids in manual.json.</p>
 <div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
 <li data-sgroup="TOGGLE CLAMP ASSEMBLY:1" data-sitem="SUP-004"><a href="#sup-sup-004"><span class="label sup">S4</span></a> Toggle-clamp-to-mount fastening · candidate, requires review · required unknown (family, not specified); basis: 8 clamps on 4 mounts; points per clamp unverified · joint <code>clamp_to_mount</code></li>
 <li data-sgroup="TOGGLE CLAMP ASSEMBLY:1" data-sitem="SUP-005"><a href="#sup-sup-005"><span class="label sup">S5</span></a> Toggle-clamp-mount-to-frame fastening · candidate, requires review · required unknown (family, not specified); basis: 4 mounts; points per mount unverified · joint <code>clamp_mount_to_frame</code></li>
 <li data-sgroup="TOGGLE CLAMP ASSEMBLY:1" data-sitem="SUP-016"><a href="#sup-sup-016"><span class="label sup">S16</span></a> Removable-panel retention interface · candidate, requires review · required unknown (family, not specified); basis: 4 panels, 8 lower supports, 8 toggle clamps · joint <code>panel_retention</code></li>
 </ul></div>
 </section>
-<section class="group" id="group-tank-support-frame-1-524083a4" data-group="TANK SUPPORT FRAME:1" data-index="4">
-<header><div class="step-number">4</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">TANK SUPPORT FRAME:1</div><div class="step-title"><code>TANK SUPPORT FRAME:1</code> · under <code>root</code></div></div></header>
+<section class="group" id="group-tank-support-frame-1-524083a4" data-group="TANK SUPPORT FRAME:1" data-index="4" data-instance-count="2" data-identical="true">
+<header><div class="step-number">4</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">TANK SUPPORT FRAME <span class="instances">(2 in this project)</span></div><div class="step-title">shown: <code>TANK SUPPORT FRAME:1</code> · under <code>root</code> · other instance: <code>TANK SUPPORT FRAME:2</code> · definition from the exporter's document</div></div></header>
 <figure><div class="overview-wrap">
 <img src="images/group-tank-support-frame-1-524083a4.png" alt="Subassembly 4: TANK SUPPORT FRAME:1">
 <svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
@@ -425,24 +436,27 @@ table.appendix code { font-size: .75rem; }
 <a href="#part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649"><title>TANK SUPPORT FRAME:1/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer:2: part 20</title><rect x="863" y="1077" width="25" height="23"/><circle cx="889" cy="1103" r="26"/><text x="889" y="1103" style="font-size:31px">20</text></a>
 </svg>
 </div><figcaption>inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied.</figcaption></figure>
-<table class="group-parts"><tbody>
-<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]" data-qty="4"><td><span class="label">17</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-72135c80.png" alt="TSLOT EXTRUSION 1X40.5 copy"></td><td>TSLOT EXTRUSION 1X40.5 copy</td><td class="qty">×4</td></tr>
-<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\T SLOT CORNER 47065T242.ipt|[Primary]" data-qty="4"><td><span class="label">18</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-6dff85d6.png" alt="T SLOT CORNER 47065T242"></td><td>T SLOT CORNER 47065T242</td><td class="qty">×4</td></tr>
-<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]" data-qty="4"><td><span class="label">19</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc.png" alt="MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount"></td><td>MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount</td><td class="qty">×4</td></tr>
-<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]" data-qty="4"><td><span class="label">20</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649.png" alt="MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer"></td><td>MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer</td><td class="qty">×4</td></tr>
-<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TANK SUPPORT PLATFORM.ipt|[Primary]" data-qty="1"><td><span class="label">21</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-a3951cbf.png" alt="TANK SUPPORT PLATFORM"></td><td>TANK SUPPORT PLATFORM</td><td class="qty">×1</td></tr>
-<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\2W.353\SHULZE 2W.353 TANK.ipt|[Primary]" data-qty="1"><td><span class="label">22</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c.png" alt="SHULZE 2W.353 TANK"></td><td>SHULZE 2W.353 TANK</td><td class="qty">×1</td></tr>
-<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TANK SUPPORT BRACKET.ipt|[Primary]" data-qty="4"><td><span class="label">23</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png" alt="TANK SUPPORT BRACKET"></td><td>TANK SUPPORT BRACKET</td><td class="qty">×4</td></tr>
+<table class="group-parts">
+<thead><tr><th></th><th></th><th>Part</th><th>Per subassembly</th><th>For all 2</th></tr></thead>
+<tbody>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]" data-qty="4" data-total="8"><td><span class="label">17</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-72135c80.png" alt="TSLOT EXTRUSION 1X40.5 copy"></td><td>TSLOT EXTRUSION 1X40.5 copy</td><td class="qty">×4</td><td class="qty">×8</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\T SLOT CORNER 47065T242.ipt|[Primary]" data-qty="4" data-total="8"><td><span class="label">18</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-6dff85d6.png" alt="T SLOT CORNER 47065T242"></td><td>T SLOT CORNER 47065T242</td><td class="qty">×4</td><td class="qty">×8</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]" data-qty="4" data-total="8"><td><span class="label">19</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-9378k24-natural-ru-fcf343fc.png" alt="MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount"></td><td>MCMASTER 9378K24 Natural Rubber Vibration-Damping Sandwich Mount</td><td class="qty">×4</td><td class="qty">×8</td></tr>
+<tr data-gpart="DATA\COMMON\McMaster\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]" data-qty="4" data-total="8"><td><span class="label">20</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-90313a107-18-8-sta-34837649.png" alt="MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer"></td><td>MCMASTER 90313A107 18-8 Stainless Steel Oversized Washer</td><td class="qty">×4</td><td class="qty">×8</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TANK SUPPORT PLATFORM.ipt|[Primary]" data-qty="1" data-total="2"><td><span class="label">21</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-a3951cbf.png" alt="TANK SUPPORT PLATFORM"></td><td>TANK SUPPORT PLATFORM</td><td class="qty">×1</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\2W.353\SHULZE 2W.353 TANK.ipt|[Primary]" data-qty="1" data-total="2"><td><span class="label">22</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-2w-353-00b2841c.png" alt="SHULZE 2W.353 TANK"></td><td>SHULZE 2W.353 TANK</td><td class="qty">×1</td><td class="qty">×2</td></tr>
+<tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\TANK SUPPORT BRACKET.ipt|[Primary]" data-qty="4" data-total="8"><td><span class="label">23</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-7481e885.png" alt="TANK SUPPORT BRACKET"></td><td>TANK SUPPORT BRACKET</td><td class="qty">×4</td><td class="qty">×8</td></tr>
 </tbody></table>
-<p class="note hint">22 occurrence(s) in this subassembly; ids in manual.json.</p>
+<p class="note hint">2 identical instances of this subassembly in the CAD model; the last column is the CAD count for all 2 (an instance count, not a purchase quantity).</p>
+<p class="note hint">22 occurrence(s) in the shown instance; ids in manual.json.</p>
 <div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
 <li data-sgroup="TANK SUPPORT FRAME:1" data-sitem="SUP-009"><a href="#sup-sup-009"><span class="label sup">S9</span></a> Tank-support-frame corner hardware · candidate, requires review · required unknown (family, not specified); basis: 8 modeled corner connectors across 2 support frames · joint <code>support_frame_corners</code></li>
 <li data-sgroup="TANK SUPPORT FRAME:1" data-sitem="SUP-010"><a href="#sup-sup-010"><span class="label sup">S10</span></a> Tank-support-bracket attachment hardware · candidate, requires review · required unknown (family, not specified); basis: 8 brackets across 2 support frames · joint <code>support_brackets</code></li>
 <li data-sgroup="TANK SUPPORT FRAME:1" data-sitem="SUP-011"><a href="#sup-sup-011"><span class="label sup">S11</span></a> Vibration-mount retention hardware · candidate, requires review · required unknown (family, not specified); basis: 8 mounts + 8 oversized washers modeled · joint <code>vibration_mounts</code></li>
 </ul></div>
 </section>
-<section class="group" id="group-camera-frame-1-05712af3" data-group="CAMERA FRAME:1" data-index="5">
-<header><div class="step-number">5</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">CAMERA FRAME:1</div><div class="step-title"><code>CAMERA FRAME:1</code> · under <code>root</code></div></div></header>
+<section class="group" id="group-camera-frame-1-05712af3" data-group="CAMERA FRAME:1" data-index="5" data-instance-count="1" data-identical="false">
+<header><div class="step-number">5</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">CAMERA FRAME <span class="instances">(1 in this project)</span></div><div class="step-title">shown: <code>CAMERA FRAME:1</code> · under <code>root</code> · definition from the exporter's document</div></div></header>
 <figure><div class="overview-wrap">
 <img src="images/group-camera-frame-1-05712af3.png" alt="Subassembly 5: CAMERA FRAME:1">
 <svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
@@ -464,7 +478,8 @@ table.appendix code { font-size: .75rem; }
 <a href="#part-data-common-mcmaster-mcmaster-5537t429-t-slotted-72ff3dc4"><title>CAMERA FRAME:1/MCMASTER 5537T429_T-Slotted Framing:2: part 2</title><rect x="993" y="930" width="104" height="142"/><circle cx="1019" cy="956" r="26"/><text x="1019" y="956" style="font-size:31px">2</text></a>
 </svg>
 </div><figcaption>inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied.</figcaption></figure>
-<table class="group-parts"><tbody>
+<table class="group-parts">
+<tbody>
 <tr data-gpart="DATA\COMMON\McMaster\MCMASTER 5537T293_T-Slotted Framing.ipt|[Primary]" data-qty="2"><td><span class="label">1</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-5537t293-t-slotted-1c2935ff.png" alt="MCMASTER 5537T293 T-Slotted Framing"></td><td>MCMASTER 5537T293 T-Slotted Framing</td><td class="qty">×2</td></tr>
 <tr data-gpart="DATA\COMMON\McMaster\MCMASTER 5537T429_T-Slotted Framing.ipt|[Primary]" data-qty="2"><td><span class="label">2</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-5537t429-t-slotted-72ff3dc4.png" alt="MCMASTER 5537T429 T-Slotted Framing"></td><td>MCMASTER 5537T429 T-Slotted Framing</td><td class="qty">×2</td></tr>
 <tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt|[Primary]" data-qty="2"><td><span class="label">3</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-64014b81.png" alt="SLLB Enclosure 15in 47065T808 T-Slotted Framing"></td><td>SLLB Enclosure 15in 47065T808 T-Slotted Framing</td><td class="qty">×2</td></tr>
@@ -482,7 +497,7 @@ table.appendix code { font-size: .75rem; }
 <tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\CAMERA MOUNT PLATE.ipt|[Primary]" data-qty="1"><td><span class="label">15</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-94fc4c9b.png" alt="CAMERA MOUNT PLATE"></td><td>CAMERA MOUNT PLATE</td><td class="qty">×1</td></tr>
 <tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt|[Primary]" data-qty="1"><td><span class="label">16</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-b670923e.png" alt="CAMERA MOUNT PLATE - TELEDYNE KINETIX"></td><td>CAMERA MOUNT PLATE - TELEDYNE KINETIX</td><td class="qty">×1</td></tr>
 </tbody></table>
-<p class="note hint">36 occurrence(s) in this subassembly; ids in manual.json.</p>
+<p class="note hint">36 occurrence(s) in the shown instance; ids in manual.json.</p>
 <div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
 <li data-sgroup="CAMERA FRAME:1" data-sitem="SUP-008"><a href="#sup-sup-008"><span class="label sup">S8</span></a> Camera-frame connector and bracket hardware · candidate, requires review · required unknown (family, not specified); basis: 4 named 47065T845 brackets plus other connector/sliding parts · joint <code>camera_frame_joints</code></li>
 <li data-sgroup="CAMERA FRAME:1" data-sitem="SUP-012"><a href="#sup-sup-012"><span class="label sup">S12</span></a> Camera, spring and roller plate attachment hardware · candidate, requires review · required unknown (family, not specified); basis: 2 roller plates + 2 spring plates + 2 different camera plates · joint <code>camera_plates</code></li>
@@ -490,8 +505,8 @@ table.appendix code { font-size: .75rem; }
 <li data-sgroup="CAMERA FRAME:1" data-sitem="SUP-014"><a href="#sup-sup-014"><span class="label sup">S14</span></a> Camera-to-mount attachment · candidate, requires review · required unknown (family, not specified); basis: Camera plate variants present; actual camera selection unconfirmed · joint <code>camera_attachment</code></li>
 </ul></div>
 </section>
-<section class="group" id="group-free-standing-frame-1-887affd3" data-group="FREE STANDING FRAME:1" data-index="6">
-<header><div class="step-number">6</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">FREE STANDING FRAME:1</div><div class="step-title"><code>FREE STANDING FRAME:1</code> · under <code>root</code></div></div></header>
+<section class="group" id="group-free-standing-frame-1-887affd3" data-group="FREE STANDING FRAME:1" data-index="6" data-instance-count="1" data-identical="false">
+<header><div class="step-number">6</div><div><div class="kicker">Subassembly</div><div style="font-size:1.2rem;font-weight:700">FREE STANDING FRAME <span class="instances">(1 in this project)</span></div><div class="step-title">shown: <code>FREE STANDING FRAME:1</code> · under <code>root</code> · definition from the exporter's document</div></div></header>
 <figure><div class="overview-wrap">
 <img src="images/group-free-standing-frame-1-887affd3.png" alt="Subassembly 6: FREE STANDING FRAME:1">
 <svg class="callouts web-only" viewBox="0 0 1600 1200" aria-label="Clickable part callouts (web only)">
@@ -506,7 +521,8 @@ table.appendix code { font-size: .75rem; }
 <a href="#part-data-projects-projects-by-lab-jayaraman-lab-flow-72f0778a"><title>FREE STANDING FRAME:1/CASTER ASSEMBLY:4/HOLKIE LEVELING CASTER:1: part 27</title><rect x="801" y="1061" width="42" height="43"/><circle cx="827" cy="1087" r="26"/><text x="827" y="1087" style="font-size:31px">27</text></a>
 </svg>
 </div><figcaption>inspection view: occurrences at their CAD poses; not an assembly step; no sequence, fasteners or tool access implied.</figcaption></figure>
-<table class="group-parts"><tbody>
+<table class="group-parts">
+<tbody>
 <tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]" data-qty="11"><td><span class="label">24</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-11d4d431.png" alt="SLLB Enclosure 44in 47065T808 T-Slotted Framing"></td><td>SLLB Enclosure 44in 47065T808 T-Slotted Framing</td><td class="qty">×11</td></tr>
 <tr data-gpart="DATA\COMMON\McMaster\MCMASTER 47065T245.ipt|[Primary]" data-qty="8"><td><span class="label">25</span></td><td><img src="images/part-data-common-mcmaster-mcmaster-47065t245-ipt-prim-89f50e74.png" alt="MCMASTER 47065T245"></td><td>MCMASTER 47065T245</td><td class="qty">×8</td></tr>
 <tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt|[Primary]" data-qty="4"><td><span class="label">26</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-f6258a3b.png" alt="SLLB Enclosure 96in 47065T808 T-Slotted Framing"></td><td>SLLB Enclosure 96in 47065T808 T-Slotted Framing</td><td class="qty">×4</td></tr>
@@ -517,7 +533,7 @@ table.appendix code { font-size: .75rem; }
 <tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\PANEL LOWER SUPPORT LEFT.ipt|[Primary]" data-qty="4"><td><span class="label">31</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-08daa5a1.png" alt="PANEL LOWER SUPPORT LEFT"></td><td>PANEL LOWER SUPPORT LEFT</td><td class="qty">×4</td></tr>
 <tr data-gpart="DATA\PROJECTS\_PROJECTS BY LAB\SCHULZE (LAB)\ENCLOSURE\PANEL LOWER SUPPORT RIGHT.ipt|[Primary]" data-qty="4"><td><span class="label">32</span></td><td><img src="images/part-data-projects-projects-by-lab-schulze-lab-enclos-20c0f88f.png" alt="PANEL LOWER SUPPORT RIGHT"></td><td>PANEL LOWER SUPPORT RIGHT</td><td class="qty">×4</td></tr>
 </tbody></table>
-<p class="note hint">49 occurrence(s) in this subassembly; ids in manual.json.</p>
+<p class="note hint">49 occurrence(s) in the shown instance; ids in manual.json.</p>
 <div class="hardware"><h4>Hardware to review at this joint (not an approved BOM)</h4><ul>
 <li data-sgroup="FREE STANDING FRAME:1" data-sitem="SUP-001"><a href="#sup-sup-001"><span class="label sup">S1</span></a> Caster-to-mounting-plate fastening · candidate, requires review · required unknown (family, not specified); basis: 4 caster assemblies; attachment points per caster unverified · joint <code>caster_to_plate</code></li>
 <li data-sgroup="FREE STANDING FRAME:1" data-sitem="SUP-002"><a href="#sup-sup-002"><span class="label sup">S2</span></a> Caster-plate-to-frame fastening · candidate, requires review · required unknown (family, not specified); basis: 4 plates; frame attachments per plate unverified · joint <code>caster_plate_to_frame</code></li>
@@ -884,7 +900,7 @@ table.appendix code { font-size: .75rem; }
 <h2 id="steps">Steps</h2><p class="hint">No assembly sequence has been authored for this scene.</p>
 <h2 id="record">Build record</h2>
 <dl class="receipt">
-<dt>generated</dt><dd>2026-10-22T18:37:42Z</dd>
+<dt>generated</dt><dd>2026-10-23T14:47:47Z</dd>
 <dt>scene</dt><dd>free-standing-enclosure-991056: Free Standing Enclosure (Vault file-version 991056) native snapshot (37 parts, 155 occurrences, 17 assemblies)</dd>
 <dt>source kind</dt><dd>autodesk-inventor-vault-snapshot</dd>
 <dt>source root_version_id</dt><dd>991056</dd>

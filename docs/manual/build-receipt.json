@@ -1,6 +1,6 @@
 {
   "kind": "mechanical-docs-build-receipt",
-  "generated_at_utc": "2026-10-22T18:37:43Z",
+  "generated_at_utc": "2026-10-23T14:47:48Z",
   "python": "3.12.12",
   "platform": "Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41",
   "project_dir": "/home/peter/Repositories/orb-weaver/mechanical-docs/build/enclosure-snapshot-991056/project",
@@ -87,18 +87,18 @@
   "outputs": {
     "manual.json": {
       "path": "manual.json",
-      "bytes": 358491,
-      "sha256": "b7952dc0dee01ed39a22eb7693e120528bb52650009706e0d4e1fd792d25d31f"
+      "bytes": 376791,
+      "sha256": "d8d33369e91eb576202e4002cf28858a7c0815e5661b52bdb4b5a3b47fb58f5c"
     },
     "index.html": {
       "path": "index.html",
-      "bytes": 164681,
-      "sha256": "0cd438f2796e7c8dccf47bfbae03ebcd46f17ef4e26eeb2fe90eb348d8aff2b3"
+      "bytes": 167881,
+      "sha256": "c95d24510332194462c58d0f79850a09bc4c87b07ec8e0417a57279146cf641b"
     },
     "manual.typ": {
       "path": "manual.typ",
-      "bytes": 90435,
-      "sha256": "b699a60b24afbc07c0294e48b57442bd28a480b0b1aa7a6822fcb2e3b03e8a37"
+      "bytes": 97150,
+      "sha256": "65a9e207aa7029b06db023b04226072624fbc4a9163673d342ec898e845efdfb"
     },
     "images": {
       "group-camera-frame-1-05712af3.png": {
@@ -440,14 +440,14 @@
   },
   "pdf": {
     "ran": true,
-    "command": "/gnu/store/2h1f6iz6yhmaiy7xsqikp5rrw7znpkr2-profile/bin/typst compile --root build/enclosure-snapshot-991056/manual6 build/enclosure-snapshot-991056/manual6/manual.typ build/enclosure-snapshot-991056/manual6/free-standing-enclosure-991056-inventory.pdf",
+    "command": "/gnu/store/2h1f6iz6yhmaiy7xsqikp5rrw7znpkr2-profile/bin/typst compile --root build/enclosure-snapshot-991056/manual7 build/enclosure-snapshot-991056/manual7/manual.typ build/enclosure-snapshot-991056/manual7/free-standing-enclosure-991056-inventory.pdf",
     "returncode": 0,
     "stderr": "",
     "typst_version": "typst 0.15.0 (unknown commit)",
     "pdf": {
       "path": "free-standing-enclosure-991056-inventory.pdf",
-      "bytes": 23460790,
-      "sha256": "1c033c86e388aa579c087d5db4e11bba0082258869ea3d556ef93c78061bc3e6"
+      "bytes": 23470340,
+      "sha256": "d9aae57414ca3a3c00914e3ae6f8e39f405c684b71c1c10d22c3bbf2d91d0b2d"
     }
   },
   "review_state": "draft",

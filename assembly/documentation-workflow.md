@@ -102,3 +102,13 @@ after reporting a Python exception. The survey composes placements, compares
 native/world transforms, measures 479 solids and flags coincident instances of
 the same part. It does not establish mounting clearance, structural capacity or
 assembly order. Compact results are in `validation/2026-10-22-reference-survey.md`.
+
+## Materials
+
+`assembly/materials.json` is the curated materials file beside the STEP references
+(`make materials-manifest` creates or refreshes it from the scene; `--check` validates it).
+The CAD material is kept as `cad_claim` and never trusted silently; `material`, `finish` and
+`mass_basis` stay null until a person sets `status` to `confirmed` or `corrected` with
+`evidence`, `decided_by` and `decided_date`. Renders and glTF use `render.appearance` when set,
+otherwise the CAD colour, otherwise a neutral material. Rules and the exporter's side of the
+contract: vault-cad-tools `docs/authoring-and-materials.md`.

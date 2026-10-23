@@ -93,6 +93,8 @@ class Site:
             if identical is None and self.scene:
                 sigs = {self.signature(i) for i in instance_ids}
                 identical = len(sigs) == 1 and None not in sigs
+            if len(instance_ids) == 1:
+                identical = True   # a single instance has nothing to differ from
             units.append({
                 "number": g["index"], "definition": definition, "slug": slug(definition), "group": g,
                 "shown": g["id"], "instance_ids": instance_ids, "count": len(instance_ids),
