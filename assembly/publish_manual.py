@@ -1,10 +1,10 @@
 """Copy a built mechanical-docs manual into the tracked documentation/ directory.
 
-Usage: python3 assembly/publish_manual.py --manual DIR [--appendix-pdf FILE] --name enclosure
+Usage: python3 assembly/publish_manual.py --manual DIR [--appendix-pdf FILE] [--name manual]
        [--evidence-run NAME]
 
 Copies index.html, images/, hotspots/, manual.json, manual.typ, the PDF, build-receipt.json
-and check-report.json (not the check rasters) into documentation/<name>/, verifies every
+and check-report.json (not the check rasters) into docs/<name>/ (the MkDocs site, published on GitHub Pages), verifies every
 copied file by hash, refuses a check report that did not pass, and writes SOURCE.json with
 the build receipt's input hashes, PDF hashes, page counts and the evidence run. The
 previous package is replaced atomically. The repository then carries the manual that
@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DOCS = ROOT / "documentation"
+DOCS = ROOT / "docs"
 
 
 def sha(p):
@@ -40,7 +40,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--manual", required=True, type=Path, help="built compact manual directory")
     ap.add_argument("--appendix-pdf", type=Path, help="PDF of the appendix build (optional)")
-    ap.add_argument("--name", required=True)
+    ap.add_argument("--name", default="manual")
     ap.add_argument("--evidence-run", default=None)
     a = ap.parse_args()
     src = a.manual.resolve()

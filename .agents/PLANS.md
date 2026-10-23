@@ -62,6 +62,12 @@ Tools remain clean at `0705b40`. The previous "dirty on 683c0ba" notes are histo
   `draft_instructions.py` -> `instructions.json` (draft modular order, validated by the loader).
   Documentation asked for build-scope support and step renders; Peter corrects the order from
   the physical build. Windows told to stop monitor placement beyond work in progress.
+- [x] Peter (2026-10-22): HTML documentation becomes a GitHub Pages site like mouse-joystick-pcb.
+  Added `mkdocs.yml`, `docs/index.md`, `docs/manual.md`, the outward-link hook and stylesheet from
+  that project, `.github/workflows/pages.yml`, `.guix/manifest-site.scm`, `Makefile` (`site`,
+  `site-serve`); built manuals are published into `docs/manual/` by `assembly/publish_manual.py`.
+  `mkdocs build --strict` passes locally (mkdocs 1.6.1). Peter: enable Pages (source: GitHub
+  Actions) in the repository settings; the workflow deploys on every push to main.
 - [ ] Windows: placement pilot of two monitor envelopes on the lower platform in a disposable
   copy, exported for Linux review; then an adapter design document before any native
   check-in. The real monitor support, acrylic and bowl design remain undesigned.

@@ -53,18 +53,19 @@ inventory PDF and all 38 renders were independently checked against their receip
 
 ## Publish the built manual into the repository
 
-Peter wants the generated documentation stored in this project repository. After a
-build whose `check` passed, copy it into the tracked `documentation/` directory:
+Peter wants the generated documentation stored in this project repository and served
+as a GitHub Pages site like his other projects. After a build whose `check` passed, copy
+it into the tracked `docs/manual/` directory of the MkDocs site:
 
 ```sh
 python3 assembly/publish_manual.py --manual "$cad_project/.cache/manual/manual" \
-  --appendix-pdf "$cad_project/.cache/manual/manual-appendix/<id>.pdf" --name enclosure
+  --appendix-pdf "$cad_project/.cache/manual/manual-appendix/<id>.pdf"
 ```
 
 The script verifies every copied file by hash, refuses a failed check report, keeps the
 HTML, images, hotspots, PDFs, receipts and `manual.json` (not the check rasters) and
-writes `documentation/enclosure/SOURCE.json`. Commit the package together with the
-sources it was built from. A package from a documentation-agent evidence run is
+writes `docs/manual/SOURCE.json`. Commit the package together with the sources it was
+built from; `make site` builds the site locally and the Pages workflow deploys it on push. A package from a documentation-agent evidence run is
 published the same way with `--evidence-run <name>`.
 
 ## Source-byte preservation

@@ -1,5 +1,7 @@
 # Free-standing tank enclosure
 
+The documentation site, with the pictorial manual and the build documents: [https://peterpolidoro.github.io/free-standing-tank-enclosure/](https://peterpolidoro.github.io/free-standing-tank-enclosure/) (built from `docs/` by `.github/workflows/pages.yml`; `make site` builds it locally).
+
 STEP exchange pilot for the existing Vault assembly:
 
 `$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/Free Standing Enclosure.iam`

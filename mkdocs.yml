@@ -1,0 +1,65 @@
+# The project's documentation site. `make site` builds docs/ into site/ with the Guix
+# mkdocs-material and `make site-serve` serves it locally; .github/workflows/pages.yml
+# builds the same from the committed pages and deploys it on GitHub Pages (set Pages to
+# "GitHub Actions" in the repository settings). The manual under docs/manual/ is a
+# generated package committed by assembly/publish_manual.py, so the build is mkdocs alone.
+site_name: free-standing-tank-enclosure
+site_description: Modified free-standing tank enclosure for the Schulze lab at Janelia, documented from its Vault CAD snapshot.
+site_url: https://peterpolidoro.github.io/free-standing-tank-enclosure/
+repo_url: https://github.com/peterpolidoro/free-standing-tank-enclosure
+repo_name: peterpolidoro/free-standing-tank-enclosure
+edit_uri: ""
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Dark
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Light
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - tables
+  - admonition
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/site.css
+
+# Links from the pages to files outside docs/ (assembly files, procurement sheets, the
+# CAD snapshot) go to the repository on the forge instead of failing the build.
+hooks:
+  - docs/hooks/outward_links.py
+extra:
+  outward_links:
+    branch: main
+
+plugins:
+  - search
+
+# The hook is not a page.
+exclude_docs: |
+  hooks/
+
+nav:
+  - Overview: index.md
+  - Pictorial manual: manual.md
