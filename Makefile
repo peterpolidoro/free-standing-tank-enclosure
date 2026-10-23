@@ -3,13 +3,17 @@
 GUIX_SHELL_SITE = guix shell --pure -m .guix/manifest-site.scm
 SITE_DIR = site
 
-.PHONY: site site-serve phase-parts-list draft-instructions
+.PHONY: site site-serve site-pages phase-parts-list draft-instructions
 
 site:
 	$(GUIX_SHELL_SITE) -- mkdocs build --strict --site-dir "$(SITE_DIR)"
 
 site-serve:
 	$(GUIX_SHELL_SITE) -- mkdocs serve
+
+# Regenerate the site pages from the published manual package (publish_manual.py does this too).
+site-pages:
+	python3 assembly/site_pages.py
 
 # Project data derived from the accepted CAD snapshot and assembly/build-scope.json.
 phase-parts-list:

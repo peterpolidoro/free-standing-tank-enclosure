@@ -2,7 +2,9 @@
 # mkdocs-material and `make site-serve` serves it locally; .github/workflows/pages.yml
 # builds the same from the committed pages and deploys it on GitHub Pages (set Pages to
 # "GitHub Actions" in the repository settings). The manual under docs/manual/ is a
-# generated package committed by assembly/publish_manual.py, so the build is mkdocs alone.
+# generated package committed by assembly/publish_manual.py, which also regenerates the
+# pages (index, subassemblies, parts, joints, supplement, record) with
+# assembly/site_pages.py, so the build is mkdocs alone.
 site_name: free-standing-tank-enclosure
 site_description: Modified free-standing tank enclosure for the Schulze lab at Janelia, documented from its Vault CAD snapshot.
 site_url: https://peterpolidoro.github.io/free-standing-tank-enclosure/
@@ -61,5 +63,16 @@ exclude_docs: |
   hooks/
 
 nav:
-  - Overview: index.md
-  - Pictorial manual: manual.md
+  - The enclosure: index.md
+  - Subassemblies:
+      - 1 Caster assembly: subassemblies/caster-assembly.md
+      - 2 Panel assembly: subassemblies/panel-assembly.md
+      - 3 Toggle clamp assembly: subassemblies/toggle-clamp-assembly.md
+      - 4 Tank support frame: subassemblies/tank-support-frame.md
+      - 5 Camera frame: subassemblies/camera-frame.md
+      - 6 Free standing frame: subassemblies/free-standing-frame.md
+      - 7 Root-level parts: subassemblies/root-level-parts.md
+  - Parts: parts.md
+  - Joint close-ups: joints.md
+  - Supplementary items: supplement.md
+  - Build record: record.md

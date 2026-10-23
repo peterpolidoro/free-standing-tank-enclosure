@@ -1,3 +1,19 @@
 /* The renders have transparent backgrounds; give them a white card in both themes. */
 .md-content img, .md-content object { background: #fff; border-radius: 6px; padding: 6px; box-sizing: border-box; }
 .md-content model-viewer { background: #fff; }
+
+/* Front page and subassembly figures: a render with an SVG callout overlay (web only). */
+figure.ov { margin: 0 0 1em; }
+figure.ov img { width: 100%; height: auto; display: block; background: #fff; border-radius: 8px; }
+.ov-wrap { position: relative; }
+.ov-wrap svg.callouts { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.callouts a rect { fill: transparent; stroke: transparent; stroke-width: 3; }
+.callouts a:hover rect, .callouts a:focus rect { stroke: #d9480f; fill: rgba(217,72,15,.08); }
+.callouts text { font: 700 34px sans-serif; fill: #fff; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.callouts circle { fill: #d9480f; stroke: #fff; stroke-width: 3; }
+/* The turning model (model-viewer) shows only with WebGL; the overlay figure otherwise; plain picture in print. */
+.asm-3d { display: none; } html.webgl .asm-3d { display: block; } html.webgl .asm-2d { display: none; } .asm-plain { display: none; }
+@media print { .asm-3d { display: none !important; } .asm-2d { display: block !important; } }
+.hotspot { display: block; width: 24px; height: 24px; border-radius: 12px; border: 2px solid #fff; background: #d9480f; color: #fff; font: bold 12px/20px sans-serif; text-align: center; text-decoration: none; box-shadow: 0 1px 3px rgba(0,0,0,.4); }
+.hotspot::before { content: attr(data-n); } .hotspot:hover { background: #a63a0b; }
+.asm-hint { font-size: .8em; opacity: .75; margin: .4em 0 0; }

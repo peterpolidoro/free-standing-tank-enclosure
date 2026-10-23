@@ -64,7 +64,11 @@ python3 assembly/publish_manual.py --manual "$cad_project/.cache/manual/manual" 
 
 The script verifies every copied file by hash, refuses a failed check report, keeps the
 HTML, images, hotspots, PDFs, receipts and `manual.json` (not the check rasters) and
-writes `docs/manual/SOURCE.json`. Commit the package together with the sources it was
+writes `docs/manual/SOURCE.json`, then regenerates the site pages with `assembly/site_pages.py`
+(front page with numbered subassembly callouts, one page per subassembly definition with the
+instance count from the committed scene, parts, joints, supplementary items, build record; the
+model-viewer block appears when the build ships `viewer/assembled.glb`, `viewer/exploded.glb`
+and `viewer/hotspots.json`). Commit the package and the pages together with the sources they were
 built from; `make site` builds the site locally and the Pages workflow deploys it on push. A package from a documentation-agent evidence run is
 published the same way with `--evidence-run <name>`.
 

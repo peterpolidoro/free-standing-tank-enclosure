@@ -1,0 +1,42 @@
+# Free Standing Tank Enclosure
+
+{{MARK}}
+
+Documentation for the modified free-standing enclosure designed by Sam Jager for the
+Schulze lab at Janelia: a T-slot aluminium frame on casters with removable panels, a
+camera frame with a spring-loaded roller mechanism, and, in the original design, tank
+support frames with a light box. The modified build replaces the tanks and light box
+with two monitors under acrylic and vacuum-formed bowls; that redesign comes after the
+enclosure itself is assembled.
+
+{{STATUS}}
+
+The finished assembly with its subassemblies numbered. On the site the picture is a model
+that turns when the viewer data has been built, or the overview render; each number is a
+link to the subassembly's page with its parts, the hardware still to review and its joint
+close-ups.
+
+{{VIEW}}
+
+{{KEY}}
+
+## Read
+
+- [Parts](parts.md): every modelled part with its picture, size, CAD quantity and where it is used.
+- [Joint close-ups](joints.md) and the [supplementary items](supplement.md) not modelled in CAD.
+- The whole manual on one page: [manual/index.html](manual/index.html), with paper count boxes; for print {{PDFS}}.
+- [Phase 1 verification list](../assembly/procurement/phase-1-parts.csv): what to count
+  before ordering, with the enclosure built first without tanks and backlight
+  ([build scope](../assembly/build-scope.json)).
+- [Stock and completeness audit](../assembly/procurement/README.md): modeled parts,
+  candidate missing hardware, what the native Inventor BOM audit found.
+- [Draft assembly order](../assembly/instructions.json): a modular proposal; the real
+  order is recorded from the physical build.
+- [Build record](record.md) and [how the documentation is built](../assembly/documentation-workflow.md)
+  from the accepted CAD snapshot with the `mechanical-docs` pipeline.
+
+## Source
+
+- CAD: Vault root `Free Standing Enclosure.iam`, file-version 991056, exported as 37 STEP
+  parts with 155 placements into [references/enclosure](../references/enclosure/README.md).
+- Repository: [peterpolidoro/free-standing-tank-enclosure](https://github.com/peterpolidoro/free-standing-tank-enclosure).

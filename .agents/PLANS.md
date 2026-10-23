@@ -275,3 +275,6 @@ in the Linux checkouts; shared Git clones are unchanged.
   check-in adapter. Service mode and production assembly edits remain unqualified.
 - New code, accepted part snapshot and reports are uncommitted in local CAD repos;
   shared clones and mechanical-docs were not edited by this CAD review.
+
+- [ ] 2026-10-23 (Linux): Peter's manual review assigned to documentation (message 20261023T140613Z): A1 clipped "counted" label, A2 subassembly instance counts (4 caster, 4 panel, 4 toggle clamp, 2 tank support frame), B overview first plus exploded subassembly view with page references, C viewer GLBs, hotspots and per-subassembly pages for the site. Linux then: publish script copies site pages and viewer, mkdocs nav, strict build.
+- [x] 2026-10-23 (Linux): site generator `assembly/site_pages.py` (+ `assembly/site/index.md.in`, styles, nav, Makefile `site-pages`); strict build passes; `docs/manual.md` removed in favour of the generated pages. Waiting on documentation for A (counted label, instance counts in the PDF), B (exploded view) and C (viewer GLBs + hotspots.json) to light up the viewer.

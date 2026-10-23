@@ -7,7 +7,8 @@ Copies index.html, images/, hotspots/, manual.json, manual.typ, the PDF, build-r
 and check-report.json (not the check rasters) into docs/<name>/ (the MkDocs site, published on GitHub Pages), verifies every
 copied file by hash, refuses a check report that did not pass, and writes SOURCE.json with
 the build receipt's input hashes, PDF hashes, page counts and the evidence run. The
-previous package is replaced atomically. The repository then carries the manual that
+previous package is replaced atomically, then the site pages are regenerated from the new
+package with site_pages.py (viewer/ and exploded view are copied when the build has them). The repository then carries the manual that
 matches its committed sources; Peter commits.
 """
 from __future__ import annotations
@@ -21,8 +22,11 @@ import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
+import sys
+
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 
 def sha(p):
@@ -59,7 +63,7 @@ def main():
         pkg.mkdir()
         for name in ("index.html", "manual.json", "manual.typ", "build-receipt.json", "check-report.json"):
             shutil.copyfile(src / name, pkg / name)
-        for sub in ("images", "hotspots"):
+        for sub in ("images", "hotspots", "viewer"):
             if (src / sub).is_dir():
                 copy_tree(src / sub, pkg / sub)
         shutil.copyfile(pdfs[0], pkg / pdfs[0].name)
@@ -85,6 +89,8 @@ def main():
     finally:
         shutil.rmtree(staging, ignore_errors=True)
     print(dest)
+    import site_pages
+    site_pages.main(["--manual", str(dest)])
     print(json.dumps({"pdf_sha256": files, "pages": check.get("pdf_pages"), "images": source["image_count"]}))
 
 
