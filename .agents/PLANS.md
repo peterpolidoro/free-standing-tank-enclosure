@@ -24,7 +24,10 @@ their evidence runs, are in .agents/HISTORY.md.
   manual and taking notes on the documentation.
 - **Vault.** One file written: the monitor envelope
   `step/AW2725Q-nominal-envelope.step`, Vault version 994252 (2026-10-22),
-  recorded in `vault-lock.json`. Nothing else.
+  recorded in `vault-lock.json`. Nothing else. A read-only check on 2026-11-10
+  found that none of the snapshot's 44 files has changed in Vault since
+  2026-10-21: every one is still at the version that was exported, revision 0,
+  Work in Progress, not checked out.
 - **Procurement.** `assembly/procurement/` has a 37-row stock sheet and 20
   supplementary rows (16 for the existing design, 4 for new design). No stock is
   counted and no quantity is approved. The native BOM audit is folded in: of
@@ -101,6 +104,14 @@ For Peter to settle:
   account and host names inside the exported records and the published
   `docs/manual/manual.json`. See `mechanical-cad/docs/direction.md`, "Not
   settled".
+- Which Vault files this project mirrors. The snapshot follows one root
+  assembly. The project's Vault folder holds 32 files, six of which are not in
+  the snapshot: a second root assembly `SLLB Enclosure.iam` (19 of its 20
+  dependencies are in the snapshot already), the 56-inch extrusion only it
+  uses, three parts nothing in the folder uses (`SLLB Enclosure 102in ...`,
+  `T BRACKET 47065T278`, `EXTRUSTION 15 SERIES TABLE CLAMP`), and the
+  published monitor envelope. The snapshot in turn holds 18 files from outside
+  the folder (McMaster parts and parts of two other projects).
 - The intended tank configuration. The CAD count is three, and two of the
   three (the tank at the root and the one inside `TANK SUPPORT FRAME:1`) sit at
   the same position.
@@ -123,7 +134,10 @@ Not started:
 - No record says anyone has looked at the site's 3D viewer in a browser since
   it was published.
 - Low priority, by Peter on 2026-10-22: the hidden bodies in
-  `MCMASTER 47065T245`, and drawings outside the 44 files.
+  `MCMASTER 47065T245`, and drawings outside the 44 files. Measured on
+  2026-11-10: each of that part's three hidden bodies is a 940.2 mm³ solid;
+  the AP214 export leaves them out, an AP242 export carries them, and
+  Inventor's own volume for the part counts them.
 
 ## Decisions
 
