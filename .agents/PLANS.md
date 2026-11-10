@@ -7,6 +7,50 @@ STEP-based access through Git and open-source tools, and a primarily visual
 inventory and assembly manual. The acceptable production authoring workflow
 still needs to be reconciled with the manager's Inventor requirement.
 
+## Licence and hosting (2026-11-10)
+
+Decisions Peter made on 2026-11-10; edits are uncommitted and nothing was built.
+
+- [x] Licence: 3-clause BSD, copyright Howard Hughes Medical Institute. `LICENSE`
+  added (the same text as in `vault-cad-tools`, `mechanical-docs` and the new
+  `mechanical-cad`); README has a Licence section.
+- [ ] Peter to confirm the README's scope statement before it is pushed: it says
+  supplier-originated component models (for example the McMaster-Carr parts under
+  `references/enclosure/assets/`) are not covered by the licence and remain subject
+  to their suppliers' terms. The wording is the agent's draft. Whether those
+  models may be redistributed publicly at all was not assessed.
+- Tools and hosting: the code-authoring and geometry-checking tools go to the new
+  `mechanical-cad` repository on GitHub, which doubles as a Guix channel; the
+  Codeberg repositories will move to GitHub. This repository already lives there.
+- Proposed to Peter, not approved: move the generated manual packages out of
+  tracked `docs/` (141 MB there; `.git` is 229 MB).
+
+## Layout change and the physical build (2026-11-10)
+
+Peter's plan, stated on 2026-11-10. Nothing below has started.
+
+- This project is the test case for a new structure of STEP files and metadata.
+  Peter wants the structure settled, then the enclosure re-imported from Vault
+  into it; he is willing to move the current files to a branch. The proposal is
+  in `mechanical-cad/docs/layout-proposal.md` (one directory per Vault file, for
+  the 37 parts and the 7 assemblies; a manifest per assembly; the flattened
+  `scene.json` derived under `build/`; `step/` retired; curated files under
+  `assembly/` re-keyed). It is not accepted, and an earlier suggestion of the
+  same day to keep the current layout is withdrawn.
+- [ ] Do the conversion on a branch and leave `main` alone until the acceptance
+  test in that document passes: `main` feeds the published manual through the
+  Pages workflow on every push.
+- Meanwhile Peter assembles the enclosure from the published phase-1 manual and
+  takes notes on the documentation. Expect his corrected
+  `assembly/instructions.json` and review notes; the re-render and
+  `publish_manual.py` steps recorded on 2026-10-23 still apply.
+- After the build: agents design new parts for the enclosure as code under
+  `designs/`, Peter manufactures and checks them, and `vault-cad-tools` places
+  the verified STEP files in Vault.
+- Work that spans repositories runs from an agent session rooted in
+  `mechanical-cad`, which holds the Linux role of the shared coordination
+  directory.
+
 ## Coordinator resumed (2026-10-22T16:47:10Z)
 
 Peter committed the project preparation work as `6dc874a` and synchronized the

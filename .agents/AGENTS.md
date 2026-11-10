@@ -3,6 +3,12 @@
 This repository owns CAD data and project configuration. Reusable tools belong
 in `vault-cad-tools`. Read README.md, vault-project.toml, and .agents/PLANS.md.
 
+The direction of the wider work and the layout this repository is to follow
+(where STEP files and metadata go) are kept in the sibling `mechanical-cad`
+repository: `docs/direction.md` and `docs/layout-proposal.md`. This project is
+the test case for that layout. Work that spans repositories runs from an agent
+session rooted there (Peter, 2026-11-10).
+
 Use the managed Guix environment on Linux. Use a separate checkout on each host;
 on Windows run the tools through their locked Pixi environment.
 never concurrently modify a working tree through the network share. Changes

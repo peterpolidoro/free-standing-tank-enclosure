@@ -117,3 +117,14 @@ successful publication. Never replace the Inventor source with a STEP file.
 4. Create and commit a simple new STEP part; add it to an agreed Vault folder.
 5. Open/reference the part in Inventor and verify an acceptable assembly workflow.
 6. Repeat a source refresh and test conflict handling before bulk import.
+
+## Licence
+
+Material authored for this project (scripts, manifests, documentation and the
+designs made for it) is released under the 3-clause BSD licence, copyright
+Howard Hughes Medical Institute; see [LICENSE](LICENSE).
+
+Component models that originate from suppliers (for example the McMaster-Carr
+parts under `references/enclosure/assets/`) are not covered by that licence.
+They are kept as geometry references and remain subject to their suppliers'
+terms.
