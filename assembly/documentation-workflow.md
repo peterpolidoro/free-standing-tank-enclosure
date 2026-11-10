@@ -16,16 +16,18 @@ directory rather than regenerating over them.
 
 The separate [procurement sheets](procurement/README.md) record intended build
 quantities, stock and missing-hardware candidates. They are not silently merged
-into the CAD-count inventory. The documentation agent is reviewing support for
-supplementary non-geometric inventory.
+into the CAD-count inventory: `procurement_manifests.py` converts them at
+staging time into the pipeline's `supplement.json` (items not modelled in CAD)
+and the inventory's stock record, which are printed separately from the CAD
+counts.
 
 ## Managed commands
 
-Run the following from the project checkout. `mechanical-docs` commit `27f9581`
-is the reviewed baseline; use a clean, reviewed checkout for repeatable output.
-The preparation receipt records the actual commit, dirty flag and input hashes.
-Rendering config keeps Cycles/OIDN and limits expensive outlines to 400,000
-triangles; this retains small-part outlines without outlining the entire enclosure.
+Run the following from the project checkout, with a clean `mechanical-docs`
+checkout for repeatable output. The preparation receipt records that
+checkout's commit, its dirty flag and the input hashes. `assembly/render.json`
+keeps Cycles with the denoiser and sets the outline budget, so small-part
+views get outlines without outlining the entire enclosure.
 
 ```sh
 cad_project="$PWD"
@@ -43,13 +45,10 @@ guix shell --pure -m .guix/manifest-publish.scm -- python3 -B -m mechanical_docs
 See mechanical-docs' `docs/environment.md` for Pixi initialization and host glibc
 detection when launching Pixi from inside Guix. Keep its lockfile. For a different
 workspace, pass `--output .cache/another-manual/project` to preparation and use that
-path consistently. Reuse already verified renders when inputs/settings have not
-changed; the first production inventory already exists in shared evidence.
-
-This session verified preparation, exact-copy receipts, the clean baseline loader,
-existing-output refusal and malformed/tampered input rejection. It did not rebuild
-all production images/PDFs with this new config. The earlier 12-page production
-inventory PDF and all 38 renders were independently checked against their receipts.
+path consistently. Reuse already verified renders when inputs and settings have
+not changed (`--reuse` in the render stage): after a corrected
+`assembly/instructions.json` only the overview and the steps whose state
+changed are rendered again.
 
 ## Publish the built manual into the repository
 
@@ -64,13 +63,17 @@ python3 assembly/publish_manual.py --manual "$cad_project/.cache/manual/manual" 
 
 The script verifies every copied file by hash, refuses a failed check report, keeps the
 HTML, images, hotspots, PDFs, receipts and `manual.json` (not the check rasters) and
-writes `docs/manual/SOURCE.json`, then regenerates the site pages with `assembly/site_pages.py` (front page, subassembly pages, parts with the this-build column, joints, supplement, draft steps, record)
-(front page with numbered subassembly callouts, one page per subassembly definition with the
-instance count from the committed scene, parts, joints, supplementary items, build record; the
-model-viewer block appears when the build ships `viewer/assembled.glb`, `viewer/exploded.glb`
-and `viewer/hotspots.json`). Commit the package and the pages together with the sources they were
-built from; `make site` builds the site locally and the Pages workflow deploys it on push. A package from a documentation-agent evidence run is
-published the same way with `--evidence-run <name>`.
+writes `docs/manual/SOURCE.json`, then regenerates the site pages with
+`assembly/site_pages.py`: the front page with numbered subassembly callouts, one
+page per subassembly definition with the instance count from the committed
+scene, the parts with their this-build column, the joints, the supplementary
+items, the draft steps and the build record. The model-viewer block appears
+when the build ships `viewer/assembled.glb`, `viewer/exploded.glb` and
+`viewer/hotspots.json`. Commit the package and the pages together with the
+sources they were built from; `make site` builds the site locally and the Pages
+workflow deploys it when a push to `main` changes the site. A package from a
+documentation evidence run is published the same way with
+`--evidence-run <name>`.
 
 ## Source-byte preservation
 

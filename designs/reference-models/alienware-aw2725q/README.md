@@ -25,8 +25,10 @@ display construction plane. The `Dimensions` object holds the nominal sizes.
 `AW2725Q-nominal-envelope.step` contains only the single closed envelope solid;
 the display plane is excluded. `parameters.json` defines the inputs, assumptions
 and provenance. `validation.json` records the actual FreeCAD save/reopen,
-parameter-change and STEP reimport checks, with hashes. Inventor validation is
-pending. Do not put this reference in `step/` as a production publication payload.
+parameter-change and STEP reimport checks, with hashes; `native-validation.json`
+records the Inventor side. The envelope was copied to `step/` and added to
+Vault on 2026-10-22 as the first publication pilot. It is a pilot payload and a
+layout reference, not a production part.
 
 From the project repository root, regenerate with the managed environment:
 
@@ -53,10 +55,11 @@ bowl footprint must lie over the active display. No bowl or retaining frame has
 been designed or approved yet.
 
 The project brief requires design work in Inventor and final records in Vault.
-This FreeCAD reference supports open-source inspection. The Windows agent is
-asked to create a matching native Inventor reference with named dimensions and
-verify import/placement. Production design authoring and native Vault check-in
-remain separate qualification work.
+This FreeCAD reference supports open-source inspection. On Windows a matching
+native Inventor reference with named dimensions was created and edited as a
+fixture, and two envelopes were placed in a disposable copy of the assembly.
+How production parts are authored, and whether natives are checked in, is not
+settled; see the project README.
 
 ## Native Inventor proof (2026-10-21, pilot 02)
 

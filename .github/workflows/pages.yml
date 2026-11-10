@@ -4,10 +4,16 @@
 # a broken link fails it, as `make site` does locally.
 # Pages must be set to "GitHub Actions" as its source in the repository
 # settings for the deploy step to work.
+# A push that does not touch the site's inputs does not rebuild it; run the
+# workflow by hand (workflow_dispatch) to force a build.
 name: pages
 on:
   push:
     branches: [main]
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 permissions:
   contents: read

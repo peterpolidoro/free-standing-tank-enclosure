@@ -2,58 +2,74 @@
 
 The documentation site, with the pictorial manual and the build documents: [https://peterpolidoro.github.io/free-standing-tank-enclosure/](https://peterpolidoro.github.io/free-standing-tank-enclosure/) (built from `docs/` by `.github/workflows/pages.yml`; `make site` builds it locally).
 
-STEP exchange pilot for the existing Vault assembly:
+**Status (2026-11-10).** The enclosure is being assembled from the published
+draft manual, and the notes from that build will correct it. The CAD snapshot
+below is accepted as reference geometry. Nothing in the manual is reviewed or
+physically validated, no purchase list is approved, and the monitor and bowl
+changes are not designed.
+
+## The CAD snapshot
+
+The source is the Vault assembly
 
 `$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/Free Standing Enclosure.iam`
 
-The path was supplied by Peter (without the leading `DATA` folder; the Vault
-server resolved it on 2026-10-21). Resolved identity: file-version 991056,
-master 988153, version 5, revision 0, state Work in Progress, folder 953863,
-model state `[Primary]`; 43 dependency versions in four folders. Windows
-exported the part `ENCLOSURE TOP PANEL.ipt` (version 991092) and the assembly to
-STEP with receipts. The panel is now in `references/ENCLOSURE TOP PANEL.step`:
-FreeCAD 1.1.3 finds one valid solid with matching 47 × 1/8 × 47 inch extents.
-The accepted [enclosure snapshot](references/enclosure/README.md) now contains 37
-distinct STEP parts and all 155 occurrences/placements. FreeCAD reconstruction
-reproduces the acquisition-bound full STEP's 479 solids, volume and bounds. The
-body-count gap was hidden geometry; the large Inventor volume differences were
-default-accuracy measurements. See the [latest review](validation/2026-10-21-pilot-02-review.md).
-The part files total 19.83 MiB, with a largest file of 3.73 MiB; the monolithic
-assembly remains in external evidence. `assembly/build_reference.py` generates
-a hierarchical FreeCAD reference under `.cache/` without adding it to Git.
+resolved on 2026-10-21 as file-version 991056 (master 988153, version 5,
+revision 0, state Work in Progress, model state `[Primary]`), with 43 dependency
+versions in four folders.
 
-## Monitor reference and design requirement
+The accepted [enclosure snapshot](references/enclosure/README.md) holds 37
+distinct STEP parts and all 155 occurrences with their placements. A FreeCAD
+reconstruction reproduces the 479 solids, the volume and the bounds of the full
+assembly export. The gap between native and exported body counts was hidden
+geometry, and the large volume differences were Inventor's default-accuracy
+measurements; see the [review](validation/2026-10-21-pilot-02-review.md). The
+part files total 19.83 MiB, the largest 3.73 MiB. `assembly/build_reference.py`
+generates a hierarchical FreeCAD document from the snapshot under `.cache/`
+without adding it to Git. An earlier single-part export of the top panel is in
+`references/ENCLOSURE TOP PANEL.step`.
 
-The manager's brief requires design work in Inventor and completed records in
-Vault. Native feature creation through the Inventor API is a proposed way to
-minimize GUI work while retaining editable native files. Acceptance of
-FreeCAD-authored production parts imported through STEP is not established.
-
-A [nominal AW2725Q monitor reference](designs/reference-models/alienware-aw2725q/README.md)
-is available as a parametric FCStd and a one-solid STEP envelope, generated from
-the printed dimensions in Peter's supplier drawing. It includes an active-display
-reference in FCStd and records the 100 × 100 mm mounting spacing without guessing
-hole locations or fastening details. It is a stand-free layout reference, not a
-production part or a detailed housing. FreeCAD and Inventor validation passed;
-Windows also demonstrated native named parameters, sketches, extrusion and a
-depth-edit/restore cycle without GUI work. A 3 × 2 array of nominal 160 mm bowls leaves only 12.93 mm total on
-the display's short axis for all gaps and margins, before allowing for larger rims.
+A [dimensional survey](validation/2026-10-22-reference-survey.md) flags two
+coincident tank instances that must not be counted as purchases without review.
 
 ## Visual assembly manual
 
-The project also aims to provide a primarily visual parts inventory and
-step-by-step assembly manual, with a web version and printable PDF generated
-from one instruction source. See [assembly manual requirements](assembly/README.md).
-Part identities, quantities, subassemblies and placements must survive CAD export;
-assembly order and tool access require explicit review and a physical walkthrough.
-The separate `mechanical-docs` repository now loads the accepted snapshot directly
-and has produced a draft enclosure inventory in HTML and a 12-page PDF. The
-unit correction and basis handling are validated. Use the
-[documentation build recipe](assembly/documentation-workflow.md) and
-[stock/completeness sheets](assembly/procurement/README.md). The actual assembly
-procedure and complete procurement BOM still need review. A
-[dimensional survey](validation/2026-10-22-reference-survey.md) flags coincident
-tank instances that must not be blindly counted as purchases.
+A primarily visual parts inventory and step-by-step manual, as a web site and a
+printable PDF generated from one instruction source; see the
+[requirements](assembly/README.md). The `mechanical-docs` pipeline builds it
+from the snapshot and the curated files under `assembly/`
+([build recipe](assembly/documentation-workflow.md)), and the built package is
+committed under `docs/manual/` and served by the site.
+
+The published package is the phase-1 draft of 2026-10-23: the enclosure without
+tanks and backlight, as a front page with the subassemblies drawn apart,
+picture-led parts cards, six subassembly views, 16 joint close-ups and 18 draft
+steps (PDF 59 pages; with the technical appendix 77). The step order is a draft
+to be corrected from the physical build. Quantities are CAD instance counts,
+not stock or an approved bill of materials; the
+[stock and completeness sheets](assembly/procurement/README.md) track what is
+still unknown.
+
+## Monitor reference and the Inventor requirement
+
+A [nominal AW2725Q monitor reference](designs/reference-models/alienware-aw2725q/README.md)
+is available as a parametric FreeCAD document and a one-solid STEP envelope,
+generated by a script from the printed dimensions in Peter's supplier drawing.
+It records the 100 × 100 mm mounting spacing without guessing hole locations or
+fastening details. It is a stand-free layout reference, not a production part.
+It passed validation in FreeCAD and in Inventor, and it is the one file this
+project has published to Vault (2026-10-22, Vault version 994252). A 3 × 2 array
+of nominal 160 mm bowls leaves only 12.93 mm in total on the display's short
+axis for all gaps and margins, before allowing for larger rims.
+
+The manager's brief requires design work in Inventor and completed records in
+Vault. Peter's decisions of 2026-10-23 (`mechanical-cad/docs/direction.md`) are
+that new parts are written as code that produces STEP and reach Inventor users
+as referenced STEP files, with Inventor used for authoring only when a
+collaborator insists. The two have not been reconciled: whether code-authored
+parts referenced from Inventor satisfy the brief is open. Authoring natively
+through the Inventor API was demonstrated on Windows (named parameters,
+sketches, an extrusion, an edit and a restore) and stays available.
 
 ## Ownership and layout
 
@@ -63,7 +79,7 @@ tank instances that must not be blindly counted as purchases.
 - `drawings/`: supporting drawings and specifications.
 - `assembly/`: manual sources/build recipe, geometry survey, and procurement audit sheets.
 - `vault-project.toml`: server identity and project locator; no credentials.
-- `vault-lock.json`: imported provenance and, eventually, verified publications.
+- `vault-lock.json`: imported provenance and verified publications.
 - `validation/`: geometry checks, acceptance decisions, and unresolved comparisons.
 - `.cache/`: ignored Inventor originals, API probes, and temporary conversions.
 
@@ -71,6 +87,11 @@ To modify an imported design, preserve the reference and create a design under
 `designs/`, exporting your deliverable under `step/`. Refreshing references must
 not overwrite those authored files. Vault remains the source for imported
 Inventor models; this repository is the source for Linux-authored designs.
+
+This layout is to change. The proposal in `mechanical-cad/docs/layout-proposal.md`
+(one directory per Vault file, a manifest per assembly, `step/` retired) is not
+accepted yet; the conversion will be done on a branch, and `main` stays as it
+is until then because the site is built from it.
 
 ## Tools
 
@@ -91,8 +112,8 @@ upload is implemented by this project's files.
 The project manifest provides FreeCAD for local authoring. The tools' smaller
 manifest is sufficient for metadata and transfer work. Neither installs Autodesk
 software. FreeCAD imports and assembly reconstruction checks pass. Visual/design
-review, a complete hardware BOM, physical stock count, assembly procedure and the
-reverse publication pilot remain outstanding.
+review, a complete hardware BOM, a physical stock count and a validated assembly
+procedure remain outstanding.
 
 Use ordinary Git initially. `.gitattributes` preserves STEP bytes and disables
 automatic text merging. Large files may justify LFS later, but the initial
@@ -103,20 +124,28 @@ remain in `.cache/`; retain editable `.FCStd` or scripts in Git.
 
 Commit a new `step/*.step` deliverable before preparing its publication request.
 The request names an explicit destination folder and fails if a file already
-exists there. The Windows uploader and update/check-in behavior are not yet
-implemented. A prepared request is not an upload authorization receipt or a
-successful publication. Never replace the Inventor source with a STEP file.
+exists there. Adding a new file is implemented and was done once, on Peter's
+request (see `step/README.md`); updating or checking in an existing file is
+not. A prepared request is not an authorization and not a publication: nothing
+is written to Vault without Peter's explicit request. Never replace the
+Inventor source with a STEP file.
 
 ## Pilot acceptance
 
 1. Resolve the root assembly and dependency versions, including shared library
-   components outside the project folder.
+   components outside the project folder. Done 2026-10-21.
 2. Export one part and the assembly, recording exact source versions, model
-   state, STEP protocol, translator version, and SHA-256.
+   state, STEP protocol, translator version, and SHA-256. Done 2026-10-21.
 3. Import and inspect solids, dimensions, placement, and completeness in FreeCAD.
+   Done 2026-10-21.
 4. Create and commit a simple new STEP part; add it to an agreed Vault folder.
+   Done 2026-10-22.
 5. Open/reference the part in Inventor and verify an acceptable assembly workflow.
-6. Repeat a source refresh and test conflict handling before bulk import.
+   Partly: placing the envelope, and keeping the STEP as a referenced source in
+   a wrapper part, were shown in a disposable copy on Windows. Nothing of that
+   is in Vault, and the workflow has not been agreed with the designers.
+6. Repeat a source refresh and test conflict handling before bulk import. Not
+   done.
 
 ## Licence
 

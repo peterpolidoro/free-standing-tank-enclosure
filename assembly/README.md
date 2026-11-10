@@ -7,11 +7,18 @@ disassembly. Produce a web version and a printable PDF from the same instruction
 source. Minimal prose, part images, numerals, arrows and clear symbols should make
 the instructions useful even when the reader cannot read the accompanying text.
 
-The reusable `mechanical-docs` pipeline now processes the accepted enclosure
-snapshot and has produced a draft pictorial inventory in HTML and a 12-page PDF.
-No production assembly sequence has been authored or physically validated.
+The reusable `mechanical-docs` pipeline builds the manual from the accepted
+enclosure snapshot and the curated files in this directory. The published
+package (2026-10-23) is the phase-1 draft: the enclosure without tanks and
+backlight, with a pictorial inventory, subassembly views, joint close-ups and
+18 draft steps, as a site and a 59-page PDF. The step order is a draft; it has
+not been reviewed or physically validated, and it is being corrected from
+Peter's build.
 Use [the build recipe](documentation-workflow.md) for reproducible staging and
 [the stock/completeness audit](procurement/README.md) for purchasing preparation.
+
+The sections below are the requirements as they were written before the
+pipeline existed. They still say what the manual has to achieve.
 
 ## Inputs to preserve during CAD exchange
 
@@ -90,7 +97,11 @@ that the sequence avoids unnecessary removal/rework before it is called validate
 The native BOM, supplementary hardware audit and physical stock reconciliation
 remain prerequisites for claiming that the manual covers every required component.
 
-## Proposed open-source implementation
+## Open-source implementation
+
+Implemented in `mechanical-docs` along these lines: FreeCAD for STEP and
+meshes, Blender for images, static HTML and a Typst PDF from one document
+model. The original outline:
 
 - FreeCAD/Open CASCADE: read STEP, preserve/resolve component mappings, inspect
   geometry and tessellate to a renderer-friendly mesh format with units and IDs.
@@ -123,7 +134,9 @@ renders instead of duplicating every assembly state as another CAD file. Keep
 large generated output in the shared evidence area or an explicitly published
 release, with source hashes and tool versions. A manual release must identify its
 exact assembly revision and instruction revision; invalidate affected images and
-steps when source parts or placements change. No automatic publication is set up.
+steps when source parts or placements change. A built manual is published by
+committing it under `docs/manual/` (`publish_manual.py`); the site is then
+built from `main` by the Pages workflow when Peter pushes.
 
 The manager's brief requires Inventor design work and final records in Vault.
 Generating documentation from validated STEP with open-source tools complements
