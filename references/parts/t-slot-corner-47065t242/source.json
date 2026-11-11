@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "t-slot-corner-47065t242",
+  "name": "T SLOT CORNER 47065T242",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "988129",
+    "version_id": "988130",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2026-08-24T20:54:44.78Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/T SLOT CORNER 47065T242.ipt",
+    "native_sha256": "bf867acb0a924abf29dcd9e6eb80e43ae2c99b56e204c46ef47ffc658b0fe431"
+  },
+  "step": {
+    "sha256": "8ae9202837fac68fd8c61cd54c0a20edadc58a1fa336c6328288540e359e41a3",
+    "data_sha256": "7cf879d1b8821db330abac2343ead6aea7d3e293a35f1600d0b69ede5f3f3240",
+    "bytes": 1634964,
+    "protocol": "AP214",
+    "length_unit": "in",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
+    "package_path": "assets/T SLOT CORNER 47065T242__[Primary]__6dff85d6.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "in",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #19608",
+      "entity": "( CONVERSION_BASED_UNIT('inch',#19611) LENGTH_UNIT() NAMED_UNIT(#19606) )"
+    }
+  },
+  "properties": {
+    "part_number": "47065T242_T-Slotted Framing",
+    "description": "",
+    "material": "Generic",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - JET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "in",
+    "bodies": {
+      "surface_bodies": 5,
+      "solid_bodies": 5,
+      "visible_solid_bodies": 5
+    },
+    "extent_mm": [25.200000000000003, 47.44966198619288, 47.44966198619288],
+    "volume_mm3": 12809.931064204231,
+    "range_box_cm": {
+      "min": [-1.2600000000000002, -3.4348639197105073, -3.434863919710507],
+      "max": [1.2600000000000002, 1.3101022789087806, 1.310102278908781],
+      "extent": [2.5200000000000005, 4.744966198619288, 4.744966198619288]
+    },
+    "volume_cm3": 12.809931064204232
+  },
+  "materials": null
+}

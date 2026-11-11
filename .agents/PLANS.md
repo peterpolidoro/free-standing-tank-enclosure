@@ -10,11 +10,13 @@ The direction of the wider work is in the sibling `mechanical-cad` repository
 (`docs/direction.md`); this project is its test case. Finished checkpoints, with
 their evidence runs, are in .agents/HISTORY.md.
 
-## Current state (2026-11-10)
+## Current state (2026-11-11)
 
-- **CAD snapshot.** `references/enclosure/` holds the accepted snapshot of Vault
-  file-version 991056: 37 STEP parts, 155 occurrences, 17 groups. FreeCAD
-  reconstructs its 479 solids.
+- **CAD snapshot.** `references/` holds the accepted snapshot of Vault
+  file-version 991056 in the layout of `mechanical-cad`: 37 part directories
+  and 7 assembly directories, which flatten to 155 occurrences in 17 groups.
+  FreeCAD reconstructs its 479 solids. The STEP files are the exporter's
+  bytes: AP214, headers as exported.
 - **Manual.** The phase-1 draft (the enclosure without tanks and backlight) was
   published on 2026-10-23 under `docs/manual/` and is served by the Pages site:
   110 of the 155 occurrences are in this build, 42 are conditional and 3
@@ -22,9 +24,12 @@ their evidence runs, are in .agents/HISTORY.md.
   order is a draft and nothing is physically validated.
 - **Physical build.** Peter is assembling the enclosure from the published
   manual and taking notes on the documentation.
-- **Vault.** One file written: the monitor envelope
-  `step/AW2725Q-nominal-envelope.step`, Vault version 994252 (2026-10-22),
-  recorded in `vault-lock.json`. Nothing else. A read-only check on 2026-11-10
+- **Vault.** One file written: the monitor envelope, Vault version 994252
+  (2026-10-22), recorded in
+  `designs/parts/aw2725q-nominal-envelope/vault.json`. Nothing else. The
+  envelope is now built from a program; the file built is the same solid as
+  the published one (one solid, same bounding box and volume) but not the same
+  bytes, and the validator reports that. A read-only check on 2026-11-10
   found that none of the snapshot's 44 files has changed in Vault since
   2026-10-21: every one is still at the version that was exported, revision 0,
   Work in Progress, not checked out.
@@ -39,10 +44,43 @@ their evidence runs, are in .agents/HISTORY.md.
 - **Size.** `docs/` is 141 MB of tracked files, almost all of it the manual
   package; `.git` is 229 MB. Each publication adds images, PDFs and viewer
   files.
-- **This date.** The README files, the build recipe and the guidance were
-  brought up to date, the plan was cut down and its past moved to
-  .agents/HISTORY.md, and the Pages workflow now runs only when a push changes
-  `docs/`, `mkdocs.yml` or the workflow itself.
+- **Layout conversion (2026-11-11, on the branch `layout-conversion`).** The
+  tree was converted with `vault-cad import-snapshot`, the 37 parts measured,
+  the curated files that name parts re-keyed (`assembly/materials.json`,
+  `procurement/modeled-parts.csv`, `procurement/joint-audit.json`), and the
+  scripts under `assembly/` pointed at the scene flattened from `references/`
+  (`assembly/reference_scene.py`). Checked that day:
+  - the layout validates with no error; two findings (37 headers not
+    normalised, and the envelope's bytes);
+  - the acceptance test of `mechanical-cad` passes all four checks against the
+    snapshot on `main`: byte-identical STEP files, the flattened scene equal to
+    the exporter's (37 parts, 17 groups, 155 occurrences, largest translation
+    difference 6.5e-11 mm), the documentation project loading the same;
+  - the project staged by `assembly/prepare_documentation.py` from this tree
+    loads in `mechanical_docs inspect` with the same parts, inventory, build
+    scope, steps and findings as the accepted one;
+  - `survey_reference.py` reproduces the survey of 2026-10-22 (479 solids, 17
+    group envelopes within 1e-7 mm, the same coincident tanks);
+    `build_reference.py` builds its FreeCAD document; `phase_parts_list.py`
+    rewrites the same sheet; `propose_joint_views.py` prints the same proposal
+    as on `main`; `site_pages.py` rewrites the same pages apart from one
+    sentence of the front page that named the old directory.
+  Not run: any mesh, render or manual build; `make` itself (the recipe of the
+  new target was run by hand, and `make -n` prints it).
+  What the conversion took out of the tree, all of it in Git history:
+  `references/enclosure/` (its STEP files are now the `part.step` files, byte
+  for byte, and its four records are under `references/receipts/`, unchanged,
+  beside the dependency inventory and acquisition record of the same day);
+  `references/ENCLOSURE TOP PANEL.step`, an earlier single export of a part
+  the snapshot holds; the per-file import records of the old
+  `vault-lock.json`, whose facts are now in each `source.json`; `step/`; and
+  under `designs/reference-models/` the FreeCAD document, its generator and
+  the STEP exported from it, replaced by `build.py`. The two validation
+  records of that model moved to `validation/`.
+  `draft_instructions.py` run on the flattened scene lists the three tanks of
+  its last step in another order than the tracked `instructions.json`, because
+  the scene lists occurrences in another order; nothing else differs. It is
+  not run over Peter's edits.
 
 ## Next work
 
@@ -58,33 +96,28 @@ their evidence runs, are in .agents/HISTORY.md.
    (`assembly/build-scope.json`, `conditional_groups`); name the occurrences
    that form the backlight; record counted stock in the procurement sheets;
    write plain `scene.json` in `build-scope.scene` on the file's next revision.
-3. The layout conversion, on a branch, on Peter's word. He decided the
-   layout's three choices on 2026-11-11: two roots, readable keys, and AP242
-   for files exported from Inventor. The files here are AP214 and stay so
-   until the re-export that follows the conversion. A dry
-   run on 2026-11-10 converted `references/enclosure/` into the proposed layout
-   in the ignored `.cache/layout-dry-run-01/` and passed the acceptance test of
-   `mechanical-cad/docs/layout-proposal.md`; nothing tracked here changed. What
-   the branch still needs:
-   - the converted `references/` tree and the derived lock (the dry run's
-     output, regenerated on the branch with `vault-cad import-snapshot`);
-   - the curated files that carry part ids re-keyed by script:
-     `assembly/materials.json`, `assembly/procurement/modeled-parts.csv`,
-     `supplementary-bom.csv` (its `part:` references) and `joint-audit.json`;
-   - the eight scripts under `assembly/` that read `references/enclosure/`
-     pointed at the scene flattened by `mechanical-cad`
-     (`survey_reference.py`, `prepare_documentation.py`,
-     `propose_joint_views.py`, `materials_manifest.py`,
-     `draft_instructions.py`, `site_pages.py`, `procurement_manifests.py`,
-     `build_reference.py`);
-   - the monitor envelope moved to `designs/parts/`, built with
-     `mechanical-cad/tools/build_part.py`, with its publication record in a
-     `vault.json` and `step/` retired;
-   - the `.gitattributes` rule that keeps the exporter's records byte for byte
-     moved with them to `references/receipts/`;
-   - the acceptance test run on the branch.
-   `main` stays as it is until that passes.
-4. After the build: new parts written as code under `designs/`, manufactured
+3. Before the branch `layout-conversion` is merged into `main`:
+   - Peter's review of it.
+   - `vault-cad-tools` reads the new `vault-lock.json` since 2026-11-11: its
+     `status` on this tree reports the 37 parts and 7 assemblies clean and the
+     envelope as changed since it was published. A publication now starts
+     from `designs/parts/<key>/part.step` and is recorded in the part's
+     `vault.json`. No publication has been made from this layout. The file
+     name a part gets in Vault (`<key>.step` unless another is given) is
+     Peter's to settle before the next one.
+   - The published manual under `docs/manual/` names parts by the exporter's
+     ids. `assembly/site_pages.py` reads the scene under those ids until a
+     manual built from this tree is published; that branch of the script goes
+     then.
+   Merging changes one sentence of `docs/index.md`, so the Pages site is
+   rebuilt once.
+4. The re-export as AP242 into this layout, when the Windows exporter writes
+   the package: keys stay, STEP files and their records are replaced, the new
+   scene is compared with this one (`mechanical_cad compare-scenes`) and each
+   part with its AP214 file by fingerprint. Then
+   `assembly/documentation.json` is pinned to the new scene and the manual is
+   rendered once in full.
+5. After the build: new parts written as code under `designs/`, manufactured
    and checked, then placed in Vault through `vault-cad-tools`.
 
 ## Open items

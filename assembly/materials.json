@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "scene": "references/enclosure/scene.json",
-  "scene_sha256": "ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070",
+  "scene": ".cache/reference-scene/scene.json",
+  "scene_sha256": "2fe38a7025b51ba90fcbee6f2c33eaf77a10c82d5a8f7b0f1d56f4b88084a059",
   "status": "draft: every row is the CAD claim or unknown until a person confirms or corrects it with evidence",
   "rules": {
     "statuses": [
@@ -16,7 +16,7 @@
   },
   "parts": [
     {
-      "part_id": "DATA\\COMMON\\McMaster\\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]",
+      "part_id": "47065t271-aluminum-t-slotted-framing-extrusion",
       "name": "47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION",
       "cad_claim": {
         "material": "Aluminum",
@@ -37,7 +37,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE.ipt|[Primary]",
+      "part_id": "camera-mount-plate",
       "name": "CAMERA MOUNT PLATE",
       "cad_claim": {
         "material": "ALUMINUM, 6061-T651",
@@ -58,7 +58,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt|[Primary]",
+      "part_id": "camera-mount-plate-teledyne-kinetix",
       "name": "CAMERA MOUNT PLATE - TELEDYNE KINETIX",
       "cad_claim": {
         "material": "ALUMINUM, 6061-T651",
@@ -79,7 +79,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]",
+      "part_id": "caster-mounting-plate",
       "name": "CASTER MOUNTING PLATE",
       "cad_claim": {
         "material": "ALUMINUM, 6061-T651",
@@ -100,7 +100,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]",
+      "part_id": "enclosure-panel",
       "name": "ENCLOSURE PANEL",
       "cad_claim": {
         "material": "ALUMINUM COMPOSITE MATERIAL",
@@ -121,7 +121,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE TOP PANEL.ipt|[Primary]",
+      "part_id": "enclosure-top-panel",
       "name": "ENCLOSURE TOP PANEL",
       "cad_claim": {
         "material": "ALUMINUM COMPOSITE MATERIAL",
@@ -142,7 +142,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]",
+      "part_id": "holkie-leveling-caster",
       "name": "HOLKIE LEVELING CASTER",
       "cad_claim": {
         "material": "Generic",
@@ -163,7 +163,7 @@
       }
     },
     {
-      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 3136N149_T-Slotted Framing.ipt|[Primary]",
+      "part_id": "mcmaster-3136n149-t-slotted-framing",
       "name": "MCMASTER 3136N149_T-Slotted Framing",
       "cad_claim": {
         "material": "ALUMINUM, 6061-T651",
@@ -184,7 +184,7 @@
       }
     },
     {
-      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
+      "part_id": "mcmaster-47065t245",
       "name": "MCMASTER 47065T245",
       "cad_claim": {
         "material": "Generic",
@@ -205,7 +205,7 @@
       }
     },
     {
-      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]",
+      "part_id": "mcmaster-47065t27-t-slotted-framing",
       "name": "MCMASTER 47065T27_T-Slotted Framing",
       "cad_claim": {
         "material": "ALUMINUM, 6061-T651",
@@ -226,7 +226,7 @@
       }
     },
     {
-      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]",
+      "part_id": "mcmaster-47065t845-silver-corner-bracket",
       "name": "MCMASTER 47065T845_Silver Corner Bracket",
       "cad_claim": {
         "material": "ALUMINUM, 6061-T651",
@@ -247,7 +247,7 @@
       }
     },
     {
-      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
+      "part_id": "mcmaster-5004a11-compact-hold-down-toggle-clamp",
       "name": "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp",
       "cad_claim": {
         "material": "Generic",
@@ -268,7 +268,7 @@
       }
     },
     {
-      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5537T293_T-Slotted Framing.ipt|[Primary]",
+      "part_id": "mcmaster-5537t293-t-slotted-framing",
       "name": "MCMASTER 5537T293_T-Slotted Framing",
       "cad_claim": {
         "material": "Zinc",
@@ -289,7 +289,7 @@
       }
     },
     {
-      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5537T429_T-Slotted Framing.ipt|[Primary]",
+      "part_id": "mcmaster-5537t429-t-slotted-framing",
       "name": "MCMASTER 5537T429_T-Slotted Framing",
       "cad_claim": {
         "material": "Zinc",
@@ -310,7 +310,7 @@
       }
     },
     {
-      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]",
+      "part_id": "mcmaster-5972k164-ball-bearing",
       "name": "MCMASTER 5972K164_Ball Bearing",
       "cad_claim": {
         "material": "Generic",
@@ -331,7 +331,7 @@
       }
     },
     {
-      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt|[Primary]",
+      "part_id": "mcmaster-90265a164-18-8-stainless-steel-shoulder-screw",
       "name": "MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw",
       "cad_claim": {
         "material": "Generic",
@@ -352,7 +352,7 @@
       }
     },
     {
-      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
+      "part_id": "mcmaster-90313a107-18-8-stainless-steel-oversized-washer",
       "name": "MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer",
       "cad_claim": {
         "material": "STAINLESS STEEL, 18-8",
@@ -373,7 +373,7 @@
       }
     },
     {
-      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9293K121_Constant-Force Spring.ipt|[Primary]",
+      "part_id": "mcmaster-9293k121-constant-force-spring",
       "name": "MCMASTER 9293K121_Constant-Force Spring",
       "cad_claim": {
         "material": "Generic",
@@ -394,7 +394,7 @@
       }
     },
     {
-      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
+      "part_id": "mcmaster-9378k24-natural-rubber-vibration-damping-sandwich-mount",
       "name": "MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount",
       "cad_claim": {
         "material": "Generic",
@@ -415,7 +415,7 @@
       }
     },
     {
-      "part_id": "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]",
+      "part_id": "mcmaster-1950a67-unthreaded-hole-pull-handle",
       "name": "MCMASTER_1950A67_Unthreaded-Hole Pull Handle",
       "cad_claim": {
         "material": "Generic",
@@ -436,7 +436,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT LEFT.ipt|[Primary]",
+      "part_id": "panel-lower-support-left",
       "name": "PANEL LOWER SUPPORT LEFT",
       "cad_claim": {
         "material": "Generic",
@@ -457,7 +457,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT RIGHT.ipt|[Primary]",
+      "part_id": "panel-lower-support-right",
       "name": "PANEL LOWER SUPPORT RIGHT",
       "cad_claim": {
         "material": "ABS, BLACK",
@@ -478,7 +478,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ROLLER MOUNT PLATE.ipt|[Primary]",
+      "part_id": "roller-mount-plate",
       "name": "ROLLER MOUNT PLATE",
       "cad_claim": {
         "material": "ALUMINUM, 6061-T651",
@@ -499,7 +499,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\2W.353\\SHULZE 2W.353 TANK.ipt|[Primary]",
+      "part_id": "shulze-2w-353-tank",
       "name": "SHULZE 2W.353 TANK",
       "cad_claim": {
         "material": "Acrylic, Clear",
@@ -520,7 +520,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt|[Primary]",
+      "part_id": "sllb-enclosure-15in-47065t808-t-slotted-framing",
       "name": "SLLB Enclosure 15in 47065T808_T-Slotted Framing",
       "cad_claim": {
         "material": "ALUMINUM, 6061-T651",
@@ -541,7 +541,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt|[Primary]",
+      "part_id": "sllb-enclosure-2-5in-47065t808-t-slotted-framing",
       "name": "SLLB Enclosure 2.5in 47065T808_T-Slotted Framing",
       "cad_claim": {
         "material": "Generic",
@@ -562,7 +562,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 22in 47065T808_T-Slotted Framing.ipt|[Primary]",
+      "part_id": "sllb-enclosure-22in-47065t808-t-slotted-framing",
       "name": "SLLB Enclosure 22in 47065T808_T-Slotted Framing",
       "cad_claim": {
         "material": "ALUMINUM, 6061-T651",
@@ -583,7 +583,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 41in 47065T808_T-Slotted Framing.ipt|[Primary]",
+      "part_id": "sllb-enclosure-41in-47065t808-t-slotted-framing",
       "name": "SLLB Enclosure 41in 47065T808_T-Slotted Framing",
       "cad_claim": {
         "material": "ALUMINUM, 6061-T651",
@@ -604,7 +604,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
+      "part_id": "sllb-enclosure-44in-47065t808-t-slotted-framing",
       "name": "SLLB Enclosure 44in 47065T808_T-Slotted Framing",
       "cad_claim": {
         "material": "Generic",
@@ -625,7 +625,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt|[Primary]",
+      "part_id": "sllb-enclosure-96in-47065t808-t-slotted-framing",
       "name": "SLLB Enclosure 96in 47065T808_T-Slotted Framing",
       "cad_claim": {
         "material": "Generic",
@@ -646,7 +646,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING MOUNT PLATE.ipt|[Primary]",
+      "part_id": "spring-mount-plate",
       "name": "SPRING MOUNT PLATE",
       "cad_claim": {
         "material": "ALUMINUM, 6061-T651",
@@ -667,7 +667,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING ROLLER.ipt|[Primary]",
+      "part_id": "spring-roller",
       "name": "SPRING ROLLER",
       "cad_claim": {
         "material": "ABS, BLACK",
@@ -688,7 +688,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]",
+      "part_id": "t-slot-corner-47065t242",
       "name": "T SLOT CORNER 47065T242",
       "cad_claim": {
         "material": "Generic",
@@ -709,7 +709,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]",
+      "part_id": "tank-support-bracket",
       "name": "TANK SUPPORT BRACKET",
       "cad_claim": {
         "material": "ALUMINUM, 6061-T651",
@@ -730,7 +730,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT PLATFORM.ipt|[Primary]",
+      "part_id": "tank-support-platform",
       "name": "TANK SUPPORT PLATFORM",
       "cad_claim": {
         "material": "ACRYLIC, CLEAR",
@@ -751,7 +751,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]",
+      "part_id": "toggle-clamp-mount",
       "name": "TOGGLE CLAMP MOUNT",
       "cad_claim": {
         "material": "ABS, BLACK",
@@ -772,7 +772,7 @@
       }
     },
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
+      "part_id": "tslot-extrusion-1x40-5-copy",
       "name": "TSLOT EXTRUSION 1X40.5 copy",
       "cad_claim": {
         "material": "Generic",

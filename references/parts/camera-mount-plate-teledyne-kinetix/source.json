@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "camera-mount-plate-teledyne-kinetix",
+  "name": "CAMERA MOUNT PLATE - TELEDYNE KINETIX",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "973201",
+    "version_id": "973202",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2026-03-06T15:06:45.667Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt",
+    "native_sha256": "0f77b976834d25577dd9d4c089e7ec75331138fe4bc4913ef3d6055d5b05867d"
+  },
+  "step": {
+    "sha256": "b6d274fdce0180a04441db99078cafdeb8a97da93a9bbaa52238d1e24a69560c",
+    "data_sha256": "292b729fcfacc114e9da4fe83345234b15178c2fc74fb1de4559378e6178a03c",
+    "bytes": 30034,
+    "protocol": "AP214",
+    "length_unit": "in",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt|[Primary]",
+    "package_path": "assets/CAMERA MOUNT PLATE - TELEDYNE KINETIX__[Primary]__b670923e.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "in",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #626",
+      "entity": "( CONVERSION_BASED_UNIT('inch',#629) LENGTH_UNIT() NAMED_UNIT(#624) )"
+    }
+  },
+  "properties": {
+    "part_number": "",
+    "description": "",
+    "material": "ALUMINUM, 6061-T651",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - jET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "in",
+    "bodies": {
+      "surface_bodies": 1,
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1
+    },
+    "extent_mm": [101.60000000000004, 76.20000000000003, 6.35],
+    "volume_mm3": 45400.300116957194,
+    "range_box_cm": {
+      "min": [-5.08, -7.62, -0.635],
+      "max": [5.080000000000004, 3.552713678800501e-15, 0],
+      "extent": [10.160000000000004, 7.620000000000004, 0.635]
+    },
+    "volume_cm3": 45.4003001169572
+  },
+  "materials": null
+}

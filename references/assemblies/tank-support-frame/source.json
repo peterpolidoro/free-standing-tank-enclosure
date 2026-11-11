@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "kind": "assembly",
+  "key": "tank-support-frame",
+  "name": "TANK SUPPORT FRAME",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "988145",
+    "version_id": "990179",
+    "version_number": 3,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2026-09-02T19:15:47.6Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/TANK SUPPORT FRAME.iam",
+    "native_sha256": "907e3d488ac69be2cf0ee1366e8eee4ba2c061c4ee179678d6dc22a063a75215"
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "TANK SUPPORT FRAME"
+  },
+  "native": {
+    "length_unit": null,
+    "instances_in_export": 2
+  }
+}

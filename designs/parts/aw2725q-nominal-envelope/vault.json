@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "publications": [
+    {
+      "request_id": "e1caf6c0-5802-49a2-9bc8-831912ddf81c",
+      "master_id": "994251",
+      "version_id": "994252",
+      "git_commit": "4690c435e0a09d27b414198da0e895e53643d701",
+      "step_sha256": "f7edc118fc0f21d6607f39b5e02069d8796b27b485732f46ad1663b868562ad3"
+    }
+  ]
+}

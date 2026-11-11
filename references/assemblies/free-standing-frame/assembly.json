@@ -1,0 +1,863 @@
+{
+  "schema_version": 1,
+  "key": "free-standing-frame",
+  "name": "FREE STANDING FRAME",
+  "length_unit": "cm",
+  "children": [
+    {
+      "name": "CASTER ASSEMBLY:1",
+      "component": "caster-assembly",
+      "kind": "assembly",
+      "master_id": "987838",
+      "model_state": "[Primary]",
+      "transform": [
+        [-6.339155353118467e-14, 1.2161400754149133e-15, -1, 28.355553218288478],
+        [-2.6708306830851344e-15, 1, 1.2161400754150825e-15, 11.413763506171533],
+        [1, 2.6708306830852117e-15, -6.339155353118467e-14, -83.85113766464757],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "CASTER ASSEMBLY:2",
+      "component": "caster-assembly",
+      "kind": "assembly",
+      "master_id": "987838",
+      "model_state": "[Primary]",
+      "transform": [
+        [-1, 1.6792855111994393e-15, 6.357367673076219e-14, 83.85113766465474],
+        [1.6792855111994677e-15, 1, 4.440892098500625e-16, 11.413763506171474],
+        [-6.357367673076218e-14, 4.44089209850169e-16, -1, -91.02444678171102],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "CASTER ASSEMBLY:3",
+      "component": "caster-assembly",
+      "kind": "assembly",
+      "master_id": "987838",
+      "model_state": "[Primary]",
+      "transform": [
+        [1, 1.6792855112000461e-15, 7.457525757813875e-31, 35.52886233535037],
+        [-1.6792855112000461e-15, 1, 4.4408920985006153e-16, 11.41376350617139],
+        [9.670475625975524e-44, -4.4408920985006153e-16, 1, -28.355553218283397],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "CASTER ASSEMBLY:4",
+      "component": "caster-assembly",
+      "kind": "assembly",
+      "master_id": "987838",
+      "model_state": "[Primary]",
+      "transform": [
+        [1.1844416005528878e-15, 1.2351963013492964e-15, 1, 91.0244467817222],
+        [4.641323723144468e-28, 1, -1.2351963013492964e-15, 11.413763506171435],
+        [-1, 4.656750671047879e-28, 1.1844416005528878e-15, -35.52886233534323],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 44in 47065T808_T-Slotted Framing:1",
+      "component": "sllb-enclosure-44in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "953866",
+      "model_state": "[Primary]",
+      "transform": [
+        [1.0000000000000002, 7.720508655649718e-16, -6.339155353118437e-14, 1.905000000006118],
+        [-1.6792855111995836e-15, 1.0000000000000018, -1.7635960374505175e-15, 1.9050000000001768],
+        [6.374700808808824e-14, 5.0195713469398835e-29, 0.9999999999999954, -100.32999999999971],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": true,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "MCMASTER 47065T245:1",
+      "component": "mcmaster-47065t245",
+      "kind": "part",
+      "master_id": "953861",
+      "model_state": "[Primary]",
+      "transform": [
+        [-1, -1.6792855112000461e-15, 3.6424639915523524e-16, 3.8099999999999996],
+        [1.6792855111995834e-15, -1, -2.719881120659369e-31, 3.8100000000000005],
+        [3.642463991552356e-16, -4.128432500211864e-31, 1, -3.809999999999988],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "MCMASTER 47065T245:2",
+      "component": "mcmaster-47065t245",
+      "kind": "part",
+      "master_id": "953861",
+      "model_state": "[Primary]",
+      "transform": [
+        [6.339155353118467e-14, -7.720508655649704e-16, -1, 3.810000000007084],
+        [1.7635960374505838e-15, -1, 7.720508655650834e-16, 3.8100000000001994],
+        [-1, -1.763596037451097e-15, -6.339155353118467e-14, -115.56999999999952],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 44in 47065T808_T-Slotted Framing:2",
+      "component": "sllb-enclosure-44in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "953866",
+      "model_state": "[Primary]",
+      "transform": [
+        [6.411125448724352e-14, -8.431052625094677e-17, 0.9999999999999954, 19.050000000007145],
+        [1.7635960374505252e-15, 1.0000000000000018, -1.6792855111997341e-15, 1.90500000000018],
+        [-1.0000000000000002, 2.670830683085133e-15, 6.37557999303396e-14, -117.47499999999856],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 44in 47065T808_T-Slotted Framing:3",
+      "component": "sllb-enclosure-44in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "953866",
+      "model_state": "[Primary]",
+      "transform": [
+        [1.0000000000000002, 1.6792855111992847e-15, -6.35736767307619e-14, 117.47500000000565],
+        [-2.5865201568338887e-15, 1.0000000000000018, -1.7635960374505649e-15, 1.9049999999999547],
+        [6.392913128766595e-14, 1.096516658257089e-28, 0.9999999999999954, -100.3299999999924],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "MCMASTER 47065T245:3",
+      "component": "mcmaster-47065t245",
+      "kind": "part",
+      "master_id": "953861",
+      "model_state": "[Primary]",
+      "transform": [
+        [1, -1.6792855111992823e-15, 6.320943033160695e-14, 115.57000000000663],
+        [-1.6792855111997434e-15, -1, 1.1648785604205323e-30, 3.809999999999983],
+        [6.320943033160695e-14, -1.077733711733278e-28, -1, -115.56999999999246],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "MCMASTER 47065T245:4",
+      "component": "mcmaster-47065t245",
+      "kind": "part",
+      "master_id": "953861",
+      "model_state": "[Primary]",
+      "transform": [
+        [-8.201952013976525e-16, -1.6792855111992823e-15, 1, 115.57000000000559],
+        [-4.647440460150548e-28, -1, -1.6792855111992813e-15, 3.8099999999999548],
+        [1, -3.458115805094803e-30, 8.201952013976525e-16, -3.8099999999928276],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 96in 47065T808_T-Slotted Framing:1",
+      "component": "sllb-enclosure-96in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "990974",
+      "model_state": "[Primary]",
+      "transform": [
+        [1, -6.339155353118468e-14, 1.1180061293665674e-28, 1.9050000000072054],
+        [3.5203211922518924e-33, -1.7635960374510486e-15, -1.0000000000000002, 232.41000000000025],
+        [6.339155353118468e-14, 1.0000000000000002, -1.7635960374510486e-15, -117.47499999999923],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 96in 47065T808_T-Slotted Framing:2",
+      "component": "sllb-enclosure-96in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "990974",
+      "model_state": "[Primary]",
+      "transform": [
+        [1, -9.932978396208955e-44, -1.6792855112000465e-15, 1.9050000000003837],
+        [-1.6792855112000461e-15, -9.860761315262648e-31, -1.0000000000000002, 232.41000000000005],
+        [9.384410888981422e-44, 1.0000000000000002, -9.860761315262648e-31, -1.904999999999989],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 96in 47065T808_T-Slotted Framing:3",
+      "component": "sllb-enclosure-96in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "990974",
+      "model_state": "[Primary]",
+      "transform": [
+        [1, -1.1844416005528752e-15, -6.758861031266566e-15, 117.47500000000713],
+        [-6.7588610312665645e-15, -4.599661288477508e-28, -1.0000000000000002, 232.41],
+        [1.1844416005528878e-15, 1.0000000000000002, -4.679716050255387e-28, -1.9049999999928262],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 96in 47065T808_T-Slotted Framing:4",
+      "component": "sllb-enclosure-96in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "990974",
+      "model_state": "[Primary]",
+      "transform": [
+        [1, -6.320943033160696e-14, -1.67928551119958e-15, 117.47500000000711],
+        [-1.6792855111995797e-15, -1.2085833879061973e-30, -1.0000000000000002, 232.41000000000003],
+        [6.320943033160695e-14, 1.0000000000000002, -1.0729034711843995e-28, -117.47499999999235],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 44in 47065T808_T-Slotted Framing:4",
+      "component": "sllb-enclosure-44in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "953866",
+      "model_state": "[Primary]",
+      "transform": [
+        [-0.9999999999999996, -2.541412511955037e-13, -7.284927983105939e-16, 117.47500000000034],
+        [2.583236437637818e-13, -1.0000000000000022, -1.194171790855626e-16, 249.554999999998],
+        [-8.377788859009462e-16, -1.763596037450065e-15, 0.9999999999999936, -100.32999999999926],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "MCMASTER 47065T245:5",
+      "component": "mcmaster-47065t245",
+      "kind": "part",
+      "master_id": "953861",
+      "model_state": "[Primary]",
+      "transform": [
+        [0.9999999999999993, 2.550484858411382e-13, -1.092739197465832e-15, 115.56999999999978],
+        [-2.5832364376378175e-13, 1.0000000000000004, -1.1941717908546918e-16, 247.64999999999844],
+        [1.5574798419599256e-15, -5.889659556248824e-28, 0.9999999999999978, -3.8099999999998793],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "MCMASTER 47065T245:6",
+      "component": "mcmaster-47065t245",
+      "kind": "part",
+      "master_id": "953861",
+      "model_state": "[Primary]",
+      "transform": [
+        [7.284927983105973e-16, 2.541412511955031e-13, 0.9999999999999993, 115.56999999999987],
+        [1.1941717908556392e-16, 1.0000000000000004, -2.574164091181471e-13, 247.64999999999844],
+        [-0.9999999999999978, -9.23632860497367e-28, 1.1932334428045993e-15, -115.56999999999914],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 44in 47065T808_T-Slotted Framing:5",
+      "component": "sllb-enclosure-44in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "953866",
+      "model_state": "[Primary]",
+      "transform": [
+        [8.791842251619992e-18, -9.168293921329529e-14, -0.999999999999996, 100.33000000000007],
+        [1.1941717908575058e-16, -1.0000000000000022, 9.672169317338946e-14, 249.55499999999995],
+        [-0.999999999999998, 9.072346456350728e-16, -8.289870436493622e-16, -117.47499999999911],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 44in 47065T808_T-Slotted Framing:6",
+      "component": "sllb-enclosure-44in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "953866",
+      "model_state": "[Primary]",
+      "transform": [
+        [-0.9999999999999996, 1.5594174861476972e-15, -4.037349822515173e-31, 1.9050000000004121],
+        [2.6229750821311235e-15, -1.0000000000000022, -1.1941717908575115e-16, 249.55500000000006],
+        [-1.0928608759039582e-16, -1.7635960374501265e-15, 0.9999999999999936, -100.32999999999936],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "MCMASTER 47065T245:7",
+      "component": "mcmaster-47065t245",
+      "kind": "part",
+      "master_id": "953861",
+      "model_state": "[Primary]",
+      "transform": [
+        [-0.9999999999999993, -1.5594174861478223e-15, 3.642463991552354e-16, 3.8100000000004126],
+        [1.7157404364968232e-15, 1.0000000000000004, 1.1941717908575085e-16, 247.6500000000001],
+        [-8.289870436492784e-16, -4.607687243589354e-28, -0.9999999999999978, -115.56999999999924],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "MCMASTER 47065T245:8",
+      "component": "mcmaster-47065t245",
+      "kind": "part",
+      "master_id": "953861",
+      "model_state": "[Primary]",
+      "transform": [
+        [-5.839720021453103e-31, 1.6792855112000461e-15, -0.9999999999999993, 3.8100000000004064],
+        [-1.194171790857515e-16, 1.0000000000000004, 4.954443433844247e-15, 247.65000000000006],
+        [0.9999999999999978, 1.1634944427381898e-30, -4.647406444940684e-16, -3.8099999999999796],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 44in 47065T808_T-Slotted Framing:7",
+      "component": "sllb-enclosure-44in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "953866",
+      "model_state": "[Primary]",
+      "transform": [
+        [-7.197009560588211e-16, -9.168293921329537e-14, -0.999999999999996, 100.33000000000024],
+        [1.1941717908582074e-16, -1.0000000000000022, 9.672169317338953e-14, 249.55499999999077],
+        [-0.999999999999998, 9.072346456350712e-16, -1.004942453389169e-16, -1.9049999999999767],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 44in 47065T808_T-Slotted Framing:8",
+      "component": "sllb-enclosure-44in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "953866",
+      "model_state": "[Primary]",
+      "transform": [
+        [0, -1.679285511200048e-15, -0.999999999999996, 100.32999999999973],
+        [1.0266518247207763e-15, -1.0000000000000022, 6.7180394712945514e-15, 40.58630873969111],
+        [-0.999999999999998, 6.199541456040716e-29, -8.201952013977411e-16, -1.904999999999904],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 44in 47065T808_T-Slotted Framing:9",
+      "component": "sllb-enclosure-44in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "953866",
+      "model_state": "[Primary]",
+      "transform": [
+        [6.375579993033977e-14, 1.1273595124090488e-28, -0.999999999999996, 100.33000000000689],
+        [1.0266518247204284e-15, -1.0000000000000022, 5.0387539600943905e-15, 40.586308739691226],
+        [-0.999999999999998, 4.179780356430086e-28, -6.457599513173737e-14, -117.47499999999327],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 44in 47065T808_T-Slotted Framing:10",
+      "component": "sllb-enclosure-44in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "953866",
+      "model_state": "[Primary]",
+      "transform": [
+        [-0.9999999999999996, -6.758861031266582e-15, -8.201952013976245e-16, 117.47500000000613],
+        [1.0941253599545329e-14, -1.0000000000000022, 1.6441788583638311e-15, 74.18447210139664],
+        [-9.294812889880315e-16, -4.674982036640616e-28, 0.9999999999999936, -100.32999999999224],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 44in 47065T808_T-Slotted Framing:11",
+      "component": "sllb-enclosure-44in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "953866",
+      "model_state": "[Primary]",
+      "transform": [
+        [-0.9999999999999996, -1.6792855112000522e-15, 2.761045734672784e-30, 1.9050000000001175],
+        [5.861678079478814e-15, -1.0000000000000022, 1.6441788583642936e-15, 74.18447210139735],
+        [-1.0928608759038498e-16, -9.766541023868262e-31, 0.9999999999999936, -100.32999999999937],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 2.5in 47065T808_T-Slotted Framing:1",
+      "component": "sllb-enclosure-2-5in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "988149",
+      "model_state": "[Primary]",
+      "transform": [
+        [-1.8212319957761772e-16, 1.6792855111995834e-15, 1.0000000000000002, 19.050000000000004],
+        [9.860761315262648e-31, 1, -1.6792855111995838e-15, 1.9049999999999747],
+        [-1.0000000000000002, 6.802392812222606e-31, -1.8212319957761772e-16, -1.9049999999999856],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "SLLB Enclosure 2.5in 47065T808_T-Slotted Framing:2",
+      "component": "sllb-enclosure-2-5in-47065t808-t-slotted-framing",
+      "kind": "part",
+      "master_id": "988149",
+      "model_state": "[Primary]",
+      "transform": [
+        [8.201952013976527e-16, 1.6792855111995787e-15, 1.0000000000000002, 124.4600000000056],
+        [2.0575811992661343e-30, 1, -1.6792855111995793e-15, 1.9049999999999392],
+        [-1.0000000000000002, 3.458115805095002e-30, 8.201952013976557e-16, -1.9049999999928195],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:1",
+      "component": "47065t271-aluminum-t-slotted-framing-extrusion",
+      "kind": "part",
+      "master_id": "805815",
+      "model_state": "[Primary]",
+      "transform": [
+        [1, 6.592666124917622e-29, 6.37557999303399e-14, 7.061008426577071e-12],
+        [-4.228294451984623e-28, -1.0000000000000002, 1.0266518247204305e-15, 42.49130873969121],
+        [6.375579993033996e-14, -1.0266518247204292e-15, -1.0000000000000002, -115.25249999999969],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:2",
+      "component": "47065t271-aluminum-t-slotted-framing-extrusion",
+      "kind": "part",
+      "master_id": "805815",
+      "model_state": "[Primary]",
+      "transform": [
+        [-1.6792855112000475e-15, 1.2436149960423917e-15, 1.0000000000000002, 4.127499999999994],
+        [-1, -4.082155997157623e-17, -1.6792855111999708e-15, 76.0894721013973],
+        [4.082155997157536e-17, -1, 1.243614996042392e-15, 1.4310253784805204e-14],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:3",
+      "component": "47065t271-aluminum-t-slotted-framing-extrusion",
+      "kind": "part",
+      "master_id": "805815",
+      "model_state": "[Primary]",
+      "transform": [
+        [2.829596788877304e-30, -1.6792855112000469e-15, 1.0000000000000002, 4.12750000000012],
+        [1.6850004183358826e-15, -1.0000000000000002, -1.6792855112000408e-15, 76.08947210139729],
+        [1, 1.6850004183362993e-15, -5.048709793414478e-29, -119.37999999999896],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:4",
+      "component": "47065t271-aluminum-t-slotted-framing-extrusion",
+      "kind": "part",
+      "master_id": "805815",
+      "model_state": "[Primary]",
+      "transform": [
+        [-1.6792855111995758e-15, -6.357367673076223e-14, -0.9999999999999994, 115.25250000000699],
+        [-0.9999999999999993, 7.020074250058839e-17, 1.6792855111996148e-15, 76.08947210139667],
+        [-4.082155997168631e-17, 1.0000000000000002, -6.35736767307623e-14, -119.37999999999249],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:5",
+      "component": "47065t271-aluminum-t-slotted-framing-extrusion",
+      "kind": "part",
+      "master_id": "805815",
+      "model_state": "[Primary]",
+      "transform": [
+        [8.2019520139766655e-16, -6.758861031266564e-15, -0.9999999999999996, 115.25250000000605],
+        [2.7755575615626547e-17, -1, 6.78819984753144e-15, 76.08947210139668],
+        [-0.9999999999999996, -4.68239556492872e-28, -8.130732701347974e-16, 7.190692485892214e-12],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:6",
+      "component": "47065t271-aluminum-t-slotted-framing-extrusion",
+      "kind": "part",
+      "master_id": "805815",
+      "model_state": "[Primary]",
+      "transform": [
+        [-1, -5.0795755200664e-15, -6.35736767307622e-14, 119.38000000000606],
+        [5.079575520065987e-15, -1.0000000000000002, 4.216778448695678e-28, 42.49130873969112],
+        [-6.357367673076225e-14, 9.539789398020509e-29, 1.0000000000000002, -115.25249999999207],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:7",
+      "component": "47065t271-aluminum-t-slotted-framing-extrusion",
+      "kind": "part",
+      "master_id": "805815",
+      "model_state": "[Primary]",
+      "transform": [
+        [-6.718039471294158e-15, 1.0000000000000002, -8.201952014038374e-16, -8.828593592208478e-13],
+        [-1, -6.718039471294578e-15, 1.478797649594314e-28, 42.49130873969178],
+        [5.784010965265667e-29, 8.201952014039005e-16, 1.0000000000000002, -4.1275],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION:8",
+      "component": "47065t271-aluminum-t-slotted-framing-extrusion",
+      "kind": "part",
+      "master_id": "805815",
+      "model_state": "[Primary]",
+      "transform": [
+        [-1, -6.758861031266566e-15, -8.201952013976527e-16, 119.38000000000585],
+        [6.758861031266155e-15, -1.0000000000000002, 6.248557196922571e-29, 42.49130873969097],
+        [-8.201952013977663e-16, 5.789938745985224e-29, 1.0000000000000002, -4.127499999999887],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "PANEL LOWER SUPPORT LEFT:1",
+      "component": "panel-lower-support-left",
+      "kind": "part",
+      "master_id": "990982",
+      "model_state": "[Primary]",
+      "transform": [
+        [1, -5.87206752583946e-31, -3.944300000000002e-31, 6.350000000000384],
+        [3.9443e-31, -3.496765431890267e-16, -1, 6.984999999999975],
+        [8.830297525838495e-31, 1, -3.496765431890267e-16, -1.9049999999999891],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "PANEL LOWER SUPPORT RIGHT:1",
+      "component": "panel-lower-support-right",
+      "kind": "part",
+      "master_id": "990978",
+      "model_state": "[Primary]",
+      "transform": [
+        [1, -1.184441600552875e-15, 3.658068124541216e-30, 113.03000000000712],
+        [-7.011379199769929e-31, -3.4967654318948566e-16, -1, 6.984999999999939],
+        [1.184441600552875e-15, 1, -3.4967654318948566e-16, -1.9049999999928315],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "PANEL LOWER SUPPORT LEFT:2",
+      "component": "panel-lower-support-left",
+      "kind": "part",
+      "master_id": "990982",
+      "model_state": "[Primary]",
+      "transform": [
+        [-2.220446049250322e-16, -1.0000000000000002, 3.496765431890184e-16, 1.9050000000034837],
+        [8.776077570583756e-30, -3.496765431890183e-16, -1, 6.984999999999975],
+        [1.0000000000000002, -2.2204460492503185e-16, 8.085824278515371e-30, -113.03000000000225],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "PANEL LOWER SUPPORT RIGHT:2",
+      "component": "panel-lower-support-right",
+      "kind": "part",
+      "master_id": "990978",
+      "model_state": "[Primary]",
+      "transform": [
+        [-1.4064862054779065e-15, -1.0000000000000002, 3.4967654318947737e-16, 1.904999999996292],
+        [7.691393825904865e-30, -3.496765431894773e-16, -1, 6.984999999999939],
+        [1.0000000000000002, -1.4064862054779065e-15, 1.2128736417773057e-29, -6.3499999999954895],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "PANEL LOWER SUPPORT LEFT:3",
+      "component": "panel-lower-support-left",
+      "kind": "part",
+      "master_id": "990982",
+      "model_state": "[Primary]",
+      "transform": [
+        [-1, -1.2246467991473473e-16, -1.632604121001086e-29, 113.03000000000573],
+        [1.7157724235946196e-29, -3.496765431890267e-16, -1, 6.984999999999975],
+        [1.2246467991473443e-16, -1, 3.496765431890267e-16, -117.47499999999913],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "PANEL LOWER SUPPORT RIGHT:3",
+      "component": "panel-lower-support-right",
+      "kind": "part",
+      "master_id": "990978",
+      "model_state": "[Primary]",
+      "transform": [
+        [-1, 1.0619769206381397e-15, -2.037853933455202e-29, 6.349999999998985],
+        [1.6062156315969202e-29, -3.4967654318948566e-16, -1, 6.98499999999994],
+        [-1.0619769206381397e-15, -1, 3.4967654318948566e-16, -117.47500000000628],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "PANEL LOWER SUPPORT LEFT:4",
+      "component": "panel-lower-support-left",
+      "kind": "part",
+      "master_id": "990982",
+      "model_state": "[Primary]",
+      "transform": [
+        [-2.2204460492503042e-16, 1, -3.4967654318903507e-16, 117.47500000000264],
+        [8.776077570583756e-30, -3.4967654318903507e-16, -1, 6.9849999999999755],
+        [-1, -2.220446049250307e-16, -7.888609052210118e-30, -6.3499999999969035],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "PANEL LOWER SUPPORT RIGHT:4",
+      "component": "panel-lower-support-right",
+      "kind": "part",
+      "master_id": "990978",
+      "model_state": "[Primary]",
+      "transform": [
+        [9.623969956278437e-16, 1, -3.4967654318949404e-16, 117.47500000000977],
+        [7.691393825904865e-30, -3.4967654318949404e-16, -1, 6.984999999999939],
+        [-1, 9.623969956278437e-16, -1.1980824998044117e-29, -113.03000000000364],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    }
+  ]
+}

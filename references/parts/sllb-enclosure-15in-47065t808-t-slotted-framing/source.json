@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "sllb-enclosure-15in-47065t808-t-slotted-framing",
+  "name": "SLLB Enclosure 15in 47065T808_T-Slotted Framing",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "953874",
+    "version_id": "953875",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2025-10-13T18:42:32.697Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt",
+    "native_sha256": "9ca77d3f6c798ff3b360d317de02259c7f10e139e1d51b5a75a21a9536351dc1"
+  },
+  "step": {
+    "sha256": "08646c8eb96e0c4322be83c70698e51cf078ddb2692a98b1df8d265d283b5124",
+    "data_sha256": "39dbd00db4954703f8cd8bbe82ed84e213c05745ae2a88e73c7647101fd75ae7",
+    "bytes": 248842,
+    "protocol": "AP214",
+    "length_unit": "mm",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt|[Primary]",
+    "package_path": "assets/SLLB Enclosure 15in 47065T808_T-Slotted Framing__[Primary]__64014b81.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "mm",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #5672",
+      "entity": "( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI.,.METRE.) )"
+    }
+  },
+  "properties": {
+    "part_number": "",
+    "description": "",
+    "material": "ALUMINUM, 6061-T651",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - jET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "mm",
+    "bodies": {
+      "surface_bodies": 1,
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1
+    },
+    "extent_mm": [38.100000000000016, 38.10000000000002, 381],
+    "volume_mm3": 225278.68818021592,
+    "range_box_cm": {
+      "min": [-1.9050000000000002, -1.9050000000000011, -15.240000000000004],
+      "max": [1.9050000000000016, 1.9050000000000011, 22.86],
+      "extent": [3.810000000000002, 3.8100000000000023, 38.1]
+    },
+    "volume_cm3": 225.2786881802159
+  },
+  "materials": null
+}

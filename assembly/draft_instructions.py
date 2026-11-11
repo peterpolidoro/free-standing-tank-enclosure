@@ -9,8 +9,12 @@ scoped by assembly/build-scope.json. Nothing here asserts fasteners or tool acce
 from __future__ import annotations
 
 import json
+import sys
 from collections import defaultdict
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import reference_scene  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 CENTRE = [597.0, 597.0, 1213.0]
@@ -21,7 +25,7 @@ def zup(t):
 
 
 def main():
-    scene = json.loads((ROOT / "references/enclosure/scene.json").read_text(encoding="utf-8-sig"))
+    scene = reference_scene.load()
     scope = json.loads((ROOT / "assembly/build-scope.json").read_text(encoding="utf-8"))
     deferred = set(scope["deferred_occurrence_ids"])
     conditional = [g["id"] for g in scope["conditional_groups"]]

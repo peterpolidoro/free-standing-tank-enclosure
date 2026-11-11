@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "spring-mount-plate",
+  "name": "SPRING MOUNT PLATE",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "954098",
+    "version_id": "954099",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2025-10-17T19:51:31.223Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/SPRING MOUNT PLATE.ipt",
+    "native_sha256": "7e2f7893705341851c55b08a3fca9da46d352a9cb1444e63d9346f36b043e066"
+  },
+  "step": {
+    "sha256": "92136e41bed330ce5feaf9860679623e89856f1d42790811ced1be1e48f2a2bc",
+    "data_sha256": "2584a7299dc08777b9077e7349ef9658d7e2e3f5aa9c9cf7d0864271570ff9bd",
+    "bytes": 22330,
+    "protocol": "AP214",
+    "length_unit": "in",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING MOUNT PLATE.ipt|[Primary]",
+    "package_path": "assets/SPRING MOUNT PLATE__[Primary]__eb93feb5.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "in",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #451",
+      "entity": "( CONVERSION_BASED_UNIT('inch',#454) LENGTH_UNIT() NAMED_UNIT(#449) )"
+    }
+  },
+  "properties": {
+    "part_number": "SPRING MOUNT PLATE",
+    "description": "",
+    "material": "ALUMINUM, 6061-T651",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - jET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "in",
+    "bodies": {
+      "surface_bodies": 1,
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1
+    },
+    "extent_mm": [38.100000000000016, 60, 6.35],
+    "volume_mm3": 13428.204067038536,
+    "range_box_cm": {
+      "min": [-1.9050000000000007, -3, -0.635],
+      "max": [1.9050000000000007, 3, 0],
+      "extent": [3.8100000000000014, 6, 0.635]
+    },
+    "volume_cm3": 13.428204067038536
+  },
+  "materials": null
+}

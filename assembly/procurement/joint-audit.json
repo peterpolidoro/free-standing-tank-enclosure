@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "source_scene_sha256": "ac203e5656abdeeadbadf5f047e31f244e01f8938001c5747a44808ffc4ed070",
+  "source_scene_sha256": "2fe38a7025b51ba90fcbee6f2c33eaf77a10c82d5a8f7b0f1d56f4b88084a059",
   "review_state": "draft",
   "scope": "Known model interfaces and requested modifications; not a proof of BOM completeness. Native BOM audit 2026-10-22 added per joint under native_audit; still not a proof of hardware completeness.",
   "joints": [
@@ -9,8 +9,8 @@
       "supplementary_item_id": "SUP-001",
       "scope": "existing",
       "part_ids": [
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]"
+        "holkie-leveling-caster",
+        "caster-mounting-plate"
       ],
       "parent_group_ids": [
         "FREE STANDING FRAME:1/CASTER ASSEMBLY:1",
@@ -80,8 +80,8 @@
       "supplementary_item_id": "SUP-002",
       "scope": "existing",
       "part_ids": [
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]"
+        "sllb-enclosure-96in-47065t808-t-slotted-framing",
+        "caster-mounting-plate"
       ],
       "parent_group_ids": [
         "FREE STANDING FRAME:1",
@@ -161,8 +161,8 @@
       "supplementary_item_id": "SUP-003",
       "scope": "existing",
       "part_ids": [
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]",
-        "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]"
+        "enclosure-panel",
+        "mcmaster-1950a67-unthreaded-hole-pull-handle"
       ],
       "parent_group_ids": [
         "PANEL ASSEMBLY:1",
@@ -199,8 +199,8 @@
       "supplementary_item_id": "SUP-004",
       "scope": "existing",
       "part_ids": [
-        "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]"
+        "mcmaster-5004a11-compact-hold-down-toggle-clamp",
+        "toggle-clamp-mount"
       ],
       "parent_group_ids": [
         "TOGGLE CLAMP ASSEMBLY:1",
@@ -270,7 +270,7 @@
       "supplementary_item_id": "SUP-005",
       "scope": "existing",
       "part_ids": [
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]"
+        "toggle-clamp-mount"
       ],
       "parent_group_ids": [
         "TOGGLE CLAMP ASSEMBLY:1",
@@ -340,8 +340,8 @@
       "supplementary_item_id": "SUP-006",
       "scope": "existing",
       "part_ids": [
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT LEFT.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT RIGHT.ipt|[Primary]"
+        "panel-lower-support-left",
+        "panel-lower-support-right"
       ],
       "parent_group_ids": [
         "FREE STANDING FRAME:1"
@@ -381,11 +381,11 @@
       "supplementary_item_id": "SUP-007",
       "scope": "existing",
       "part_ids": [
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
-        "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt|[Primary]",
-        "DATA\\COMMON\\McMaster\\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]"
+        "sllb-enclosure-44in-47065t808-t-slotted-framing",
+        "mcmaster-47065t245",
+        "sllb-enclosure-96in-47065t808-t-slotted-framing",
+        "sllb-enclosure-2-5in-47065t808-t-slotted-framing",
+        "47065t271-aluminum-t-slotted-framing-extrusion"
       ],
       "parent_group_ids": [
         "FREE STANDING FRAME:1"
@@ -425,11 +425,11 @@
       "supplementary_item_id": "SUP-008",
       "scope": "existing",
       "part_ids": [
-        "DATA\\COMMON\\McMaster\\MCMASTER 5537T293_T-Slotted Framing.ipt|[Primary]",
-        "DATA\\COMMON\\McMaster\\MCMASTER 5537T429_T-Slotted Framing.ipt|[Primary]",
-        "DATA\\COMMON\\McMaster\\MCMASTER 3136N149_T-Slotted Framing.ipt|[Primary]",
-        "DATA\\COMMON\\McMaster\\MCMASTER 47065T27_T-Slotted Framing.ipt|[Primary]",
-        "DATA\\COMMON\\McMaster\\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]"
+        "mcmaster-5537t293-t-slotted-framing",
+        "mcmaster-5537t429-t-slotted-framing",
+        "mcmaster-3136n149-t-slotted-framing",
+        "mcmaster-47065t27-t-slotted-framing",
+        "mcmaster-47065t845-silver-corner-bracket"
       ],
       "parent_group_ids": [
         "CAMERA FRAME:1"
@@ -492,8 +492,8 @@
       "supplementary_item_id": "SUP-009",
       "scope": "existing",
       "part_ids": [
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\T SLOT CORNER 47065T242.ipt|[Primary]"
+        "tslot-extrusion-1x40-5-copy",
+        "t-slot-corner-47065t242"
       ],
       "parent_group_ids": [
         "TANK SUPPORT FRAME:1",
@@ -572,8 +572,8 @@
       "supplementary_item_id": "SUP-010",
       "scope": "existing",
       "part_ids": [
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT PLATFORM.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT BRACKET.ipt|[Primary]"
+        "tank-support-platform",
+        "tank-support-bracket"
       ],
       "parent_group_ids": [
         "TANK SUPPORT FRAME:1",
@@ -652,8 +652,8 @@
       "supplementary_item_id": "SUP-011",
       "scope": "existing",
       "part_ids": [
-        "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
-        "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]"
+        "mcmaster-9378k24-natural-rubber-vibration-damping-sandwich-mount",
+        "mcmaster-90313a107-18-8-stainless-steel-oversized-washer"
       ],
       "parent_group_ids": [
         "TANK SUPPORT FRAME:1",
@@ -732,10 +732,10 @@
       "supplementary_item_id": "SUP-012",
       "scope": "existing",
       "part_ids": [
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ROLLER MOUNT PLATE.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING MOUNT PLATE.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt|[Primary]"
+        "roller-mount-plate",
+        "spring-mount-plate",
+        "camera-mount-plate",
+        "camera-mount-plate-teledyne-kinetix"
       ],
       "parent_group_ids": [
         "CAMERA FRAME:1"
@@ -798,10 +798,10 @@
       "supplementary_item_id": "SUP-013",
       "scope": "existing",
       "part_ids": [
-        "DATA\\COMMON\\McMaster\\MCMASTER 9293K121_Constant-Force Spring.ipt|[Primary]",
-        "DATA\\COMMON\\McMaster\\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]",
-        "DATA\\COMMON\\McMaster\\MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING ROLLER.ipt|[Primary]"
+        "mcmaster-9293k121-constant-force-spring",
+        "mcmaster-5972k164-ball-bearing",
+        "mcmaster-90265a164-18-8-stainless-steel-shoulder-screw",
+        "spring-roller"
       ],
       "parent_group_ids": [
         "CAMERA FRAME:1"
@@ -864,8 +864,8 @@
       "supplementary_item_id": "SUP-014",
       "scope": "existing",
       "part_ids": [
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt|[Primary]"
+        "camera-mount-plate",
+        "camera-mount-plate-teledyne-kinetix"
       ],
       "parent_group_ids": [
         "CAMERA FRAME:1"
@@ -928,7 +928,7 @@
       "supplementary_item_id": "SUP-015",
       "scope": "existing",
       "part_ids": [
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE TOP PANEL.ipt|[Primary]"
+        "enclosure-top-panel"
       ],
       "parent_group_ids": [
         "root"
@@ -957,10 +957,10 @@
       "supplementary_item_id": "SUP-016",
       "scope": "existing",
       "part_ids": [
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT LEFT.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\PANEL LOWER SUPPORT RIGHT.ipt|[Primary]",
-        "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE PANEL.ipt|[Primary]",
-        "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]"
+        "panel-lower-support-left",
+        "panel-lower-support-right",
+        "enclosure-panel",
+        "mcmaster-5004a11-compact-hold-down-toggle-clamp"
       ],
       "parent_group_ids": [
         "FREE STANDING FRAME:1",
@@ -1133,7 +1133,7 @@
   },
   "coincident_occurrences": [
     {
-      "part_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\2W.353\\SHULZE 2W.353 TANK.ipt|[Primary]",
+      "part_id": "shulze-2w-353-tank",
       "occurrences": [
         "TANK SUPPORT FRAME:1/SHULZE 2W.353 TANK:1",
         "SHULZE 2W.353 TANK:1"

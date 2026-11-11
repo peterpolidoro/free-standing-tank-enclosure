@@ -1,0 +1,781 @@
+﻿{
+    "captured_at":  "2026-10-21T15:32:38.6852051Z",
+    "vault_id":  "28",
+    "root":  {
+                 "version_id":  "991056",
+                 "master_id":  "988153",
+                 "name":  "Free Standing Enclosure.iam",
+                 "version":  5,
+                 "revision":  "0",
+                 "state":  "Work in Progress",
+                 "folder_id":  "953863",
+                 "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/Free Standing Enclosure.iam",
+                 "size":  4584960,
+                 "checkin_date":  "2026-09-10T19:50:08.36Z",
+                 "is_checked_out":  false,
+                 "role":  "root",
+                 "parents":  [
+
+                             ]
+             },
+    "association_count":  45,
+    "association_total":  45,
+    "folders":  {
+                    "953932":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/2W.353",
+                    "549089":  "$/DATA/COMMON/McMaster",
+                    "953863":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE",
+                    "985480":  "$/DATA/PROJECTS/_PROJECTS BY LAB/JAYARAMAN (LAB)/FLOW TUNNEL"
+                },
+    "files":  [
+                  {
+                      "version_id":  "906736",
+                      "master_id":  "805815",
+                      "name":  "47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt",
+                      "version":  3,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "549089",
+                      "vault_path":  "$/DATA/COMMON/McMaster/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt",
+                      "size":  116224,
+                      "checkin_date":  "2024-02-21T08:10:05.197Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "FREE STANDING FRAME.iam@990851"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953879",
+                      "master_id":  "953878",
+                      "name":  "MCMASTER 3136N149_T-Slotted Framing.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "549089",
+                      "vault_path":  "$/DATA/COMMON/McMaster/MCMASTER 3136N149_T-Slotted Framing.ipt",
+                      "size":  113664,
+                      "checkin_date":  "2025-10-13T18:42:33.073Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953862",
+                      "master_id":  "953861",
+                      "name":  "MCMASTER 47065T245.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "549089",
+                      "vault_path":  "$/DATA/COMMON/McMaster/MCMASTER 47065T245.ipt",
+                      "size":  390144,
+                      "checkin_date":  "2025-10-13T18:42:31.087Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "FREE STANDING FRAME.iam@990851"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953887",
+                      "master_id":  "953886",
+                      "name":  "MCMASTER 47065T27_T-Slotted Framing.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "549089",
+                      "vault_path":  "$/DATA/COMMON/McMaster/MCMASTER 47065T27_T-Slotted Framing.ipt",
+                      "size":  378880,
+                      "checkin_date":  "2025-10-13T18:42:33.84Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953919",
+                      "master_id":  "953918",
+                      "name":  "MCMASTER 47065T845_Silver Corner Bracket.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "549089",
+                      "vault_path":  "$/DATA/COMMON/McMaster/MCMASTER 47065T845_Silver Corner Bracket.ipt",
+                      "size":  134656,
+                      "checkin_date":  "2025-10-13T18:42:37.433Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "991078",
+                      "master_id":  "991077",
+                      "name":  "MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "549089",
+                      "vault_path":  "$/DATA/COMMON/McMaster/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt",
+                      "size":  1614848,
+                      "checkin_date":  "2026-09-10T19:49:13.33Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "TOGGLE CLAMP ASSEMBLY.iam@991088"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953899",
+                      "master_id":  "953898",
+                      "name":  "MCMASTER 5537T293_T-Slotted Framing.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "549089",
+                      "vault_path":  "$/DATA/COMMON/McMaster/MCMASTER 5537T293_T-Slotted Framing.ipt",
+                      "size":  1765888,
+                      "checkin_date":  "2025-10-13T18:42:35.183Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953903",
+                      "master_id":  "953902",
+                      "name":  "MCMASTER 5537T429_T-Slotted Framing.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "549089",
+                      "vault_path":  "$/DATA/COMMON/McMaster/MCMASTER 5537T429_T-Slotted Framing.ipt",
+                      "size":  1809408,
+                      "checkin_date":  "2025-10-13T18:42:35.793Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953911",
+                      "master_id":  "953910",
+                      "name":  "MCMASTER 5972K164_Ball Bearing.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "549089",
+                      "vault_path":  "$/DATA/COMMON/McMaster/MCMASTER 5972K164_Ball Bearing.ipt",
+                      "size":  679424,
+                      "checkin_date":  "2025-10-13T18:42:36.637Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953915",
+                      "master_id":  "953914",
+                      "name":  "MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "549089",
+                      "vault_path":  "$/DATA/COMMON/McMaster/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt",
+                      "size":  594944,
+                      "checkin_date":  "2025-10-13T18:42:37.06Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "985835",
+                      "master_id":  "985834",
+                      "name":  "MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "549089",
+                      "vault_path":  "$/DATA/COMMON/McMaster/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt",
+                      "size":  205312,
+                      "checkin_date":  "2026-07-31T18:07:51.587Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "TANK SUPPORT FRAME.iam@990179"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953895",
+                      "master_id":  "953894",
+                      "name":  "MCMASTER 9293K121_Constant-Force Spring.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "549089",
+                      "vault_path":  "$/DATA/COMMON/McMaster/MCMASTER 9293K121_Constant-Force Spring.ipt",
+                      "size":  331264,
+                      "checkin_date":  "2025-10-13T18:42:34.573Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "988142",
+                      "master_id":  "988141",
+                      "name":  "MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "549089",
+                      "vault_path":  "$/DATA/COMMON/McMaster/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt",
+                      "size":  587264,
+                      "checkin_date":  "2026-08-24T20:54:45.64Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "TANK SUPPORT FRAME.iam@990179"
+                                  ]
+                  },
+                  {
+                      "version_id":  "901265",
+                      "master_id":  "901264",
+                      "name":  "MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "549089",
+                      "vault_path":  "$/DATA/COMMON/McMaster/MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt",
+                      "size":  1612288,
+                      "checkin_date":  "2023-09-27T14:33:30.84Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "PANEL ASSEMBLY.iam@990992"
+                                  ]
+                  },
+                  {
+                      "version_id":  "987839",
+                      "master_id":  "987838",
+                      "name":  "CASTER ASSEMBLY.iam",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "985480",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/JAYARAMAN (LAB)/FLOW TUNNEL/CASTER ASSEMBLY.iam",
+                      "size":  627200,
+                      "checkin_date":  "2026-08-24T15:27:23.697Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "FREE STANDING FRAME.iam@990851"
+                                  ]
+                  },
+                  {
+                      "version_id":  "987831",
+                      "master_id":  "987830",
+                      "name":  "CASTER MOUNTING PLATE.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "985480",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/JAYARAMAN (LAB)/FLOW TUNNEL/CASTER MOUNTING PLATE.ipt",
+                      "size":  139776,
+                      "checkin_date":  "2026-08-24T15:27:22.69Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CASTER ASSEMBLY.iam@987839"
+                                  ]
+                  },
+                  {
+                      "version_id":  "987835",
+                      "master_id":  "987834",
+                      "name":  "HOLKIE LEVELING CASTER.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "985480",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/JAYARAMAN (LAB)/FLOW TUNNEL/HOLKIE LEVELING CASTER.ipt",
+                      "size":  2657280,
+                      "checkin_date":  "2026-08-24T15:27:23.213Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CASTER ASSEMBLY.iam@987839"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953936",
+                      "master_id":  "953935",
+                      "name":  "SHULZE 2W.353 TANK.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953932",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/2W.353/SHULZE 2W.353 TANK.ipt",
+                      "size":  129536,
+                      "checkin_date":  "2025-10-13T18:42:50.067Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "Free Standing Enclosure.iam@991056",
+                                      "TANK SUPPORT FRAME.iam@990179"
+                                  ]
+                  },
+                  {
+                      "version_id":  "991079",
+                      "master_id":  "953926",
+                      "name":  "CAMERA FRAME.iam",
+                      "version":  5,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/CAMERA FRAME.iam",
+                      "size":  2725888,
+                      "checkin_date":  "2026-09-10T19:50:02.167Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "Free Standing Enclosure.iam@991056"
+                                  ]
+                  },
+                  {
+                      "version_id":  "973202",
+                      "master_id":  "973201",
+                      "name":  "CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/CAMERA MOUNT PLATE - TELEDYNE KINETIX.ipt",
+                      "size":  122880,
+                      "checkin_date":  "2026-03-06T15:06:45.667Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "954103",
+                      "master_id":  "954102",
+                      "name":  "CAMERA MOUNT PLATE.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/CAMERA MOUNT PLATE.ipt",
+                      "size":  132608,
+                      "checkin_date":  "2025-10-17T19:51:31.817Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "990988",
+                      "master_id":  "990987",
+                      "name":  "ENCLOSURE PANEL.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/ENCLOSURE PANEL.ipt",
+                      "size":  104960,
+                      "checkin_date":  "2026-09-09T14:36:01.517Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "PANEL ASSEMBLY.iam@990992"
+                                  ]
+                  },
+                  {
+                      "version_id":  "991092",
+                      "master_id":  "991091",
+                      "name":  "ENCLOSURE TOP PANEL.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/ENCLOSURE TOP PANEL.ipt",
+                      "size":  109056,
+                      "checkin_date":  "2026-09-10T19:50:06.813Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "Free Standing Enclosure.iam@991056"
+                                  ]
+                  },
+                  {
+                      "version_id":  "991056",
+                      "master_id":  "988153",
+                      "name":  "Free Standing Enclosure.iam",
+                      "version":  5,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/Free Standing Enclosure.iam",
+                      "size":  4584960,
+                      "checkin_date":  "2026-09-10T19:50:08.36Z",
+                      "is_checked_out":  false,
+                      "role":  "root",
+                      "parents":  [
+
+                                  ]
+                  },
+                  {
+                      "version_id":  "990851",
+                      "master_id":  "990153",
+                      "name":  "FREE STANDING FRAME.iam",
+                      "version":  2,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/FREE STANDING FRAME.iam",
+                      "size":  883200,
+                      "checkin_date":  "2026-09-09T14:36:01.31Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "Free Standing Enclosure.iam@991056"
+                                  ]
+                  },
+                  {
+                      "version_id":  "990992",
+                      "master_id":  "990991",
+                      "name":  "PANEL ASSEMBLY.iam",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/PANEL ASSEMBLY.iam",
+                      "size":  295936,
+                      "checkin_date":  "2026-09-09T14:36:01.827Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "Free Standing Enclosure.iam@991056"
+                                  ]
+                  },
+                  {
+                      "version_id":  "990983",
+                      "master_id":  "990982",
+                      "name":  "PANEL LOWER SUPPORT LEFT.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/PANEL LOWER SUPPORT LEFT.ipt",
+                      "size":  303104,
+                      "checkin_date":  "2026-09-09T14:36:00.53Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "FREE STANDING FRAME.iam@990851"
+                                  ]
+                  },
+                  {
+                      "version_id":  "990979",
+                      "master_id":  "990978",
+                      "name":  "PANEL LOWER SUPPORT RIGHT.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/PANEL LOWER SUPPORT RIGHT.ipt",
+                      "size":  274944,
+                      "checkin_date":  "2026-09-09T14:36:00.26Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "FREE STANDING FRAME.iam@990851",
+                                      "PANEL LOWER SUPPORT LEFT.ipt@990983"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953923",
+                      "master_id":  "953922",
+                      "name":  "ROLLER MOUNT PLATE.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/ROLLER MOUNT PLATE.ipt",
+                      "size":  137728,
+                      "checkin_date":  "2025-10-13T18:42:37.81Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953875",
+                      "master_id":  "953874",
+                      "name":  "SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt",
+                      "size":  329216,
+                      "checkin_date":  "2025-10-13T18:42:32.697Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "988150",
+                      "master_id":  "988149",
+                      "name":  "SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt",
+                      "size":  359936,
+                      "checkin_date":  "2026-08-24T20:54:46.48Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "FREE STANDING FRAME.iam@990851"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953907",
+                      "master_id":  "953906",
+                      "name":  "SLLB Enclosure 22in 47065T808_T-Slotted Framing.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/SLLB Enclosure 22in 47065T808_T-Slotted Framing.ipt",
+                      "size":  318464,
+                      "checkin_date":  "2025-10-13T18:42:36.183Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953883",
+                      "master_id":  "953882",
+                      "name":  "SLLB Enclosure 41in 47065T808_T-Slotted Framing.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/SLLB Enclosure 41in 47065T808_T-Slotted Framing.ipt",
+                      "size":  310272,
+                      "checkin_date":  "2025-10-13T18:42:33.45Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953867",
+                      "master_id":  "953866",
+                      "name":  "SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt",
+                      "size":  304128,
+                      "checkin_date":  "2025-10-13T18:42:31.93Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "FREE STANDING FRAME.iam@990851"
+                                  ]
+                  },
+                  {
+                      "version_id":  "990975",
+                      "master_id":  "990974",
+                      "name":  "SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/SLLB Enclosure 96in 47065T808_T-Slotted Framing.ipt",
+                      "size":  291328,
+                      "checkin_date":  "2026-09-09T14:36:00.023Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "FREE STANDING FRAME.iam@990851"
+                                  ]
+                  },
+                  {
+                      "version_id":  "954099",
+                      "master_id":  "954098",
+                      "name":  "SPRING MOUNT PLATE.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/SPRING MOUNT PLATE.ipt",
+                      "size":  130560,
+                      "checkin_date":  "2025-10-17T19:51:31.223Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "953891",
+                      "master_id":  "953890",
+                      "name":  "SPRING ROLLER.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/SPRING ROLLER.ipt",
+                      "size":  157184,
+                      "checkin_date":  "2025-10-13T18:42:34.2Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "CAMERA FRAME.iam@991079"
+                                  ]
+                  },
+                  {
+                      "version_id":  "988130",
+                      "master_id":  "988129",
+                      "name":  "T SLOT CORNER 47065T242.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/T SLOT CORNER 47065T242.ipt",
+                      "size":  1581568,
+                      "checkin_date":  "2026-08-24T20:54:44.78Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "TANK SUPPORT FRAME.iam@990179"
+                                  ]
+                  },
+                  {
+                      "version_id":  "988820",
+                      "master_id":  "988819",
+                      "name":  "TANK SUPPORT BRACKET.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/TANK SUPPORT BRACKET.ipt",
+                      "size":  125952,
+                      "checkin_date":  "2026-08-28T21:58:35.597Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "TANK SUPPORT FRAME.iam@990179"
+                                  ]
+                  },
+                  {
+                      "version_id":  "990179",
+                      "master_id":  "988145",
+                      "name":  "TANK SUPPORT FRAME.iam",
+                      "version":  3,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/TANK SUPPORT FRAME.iam",
+                      "size":  1098240,
+                      "checkin_date":  "2026-09-02T19:15:47.6Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "Free Standing Enclosure.iam@991056"
+                                  ]
+                  },
+                  {
+                      "version_id":  "988815",
+                      "master_id":  "988814",
+                      "name":  "TANK SUPPORT PLATFORM.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/TANK SUPPORT PLATFORM.ipt",
+                      "size":  99328,
+                      "checkin_date":  "2026-08-28T21:58:34.353Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "TANK SUPPORT FRAME.iam@990179"
+                                  ]
+                  },
+                  {
+                      "version_id":  "991088",
+                      "master_id":  "991087",
+                      "name":  "TOGGLE CLAMP ASSEMBLY.iam",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/TOGGLE CLAMP ASSEMBLY.iam",
+                      "size":  794112,
+                      "checkin_date":  "2026-09-10T19:50:06.58Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "Free Standing Enclosure.iam@991056"
+                                  ]
+                  },
+                  {
+                      "version_id":  "991084",
+                      "master_id":  "991083",
+                      "name":  "TOGGLE CLAMP MOUNT.ipt",
+                      "version":  1,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/TOGGLE CLAMP MOUNT.ipt",
+                      "size":  197120,
+                      "checkin_date":  "2026-09-10T19:50:06.193Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "TOGGLE CLAMP ASSEMBLY.iam@991088"
+                                  ]
+                  },
+                  {
+                      "version_id":  "990174",
+                      "master_id":  "988137",
+                      "name":  "TSLOT EXTRUSION 1X40.5 copy.ipt",
+                      "version":  3,
+                      "revision":  "0",
+                      "state":  "Work in Progress",
+                      "folder_id":  "953863",
+                      "vault_path":  "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/TSLOT EXTRUSION 1X40.5 copy.ipt",
+                      "size":  327168,
+                      "checkin_date":  "2026-09-02T19:15:46.293Z",
+                      "is_checked_out":  false,
+                      "role":  "Dependency",
+                      "parents":  [
+                                      "TANK SUPPORT FRAME.iam@990179"
+                                  ]
+                  }
+              ]
+}

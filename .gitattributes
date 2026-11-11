@@ -10,8 +10,8 @@
 *.FCStd -text -diff -merge
 *.fcstd -text -diff -merge
 
-# Raw exporter metadata is covered by byte-level receipts; keep CRLF/BOM intact.
-/references/enclosure/*.json -text whitespace=cr-at-eol
+# The exporter's records are kept byte for byte (CRLF and BOM included); their receipt covers them.
+/references/receipts/** -text whitespace=cr-at-eol
 
 # Generated documentation packages are tracked as binaries.
 *.png -text -diff

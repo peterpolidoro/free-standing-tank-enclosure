@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "sllb-enclosure-2-5in-47065t808-t-slotted-framing",
+  "name": "SLLB Enclosure 2.5in 47065T808_T-Slotted Framing",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "988149",
+    "version_id": "988150",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2026-08-24T20:54:46.48Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt",
+    "native_sha256": "73f20bada4af182f2e22afd32de8a79c085f6a3a40c2ce4b02e08ce7b334d17e"
+  },
+  "step": {
+    "sha256": "74ffbd87c8b80110403f6cc16cadb240be019ba4acdb40c190d357444ce7dbd0",
+    "data_sha256": "1ccf2a8e9948745205f65cd89509b5f0ceaea5a212eb18097b5004a37f829dc2",
+    "bytes": 252794,
+    "protocol": "AP214",
+    "length_unit": "mm",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 2.5in 47065T808_T-Slotted Framing.ipt|[Primary]",
+    "package_path": "assets/SLLB Enclosure 2.5in 47065T808_T-Slotted Framing__[Primary]__0debaac0.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "mm",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #5672",
+      "entity": "( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI.,.METRE.) )"
+    }
+  },
+  "properties": {
+    "part_number": "",
+    "description": "",
+    "material": "Generic",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - jET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "mm",
+    "bodies": {
+      "surface_bodies": 1,
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1
+    },
+    "extent_mm": [38.100000000000016, 38.10000000000002, 63.49999999999998],
+    "volume_mm3": 37546.448030036045,
+    "range_box_cm": {
+      "min": [-1.9050000000000002, -1.9050000000000011, -15.240000000000004],
+      "max": [1.9050000000000016, 1.9050000000000011, -8.890000000000006],
+      "extent": [3.810000000000002, 3.8100000000000023, 6.349999999999998]
+    },
+    "volume_cm3": 37.546448030036046
+  },
+  "materials": null
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {"id": "one-solid", "fact": "solids", "equals": 1},
+    {"id": "published-outer-size", "fact": "extent_mm", "equals": [609.51, 355.97, 72.63], "tolerance": 1e-06},
+    {"id": "front-on-z0-centred", "fact": "bounding_box_max_mm", "equals": [304.755, 177.985, 0.0], "tolerance": 1e-06},
+    {"id": "volume-of-the-box", "fact": "volume_mm3", "min": 15758333.151, "max": 15758333.171, "note": "609.51 * 355.97 * 72.63"}
+  ]
+}

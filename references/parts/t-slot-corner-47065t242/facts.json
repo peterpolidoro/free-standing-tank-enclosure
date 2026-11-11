@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "key": "t-slot-corner-47065t242",
+  "step": {
+    "sha256": "8ae9202837fac68fd8c61cd54c0a20edadc58a1fa336c6328288540e359e41a3",
+    "data_sha256": "7cf879d1b8821db330abac2343ead6aea7d3e293a35f1600d0b69ede5f3f3240"
+  },
+  "tool": {
+    "name": "FreeCAD",
+    "version": "1.1.3",
+    "kernel": "OpenCASCADE",
+    "kernel_version": "7.9.3"
+  },
+  "length_unit_declared": "in",
+  "valid": true,
+  "solids": 5,
+  "shells": 5,
+  "faces": 372,
+  "volume_mm3": 12807.972197056695,
+  "area_mm2": 8621.232996405228,
+  "center_of_mass_mm": [0.0003331196909674203, -0.8558959454313091, -0.8564213068045778],
+  "bounding_box_mm": {
+    "min": [-12.600000000000003, -34.00000009999989, -34.000000099999895],
+    "max": [12.600000000000003, 13.101022789087942, 13.101022789087942]
+  }
+}

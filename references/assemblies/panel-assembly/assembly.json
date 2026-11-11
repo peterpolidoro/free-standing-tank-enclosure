@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "key": "panel-assembly",
+  "name": "PANEL ASSEMBLY",
+  "length_unit": "cm",
+  "children": [
+    {
+      "name": "ENCLOSURE PANEL:1",
+      "component": "enclosure-panel",
+      "kind": "part",
+      "master_id": "990987",
+      "model_state": "[Primary]",
+      "transform": [
+        [1, 9.659736373581153e-14, 6.346114856906878e-30, 59.70267097416631],
+        [-9.659736373581153e-14, 1, -1.7635960374500626e-15, 129.53999999999468],
+        [-1.7670484276890527e-28, 1.7635960374500626e-15, 1, 7.484002726849434e-12],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": true,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "MCMASTER_1950A67_Unthreaded-Hole Pull Handle:1",
+      "component": "mcmaster-1950a67-unthreaded-hole-pull-handle",
+      "kind": "part",
+      "master_id": "901264",
+      "model_state": "[Primary]",
+      "transform": [
+        [9.57327527275265e-14, -1.0000000000000002, 2.2420775429197073e-44, 24.14267097416631],
+        [1.0000000000000002, 9.57327527275265e-14, -1.7635960374500626e-15, 129.5399999999981],
+        [1.763596037450063e-15, 1.6883390336445242e-28, 1, 4.533900000007486],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    },
+    {
+      "name": "MCMASTER_1950A67_Unthreaded-Hole Pull Handle:2",
+      "component": "mcmaster-1950a67-unthreaded-hole-pull-handle",
+      "kind": "part",
+      "master_id": "901264",
+      "model_state": "[Primary]",
+      "transform": [
+        [-9.319426602560944e-14, 1.0000000000000002, 1.2692229713813758e-29, 95.26267097416627],
+        [-1.0000000000000002, -9.319426602560944e-14, -1.7635960374500626e-15, 129.5399999999912],
+        [-1.763596037450063e-15, -1.7704926798964555e-28, 1, 4.5339000000074865],
+        [0, 0, 0, 1]
+      ],
+      "bom_structure": "Normal",
+      "visible": true,
+      "suppressed": false,
+      "grounded": false,
+      "flexible": false,
+      "mirrored": false
+    }
+  ]
+}

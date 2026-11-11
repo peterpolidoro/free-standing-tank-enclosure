@@ -145,8 +145,8 @@ approximately 100-hour planning estimate and discuss forecast overruns with Jon.
 
 ## Accepted CAD inputs (pilot 02)
 
-The frozen part snapshot is in `../references/enclosure/`: 37 part definitions,
-155 occurrences and 17 groups including the root. `build_reference.py` produces
+The frozen snapshot is in `../references/`: 37 part directories and 7 assembly
+directories, which flatten to 155 occurrences and 17 groups including the root. `build_reference.py` produces
 an ignored hierarchical FreeCAD reference from it. Validation:
 `../validation/2026-10-21-pilot-02-review.md`.
 

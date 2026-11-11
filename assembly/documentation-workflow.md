@@ -1,15 +1,27 @@
 # Build the enclosure documentation
 
-The accepted source is `references/enclosure/` (Vault root 991056). The original
-40 payload hashes and scene/receipt hashes must match before staging. The source
-scene loads directly in mechanical-docs; no scene rewrite is needed. FreeCAD
+The accepted source is `references/` (Vault root 991056), one directory per
+Vault file. The scene the documentation reads is flattened from it by
+`mechanical-cad` into the ignored `.cache/reference-scene/`:
+
+```sh
+make reference-scene MECHANICAL_CAD="$HOME/Repositories/orb-weaver/mechanical-cad"
+```
+
+Staging refuses a scene that was not flattened from the tree as it stands, a
+scene whose hash is not the one pinned in `assembly/documentation.json`, and a
+STEP file that is not the one the scene records. The pin changes when the
+references change or when `mechanical-cad` changes what it writes; review the
+new scene (`mechanical_cad compare-scenes` against the old one) before
+updating it. The flattened scene loads directly in mechanical-docs. FreeCAD
 normalizes STEP geometry to mm, including inch/cm assets. The declared native
 Y-up basis is applied once by the documentation loader.
 
 `prepare_documentation.py` copies the frozen inputs into a **new** directory under
-`.cache/`, adds `render.json` and any authored `assembly/inventory.json` or
-`assembly/instructions.json`, and validates them with mechanical-docs. Without an
-authored inventory it generates CAD counts with unknown physical stock. Without
+`.cache/`, adds `render.json`, `build-scope.json` and any authored
+`assembly/inventory.json` or `assembly/instructions.json`, and validates them with mechanical-docs. Without an
+authored inventory it generates CAD counts with unknown physical stock, in the
+row order of the procurement sheet so that part numbers do not move. Without
 instructions it produces an inventory-only project. Existing destinations are
 refused, including counted stock or edited instructions: choose a new output
 directory rather than regenerating over them.
@@ -80,8 +92,8 @@ documentation evidence run is published the same way with
 The original PowerShell metadata has UTF-8 BOMs and CRLF line endings. Earlier
 Git JSON attributes normalized those files on commit, so a fresh clone at
 `683c0ba` fails the export receipt despite an unchanged local acquisition.
-The corrected `.gitattributes` exempts raw `references/enclosure/*.json` from
-text conversion. Those four files must be staged with their original bytes along
+The corrected `.gitattributes` exempts the exporter's records (now under
+`references/receipts/`) from text conversion. Those four files must be staged with their original bytes along
 with that change; they are recoverable from the accepted pilot-02 evidence.
 Do not recalculate the receipt to bless normalized files or edit the raw snapshot.
 Fresh checkouts with both `core.autocrlf=false` and `true` were checked against all

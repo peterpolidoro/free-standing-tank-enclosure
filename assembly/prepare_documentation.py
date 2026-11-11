@@ -1,5 +1,7 @@
 """Stage this project's immutable CAD and authored manual inputs for mechanical-docs.
 
+The CAD input is the scene flattened from references/ (assembly/reference_scene.py);
+write it first with `make reference-scene MECHANICAL_CAD=/path/to/mechanical-cad`.
 Run from the managed project environment with --tools /path/to/mechanical-docs.
 Only a fresh directory below .cache/ may be created. Existing outputs are refused
 so counted stock/instructions are never silently regenerated over user work.
@@ -17,6 +19,7 @@ import tempfile
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import procurement_manifests as pm  # noqa: E402
+import reference_scene  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -47,29 +50,30 @@ def git_revision(repo):
 
 def prepare(tools, output=None):
     cfg = read(ROOT / "assembly/documentation.json")
-    if cfg.get("schema_version") != 1:
+    if cfg.get("schema_version") != 2:
         raise ValueError("Unsupported documentation recipe version")
-    source = inside(ROOT, cfg["snapshot"])
+    scene_path = reference_scene.path()       # only a scene flattened from the tree as it stands
+    source = scene_path.parent
     dest = inside(ROOT, output or cfg["output"])
     if not dest.resolve().is_relative_to((ROOT / ".cache").resolve()) or dest == ROOT / ".cache":
         raise ValueError("Output must be a new directory below this project's .cache/")
     if dest.exists():
         raise FileExistsError(f"Refusing existing output {dest}; choose a new --output .cache/... path")
-    if sha(source / "scene.json") != cfg["scene_sha256"]:
-        raise ValueError("Snapshot differs from the reviewed scene pinned in assembly/documentation.json")
-    if sha(source / "export-receipt.json") != cfg["export_receipt_sha256"]:
-        raise ValueError("Snapshot receipt differs from the reviewed receipt")
-    receipt = read(source / "export-receipt.json")
-    files = receipt["files"]
-    if receipt.get("status") not in (None, "complete"):
+    if sha(scene_path) != cfg["scene_sha256"]:
+        raise ValueError("The flattened scene differs from the reviewed scene pinned in assembly/documentation.json")
+    receipt_path = inside(ROOT, f"references/receipts/{cfg['export_run']}/export-receipt.json")
+    if sha(receipt_path) != cfg["export_receipt_sha256"]:
+        raise ValueError("The exporter's receipt differs from the reviewed receipt")
+    if read(receipt_path).get("status") not in (None, "complete"):
         raise ValueError("Snapshot export is not complete")
-    for rel, record in files.items():
-        p = inside(source, rel)
-        if not p.is_file() or sha(p) != record["sha256"] or p.stat().st_size != record["bytes"]:
-            raise ValueError(f"Snapshot payload mismatch: {rel}")
-    for required in ("scene.json", "native-snapshot.json", "inventory-raw.json"):
-        if required not in files:
-            raise ValueError(f"Missing required snapshot payload: {required}")
+    raw_scene = read(scene_path)
+    # what is staged: the scene and the STEP file of every part, each checked against the scene's record of it
+    files = {"scene.json": cfg["scene_sha256"]}
+    for part in raw_scene["parts"]:
+        p = inside(source, part["asset"]["path"])
+        if not p.is_file() or sha(p) != part["asset"]["sha256"]:
+            raise ValueError(f"Asset differs from the scene's record of it: {part['asset']['path']}")
+        files[part["asset"]["path"]] = part["asset"]["sha256"]
     tools = tools.resolve()
     if not (tools / "mechanical_docs/manifest.py").is_file():
         raise ValueError("--tools must name the mechanical-docs checkout")
@@ -77,11 +81,11 @@ def prepare(tools, output=None):
     from mechanical_docs.manifest import inventory_template, load_project, load_scene
     from mechanical_docs.render_settings import load_settings
     # The common validator checks geometry references, hierarchy and identities.
-    sc = load_scene(source / "scene.json")
+    sc = load_scene(scene_path)
     for p in sc.parts.values():
         if p.asset.path not in files:
-            raise ValueError(f"Part is not covered by the export receipt: {p.asset.path}")
-    authored = {name: ROOT / "assembly" / name for name in ("inventory.json", "instructions.json", "render.json")}
+            raise ValueError(f"Part is not among the staged files: {p.asset.path}")
+    authored = {name: ROOT / "assembly" / name for name in ("inventory.json", "instructions.json", "render.json", "build-scope.json")}
     dest.parent.mkdir(parents=True, exist_ok=True)
     staging = Path(tempfile.mkdtemp(prefix=".preparing-manual-", dir=dest.parent))
     try:
@@ -89,7 +93,7 @@ def prepare(tools, output=None):
             target = staging / rel
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source / rel, target)  # independent bytes; no hardlinks to references
-        shutil.copyfile(source / "export-receipt.json", staging / "export-receipt.json")
+        shutil.copyfile(receipt_path, staging / "export-receipt.json")
         for name, p in authored.items():
             if p.exists():
                 inside(ROOT, str(p.relative_to(ROOT)))
@@ -97,10 +101,13 @@ def prepare(tools, output=None):
         sheets = {"supplementary-bom.csv": pm.SUPPLEMENT_CSV, "modeled-parts.csv": pm.MODELED_CSV, "joint-audit.json": pm.JOINT_AUDIT}
         if (ROOT / "assembly/project-notes.json").exists():
             sheets["project-notes.json"] = ROOT / "assembly/project-notes.json"
-        raw_scene = read(source / "scene.json")
         if not authored["inventory.json"].exists():
             # CAD counts from the scene plus the stock record from the procurement sheet (unknown = null, never 0)
             inventory = pm.extend_inventory(inventory_template(sc), pm.stock_extension(pm.read_rows(pm.MODELED_CSV)), raw_scene)
+            # Rows in the order of the procurement sheet. The scene lists parts by key, and the manual numbers parts
+            # in inventory order: the numbers of the published manual must not move because a list was re-sorted.
+            sheet_order = {row["part_id"]: i for i, row in enumerate(pm.read_rows(pm.MODELED_CSV))}
+            inventory["items"].sort(key=lambda item: sheet_order[item["part_id"]])
             notes_file = ROOT / "assembly/project-notes.json"
             if notes_file.exists():
                 notes = read(notes_file)
@@ -113,13 +120,15 @@ def prepare(tools, output=None):
         (staging / "supplement.json").write_text(json.dumps(supplement, indent=2, ensure_ascii=False) + "\n")
         project = load_project(staging)
         settings, _ = load_settings(staging)
-        for rel, record in files.items():
-            if sha(staging / rel) != record["sha256"]:
+        for rel, digest in files.items():
+            if sha(staging / rel) != digest:
                 raise ValueError(f"Copied payload failed verification: {rel}")
         record = {
             "schema_version": 1,
             "source_scene_sha256": cfg["scene_sha256"],
-            "source_receipt_sha256": sha(source / "export-receipt.json"),
+            "source_receipt_sha256": sha(receipt_path),
+            "export_run": cfg["export_run"],
+            "vault_lock_sha256": sha(ROOT / "vault-lock.json"),
             "recipe_sha256": sha(ROOT / "assembly/documentation.json"),
             "mechanical_docs_commit": git_revision(tools),
             "mechanical_docs_dirty": bool(subprocess.check_output(["git", "-C", str(tools), "status", "--porcelain"], text=True).strip()),

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "key": "mcmaster-90313a107-18-8-stainless-steel-oversized-washer",
+  "step": {
+    "sha256": "83f53c90f41e60c715fdd3448acdaf1e6dba5bbe1be0c3a7dd8fcdb3696cda77",
+    "data_sha256": "f870daad3b04ecb00695f1b76e92e2359ebd6835d9926785607844288a0a4712"
+  },
+  "tool": {
+    "name": "FreeCAD",
+    "version": "1.1.3",
+    "kernel": "OpenCASCADE",
+    "kernel_version": "7.9.3"
+  },
+  "length_unit_declared": "in",
+  "valid": true,
+  "solids": 1,
+  "shells": 1,
+  "faces": 8,
+  "volume_mm3": 591.9980086079289,
+  "area_mm2": 1052.0694441803091,
+  "center_of_mass_mm": [-1.152235339327728e-15, 5.394127845572771e-16, 6.121250240178555e-16],
+  "bounding_box_mm": {
+    "min": [-12.7, -12.7, -0.635000000000005],
+    "max": [12.7, 12.7, 0.6350000000000051]
+  }
+}

@@ -8,11 +8,14 @@ from pathlib import Path
 import hashlib
 import json
 import math
+import sys
 import FreeCAD as App
 import Part
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import reference_scene  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
-BUNDLE = ROOT / "references/enclosure"
 OUTPUT = ROOT / ".cache/enclosure-reference.FCStd"
 
 def read(path):
@@ -35,16 +38,16 @@ def measure(root):
 def main():
     if OUTPUT.exists():
         raise RuntimeError(f"Refusing to overwrite {OUTPUT}; move it aside before rebuilding")
-    scene = read(BUNDLE / "scene.json")
-    receipt = read(BUNDLE / "export-receipt.json")
+    scene_path = reference_scene.path()
+    bundle = scene_path.parent
+    scene = read(scene_path)
     assert scene["units"] == "mm" and scene["coordinate_system"]["up_axis"] == "+Y"
-    for rel, record in receipt["files"].items():
-        f = (BUNDLE / rel).resolve()
-        assert f.is_relative_to(BUNDLE.resolve()) and not f.is_symlink()
-        assert digest(f) == record["sha256"] and f.stat().st_size == record["bytes"]
     shapes = {}
     for p in scene["parts"]:
-        shapes[p["id"]] = Part.read(str(BUNDLE / p["asset"]["path"]))
+        f = (bundle / p["asset"]["path"]).resolve()
+        assert f.is_relative_to(bundle.resolve()) and not f.is_symlink()
+        assert digest(f) == p["asset"]["sha256"]          # the file the scene describes
+        shapes[p["id"]] = Part.read(str(f))
     doc = App.newDocument("EnclosureReference")
     doc.Label = "Free Standing Enclosure — imported reference"
     groups = {}
@@ -81,7 +84,7 @@ def main():
     assert abs(after["volume_mm3"] - before["volume_mm3"]) < 0.01
     assert max(abs(x-y) for x,y in zip(after["bounds_mm"],before["bounds_mm"])) < 1e-6
     App.closeDocument(reopened.Name)
-    result = {"freecad_version": ".".join(App.Version()[:3]), "scene_sha256": digest(BUNDLE/"scene.json"),
+    result = {"freecad_version": ".".join(App.Version()[:3]), "scene_sha256": digest(scene_path),
               "output_sha256": digest(OUTPUT), "occurrences": len(scene["occurrences"]),
               "assembly_groups": len(groups), "measurement": after, "save_reopen_passed": True,
               "qualification": "Generated reference with imported shapes/placements; no native constraints, design approval or assembly procedure."}

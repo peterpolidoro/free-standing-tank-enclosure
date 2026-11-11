@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "mcmaster-5537t429-t-slotted-framing",
+  "name": "MCMASTER 5537T429_T-Slotted Framing",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "953902",
+    "version_id": "953903",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2025-10-13T18:42:35.793Z",
+    "path": "$/DATA/COMMON/McMaster/MCMASTER 5537T429_T-Slotted Framing.ipt",
+    "native_sha256": "9f94e7dd02c8d86427d8e73773418f0c70b20fb860306da5124dedbbaf972500"
+  },
+  "step": {
+    "sha256": "65dcf67cd5db49d88eb51965255f36b54af3f1cd16178d6594ac1eca9b58aa91",
+    "data_sha256": "8e4b5832e373dda8fa0d275368d165ebf538eb0f5f68ce7a42c8a9f2c576aca6",
+    "bytes": 2558943,
+    "protocol": "AP214",
+    "length_unit": "mm",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\COMMON\\McMaster\\MCMASTER 5537T429_T-Slotted Framing.ipt|[Primary]",
+    "package_path": "assets/MCMASTER 5537T429_T-Slotted Framing__[Primary]__72ff3dc4.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "mm",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #34246",
+      "entity": "( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI.,.METRE.) )"
+    }
+  },
+  "properties": {
+    "part_number": "",
+    "description": "",
+    "material": "Zinc",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - jET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "mm",
+    "bodies": {
+      "surface_bodies": 11,
+      "solid_bodies": 11,
+      "visible_solid_bodies": 11
+    },
+    "extent_mm": [32.00357087069556, 99.21083664142357, 102.94199560176904],
+    "volume_mm3": 25864.43000102174,
+    "range_box_cm": {
+      "min": [-1.6001785435347782, -0.8650000000000004, -6.294199560176902],
+      "max": [1.6001785435347782, 9.056083664142356, 4.000000000000001],
+      "extent": [3.2003570870695563, 9.921083664142357, 10.294199560176903]
+    },
+    "volume_cm3": 25.86443000102174
+  },
+  "materials": null
+}

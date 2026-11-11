@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "kind": "assembly",
+  "key": "panel-assembly",
+  "name": "PANEL ASSEMBLY",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "990991",
+    "version_id": "990992",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2026-09-09T14:36:01.827Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/PANEL ASSEMBLY.iam",
+    "native_sha256": "c9c424d65a21797fa11a5b13559029046028733749752231fc5a9771898e7385"
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "PANEL ASSEMBLY"
+  },
+  "native": {
+    "length_unit": null,
+    "instances_in_export": 4
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "key": "camera-mount-plate-teledyne-kinetix",
+  "step": {
+    "sha256": "b6d274fdce0180a04441db99078cafdeb8a97da93a9bbaa52238d1e24a69560c",
+    "data_sha256": "292b729fcfacc114e9da4fe83345234b15178c2fc74fb1de4559378e6178a03c"
+  },
+  "tool": {
+    "name": "FreeCAD",
+    "version": "1.1.3",
+    "kernel": "OpenCASCADE",
+    "kernel_version": "7.9.3"
+  },
+  "length_unit_declared": "in",
+  "valid": true,
+  "solids": 1,
+  "shells": 1,
+  "faces": 18,
+  "volume_mm3": 45400.30011695729,
+  "area_mm2": 17022.7961275582,
+  "center_of_mass_mm": [9.325263986904062e-15, -36.89619259297081, -3.174999999999999],
+  "bounding_box_mm": {
+    "min": [-50.800000000000125, -76.19999999999999, -6.35],
+    "max": [50.800000000000125, 3.330669073875479e-14, 0.0]
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "scene": "references/enclosure/scene.json",
+  "scene": "scene.json",
   "phase": "phase-1",
   "title": "Enclosure without tanks and backlight",
   "decided_by": "Peter, 2026-10-22",

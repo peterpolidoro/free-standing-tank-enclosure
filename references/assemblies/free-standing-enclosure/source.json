@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "kind": "assembly",
+  "key": "free-standing-enclosure",
+  "name": "Free Standing Enclosure",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "988153",
+    "version_id": "991056",
+    "version_number": 5,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2026-09-10T19:50:08.36Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/Free Standing Enclosure.iam",
+    "native_sha256": "d6d45e9a39cdc54e88029ab5c566ea3c8ce055aa2f2252380f214f483a206c24"
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "root"
+  },
+  "native": {
+    "length_unit": "in",
+    "instances_in_export": 1
+  }
+}

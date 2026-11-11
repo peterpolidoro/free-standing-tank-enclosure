@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "roller-mount-plate",
+  "name": "ROLLER MOUNT PLATE",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "953922",
+    "version_id": "953923",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2025-10-13T18:42:37.81Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/ROLLER MOUNT PLATE.ipt",
+    "native_sha256": "159f5580c57f78a81d68d2ea00302094a9c3377e8d647a473b179d14f415a4b7"
+  },
+  "step": {
+    "sha256": "c1d9346af52434493066ce4726c5697b1c208e91ee347629cdf8e2bcd88e25f1",
+    "data_sha256": "1a61d15f51127745e85050d80b8ad049187f1a4c5acbe7b8621e09ccc5ce063f",
+    "bytes": 20967,
+    "protocol": "AP214",
+    "length_unit": "in",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ROLLER MOUNT PLATE.ipt|[Primary]",
+    "package_path": "assets/ROLLER MOUNT PLATE__[Primary]__6a8f878a.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "in",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #451",
+      "entity": "( CONVERSION_BASED_UNIT('inch',#454) LENGTH_UNIT() NAMED_UNIT(#449) )"
+    }
+  },
+  "properties": {
+    "part_number": "",
+    "description": "",
+    "material": "ALUMINUM, 6061-T651",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - jET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "in",
+    "bodies": {
+      "surface_bodies": 1,
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1
+    },
+    "extent_mm": [6.35, 38.100000000000016, 107.95000000000002],
+    "volume_mm3": 24870.307268483615,
+    "range_box_cm": {
+      "min": [0, -1.9050000000000007, -5.397500000000001],
+      "max": [0.635, 1.9050000000000007, 5.397500000000001],
+      "extent": [0.635, 3.8100000000000014, 10.795000000000002]
+    },
+    "volume_cm3": 24.870307268483614
+  },
+  "materials": null
+}

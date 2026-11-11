@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "mcmaster-1950a67-unthreaded-hole-pull-handle",
+  "name": "MCMASTER_1950A67_Unthreaded-Hole Pull Handle",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "901264",
+    "version_id": "901265",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2023-09-27T14:33:30.84Z",
+    "path": "$/DATA/COMMON/McMaster/MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt",
+    "native_sha256": "a0a39598f801b32fb04e65742f894432c1e80b2ccb8c10a826b08edfe7e7fe50"
+  },
+  "step": {
+    "sha256": "38507216e963ea6a7f76407207917f9b540bbbf1017fa7781edfd4ec30f452bb",
+    "data_sha256": "5ad81ad7918df1d48e113425e6a09a113bf5ae44c38d769617a0b4eb161cc010",
+    "bytes": 2648297,
+    "protocol": "AP214",
+    "length_unit": "in",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\COMMON\\McMaster\\MCMASTER_1950A67_Unthreaded-Hole Pull Handle.ipt|[Primary]",
+    "package_path": "assets/MCMASTER_1950A67_Unthreaded-Hole Pull Handle__[Primary]__f36d1af7.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "in",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #26478",
+      "entity": "( CONVERSION_BASED_UNIT('inch',#26481) LENGTH_UNIT() NAMED_UNIT(#26476) )"
+    }
+  },
+  "properties": {
+    "part_number": "MCMASTER_1950A67_Unthreaded-Hole Pull Handle",
+    "description": "",
+    "material": "Generic",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - jET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "in",
+    "bodies": {
+      "surface_bodies": 1,
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1
+    },
+    "extent_mm": [170.43399999999977, 31.24203344416054, 51.14912924746513],
+    "volume_mm3": 75478.8200041438,
+    "range_box_cm": {
+      "min": [-8.521699999999989, -1.562101672327442, -4.25130380032991],
+      "max": [8.521699999999989, 1.562101672088612, 0.8636091244166035],
+      "extent": [17.043399999999977, 3.124203344416054, 5.1149129247465135]
+    },
+    "volume_cm3": 75.4788200041438
+  },
+  "materials": null
+}

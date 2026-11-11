@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "mcmaster-90313a107-18-8-stainless-steel-oversized-washer",
+  "name": "MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "985834",
+    "version_id": "985835",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2026-07-31T18:07:51.587Z",
+    "path": "$/DATA/COMMON/McMaster/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt",
+    "native_sha256": "51783cbdeb48105d1a7d16fe69c45b6ed1304357be0de3fca5fc063f0e2f4902"
+  },
+  "step": {
+    "sha256": "83f53c90f41e60c715fdd3448acdaf1e6dba5bbe1be0c3a7dd8fcdb3696cda77",
+    "data_sha256": "f870daad3b04ecb00695f1b76e92e2359ebd6835d9926785607844288a0a4712",
+    "bytes": 13100,
+    "protocol": "AP214",
+    "length_unit": "in",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\COMMON\\McMaster\\MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer.ipt|[Primary]",
+    "package_path": "assets/MCMASTER 90313A107_18-8 Stainless Steel Oversized Washer__[Primary]__34837649.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "in",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #240",
+      "entity": "( CONVERSION_BASED_UNIT('inch',#243) LENGTH_UNIT() NAMED_UNIT(#238) )"
+    }
+  },
+  "properties": {
+    "part_number": "90313A107_18-8 Stainless Steel Oversized Washer",
+    "description": "",
+    "material": "STAINLESS STEEL, 18-8",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - JET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "in",
+    "bodies": {
+      "surface_bodies": 1,
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1
+    },
+    "extent_mm": [25.4, 25.4, 1.2700000000000093],
+    "volume_mm3": 591.998008607954,
+    "range_box_cm": {
+      "min": [-1.27, -1.27, -0.06350000000000039],
+      "max": [1.27, 1.27, 0.06350000000000056],
+      "extent": [2.54, 2.54, 0.12700000000000095]
+    },
+    "volume_cm3": 0.591998008607954
+  },
+  "materials": null
+}

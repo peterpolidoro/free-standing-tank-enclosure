@@ -8,12 +8,15 @@ from collections import Counter
 from itertools import combinations
 import hashlib
 import json
+import sys
 from pathlib import Path
 import FreeCAD as App
 import Part
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import reference_scene  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "references/enclosure"
 OUTPUT = ROOT / ".cache/reference-survey/survey.json"
 
 
@@ -44,15 +47,16 @@ def aggregate(items):
 def main():
     if OUTPUT.exists():
         raise FileExistsError(f"Refusing existing {OUTPUT}")
-    scene = read(SOURCE / "scene.json")
+    scene_path = reference_scene.path()
+    source = scene_path.parent
+    scene = read(scene_path)
     cfg = read(ROOT / "assembly/documentation.json")
-    if sha(SOURCE / "scene.json") != cfg["scene_sha256"]:
+    if sha(scene_path) != cfg["scene_sha256"]:
         raise ValueError("Scene differs from the reviewed snapshot")
-    receipt = read(SOURCE / "export-receipt.json")
-    for rel, rec in receipt["files"].items():
-        p = (SOURCE / rel).resolve()
-        if not p.is_relative_to(SOURCE.resolve()) or sha(p) != rec["sha256"]:
-            raise ValueError(f"Invalid snapshot payload: {rel}")
+    for part in scene["parts"]:
+        p = (source / part["asset"]["path"]).resolve()
+        if not p.is_relative_to(source.resolve()) or sha(p) != part["asset"]["sha256"]:
+            raise ValueError(f"Asset differs from the scene's record of it: {part['asset']['path']}")
     basis = mat(scene["coordinate_system"]["basis_to_z_up"])
     groups = {g["id"]: g for g in scene["assemblies"]}
     group_world = {}
@@ -63,7 +67,7 @@ def main():
             g = groups[gid]
             group_world[gid] = mat(g["transform"]) if g["parent_id"] is None else world(g["parent_id"], seen+(gid,)) * mat(g["transform"])
         return group_world[gid]
-    shapes = {p["id"]: Part.read(str(SOURCE / p["asset"]["path"])) for p in scene["parts"]}
+    shapes = {p["id"]: Part.read(str(source / p["asset"]["path"])) for p in scene["parts"]}
     records = []
     for o in scene["occurrences"]:
         composed = world(o["parent_id"]) * mat(o["transform"])
@@ -88,7 +92,7 @@ def main():
         assemblies.append({"id": gid, "occurrences": len(members), "distinct_parts": len(set(o["part_id"] for o in members)),
                            "part_counts": dict(Counter(o["part_id"] for o in members)),
                            "bounds_mm": aggregate([o["bounds_mm"] for o in members])})
-    monitor = read(ROOT / "designs/reference-models/alienware-aw2725q/parameters.json")["dimensions_mm"]
+    monitor = read(ROOT / "designs/parts/aw2725q-nominal-envelope/parameters.json")["dimensions_mm"]
     w, h, depth = monitor["body_width"], monitor["body_height"], monitor["body_depth"]
     coincident = []
     for a, b in combinations(scene["occurrences"], 2):
@@ -101,7 +105,7 @@ def main():
                                "max_rotation_element_delta": rotation_delta, "max_translation_delta_mm": translation_delta,
                                "action": "Review native BOM/configuration; preserve both source occurrences pending confirmation."})
     result = {"schema_version": 1, "freecad_version": ".".join(App.Version()[:3]),
-              "scene_sha256": sha(SOURCE / "scene.json"), "units": "mm", "up_axis": "+Z",
+              "scene_sha256": sha(scene_path), "units": "mm", "up_axis": "+Z",
               "basis": "native (x,y,z) -> (x,-z,y); origin unchanged", "occurrences": records, "assemblies": assemblies,
               "solid_count": sum(o["solids"] for o in records),
               "coincident_same_part_pairs": coincident,

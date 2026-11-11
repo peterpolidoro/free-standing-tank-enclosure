@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "camera-mount-plate",
+  "name": "CAMERA MOUNT PLATE",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "954102",
+    "version_id": "954103",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2025-10-17T19:51:31.817Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/CAMERA MOUNT PLATE.ipt",
+    "native_sha256": "6c42c0702db415b5211659146b33a2424b0a319479e93628d91d7dfd0ca4e9f4"
+  },
+  "step": {
+    "sha256": "f3298cdf813e823e83046e3f2790eb122b42eacbed7337d201f2c1f4bcef62d1",
+    "data_sha256": "72eed1238fabdba38dd35db4944a66e6b908cfd25aae65059d279a467c6b50bf",
+    "bytes": 28335,
+    "protocol": "AP214",
+    "length_unit": "in",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\CAMERA MOUNT PLATE.ipt|[Primary]",
+    "package_path": "assets/CAMERA MOUNT PLATE__[Primary]__94fc4c9b.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "in",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #587",
+      "entity": "( CONVERSION_BASED_UNIT('inch',#590) LENGTH_UNIT() NAMED_UNIT(#585) )"
+    }
+  },
+  "properties": {
+    "part_number": "CAMERA MOUNT PLATE",
+    "description": "",
+    "material": "ALUMINUM, 6061-T651",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - jET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "in",
+    "bodies": {
+      "surface_bodies": 1,
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1
+    },
+    "extent_mm": [101.60000000000004, 88.90000000000002, 6.35],
+    "volume_mm3": 45931.941164537544,
+    "range_box_cm": {
+      "min": [-5.08, -8.889999999999999, -0.635],
+      "max": [5.080000000000004, 3.552713678800501e-15, 0],
+      "extent": [10.160000000000004, 8.890000000000002, 0.635]
+    },
+    "volume_cm3": 45.93194116453754
+  },
+  "materials": null
+}

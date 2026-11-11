@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "mcmaster-9293k121-constant-force-spring",
+  "name": "MCMASTER 9293K121_Constant-Force Spring",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "953894",
+    "version_id": "953895",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2025-10-13T18:42:34.573Z",
+    "path": "$/DATA/COMMON/McMaster/MCMASTER 9293K121_Constant-Force Spring.ipt",
+    "native_sha256": "91815b2ad20db1583920dcb54d53779af03da17483d339c199594e3763b17e16"
+  },
+  "step": {
+    "sha256": "3c247aa91b637d3a062f99a09efe9fef4e4d988f8472ef43574141d5f97f7d99",
+    "data_sha256": "6c8b18614f39b04867023abf8c975f96bcc5abdb5945a47a447b832dcca65db0",
+    "bytes": 238787,
+    "protocol": "AP214",
+    "length_unit": "mm",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\COMMON\\McMaster\\MCMASTER 9293K121_Constant-Force Spring.ipt|[Primary]",
+    "package_path": "assets/MCMASTER 9293K121_Constant-Force Spring__[Primary]__a4593b94.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "mm",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #2712",
+      "entity": "( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI.,.METRE.) )"
+    }
+  },
+  "properties": {
+    "part_number": "",
+    "description": "",
+    "material": "Generic",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - jET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "mm",
+    "bodies": {
+      "surface_bodies": 1,
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1
+    },
+    "extent_mm": [31.752641405572195, 59.88798540241682, 52.632633626217924],
+    "volume_mm3": 18422.488304884497,
+    "range_box_cm": {
+      "min": [-1.5876320702781734, -3.5939075562833462, -2.3827375826452233],
+      "max": [1.587632070279046, 2.3948909839583354, 2.880525779976569],
+      "extent": [3.1752641405572195, 5.988798540241682, 5.263263362621792]
+    },
+    "volume_cm3": 18.422488304884496
+  },
+  "materials": null
+}

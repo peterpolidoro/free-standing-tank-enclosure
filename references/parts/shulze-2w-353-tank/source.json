@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "shulze-2w-353-tank",
+  "name": "SHULZE 2W.353 TANK",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "953935",
+    "version_id": "953936",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2025-10-13T18:42:50.067Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/2W.353/SHULZE 2W.353 TANK.ipt",
+    "native_sha256": "0bfacba4bd4f0910aa8c6503510ab27fca5b10db96dcb863839877f46c15312f"
+  },
+  "step": {
+    "sha256": "e26fa1dd74097252f415dad137354b094e4141eee71bd95a09b2c8bf589b3dad",
+    "data_sha256": "685490ed1efcc49058e0eda5c212ba5211aed387682d1114d9ece592cbf2a18e",
+    "bytes": 27992,
+    "protocol": "AP214",
+    "length_unit": "in",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\2W.353\\SHULZE 2W.353 TANK.ipt|[Primary]",
+    "package_path": "assets/SHULZE 2W.353 TANK__[Primary]__00b2841c.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "in",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #616",
+      "entity": "( CONVERSION_BASED_UNIT('inch',#619) LENGTH_UNIT() NAMED_UNIT(#614) )"
+    }
+  },
+  "properties": {
+    "part_number": "",
+    "description": "",
+    "material": "Acrylic, Clear",
+    "stock_number": "",
+    "vendor": "ADVANCED ACRYLICS",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "in",
+    "bodies": {
+      "surface_bodies": 1,
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1
+    },
+    "extent_mm": [990.6000000000004, 82.55000000000001, 990.6000000000004],
+    "volume_mm3": 8133979.342230673,
+    "range_box_cm": {
+      "min": [-49.53000000000002, 0, -49.530000000000015],
+      "max": [49.53000000000001, 8.255, 49.530000000000015],
+      "extent": [99.06000000000003, 8.255, 99.06000000000003]
+    },
+    "volume_cm3": 8133.979342230673
+  },
+  "materials": null
+}

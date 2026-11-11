@@ -123,5 +123,5 @@ if(window.customElements)customElements.whenDefined('model-viewer').then(functio
 ## Source
 
 - CAD: Vault root `Free Standing Enclosure.iam`, file-version 991056, exported as 37 STEP
-  parts with 155 placements into [references/enclosure](../references/enclosure/README.md).
+  parts with 155 placements into `references/`, one directory per Vault file.
 - Repository: [peterpolidoro/free-standing-tank-enclosure](https://github.com/peterpolidoro/free-standing-tank-enclosure).

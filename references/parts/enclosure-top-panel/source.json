@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "enclosure-top-panel",
+  "name": "ENCLOSURE TOP PANEL",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "991091",
+    "version_id": "991092",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2026-09-10T19:50:06.813Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/ENCLOSURE TOP PANEL.ipt",
+    "native_sha256": "55856dad7b39d7e9f7cd538124e404e9c14db981239abb1639aafc49ceb3b92a"
+  },
+  "step": {
+    "sha256": "2b1cdb9fbbc7e7ef6c5cc4526aa7ac6f552d4961ae085756788dd0316a947dc9",
+    "data_sha256": "302382d57b972e76371a2a4d59f918c1798c95e62301b192f948f00eb83ef3c3",
+    "bytes": 24554,
+    "protocol": "AP214",
+    "length_unit": "in",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ENCLOSURE TOP PANEL.ipt|[Primary]",
+    "package_path": "assets/ENCLOSURE TOP PANEL__[Primary]__389173d2.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "in",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #545",
+      "entity": "( CONVERSION_BASED_UNIT('inch',#548) LENGTH_UNIT() NAMED_UNIT(#543) )"
+    }
+  },
+  "properties": {
+    "part_number": "ENCLOSURE TOP PANEL",
+    "description": "",
+    "material": "ALUMINUM COMPOSITE MATERIAL",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - JET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "in",
+    "bodies": {
+      "surface_bodies": 1,
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1
+    },
+    "extent_mm": [1193.8, 3.175, 1193.8000000000002],
+    "volume_mm3": 4291598.524273588,
+    "range_box_cm": {
+      "min": [-59.690000000000005, -0.3175, -59.690000000000005],
+      "max": [59.68999999999999, 0, 59.69000000000002],
+      "extent": [119.38, 0.3175, 119.38000000000002]
+    },
+    "volume_cm3": 4291.598524273589
+  },
+  "materials": null
+}

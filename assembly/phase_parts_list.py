@@ -10,15 +10,19 @@ from __future__ import annotations
 
 import csv
 import json
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import reference_scene  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
     scope = json.loads((ROOT / "assembly/build-scope.json").read_text(encoding="utf-8"))
-    scene = json.loads((ROOT / scope["scene"]).read_text(encoding="utf-8-sig"))
+    scene = reference_scene.load()
     parts = {p["id"]: p for p in scene["parts"]}
     deferred = set(scope["deferred_occurrence_ids"])
     conditional = {g["id"] for g in scope["conditional_groups"]}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "spring-roller",
+  "name": "SPRING ROLLER",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "953890",
+    "version_id": "953891",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2025-10-13T18:42:34.2Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/SPRING ROLLER.ipt",
+    "native_sha256": "63f21750850de5f7d80150aada884db958f9b8d1e04d0102f85b610c5f063104"
+  },
+  "step": {
+    "sha256": "1f239b9dc3dfde0532d81a35280633a4f598f5a8ad194f3b71d119ff36684012",
+    "data_sha256": "30815bb306373dfb8fec85da8fb5be9411cdd4457c982c59c817d4678c365321",
+    "bytes": 20123,
+    "protocol": "AP214",
+    "length_unit": "in",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING ROLLER.ipt|[Primary]",
+    "package_path": "assets/SPRING ROLLER__[Primary]__25d6cebc.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "in",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #411",
+      "entity": "( CONVERSION_BASED_UNIT('inch',#414) LENGTH_UNIT() NAMED_UNIT(#409) )"
+    }
+  },
+  "properties": {
+    "part_number": "",
+    "description": "",
+    "material": "ABS, BLACK",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - jET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "in",
+    "bodies": {
+      "surface_bodies": 1,
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1
+    },
+    "extent_mm": [34.29, 48.006, 48.006],
+    "volume_mm3": 27795.494790848126,
+    "range_box_cm": {
+      "min": [1.1102230246251565e-16, -2.4003, -2.4003],
+      "max": [3.429, 2.4003, 2.4003],
+      "extent": [3.429, 4.8006, 4.8006]
+    },
+    "volume_cm3": 27.795494790848128
+  },
+  "materials": null
+}

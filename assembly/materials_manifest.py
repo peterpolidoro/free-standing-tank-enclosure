@@ -13,10 +13,13 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import reference_scene  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
-SCENE = ROOT / "references" / "enclosure" / "scene.json"
 OUT = ROOT / "assembly" / "materials.json"
 DEFAULT_NAMES = {"", "generic", "default", "none"}
 STATUSES = ("unknown", "cad_claimed", "confirmed", "corrected", "orphan")
@@ -73,10 +76,11 @@ def validate(doc):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--scene", type=Path, default=SCENE)
+    ap.add_argument("--scene", type=Path, help="default: the scene flattened from references/ (assembly/reference_scene.py)")
     ap.add_argument("--out", type=Path, default=OUT)
     ap.add_argument("--check", action="store_true", help="validate the existing file and change nothing")
     a = ap.parse_args(argv)
+    a.scene = (a.scene or reference_scene.path()).resolve()
     scene = read(a.scene)
     exporter = scene.get("source", {}).get("exporter", "exporter")
     existing = read(a.out) if a.out.exists() else None

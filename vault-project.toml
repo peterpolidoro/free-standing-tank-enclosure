@@ -14,11 +14,12 @@ root_assembly = "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/Free S
 [workflow]
 reference_directory = "references"
 design_directory = "designs"
-deliverable_directory = "step"
+# The deliverable of an authored part is designs/parts/<key>/part.step.
 # Initial tools support ordinary Git assets; LFS publication needs a later adapter.
 
 [publication]
 # Chosen by Peter on 2026-10-22 for the first live pilot; the project's existing folder.
 destination_folder = "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE"
 destination_folder_id_observed = "953863"
-first_pilot = "step/AW2725Q-nominal-envelope.step"
+# Published on 2026-10-22 as step/AW2725Q-nominal-envelope.step; the record is in the part's vault.json.
+first_pilot = "designs/parts/aw2725q-nominal-envelope"

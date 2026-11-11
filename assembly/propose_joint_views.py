@@ -14,6 +14,9 @@ import math
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import reference_scene  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 CENTRE = (596.9, 596.9, 1213.3)   # root bounds centre, Z-up mm (validation/2026-10-22-reference-survey.json)
 
@@ -60,7 +63,7 @@ def thin_axis_world(scene, o):
 
 
 def main():
-    scene = json.loads((ROOT / "references/enclosure/scene.json").read_text(encoding="utf-8-sig"))
+    scene = reference_scene.load()
     audit = json.loads((ROOT / "assembly/procurement/joint-audit.json").read_text(encoding="utf-8"))
     occ = {o["id"]: o for o in scene["occurrences"]}
     asm = {a["id"] for a in scene["assemblies"]}

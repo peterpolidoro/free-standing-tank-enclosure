@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "toggle-clamp-mount",
+  "name": "TOGGLE CLAMP MOUNT",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "991083",
+    "version_id": "991084",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2026-09-10T19:50:06.193Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/SCHULZE (LAB)/ENCLOSURE/TOGGLE CLAMP MOUNT.ipt",
+    "native_sha256": "9f3b644186361470e19a3961e8f421d73e7931d64e0b4adf29713aedb8b3e263"
+  },
+  "step": {
+    "sha256": "f8171c9d76b250758a47873afa0d5b80f8e74e4b7e6860925c4666a69cce77b6",
+    "data_sha256": "3f43a9b2a8fdb5422f0cd4674ea57fec3ac7f42e304cf058d0c2578a60120a8e",
+    "bytes": 43180,
+    "protocol": "AP214",
+    "length_unit": "in",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]",
+    "package_path": "assets/TOGGLE CLAMP MOUNT__[Primary]__4eb76845.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "in",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #925",
+      "entity": "( CONVERSION_BASED_UNIT('inch',#928) LENGTH_UNIT() NAMED_UNIT(#923) )"
+    }
+  },
+  "properties": {
+    "part_number": "",
+    "description": "",
+    "material": "ABS, BLACK",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - JET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "in",
+    "bodies": {
+      "surface_bodies": 1,
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1
+    },
+    "extent_mm": [30.480000000000015, 76.20000000000002, 30.480000000000004],
+    "volume_mm3": 24666.785079902078,
+    "range_box_cm": {
+      "min": [-0.6350000000000017, -3.8100000000000005, -2.4130000000000003],
+      "max": [2.413, 3.8100000000000005, 0.6350000000000002],
+      "extent": [3.0480000000000014, 7.620000000000001, 3.0480000000000005]
+    },
+    "volume_cm3": 24.666785079902077
+  },
+  "materials": null
+}

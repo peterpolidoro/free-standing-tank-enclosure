@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "caster-mounting-plate",
+  "name": "CASTER MOUNTING PLATE",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "987830",
+    "version_id": "987831",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2026-08-24T15:27:22.69Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/JAYARAMAN (LAB)/FLOW TUNNEL/CASTER MOUNTING PLATE.ipt",
+    "native_sha256": "06d74fa97ed09a53efc512479397ea123af7396a998765b155027174d755d4b3"
+  },
+  "step": {
+    "sha256": "fb755fe68cfa0f7ead5df8f49d168254ca4234133ebdeaed97a52ac4c59ead8d",
+    "data_sha256": "5625968e1d773fd526a8f63901d430a5fcf9266f69adc16a861c1c0b3241fc66",
+    "bytes": 39988,
+    "protocol": "AP214",
+    "length_unit": "in",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\CASTER MOUNTING PLATE.ipt|[Primary]",
+    "package_path": "assets/CASTER MOUNTING PLATE__[Primary]__db2a93e4.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "in",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #840",
+      "entity": "( CONVERSION_BASED_UNIT('inch',#843) LENGTH_UNIT() NAMED_UNIT(#838) )"
+    }
+  },
+  "properties": {
+    "part_number": "",
+    "description": "",
+    "material": "ALUMINUM, 6061-T651",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - JET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "in",
+    "bodies": {
+      "surface_bodies": 1,
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1
+    },
+    "extent_mm": [100.39999999999999, 6.35, 100.39999999999999],
+    "volume_mm3": 46571.916059503,
+    "range_box_cm": {
+      "min": [-3.75, -0.635, -3.75],
+      "max": [6.289999999999999, 0, 6.289999999999999],
+      "extent": [10.04, 0.635, 10.04]
+    },
+    "volume_cm3": 46.571916059502996
+  },
+  "materials": null
+}

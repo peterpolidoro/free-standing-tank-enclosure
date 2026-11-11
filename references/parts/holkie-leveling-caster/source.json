@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "part",
+  "key": "holkie-leveling-caster",
+  "name": "HOLKIE LEVELING CASTER",
+  "model_state": "[Primary]",
+  "vault": {
+    "vault_id": "28",
+    "master_id": "987834",
+    "version_id": "987835",
+    "version_number": 1,
+    "revision": "0",
+    "lifecycle_state": "Work in Progress",
+    "checkin_date": "2026-08-24T15:27:23.213Z",
+    "path": "$/DATA/PROJECTS/_PROJECTS BY LAB/JAYARAMAN (LAB)/FLOW TUNNEL/HOLKIE LEVELING CASTER.ipt",
+    "native_sha256": "78b6957f3d3bd4001522e4dadedb5cc819622ef1aa0e6277377dea7f29967f62"
+  },
+  "step": {
+    "sha256": "d76de07fea91d3b91129155a2d202ea895756d4bb69120ed3d1facb0e2ae23c7",
+    "data_sha256": "29940d7b898e29b72d2cd89cb8dd8138ebf520d69f125ee2c1d732dc03482035",
+    "bytes": 3914098,
+    "protocol": "AP214",
+    "length_unit": "in",
+    "header_normalised": false,
+    "received_sha256": null
+  },
+  "export": {
+    "run": "legacy-snapshot-991056",
+    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
+    "exported_at": "2026-10-21T19:09:16.3977870Z",
+    "inventor_version": "2025.3",
+    "inventor_build": 293356000,
+    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]",
+    "package_path": "assets/HOLKIE LEVELING CASTER__[Primary]__72f0778a.step",
+    "translator_options": {
+      "IncludeSketches": false,
+      "ApplicationProtocolType": 3,
+      "Author": "",
+      "Organization": "",
+      "Authorization": "",
+      "Description": "",
+      "export_fit_tolerance": 0.001,
+      "ExportUCS": true,
+      "Translation Result": "Successful"
+    },
+    "step_length_unit_detection": {
+      "unit": "in",
+      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #45496",
+      "entity": "( CONVERSION_BASED_UNIT('inch',#45499) LENGTH_UNIT() NAMED_UNIT(#45494) )"
+    }
+  },
+  "properties": {
+    "part_number": "HOLKIE LEVELING CASTER",
+    "description": "",
+    "material": "Generic",
+    "stock_number": "",
+    "vendor": "HHMI: JRC - JET",
+    "manufacturer": "",
+    "title": "Standard",
+    "category": ""
+  },
+  "bom_structure_default": "Normal",
+  "native": {
+    "length_unit": "in",
+    "bodies": {
+      "surface_bodies": 10,
+      "solid_bodies": 10,
+      "visible_solid_bodies": 10
+    },
+    "extent_mm": [73.49338855195627, 86.24477410333193, 104.000107125527],
+    "volume_mm3": 237917.87428386425,
+    "range_box_cm": {
+      "min": [-3.674669427597814, -7.774477410333193, -6],
+      "max": [3.674669427597814, 0.8500000000000005, 4.4000107125526995],
+      "extent": [7.349338855195628, 8.624477410333194, 10.4000107125527]
+    },
+    "volume_cm3": 237.91787428386425
+  },
+  "materials": null
+}
