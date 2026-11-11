@@ -58,7 +58,10 @@ their evidence runs, are in .agents/HISTORY.md.
    (`assembly/build-scope.json`, `conditional_groups`); name the occurrences
    that form the backlight; record counted stock in the procurement sheets;
    write plain `scene.json` in `build-scope.scene` on the file's next revision.
-3. The layout conversion, on a branch, once Peter accepts the layout. A dry
+3. The layout conversion, on a branch, on Peter's word. He decided the
+   layout's three choices on 2026-11-11: two roots, readable keys, and AP242
+   for files exported from Inventor. The files here are AP214 and stay so
+   until the re-export that follows the conversion. A dry
    run on 2026-11-10 converted `references/enclosure/` into the proposed layout
    in the ignored `.cache/layout-dry-run-01/` and passed the acceptance test of
    `mechanical-cad/docs/layout-proposal.md`; nothing tracked here changed. What
@@ -145,7 +148,10 @@ Not started:
   `MCMASTER 47065T245`, and drawings outside the 44 files. Measured on
   2026-11-10: each of that part's three hidden bodies is a 940.2 mm³ solid;
   the AP214 export leaves them out, an AP242 export carries them, and
-  Inventor's own volume for the part counts them.
+  Inventor's own volume for the part counts them. With AP242 decided
+  (2026-11-11), `mechanical-cad` leaves the bodies an AP242 file marks
+  invisible out when it measures a part and when it writes the scene the
+  manual is drawn from; this is the one part of the 37 that has any.
 
 ## Decisions
 
