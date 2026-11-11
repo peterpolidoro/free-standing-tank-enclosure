@@ -112,6 +112,14 @@ For Peter to settle:
   `T BRACKET 47065T278`, `EXTRUSTION 15 SERIES TABLE CLAMP`), and the
   published monitor envelope. The snapshot in turn holds 18 files from outside
   the folder (McMaster parts and parts of two other projects).
+  Peter on 2026-11-10: he does not know `SLLB Enclosure.iam` and wants to look
+  at it in Inventor before giving an opinion. What the read-only discovery of
+  that day recorded about it: version 3, last checked in on 2026-03-06, six
+  months before the free-standing enclosure's last check-in; its direct
+  children are `CAMERA FRAME.iam` (the same sub-assembly this project uses),
+  the `MCMASTER 47065T245` corner cube and the 44-inch and 56-inch
+  extrusions; its only parent is `2W.353 TOP ASSY.iam` in the lab's `2W.353`
+  folder. So a change to the camera frame in Vault reaches both assemblies.
 - The intended tank configuration. The CAD count is three, and two of the
   three (the tank at the root and the one inside `TANK SUPPORT FRAME:1`) sit at
   the same position.
