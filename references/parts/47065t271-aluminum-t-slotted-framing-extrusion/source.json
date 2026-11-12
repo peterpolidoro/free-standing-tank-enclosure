@@ -16,65 +16,42 @@
     "native_sha256": "5e269131a0d26d32470b3c3f8f85149214637bb638fe964c432246defe3100ca"
   },
   "step": {
-    "sha256": "bf0439b918f46882083d34679145af4616b9ac00a754e46b4f62a11bfa028161",
-    "data_sha256": "c4a1834c4a3045c57f1c0c8c2ae41dce82b440d80c4badc81851e53cb99a9441",
-    "bytes": 19202,
-    "protocol": "AP214",
+    "sha256": "83057fab7b4fc7eb639c91b74bcba1dbb3d88670bc8fd2fb6f0e05e5c6ea9001",
+    "data_sha256": "2bcff736a9461c03e36f14187fdd7dc5fec7a8bf89714cad948285022def12f2",
+    "bytes": 20398,
+    "protocol": "AP242",
     "length_unit": "cm",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\COMMON\\McMaster\\47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION.ipt|[Primary]",
-    "package_path": "assets/47065T271_ALUMINUM T-SLOTTED FRAMING EXTRUSION__[Primary]__56fa5cf0.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "cm",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #421",
-      "entity": "( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.CENTI.,.METRE.) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "",
+    "category": "",
     "description": "",
-    "material": "Aluminum",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - jET",
     "manufacturer": "",
+    "material": "Aluminum",
+    "part_number": "",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "HHMI: JRC - jET"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "cm",
-    "bodies": {
-      "surface_bodies": 1,
-      "solid_bodies": 1,
-      "visible_solid_bodies": 1
-    },
     "extent_mm": [114.3, 114.3, 6.35],
     "volume_mm3": 62793.25714655853,
-    "range_box_cm": {
-      "min": [0, 0, -0.3175],
-      "max": [11.43, 11.43, 0.3175],
-      "extent": [11.43, 11.43, 0.635]
+    "bodies": {
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1,
+      "surface_bodies": 1
     },
-    "volume_cm3": 62.79325714655853
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [],
+    "holes": [],
+    "patterns": []
   },
   "materials": null
 }

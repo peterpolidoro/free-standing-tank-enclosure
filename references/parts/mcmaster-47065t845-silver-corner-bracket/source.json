@@ -16,65 +16,42 @@
     "native_sha256": "efb48d08ef7cb92d6f4fa470339435055ac846893c59f8393890a758815e485a"
   },
   "step": {
-    "sha256": "32bc143683d9cf68e4f2b9e2c6cddefc3937c651d357c8a82328f5f23e0cd806",
-    "data_sha256": "7a4a5dca9c68b3fdec60f03ad290940923f5040191a6ebd526e8a59a7c0cc62e",
-    "bytes": 17618,
-    "protocol": "AP214",
+    "sha256": "611c201c7173e2e3347f4f6d1a9a91892b3b85060ad7a96765c30bcc2368cc0a",
+    "data_sha256": "0297bb904d77be4c4be12e5d0947b506fc79e821badb8f7b3b761defcb9112a0",
+    "bytes": 18842,
+    "protocol": "AP242",
     "length_unit": "mm",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T845_Silver Corner Bracket.ipt|[Primary]",
-    "package_path": "assets/MCMASTER 47065T845_Silver Corner Bracket__[Primary]__e1e40dd2.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "mm",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #376",
-      "entity": "( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI.,.METRE.) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "",
+    "category": "",
     "description": "",
-    "material": "ALUMINUM, 6061-T651",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - jET",
     "manufacturer": "",
+    "material": "ALUMINUM, 6061-T651",
+    "part_number": "",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "HHMI: JRC - jET"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "mm",
-    "bodies": {
-      "surface_bodies": 1,
-      "solid_bodies": 1,
-      "visible_solid_bodies": 1
-    },
     "extent_mm": [38.10000000000001, 38.1, 33.274],
     "volume_mm3": 13938.86899956724,
-    "range_box_cm": {
-      "min": [-6.794617460156608e-17, -1.8132695839209096e-32, -1.6637],
-      "max": [3.810000000000001, 3.81, 1.6637],
-      "extent": [3.810000000000001, 3.81, 3.3274]
+    "bodies": {
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1,
+      "surface_bodies": 1
     },
-    "volume_cm3": 13.938868999567239
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [],
+    "holes": [],
+    "patterns": []
   },
   "materials": null
 }

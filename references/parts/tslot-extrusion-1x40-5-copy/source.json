@@ -16,65 +16,65 @@
     "native_sha256": "4c7b6978287d0174ed8bfd880283fde29fbe4e251d76de6eea7e3b002a496c13"
   },
   "step": {
-    "sha256": "bf0bf6ca4eb5b11a9478a73691bec1eba86db6720fe50d0110898053c5ad56aa",
-    "data_sha256": "6bc42c73bf43197703ce0617afdee78ae15783397093515b39ddb50cb88cde12",
-    "bytes": 159081,
-    "protocol": "AP214",
+    "sha256": "ad67f4ed501d53218e9d2e102eee852705aebb04e3f67a78dd7b453de704ca4a",
+    "data_sha256": "588ad20128c0a8e46177223fa2512815491d16ded1ee2e1a226947e5baa80642",
+    "bytes": 160474,
+    "protocol": "AP242",
     "length_unit": "in",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TSLOT EXTRUSION 1X40.5 copy.ipt|[Primary]",
-    "package_path": "assets/TSLOT EXTRUSION 1X40.5 copy__[Primary]__72135c80.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "in",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #3373",
-      "entity": "( CONVERSION_BASED_UNIT('inch',#3376) LENGTH_UNIT() NAMED_UNIT(#3371) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "",
+    "category": "",
     "description": "",
-    "material": "Generic",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - ID&F",
     "manufacturer": "",
+    "material": "Generic",
+    "part_number": "",
+    "stock_number": "",
     "title": "",
-    "category": ""
+    "vendor": "HHMI: JRC - ID&F"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "in",
-    "bodies": {
-      "surface_bodies": 1,
-      "solid_bodies": 1,
-      "visible_solid_bodies": 1
-    },
     "extent_mm": [25.4, 25.40000000000019, 1028.7],
     "volume_mm3": 288177.7581486871,
-    "range_box_cm": {
-      "min": [-1.27, -1.2700000000000098, -15.240000000000002],
-      "max": [1.27, 1.2700000000000093, 87.63],
-      "extent": [2.54, 2.540000000000019, 102.87]
+    "bodies": {
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1,
+      "surface_bodies": 1
     },
-    "volume_cm3": 288.1777581486871
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [
+      {
+        "name": "d0",
+        "kind": "model",
+        "expression": "23.5 in",
+        "units": "in",
+        "value": 59.69,
+        "value_text": "23.500 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d1",
+        "kind": "model",
+        "expression": "0.0 rad",
+        "units": "rad",
+        "value": 0.0,
+        "value_text": "0.00 rad",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      }
+    ],
+    "holes": [],
+    "patterns": []
   },
   "materials": null
 }

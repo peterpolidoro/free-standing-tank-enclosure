@@ -107,8 +107,10 @@ source for Linux-authored designs.
 
 The layout is specified in `mechanical-cad/docs/layout-specification.md` and
 checked from that repository with `python3 -m mechanical_cad validate`. The
-STEP files exported from Inventor are AP214 today and become AP242 at the next
-export (Peter, 2026-11-11).
+STEP files exported from Inventor are AP242 (Peter, 2026-11-11) since the
+re-export of 2026-11-12: the same Vault versions, exported again by the
+package mode of the Windows exporter, with normalised headers. Each has the
+geometry of the AP214 file it replaced.
 
 ## Tools
 

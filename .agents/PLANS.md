@@ -15,8 +15,12 @@ their evidence runs, are in .agents/HISTORY.md.
 - **CAD snapshot.** `references/` holds the accepted snapshot of Vault
   file-version 991056 in the layout of `mechanical-cad`: 37 part directories
   and 7 assembly directories, which flatten to 155 occurrences in 17 groups.
-  FreeCAD reconstructs its 479 solids. The STEP files are the exporter's
-  bytes: AP214, headers as exported.
+  FreeCAD reconstructs its 479 solids. Since 2026-11-12 the STEP files are
+  AP242 with normalised headers, from the package the Windows exporter wrote
+  that day of the same Vault versions (receipt under
+  `references/receipts/2026-11-12-windows-package-findings-01/`; the AP214
+  files and the first receipt are in Git history and under
+  `references/receipts/legacy-snapshot-991056/`).
 - **Manual.** The phase-1 draft (the enclosure without tanks and backlight) was
   published on 2026-10-23 under `docs/manual/` and is served by the Pages site:
   110 of the 155 occurrences are in this build, 42 are conditional and 3
@@ -146,20 +150,37 @@ their evidence runs, are in .agents/HISTORY.md.
    Merging changes one sentence of `docs/index.md`, so the Pages site is
    rebuilt once. A checkout that gets the new Makefile needs its own
    `local.mk` where `mechanical-cad` is not beside it.
-4. The re-export as AP242 into this layout. The Windows exporter wrote the
-   package on 2026-11-12 (read-only, evidence
-   `2026-11-12-windows-package-01/` in the shared directory), and it was
-   imported that day into a copy of this branch's tracked tree, not into the
-   branch: all 44 files rewritten, every key kept, 44 overrides derived; the
-   copy validates with one finding left (the envelope's bytes), its flattened
-   scene equals this one with no placement differing, the 37 STEP files are
-   the AP242 files whose geometry was compared with the tracked ones on
-   2026-11-11, and against Inventor's own export of the root assembly 479 of
-   479 solids are where the imported records put them. Left, on Peter's
-   word: the same import into this branch (`vault-cad import-snapshot
-   PACKAGE --into . --run RUN`, then `step_facts.py` and `make validate`).
-   Then `assembly/documentation.json` is pinned to the new scene and the
-   manual is rendered once in full.
+4. The re-export as AP242, imported into this branch on 2026-11-12 on
+   Peter's word (`vault-cad import-snapshot` of the package in
+   `evidence/2026-11-12-windows-package-findings-01/` of the shared
+   directory, run `2026-11-12-windows-package-findings-01`): all 44 files
+   rewritten, every key kept, 44 overrides derived from the exporter's
+   placements in context. Checked on the branch: 37 parts measured, all
+   valid; the layout validates with one finding (the envelope's bytes; the
+   finding about headers is gone); the flattened scene equals the one before
+   the import with no placement differing by anything (37 parts, 17 groups,
+   155 occurrences), only the 37 STEP files differ, and those are the AP242
+   files whose geometry was compared with the AP214 ones on 2026-11-11; and
+   against Inventor's own export of the root assembly 479 of 479 solids are
+   where these records put them. `assembly/documentation.json` is pinned to
+   the new scene, and `prepare_documentation.py` takes the package's
+   `package.json` as the exporter's receipt.
+   The documentation pipeline was run on the branch that day, at preview
+   quality, into `.cache/manual-ap242/`: staging, `inspect`, meshes (37
+   parts, all checks passed), 88 Cycles renders, the manual and its `check`
+   (all passed). Against the published `docs/manual/manual.json` the steps,
+   joints, supplementary items, group and callout numbers and every
+   inventory row's name, number, counts and dimensions are the same; part
+   ids, asset paths and image sizes differ, as they must, and there is no 3D
+   viewer because that stage was not run. Two things turned up and are
+   corrected: the site pages lost the earlier exporter's part ids, which an
+   import takes out of `source.json` (`assembly/reference_scene.py` now reads
+   them from `references/receipts/legacy-snapshot-991056/scene.json`, and
+   the pages regenerate without a change); and the manual lost its line
+   saying that quantities are CAD instance counts, which `mechanical-docs`
+   printed only for the exporter's own scene (corrected there). Not done: a
+   full-quality render, the viewer stage, and any publication; the published
+   manual is still the one of 2026-10-23.
 5. After the build: new parts written as code under `designs/`, manufactured
    and checked, then placed in Vault through `vault-cad-tools`.
 

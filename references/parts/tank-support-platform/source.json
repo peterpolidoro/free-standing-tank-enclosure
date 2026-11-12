@@ -16,65 +16,87 @@
     "native_sha256": "29926b44e4a11b557c0e6f2da0195b7421a1fda6f5a50871850ab0c1aa796e0e"
   },
   "step": {
-    "sha256": "bcfe35dadbe1431c760bd9e9ef0cdd32c5fef0fc753d5a8ac35cc5960e0e3f2a",
-    "data_sha256": "ef97ebf1288b58217140825f3427bcd90f0bbe7371b4eb119b266e736332dae6",
-    "bytes": 16212,
-    "protocol": "AP214",
+    "sha256": "1b2f93803e00c60f96877b5412a9ad2ff835076ee3a6d16558d59467a681248a",
+    "data_sha256": "e1290d1bbb161c9c366e6517c3d6cf50fd380bb7d4520fed5b0d103f5e2b19e7",
+    "bytes": 17558,
+    "protocol": "AP242",
     "length_unit": "in",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TANK SUPPORT PLATFORM.ipt|[Primary]",
-    "package_path": "assets/TANK SUPPORT PLATFORM__[Primary]__a3951cbf.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "in",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #334",
-      "entity": "( CONVERSION_BASED_UNIT('inch',#337) LENGTH_UNIT() NAMED_UNIT(#332) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "TANK SUPPORT PLATFORM",
+    "category": "",
     "description": "",
-    "material": "ACRYLIC, CLEAR",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - JET",
     "manufacturer": "",
+    "material": "ACRYLIC, CLEAR",
+    "part_number": "TANK SUPPORT PLATFORM",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "HHMI: JRC - JET"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "in",
-    "bodies": {
-      "surface_bodies": 1,
-      "solid_bodies": 1,
-      "visible_solid_bodies": 1
-    },
     "extent_mm": [1079.5000000000002, 12.7, 1079.5000000000002],
     "volume_mm3": 14799127.588246133,
-    "range_box_cm": {
-      "min": [-53.975000000000016, 0, -53.975000000000016],
-      "max": [53.975, 1.27, 53.975],
-      "extent": [107.95000000000002, 1.27, 107.95000000000002]
+    "bodies": {
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1,
+      "surface_bodies": 1
     },
-    "volume_cm3": 14799.127588246134
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [
+      {
+        "name": "d0",
+        "kind": "model",
+        "expression": "42.5 in",
+        "units": "in",
+        "value": 107.95,
+        "value_text": "42.500 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d1",
+        "kind": "model",
+        "expression": "0.5 in",
+        "units": "in",
+        "value": 1.27,
+        "value_text": "0.500 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d2",
+        "kind": "model",
+        "expression": "0.00 deg",
+        "units": "deg",
+        "value": 0.0,
+        "value_text": "0.00 deg",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d3",
+        "kind": "model",
+        "expression": "0.25 in",
+        "units": "in",
+        "value": 0.635,
+        "value_text": "0.250 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      }
+    ],
+    "holes": [],
+    "patterns": []
   },
   "materials": null
 }

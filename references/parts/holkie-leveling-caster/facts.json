@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "holkie-leveling-caster",
   "step": {
-    "sha256": "d76de07fea91d3b91129155a2d202ea895756d4bb69120ed3d1facb0e2ae23c7",
-    "data_sha256": "29940d7b898e29b72d2cd89cb8dd8138ebf520d69f125ee2c1d732dc03482035"
+    "sha256": "976829cdf4365b945162c2850c2620e8f5f1de473240d4f822b02d0ba59b3d0c",
+    "data_sha256": "0e1628db054f87cf72fa4cd989ce13e170d47e319698df4ec44963f53eb25bd8"
   },
   "tool": {
     "name": "FreeCAD",

@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "enclosure-panel",
   "step": {
-    "sha256": "eaef81af995bb2bc1ec5a22510256b647ce6be29efa880f503f04b3a4ecf230c",
-    "data_sha256": "0e9ab72847fc67255ae90446f45b7de43e7f410ad3b72031b3bc042227337f89"
+    "sha256": "e24c780705ad2bac724bad0eaf1c3c02bc4af01b6e401896739bcaa7336ea745",
+    "data_sha256": "31d011328e76ea25b111664006b0ba34af26453dbbb16061744949be0c4644b7"
   },
   "tool": {
     "name": "FreeCAD",

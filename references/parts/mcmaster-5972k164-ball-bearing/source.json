@@ -16,65 +16,42 @@
     "native_sha256": "3c91bef99fcfdc60b7647d308146d0d81c46b4d5aa4216337385cb5c72553f88"
   },
   "step": {
-    "sha256": "7799ac5c522148edda558a20a03e432a9c0cd48a571c233dd491ff69cd178558",
-    "data_sha256": "607dccbe358cc73eb09d015c22a8208859a46a734da2ba65d9cb3ff751a92d6d",
-    "bytes": 391655,
-    "protocol": "AP214",
+    "sha256": "70b4d5f3798a8c542a92b2b2aa210837ff576786f7addf36325917866da508bf",
+    "data_sha256": "93d52e875f616522db310bef0f0a78a7830622d9384289e63e6b33dcfe6d4d6b",
+    "bytes": 392994,
+    "protocol": "AP242",
     "length_unit": "mm",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\COMMON\\McMaster\\MCMASTER 5972K164_Ball Bearing.ipt|[Primary]",
-    "package_path": "assets/MCMASTER 5972K164_Ball Bearing__[Primary]__66eca704.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "mm",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #8009",
-      "entity": "( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI.,.METRE.) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "MCMASTER 5972K164_Ball Bearing",
+    "category": "",
     "description": "",
-    "material": "Generic",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - jET",
     "manufacturer": "",
+    "material": "Generic",
+    "part_number": "MCMASTER 5972K164_Ball Bearing",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "HHMI: JRC - jET"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "mm",
-    "bodies": {
-      "surface_bodies": 14,
-      "solid_bodies": 14,
-      "visible_solid_bodies": 14
-    },
-    "extent_mm": [21.999999999999996, 21.999999999999996, 6],
+    "extent_mm": [21.999999999999996, 21.999999999999996, 6.0],
     "volume_mm3": 1182.403898578176,
-    "range_box_cm": {
-      "min": [-1.0999999999999999, -1.0999999999999999, -0.3],
-      "max": [1.0999999999999999, 1.0999999999999999, 0.3],
-      "extent": [2.1999999999999997, 2.1999999999999997, 0.6]
+    "bodies": {
+      "solid_bodies": 14,
+      "visible_solid_bodies": 14,
+      "surface_bodies": 14
     },
-    "volume_cm3": 1.182403898578176
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [],
+    "holes": [],
+    "patterns": []
   },
   "materials": null
 }

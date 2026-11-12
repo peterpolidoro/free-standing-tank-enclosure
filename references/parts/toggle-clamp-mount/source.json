@@ -16,65 +16,295 @@
     "native_sha256": "9f3b644186361470e19a3961e8f421d73e7931d64e0b4adf29713aedb8b3e263"
   },
   "step": {
-    "sha256": "f8171c9d76b250758a47873afa0d5b80f8e74e4b7e6860925c4666a69cce77b6",
-    "data_sha256": "3f43a9b2a8fdb5422f0cd4674ea57fec3ac7f42e304cf058d0c2578a60120a8e",
-    "bytes": 43180,
-    "protocol": "AP214",
+    "sha256": "424b5ac9563f77f5db715b87e45183dbbb1808f4718e8a18c886575a22fa4539",
+    "data_sha256": "3522b7dffa43d7bc88ba01e52b9ce740dd54f7449d75ef811dc31115fb3f817f",
+    "bytes": 44512,
+    "protocol": "AP242",
     "length_unit": "in",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\TOGGLE CLAMP MOUNT.ipt|[Primary]",
-    "package_path": "assets/TOGGLE CLAMP MOUNT__[Primary]__4eb76845.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "in",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #925",
-      "entity": "( CONVERSION_BASED_UNIT('inch',#928) LENGTH_UNIT() NAMED_UNIT(#923) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "",
+    "category": "",
     "description": "",
-    "material": "ABS, BLACK",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - JET",
     "manufacturer": "",
+    "material": "ABS, BLACK",
+    "part_number": "",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "HHMI: JRC - JET"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "in",
-    "bodies": {
-      "surface_bodies": 1,
-      "solid_bodies": 1,
-      "visible_solid_bodies": 1
-    },
     "extent_mm": [30.480000000000015, 76.20000000000002, 30.480000000000004],
     "volume_mm3": 24666.785079902078,
-    "range_box_cm": {
-      "min": [-0.6350000000000017, -3.8100000000000005, -2.4130000000000003],
-      "max": [2.413, 3.8100000000000005, 0.6350000000000002],
-      "extent": [3.0480000000000014, 7.620000000000001, 3.0480000000000005]
+    "bodies": {
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1,
+      "surface_bodies": 1
     },
-    "volume_cm3": 24.666785079902077
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [
+      {
+        "name": "d0",
+        "kind": "model",
+        "expression": "0.95 in",
+        "units": "in",
+        "value": 2.413,
+        "value_text": "0.950 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d1",
+        "kind": "model",
+        "expression": "0.25 in",
+        "units": "in",
+        "value": 0.635,
+        "value_text": "0.250 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d2",
+        "kind": "model",
+        "expression": "3 in",
+        "units": "in",
+        "value": 7.62,
+        "value_text": "3.000 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d3",
+        "kind": "model",
+        "expression": "0.00 deg",
+        "units": "deg",
+        "value": 0.0,
+        "value_text": "0.00 deg",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d4",
+        "kind": "model",
+        "expression": "0.266 in",
+        "units": "in",
+        "value": 0.67564,
+        "value_text": "0.266 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d11",
+        "kind": "model",
+        "expression": "0.75 in",
+        "units": "in",
+        "value": 1.905,
+        "value_text": "0.750 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d12",
+        "kind": "model",
+        "expression": "0.5 in",
+        "units": "in",
+        "value": 1.27,
+        "value_text": "0.500 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d13",
+        "kind": "model",
+        "expression": "0.5 in",
+        "units": "in",
+        "value": 1.27,
+        "value_text": "0.500 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d15",
+        "kind": "model",
+        "expression": "0.380 in",
+        "units": "in",
+        "value": 0.9652000000000001,
+        "value_text": "0.380 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d21",
+        "kind": "model",
+        "expression": "0.531 in",
+        "units": "in",
+        "value": 1.34874,
+        "value_text": "0.531 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d22",
+        "kind": "model",
+        "expression": "0.35 in",
+        "units": "in",
+        "value": 0.8889999999999999,
+        "value_text": "0.350 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d23",
+        "kind": "model",
+        "expression": "0.618 in",
+        "units": "in",
+        "value": 1.56972,
+        "value_text": "0.618 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d24",
+        "kind": "model",
+        "expression": "d23 / 2 ul",
+        "units": "in",
+        "value": 0.78486,
+        "value_text": "0.309 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d25",
+        "kind": "model",
+        "expression": "0.125 in",
+        "units": "in",
+        "value": 0.3175,
+        "value_text": "0.125 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d26",
+        "kind": "model",
+        "expression": "0.05 in",
+        "units": "in",
+        "value": 0.127,
+        "value_text": "0.050 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      }
+    ],
+    "holes": [
+      {
+        "name": "Hole1",
+        "suppressed": false,
+        "hole_type": "kDrilledHole",
+        "extent_type": "kThroughAllExtent",
+        "extended_name": "(1/4, Ø0.266 in Through All Depth)",
+        "tapped": false,
+        "diameter": {
+          "parameter": "d4",
+          "expression": "0.266 in",
+          "value": 0.67564,
+          "units": "in"
+        },
+        "depth_cm": 0.635000000000001,
+        "counterbore": null,
+        "countersink": null,
+        "spotface": null,
+        "thread": null,
+        "clearance": {
+          "standard": "Ansi Unified Screw Threads",
+          "fastener_type": "Flat Head Machine Screw (82)",
+          "size": "1/4",
+          "fit": "kNormalFitType"
+        },
+        "centres_mm": [
+          [19.049999999999997, 25.4, 6.3499999999999925],
+          [19.050000000000004, -25.399999999999995, 6.3499999999999925]
+        ],
+        "repeated_by": ["Mirror1"]
+      },
+      {
+        "name": "Hole2",
+        "suppressed": false,
+        "hole_type": "kDrilledHole",
+        "extent_type": "kThroughAllExtent",
+        "extended_name": "(10-24 UNC x 0.380 in ThreadDepth Through All Depth)",
+        "tapped": true,
+        "diameter": null,
+        "depth_cm": 0.6350000000000011,
+        "counterbore": null,
+        "countersink": null,
+        "spotface": null,
+        "thread": {
+          "designation": "10-24 UNC",
+          "thread_type": "ANSI Unified Screw Threads",
+          "class": "2B",
+          "internal": true,
+          "right_handed": true,
+          "metric": false,
+          "unit": "in",
+          "nominal_size": "0.19 (#10)",
+          "pitch": 0.041666666666666664,
+          "tap_drill_diameter": 0.1495,
+          "major_diameter_min": 0.19,
+          "major_diameter_max": null,
+          "minor_diameter_min": 0.145,
+          "minor_diameter_max": 0.156,
+          "pitch_diameter_min": 0.1629,
+          "pitch_diameter_max": 0.1672,
+          "full_thread_depth": false,
+          "thread_depth": {
+            "parameter": "d15",
+            "expression": "0.380 in",
+            "value": 0.9652000000000001,
+            "units": "in"
+          }
+        },
+        "clearance": null,
+        "centres_mm": [
+          [2.5400000000000054, 7.848600000000006, 6.349999999999999],
+          [16.027400000000007, 7.848600000000001, 6.349999999999993],
+          [2.5400000000000045, -7.848599999999997, 6.349999999999999],
+          [16.027400000000007, -7.848599999999997, 6.349999999999993]
+        ],
+        "repeated_by": ["Mirror1"]
+      }
+    ],
+    "patterns": [
+      {
+        "name": "Mirror1",
+        "type": "kMirrorFeatureObject",
+        "suppressed": false,
+        "parents": ["Hole1", "Hole2"],
+        "elements": 2,
+        "elements_suppressed": 0,
+        "instances": 2
+      }
+    ]
   },
   "materials": null
 }

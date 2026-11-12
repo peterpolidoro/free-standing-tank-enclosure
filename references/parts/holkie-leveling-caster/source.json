@@ -16,65 +16,42 @@
     "native_sha256": "78b6957f3d3bd4001522e4dadedb5cc819622ef1aa0e6277377dea7f29967f62"
   },
   "step": {
-    "sha256": "d76de07fea91d3b91129155a2d202ea895756d4bb69120ed3d1facb0e2ae23c7",
-    "data_sha256": "29940d7b898e29b72d2cd89cb8dd8138ebf520d69f125ee2c1d732dc03482035",
-    "bytes": 3914098,
-    "protocol": "AP214",
+    "sha256": "976829cdf4365b945162c2850c2620e8f5f1de473240d4f822b02d0ba59b3d0c",
+    "data_sha256": "0e1628db054f87cf72fa4cd989ce13e170d47e319698df4ec44963f53eb25bd8",
+    "bytes": 3915606,
+    "protocol": "AP242",
     "length_unit": "in",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\JAYARAMAN (LAB)\\FLOW TUNNEL\\HOLKIE LEVELING CASTER.ipt|[Primary]",
-    "package_path": "assets/HOLKIE LEVELING CASTER__[Primary]__72f0778a.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "in",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #45496",
-      "entity": "( CONVERSION_BASED_UNIT('inch',#45499) LENGTH_UNIT() NAMED_UNIT(#45494) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "HOLKIE LEVELING CASTER",
+    "category": "",
     "description": "",
-    "material": "Generic",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - JET",
     "manufacturer": "",
+    "material": "Generic",
+    "part_number": "HOLKIE LEVELING CASTER",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "HHMI: JRC - JET"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "in",
-    "bodies": {
-      "surface_bodies": 10,
-      "solid_bodies": 10,
-      "visible_solid_bodies": 10
-    },
     "extent_mm": [73.49338855195627, 86.24477410333193, 104.000107125527],
     "volume_mm3": 237917.87428386425,
-    "range_box_cm": {
-      "min": [-3.674669427597814, -7.774477410333193, -6],
-      "max": [3.674669427597814, 0.8500000000000005, 4.4000107125526995],
-      "extent": [7.349338855195628, 8.624477410333194, 10.4000107125527]
+    "bodies": {
+      "solid_bodies": 10,
+      "visible_solid_bodies": 10,
+      "surface_bodies": 10
     },
-    "volume_cm3": 237.91787428386425
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [],
+    "holes": [],
+    "patterns": []
   },
   "materials": null
 }

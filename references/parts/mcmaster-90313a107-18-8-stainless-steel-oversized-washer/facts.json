@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "mcmaster-90313a107-18-8-stainless-steel-oversized-washer",
   "step": {
-    "sha256": "83f53c90f41e60c715fdd3448acdaf1e6dba5bbe1be0c3a7dd8fcdb3696cda77",
-    "data_sha256": "f870daad3b04ecb00695f1b76e92e2359ebd6835d9926785607844288a0a4712"
+    "sha256": "5eeb33cb292a8ba6a5aa8d971f6b914c902df8b9705162f386f44e4472fd80cd",
+    "data_sha256": "575721bd9ac1ec405d506c6d4a4948283a3341d129460f23a864429dc6589f35"
   },
   "tool": {
     "name": "FreeCAD",

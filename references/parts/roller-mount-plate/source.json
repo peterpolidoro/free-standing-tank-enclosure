@@ -16,65 +16,271 @@
     "native_sha256": "159f5580c57f78a81d68d2ea00302094a9c3377e8d647a473b179d14f415a4b7"
   },
   "step": {
-    "sha256": "c1d9346af52434493066ce4726c5697b1c208e91ee347629cdf8e2bcd88e25f1",
-    "data_sha256": "1a61d15f51127745e85050d80b8ad049187f1a4c5acbe7b8621e09ccc5ce063f",
-    "bytes": 20967,
-    "protocol": "AP214",
+    "sha256": "de65c72bc3409174af5adb5b04b0f599268308e20bb681deebd7c54c0e29525f",
+    "data_sha256": "6cc65e213c0b6adce765a28c65f12183dcf6d3f3b08f0392068b77646688ffb3",
+    "bytes": 22299,
+    "protocol": "AP242",
     "length_unit": "in",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\ROLLER MOUNT PLATE.ipt|[Primary]",
-    "package_path": "assets/ROLLER MOUNT PLATE__[Primary]__6a8f878a.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "in",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #451",
-      "entity": "( CONVERSION_BASED_UNIT('inch',#454) LENGTH_UNIT() NAMED_UNIT(#449) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "",
+    "category": "",
     "description": "",
-    "material": "ALUMINUM, 6061-T651",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - jET",
     "manufacturer": "",
+    "material": "ALUMINUM, 6061-T651",
+    "part_number": "",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "HHMI: JRC - jET"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "in",
-    "bodies": {
-      "surface_bodies": 1,
-      "solid_bodies": 1,
-      "visible_solid_bodies": 1
-    },
     "extent_mm": [6.35, 38.100000000000016, 107.95000000000002],
     "volume_mm3": 24870.307268483615,
-    "range_box_cm": {
-      "min": [0, -1.9050000000000007, -5.397500000000001],
-      "max": [0.635, 1.9050000000000007, 5.397500000000001],
-      "extent": [0.635, 3.8100000000000014, 10.795000000000002]
+    "bodies": {
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1,
+      "surface_bodies": 1
     },
-    "volume_cm3": 24.870307268483614
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [
+      {
+        "name": "d0",
+        "kind": "model",
+        "expression": "1.5 in",
+        "units": "in",
+        "value": 3.81,
+        "value_text": "1.500 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d1",
+        "kind": "model",
+        "expression": "1.5 in",
+        "units": "in",
+        "value": 3.81,
+        "value_text": "1.500 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d2",
+        "kind": "model",
+        "expression": "0.5 in",
+        "units": "in",
+        "value": 1.27,
+        "value_text": "0.500 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d3",
+        "kind": "model",
+        "expression": "0.75 in",
+        "units": "in",
+        "value": 1.905,
+        "value_text": "0.750 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d4",
+        "kind": "model",
+        "expression": "1.5 in",
+        "units": "in",
+        "value": 3.81,
+        "value_text": "1.500 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d5",
+        "kind": "model",
+        "expression": "0.25 in",
+        "units": "in",
+        "value": 0.635,
+        "value_text": "0.250 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d6",
+        "kind": "model",
+        "expression": "0.00 deg",
+        "units": "deg",
+        "value": 0.0,
+        "value_text": "0.00 deg",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d8",
+        "kind": "model",
+        "expression": "0.630 in",
+        "units": "in",
+        "value": 1.6002,
+        "value_text": "0.630 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d12",
+        "kind": "model",
+        "expression": "0.874 in",
+        "units": "in",
+        "value": 2.21996,
+        "value_text": "0.874 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d13",
+        "kind": "model",
+        "expression": "118 deg",
+        "units": "deg",
+        "value": 2.059488517353309,
+        "value_text": "118.00 deg",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d14",
+        "kind": "model",
+        "expression": "0.354 in",
+        "units": "in",
+        "value": 0.89916,
+        "value_text": "0.354 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d19",
+        "kind": "model",
+        "expression": "0.874 in",
+        "units": "in",
+        "value": 2.21996,
+        "value_text": "0.874 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d20",
+        "kind": "model",
+        "expression": "118 deg",
+        "units": "deg",
+        "value": 2.059488517353309,
+        "value_text": "118.00 deg",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d21",
+        "kind": "model",
+        "expression": "0.25 in",
+        "units": "in",
+        "value": 0.635,
+        "value_text": "0.250 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      }
+    ],
+    "holes": [
+      {
+        "name": "Hole1",
+        "suppressed": false,
+        "hole_type": "kDrilledHole",
+        "extent_type": "kDistanceExtent",
+        "extended_name": "(M8x1.25 x 0.630 in ThreadDepth x 0.874 in Depth)",
+        "tapped": true,
+        "diameter": null,
+        "depth_cm": 2.21996,
+        "counterbore": null,
+        "countersink": null,
+        "spotface": null,
+        "thread": {
+          "designation": "M8x1.25",
+          "thread_type": "ANSI Metric M Profile",
+          "class": "6H",
+          "internal": true,
+          "right_handed": true,
+          "metric": true,
+          "unit": "mm",
+          "nominal_size": "8",
+          "pitch": 1.25,
+          "tap_drill_diameter": 6.75,
+          "major_diameter_min": 8.0,
+          "major_diameter_max": 8.34,
+          "minor_diameter_min": 6.647,
+          "minor_diameter_max": 6.912,
+          "pitch_diameter_min": 7.188,
+          "pitch_diameter_max": 7.348,
+          "full_thread_depth": false,
+          "thread_depth": {
+            "parameter": "d8",
+            "expression": "0.630 in",
+            "value": 1.6002,
+            "units": "in"
+          }
+        },
+        "clearance": null,
+        "centres_mm": [
+          [0.0, 3.7355494192062635e-31, -34.925000000000004]
+        ],
+        "repeated_by": []
+      },
+      {
+        "name": "Hole2",
+        "suppressed": false,
+        "hole_type": "kDrilledHole",
+        "extent_type": "kDistanceExtent",
+        "extended_name": "(M8, Ø0.354 in x 0.874 in Depth)",
+        "tapped": false,
+        "diameter": {
+          "parameter": "d14",
+          "expression": "0.354 in",
+          "value": 0.89916,
+          "units": "in"
+        },
+        "depth_cm": 2.21996,
+        "counterbore": null,
+        "countersink": null,
+        "spotface": null,
+        "thread": null,
+        "clearance": {
+          "standard": "Ansi Metric M Profile",
+          "fastener_type": "Flat Head Machine Screw",
+          "size": "M8",
+          "fit": "kNormalFitType"
+        },
+        "centres_mm": [
+          [0.0, 3.7355494192062635e-31, 3.1749999999999945],
+          [0.0, 0.0, 41.27499999999999]
+        ],
+        "repeated_by": []
+      }
+    ],
+    "patterns": []
   },
   "materials": null
 }

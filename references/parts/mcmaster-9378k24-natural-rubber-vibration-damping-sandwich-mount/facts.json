@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "mcmaster-9378k24-natural-rubber-vibration-damping-sandwich-mount",
   "step": {
-    "sha256": "38c86c8809035d9b9201a4d947edebe67196cfe4906ecc0e71cbbb187715c803",
-    "data_sha256": "cf7c49795695c4a2a6d730223ba640e90ba6733766f6ee79384cf5bee24a030f"
+    "sha256": "6db39ebc513211c60fd88e1ccc5e0f312ff4d37cafaec9f0de2ecd6c1090a4d7",
+    "data_sha256": "371c5b0ce973d80c3e6f64dc9903e09c60b3869804562323075c8cf386e84102"
   },
   "tool": {
     "name": "FreeCAD",

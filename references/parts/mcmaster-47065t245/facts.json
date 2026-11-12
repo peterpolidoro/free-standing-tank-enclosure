@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "mcmaster-47065t245",
   "step": {
-    "sha256": "2daca7dae78f9180e1dfbb3b0be031bd8a3aa5a4ef486858ee59c943d9492383",
-    "data_sha256": "287363b26bea56543936c5bc84330648d9e816cae6e6c215a6fe6be3179618f1"
+    "sha256": "b6e92f68f3aecf8c5ea02ced94eb2c02f72ccbe6a7235810ae9430375d09e514",
+    "data_sha256": "18dca33d4a220c1964adc0a6e1fabe45e822f327ccae68341ee9e7d216d9ab4d"
   },
   "tool": {
     "name": "FreeCAD",
@@ -22,5 +22,6 @@
   "bounding_box_mm": {
     "min": [-3.0, -3.0, -3.000000000000009],
     "max": [38.100000000000016, 38.10000000000001, 38.1]
-  }
+  },
+  "invisible_items": 3
 }

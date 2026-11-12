@@ -52,11 +52,14 @@ guix shell --pure -m manifest.scm -- python3 assembly/prepare_documentation.py -
 
 cd "$docs_tools"
 guix shell --pure -m manifest.scm -- python3 -B -m mechanical_docs inspect "$cad_project/.cache/manual/project"
-guix shell --pure -m .guix/manifest-cad.scm -- FreeCADCmd mechanical_docs/cad_mesh.py --pass "$cad_project/.cache/manual/project" "$cad_project/.cache/manual/meshes" --max-triangles 50000
+guix shell --pure -m .guix/manifest-cad.scm -- FreeCADCmd mechanical_docs/cad_mesh.py --pass "$cad_project/.cache/manual/project" "$cad_project/.cache/manual/meshes"
 pixi run --locked -e render render "$cad_project/.cache/manual/project" "$cad_project/.cache/manual/meshes/meshes.json" "$cad_project/.cache/manual/renders"
 guix shell --pure -m .guix/manifest-publish.scm -- python3 -B -m mechanical_docs manual "$cad_project/.cache/manual/project" --renders "$cad_project/.cache/manual/renders" --out "$cad_project/.cache/manual/manual" --meshes "$cad_project/.cache/manual/meshes/meshes.json"
 guix shell --pure -m .guix/manifest-publish.scm -- python3 -B -m mechanical_docs check "$cad_project/.cache/manual/manual"
 ```
+
+The mesh stage uses its default budget of 50 000 triangles a part. FreeCADCmd 1.1.3 takes a dashed option
+after `--pass` for its own and stops, so `--max-triangles` cannot be given this way (found 2026-11-12).
 
 See mechanical-docs' `docs/environment.md` for Pixi initialization and host glibc
 detection when launching Pixi from inside Guix. Keep its lockfile. For a different

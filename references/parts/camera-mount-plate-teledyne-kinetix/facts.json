@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "camera-mount-plate-teledyne-kinetix",
   "step": {
-    "sha256": "b6d274fdce0180a04441db99078cafdeb8a97da93a9bbaa52238d1e24a69560c",
-    "data_sha256": "292b729fcfacc114e9da4fe83345234b15178c2fc74fb1de4559378e6178a03c"
+    "sha256": "9c4f2bbeeb1738aba11cc4745f9e354ace77496b8dd8920279fadb56813820a8",
+    "data_sha256": "6d6c99db4aabcdb0229052ba7453a1807a83ed8af3aa7c0712e0415c5ed4b7a7"
   },
   "tool": {
     "name": "FreeCAD",

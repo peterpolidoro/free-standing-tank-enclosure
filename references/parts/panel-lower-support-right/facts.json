@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "panel-lower-support-right",
   "step": {
-    "sha256": "b8952f10539536faa340ef301af5a04d2dc4d2c4a4bb126e92dda15f4215014e",
-    "data_sha256": "6eb17141db4adcfcb5025d6659f62ca60684f020b7d9cd01e3a7e1f7a9003873"
+    "sha256": "9f1001e5531c25f21b13d8120d8ba18c56da90a32b5e36e45d2af4eb50cf289d",
+    "data_sha256": "84af502d5b8b86acf85d6485d09f18a8c69edd27163f4ecefffce74b55617093"
   },
   "tool": {
     "name": "FreeCAD",

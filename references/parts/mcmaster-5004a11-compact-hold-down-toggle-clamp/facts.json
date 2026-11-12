@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "mcmaster-5004a11-compact-hold-down-toggle-clamp",
   "step": {
-    "sha256": "161dd8ec37c3d7566f78d6a7ae139aa0e3d7d4eddecc6900b8ec5cd6739912aa",
-    "data_sha256": "48907bdee2af1fbea3c4f071315b86545a94cf96a8043b15df5d367fa1b99b3e"
+    "sha256": "21625f60fca349327d27d7cc0436fa07714d1d32cba4d161214870bffd307b7a",
+    "data_sha256": "6d5f8c7c6668987233719f3318c7eb579f3cd3d2965c4d5cc120da4f5f200120"
   },
   "tool": {
     "name": "FreeCAD",

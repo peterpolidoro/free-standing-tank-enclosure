@@ -16,65 +16,120 @@
     "native_sha256": "0bfacba4bd4f0910aa8c6503510ab27fca5b10db96dcb863839877f46c15312f"
   },
   "step": {
-    "sha256": "e26fa1dd74097252f415dad137354b094e4141eee71bd95a09b2c8bf589b3dad",
-    "data_sha256": "685490ed1efcc49058e0eda5c212ba5211aed387682d1114d9ece592cbf2a18e",
-    "bytes": 27992,
-    "protocol": "AP214",
+    "sha256": "3e8f1558609e06e77125934fc579e0cfd36520bab31fa3c5c50a9ba28330ffd9",
+    "data_sha256": "41fb9f7741551d3cc9d9b0e8269cc29c4bedc1e6ef66836df55c87758f28995f",
+    "bytes": 29324,
+    "protocol": "AP242",
     "length_unit": "in",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\2W.353\\SHULZE 2W.353 TANK.ipt|[Primary]",
-    "package_path": "assets/SHULZE 2W.353 TANK__[Primary]__00b2841c.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "in",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #616",
-      "entity": "( CONVERSION_BASED_UNIT('inch',#619) LENGTH_UNIT() NAMED_UNIT(#614) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "",
+    "category": "",
     "description": "",
-    "material": "Acrylic, Clear",
-    "stock_number": "",
-    "vendor": "ADVANCED ACRYLICS",
     "manufacturer": "",
+    "material": "Acrylic, Clear",
+    "part_number": "",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "ADVANCED ACRYLICS"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "in",
-    "bodies": {
-      "surface_bodies": 1,
-      "solid_bodies": 1,
-      "visible_solid_bodies": 1
-    },
     "extent_mm": [990.6000000000004, 82.55000000000001, 990.6000000000004],
     "volume_mm3": 8133979.342230673,
-    "range_box_cm": {
-      "min": [-49.53000000000002, 0, -49.530000000000015],
-      "max": [49.53000000000001, 8.255, 49.530000000000015],
-      "extent": [99.06000000000003, 8.255, 99.06000000000003]
+    "bodies": {
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1,
+      "surface_bodies": 1
     },
-    "volume_cm3": 8133.979342230673
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [
+      {
+        "name": "d0",
+        "kind": "model",
+        "expression": "39 in",
+        "units": "in",
+        "value": 99.06,
+        "value_text": "39.000 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d1",
+        "kind": "model",
+        "expression": "39 in",
+        "units": "in",
+        "value": 99.06,
+        "value_text": "39.000 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d2",
+        "kind": "model",
+        "expression": "3.25 in",
+        "units": "in",
+        "value": 8.255,
+        "value_text": "3.250 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d3",
+        "kind": "model",
+        "expression": "0.00 deg",
+        "units": "deg",
+        "value": 0.0,
+        "value_text": "0.00 deg",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d4",
+        "kind": "model",
+        "expression": "0.25 in",
+        "units": "in",
+        "value": 0.635,
+        "value_text": "0.250 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d5",
+        "kind": "model",
+        "expression": "0.25 in",
+        "units": "in",
+        "value": 0.635,
+        "value_text": "0.250 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d6",
+        "kind": "model",
+        "expression": "0.125 in",
+        "units": "in",
+        "value": 0.3175,
+        "value_text": "0.125 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      }
+    ],
+    "holes": [],
+    "patterns": []
   },
   "materials": null
 }

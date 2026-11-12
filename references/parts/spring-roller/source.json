@@ -16,65 +16,153 @@
     "native_sha256": "63f21750850de5f7d80150aada884db958f9b8d1e04d0102f85b610c5f063104"
   },
   "step": {
-    "sha256": "1f239b9dc3dfde0532d81a35280633a4f598f5a8ad194f3b71d119ff36684012",
-    "data_sha256": "30815bb306373dfb8fec85da8fb5be9411cdd4457c982c59c817d4678c365321",
-    "bytes": 20123,
-    "protocol": "AP214",
+    "sha256": "cedcd116a82e7d43457977cc668561752586c632dedde109b7b96d4a9fa801e3",
+    "data_sha256": "1ee57ae5fd6c7026abf0c3a40aa215d29fa37fa818f228e38b2d20ce2212f4c0",
+    "bytes": 21462,
+    "protocol": "AP242",
     "length_unit": "in",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SPRING ROLLER.ipt|[Primary]",
-    "package_path": "assets/SPRING ROLLER__[Primary]__25d6cebc.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "in",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #411",
-      "entity": "( CONVERSION_BASED_UNIT('inch',#414) LENGTH_UNIT() NAMED_UNIT(#409) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "",
+    "category": "",
     "description": "",
-    "material": "ABS, BLACK",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - jET",
     "manufacturer": "",
+    "material": "ABS, BLACK",
+    "part_number": "",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "HHMI: JRC - jET"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "in",
-    "bodies": {
-      "surface_bodies": 1,
-      "solid_bodies": 1,
-      "visible_solid_bodies": 1
-    },
     "extent_mm": [34.29, 48.006, 48.006],
     "volume_mm3": 27795.494790848126,
-    "range_box_cm": {
-      "min": [1.1102230246251565e-16, -2.4003, -2.4003],
-      "max": [3.429, 2.4003, 2.4003],
-      "extent": [3.429, 4.8006, 4.8006]
+    "bodies": {
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1,
+      "surface_bodies": 1
     },
-    "volume_cm3": 27.795494790848128
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [
+      {
+        "name": "d1",
+        "kind": "model",
+        "expression": "22 mm",
+        "units": "in",
+        "value": 2.2,
+        "value_text": "0.866 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d3",
+        "kind": "model",
+        "expression": "0.1 in",
+        "units": "in",
+        "value": 0.254,
+        "value_text": "0.100 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d6",
+        "kind": "model",
+        "expression": "1.47 in",
+        "units": "in",
+        "value": 3.7338,
+        "value_text": "1.470 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d7",
+        "kind": "model",
+        "expression": "1.89 in",
+        "units": "in",
+        "value": 4.8006,
+        "value_text": "1.890 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d9",
+        "kind": "model",
+        "expression": "0.05 in",
+        "units": "in",
+        "value": 0.127,
+        "value_text": "0.050 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d12",
+        "kind": "model",
+        "expression": "0.02 in",
+        "units": "in",
+        "value": 0.050800000000000005,
+        "value_text": "0.020 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d15",
+        "kind": "model",
+        "expression": "2 mm",
+        "units": "in",
+        "value": 0.2,
+        "value_text": "0.079 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d16",
+        "kind": "model",
+        "expression": "6 mm",
+        "units": "in",
+        "value": 0.6000000000000001,
+        "value_text": "0.236 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d17",
+        "kind": "model",
+        "expression": "1.25 in",
+        "units": "in",
+        "value": 3.175,
+        "value_text": "1.250 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      },
+      {
+        "name": "d18",
+        "kind": "model",
+        "expression": "18.8 mm",
+        "units": "in",
+        "value": 1.8800000000000001,
+        "value_text": "0.740 in",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      }
+    ],
+    "holes": [],
+    "patterns": []
   },
   "materials": null
 }

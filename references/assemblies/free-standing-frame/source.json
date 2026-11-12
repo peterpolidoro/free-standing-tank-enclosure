@@ -16,15 +16,25 @@
     "native_sha256": "4a9ea43566626c5305ac40d485d366ce7ade2f55352fde4ef50df86c29b651b8"
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "FREE STANDING FRAME"
+    "run": "2026-11-12-windows-package-findings-01"
+  },
+  "properties": {
+    "category": "",
+    "description": "",
+    "manufacturer": "",
+    "material": "",
+    "part_number": "",
+    "stock_number": "",
+    "title": "",
+    "vendor": "HHMI: JRC - JET"
   },
   "native": {
-    "length_unit": null,
-    "instances_in_export": 1
-  }
+    "length_unit": "in",
+    "instances_in_export": 1,
+    "children": 45,
+    "design_view_representation": "[Primary]",
+    "positional_representation": "[Primary]",
+    "level_of_detail": "[Primary]"
+  },
+  "materials": null
 }

@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "toggle-clamp-mount",
   "step": {
-    "sha256": "f8171c9d76b250758a47873afa0d5b80f8e74e4b7e6860925c4666a69cce77b6",
-    "data_sha256": "3f43a9b2a8fdb5422f0cd4674ea57fec3ac7f42e304cf058d0c2578a60120a8e"
+    "sha256": "424b5ac9563f77f5db715b87e45183dbbb1808f4718e8a18c886575a22fa4539",
+    "data_sha256": "3522b7dffa43d7bc88ba01e52b9ce740dd54f7449d75ef811dc31115fb3f817f"
   },
   "tool": {
     "name": "FreeCAD",

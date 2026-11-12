@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "tank-support-platform",
   "step": {
-    "sha256": "bcfe35dadbe1431c760bd9e9ef0cdd32c5fef0fc753d5a8ac35cc5960e0e3f2a",
-    "data_sha256": "ef97ebf1288b58217140825f3427bcd90f0bbe7371b4eb119b266e736332dae6"
+    "sha256": "1b2f93803e00c60f96877b5412a9ad2ff835076ee3a6d16558d59467a681248a",
+    "data_sha256": "e1290d1bbb161c9c366e6517c3d6cf50fd380bb7d4520fed5b0d103f5e2b19e7"
   },
   "tool": {
     "name": "FreeCAD",

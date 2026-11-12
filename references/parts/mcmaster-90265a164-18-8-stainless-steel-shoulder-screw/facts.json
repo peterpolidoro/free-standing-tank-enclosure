@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "mcmaster-90265a164-18-8-stainless-steel-shoulder-screw",
   "step": {
-    "sha256": "46342b43153af853a7ba136780b678c1cf9cdfaa4663575ce830749de9bcc0c7",
-    "data_sha256": "51206eac22378fcb372e89967ed6a766e0ceafaff12fb45bec887256ffba0dba"
+    "sha256": "f280167cb3e21cdbac48b7431063d3a4ff7e3bc2bbaa7bacc95679d45db54594",
+    "data_sha256": "fa6e65c73995bbe647631accea783ad70b43cc848f2d918ff286c523d9a0322a"
   },
   "tool": {
     "name": "FreeCAD",

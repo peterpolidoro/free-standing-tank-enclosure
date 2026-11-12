@@ -16,65 +16,42 @@
     "native_sha256": "e881f5aad21d3224cc9e172d4862d2993a13d982d0851428cfcf1e63d7be66a9"
   },
   "step": {
-    "sha256": "46342b43153af853a7ba136780b678c1cf9cdfaa4663575ce830749de9bcc0c7",
-    "data_sha256": "51206eac22378fcb372e89967ed6a766e0ceafaff12fb45bec887256ffba0dba",
-    "bytes": 935767,
-    "protocol": "AP214",
+    "sha256": "f280167cb3e21cdbac48b7431063d3a4ff7e3bc2bbaa7bacc95679d45db54594",
+    "data_sha256": "fa6e65c73995bbe647631accea783ad70b43cc848f2d918ff286c523d9a0322a",
+    "bytes": 937082,
+    "protocol": "AP242",
     "length_unit": "mm",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\COMMON\\McMaster\\MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw.ipt|[Primary]",
-    "package_path": "assets/MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw__[Primary]__591781bf.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "mm",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #15993",
-      "entity": "( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI.,.METRE.) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw",
+    "category": "",
     "description": "",
-    "material": "Generic",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - jET",
     "manufacturer": "",
+    "material": "Generic",
+    "part_number": "MCMASTER 90265A164_18-8 Stainless Steel Shoulder Screw",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "HHMI: JRC - jET"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "mm",
-    "bodies": {
-      "surface_bodies": 1,
-      "solid_bodies": 1,
-      "visible_solid_bodies": 1
-    },
     "extent_mm": [15.999999999999995, 15.999999999999995, 45.34314881604825],
     "volume_mm3": 3751.8386470756955,
-    "range_box_cm": {
-      "min": [-0.7999999999999997, -0.7999999999999997, -2.284314881604795],
-      "max": [0.7999999999999997, 0.7999999999999997, 2.2500000000000298],
-      "extent": [1.5999999999999994, 1.5999999999999994, 4.534314881604825]
+    "bodies": {
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1,
+      "surface_bodies": 1
     },
-    "volume_cm3": 3.7518386470756955
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [],
+    "holes": [],
+    "patterns": []
   },
   "materials": null
 }

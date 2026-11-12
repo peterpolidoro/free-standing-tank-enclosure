@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "47065t271-aluminum-t-slotted-framing-extrusion",
   "step": {
-    "sha256": "bf0439b918f46882083d34679145af4616b9ac00a754e46b4f62a11bfa028161",
-    "data_sha256": "c4a1834c4a3045c57f1c0c8c2ae41dce82b440d80c4badc81851e53cb99a9441"
+    "sha256": "83057fab7b4fc7eb639c91b74bcba1dbb3d88670bc8fd2fb6f0e05e5c6ea9001",
+    "data_sha256": "2bcff736a9461c03e36f14187fdd7dc5fec7a8bf89714cad948285022def12f2"
   },
   "tool": {
     "name": "FreeCAD",

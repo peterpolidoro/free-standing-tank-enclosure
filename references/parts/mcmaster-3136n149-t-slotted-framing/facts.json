@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "mcmaster-3136n149-t-slotted-framing",
   "step": {
-    "sha256": "29a5771d562d9c9110cb87ddabe7716cb7d91ed5c668f8c5094e1e9293a6acd9",
-    "data_sha256": "bdad47217049315c992f3d2b085495d7e6ce56566e34da39e2571e9872e127dd"
+    "sha256": "5c2385c6759fd84f4fa2febdbf9b4c92f685b2c9286327e70aecc882c07a9404",
+    "data_sha256": "0de6b4ad0a7718c8ee16524fa854f9a3810b96c306bddfcf8da413516fa51f4f"
   },
   "tool": {
     "name": "FreeCAD",

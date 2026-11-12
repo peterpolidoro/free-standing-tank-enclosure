@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "spring-mount-plate",
   "step": {
-    "sha256": "92136e41bed330ce5feaf9860679623e89856f1d42790811ced1be1e48f2a2bc",
-    "data_sha256": "2584a7299dc08777b9077e7349ef9658d7e2e3f5aa9c9cf7d0864271570ff9bd"
+    "sha256": "992cc1b5be8018d179e53bbd8f9289c752fb5d7d7716966fa1884c7b7988cd9b",
+    "data_sha256": "89598a5c890277d8af37c1a039832106434feab82c898c582cc1255669d2f520"
   },
   "tool": {
     "name": "FreeCAD",

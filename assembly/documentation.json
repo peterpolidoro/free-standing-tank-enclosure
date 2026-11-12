@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "scene_sha256": "2fe38a7025b51ba90fcbee6f2c33eaf77a10c82d5a8f7b0f1d56f4b88084a059",
-  "export_run": "legacy-snapshot-991056",
-  "export_receipt_sha256": "a8b0fecf5318185fef9c55f4eff9af7c5ffdfb7ed0dabcfca28900ecf6b36e4f",
-  "mechanical_docs_tested_commit": "27f9581",
+  "scene_sha256": "f512d2f6c8ec71565c245c31bcfaf9bd65aecba29cef1556a17fbafe8ac5f250",
+  "export_run": "2026-11-12-windows-package-findings-01",
+  "export_receipt_sha256": "f359972ade2b6953d5b6009f836010c4a37ede55e6b339177601ed52e3e5fb12",
+  "mechanical_docs_tested_commit": "31a9cef",
   "output": ".cache/manual/project",
   "qualification": "Draft CAD inventory and inspection views. Physical stock and assembly order have not been reviewed."
 }

@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "mcmaster-47065t845-silver-corner-bracket",
   "step": {
-    "sha256": "32bc143683d9cf68e4f2b9e2c6cddefc3937c651d357c8a82328f5f23e0cd806",
-    "data_sha256": "7a4a5dca9c68b3fdec60f03ad290940923f5040191a6ebd526e8a59a7c0cc62e"
+    "sha256": "611c201c7173e2e3347f4f6d1a9a91892b3b85060ad7a96765c30bcc2368cc0a",
+    "data_sha256": "0297bb904d77be4c4be12e5d0947b506fc79e821badb8f7b3b761defcb9112a0"
   },
   "tool": {
     "name": "FreeCAD",

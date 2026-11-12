@@ -16,65 +16,42 @@
     "native_sha256": "8801c039c383882d33e5953bc846301225999b4a39a6de464c1a00ebaf232f0b"
   },
   "step": {
-    "sha256": "161dd8ec37c3d7566f78d6a7ae139aa0e3d7d4eddecc6900b8ec5cd6739912aa",
-    "data_sha256": "48907bdee2af1fbea3c4f071315b86545a94cf96a8043b15df5d367fa1b99b3e",
-    "bytes": 1397868,
-    "protocol": "AP214",
+    "sha256": "21625f60fca349327d27d7cc0436fa07714d1d32cba4d161214870bffd307b7a",
+    "data_sha256": "6d5f8c7c6668987233719f3318c7eb579f3cd3d2965c4d5cc120da4f5f200120",
+    "bytes": 1399383,
+    "protocol": "AP242",
     "length_unit": "in",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\COMMON\\McMaster\\MCMASTER 5004A11_Compact Hold-Down Toggle Clamp.ipt|[Primary]",
-    "package_path": "assets/MCMASTER 5004A11_Compact Hold-Down Toggle Clamp__[Primary]__976424b5.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "in",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #18267",
-      "entity": "( CONVERSION_BASED_UNIT('inch',#18270) LENGTH_UNIT() NAMED_UNIT(#18265) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "5004A11_Compact Hold-Down Toggle Clamp",
+    "category": "",
     "description": "",
-    "material": "Generic",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - JET",
     "manufacturer": "",
+    "material": "Generic",
+    "part_number": "5004A11_Compact Hold-Down Toggle Clamp",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "HHMI: JRC - JET"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "in",
-    "bodies": {
-      "surface_bodies": 20,
-      "solid_bodies": 20,
-      "visible_solid_bodies": 20
-    },
     "extent_mm": [28.44800000000001, 35.72714587568, 56.49715724024417],
     "volume_mm3": 8878.787281240597,
-    "range_box_cm": {
-      "min": [-1.4097000000000002, -5.551115123125783e-17, -4.733024092811786e-06],
-      "max": [1.435100000000001, 3.572714587568, 5.649710991000324],
-      "extent": [2.844800000000001, 3.572714587568, 5.649715724024417]
+    "bodies": {
+      "solid_bodies": 20,
+      "visible_solid_bodies": 20,
+      "surface_bodies": 20
     },
-    "volume_cm3": 8.878787281240596
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [],
+    "holes": [],
+    "patterns": []
   },
   "materials": null
 }

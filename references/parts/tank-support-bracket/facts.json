@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "tank-support-bracket",
   "step": {
-    "sha256": "ac56abb49480231f63c271181ea875c0b60c163cbfe632f058d3281308ab587c",
-    "data_sha256": "b292f9b48bd1a6e0b5ace3360a7722fbd6273bf94103e96fd9d2f8ba03bd2a79"
+    "sha256": "ce48d2900431c39a8b8c1116b8ae0265aa16681e96ebbd19f09c0c114581637d",
+    "data_sha256": "90360517427a34d697da07c63910fd29f5e0d15613e814317a8a13dec29ed209"
   },
   "tool": {
     "name": "FreeCAD",

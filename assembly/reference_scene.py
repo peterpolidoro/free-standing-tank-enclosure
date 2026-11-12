@@ -68,17 +68,28 @@ def load():
 
 
 def exporter_part_ids():
-    """{part key: the id the exporter gave the part}, from each part's source.json.
+    """{part key: the id the earlier exporter gave the part}.
 
     A manual published before the project was converted names parts by the
-    exporter's ids; this is the way back to them.
+    earlier exporter's ids; this is the way back to them. They are read from
+    the scene that exporter left under references/receipts/, by Vault master id
+    and model state: a part's own source.json names only the export its files
+    now come from, and loses the earlier id when the part is exported again.
     """
+    former = {}
+    for scene in sorted((ROOT / "references" / "receipts").glob("*/scene.json")):
+        for part in json.loads(scene.read_text(encoding="utf-8-sig")).get("parts", []):
+            master = (part.get("source") or {}).get("master_id")
+            if master is not None:
+                former[(str(master), part.get("model_state"))] = part["id"]
     out = {}
     for src in sorted((ROOT / "references" / "parts").glob("*/source.json")):
         data = json.loads(src.read_text(encoding="utf-8"))
-        former = (data.get("export") or {}).get("package_id")
-        if former:
-            out[data["key"]] = former
+        vault = data.get("vault") or {}
+        found = ((data.get("export") or {}).get("package_id")
+                 or former.get((str(vault.get("master_id")), data.get("model_state"))))
+        if found:
+            out[data["key"]] = found
     return out
 
 

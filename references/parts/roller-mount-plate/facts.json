@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "roller-mount-plate",
   "step": {
-    "sha256": "c1d9346af52434493066ce4726c5697b1c208e91ee347629cdf8e2bcd88e25f1",
-    "data_sha256": "1a61d15f51127745e85050d80b8ad049187f1a4c5acbe7b8621e09ccc5ce063f"
+    "sha256": "de65c72bc3409174af5adb5b04b0f599268308e20bb681deebd7c54c0e29525f",
+    "data_sha256": "6cc65e213c0b6adce765a28c65f12183dcf6d3f3b08f0392068b77646688ffb3"
   },
   "tool": {
     "name": "FreeCAD",

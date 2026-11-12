@@ -16,65 +16,42 @@
     "native_sha256": "991f1dbb81549737360fe8dd4728433adc13c6c710b4653eeeed9827549afef9"
   },
   "step": {
-    "sha256": "2daca7dae78f9180e1dfbb3b0be031bd8a3aa5a4ef486858ee59c943d9492383",
-    "data_sha256": "287363b26bea56543936c5bc84330648d9e816cae6e6c215a6fe6be3179618f1",
-    "bytes": 289079,
-    "protocol": "AP214",
+    "sha256": "b6e92f68f3aecf8c5ea02ced94eb2c02f72ccbe6a7235810ae9430375d09e514",
+    "data_sha256": "18dca33d4a220c1964adc0a6e1fabe45e822f327ccae68341ee9e7d216d9ab4d",
+    "bytes": 311230,
+    "protocol": "AP242",
     "length_unit": "mm",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\COMMON\\McMaster\\MCMASTER 47065T245.ipt|[Primary]",
-    "package_path": "assets/MCMASTER 47065T245__[Primary]__89f50e74.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "mm",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #5854",
-      "entity": "( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI.,.METRE.) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "MCMASTER 47065T245",
+    "category": "",
     "description": "",
-    "material": "Generic",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - jET",
     "manufacturer": "",
+    "material": "Generic",
+    "part_number": "MCMASTER 47065T245",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "HHMI: JRC - jET"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "mm",
-    "bodies": {
-      "surface_bodies": 4,
-      "solid_bodies": 4,
-      "visible_solid_bodies": 1
-    },
     "extent_mm": [41.10000000000002, 41.10000000000002, 41.10000000000001],
     "volume_mm3": 37306.39789842201,
-    "range_box_cm": {
-      "min": [-0.2999999999999998, -0.29999999999999966, -0.30000000000000004],
-      "max": [3.8100000000000023, 3.8100000000000023, 3.8100000000000014],
-      "extent": [4.110000000000002, 4.110000000000002, 4.110000000000001]
+    "bodies": {
+      "solid_bodies": 4,
+      "visible_solid_bodies": 1,
+      "surface_bodies": 4
     },
-    "volume_cm3": 37.306397898422006
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [],
+    "holes": [],
+    "patterns": []
   },
   "materials": null
 }

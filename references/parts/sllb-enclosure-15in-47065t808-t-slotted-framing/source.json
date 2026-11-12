@@ -16,65 +16,54 @@
     "native_sha256": "9ca77d3f6c798ff3b360d317de02259c7f10e139e1d51b5a75a21a9536351dc1"
   },
   "step": {
-    "sha256": "08646c8eb96e0c4322be83c70698e51cf078ddb2692a98b1df8d265d283b5124",
-    "data_sha256": "39dbd00db4954703f8cd8bbe82ed84e213c05745ae2a88e73c7647101fd75ae7",
-    "bytes": 248842,
-    "protocol": "AP214",
+    "sha256": "f6961518862a8e4413fb785a0c713a7368ea46bbb7a6cb6f3561915244603d18",
+    "data_sha256": "18dd30d0a148f58d617634b1b4b7bc1f093fef63d38dc31500986a0ab59dcf24",
+    "bytes": 250106,
+    "protocol": "AP242",
     "length_unit": "mm",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 15in 47065T808_T-Slotted Framing.ipt|[Primary]",
-    "package_path": "assets/SLLB Enclosure 15in 47065T808_T-Slotted Framing__[Primary]__64014b81.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "mm",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #5672",
-      "entity": "( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI.,.METRE.) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "",
+    "category": "",
     "description": "",
-    "material": "ALUMINUM, 6061-T651",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - jET",
     "manufacturer": "",
+    "material": "ALUMINUM, 6061-T651",
+    "part_number": "",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "HHMI: JRC - jET"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "mm",
-    "bodies": {
-      "surface_bodies": 1,
-      "solid_bodies": 1,
-      "visible_solid_bodies": 1
-    },
-    "extent_mm": [38.100000000000016, 38.10000000000002, 381],
+    "extent_mm": [38.100000000000016, 38.10000000000002, 381.0],
     "volume_mm3": 225278.68818021592,
-    "range_box_cm": {
-      "min": [-1.9050000000000002, -1.9050000000000011, -15.240000000000004],
-      "max": [1.9050000000000016, 1.9050000000000011, 22.86],
-      "extent": [3.810000000000002, 3.8100000000000023, 38.1]
+    "bodies": {
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1,
+      "surface_bodies": 1
     },
-    "volume_cm3": 225.2786881802159
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [
+      {
+        "name": "d2",
+        "kind": "model",
+        "expression": "15 in",
+        "units": "mm",
+        "value": 38.1,
+        "value_text": "381.000 mm",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      }
+    ],
+    "holes": [],
+    "patterns": []
   },
   "materials": null
 }

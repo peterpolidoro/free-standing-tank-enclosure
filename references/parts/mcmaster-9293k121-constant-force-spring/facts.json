@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "mcmaster-9293k121-constant-force-spring",
   "step": {
-    "sha256": "3c247aa91b637d3a062f99a09efe9fef4e4d988f8472ef43574141d5f97f7d99",
-    "data_sha256": "6c8b18614f39b04867023abf8c975f96bcc5abdb5945a47a447b832dcca65db0"
+    "sha256": "d5bc5f505377c0248c20cc29a16e418fad6266d41a65a975176db8ca1f023659",
+    "data_sha256": "f561b7184382166f44f183d1454fa8548f8b6802ce04e5fec2330a068c8cc5ac"
   },
   "tool": {
     "name": "FreeCAD",

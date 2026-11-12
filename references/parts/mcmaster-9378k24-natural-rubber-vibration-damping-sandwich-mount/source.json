@@ -16,65 +16,42 @@
     "native_sha256": "4520b4a2ed46903371cd197d343590cc1d9b5d90801816588d0b32cebaad9379"
   },
   "step": {
-    "sha256": "38c86c8809035d9b9201a4d947edebe67196cfe4906ecc0e71cbbb187715c803",
-    "data_sha256": "cf7c49795695c4a2a6d730223ba640e90ba6733766f6ee79384cf5bee24a030f",
-    "bytes": 565863,
-    "protocol": "AP214",
+    "sha256": "6db39ebc513211c60fd88e1ccc5e0f312ff4d37cafaec9f0de2ecd6c1090a4d7",
+    "data_sha256": "371c5b0ce973d80c3e6f64dc9903e09c60b3869804562323075c8cf386e84102",
+    "bytes": 567216,
+    "protocol": "AP242",
     "length_unit": "in",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\COMMON\\McMaster\\MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount.ipt|[Primary]",
-    "package_path": "assets/MCMASTER 9378K24_Natural Rubber Vibration-Damping Sandwich Mount__[Primary]__fcf343fc.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "in",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #5957",
-      "entity": "( CONVERSION_BASED_UNIT('inch',#5960) LENGTH_UNIT() NAMED_UNIT(#5955) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "9378K24_Natural Rubber Vibration-Damping Sandwich Mount",
+    "category": "",
     "description": "",
-    "material": "Generic",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - JET",
     "manufacturer": "",
+    "material": "Generic",
+    "part_number": "9378K24_Natural Rubber Vibration-Damping Sandwich Mount",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "HHMI: JRC - JET"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "in",
-    "bodies": {
-      "surface_bodies": 3,
-      "solid_bodies": 3,
-      "visible_solid_bodies": 3
-    },
     "extent_mm": [25.400000000000006, 25.74095420147018, 25.400000000000006],
     "volume_mm3": 6643.648530244054,
-    "range_box_cm": {
-      "min": [-1.27, -1.9266156302205117, -1.2700000000000002],
-      "max": [1.2700000000000005, 0.6474797899265066, 1.2700000000000002],
-      "extent": [2.5400000000000005, 2.5740954201470183, 2.5400000000000005]
+    "bodies": {
+      "solid_bodies": 3,
+      "visible_solid_bodies": 3,
+      "surface_bodies": 3
     },
-    "volume_cm3": 6.643648530244054
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [],
+    "holes": [],
+    "patterns": []
   },
   "materials": null
 }

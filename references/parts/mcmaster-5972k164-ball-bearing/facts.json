@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "mcmaster-5972k164-ball-bearing",
   "step": {
-    "sha256": "7799ac5c522148edda558a20a03e432a9c0cd48a571c233dd491ff69cd178558",
-    "data_sha256": "607dccbe358cc73eb09d015c22a8208859a46a734da2ba65d9cb3ff751a92d6d"
+    "sha256": "70b4d5f3798a8c542a92b2b2aa210837ff576786f7addf36325917866da508bf",
+    "data_sha256": "93d52e875f616522db310bef0f0a78a7830622d9384289e63e6b33dcfe6d4d6b"
   },
   "tool": {
     "name": "FreeCAD",

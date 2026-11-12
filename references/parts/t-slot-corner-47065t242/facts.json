@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "t-slot-corner-47065t242",
   "step": {
-    "sha256": "8ae9202837fac68fd8c61cd54c0a20edadc58a1fa336c6328288540e359e41a3",
-    "data_sha256": "7cf879d1b8821db330abac2343ead6aea7d3e293a35f1600d0b69ede5f3f3240"
+    "sha256": "e9b336b15e5aec8d71763bbb042fdfea98a75593b214c0f59d0db97ae9434bc1",
+    "data_sha256": "afd91df39c252a12b7e5a3ff122ea698a7ba74bf421eb3d72eec485c831d3324"
   },
   "tool": {
     "name": "FreeCAD",

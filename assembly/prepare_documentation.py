@@ -61,7 +61,12 @@ def prepare(tools, output=None):
         raise FileExistsError(f"Refusing existing output {dest}; choose a new --output .cache/... path")
     if sha(scene_path) != cfg["scene_sha256"]:
         raise ValueError("The flattened scene differs from the reviewed scene pinned in assembly/documentation.json")
-    receipt_path = inside(ROOT, f"references/receipts/{cfg['export_run']}/export-receipt.json")
+    # What the exporter says about the run: export-receipt.json from the earlier exporter, package.json from the
+    # package, which only a complete run writes.
+    receipts = inside(ROOT, f"references/receipts/{cfg['export_run']}")
+    receipt_path = next((receipts / name for name in ("export-receipt.json", "package.json") if (receipts / name).is_file()), None)
+    if receipt_path is None:
+        raise ValueError(f"references/receipts/{cfg['export_run']} holds neither export-receipt.json nor package.json")
     if sha(receipt_path) != cfg["export_receipt_sha256"]:
         raise ValueError("The exporter's receipt differs from the reviewed receipt")
     if read(receipt_path).get("status") not in (None, "complete"):

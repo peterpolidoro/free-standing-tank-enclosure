@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "tslot-extrusion-1x40-5-copy",
   "step": {
-    "sha256": "bf0bf6ca4eb5b11a9478a73691bec1eba86db6720fe50d0110898053c5ad56aa",
-    "data_sha256": "6bc42c73bf43197703ce0617afdee78ae15783397093515b39ddb50cb88cde12"
+    "sha256": "ad67f4ed501d53218e9d2e102eee852705aebb04e3f67a78dd7b453de704ca4a",
+    "data_sha256": "588ad20128c0a8e46177223fa2512815491d16ded1ee2e1a226947e5baa80642"
   },
   "tool": {
     "name": "FreeCAD",

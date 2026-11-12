@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "sllb-enclosure-96in-47065t808-t-slotted-framing",
   "step": {
-    "sha256": "22c6afaa9d4046d53a7e4f9943c92c292b4969c41118a2850b27f5433acc2969",
-    "data_sha256": "d95f9de0424361f74bdd57e3a063f78ed984140619969e1a8cc37987e4ef303d"
+    "sha256": "fc0354b4f41d2b5e043e2cccaa191c55d4dab7abafd2dadd0fde6cafa45b00ac",
+    "data_sha256": "35def9bc56f075a24bdaba5d8a52da908641204710cf7d57be12e24ac0ea5b37"
   },
   "tool": {
     "name": "FreeCAD",

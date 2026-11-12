@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "caster-mounting-plate",
   "step": {
-    "sha256": "fb755fe68cfa0f7ead5df8f49d168254ca4234133ebdeaed97a52ac4c59ead8d",
-    "data_sha256": "5625968e1d773fd526a8f63901d430a5fcf9266f69adc16a861c1c0b3241fc66"
+    "sha256": "48049802e34032516fbbdb835f820a018a310d63077fa4c838c1c17df0bf2d45",
+    "data_sha256": "27afe8a00e6a7ce62123319ce7c89e40625c86d130ceee889175939de8d3ff30"
   },
   "tool": {
     "name": "FreeCAD",

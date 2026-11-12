@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "spring-roller",
   "step": {
-    "sha256": "1f239b9dc3dfde0532d81a35280633a4f598f5a8ad194f3b71d119ff36684012",
-    "data_sha256": "30815bb306373dfb8fec85da8fb5be9411cdd4457c982c59c817d4678c365321"
+    "sha256": "cedcd116a82e7d43457977cc668561752586c632dedde109b7b96d4a9fa801e3",
+    "data_sha256": "1ee57ae5fd6c7026abf0c3a40aa215d29fa37fa818f228e38b2d20ce2212f4c0"
   },
   "tool": {
     "name": "FreeCAD",

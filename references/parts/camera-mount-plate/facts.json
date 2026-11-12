@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "camera-mount-plate",
   "step": {
-    "sha256": "f3298cdf813e823e83046e3f2790eb122b42eacbed7337d201f2c1f4bcef62d1",
-    "data_sha256": "72eed1238fabdba38dd35db4944a66e6b908cfd25aae65059d279a467c6b50bf"
+    "sha256": "0d81ddaf91a324e6e4914713a6eb5991732cad849b15df349b430e86d54a0516",
+    "data_sha256": "42baa48e9d05482950b9c3c2c9632b27f0f03ce34272f87301dfe76055315d91"
   },
   "tool": {
     "name": "FreeCAD",

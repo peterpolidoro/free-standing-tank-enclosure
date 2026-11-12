@@ -16,65 +16,54 @@
     "native_sha256": "9fded66e75f2f5916d95bf71e5d86e8373c7d91bd876bcdab395b34be8b266b3"
   },
   "step": {
-    "sha256": "4df7a00b1bd2814d6b8b6eedf678dcdb790f96df5595e6773a14fb6d6bce7bb8",
-    "data_sha256": "dd9c6ccd5e7a63a2d853efa138c33e78a527ffde262ba72287902d7051a9be4e",
-    "bytes": 248815,
-    "protocol": "AP214",
+    "sha256": "9f01f74936eb30593153695e5d53597513dd7b9899744218f7c79b804239aba6",
+    "data_sha256": "c117d26aeabfd6916b11a14447116dcb46cea8cef444c249e185a6f53fd8ea99",
+    "bytes": 250079,
+    "protocol": "AP242",
     "length_unit": "mm",
-    "header_normalised": false,
+    "header_normalised": true,
     "received_sha256": null
   },
   "export": {
-    "run": "legacy-snapshot-991056",
-    "exporter": "windows/Export-PartAssets.ps1 on Inventor 2025.3",
-    "exported_at": "2026-10-21T19:09:16.3977870Z",
-    "inventor_version": "2025.3",
-    "inventor_build": 293356000,
-    "package_id": "DATA\\PROJECTS\\_PROJECTS BY LAB\\SCHULZE (LAB)\\ENCLOSURE\\SLLB Enclosure 44in 47065T808_T-Slotted Framing.ipt|[Primary]",
-    "package_path": "assets/SLLB Enclosure 44in 47065T808_T-Slotted Framing__[Primary]__11d4d431.step",
-    "translator_options": {
-      "IncludeSketches": false,
-      "ApplicationProtocolType": 3,
-      "Author": "",
-      "Organization": "",
-      "Authorization": "",
-      "Description": "",
-      "export_fit_tolerance": 0.001,
-      "ExportUCS": true,
-      "Translation Result": "Successful"
-    },
-    "step_length_unit_detection": {
-      "unit": "mm",
-      "method": "GLOBAL_UNIT_ASSIGNED_CONTEXT -> #5672",
-      "entity": "( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI.,.METRE.) )"
-    }
+    "run": "2026-11-12-windows-package-findings-01",
+    "translator_result": "Successful"
   },
   "properties": {
-    "part_number": "SLLB Enclosure 44in 47065T808_T-Slotted Framing",
+    "category": "",
     "description": "",
-    "material": "Generic",
-    "stock_number": "",
-    "vendor": "HHMI: JRC - jET",
     "manufacturer": "",
+    "material": "Generic",
+    "part_number": "SLLB Enclosure 44in 47065T808_T-Slotted Framing",
+    "stock_number": "",
     "title": "Standard",
-    "category": ""
+    "vendor": "HHMI: JRC - jET"
   },
   "bom_structure_default": "Normal",
   "native": {
     "length_unit": "mm",
-    "bodies": {
-      "surface_bodies": 1,
-      "solid_bodies": 1,
-      "visible_solid_bodies": 1
-    },
     "extent_mm": [38.100000000000016, 38.10000000000002, 1117.6000000000001],
     "volume_mm3": 660817.485328634,
-    "range_box_cm": {
-      "min": [-1.9050000000000002, -1.9050000000000011, -15.240000000000004],
-      "max": [1.9050000000000016, 1.9050000000000011, 96.52000000000001],
-      "extent": [3.810000000000002, 3.8100000000000023, 111.76000000000002]
+    "bodies": {
+      "solid_bodies": 1,
+      "visible_solid_bodies": 1,
+      "surface_bodies": 1
     },
-    "volume_cm3": 660.817485328634
+    "parameter_values": "value is in Inventor's database units (centimetre, radian); value_text is the same value in the parameter's own unit",
+    "parameters": [
+      {
+        "name": "d2",
+        "kind": "model",
+        "expression": "44 in",
+        "units": "mm",
+        "value": 111.76,
+        "value_text": "1117.600 mm",
+        "comment": "",
+        "is_key": false,
+        "exposed_as_property": false
+      }
+    ],
+    "holes": [],
+    "patterns": []
   },
   "materials": null
 }

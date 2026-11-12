@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "mcmaster-1950a67-unthreaded-hole-pull-handle",
   "step": {
-    "sha256": "38507216e963ea6a7f76407207917f9b540bbbf1017fa7781edfd4ec30f452bb",
-    "data_sha256": "5ad81ad7918df1d48e113425e6a09a113bf5ae44c38d769617a0b4eb161cc010"
+    "sha256": "21743d4ae4619100aa74bc3c54fb891e06a462951411fdcb166e638031da9eb3",
+    "data_sha256": "0d9576bf5ada4d34d4f3dee2a48de69e167b6fce2cba96353ad8032d94c07044"
   },
   "tool": {
     "name": "FreeCAD",

@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "shulze-2w-353-tank",
   "step": {
-    "sha256": "e26fa1dd74097252f415dad137354b094e4141eee71bd95a09b2c8bf589b3dad",
-    "data_sha256": "685490ed1efcc49058e0eda5c212ba5211aed387682d1114d9ece592cbf2a18e"
+    "sha256": "3e8f1558609e06e77125934fc579e0cfd36520bab31fa3c5c50a9ba28330ffd9",
+    "data_sha256": "41fb9f7741551d3cc9d9b0e8269cc29c4bedc1e6ef66836df55c87758f28995f"
   },
   "tool": {
     "name": "FreeCAD",
