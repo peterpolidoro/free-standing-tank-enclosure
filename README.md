@@ -25,10 +25,17 @@ children and where they sit. Flattened, they place 155 occurrences. A FreeCAD
 reconstruction reproduces the 479 solids, the volume and the bounds of the full
 assembly export. The gap between native and exported body counts was hidden
 geometry, and the large volume differences were Inventor's default-accuracy
-measurements; see the [review](validation/2026-10-21-pilot-02-review.md). The
-part files total 19.83 MiB, the largest 3.73 MiB. `assembly/build_reference.py`
-generates a hierarchical FreeCAD document from the snapshot under `.cache/`
-without adding it to Git.
+measurements; see the [review](validation/2026-10-21-pilot-02-review.md). On
+2026-11-12 the placements were checked against a new export of the whole
+assembly from Inventor: each of its 479 visible solids is where these records
+put it, within 1e-10 mm. The part files total 19.83 MiB, the largest 3.73 MiB.
+
+No assembly is stored as a file of its own. `make assemblies` lists the seven,
+and `make assembly` builds the whole enclosure, or with `KEY=<key>` any one of
+them, as one STEP file and one FreeCAD document under the ignored
+`.cache/assemblies/`. They are for looking at, in FreeCAD or any other CAD
+system; they hold positions and shapes, not constraints or features, and the
+part files and manifests under `references/` stay the source.
 
 A [dimensional survey](validation/2026-10-22-reference-survey.md) flags two
 coincident tank instances that must not be counted as purchases without review.
@@ -88,8 +95,9 @@ sketches, an extrusion, an edit and a restore) and stays available.
   the verified publications.
 - `validation/`: geometry checks, acceptance decisions, and unresolved comparisons.
 - `.cache/`: ignored. Inventor originals, API probes, temporary conversions,
-  and the scene flattened from `references/` that the scripts and the manual
-  read (`make reference-scene MECHANICAL_CAD=/path/to/mechanical-cad`).
+  the scene flattened from `references/` that the scripts and the manual
+  read (`make reference-scene`), and the assemblies built for looking at
+  (`make assembly`).
 
 To modify an imported design, preserve the reference and create a design under
 `designs/`. Refreshing references must not overwrite those authored files.
@@ -103,7 +111,24 @@ export (Peter, 2026-11-11).
 
 ## Tools
 
-Reusable commands live in the sibling `vault-cad-tools` repository. From that
+`make` alone lists this project's short commands:
+
+```sh
+make validate                    # references/ and designs/ against the layout
+make assemblies                  # the assemblies, and which are built
+make assembly                    # the whole enclosure, as one STEP file and one FreeCAD document
+make assembly KEY=camera-frame   # one assembly of that list
+make reference-scene             # the scene the manual and the scripts under assembly/ read
+make site                        # the documentation site
+```
+
+The CAD commands are run by the `mechanical-cad` checkout, which is looked for
+beside this repository. When it is somewhere else, say so once in `local.mk`
+here, which Git ignores: `MECHANICAL_CAD = /path/to/mechanical-cad`. Where
+there is no `make` (Windows), `python -m mechanical_cad assemblies PROJECT`
+from that checkout prints the same list.
+
+Reusable Vault commands live in the sibling `vault-cad-tools` repository. From that
 repository on Linux:
 
 ```sh

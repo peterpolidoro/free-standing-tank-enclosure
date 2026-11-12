@@ -5,8 +5,12 @@ Vault file. The scene the documentation reads is flattened from it by
 `mechanical-cad` into the ignored `.cache/reference-scene/`:
 
 ```sh
-make reference-scene MECHANICAL_CAD="$HOME/Repositories/orb-weaver/mechanical-cad"
+make reference-scene
 ```
+
+The Makefile looks for `mechanical-cad` beside this repository; when it is
+somewhere else, name it once in the ignored `local.mk`
+(`MECHANICAL_CAD = /path/to/mechanical-cad`).
 
 Staging refuses a scene that was not flattened from the tree as it stands, a
 scene whose hash is not the one pinned in `assembly/documentation.json`, and a

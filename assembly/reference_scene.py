@@ -9,7 +9,7 @@ in the ignored .cache/reference-scene/.
     python3 assembly/reference_scene.py --mechanical-cad /path/to/mechanical-cad    write it
     python3 assembly/reference_scene.py                                              is it current?
 
-`make reference-scene MECHANICAL_CAD=/path/to/mechanical-cad` does the first.
+`make reference-scene` does the first; the Makefile says how it finds mechanical-cad.
 
 A scene is handed out only when it was flattened from the tree as it stands:
 the directories it is made from are hashed when it is written and again each
@@ -34,7 +34,7 @@ MARK = DIR / "flattened-from.json"
 INPUTS = ("references/parts", "references/assemblies", "designs/parts", "designs/assemblies")
 # the files of a component directory that the flattened scene is made from
 INPUT_FILES = ("part.step", "source.json", "assembly.json", "receipt.json", "parameters.json")
-HOW = "write it with: make reference-scene MECHANICAL_CAD=/path/to/mechanical-cad"
+HOW = "write it with: make reference-scene"
 
 
 def sha(path):

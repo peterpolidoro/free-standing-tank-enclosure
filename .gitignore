@@ -2,6 +2,7 @@
 .vault-cad-operation.lock
 .vault-cad-*
 .agents/handoff.local.md
+local.mk
 .env
 __pycache__/
 *.py[cod]

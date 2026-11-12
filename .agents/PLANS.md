@@ -10,7 +10,7 @@ The direction of the wider work is in the sibling `mechanical-cad` repository
 (`docs/direction.md`); this project is its test case. Finished checkpoints, with
 their evidence runs, are in .agents/HISTORY.md.
 
-## Current state (2026-11-11)
+## Current state (2026-11-12)
 
 - **CAD snapshot.** `references/` holds the accepted snapshot of Vault
   file-version 991056 in the layout of `mechanical-cad`: 37 part directories
@@ -65,8 +65,7 @@ their evidence runs, are in .agents/HISTORY.md.
     rewrites the same sheet; `propose_joint_views.py` prints the same proposal
     as on `main`; `site_pages.py` rewrites the same pages apart from one
     sentence of the front page that named the old directory.
-  Not run: any mesh, render or manual build; `make` itself (the recipe of the
-  new target was run by hand, and `make -n` prints it).
+  Not run: any mesh, render or manual build.
   What the conversion took out of the tree, all of it in Git history:
   `references/enclosure/` (its STEP files are now the `part.step` files, byte
   for byte, and its four records are under `references/receipts/`, unchanged,
@@ -81,6 +80,31 @@ their evidence runs, are in .agents/HISTORY.md.
   its last step in another order than the tracked `instructions.json`, because
   the scene lists occurrences in another order; nothing else differs. It is
   not run over Peter's edits.
+- **Placements checked against Inventor's own export (2026-11-12).** Windows
+  exported `Free Standing Enclosure.iam` as one AP242 STEP file, read-only
+  (no Vault access, nothing saved, the 44 documents bound to the acquisition
+  by hash). `mechanical-cad/tools/compare_assembly_step.py` on this branch
+  and that file, in the assembly's own frame: 479 of 479 solids where
+  `references/assemblies/` puts them, within 6.4e-11 mm, and no other visible
+  solid in the file; read in the wrong frame as a control, none matches. The
+  44 occurrences below the two flexible instances are among them. The file
+  is evidence in the shared directory
+  (`evidence/2026-11-12-windows-assembly-step-01/`, the comparison in
+  `evidence/2026-11-12-linux-windows-assembly-step-review-01/`) and is in no
+  repository.
+- **Short commands (2026-11-12, on the same branch).** `make` alone lists
+  them. `make assemblies` lists the seven assemblies and says which are built;
+  `make assembly [KEY=<key>]` builds one as a STEP file and a FreeCAD document
+  under `.cache/assemblies/`; `make validate` and `make reference-scene` need
+  no parameter. The CAD targets are handed to the Makefile of `mechanical-cad`,
+  found beside this repository or through the ignored `local.mk`. Run that
+  day: `make`, `make validate` (no error, the two findings), `make assemblies`,
+  `make assembly KEY=camera-frame` (16 parts, 36 occurrences, 124 solids, each
+  within 0.002 mm of its recorded place, 25 s), an unknown key (refused, with
+  the list of keys) and `make reference-scene` (the same scene, byte for
+  byte). Not seen: any of the FreeCAD documents in the FreeCAD window. The
+  site and project-data targets were moved in the file, not changed, and not
+  run again.
 
 ## Next work
 
@@ -110,7 +134,8 @@ their evidence runs, are in .agents/HISTORY.md.
      manual built from this tree is published; that branch of the script goes
      then.
    Merging changes one sentence of `docs/index.md`, so the Pages site is
-   rebuilt once.
+   rebuilt once. A checkout that gets the new Makefile needs its own
+   `local.mk` where `mechanical-cad` is not beside it.
 4. The re-export as AP242 into this layout, when the Windows exporter writes
    the package: keys stay, STEP files and their records are replaced, the new
    scene is compared with this one (`mechanical_cad compare-scenes`) and each
@@ -156,6 +181,11 @@ For Peter to settle:
   the `MCMASTER 47065T245` corner cube and the 44-inch and 56-inch
   extrusions; its only parent is `2W.353 TOP ASSY.iam` in the lab's `2W.353`
   folder. So a change to the camera frame in Vault reaches both assemblies.
+- `assembly/build_reference.py`. `make assembly` now builds the FreeCAD
+  document of the whole enclosure, checks every solid's place and builds any
+  sub-assembly too; the earlier script builds a document of the root only
+  (checked by solid count, volume and bounds) and nothing reads its output.
+  Remove it, or keep it?
 - The intended tank configuration. The CAD count is three, and two of the
   three (the tank at the root and the one inside `TANK SUPPORT FRAME:1`) sit at
   the same position.

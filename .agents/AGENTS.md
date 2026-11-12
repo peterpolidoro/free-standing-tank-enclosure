@@ -26,6 +26,13 @@ Preserve Vault-derived references: nothing under references/ is edited by
 hand. Author changes under designs/. The layout of both is specified and
 validated in `mechanical-cad`; the scripts under assembly/ read the scene
 flattened from them into .cache/ (`make reference-scene`).
+
+`make` alone lists the short commands. `make assemblies` lists the assemblies
+that can be built as one STEP file and one FreeCAD document and says which are
+built; `make assembly [KEY=<key>]` builds one into the ignored
+`.cache/assemblies/`. Those files are derived and for reading: never commit
+them, and never treat one as a source. The Makefile finds `mechanical-cad`
+beside this repository or through the ignored `local.mk`.
 Record real source IDs and exporter evidence; never invent them to populate a
 manifest. Credentials, downloaded native files, and machine-specific state stay
 outside tracked files. Do not treat Git text merging as geometric merging.

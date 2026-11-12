@@ -1,7 +1,7 @@
 """Stage this project's immutable CAD and authored manual inputs for mechanical-docs.
 
 The CAD input is the scene flattened from references/ (assembly/reference_scene.py);
-write it first with `make reference-scene MECHANICAL_CAD=/path/to/mechanical-cad`.
+write it first with `make reference-scene`.
 Run from the managed project environment with --tools /path/to/mechanical-docs.
 Only a fresh directory below .cache/ may be created. Existing outputs are refused
 so counted stock/instructions are never silently regenerated over user work.
