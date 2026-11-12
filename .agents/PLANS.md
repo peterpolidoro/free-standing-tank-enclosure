@@ -102,9 +102,19 @@ their evidence runs, are in .agents/HISTORY.md.
   `make assembly KEY=camera-frame` (16 parts, 36 occurrences, 124 solids, each
   within 0.002 mm of its recorded place, 25 s), an unknown key (refused, with
   the list of keys) and `make reference-scene` (the same scene, byte for
-  byte). Not seen: any of the FreeCAD documents in the FreeCAD window. The
-  site and project-data targets were moved in the file, not changed, and not
-  run again.
+  byte). The site and project-data targets were moved in the file, not
+  changed, and not run again.
+- **Opening an assembly in FreeCAD (2026-11-12, on the same branch).**
+  `make open [KEY=<key>]` builds the assembly if need be and opens its
+  FreeCAD document in the FreeCAD window that `guix shell` provides. The
+  first look at a built document in the window found it empty: a document
+  saved without a window opens with every object hidden. `mechanical-cad`
+  now writes what the window shows into the document, and files built before
+  that are listed as out of date. Seen in the window after the fix (FreeCAD
+  1.1.3): the whole enclosure upright and in view as the document opens, its
+  155 occurrences shown and the 37 part files hidden; the caster assembly
+  likewise. `make open KEY=caster-assembly` brought FreeCAD up on the
+  document. Everything is one grey; the files carry no colour.
 
 ## Next work
 
@@ -136,12 +146,20 @@ their evidence runs, are in .agents/HISTORY.md.
    Merging changes one sentence of `docs/index.md`, so the Pages site is
    rebuilt once. A checkout that gets the new Makefile needs its own
    `local.mk` where `mechanical-cad` is not beside it.
-4. The re-export as AP242 into this layout, when the Windows exporter writes
-   the package: keys stay, STEP files and their records are replaced, the new
-   scene is compared with this one (`mechanical_cad compare-scenes`) and each
-   part with its AP214 file by fingerprint. Then
-   `assembly/documentation.json` is pinned to the new scene and the manual is
-   rendered once in full.
+4. The re-export as AP242 into this layout. The Windows exporter wrote the
+   package on 2026-11-12 (read-only, evidence
+   `2026-11-12-windows-package-01/` in the shared directory), and it was
+   imported that day into a copy of this branch's tracked tree, not into the
+   branch: all 44 files rewritten, every key kept, 44 overrides derived; the
+   copy validates with one finding left (the envelope's bytes), its flattened
+   scene equals this one with no placement differing, the 37 STEP files are
+   the AP242 files whose geometry was compared with the tracked ones on
+   2026-11-11, and against Inventor's own export of the root assembly 479 of
+   479 solids are where the imported records put them. Left, on Peter's
+   word: the same import into this branch (`vault-cad import-snapshot
+   PACKAGE --into . --run RUN`, then `step_facts.py` and `make validate`).
+   Then `assembly/documentation.json` is pinned to the new scene and the
+   manual is rendered once in full.
 5. After the build: new parts written as code under `designs/`, manufactured
    and checked, then placed in Vault through `vault-cad-tools`.
 

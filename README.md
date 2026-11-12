@@ -33,7 +33,8 @@ put it, within 1e-10 mm. The part files total 19.83 MiB, the largest 3.73 MiB.
 No assembly is stored as a file of its own. `make assemblies` lists the seven,
 and `make assembly` builds the whole enclosure, or with `KEY=<key>` any one of
 them, as one STEP file and one FreeCAD document under the ignored
-`.cache/assemblies/`. They are for looking at, in FreeCAD or any other CAD
+`.cache/assemblies/`; `make open` builds it if need be and opens it in the
+FreeCAD window. They are for looking at, in FreeCAD or any other CAD
 system; they hold positions and shapes, not constraints or features, and the
 part files and manifests under `references/` stay the source.
 
@@ -118,6 +119,8 @@ make validate                    # references/ and designs/ against the layout
 make assemblies                  # the assemblies, and which are built
 make assembly                    # the whole enclosure, as one STEP file and one FreeCAD document
 make assembly KEY=camera-frame   # one assembly of that list
+make open                        # build the whole enclosure if need be, then open it in FreeCAD
+make open KEY=camera-frame       # the same for one assembly
 make reference-scene             # the scene the manual and the scripts under assembly/ read
 make site                        # the documentation site
 ```
@@ -126,7 +129,8 @@ The CAD commands are run by the `mechanical-cad` checkout, which is looked for
 beside this repository. When it is somewhere else, say so once in `local.mk`
 here, which Git ignores: `MECHANICAL_CAD = /path/to/mechanical-cad`. Where
 there is no `make` (Windows), `python -m mechanical_cad assemblies PROJECT`
-from that checkout prints the same list.
+from that checkout prints the same list. `make open` starts the FreeCAD that
+`guix shell` provides and returns when its window is closed.
 
 Reusable Vault commands live in the sibling `vault-cad-tools` repository. From that
 repository on Linux:

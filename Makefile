@@ -14,7 +14,7 @@ GUIX_SHELL_SITE = guix shell --pure -m .guix/manifest-site.scm
 SITE_DIR = site
 
 .DEFAULT_GOAL := help
-.PHONY: help mechanical-cad validate assemblies assembly reference-scene site site-serve site-pages \
+.PHONY: help mechanical-cad validate assemblies assembly open reference-scene site site-serve site-pages \
         phase-parts-list draft-instructions materials-manifest
 
 help:
@@ -23,6 +23,8 @@ help:
 	@echo "  make assemblies          list the assemblies, and which are built"
 	@echo "  make assembly            build the whole enclosure as one STEP file and one FreeCAD document"
 	@echo "  make assembly KEY=K      build the assembly K of that list"
+	@echo "  make open                build the whole enclosure if need be, then open it in the FreeCAD window"
+	@echo "  make open KEY=K          the same for the assembly K"
 	@echo "  make reference-scene     flatten the scene the manual and the scripts under assembly/ read"
 	@echo "Documentation site:"
 	@echo "  make site                build it into $(SITE_DIR)/"
@@ -51,6 +53,11 @@ assemblies: mechanical-cad
 # They are for looking at; the part files and the manifests under references/ stay the source.
 assembly: mechanical-cad
 	@$(MECHANICAL_CAD_MAKE) assembly KEY="$(KEY)"
+
+# The same, then the FreeCAD document opened in the FreeCAD window, which guix shell provides.
+# The command returns when the window is closed.
+open: mechanical-cad
+	@$(MECHANICAL_CAD_MAKE) open KEY="$(KEY)"
 
 # The scene the scripts below and the manual read, flattened from references/ into the ignored
 # .cache/reference-scene/.

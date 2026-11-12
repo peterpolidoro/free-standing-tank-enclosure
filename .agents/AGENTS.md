@@ -31,8 +31,11 @@ flattened from them into .cache/ (`make reference-scene`).
 that can be built as one STEP file and one FreeCAD document and says which are
 built; `make assembly [KEY=<key>]` builds one into the ignored
 `.cache/assemblies/`. Those files are derived and for reading: never commit
-them, and never treat one as a source. The Makefile finds `mechanical-cad`
-beside this repository or through the ignored `local.mk`.
+them, and never treat one as a source. `make open [KEY=<key>]` is for a
+person at the machine: it opens the FreeCAD window and returns only when the
+window is closed, so an agent builds with `make assembly` and names the file
+instead. The Makefile finds `mechanical-cad` beside this repository or
+through the ignored `local.mk`.
 Record real source IDs and exporter evidence; never invent them to populate a
 manifest. Credentials, downloaded native files, and machine-specific state stay
 outside tracked files. Do not treat Git text merging as geometric merging.
