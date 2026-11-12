@@ -48,7 +48,8 @@ their evidence runs, are in .agents/HISTORY.md.
 - **Size.** `docs/` is 141 MB of tracked files, almost all of it the manual
   package; `.git` is 229 MB. Each publication adds images, PDFs and viewer
   files.
-- **Layout conversion (2026-11-11, on the branch `layout-conversion`).** The
+- **Layout conversion (2026-11-11 on the branch `layout-conversion`; merged
+  into `main` on 2026-11-12, 7a1af68).** The
   tree was converted with `vault-cad import-snapshot`, the 37 parts measured,
   the curated files that name parts re-keyed (`assembly/materials.json`,
   `procurement/modeled-parts.csv`, `procurement/joint-audit.json`), and the
@@ -134,8 +135,11 @@ their evidence runs, are in .agents/HISTORY.md.
    (`assembly/build-scope.json`, `conditional_groups`); name the occurrences
    that form the backlight; record counted stock in the procurement sheets;
    write plain `scene.json` in `build-scope.scene` on the file's next revision.
-3. Before the branch `layout-conversion` is merged into `main`:
-   - Peter's review of it.
+3. The branch `layout-conversion` was merged into `main` by Peter on
+   2026-11-12 (fast-forward, 7a1af68). The worktree of the branch is no
+   longer needed; its ignored `.cache/` holds the preview run of the manual
+   (`manual-ap242/`) and the built assemblies, which are rebuilt on demand.
+   What is left of the conversion:
    - `vault-cad-tools` reads the new `vault-lock.json` since 2026-11-11: its
      `status` on this tree reports the 37 parts and 7 assemblies clean and the
      envelope as changed since it was published. A publication now starts
@@ -147,10 +151,15 @@ their evidence runs, are in .agents/HISTORY.md.
      ids. `assembly/site_pages.py` reads the scene under those ids until a
      manual built from this tree is published; that branch of the script goes
      then.
-   Merging changes one sentence of `docs/index.md`, so the Pages site is
-   rebuilt once. A checkout that gets the new Makefile needs its own
-   `local.mk` where `mechanical-cad` is not beside it.
-4. The re-export as AP242, imported into this branch on 2026-11-12 on
+   - A checkout needs its own `local.mk` where `mechanical-cad` is not
+     beside it.
+   - On Windows the new layout has not been checked out or read yet; that is
+     asked of the Windows agent (`status`, `mechanical_cad validate`, a
+     repeat import that must change nothing). On Linux a repeat import of
+     the same Vault versions into a clone of `main` leaves all 44
+     directories untouched (shared evidence
+     `2026-11-12-linux-main-baseline-01`).
+4. The re-export as AP242, imported into the branch on 2026-11-12 on
    Peter's word (`vault-cad import-snapshot` of the package in
    `evidence/2026-11-12-windows-package-findings-01/` of the shared
    directory, run `2026-11-12-windows-package-findings-01`): all 44 files

@@ -150,8 +150,8 @@ upload is implemented by this project's files.
 
 `status` there compares each directory under `references/` with the index in
 `vault-lock.json` and each published part with the file that was published.
-`import-step` belongs to the earlier layout and refuses this one; references
-are written by `import-snapshot`.
+References are written by `import-snapshot` there, from the package the
+Windows exporter writes.
 
 The project manifest provides FreeCAD for local authoring. The tools' smaller
 manifest is sufficient for metadata and transfer work. Neither installs Autodesk
