@@ -28,6 +28,17 @@ their evidence runs, are in .agents/HISTORY.md.
   order is a draft and nothing is physically validated.
 - **Physical build.** Peter is assembling the enclosure from the published
   manual and taking notes on the documentation.
+- **Facts measured again on 2026-11-13.** Every `facts.json`, 37 imported
+  parts and the envelope, is now measured with the kernel's adaptive
+  integration (`mechanical-cad`, at Peter's word; `tool.integration` in each
+  file). The plain integration FreeCAD offers was 0.83 % low in volume for
+  one part, the constant-force spring `MCMASTER 9293K121` (18 270.7 mm3
+  then, 18 422.2 now, which is what Inventor and a fine mesh give), and had
+  its centre of mass 4.0 mm off. No other volume changes by more than 5e-5;
+  counts, bounding boxes and validity are the same for all 38. The toggle
+  clamp's file carries a note: one of its solids reaches 2.3e-5, not the
+  1e-7 asked. No STEP file changed. Measuring needs `mechanical-cad`'s
+  environment with the OCP bindings.
 - **Vault.** One file written: the monitor envelope, Vault version 994252
   (2026-10-22), recorded in
   `designs/parts/aw2725q-nominal-envelope/vault.json`. Nothing else. The

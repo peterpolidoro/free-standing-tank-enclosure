@@ -9,16 +9,22 @@
     "name": "FreeCAD",
     "version": "1.1.3",
     "kernel": "OpenCASCADE",
-    "kernel_version": "7.9.3"
+    "kernel_version": "7.9.3",
+    "integration": {
+      "method": "adaptive",
+      "relative_tolerance": 1e-07,
+      "bindings": "OCP",
+      "bindings_version": "7.9.3.1"
+    }
   },
   "length_unit_declared": "in",
   "valid": true,
   "solids": 1,
   "shells": 1,
   "faces": 14,
-  "volume_mm3": 27795.49479084702,
-  "area_mm2": 9227.530762519324,
-  "center_of_mass_mm": [17.93575499468803, -4.004068367524169e-17, 8.09843251154948e-16],
+  "volume_mm3": 27795.494790830548,
+  "area_mm2": 9227.530762519333,
+  "center_of_mass_mm": [17.935754994687276, 2.6086607495386723e-07, 1.3417697726809586e-06],
   "bounding_box_mm": {
     "min": [8.881784197001252e-16, -24.002999999999997, -24.002999999999997],
     "max": [34.29, 24.002999999999997, 24.003]
