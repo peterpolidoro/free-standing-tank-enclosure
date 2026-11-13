@@ -153,12 +153,19 @@ their evidence runs, are in .agents/HISTORY.md.
      then.
    - A checkout needs its own `local.mk` where `mechanical-cad` is not
      beside it.
-   - On Windows the new layout has not been checked out or read yet; that is
-     asked of the Windows agent (`status`, `mechanical_cad validate`, a
-     repeat import that must change nothing). On Linux a repeat import of
-     the same Vault versions into a clone of `main` leaves all 44
-     directories untouched (shared evidence
-     `2026-11-12-linux-main-baseline-01`).
+   - On Windows the new layout was checked out and read on 2026-11-12
+     (shared evidence `2026-11-12-windows-new-layout-01`): `status` gives
+     what Linux gets, and a repeat import of the same Vault versions into a
+     clone leaves all 44 directories untouched, as on Linux
+     (`2026-11-12-linux-main-baseline-01`). `mechanical_cad validate` failed
+     there with one error: Git for Windows had written CRLF into 29 text
+     files, `build.py` of the envelope among them, whose hash its receipt
+     records. The fault was in `.gitattributes`, which gave LF only to
+     `.md`, `.toml` and `.json`. Corrected on 2026-11-13: `* text=auto
+     eol=lf`, and `.glb` named as binary. No tracked file changes on Linux.
+     Reproduced and checked on Linux in clones with `core.autocrlf=true`
+     (29 files converted and the same error before; none and a clean
+     validation after). Not yet seen on Windows with the committed change.
 4. The re-export as AP242, imported into the branch on 2026-11-12 on
    Peter's word (`vault-cad import-snapshot` of the package in
    `evidence/2026-11-12-windows-package-findings-01/` of the shared

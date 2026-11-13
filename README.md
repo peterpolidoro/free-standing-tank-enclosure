@@ -159,8 +159,9 @@ software. FreeCAD imports and assembly reconstruction checks pass. Visual/design
 review, a complete hardware BOM, a physical stock count and a validated assembly
 procedure remain outstanding.
 
-Use ordinary Git initially. `.gitattributes` preserves STEP bytes and disables
-automatic text merging. Large files may justify LFS later, but the initial
+Use ordinary Git initially. `.gitattributes` preserves STEP bytes, disables
+automatic text merging, and gives every text file LF line endings on every
+platform, because the records hold hashes of files. Large files may justify LFS later, but the initial
 publication packager deliberately rejects LFS pointers. Raw native downloads
 remain in `.cache/`; retain editable `.FCStd` or scripts in Git.
 
