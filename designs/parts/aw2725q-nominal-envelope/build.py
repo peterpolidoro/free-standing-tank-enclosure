@@ -8,15 +8,15 @@ right and Y up when looking at the screen in landscape; Z points out of the
 screen towards the viewer, so the front is Z = 0 and the body lies in
 negative Z.
 
-`build(parameters)` returns the shape and touches no file.
+`build(parameters)` returns the shape and touches no file. The shape is built
+with build123d (until 2026-11-13 with FreeCAD's Part module; the same box).
 mechanical-cad/tools/build_part.py calls it and writes part.step, receipt.json
 and facts.json beside this file.
 """
 
 
 def build(parameters):
-    import FreeCAD as App
-    import Part
+    from build123d import Align, Box
 
     if parameters["units"] != "mm":
         raise ValueError("the dimensions are expected in millimetres")
@@ -29,4 +29,5 @@ def build(parameters):
     width, height, depth = d["body_width"], d["body_height"], d["body_depth"]
     if min(width, height, depth) <= 0:
         raise ValueError("the body dimensions must be positive")
-    return Part.makeBox(width, height, depth, App.Vector(-width / 2.0, -height / 2.0, -depth))
+    # centred in X and Y, the front face on Z = 0 and the body behind it
+    return Box(width, height, depth, align=(Align.CENTER, Align.CENTER, Align.MAX))

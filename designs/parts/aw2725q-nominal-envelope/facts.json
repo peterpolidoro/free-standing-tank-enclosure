@@ -2,8 +2,8 @@
   "schema_version": 1,
   "key": "aw2725q-nominal-envelope",
   "step": {
-    "sha256": "4d129d4575f89ed93b596447056ba893f904c9bc4f99eba19f523eea1e5604e6",
-    "data_sha256": "3f994ed2fee31329fb163ff347f5e413c3231bb3146f0432c739b366d0324f03"
+    "sha256": "00a55d096bc2f02dec7e6c51bc31ade27c716961a6baf2868984ea7bf60e5582",
+    "data_sha256": "16ffcd3c58a9206ec5f0788cb814b03ff6c3ad73a272a8334754ca0764860608"
   },
   "tool": {
     "name": "FreeCAD",

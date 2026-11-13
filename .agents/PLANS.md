@@ -33,7 +33,14 @@ their evidence runs, are in .agents/HISTORY.md.
   `designs/parts/aw2725q-nominal-envelope/vault.json`. Nothing else. The
   envelope is now built from a program; the file built is the same solid as
   the published one (one solid, same bounding box and volume) but not the same
-  bytes, and the validator reports that. A read-only check on 2026-11-10
+  bytes, and the validator reports that. Since 2026-11-13 the program is
+  written with build123d (Peter's word; the first part of a project written
+  with it): rebuilt with `mechanical-cad`'s tool, every measured fact is the
+  same to the last digit, its four checks pass, and `part.step` differs from
+  the file before in 14 lines, each only in the sign of a zero. The project
+  validates with the same one finding and `status` is unchanged. Building it
+  needs `mechanical-cad`'s environment with build123d (the part's README has
+  the command). A read-only check on 2026-11-10
   found that none of the snapshot's 44 files has changed in Vault since
   2026-10-21: every one is still at the version that was exported, revision 0,
   Work in Progress, not checked out.

@@ -21,20 +21,31 @@ face-up installation, positive Z points toward the bowls. The active display's
 center is Y=+5.48 mm because the upper and lower bezels differ.
 
 `build.py` builds the single closed envelope solid from `parameters.json`,
-which defines the inputs, the assumptions and the provenance. The active
+which defines the inputs, the assumptions and the provenance. It is written
+with build123d, a Python library on the OpenCASCADE kernel. The active
 display is described there by its size and bezels; it is not part of the
 solid. `checks.json` states what the solid must satisfy (one solid, the
 published outer size, the front on Z = 0 and centred, the volume of the box).
 `part.step`, `receipt.json` and `facts.json` are written by the build command
 and are not edited.
 
-From the `mechanical-cad` checkout, in its CAD environment:
+From the `mechanical-cad` checkout, in its environment with FreeCAD and
+build123d (its README, "Guix packages"; the first use compiles the kernel's
+Python bindings, about twenty minutes):
 
 ```sh
-guix shell --pure -m manifest.scm -m .guix/manifest-cad.scm -- FreeCADCmd tools/build_part.py --pass /path/to/this/project/designs/parts/aw2725q-nominal-envelope
+guix shell --pure -L .guix/modules -m manifest.scm -m .guix/manifest-build123d.scm -- FreeCADCmd tools/build_part.py --pass /path/to/this/project/designs/parts/aw2725q-nominal-envelope
 ```
 
-Building it again from unchanged inputs changes no file.
+Building it again from unchanged inputs changes no file. FreeCAD writes and
+measures the file; `receipt.json` names build123d and its version beside it.
+
+Until 2026-11-13 the program built the box with FreeCAD's `Part` module. It
+was rewritten with build123d that day, the first part of a project written
+with it, and the result compared: one solid of six faces, and the volume, the
+area, the centre of mass and the bounding box are the same to the last digit.
+`part.step` differs from the file before in 14 of its 187 lines, each only
+in the sign of a zero in a direction (`-0.` then, `0.` now).
 
 An earlier form of this model was a parametric FreeCAD document with a
 construction plane for the active display, and the STEP exported from it was
