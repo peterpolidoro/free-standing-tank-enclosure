@@ -232,6 +232,68 @@ their evidence runs, are in .agents/HISTORY.md.
    manual is still the one of 2026-10-23.
 5. After the build: new parts written as code under `designs/`, manufactured
    and checked, then placed in Vault through `vault-cad-tools`.
+6. **The monitors' mount (Peter, 2026-11-16).** Two AW2725Q monitors are to
+   lie face-up, screens horizontal and parallel to the ground, under the fish
+   tanks, as displays and backlights. Peter wants to try monitor arms that
+   McMaster sells with STEP files: each aligned with the monitor's mounting
+   holes as a sub-assembly, the sub-assembly placed in the enclosure, and the
+   fit checked. He downloads the files; they stay outside the tracked tree
+   (the ignored `.cache/`) until an arm is chosen. Known so far:
+   - The frame is 1193.8 mm square outside and 1117.6 mm clear between its
+     posts and rails, which are 38.1 mm (1.5 inch) square. The two monitors
+     with their long edges side by side need about 610 by 712 mm; end to end
+     they need 1219 mm and do not fit. Horizontal rails run at 405 to 443 mm
+     above the frame's base on two opposite sides and at 725 to 763 mm on the
+     other two; they carry the two tank support frames, whose own rails are
+     25.4 mm.
+   - Two candidates, McMaster 5537T879 (one gas-spring link) and 4256N11
+     (two links), each with its catalogue drawing, pictures and STEP file in
+     the ignored `tmp/monitor-mounts/` (Peter, 2026-11-16). Studied that day;
+     pictures, the posed files, what was measured and the scripts are in
+     `tmp/monitor-mounts/study-2026-11-16/`. From the drawings: both are
+     listed for 12 to 24 inch monitors, and this monitor is 27 inch; neither
+     drawing gives a load rating; both bolt with two M8 screws to a rail 1.5
+     inch, 40 or 45 mm high or a multiple, so to the frame's 38.1 mm rails
+     and not to the tank support frames' 25.4 mm rails. From the STEP files,
+     14 and 34 solids, read with build123d:
+     - **The plate fits the monitor.** Both have the same plate, 111.6 mm
+       across, with the 75 and 100 mm patterns and holes of 5.0 and 5.3 mm.
+       Mated to the monitor model by the 100 mm pattern, the four holes lie
+       on the monitor's four within the kernel's precision, the plate rests
+       on the pads, and nothing else of either arm touches the monitor: the
+       plate goes into the recess. That rests on the recess as estimated
+       (about 123 mm), which is to be measured.
+     - **Face-up needs the tilt joint at a right angle.** Turned so in the
+       files, each arm overlaps itself slightly at the joint (the plate's hub
+       and the arm's head by under 1 cm3 in 5537T879, the clevis and the
+       knuckle by 1.7 cm3 in 4256N11), which the files as delivered do not.
+       So whether either reaches a full right angle is to be read from the
+       catalogue or tried.
+     - With the plate up and every other joint as delivered, measured from a
+       rail the flange is bolted to: 5537T879 puts the screen 399 mm above
+       the rail's centre line and the pattern's centre 318 mm from the rail's
+       face; 4256N11 puts them at 576 mm and 509 mm.
+     - **5537T879 on the two bottom side rails** (the ones along Y; the front
+       has none), one arm each, halfway along: nothing interferes with any of
+       the enclosure's 479 solids; each flange lies on its rail; the screens
+       are 418 mm above the frame's base, 71 mm under the lower tank's
+       platform; the monitors lie 136 mm apart, long edges parallel to the
+       rails, both under the tank. To bring them together or nearer the
+       platform the lift joint has to be posed, which was not done.
+     - 4256N11 from the same rails would hold the screen at 595 mm, above
+       the lower platform's underside at 489 mm, so its lift has to come down
+       by more than 106 mm; not posed. It reaches further than is needed.
+     - Under the upper tank no existing rail serves: an arm from below would
+       pass through the lower tank and its platform.
+   - In a scratch copy, two monitor models 5 mm under the lower tank's
+     platform interfere with nothing (`mechanical-cad/tools/fit_check.py`).
+     That height is a guess.
+   Open, for Peter: under which tank the monitors sit, how far under its
+   platform and how far apart; whether a rail may be added for them; each
+   arm's tilt range and load rating from the catalogue, against the
+   monitor's weight without its stand; whether a monitor larger than the
+   arms are listed for is acceptable. Then: the measurements of the
+   monitor's recess, and the arms posed at their lift joints.
 
 ## Open items
 

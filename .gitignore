@@ -10,3 +10,4 @@ __pycache__/
 *.FCBak
 .pixi/
 /site/
+tmp/
