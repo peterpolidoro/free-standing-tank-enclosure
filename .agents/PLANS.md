@@ -288,6 +288,10 @@ their evidence runs, are in .agents/HISTORY.md.
    - In a scratch copy, two monitor models 5 mm under the lower tank's
      platform interfere with nothing (`mechanical-cad/tools/fit_check.py`).
      That height is a guess.
+   **Peter on 2026-11-16: he prefers 5537T879.** Not said: where exactly the
+   monitors sit; the study's position (the bottom side rails, screens 71 mm
+   under the lower tank's platform, 136 mm apart) stands until he says
+   otherwise.
    Open, for Peter: under which tank the monitors sit, how far under its
    platform and how far apart; whether a rail may be added for them; each
    arm's tilt range and load rating from the catalogue, against the
