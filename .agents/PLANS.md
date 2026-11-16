@@ -66,7 +66,12 @@ their evidence runs, are in .agents/HISTORY.md.
   finding; a second build changes no file. Its README says which numbers are
   printed on the drawing, which were read off its pictures (good to about
   2 mm) and which come from the mounting standard, and lists what to measure
-  on the monitor. **For the mount: the mounting face lies about 11 mm deep
+  on the monitor. Since later that day its `checks.json` states the mount
+  as well, in fourteen points that have to be material or empty (the four
+  holes, the pads, the plate, the collar, the recess's wall): 18 checks, all
+  passing, read by `mechanical_cad check` without a kernel; and `make
+  picture KEY=aw2725q-monitor UP=+Y` draws it without a window. **For the
+  mount: the mounting face lies about 11 mm deep
   in a recess about 123 mm square**, so a flat plate larger than the recess
   does not reach the pads. The envelope stays as it is, and nothing was
   published. Not placed in any assembly yet.
@@ -288,8 +293,9 @@ their evidence runs, are in .agents/HISTORY.md.
    - In a scratch copy, two monitor models 5 mm under the lower tank's
      platform interfere with nothing (`mechanical-cad/tools/fit_check.py`).
      That height is a guess.
-   **Peter on 2026-11-16: he prefers 5537T879.** Not said: where exactly the
-   monitors sit; the study's position (the bottom side rails, screens 71 mm
+   **Peter on 2026-11-16: he prefers 5537T879, and holds the mount until he
+   has spoken with the researcher.** Nothing more is done on it until then.
+   Not said: where exactly the monitors sit; the study's position (the bottom side rails, screens 71 mm
    under the lower tank's platform, 136 mm apart) stands until he says
    otherwise.
    Open, for Peter: under which tank the monitors sit, how far under its

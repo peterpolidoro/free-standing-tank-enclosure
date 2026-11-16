@@ -4,6 +4,23 @@
     {"id": "one-solid", "fact": "solids", "equals": 1},
     {"id": "published-outer-size", "fact": "extent_mm", "equals": [609.51, 355.97, 72.63], "tolerance": 0.001},
     {"id": "front-on-z0-centred", "fact": "bounding_box_max_mm", "equals": [304.755, 177.985, 0.0], "tolerance": 0.001},
-    {"id": "less-than-the-envelope", "fact": "volume_mm3", "max": 15758333.0, "note": "the box 609.51 * 355.97 * 72.63 is the nominal envelope"}
+    {"id": "less-than-the-envelope", "fact": "volume_mm3", "max": 15758333.0, "note": "the box 609.51 * 355.97 * 72.63 is the nominal envelope"},
+
+    {"id": "hole-upper-right", "point": [50.0, 55.475, -56.5], "is": "empty", "note": "the 100 x 100 mm pattern, centred on the pivot axis at Y = 5.475; 5 mm into each hole"},
+    {"id": "hole-upper-left", "point": [-50.0, 55.475, -56.5], "is": "empty"},
+    {"id": "hole-lower-right", "point": [50.0, -44.525, -56.5], "is": "empty"},
+    {"id": "hole-lower-left", "point": [-50.0, -44.525, -56.5], "is": "empty"},
+    {"id": "hole-ends-at-10-mm", "point": [50.0, 55.475, -50.5], "is": "material", "note": "1 mm beyond the bottom of a hole"},
+
+    {"id": "pad-at-61-5", "point": [55.0, 60.475, -61.4], "is": "material", "note": "a pad beside its hole, 0.1 mm under its face at Z = -61.5"},
+    {"id": "nothing-above-a-pad", "point": [55.0, 60.475, -61.6], "is": "empty"},
+    {"id": "plate-at-60-2", "point": [0.0, 5.475, -60.1], "is": "material", "note": "the mount plate at the centre of the pattern, 0.1 mm under its face at Z = -60.2"},
+    {"id": "nothing-above-the-plate", "point": [0.0, 5.475, -60.3], "is": "empty"},
+    {"id": "plate-open-between-the-pads", "point": [0.0, 60.475, -61.0], "is": "empty", "note": "between the two upper pads, at the pads' height"},
+
+    {"id": "collar-at-72-63", "point": [70.0, 5.475, -72.6], "is": "material", "note": "the collar beside the recess reaches the published depth"},
+    {"id": "nothing-behind-the-collar", "point": [70.0, 5.475, -72.7], "is": "empty"},
+    {"id": "recess-is-open-to-61-5-mm-from-its-centre", "point": [60.5, 5.475, -65.0], "is": "empty", "note": "the recess is 123 mm across (estimated)"},
+    {"id": "collar-begins-there", "point": [62.5, 5.475, -65.0], "is": "material"}
   ]
 }

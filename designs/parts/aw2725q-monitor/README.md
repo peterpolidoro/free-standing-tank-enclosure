@@ -88,19 +88,23 @@ guix shell --pure -L .guix/modules -m manifest.scm -m .guix/manifest-build123d.s
 It writes `part.step`, `receipt.json` and `facts.json`, which are not edited.
 Building it again from unchanged inputs changes no file.
 
-`checks.json` holds what the layout can state today: one solid, the published
-outer size, the front on Z = 0 and centred, and less material than the
-envelope's box. The mount itself was checked once by hand, on 2026-11-16, on
-the file read back: four cylinders of radius 2 at X = ±50 and Y = 5.475 ± 50
-from Z = −61.5 to −51.5, and sixteen points that are material or empty as the
-drawing's depths say (in a hole, beside it in a pad, on and above the plate,
-on and above the collar, either side of the recess's wall). A check of this
-kind is not part of the layout yet.
+`checks.json` states what the model must satisfy, and the build fails when
+one of its eighteen checks does: one solid, the published outer size, the
+front on Z = 0 and centred, less material than the envelope's box; and
+fourteen points of the mount, each of which has to be material or empty. In
+each of the four holes of the 100 × 100 mm pattern 5 mm deep is empty, and
+1 mm beyond a hole's bottom is material; a pad is material just under
+Z = −61.5 and empty just above; the plate likewise at Z = −60.2, and open
+between the pads; the collar likewise at Z = −72.63; and either side of the
+recess's wall, 61.5 mm from its centre. What the kernel finds at each point
+is recorded in `facts.json`, so `python3 -m mechanical_cad check` reads the
+checks without a kernel.
 
-A picture without a window, with the `f3d` viewer of Guix:
+Pictures without a window, from this project's directory (the model's frame
+has Y up):
 
 ```sh
-guix shell f3d -- f3d --rendering-backend=egl --output monitor.png --resolution 1400,900 --up=+Y --camera-direction=0.45,-0.35,1 --no-config part.step
+make picture KEY=aw2725q-monitor VIEWS=iso-back,below UP=+Y
 ```
 
 The first build of this model passed its four checks and was wrong: the

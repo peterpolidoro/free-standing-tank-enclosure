@@ -14,7 +14,7 @@ GUIX_SHELL_SITE = guix shell --pure -m .guix/manifest-site.scm
 SITE_DIR = site
 
 .DEFAULT_GOAL := help
-.PHONY: help mechanical-cad validate assemblies assembly open reference-scene site site-serve site-pages \
+.PHONY: help mechanical-cad validate assemblies assembly open picture reference-scene site site-serve site-pages \
         phase-parts-list draft-instructions materials-manifest
 
 help:
@@ -25,6 +25,8 @@ help:
 	@echo "  make assembly KEY=K      build the assembly K of that list"
 	@echo "  make open                build the whole enclosure if need be, then open it in the FreeCAD window"
 	@echo "  make open KEY=K          the same for the assembly K"
+	@echo "  make picture KEY=K       pictures of a part, or of a built assembly, into .cache/pictures/"
+	@echo "                           [VIEWS=iso,below,+x] [UP=+Y]: where the camera stands, which axis is up"
 	@echo "  make reference-scene     flatten the scene the manual and the scripts under assembly/ read"
 	@echo "Documentation site:"
 	@echo "  make site                build it into $(SITE_DIR)/"
@@ -58,6 +60,11 @@ assembly: mechanical-cad
 # The command returns when the window is closed.
 open: mechanical-cad
 	@$(MECHANICAL_CAD_MAKE) open KEY="$(KEY)"
+
+# Pictures without a window, for a person or an agent to look at: of a part from its part.step, of an
+# assembly from the file `make assembly` built.
+picture: mechanical-cad
+	@$(MECHANICAL_CAD_MAKE) picture KEY="$(KEY)" VIEWS="$(VIEWS)" UP="$(UP)"
 
 # The scene the scripts below and the manual read, flattened from references/ into the ignored
 # .cache/reference-scene/.
