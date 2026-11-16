@@ -55,6 +55,21 @@ their evidence runs, are in .agents/HISTORY.md.
   found that none of the snapshot's 44 files has changed in Vault since
   2026-10-21: every one is still at the version that was exported, revision 0,
   Work in Progress, not checked out.
+- **Monitor reference model (2026-11-16).** `designs/parts/aw2725q-monitor/`,
+  the first part of the project that is not a box, written with build123d at
+  Peter's word ("we can try modeling the monitor") from the same outline
+  drawing as the envelope: the thin panel, the back rising to the rear
+  housing, the housing as a dome, the collar around the mount that reaches
+  the published depth, and the mount recess with its plate, four pads and
+  four holes on the 100 × 100 mm pattern. One valid solid of the published
+  outer size; the project validates with two authored parts and the same one
+  finding; a second build changes no file. Its README says which numbers are
+  printed on the drawing, which were read off its pictures (good to about
+  2 mm) and which come from the mounting standard, and lists what to measure
+  on the monitor. **For the mount: the mounting face lies about 11 mm deep
+  in a recess about 123 mm square**, so a flat plate larger than the recess
+  does not reach the pads. The envelope stays as it is, and nothing was
+  published. Not placed in any assembly yet.
 - **Procurement.** `assembly/procurement/` has a 37-row stock sheet and 20
   supplementary rows (16 for the existing design, 4 for new design). No stock is
   counted and no quantity is approved. The native BOM audit is folded in: of

@@ -71,6 +71,14 @@ project has published to Vault (2026-10-22, Vault version 994252). A 3 × 2 arra
 of nominal 160 mm bowls leaves only 12.93 mm in total on the display's short
 axis for all gaps and margins, before allowing for larger rims.
 
+A [reference model of the monitor](designs/parts/aw2725q-monitor/README.md)
+goes further than the envelope (2026-11-16): the panel, the rear housing and
+the mount recess with its four holes, built by a program from the same
+drawing. What the drawing prints is kept apart from what was read off its
+pictures and is still to be measured on the monitor. The mounting face lies
+about 11 mm deep in a recess about 123 mm square, which a mount has to reach
+into.
+
 The manager's brief requires design work in Inventor and completed records in
 Vault. Peter's decisions of 2026-10-23 (`mechanical-cad/docs/direction.md`) are
 that new parts are written as code that produces STEP and reach Inventor users

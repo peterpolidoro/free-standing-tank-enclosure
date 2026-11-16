@@ -1,0 +1,56 @@
+{
+  "name": "AW2725Q monitor reference model",
+  "model": "Alienware AW2725Q, stand removed",
+  "purpose": "Reference for designing a mount and for layout; not a manufactured part and not the monitor's own CAD model",
+  "units": "mm",
+  "source": {
+    "filename": "aw2725q-monitor.pdf",
+    "sha256": "de45cb70722365eeb599702dc385929b0a916f4ca1f8e6d2bbacb1bfaa0d1cd0",
+    "title": "AW2725Q Outline Dimension",
+    "page": 1,
+    "dimensions": "Nominal",
+    "drawing": "Not to scale"
+  },
+  "printed_mm": {
+    "note": "Printed on the drawing. Z values are distances behind the front of the screen (the drawing's Z = 0).",
+    "body_width": 609.51,
+    "body_height": 355.97,
+    "body_depth": 72.63,
+    "pivot_axis_below_top": 172.51,
+    "mount_pattern_horizontal": 100.0,
+    "mount_pattern_vertical": 100.0,
+    "mount_pad_z": 61.5,
+    "mount_plate_z": 60.2,
+    "mount_lower_band_z": 60.5
+  },
+  "estimated_mm": {
+    "note": "Read off the pictures of the drawing, each scaled by a dimension printed in the same view. The drawing says it is not to scale; the views agree with their printed dimensions within one per cent. Good to about 2 mm at best. To be measured on the monitor.",
+    "edge_thickness": 8.0,
+    "housing_rim": {"depth": 34.0, "width": 478.0, "height": 278.0, "exponent": 4.6},
+    "housing_sections": [
+      {"depth": 56.0, "width": 366.0, "height": 184.0, "exponent": 4.0},
+      {"depth": 64.0, "width": 272.0, "height": 146.0, "exponent": 3.6},
+      {"depth": 69.0, "width": 178.0, "height": 100.0, "exponent": 3.5},
+      {"depth": 70.5, "width": 100.0, "height": 50.0, "exponent": 3.0}
+    ],
+    "housing_shape": "Each section of the housing is a superellipse |x/a|^n + |y/b|^n = 1 of the given width, height and exponent n, centred on the pivot axis. The rim is the housing's outline in the rear view; the other sections follow its profile in the top and side views.",
+    "mount_collar": {"width": 160.0, "height": 137.0, "corner_radius": 35.0,
+                     "note": "The raised frame around the mount recess in the rear view. Taken to be what reaches the published depth of 72.63; the drawing does not say where on the back that depth is."},
+    "mount_recess_size": 123.0,
+    "mount_pad_size": 16.0,
+    "mount_pattern_centre": "on the pivot axis and on the body's vertical centre line"
+  },
+  "assumed_mm": {
+    "note": "Not on the drawing. A 100 x 100 mm pattern is M4 in the VESA mounting standard; the thread, its depth and the screw length are to be taken from the monitor's manual and checked on the monitor.",
+    "mount_hole_diameter": 4.0,
+    "mount_hole_depth": 10.0
+  },
+  "not_modelled": [
+    "The stand and its quick-release plate, which sits in the mount recess.",
+    "The lower band of the mount plate at Z = 60.50 and the four openings beside the pads.",
+    "The port bay at the bottom of the housing (about 196 mm wide and 50 mm high in the rear view), connectors, cables and the space they need.",
+    "Vents, buttons, the joystick, logos, and the true free-form surfaces of the back.",
+    "Threads, and anything inside: the model is filled.",
+    "Tolerances and installation clearance."
+  ]
+}

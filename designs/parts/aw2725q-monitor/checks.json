@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {"id": "one-solid", "fact": "solids", "equals": 1},
+    {"id": "published-outer-size", "fact": "extent_mm", "equals": [609.51, 355.97, 72.63], "tolerance": 0.001},
+    {"id": "front-on-z0-centred", "fact": "bounding_box_max_mm", "equals": [304.755, 177.985, 0.0], "tolerance": 0.001},
+    {"id": "less-than-the-envelope", "fact": "volume_mm3", "max": 15758333.0, "note": "the box 609.51 * 355.97 * 72.63 is the nominal envelope"}
+  ]
+}
