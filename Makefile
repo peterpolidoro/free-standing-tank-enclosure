@@ -14,12 +14,15 @@ GUIX_SHELL_SITE = guix shell --pure -m .guix/manifest-site.scm
 SITE_DIR = site
 
 .DEFAULT_GOAL := help
-.PHONY: help mechanical-cad validate assemblies assembly open picture reference-scene site site-serve site-pages \
+.PHONY: help mechanical-cad validate check part fit assemblies assembly open picture reference-scene site site-serve site-pages \
         phase-parts-list draft-instructions materials-manifest
 
 help:
 	@echo "CAD, run by mechanical-cad ($(MECHANICAL_CAD)):"
 	@echo "  make validate            check references/ and designs/ against the layout"
+	@echo "  make part KEY=K          build the authored part K from its program or its FreeCAD document"
+	@echo "  make check               evaluate the checks of every authored part"
+	@echo "  make fit KEY=K SUBJECT='NAME[,NAME]'   do those children of the assembly K fit among the rest"
 	@echo "  make assemblies          list the assemblies, and which are built"
 	@echo "  make assembly            build the whole enclosure as one STEP file and one FreeCAD document"
 	@echo "  make assembly KEY=K      build the assembly K of that list"
@@ -45,6 +48,17 @@ mechanical-cad:
 
 validate: mechanical-cad
 	@$(MECHANICAL_CAD_MAKE) validate
+
+# An authored part under designs/parts/, from its program or its FreeCAD document; then its checks.
+# mechanical-cad's docs/adding-a-part.md walks through adding one.
+part: mechanical-cad
+	@$(MECHANICAL_CAD_MAKE) part KEY="$(KEY)"
+
+check: mechanical-cad
+	@$(MECHANICAL_CAD_MAKE) check
+
+fit: mechanical-cad
+	@$(MECHANICAL_CAD_MAKE) fit KEY="$(KEY)" SUBJECT="$(SUBJECT)" CLEARANCE="$(CLEARANCE)"
 
 # What can be built: every assembly under references/assemblies/ and designs/assemblies/.
 assemblies: mechanical-cad
