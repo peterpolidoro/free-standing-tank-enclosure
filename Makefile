@@ -17,7 +17,7 @@ GUIX_SHELL_SITE = guix shell --pure -m .guix/manifest-site.scm
 SITE_DIR = site
 
 .DEFAULT_GOAL := help
-.PHONY: help mechanical-cad validate check part fit cut print print-check bowls bowl-show bowl-options bowl-variant assemblies assembly open picture reference-scene site site-serve site-pages \
+.PHONY: help mechanical-cad validate check part fit cut print print-check section bowls bowl-pictures bowl-show bowl-options bowl-variant assemblies assembly open picture reference-scene site site-serve site-pages \
         phase-parts-list draft-instructions materials-manifest
 
 help:
@@ -33,12 +33,15 @@ help:
 	@echo "  make open KEY=K          the same for the assembly K"
 	@echo "  make picture KEY=K       pictures of a part, or of a built assembly, into .cache/pictures/"
 	@echo "                           [VIEWS=iso,below,+x] [UP=+Y]: where the camera stands, which axis is up"
+	@echo "                           [CUT=+y] [CUT=-x=12.5] [COLOUR=1]: cut open; every part in a colour of its own"
+	@echo "  make section KEY=K CUT=+y   what a plane cuts, as a drawing to scale with every part in its colour (SVG)"
 	@echo "  make cut KEY=K           the drawing to cut a plate from sheet, into .cache/cut/, checked against the solid"
 	@echo "  make print KEY=K         the mesh to print a part from, into .cache/print/, checked and shown to a slicer"
 	@echo "  make print-check KEY=K   will the part print as it lies: the plate, overhangs, material that starts in mid-air"
 	@echo "  make reference-scene     flatten the scene the manual and the scripts under assembly/ read"
 	@echo "The bowls over a monitor, from one file of numbers (studies/bowls/study.json; studies/bowls/README.md):"
 	@echo "  make bowls               write what follows from the study, build the parts, check them and their fit"
+	@echo "  make bowl-pictures       the bowl's section to scale, the bowls on a monitor in colour, the stack cut through a row"
 	@echo "  make bowl-show SET='opening_diameter=150 flange_width=8'   what would follow from other numbers; nothing is written"
 	@echo "  make bowl-options        which bowl sizes fit a monitor (studies/bowls/options.md)"
 	@echo "  make bowl-variant NAME=N SET='...'   the same parts with other numbers, built in .cache/bowl-variants/N"
@@ -98,6 +101,15 @@ bowls: mechanical-cad
 	@$(MECHANICAL_CAD_MAKE) print-check KEY=bowl-forming-plug
 	@$(MECHANICAL_CAD_MAKE) cut KEY=bowl-frame
 
+# Pictures to go with the questions for the researcher, into .cache/pictures/: the bowl's section as a drawing to
+# scale, the bowls on a monitor from above and at an angle with every part in a colour of its own, and the stack
+# cut through the first row of bowls, as a drawing and as a picture.
+bowl-pictures: mechanical-cad
+	@$(MECHANICAL_CAD_MAKE) section KEY=bowl CUT=+y
+	@$(MECHANICAL_CAD_MAKE) picture KEY=monitor-with-bowls COLOUR=1 VIEWS=+z,iso
+	@$(MECHANICAL_CAD_MAKE) section KEY=monitor-with-bowls CUT="$$($(BOWLS_DERIVE) --row)"
+	@$(MECHANICAL_CAD_MAKE) picture KEY=monitor-with-bowls COLOUR=1 CUT="$$($(BOWLS_DERIVE) --row)" VIEWS=-y,iso
+
 # What would follow from other numbers, at once and without writing anything: make bowl-show SET='depth=25'
 bowl-show:
 	@$(BOWLS_DERIVE) --show $(SET)
@@ -135,7 +147,12 @@ open: mechanical-cad
 # Pictures without a window, for a person or an agent to look at: of a part from its part.step, of an
 # assembly from the file `make assembly` built.
 picture: mechanical-cad
-	@$(MECHANICAL_CAD_MAKE) picture KEY="$(KEY)" VIEWS="$(VIEWS)" UP="$(UP)"
+	@$(MECHANICAL_CAD_MAKE) picture KEY="$(KEY)" VIEWS="$(VIEWS)" UP="$(UP)" CUT="$(CUT)" COLOUR="$(COLOUR)"
+
+# What a plane cuts of a part or an assembly, as a drawing in millimetres: CUT=+y is the middle seen from +Y,
+# CUT=-x=12.5 the plane X = 12.5 seen from -X.
+section: mechanical-cad
+	@$(MECHANICAL_CAD_MAKE) section KEY="$(KEY)" CUT="$(CUT)" UP="$(UP)"
 
 # The scene the scripts below and the manual read, flattened from references/ into the ignored
 # .cache/reference-scene/.

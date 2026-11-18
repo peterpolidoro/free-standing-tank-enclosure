@@ -61,24 +61,13 @@ parts; whether it suits the animals and the cleaning is a question below.
 
 ## To ask the researcher
 
-1. Which diameter is 16 cm: the opening, the flat floor, or the bowl with its
-   rim? Six bowls with a 160 mm opening fit over one display with half a
-   millimetre to spare ([which sizes fit](../../../studies/bowls/options.md)).
-2. Is 2 cm the depth of the water or the height of the wall, and how much
-   water is wanted?
-3. The wall: how steep, and how large a radius into the floor? Does the floor
-   have to be flat, and how much of it?
-4. What swims in it, how many to a bowl, and can it jump the wall?
-5. What looks at the bowls and from where, and in which light? That decides
-   how clear the floor and the wall have to be, and whether the frame should
-   be black.
-6. The material: is PETG acceptable for the animals, and how are the bowls
-   cleaned? Are they kept or thrown away, and how many are needed?
-7. Are the bowls lifted out with water in them? A thin bowl with 0.4 litre
-   in it bends when it is picked up by its rim.
-8. The monitor under the sheet is warm. Does the water's temperature matter,
-   and has it been measured on a monitor of this kind?
-9. What keeps spilled water from the monitors?
+The questions are on a page of their own, written with the study's numbers:
+[`studies/bowls/questions.md`](../../../studies/bowls/questions.md). It says
+what is drawn, which sizes fit a monitor and what has to be known before a
+tool is made: which diameter is meant, the water, the wall and the floor, the
+animals, what looks at the bowls, the material and the cleaning, whether the
+bowls are carried full, the warmth of the monitor, spilled water, and whether
+another number of bowls would serve.
 
 ## Building and checking it
 

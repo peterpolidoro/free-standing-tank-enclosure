@@ -10,6 +10,7 @@ part, every check and the assembly follow.
 | [`study.json`](study.json) | **The file to edit.** What the brief asked for, what is assumed, how many bowls and how they are spaced, the frame, the sheet, the plug; and what each number means |
 | [`summary.md`](summary.md) | The numbers as they stand, written by the script: the bowl, how it fits the display, the frame, the plug, where each bowl stands |
 | [`options.md`](options.md) | Which bowl sizes fit a monitor, for several flanges, and the most bowls of each size; written by `make bowl-options` |
+| [`questions.md`](questions.md) | A page for the researcher, written with the study's numbers: what is drawn, what fits, and the questions that decide the bowl |
 | [`derive.py`](derive.py) | The script. It needs Python and nothing else |
 
 ## Adjusting the bowls
@@ -20,6 +21,8 @@ make bowl-options                                          # which sizes fit: op
 # then edit studies/bowls/study.json, and:
 make bowls                                                 # write, build, check, fit, print check, cut file
 make open KEY=monitor-with-bowls                           # look at it in FreeCAD
+make bowl-pictures                                         # or as pictures: the bowl's section to scale, the bowls
+                                                           # on a monitor in colour, the stack cut through a row
 ```
 
 `make bowl-show` and `make bowl-options` need no CAD and answer in a second:
@@ -70,7 +73,7 @@ from `designs/parts/aw2725q-monitor/interface.json`.
 `derive.py` is the one writer of the `parameters.json`, `checks.json` and
 `interface.json` of the four parts (`bowl`, `bowl-forming-plug`, `bowl-frame`,
 `display-cover-sheet`), of `designs/assemblies/monitor-with-bowls/assembly.json`,
-and of `summary.md` and `options.md`. Do not edit those; each says so. The
+and of `summary.md`, `questions.md` and `options.md`. Do not edit those; each says so. The
 programs (`build.py`) and the README files are written by hand, and
 `mechanical-cad`'s build command writes each `part.step`, `receipt.json` and
 `facts.json`.
@@ -81,6 +84,19 @@ wall is at a height, where the flange is, where a hole of the frame ends. The
 programs work the same surfaces out their own way when they build the solids,
 so a check that fails is a disagreement between the two, not a number that
 was forgotten.
+
+## Other sizes, built to look at
+
+Three variants were built on 2026-11-18 with `make bowl-variant` and drawn in
+colour, to set beside the bowl as drawn when the number of bowls is talked
+about. Each passes its checks and its fit check. They are under the ignored
+`.cache/bowl-variants/` and are made again by the commands:
+
+```sh
+make bowl-variant NAME=150-six SET='opening_diameter=150'
+make bowl-variant NAME=120-eight SET='opening_diameter=120 columns=4 rows=2'
+make bowl-variant NAME=100-fifteen SET='opening_diameter=100 columns=5 rows=3'
+```
 
 ## Tried
 

@@ -105,8 +105,9 @@ what is assumed, how many bowls and how they are spaced. `make bowl-show
 SET='opening_diameter=150'` says at once what would follow from another
 number, `make bowl-options` lists [which sizes fit](studies/bowls/options.md),
 and after the study is edited `make bowls` writes, builds and checks
-everything. [The numbers as they stand](studies/bowls/summary.md) are written
-by the same script.
+everything. [The numbers as they stand](studies/bowls/summary.md) and
+[a page of questions for the researcher](studies/bowls/questions.md) are
+written by the same script.
 
 Six bowls with a 160 mm opening fit over one display with half a millimetre
 to spare at the top and at the bottom of the lit area and 2 mm between the
@@ -173,6 +174,8 @@ make open KEY=camera-frame       # the same for one assembly
 make bowls                       # the bowls, their plug and frame from studies/bowls/study.json: write, build, check
 make bowl-show SET='depth=25'    # what would follow from another number, at once, without writing anything
 make part KEY=bowl               # build an authored part from its program; make picture KEY=bowl draws it
+make picture KEY=monitor-with-bowls COLOUR=1 CUT=-y   # cut open, every part in a colour of its own
+make section KEY=bowl CUT=+y     # what a plane cuts, as a drawing to scale (SVG)
 make cut KEY=bowl-frame          # the drawing to cut a plate from, checked against the solid
 make print KEY=bowl-forming-plug # the mesh to print a part from, checked and shown to a slicer
 make print-check KEY=bowl-forming-plug   # will it print as it lies: overhangs, material that starts in mid-air

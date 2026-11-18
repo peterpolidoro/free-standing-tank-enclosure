@@ -396,7 +396,15 @@ their evidence runs, are in .agents/HISTORY.md.
      the material and how the bowls are cleaned, kept or thrown away, and
      how many; whether they are lifted out full; whether the warmth of the
      monitor under the sheet matters; what keeps spilled water from the
-     monitors. They are in `designs/parts/bowl/README.md`.
+     monitors; and whether another number of bowls would serve. They are on
+     a page written with the study's numbers, `studies/bowls/questions.md`,
+     which also says what is drawn and which sizes fit; it is the thing to
+     send. Pictures to go with it are made by `make section KEY=bowl CUT=+y`
+     (the bowl's section, to scale) and `make picture KEY=monitor-with-bowls
+     COLOUR=1`; three other sizes were built on 2026-11-18 as variants under
+     the ignored `.cache/bowl-variants/` (six of 150 mm, eight of 120 mm,
+     fifteen of 100 mm), each passing its checks and its fit check, and
+     drawn the same way.
    - For Peter and the workshop: who forms the bowls and on which former
      (its platen and sheet sizes); whether the plug is printed, and of what,
      or machined, and how its top is made smooth enough for a clear floor;

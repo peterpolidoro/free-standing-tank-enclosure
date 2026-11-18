@@ -8,6 +8,7 @@
                                                               DIR (which must not exist), with those values changed
     python3 studies/bowls/derive.py --subjects [STUDY.json]   the names of the frame and the bowls in the assembly,
                                                               for a fit check; of this study, or of a variant's
+    python3 studies/bowls/derive.py --row                     the plane through the first row of bowls, as CUT= takes it
 
 study.json is the one file of numbers: the bowl as asked for and as assumed, how many stand over a monitor, the
 frame, the sheet and the plug. A NAME is a number's place in it, `bowl.asked.opening_diameter`, or its last word
@@ -21,6 +22,7 @@ own placements. So that one changed number reaches all of them, this script is t
     designs/parts/{bowl,bowl-frame}/interface.json
     designs/assemblies/monitor-with-bowls/assembly.json
     studies/bowls/summary.md        the numbers as they stand
+    studies/bowls/questions.md      a page for the researcher: what is drawn, what fits, what has to be known
     studies/bowls/options.md        (--options) which sizes fit
 
 and the programs (build.py) and the README files are written by hand. Building is then the layout's own command,
@@ -716,52 +718,63 @@ def summary(study, got):
     return "\n".join(lines) + "\n"
 
 
+def attempt(base, mon, diameter, flange):
+    """(the bowl, its layout, None) for an opening and a flange with everything else as in `base`, or
+    (None, None, why it does not fit)."""
+    trial = copy.deepcopy(base)
+    trial["bowl"]["asked"]["opening_diameter"] = diameter
+    trial["bowl"]["assumed"]["flange_width"] = flange
+    try:
+        bowl = Bowl(trial)
+        return bowl, layout(trial, bowl, mon), None
+    except Misfit as exc:
+        return None, None, str(exc)
+
+
+def largest(base, mon, flange):
+    """The largest opening that fits with this flange, to a tenth of a millimetre, or None."""
+    fits = [d for d in range(60, 400, 5) if attempt(base, mon, float(d), flange)[1] is not None]
+    if not fits:
+        return None
+    low, high = float(fits[-1]), float(fits[-1] + 5)
+    for _ in range(40):
+        mid = (low + high) / 2
+        low, high = (mid, high) if attempt(base, mon, mid, flange)[1] is not None else (low, mid)
+    return math.floor(low * 10) / 10
+
+
+def most(base, mon, diameter):
+    """The most bowls of this opening that fit, as (columns, rows), trying up to six rows."""
+    best = None
+    for rows in range(1, 7):
+        columns = 0
+        for n in range(1, 13):
+            trial = copy.deepcopy(base)
+            trial["bowl"]["asked"]["opening_diameter"] = diameter
+            trial["layout"].update(columns=n, rows=rows)
+            try:
+                layout(trial, Bowl(trial), mon)
+                columns = n
+            except Misfit:
+                break
+        if columns and (best is None or columns * rows > best[0] * best[1]):
+            best = (columns, rows)
+    return best
+
+
+def evenly(study):
+    """The study with its pitches on "auto": what the tables of what fits are worked out with."""
+    base = copy.deepcopy(study)
+    base["layout"]["pitch_x"] = base["layout"]["pitch_y"] = "auto"
+    return base
+
+
 def options(study, project):
     """Which bowls fit: opening diameters against flange widths, with the layout the study asks for."""
     mon = monitor(project)
     display = mon["active-display"]
-    base = copy.deepcopy(study)
-    base["layout"]["pitch_x"] = base["layout"]["pitch_y"] = "auto"
+    base = evenly(study)
     counts = f"{base['layout']['columns']} × {base['layout']['rows']}"
-
-    def attempt(diameter, flange):
-        trial = copy.deepcopy(base)
-        trial["bowl"]["asked"]["opening_diameter"] = diameter
-        trial["bowl"]["assumed"]["flange_width"] = flange
-        try:
-            bowl = Bowl(trial)
-            return bowl, layout(trial, bowl, mon), None
-        except Misfit as exc:
-            return None, None, str(exc)
-
-    def largest(flange):
-        """The largest opening that fits with this flange, to a tenth of a millimetre, or None."""
-        fits = [d for d in range(60, 400, 5) if attempt(float(d), flange)[1] is not None]
-        if not fits:
-            return None
-        low, high = float(fits[-1]), float(fits[-1] + 5)
-        for _ in range(40):
-            mid = (low + high) / 2
-            low, high = (mid, high) if attempt(mid, flange)[1] is not None else (low, mid)
-        return math.floor(low * 10) / 10
-
-    def most(diameter):
-        """The most bowls of this opening that fit, as (columns, rows), trying up to six rows."""
-        best = None
-        for rows in range(1, 7):
-            columns = 0
-            for n in range(1, 13):
-                trial = copy.deepcopy(base)
-                trial["bowl"]["asked"]["opening_diameter"] = diameter
-                trial["layout"].update(columns=n, rows=rows)
-                try:
-                    layout(trial, Bowl(trial), mon)
-                    columns = n
-                except Misfit:
-                    break
-            if columns and (best is None or columns * rows > best[0] * best[1]):
-                best = (columns, rows)
-        return best
     flanges = sorted({3.0, 5.0, 8.0, float(study["bowl"]["assumed"]["flange_width"])})
     asked = float(study["bowl"]["asked"]["opening_diameter"])
     diameters = sorted({140.0, 145.0, 150.0, 155.0, 160.0, 165.0, 170.0, asked})
@@ -782,7 +795,7 @@ def options(study, project):
     ]
     for diameter in diameters:
         for flange in flanges:
-            bowl, found, why = attempt(diameter, flange)
+            bowl, found, why = attempt(base, mon, diameter, flange)
             mark = " (the study)" if diameter == asked and flange == study["bowl"]["assumed"]["flange_width"] else ""
             if found is None:
                 lines.append(f"| {diameter:g}{mark} | {flange:g} | **no**: {why} | | | | | |")
@@ -793,15 +806,103 @@ def options(study, project):
                          f"{found['opening_inside_display'][1]:.2f} | {'' if gap is None else f'{gap:.2f}'} | {2 * bowl.flat:.1f} | {water:.0f} |")
     lines += ["", "The largest opening that fits, for each flange:", "", "| Flange, mm | Largest opening, mm |", "| ---: | ---: |"]
     for flange in flanges:
-        best = largest(flange)
+        best = largest(base, mon, flange)
         lines.append(f"| {flange:g} | {'none' if best is None else f'{best:.1f}'} |")
     lines += ["", f"The most bowls that fit, with the study's flange of {study['bowl']['assumed']['flange_width']:g} mm:", "",
               "| Opening, mm | Most bowls | as columns × rows |", "| ---: | ---: | --- |"]
     for diameter in sorted(set(diameters) | {80.0, 100.0, 120.0}):
-        best = most(diameter)
+        best = most(base, mon, diameter)
         lines.append(f"| {diameter:g} | {'none' if best is None else best[0] * best[1]} | {'' if best is None else f'{best[0]} × {best[1]}'} |")
     lines += ["", "The water is that of a cone's frustum between the floor and the rim, without the two radii: a little more than",
               "the bowl holds. The exact figure for the study's bowl is in `summary.md`."]
+    return "\n".join(lines) + "\n"
+
+
+QUESTIONS = [
+    "Which diameter is 16 cm: the opening, the flat floor, or the bowl with its rim?",
+    "Is 2 cm the depth of the water or the height of the wall, and how much water is wanted in a bowl?",
+    "The wall: how steep should it be, and how large a radius into the floor? Does the floor have to be flat, and "
+    "how much of it?",
+    "What swims in a bowl, how many to a bowl, and can it jump the wall?",
+    "What looks at the bowls and from where, and in which light? That decides how clear the floor and the wall have "
+    "to be, and whether the frame between the bowls should be black.",
+    "The material: is clear PETG acceptable for the animals, and how are the bowls cleaned? Are they kept or thrown "
+    "away, and how many are needed in all?",
+    "Are the bowls lifted out with water in them? A thin bowl bends when it is picked up full by its rim; it can be "
+    "made stiffer if it has to be carried.",
+    "The monitor under the sheet is warm. Does the temperature of the water matter, and has it been measured on a "
+    "monitor of this kind?",
+    "What keeps spilled water away from the monitors?",
+    "Would fewer, or more and smaller, bowls on a monitor serve as well as six? The table above says what fits.",
+]
+
+
+def questions(study, got, project):
+    """A page for the researcher: what is drawn, what fits, and what has to be known. Markdown."""
+    bowl, found, mon = got["bowl"], got["layout"], got["monitor"]
+    asked, assumed = study["bowl"]["asked"], study["bowl"]["assumed"]
+    display = mon["active-display"]
+    base = evenly(study)
+    count = len(found["seats"])
+    flange = float(assumed["flange_width"])
+    biggest = largest(base, mon, flange)
+    sizes = sorted({80.0, 100.0, 120.0, 140.0, 150.0, float(asked["opening_diameter"])})
+    lines = [
+        "# Bowls over the monitors: what is drawn, and what we need to know",
+        "",
+        "Written by `studies/bowls/derive.py` from `studies/bowls/study.json`; do not edit. The questions are in the",
+        "script; the numbers follow the study.",
+        "",
+        "## What is drawn so far",
+        "",
+        "A shallow clear bowl, vacuum formed from thin sheet. It stands on the acrylic sheet that lies on a monitor, and a",
+        "flat frame with a hole for each bowl keeps it in place. Only two of its numbers come from the brief (about 16 cm",
+        "in diameter, 2 cm deep, roughly six on each monitor). The others are assumed, so that there is something to look",
+        "at and to correct:",
+        "",
+        "| | |",
+        "| --- | ---: |",
+        f"| Opening, inside at the rim | {asked['opening_diameter']:g} mm |",
+        f"| Depth inside | {asked['depth']:g} mm |",
+        f"| Flat floor | {2 * bowl.flat:.0f} mm across |",
+        f"| Wall | leans outwards by {assumed['wall_draft_deg']:g}°, with a radius of {assumed['floor_corner_radius']:g} mm into the floor |",
+        f"| Rim | a flat flange {assumed['flange_width']:g} mm wide; {2 * bowl.flange_radius:.0f} mm across over all |",
+        f"| Water, filled to the rim | {got['cavity'] / 1000:.0f} ml |",
+        f"| Wall thickness | about {assumed['wall_thickness']:g} mm |",
+        "",
+        "## What fits on a monitor",
+        "",
+        f"The picture on the monitor is {2 * display['half'][0]:.0f} × {2 * display['half'][1]:.0f} mm. As drawn, {count} bowls stand over it in "
+        f"{found['columns']} columns and {found['rows']} rows, and every",
+        f"opening lies over the picture, by {min(found['opening_inside_display']):.1f} mm at the least; two rims are "
+        f"{min(g for g in found['gap_between_flanges'] if g is not None):.1f} mm apart at the nearest."
+        if any(g is not None for g in found["gap_between_flanges"]) else
+        f"The picture on the monitor is {2 * display['half'][0]:.0f} × {2 * display['half'][1]:.0f} mm. As drawn, {count} bowl stands over it.",
+    ]
+    if biggest is not None:
+        lines.append(f"With a rim of {flange:g} mm the largest opening for {count} bowls is {biggest:.1f} mm: "
+                     + ("the bowl as drawn is at that limit." if biggest - asked["opening_diameter"] < 2 else
+                        f"the bowl as drawn has {biggest - asked['opening_diameter']:.0f} mm to spare."))
+    lines += ["", "| Opening | Most bowls on one monitor |", "| ---: | --- |"]
+    for size in sizes:
+        best = most(base, mon, size)
+        mark = " (as drawn)" if size == asked["opening_diameter"] else ""
+        lines.append(f"| {size:g} mm{mark} | {'none' if best is None else f'{best[0] * best[1]}, as {best[0]} × {best[1]}'} |")
+    lines += ["", "## Questions", ""]
+    lines += [f"{n}. {text}" for n, text in enumerate(QUESTIONS, 1)]
+    lines += [
+        "",
+        "## Pictures",
+        "",
+        "From this project's directory, into its `.cache/pictures/` (they are not kept in the repository):",
+        "",
+        "```sh",
+        "make section KEY=bowl CUT=+y                                  # the bowl's section, to scale: bowl-section-plus-y.svg",
+        "make picture KEY=monitor-with-bowls COLOUR=1 VIEWS=iso        # the bowls on a monitor, every part in a colour",
+        f"make section KEY=monitor-with-bowls CUT=-y={found['seats'][0][1]:g}         # the stack cut through a row of bowls",
+        "make bowl-variant NAME=120-eight SET='opening_diameter=120 columns=4 rows=2'   # another size, built beside this one",
+        "```",
+    ]
     return "\n".join(lines) + "\n"
 
 
@@ -815,11 +916,13 @@ def derive(project, study, show=False):
         write_json(project / name, data)
     (project / "studies" / "bowls").mkdir(parents=True, exist_ok=True)
     (project / "studies" / "bowls" / "summary.md").write_text(text, encoding="utf-8")
+    (project / "studies" / "bowls" / "questions.md").write_text(questions(study, got, project), encoding="utf-8")
     found, bowl = got["layout"], got["bowl"]
     print(f"[derive] {project}: a bowl of {2 * bowl.R:g} mm, {found['columns']} x {found['rows']} at "
           f"{found['pitch'][0]:.2f} x {found['pitch'][1]:.2f} mm; openings {min(found['opening_inside_display']):.2f} mm "
           f"inside the lit area at the least; holes of {found['hole_diameter']:.2f} mm")
-    print(f"[derive] wrote {len(got['files'])} files under designs/ and studies/bowls/summary.md; build with: make bowls")
+    print(f"[derive] wrote {len(got['files'])} files under designs/, and summary.md and questions.md in studies/bowls/; "
+          "build with: make bowls")
     return got
 
 
@@ -849,6 +952,10 @@ def main(argv):
         mode, argv = "options", argv[1:]
     elif argv[:1] == ["--out"] and len(argv) >= 2:
         mode, out, argv = "variant", argv[1], argv[2:]
+    elif argv[:1] == ["--row"]:
+        # the plane through the axes of the first row of bowls, as `make section` and `make picture` take it
+        print(f"-y={work_out(study, PROJECT)['layout']['seats'][0][1]:g}")
+        return 0
     elif argv[:1] == ["--subjects"]:
         if len(argv) > 1:
             study = json.loads(Path(argv[1]).read_text(encoding="utf-8"))
