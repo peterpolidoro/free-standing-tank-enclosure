@@ -17,7 +17,7 @@ GUIX_SHELL_SITE = guix shell --pure -m .guix/manifest-site.scm
 SITE_DIR = site
 
 .DEFAULT_GOAL := help
-.PHONY: help mechanical-cad validate check part fit cut print print-check assemblies assembly open picture reference-scene site site-serve site-pages \
+.PHONY: help mechanical-cad validate check part fit cut print print-check bowls bowl-show bowl-options bowl-variant assemblies assembly open picture reference-scene site site-serve site-pages \
         phase-parts-list draft-instructions materials-manifest
 
 help:
@@ -37,6 +37,11 @@ help:
 	@echo "  make print KEY=K         the mesh to print a part from, into .cache/print/, checked and shown to a slicer"
 	@echo "  make print-check KEY=K   will the part print as it lies: the plate, overhangs, material that starts in mid-air"
 	@echo "  make reference-scene     flatten the scene the manual and the scripts under assembly/ read"
+	@echo "The bowls over a monitor, from one file of numbers (studies/bowls/study.json; studies/bowls/README.md):"
+	@echo "  make bowls               write what follows from the study, build the parts, check them and their fit"
+	@echo "  make bowl-show SET='opening_diameter=150 flange_width=8'   what would follow from other numbers; nothing is written"
+	@echo "  make bowl-options        which bowl sizes fit a monitor (studies/bowls/options.md)"
+	@echo "  make bowl-variant NAME=N SET='...'   the same parts with other numbers, built in .cache/bowl-variants/N"
 	@echo "Documentation site:"
 	@echo "  make site                build it into $(SITE_DIR)/"
 	@echo "  make site-serve          serve it locally"
@@ -76,6 +81,41 @@ print: mechanical-cad
 
 print-check: mechanical-cad
 	@$(MECHANICAL_CAD_MAKE) print-check KEY="$(KEY)" UP="$(UP)" ANGLE="$(ANGLE)" STEP="$(STEP)"
+
+# The bowls, their forming plug and their frame follow from one file of numbers, studies/bowls/study.json.
+# studies/bowls/derive.py writes each part's parameters, checks and interface and the assembly from it; the parts
+# are then built in the order of what each is built against, checked, and the stack checked for fit.
+BOWLS_DERIVE = guix shell --pure -m manifest.scm -- python3 -B studies/bowls/derive.py
+BOWL_VARIANTS = .cache/bowl-variants
+BOWL_VARIANT_MAKE = $(MAKE) --no-print-directory -C "$(MECHANICAL_CAD)" PROJECT="$(CURDIR)/$(BOWL_VARIANTS)/$(NAME)"
+
+bowls: mechanical-cad
+	$(BOWLS_DERIVE)
+	@$(MECHANICAL_CAD_MAKE) parts KEY="bowl-forming-plug bowl-frame"
+	@$(MECHANICAL_CAD_MAKE) check
+	@$(MECHANICAL_CAD_MAKE) assembly KEY=monitor-with-bowls
+	@$(MECHANICAL_CAD_MAKE) fit KEY=monitor-with-bowls SUBJECT="$$($(BOWLS_DERIVE) --subjects)" CLEARANCE=3
+	@$(MECHANICAL_CAD_MAKE) print-check KEY=bowl-forming-plug
+	@$(MECHANICAL_CAD_MAKE) cut KEY=bowl-frame
+
+# What would follow from other numbers, at once and without writing anything: make bowl-show SET='depth=25'
+bowl-show:
+	@$(BOWLS_DERIVE) --show $(SET)
+
+bowl-options:
+	@$(BOWLS_DERIVE) --options
+
+# The same parts with other numbers, as a project of their own under the ignored .cache/, built and checked:
+# something to look at beside the tracked parts without changing them.
+bowl-variant: mechanical-cad
+	@test -n "$(NAME)" || { echo "name the variant: make bowl-variant NAME=150mm SET='opening_diameter=150 flange_width=8'"; exit 2; }
+	$(BOWLS_DERIVE) --out "$(CURDIR)/$(BOWL_VARIANTS)/$(NAME)" $(SET)
+	@$(BOWL_VARIANT_MAKE) parts KEY="bowl-forming-plug bowl-frame"
+	@$(BOWL_VARIANT_MAKE) check
+	@$(BOWL_VARIANT_MAKE) assembly KEY=monitor-with-bowls
+	@$(BOWL_VARIANT_MAKE) fit KEY=monitor-with-bowls SUBJECT="$$($(BOWLS_DERIVE) --subjects "$(CURDIR)/$(BOWL_VARIANTS)/$(NAME)/studies/bowls/study.json")" CLEARANCE=3
+	@$(BOWL_VARIANT_MAKE) print-check KEY=bowl-forming-plug
+	@echo "The variant is in $(BOWL_VARIANTS)/$(NAME); open it with: make -C $(MECHANICAL_CAD) open PROJECT=$(CURDIR)/$(BOWL_VARIANTS)/$(NAME) KEY=monitor-with-bowls"
 
 # What can be built: every assembly under references/assemblies/ and designs/assemblies/.
 assemblies: mechanical-cad

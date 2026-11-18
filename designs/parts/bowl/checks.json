@@ -2,25 +2,28 @@
   "schema_version": 1,
   "checks": [
     {"id": "one-solid", "fact": "solids", "equals": 1},
-    {"id": "outer-size", "fact": "extent_mm", "equals": [170.0, 170.0, 21.0], "tolerance": 0.001, "note": "the flange is 170 mm across; 20 mm deep inside and a 1 mm wall"},
+    {"id": "outer-size", "fact": "extent_mm", "equals": [170.0, 170.0, 21.0], "tolerance": 0.001, "note": "across the flange, and the inside depth with the wall under it"},
     {"id": "stands-on-z0-centred", "fact": "bounding_box_min_mm", "equals": [-85.0, -85.0, 0.0], "tolerance": 0.001},
-    {"id": "volume-of-the-section-turned", "fact": "volume_mm3", "min": 29290.0, "max": 29330.0, "note": "2 pi times the first moment of the section about the axis, worked out without the kernel: 29 311.07 mm3"},
-
+    {
+      "id": "volume-of-the-section-turned",
+      "fact": "volume_mm3",
+      "min": 29296.42,
+      "max": 29325.73,
+      "note": "2 pi times the first moment of the section about the axis, worked out without the kernel: 29311.07 mm3"
+    },
     {"id": "floor", "point": [0.0, 0.0, 0.5], "is": "material", "note": "the floor is 1 mm thick"},
-    {"id": "open-above-the-floor", "point": [0.0, 0.0, 1.5], "is": "empty"},
-    {"id": "nothing-under-the-floor", "point": [0.0, 0.0, -0.5], "is": "empty"},
-    {"id": "floor-flat-at-60-mm", "point": [60.0, 0.0, 0.5], "is": "material", "note": "the flat floor is 136 mm across"},
-    {"id": "open-above-the-floor-at-60-mm", "point": [60.0, 0.0, 1.5], "is": "empty"},
-
-    {"id": "wall-at-mid-height-inside-face", "point": [78.3, 0.0, 11.0], "is": "material", "note": "at mid-height the inside of the wall is 78.237 mm from the axis and the outside 79.252 mm: 1 mm square to the wall, 1.015 mm across"},
-    {"id": "open-inside-the-wall", "point": [78.17, 0.0, 11.0], "is": "empty"},
-    {"id": "wall-at-mid-height-outside-face", "point": [79.19, 0.0, 11.0], "is": "material"},
-    {"id": "nothing-outside-the-wall", "point": [79.32, 0.0, 11.0], "is": "empty"},
-    {"id": "wall-in-another-direction", "point": [0.0, -78.74, 11.0], "is": "material", "note": "the same wall a quarter turn on: the part is round"},
-
-    {"id": "flange", "point": [84.0, 0.0, 20.5], "is": "material", "note": "the flange lies between Z = 20 and Z = 21"},
-    {"id": "nothing-under-the-flange", "point": [84.0, 0.0, 19.5], "is": "empty"},
-    {"id": "nothing-above-the-flange", "point": [84.0, 0.0, 21.5], "is": "empty"},
-    {"id": "opening-at-the-rim", "point": [79.5, 0.0, 20.5], "is": "empty", "note": "the opening is 160 mm across where the wall would meet the rim"}
+    {"id": "open-above-the-floor", "point": [0.0, 0.0, 1.3], "is": "empty"},
+    {"id": "nothing-under-the-floor", "point": [0.0, 0.0, -0.3], "is": "empty"},
+    {"id": "floor-is-flat-well-out", "point": [54.466, 0.0, 0.5], "is": "material", "note": "the flat floor is 136.16 mm across"},
+    {"id": "open-above-the-floor-there", "point": [54.466, 0.0, 1.3], "is": "empty"},
+    {"id": "wall-inside-face", "point": [78.8743, 0.0, 14.2186], "is": "material", "note": "at 14.22 mm up the inside of the wall is 78.804 mm from the axis and the outside 79.820 mm"},
+    {"id": "open-inside-the-wall", "point": [78.7343, 0.0, 14.2186], "is": "empty"},
+    {"id": "wall-outside-face", "point": [79.7497, 0.0, 14.2186], "is": "material"},
+    {"id": "nothing-outside-the-wall", "point": [79.8897, 0.0, 14.2186], "is": "empty"},
+    {"id": "wall-in-another-direction", "point": [0.0, -79.312, 14.2186], "is": "material", "note": "a quarter turn on: the part is round"},
+    {"id": "flange", "point": [83.3391, 0.0, 20.5], "is": "material", "note": "the flange lies between Z = 20 and Z = 21"},
+    {"id": "nothing-under-the-flange", "point": [83.3391, 0.0, 19.7], "is": "empty"},
+    {"id": "nothing-above-the-flange", "point": [83.3391, 0.0, 21.3], "is": "empty"},
+    {"id": "opening-at-the-rim", "point": [80.0553, 0.0, 20.5], "is": "empty", "note": "the opening is 160 mm across where the wall would meet the rim"}
   ]
 }

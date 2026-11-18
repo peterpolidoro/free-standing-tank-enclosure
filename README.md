@@ -88,20 +88,31 @@ The brief sets clear vacuum formed bowls on an acrylic sheet over each
 monitor, about 16 cm across and 2 cm deep, roughly six to a monitor, in a
 frame. Under `designs/` since 2026-11-18, as programs with their checks:
 
-- the [bowl](designs/parts/bowl/README.md), with what was asked for kept
-  apart from what is assumed, and the questions for the researcher;
+- the [bowl](designs/parts/bowl/README.md), with the questions for the
+  researcher;
 - the [forming plug](designs/parts/bowl-forming-plug/README.md), the tool the
-  bowl is formed over, built from the bowl's solid;
+  bowl is formed over, built from the bowl's solid, with its vents and the
+  channels that carry the air to the former's table;
 - the [bowl frame](designs/parts/bowl-frame/README.md), a plate cut from
   sheet, laid out from the monitor's lit area and the bowl;
 - a [stand-in for the acrylic sheet](designs/parts/display-cover-sheet/README.md);
 - [one monitor with its bowls](designs/assemblies/monitor-with-bowls/README.md),
   the stack as an assembly, checked for fit.
 
-Six bowls with a 160 mm opening fit over one display with nothing to spare
-across its height: 0.47 mm inside the lit area at the top and at the bottom,
-2 mm between the flanges of the two rows. None of this is released; the
-bowl's dimensions are to be confirmed before a tool is made.
+**All of them follow from one file of numbers**,
+[`studies/bowls/study.json`](studies/bowls/README.md): what was asked for,
+what is assumed, how many bowls and how they are spaced. `make bowl-show
+SET='opening_diameter=150'` says at once what would follow from another
+number, `make bowl-options` lists [which sizes fit](studies/bowls/options.md),
+and after the study is edited `make bowls` writes, builds and checks
+everything. [The numbers as they stand](studies/bowls/summary.md) are written
+by the same script.
+
+Six bowls with a 160 mm opening fit over one display with half a millimetre
+to spare at the top and at the bottom of the lit area and 2 mm between the
+flanges of the two rows; the largest opening that fits with a 5 mm flange is
+160.9 mm. None of this is released; the bowl's dimensions are to be confirmed
+before a tool is made.
 
 ## The Inventor requirement
 
@@ -122,6 +133,8 @@ sketches, an extrusion, an edit and a restore) and stays available.
 - `designs/`: what is authored here. `parts/<key>/` holds a part's program,
   its parameters and checks, and the STEP file built from them, which is the
   deliverable.
+- `studies/`: numbers that several authored parts share, and the script that
+  writes those parts' parameters and checks from them (`studies/bowls/`).
 - `drawings/`: supporting drawings and specifications.
 - `assembly/`: manual sources/build recipe, geometry survey, and procurement audit sheets.
 - `vault-project.toml`: server identity and project locator; no credentials.
@@ -157,6 +170,8 @@ make assembly                    # the whole enclosure, as one STEP file and one
 make assembly KEY=camera-frame   # one assembly of that list
 make open                        # build the whole enclosure if need be, then open it in FreeCAD
 make open KEY=camera-frame       # the same for one assembly
+make bowls                       # the bowls, their plug and frame from studies/bowls/study.json: write, build, check
+make bowl-show SET='depth=25'    # what would follow from another number, at once, without writing anything
 make part KEY=bowl               # build an authored part from its program; make picture KEY=bowl draws it
 make cut KEY=bowl-frame          # the drawing to cut a plate from, checked against the solid
 make print KEY=bowl-forming-plug # the mesh to print a part from, checked and shown to a slicer

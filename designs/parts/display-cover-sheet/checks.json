@@ -2,9 +2,9 @@
   "schema_version": 1,
   "checks": [
     {"id": "one-solid", "fact": "solids", "equals": 1},
-    {"id": "the-monitor-s-outline-6-mm-thick", "fact": "extent_mm", "equals": [609.51, 355.97, 6.0], "tolerance": 0.001},
+    {"id": "the-monitor-s-outline-and-its-thickness", "fact": "extent_mm", "equals": [609.51, 355.97, 6.0], "tolerance": 0.001},
     {"id": "lies-on-the-front", "fact": "bounding_box_min_mm", "equals": [-304.755, -177.985, 0.0], "tolerance": 0.001},
     {"id": "sheet", "point": [0.0, 5.48, 3.0], "is": "material"},
-    {"id": "nothing-above", "point": [0.0, 5.48, 6.5], "is": "empty"}
+    {"id": "nothing-above", "point": [0.0, 5.48, 6.3], "is": "empty"}
   ]
 }

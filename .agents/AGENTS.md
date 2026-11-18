@@ -23,7 +23,12 @@ layout conversion, on a branch. The pages under `docs/` other than
 hand.
 
 Preserve Vault-derived references: nothing under references/ is edited by
-hand. Author changes under designs/. The layout of both is specified and
+hand. Author changes under designs/. The bowl parts (`bowl`,
+`bowl-forming-plug`, `bowl-frame`, `display-cover-sheet`) and the assembly
+`monitor-with-bowls` follow from `studies/bowls/study.json`: edit the study
+and run `make bowls`. Their `parameters.json`, `checks.json`,
+`interface.json` and `assembly.json` are written by `studies/bowls/derive.py`
+and say so; do not edit them (studies/bowls/README.md). The layout of both is specified and
 validated in `mechanical-cad`; the scripts under assembly/ read the scene
 flattened from them into .cache/ (`make reference-scene`).
 

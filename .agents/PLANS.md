@@ -107,10 +107,10 @@ their evidence runs, are in .agents/HISTORY.md.
     are 2.0 mm apart.
   **What the layout shows: six bowls with a 160 mm opening fit one display
   with nothing to spare across its height.** The lit area is 332.93 mm high
-  and two openings take 320 mm. With the rows 172 mm apart every opening is
-  inside the lit area by 0.47 mm, the flanges are 2 mm apart, and the upper
-  row's holes come within 8.1 mm of the plate's edge, because the lit area
-  lies 5.48 mm above the body's centre. A wider flange or a bowl a few
+  and two openings take 320 mm. With the rows about 172 mm apart every
+  opening is inside the lit area by half a millimetre, the flanges are 2 mm
+  apart, and the upper row's holes come within 8.1 mm of the plate's edge,
+  because the lit area lies 5.48 mm above the body's centre. A wider flange or a bowl a few
   millimetres larger does not fit; a 150 mm bowl would leave 33 mm.
   The project validates with six authored parts and one authored assembly
   and the same one finding; 92 checks pass. The monitor's model was built
@@ -122,6 +122,32 @@ their evidence runs, are in .agents/HISTORY.md.
   `make open` without a key) and in `assembly/reference_scene.py`. The scene
   flattened after that has the hash `assembly/documentation.json` is pinned
   to.
+  **One file of numbers since later that day** (Peter: "can we make the
+  bowls parameterized so they can be quickly adjusted depending on her
+  answers?"). `studies/bowls/study.json` holds every number of the four
+  parts; `studies/bowls/derive.py` (Python alone) writes their
+  `parameters.json`, `checks.json`, `interface.json`, the assembly and
+  `studies/bowls/summary.md` from it, and refuses a layout that does not fit
+  before anything is built. `make bowl-show SET='NAME=VALUE ...'` answers a
+  what-if at once; `make bowl-options` writes which sizes fit
+  (`studies/bowls/options.md`: with a 5 mm flange the largest opening for six
+  is 160.9 mm; fifteen bowls of 100 mm would fit, eight of 120 mm);
+  `make bowls` writes, builds, checks, fits, print-checks and writes the cut
+  file, about two minutes, and was run through `make`; `make bowl-variant`
+  builds another set of numbers under `.cache/` beside the tracked parts.
+  Tried with ten numbers changed at once: five parts, ninety checks, no
+  interference, no other edit. With pitches on "auto" the study's own
+  layout is now 196.66 by 171.97 mm: openings 0.48 mm inside the lit area,
+  flanges 1.97 mm apart, 8.14 mm of plate at the upper edge. The part
+  READMEs no longer carry numbers that follow from the study.
+  **The plug's air path** (Peter asked whether a hose goes to the mould and
+  whether there are holes for the vacuum): no hose; the former's table draws
+  the air, and the tool lets it out where the sheet would trap it. The plug
+  had twelve vents round its foot; it now also has channels in its
+  underside, a ring through the feet of the vents and six spokes to the
+  edge, so that a base lying flat on the table does not shut them. Its
+  README says what that rests on and what to ask whoever runs the former.
+  The project validates; 94 checks pass.
   Files to make things from, both derived and in the ignored `.cache/`:
   the frame's drawing for a laser or a router (`make cut KEY=bowl-frame`:
   seven closed loops, 4.88 m of cut, the area of the solid's face) and the
@@ -378,10 +404,12 @@ their evidence runs, are in .agents/HISTORY.md.
      acrylic sheet's real thickness and outline; how frame, sheet and
      monitor are registered to each other, which the tight layout makes
      matter.
-   - Then: the numbers into `designs/parts/bowl/parameters.json` and the
-     frame's `layout`, the parts built again in order (`make part` for the
-     bowl, the plug, the frame), one trial bowl formed and measured, the
-     shrinkage allowance and the checks corrected from it.
+   - Then: the numbers into `studies/bowls/study.json`, `make bowls`, one
+     trial bowl formed and measured, and the shrinkage allowance corrected
+     from it. `make bowl-show` and `studies/bowls/options.md` answer what a
+     changed number does before anything is built.
+   - For the former: the size of its table and where its holes are, whether
+     tools stand on mesh there, how high a tool may be.
    - Where the stack sits in the enclosure waits for the monitors' mount
      (item 6): then an assembly that places `monitor-with-bowls` twice in
      the enclosure and a fit check against its 479 solids.

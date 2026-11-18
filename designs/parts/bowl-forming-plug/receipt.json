@@ -3,26 +3,26 @@
   "key": "bowl-forming-plug",
   "name": "Bowl forming plug",
   "step": {
-    "sha256": "b47f5280e2612a23903c3af677af10e1ac410e02a9191e57ee2fcac3edbdc06e",
-    "data_sha256": "c93c317f6aaefdfd8928e97497258f1bcc59b96cc5beb794fed63dfce9efc6cc",
-    "bytes": 97190,
+    "sha256": "0fae916b3b48cc32622dbb3fc76eb96b46a22b9a5fa51a904f97471c445701cc",
+    "data_sha256": "9317026fdba960c8ec0a6b1c831031cd6ded9539704e4e90651f96822dd5e6de",
+    "bytes": 332863,
     "length_unit": "mm",
     "header_normalised": true
   },
   "program": {
     "file": "build.py",
-    "sha256": "5bc495389edb8198458beb0d72b6f532ee6528d667fa14285c1bcbedf073d0d2"
+    "sha256": "bc9a8ef1f743543cd5da314acdb5c5adffc92bcb59b860c722dd43d761d73ecb"
   },
   "parameters": {
     "file": "parameters.json",
-    "sha256": "f097a2b6c900cb9de8d5b96ce6d861745a4e2e0f9551a9e49aebed48cde47dc7"
+    "sha256": "b499e1f52c2cd09995e5981a52a25abaf716ae08cb41a1fd89c369be74a733f8"
   },
   "inputs": [
     {
       "name": "bowl",
       "key": "bowl",
       "step_sha256": "a385a23093471ac3a3eb53a3a7f1a7aabcddacfd3ba8abacfd45e72007b71f34",
-      "interface_sha256": "f543d80464d402353886ecb368fabfa893101b2324781a5caa88cd752296cdbd"
+      "interface_sha256": "d23e9bcca5ba10e389203bd476fc9e4823fc5a744acee25a0e20bcf8d4212442"
     }
   ],
   "tool": {

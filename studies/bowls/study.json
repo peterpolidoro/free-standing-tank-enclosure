@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "name": "Bowls over a monitor",
+  "status": "Concept. The two numbers of the brief and everything assumed around them; to be confirmed with the researcher before a tool is made.",
+  "units": "mm",
+  "bowl": {
+    "asked": {
+      "note": "From the brief: about 16 cm in diameter and 2 cm deep, vacuum formed, clear, roughly six on each monitor. Read here as the inside diameter at the rim and the inside depth; which diameter is meant is to be asked.",
+      "opening_diameter": 160.0,
+      "depth": 20.0
+    },
+    "assumed": {
+      "note": "Not in the brief. Chosen so that the part can be vacuum formed over a plug and six of them fit over one display.",
+      "wall_thickness": 1.0,
+      "wall_draft_deg": 10.0,
+      "floor_corner_radius": 10.0,
+      "rim_radius": 2.0,
+      "flange_width": 5.0
+    }
+  },
+  "layout": {
+    "note": "Bowls in columns along the display's width and rows along its height, about the centre of the lit area. A pitch is the distance between two bowls' axes; \"auto\" spaces the bowls as evenly as the limits allow.",
+    "columns": 3,
+    "rows": 2,
+    "pitch_x": "auto",
+    "pitch_y": "auto"
+  },
+  "limits": {
+    "note": "A layout that breaks one of these is refused, with the amount it is short by.",
+    "opening_inside_display": 0.0,
+    "least_web": 6.0,
+    "least_gap_between_flanges": 1.0
+  },
+  "frame": {
+    "note": "The plate with a hole for each bowl. Not in the brief.",
+    "thickness": 6.0,
+    "radial_clearance": 0.5,
+    "corner_radius": 3.0
+  },
+  "sheet": {
+    "note": "A stand-in for the acrylic sheet on the monitor, which is not designed. Not in the brief beyond that there is one.",
+    "thickness": 6.0,
+    "overhang": 0.0,
+    "corner_radius": 3.0
+  },
+  "plug": {
+    "note": "The tool the bowl is formed over. Not in the brief.",
+    "shrinkage": 0.005,
+    "base_thickness": 12.0,
+    "base_margin": 15.0,
+    "vent_count": 12,
+    "vent_diameter": 0.5,
+    "vent_land": 2.0,
+    "vent_relief_diameter": 3.0,
+    "roof_deg": 45.0,
+    "channel_width": 4.0,
+    "radial_channels": 6
+  },
+  "what_the_numbers_mean": {
+    "bowl.asked.opening_diameter": "Inside diameter where the wall would meet the rim.",
+    "bowl.asked.depth": "From the rim, the upper face of the flange, down to the floor inside.",
+    "bowl.assumed.wall_thickness": "The formed wall, taken as uniform. The sheet is thicker before forming and thins unevenly: the model is nominal.",
+    "bowl.assumed.wall_draft_deg": "How far the wall leans outwards from the bowl's axis, going up. A plug needs draft to release the part.",
+    "bowl.assumed.floor_corner_radius": "Inside radius between the flat floor and the wall.",
+    "bowl.assumed.rim_radius": "Radius of the inside surface where the wall turns outwards into the flange. Not smaller than the wall thickness.",
+    "bowl.assumed.flange_width": "The flat rim left round the opening when the part is trimmed, measured outwards from the opening.",
+    "limits.opening_inside_display": "How far inside the lit area the opening of every bowl has to stay.",
+    "limits.least_web": "The least material left between two holes of the frame, and between a hole and the frame's edge.",
+    "limits.least_gap_between_flanges": "The least distance between the flanges of two neighbouring bowls.",
+    "frame.thickness": "Of the plate. A bowl stands on the sheet and passes through the plate; a hole is as wide as the bowl is at the plate's upper face, plus the clearance.",
+    "frame.radial_clearance": "Between a bowl and its hole, all round, at the plate's upper face.",
+    "sheet.overhang": "How far the sheet, and the frame on it, reach beyond the monitor's body on every side.",
+    "plug.shrinkage": "The plug is the bowl's inside enlarged by this fraction, because the formed sheet shrinks as it cools. 0.4 to 0.8 per cent is the range design guides give for vacuum forming in general; the first trial part, measured, replaces it.",
+    "plug.base_thickness": "Of the plate the plug stands on. Its upper face forms the upper face of the bowl's flange.",
+    "plug.base_margin": "How far the base reaches beyond the flange's trimmed edge, so that the flange is flat to its edge.",
+    "plug.vent_count": "Holes through the base, evenly round the foot of the plug, where the sheet arrives last and air would be trapped. 0 for none.",
+    "plug.vent_diameter": "Of a vent where it meets the formed surface. Guides advise no more than 0.5 mm there, or the sheet shows it; a printer may not make so small a hole, and it can be drilled.",
+    "plug.vent_land": "How far below the base's upper face a vent keeps that diameter.",
+    "plug.vent_relief_diameter": "Of the wider hole that meets each vent from below.",
+    "plug.roof_deg": "Every roof inside the tool, the cone a relief ends in and the two sides of a channel, stands this many degrees above the base's underside, so that the tool prints base down without support.",
+    "plug.channel_width": "Of the channels in the underside of the base: one ring through the feet of the vents and spokes from it to the base's edge. They carry the air from the vents to the former's table when the base lies flat on it. 0 for none.",
+    "plug.radial_channels": "How many spokes run from the ring to the edge, each midway between two vents."
+  }
+}

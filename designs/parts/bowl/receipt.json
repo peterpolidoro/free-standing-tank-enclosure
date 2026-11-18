@@ -15,7 +15,7 @@
   },
   "parameters": {
     "file": "parameters.json",
-    "sha256": "c7faf175bdf01b99dd9206f7a8e5dee88d397115f9a5bcec1596f432f7088d8a"
+    "sha256": "9b496770b34e581dedb0d47a8fc4c3284ebf198203d722cd15a0b820a7d00e24"
   },
   "tool": {
     "name": "FreeCAD",
