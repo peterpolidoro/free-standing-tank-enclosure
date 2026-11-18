@@ -35,6 +35,9 @@ INPUTS = ("references/parts", "references/assemblies", "designs/parts", "designs
 # the files of a component directory that the flattened scene is made from
 INPUT_FILES = ("part.step", "source.json", "assembly.json", "receipt.json", "parameters.json")
 HOW = "write it with: make reference-scene"
+# The assembly mirrored from Vault, whose scene this is. It has to be named since designs/ holds an
+# assembly of its own that nothing places (monitor-with-bowls): the project then has two top-level ones.
+ROOT_ASSEMBLY = "free-standing-enclosure"
 
 
 def sha(path):
@@ -102,7 +105,8 @@ def write(mechanical_cad):
     try:
         before = inputs_sha256()
         env = dict(os.environ, PYTHONPATH=str(mechanical_cad), PYTHONDONTWRITEBYTECODE="1")
-        proc = subprocess.run([sys.executable, "-B", "-m", "mechanical_cad", "flatten", str(ROOT), "--out", str(work / "scene")],
+        proc = subprocess.run([sys.executable, "-B", "-m", "mechanical_cad", "flatten", str(ROOT), "--out", str(work / "scene"),
+                               "--root", ROOT_ASSEMBLY],
                               env=env, capture_output=True, text=True)
         if proc.returncode:
             raise SystemExit("mechanical-cad did not flatten the project:\n" + proc.stdout + proc.stderr)

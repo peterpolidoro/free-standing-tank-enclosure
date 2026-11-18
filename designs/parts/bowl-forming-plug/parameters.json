@@ -1,0 +1,31 @@
+{
+  "name": "Bowl forming plug",
+  "purpose": "Concept of the tool a bowl is vacuum formed over: the inside of the bowl as a solid, standing on a base that forms the flange. Not released: it follows the bowl, whose numbers are not confirmed, and its own numbers are to be agreed with whoever forms the part.",
+  "units": "mm",
+  "inputs": {
+    "bowl": "bowl"
+  },
+  "shrinkage": {
+    "allowance": 0.005,
+    "note": "The plug is the bowl's inside enlarged by this fraction, because the formed sheet shrinks as it cools. 0.4 to 0.8 per cent is the range design guides give for vacuum forming in general; no figure for the sheet that will be used was found. The first trial part, measured, replaces it."
+  },
+  "tool_mm": {
+    "note": "None of these is from the brief.",
+    "base_thickness": 12.0,
+    "base_margin": 15.0,
+    "vent_count": 12,
+    "vent_diameter": 0.5,
+    "vent_land": 2.0,
+    "vent_relief_diameter": 3.0,
+    "vent_relief_roof_deg": 45.0
+  },
+  "what_the_numbers_mean": {
+    "base_thickness": "Of the plate the plug stands on. Its upper face forms the upper face of the bowl's flange.",
+    "base_margin": "How far the base reaches beyond the flange's trimmed edge, so that the flange is flat to its edge.",
+    "vent_count": "Holes through the base, evenly round the foot of the plug, where the sheet arrives last and air would be trapped.",
+    "vent_diameter": "Of a vent where it meets the formed surface. Guides advise no more than 0.5 mm there, or the sheet shows it; a printer may not make so small a hole, and it can be drilled.",
+    "vent_land": "How far below the base's upper face a vent keeps that diameter.",
+    "vent_relief_diameter": "Of the wider hole that meets each vent from below.",
+    "vent_relief_roof_deg": "The wider hole narrows to the vent in a cone whose wall stands this many degrees above the base's underside, so that the tool prints base down without support. The cone ends where the land begins."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {"id": "one-solid", "fact": "solids", "equals": 1},
+    {"id": "the-sheet-s-outline-6-mm-thick", "fact": "extent_mm", "equals": [609.51, 355.97, 6.0], "tolerance": 0.001},
+    {"id": "lies-on-z0", "fact": "bounding_box_min_mm", "equals": [-304.755, -177.985, 0.0], "tolerance": 0.001},
+    {"id": "volume", "fact": "volume_mm3", "min": 606900.0, "max": 606990.0, "note": "the plate, 1 301 757.29 mm3, less six holes of 156.76 mm"},
+
+    {"id": "web-between-the-rows", "point": [0.0, 5.48, 3.0], "is": "material", "note": "the centre of the lit area lies between the two middle bowls; 15.2 mm of plate there"},
+    {"id": "web-between-two-columns", "point": [98.25, -80.52, 3.0], "is": "material"},
+    {"id": "web-at-the-upper-edge", "point": [0.0, 173.9, 3.0], "is": "material", "note": "8.1 mm between a hole of the upper row and the plate's edge: the lit area lies 5.48 mm above the body's centre"},
+    {"id": "corner", "point": [300.0, -173.0, 3.0], "is": "material"},
+
+    {"id": "hole-edge-inside", "point": [78.0, -80.52, 3.0], "is": "empty", "note": "the holes are 78.38 mm in radius: the bowl's 77.88 mm at the plate's upper face and 0.5 mm clearance"},
+    {"id": "hole-edge-outside", "point": [78.8, -80.52, 3.0], "is": "material"}
+  ]
+}

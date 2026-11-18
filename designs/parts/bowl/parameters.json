@@ -1,0 +1,25 @@
+{
+  "name": "Bowl, vacuum formed",
+  "purpose": "Concept of the clear bowl the fish swim in, set on the acrylic sheet over a monitor. Not released: every number is to be confirmed with the researcher before a mould is made.",
+  "units": "mm",
+  "requested_mm": {
+    "note": "From the brief: about 16 cm in diameter and 2 cm deep, vacuum formed, clear, roughly six on each monitor. Read here as the inside diameter at the rim and the inside depth; which diameter is meant is to be asked.",
+    "inside_diameter_at_rim": 160.0,
+    "inside_depth": 20.0
+  },
+  "assumed_mm": {
+    "note": "Not in the brief. Chosen so that the part can be vacuum formed over a plug and six of them fit over one display; each is a question for the researcher or for whoever forms the part.",
+    "wall_thickness": 1.0,
+    "wall_draft_deg": 10.0,
+    "floor_corner_radius": 10.0,
+    "rim_radius": 2.0,
+    "flange_width": 5.0
+  },
+  "what_the_numbers_mean": {
+    "wall_thickness": "The formed wall, taken as uniform. The sheet is thicker before forming and thins unevenly: the model is nominal.",
+    "wall_draft_deg": "How far the wall leans outwards from the bowl's axis, going up. A plug needs draft to release the part.",
+    "floor_corner_radius": "Inside radius between the flat floor and the wall.",
+    "rim_radius": "Radius of the inside surface where the wall turns outwards into the flange. Not smaller than the wall thickness.",
+    "flange_width": "The flat rim left around the opening when the part is trimmed, measured outwards from the inside diameter at the rim."
+  }
+}

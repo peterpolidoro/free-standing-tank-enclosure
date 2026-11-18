@@ -6,7 +6,10 @@ The documentation site, with the pictorial manual and the build documents: [http
 draft manual, and the notes from that build will correct it. The CAD snapshot
 below is accepted as reference geometry. Nothing in the manual is reviewed or
 physically validated, no purchase list is approved, and the monitor and bowl
-changes are not designed.
+changes are not designed. Since 2026-11-18 the bowls, the plug they are formed
+over and their frame exist as concepts under `designs/`
+([Bowls and their frame](#bowls-and-their-frame-concepts)); their dimensions
+are not confirmed and nothing has been made.
 
 ## The CAD snapshot
 
@@ -59,7 +62,7 @@ not stock or an approved bill of materials; the
 [stock and completeness sheets](assembly/procurement/README.md) track what is
 still unknown.
 
-## Monitor reference and the Inventor requirement
+## Monitor reference
 
 A [nominal AW2725Q monitor reference](designs/parts/aw2725q-nominal-envelope/README.md)
 is available as a one-solid STEP envelope, built by a program from the printed
@@ -78,6 +81,29 @@ drawing. What the drawing prints is kept apart from what was read off its
 pictures and is still to be measured on the monitor. The mounting face lies
 about 11 mm deep in a recess about 123 mm square, which a mount has to reach
 into.
+
+## Bowls and their frame (concepts)
+
+The brief sets clear vacuum formed bowls on an acrylic sheet over each
+monitor, about 16 cm across and 2 cm deep, roughly six to a monitor, in a
+frame. Under `designs/` since 2026-11-18, as programs with their checks:
+
+- the [bowl](designs/parts/bowl/README.md), with what was asked for kept
+  apart from what is assumed, and the questions for the researcher;
+- the [forming plug](designs/parts/bowl-forming-plug/README.md), the tool the
+  bowl is formed over, built from the bowl's solid;
+- the [bowl frame](designs/parts/bowl-frame/README.md), a plate cut from
+  sheet, laid out from the monitor's lit area and the bowl;
+- a [stand-in for the acrylic sheet](designs/parts/display-cover-sheet/README.md);
+- [one monitor with its bowls](designs/assemblies/monitor-with-bowls/README.md),
+  the stack as an assembly, checked for fit.
+
+Six bowls with a 160 mm opening fit over one display with nothing to spare
+across its height: 0.47 mm inside the lit area at the top and at the bottom,
+2 mm between the flanges of the two rows. None of this is released; the
+bowl's dimensions are to be confirmed before a tool is made.
+
+## The Inventor requirement
 
 The manager's brief requires design work in Inventor and completed records in
 Vault. Peter's decisions of 2026-10-23 (`mechanical-cad/docs/direction.md`) are
@@ -131,6 +157,10 @@ make assembly                    # the whole enclosure, as one STEP file and one
 make assembly KEY=camera-frame   # one assembly of that list
 make open                        # build the whole enclosure if need be, then open it in FreeCAD
 make open KEY=camera-frame       # the same for one assembly
+make part KEY=bowl               # build an authored part from its program; make picture KEY=bowl draws it
+make cut KEY=bowl-frame          # the drawing to cut a plate from, checked against the solid
+make print KEY=bowl-forming-plug # the mesh to print a part from, checked and shown to a slicer
+make print-check KEY=bowl-forming-plug   # will it print as it lies: overhangs, material that starts in mid-air
 make reference-scene             # the scene the manual and the scripts under assembly/ read
 make site                        # the documentation site
 ```

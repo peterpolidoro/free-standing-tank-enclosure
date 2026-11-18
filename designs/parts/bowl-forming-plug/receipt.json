@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "key": "bowl-forming-plug",
+  "name": "Bowl forming plug",
+  "step": {
+    "sha256": "b47f5280e2612a23903c3af677af10e1ac410e02a9191e57ee2fcac3edbdc06e",
+    "data_sha256": "c93c317f6aaefdfd8928e97497258f1bcc59b96cc5beb794fed63dfce9efc6cc",
+    "bytes": 97190,
+    "length_unit": "mm",
+    "header_normalised": true
+  },
+  "program": {
+    "file": "build.py",
+    "sha256": "5bc495389edb8198458beb0d72b6f532ee6528d667fa14285c1bcbedf073d0d2"
+  },
+  "parameters": {
+    "file": "parameters.json",
+    "sha256": "f097a2b6c900cb9de8d5b96ce6d861745a4e2e0f9551a9e49aebed48cde47dc7"
+  },
+  "inputs": [
+    {
+      "name": "bowl",
+      "key": "bowl",
+      "step_sha256": "a385a23093471ac3a3eb53a3a7f1a7aabcddacfd3ba8abacfd45e72007b71f34",
+      "interface_sha256": "f543d80464d402353886ecb368fabfa893101b2324781a5caa88cd752296cdbd"
+    }
+  ],
+  "tool": {
+    "name": "FreeCAD",
+    "version": "1.1.3",
+    "kernel": "OpenCASCADE",
+    "kernel_version": "7.9.3",
+    "integration": {
+      "method": "adaptive",
+      "relative_tolerance": 1e-07,
+      "bindings": "OCP",
+      "bindings_version": "7.9.3.1"
+    },
+    "library": {
+      "name": "build123d",
+      "version": "0.12.0",
+      "bindings": "OCP",
+      "bindings_version": "7.9.3.1"
+    }
+  },
+  "reimport": {
+    "passed": true,
+    "differences": [],
+    "tolerance": {
+      "relative": 1e-06,
+      "length_mm": 1e-06
+    }
+  }
+}

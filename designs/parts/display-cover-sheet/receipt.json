@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "key": "display-cover-sheet",
+  "name": "Display cover sheet (stand-in)",
+  "step": {
+    "sha256": "a4360c5d0680f134d303394b5b617b17dadc9ea1063bb4b21bec3efa1aa696f4",
+    "data_sha256": "e4a45d9bf06c51fc6b0a1332dd1b776e28a192ff3eab68b6e499ec4a442b1d71",
+    "bytes": 12540,
+    "length_unit": "mm",
+    "header_normalised": true
+  },
+  "program": {
+    "file": "build.py",
+    "sha256": "0f8d09c0a6fffa60525c776ffe031bf48001f440f65d374e7ba2e5b42a6da597"
+  },
+  "parameters": {
+    "file": "parameters.json",
+    "sha256": "3ab50f30cd2dcee5dbe56601bf9c8ca9dd69fc5e7bc99fa95948085eec1a4c90"
+  },
+  "inputs": [
+    {
+      "name": "monitor",
+      "key": "aw2725q-monitor",
+      "step_sha256": "579f567b52d1037ca337c2401f3d4f854e4186b50f4f46569a306a84c4b5e60e",
+      "interface_sha256": "f4468769b37a2d2a7853366dcdc2656c368ff0107d89f50f1a63e3e02d57b761"
+    }
+  ],
+  "tool": {
+    "name": "FreeCAD",
+    "version": "1.1.3",
+    "kernel": "OpenCASCADE",
+    "kernel_version": "7.9.3",
+    "integration": {
+      "method": "adaptive",
+      "relative_tolerance": 1e-07,
+      "bindings": "OCP",
+      "bindings_version": "7.9.3.1"
+    },
+    "library": {
+      "name": "build123d",
+      "version": "0.12.0",
+      "bindings": "OCP",
+      "bindings_version": "7.9.3.1"
+    }
+  },
+  "reimport": {
+    "passed": true,
+    "differences": [],
+    "tolerance": {
+      "relative": 1e-06,
+      "length_mm": 1e-06
+    }
+  }
+}

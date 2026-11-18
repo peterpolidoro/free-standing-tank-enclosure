@@ -75,6 +75,18 @@ rectangle, X points right and Y up when looking at the screen in landscape, Z
 points out of the screen towards the viewer. The front is Z = 0 and the model
 lies in negative Z, so a depth d of the drawing is Z = −d.
 
+## What lies on the monitor
+
+`interface.json` names what a part that lies on the monitor is laid out by
+(2026-11-18): the front of the screen, the outline of the body, and the lit
+area, 589.97 × 332.93 mm, whose centre is 5.48 mm above the body's because
+the lower bezel is wider than the upper. All three are printed on the
+outline drawing; the bezels are in the envelope's `parameters.json`. The
+[bowl frame](../bowl-frame/README.md) takes the lit area from it. Where the
+picture begins on the monitor itself is to be checked with a test image
+before anything is cut to it. The build looks at two points for it, one
+behind the front and one before it, beside the eighteen checks below.
+
 ## Building and checking it
 
 `build.py` is written with build123d; `build(parameters)` returns the solid and

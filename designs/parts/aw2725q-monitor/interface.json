@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "key": "aw2725q-monitor",
+  "length_unit": "mm",
+  "features": [
+    {"id": "front", "kind": "plane", "point": [0.0, 0.0, 0.0], "normal": [0.0, 0.0, 1.0],
+     "note": "The front of the screen. With the monitor lying face-up it is the top, and what lies on the monitor rests here.",
+     "expect": [{"point": [0.0, 0.0, -1.0], "is": "material"}, {"point": [0.0, 0.0, 1.0], "is": "empty"}]},
+    {"id": "body", "kind": "outline", "point": [0.0, 0.0, 0.0], "normal": [0.0, 0.0, 1.0], "x": [1.0, 0.0, 0.0],
+     "polygon": [[-304.755, -177.985], [304.755, -177.985], [304.755, 177.985], [-304.755, 177.985]],
+     "note": "The body's outline in the front: 609.51 x 355.97 mm, printed on the outline drawing. Corner radii are not on the drawing."},
+    {"id": "active-display", "kind": "outline", "point": [0.0, 5.48, 0.0], "normal": [0.0, 0.0, 1.0], "x": [1.0, 0.0, 0.0],
+     "polygon": [[-294.985, -166.465], [294.985, -166.465], [294.985, 166.465], [-294.985, 166.465]],
+     "note": "The lit area: 589.97 x 332.93 mm, printed on the outline drawing, with bezels of 9.77 mm left and right, 6.04 mm at the top and 17.00 mm at the bottom, so its centre is 5.48 mm above the body's. The polygon is given about that centre. Nominal; where the picture begins on the monitor itself is to be checked with a test image."}
+  ]
+}

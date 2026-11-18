@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "key": "bowl-frame",
+  "name": "Bowl frame",
+  "step": {
+    "sha256": "7c7b9b1eaae5964b75986b698b8fb7a04ef993a3a800d531866de3d566d78a53",
+    "data_sha256": "40773712e5d888e9506410f074840a9c9aaed4b47b951c4d84997f13c9d1df1e",
+    "bytes": 21741,
+    "length_unit": "mm",
+    "header_normalised": true
+  },
+  "program": {
+    "file": "build.py",
+    "sha256": "62d837161099cde2b44d2c7372dce14ca0d6783f0a58766a997f7b1ec1578ab5"
+  },
+  "parameters": {
+    "file": "parameters.json",
+    "sha256": "023244a6ff5557ee52a0215f119e75b3eb4da3f2d40985cc8baffb36845cb1c6"
+  },
+  "inputs": [
+    {
+      "name": "bowl",
+      "key": "bowl",
+      "step_sha256": "a385a23093471ac3a3eb53a3a7f1a7aabcddacfd3ba8abacfd45e72007b71f34",
+      "interface_sha256": "f543d80464d402353886ecb368fabfa893101b2324781a5caa88cd752296cdbd"
+    },
+    {
+      "name": "monitor",
+      "key": "aw2725q-monitor",
+      "step_sha256": "579f567b52d1037ca337c2401f3d4f854e4186b50f4f46569a306a84c4b5e60e",
+      "interface_sha256": "f4468769b37a2d2a7853366dcdc2656c368ff0107d89f50f1a63e3e02d57b761"
+    },
+    {
+      "name": "sheet",
+      "key": "display-cover-sheet",
+      "step_sha256": "a4360c5d0680f134d303394b5b617b17dadc9ea1063bb4b21bec3efa1aa696f4",
+      "interface_sha256": null
+    }
+  ],
+  "tool": {
+    "name": "FreeCAD",
+    "version": "1.1.3",
+    "kernel": "OpenCASCADE",
+    "kernel_version": "7.9.3",
+    "integration": {
+      "method": "adaptive",
+      "relative_tolerance": 1e-07,
+      "bindings": "OCP",
+      "bindings_version": "7.9.3.1"
+    },
+    "library": {
+      "name": "build123d",
+      "version": "0.12.0",
+      "bindings": "OCP",
+      "bindings_version": "7.9.3.1"
+    }
+  },
+  "reimport": {
+    "passed": true,
+    "differences": [],
+    "tolerance": {
+      "relative": 1e-06,
+      "length_mm": 1e-06
+    }
+  }
+}

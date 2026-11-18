@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "key": "monitor-with-bowls",
+  "name": "One monitor, face-up, with its cover sheet, the bowl frame and six bowls",
+  "length_unit": "mm",
+  "frame": {
+    "handedness": "right",
+    "up_axis": "+Z",
+    "origin": "The monitor's own frame: the centre of the body's front, which lies in Z = 0 and faces up. X runs along the display's width, Y along its height."
+  },
+  "children": [
+    {"name": "MONITOR:1", "component": "aw2725q-monitor", "kind": "part",
+     "transform": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]},
+    {"name": "COVER SHEET:1", "component": "display-cover-sheet", "kind": "part",
+     "transform": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]},
+    {"name": "BOWL FRAME:1", "component": "bowl-frame", "kind": "part",
+     "transform": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 6.0], [0.0, 0.0, 0.0, 1.0]]},
+    {"name": "BOWL:1", "component": "bowl", "kind": "part",
+     "transform": [[1.0, 0.0, 0.0, -196.5], [0.0, 1.0, 0.0, -80.52], [0.0, 0.0, 1.0, 6.0], [0.0, 0.0, 0.0, 1.0]]},
+    {"name": "BOWL:2", "component": "bowl", "kind": "part",
+     "transform": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, -80.52], [0.0, 0.0, 1.0, 6.0], [0.0, 0.0, 0.0, 1.0]]},
+    {"name": "BOWL:3", "component": "bowl", "kind": "part",
+     "transform": [[1.0, 0.0, 0.0, 196.5], [0.0, 1.0, 0.0, -80.52], [0.0, 0.0, 1.0, 6.0], [0.0, 0.0, 0.0, 1.0]]},
+    {"name": "BOWL:4", "component": "bowl", "kind": "part",
+     "transform": [[1.0, 0.0, 0.0, -196.5], [0.0, 1.0, 0.0, 91.48], [0.0, 0.0, 1.0, 6.0], [0.0, 0.0, 0.0, 1.0]]},
+    {"name": "BOWL:5", "component": "bowl", "kind": "part",
+     "transform": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 91.48], [0.0, 0.0, 1.0, 6.0], [0.0, 0.0, 0.0, 1.0]]},
+    {"name": "BOWL:6", "component": "bowl", "kind": "part",
+     "transform": [[1.0, 0.0, 0.0, 196.5], [0.0, 1.0, 0.0, 91.48], [0.0, 0.0, 1.0, 6.0], [0.0, 0.0, 0.0, 1.0]]}
+  ]
+}

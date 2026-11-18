@@ -75,6 +75,61 @@ their evidence runs, are in .agents/HISTORY.md.
   in a recess about 123 mm square**, so a flat plate larger than the recess
   does not reach the pads. The envelope stays as it is, and nothing was
   published. Not placed in any assembly yet.
+- **Bowls, their forming plug and their frame, as concepts (2026-11-18).**
+  Peter took up the part of the brief that sets vacuum formed bowls on the
+  acrylic sheet, about 16 cm across and 2 cm deep, roughly six to a monitor,
+  with a frame to hold them, and asked how such parts are made here. Four
+  parts and an assembly under `designs/`, each with a README that says what
+  is asked for, what is assumed and what is open; none is released and
+  nothing is to be made from them yet:
+  - `bowl`: a solid of revolution with one wall thickness, 160 mm inside at
+    the rim and 20 mm deep inside as asked, and assumed: a 1 mm wall, 10° of
+    draft, 10 mm inside radius at the floor, 2 mm at the rim, a 5 mm flange.
+    170 mm across and 21 mm high; a flat floor of 136.2 mm; 378 ml to the
+    rim; 29.31 cm³ of material. Its volume agrees with the section's first
+    moment, worked out without the kernel, to 6 parts in 10⁹.
+  - `bowl-forming-plug`: the tool, built against the bowl's solid with no
+    dimension of the bowl typed in: the space inside the bowl, 0.5 % larger,
+    turned over, on a base, with twelve vents. Every step is held to a
+    volume worked out another way, which caught the plug standing 0.105 mm
+    into its base (build123d's `scale` works about the origin a shape had
+    before it was moved).
+  - `bowl-frame`: a flat plate with six holes, built against the monitor
+    (the lit area, from an `interface.json` the monitor's model got that
+    day), the bowl (the hole is as wide as the bowl is at the plate's upper
+    face, plus 0.5 mm) and the cover sheet (its outline). Its `build.py`
+    refuses a layout that does not fit.
+  - `display-cover-sheet`: a stand-in for the acrylic, 6 mm, the monitor's
+    outline. The acrylic itself is not designed.
+  - `monitor-with-bowls`: the monitor face-up, the sheet, the frame and six
+    bowls. Built, drawn and checked for fit: nothing interferes; frame and
+    bowls rest on the sheet; a bowl is 0.45 mm from the frame; two flanges
+    are 2.0 mm apart.
+  **What the layout shows: six bowls with a 160 mm opening fit one display
+  with nothing to spare across its height.** The lit area is 332.93 mm high
+  and two openings take 320 mm. With the rows 172 mm apart every opening is
+  inside the lit area by 0.47 mm, the flanges are 2 mm apart, and the upper
+  row's holes come within 8.1 mm of the plate's edge, because the lit area
+  lies 5.48 mm above the body's centre. A wider flange or a bowl a few
+  millimetres larger does not fit; a 150 mm bowl would leave 33 mm.
+  The project validates with six authored parts and one authored assembly
+  and the same one finding; 92 checks pass. The monitor's model was built
+  again for its interface: `part.step` and `receipt.json` are unchanged and
+  `facts.json` has two points more.
+  With an assembly of its own under `designs/` the project has two
+  assemblies that nothing places, so the mirrored one is now named where a
+  default was taken: `ROOT_ASSEMBLY` in the Makefile (`make assembly` and
+  `make open` without a key) and in `assembly/reference_scene.py`. The scene
+  flattened after that has the hash `assembly/documentation.json` is pinned
+  to.
+  Files to make things from, both derived and in the ignored `.cache/`:
+  the frame's drawing for a laser or a router (`make cut KEY=bowl-frame`:
+  seven closed loops, 4.88 m of cut, the area of the solid's face) and the
+  plug's mesh for a printer (`make print KEY=bowl-forming-plug`: closed,
+  one part to the slicer). `mechanical-cad`'s print check passes the plug
+  base down: no face flatter than 45° looks down and nothing starts in
+  mid-air, after each vent's relief was given a conical roof. Nothing was
+  formed, cut, sliced or printed.
 - **Procurement.** `assembly/procurement/` has a 37-row stock sheet and 20
   supplementary rows (16 for the existing design, 4 for new design). No stock is
   counted and no quantity is approved. The native BOM audit is folded in: of
@@ -304,6 +359,32 @@ their evidence runs, are in .agents/HISTORY.md.
    monitor's weight without its stand; whether a monitor larger than the
    arms are listed for is acceptable. Then: the measurements of the
    monitor's recess, and the arms posed at their lift joints.
+7. **The bowls and their frame (Peter, 2026-11-18).** The concepts are under
+   `designs/` (current state). In order:
+   - The questions for the researcher, which decide the bowl: which
+     diameter is 16 cm (the opening, the flat floor or the bowl with its
+     rim); whether 2 cm is the water's depth or the wall's height; how steep
+     the wall and how large the radius into the floor; what swims in it and
+     whether it jumps; what looks at the bowls and in which light, and so
+     how clear the floor has to be and whether the frame should be black;
+     the material and how the bowls are cleaned, kept or thrown away, and
+     how many; whether they are lifted out full; whether the warmth of the
+     monitor under the sheet matters; what keeps spilled water from the
+     monitors. They are in `designs/parts/bowl/README.md`.
+   - For Peter and the workshop: who forms the bowls and on which former
+     (its platen and sheet sizes); whether the plug is printed, and of what,
+     or machined, and how its top is made smooth enough for a clear floor;
+     the frame's material and the cutter (the plate is 610 × 356 mm); the
+     acrylic sheet's real thickness and outline; how frame, sheet and
+     monitor are registered to each other, which the tight layout makes
+     matter.
+   - Then: the numbers into `designs/parts/bowl/parameters.json` and the
+     frame's `layout`, the parts built again in order (`make part` for the
+     bowl, the plug, the frame), one trial bowl formed and measured, the
+     shrinkage allowance and the checks corrected from it.
+   - Where the stack sits in the enclosure waits for the monitors' mount
+     (item 6): then an assembly that places `monitor-with-bowls` twice in
+     the enclosure and a fit check against its 479 solids.
 
 ## Open items
 
@@ -317,8 +398,7 @@ For Peter to settle:
 - The Inventor requirement. The manager's brief asks for design work in
   Inventor and finished records in Vault; the decision of 2026-10-23 is that
   new parts are written as code and referenced from Inventor as STEP. The two
-  are not reconciled (README, "Monitor reference and the Inventor
-  requirement").
+  are not reconciled (README, "The Inventor requirement").
 - Whether the generated manual packages move out of tracked `docs/` (proposed
   on 2026-11-10, not approved).
 - Names in tracked and published files: the Vault path and server name, and
@@ -359,10 +439,10 @@ Not started:
 - Vendor documentation or a physical kit inspection for the eight compound
   purchased parts, then a physical stock count, and only then a priced purchase
   shortlist. No order is placed without Peter's explicit request.
-- The design of the monitor supports and their removal path, the acrylic
-  interface, and the bowls and bowl frame. Six bowls of 160 mm outside diameter
-  in a 3 × 2 array leave 12.93 mm in total on the display's short axis; confirm
-  the bowl and rim dimensions first.
+- The design of the monitor supports and their removal path and of the
+  acrylic sheet. The bowls, their forming plug and their frame exist as
+  concepts since 2026-11-18 (current state; next work 7); their dimensions
+  are to be confirmed first.
 - A refresh of the snapshot from a changed Vault, and conflict handling, have
   never been exercised.
 - No record says anyone has looked at the site's 3D viewer in a browser since

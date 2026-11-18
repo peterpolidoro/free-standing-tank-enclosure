@@ -1,0 +1,36 @@
+{
+  "name": "Bowl frame",
+  "purpose": "Concept of the frame that keeps six bowls in place over one monitor: a flat plate with a hole for each bowl, lying on the acrylic sheet. Not released: the layout, the thickness, the material and how the plate is located on the sheet are to be confirmed.",
+  "units": "mm",
+  "inputs": {
+    "bowl": "bowl",
+    "monitor": "aw2725q-monitor",
+    "sheet": "display-cover-sheet"
+  },
+  "layout": {
+    "note": "Bowls in columns along the display's width and rows along its height, centred on the lit area. The brief says roughly six on each monitor. Pitches in mm, centre to centre.",
+    "columns": 3,
+    "rows": 2,
+    "pitch_x": 196.5,
+    "pitch_y": 172.0
+  },
+  "assumed_mm": {
+    "note": "Not in the brief.",
+    "thickness": 6.0,
+    "radial_clearance": 0.5,
+    "corner_radius": 3.0
+  },
+  "limits_mm": {
+    "note": "The build refuses a layout that breaks one of these, and says by how much.",
+    "opening_inside_display": 0.0,
+    "least_web": 6.0,
+    "least_gap_between_flanges": 1.0
+  },
+  "what_the_numbers_mean": {
+    "thickness": "Of the plate. A bowl stands on the sheet and passes through the plate; the hole is as wide as the bowl is at the plate's upper face, plus the clearance.",
+    "radial_clearance": "Between a bowl and its hole, all round, at the plate's upper face.",
+    "opening_inside_display": "How far inside the lit area the opening of every bowl has to stay (the 160 mm circle).",
+    "least_web": "The least material left between two holes, and between a hole and the plate's edge.",
+    "least_gap_between_flanges": "The least distance between the flanges of two neighbouring bowls."
+  }
+}

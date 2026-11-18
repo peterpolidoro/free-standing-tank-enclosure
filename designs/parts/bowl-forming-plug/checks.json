@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {"id": "one-solid", "fact": "solids", "equals": 1},
+    {"id": "outer-size", "fact": "extent_mm", "equals": [200.85, 200.85, 32.1], "tolerance": 0.001, "note": "the base is the flange's 170 mm enlarged by 0.5 % and 15 mm more all round; 12 mm of base and the bowl's 20 mm of depth enlarged"},
+    {"id": "stands-on-z0-centred", "fact": "bounding_box_min_mm", "equals": [-100.425, -100.425, 0.0], "tolerance": 0.001},
+    {"id": "volume", "fact": "volume_mm3", "min": 763380.0, "max": 763490.0, "note": "the base, 380 202.35 mm3, and the space inside the bowl, 378 302.97 mm3 worked out without the kernel, enlarged by 1.005 cubed, less twelve vents of about 65 mm3"},
+
+    {"id": "crown", "point": [0.0, 0.0, 32.0], "is": "material", "note": "the top of the plug forms the bowl's floor, 20.1 mm above the base"},
+    {"id": "nothing-above-the-crown", "point": [0.0, 0.0, 32.2], "is": "empty"},
+    {"id": "filled", "point": [0.0, 0.0, 20.0], "is": "material"},
+    {"id": "wall-at-mid-height", "point": [78.2, 0.0, 22.05], "is": "material", "note": "the bowl's inside is 78.24 mm from the axis at mid-height; the plug's wall there is at 78.63 mm"},
+    {"id": "nothing-outside-the-wall", "point": [79.0, 0.0, 22.05], "is": "empty"},
+
+    {"id": "base", "point": [95.0, 0.0, 6.0], "is": "material"},
+    {"id": "nothing-above-the-base", "point": [95.0, 0.0, 12.5], "is": "empty", "note": "the upper face of the base forms the flange"},
+
+    {"id": "vent", "point": [81.2433, 0.0, 11.0], "is": "empty", "note": "the first of twelve, 0.5 mm across, in the turn between the plug's wall and the base"},
+    {"id": "vent-is-narrow-near-the-surface", "point": [82.2, 0.0, 11.0], "is": "material"},
+    {"id": "vent-is-wide-below", "point": [82.2, 0.0, 5.0], "is": "empty", "note": "the relief, 3 mm across, up to 8.75 mm; from there a cone narrows it to the vent at 10 mm, 2 mm under the base's upper face"},
+    {"id": "relief-narrows-in-a-cone", "point": [81.8433, 0.0, 9.4], "is": "empty", "note": "0.6 mm from the vent's axis, where the cone is 0.85 mm in radius"},
+    {"id": "base-beside-the-cone", "point": [82.4433, 0.0, 9.4], "is": "material", "note": "1.2 mm from the vent's axis at the same height: inside the relief's 1.5 mm, outside the cone"},
+    {"id": "base-between-two-vents", "point": [78.475, 21.027, 5.0], "is": "material"}
+  ]
+}

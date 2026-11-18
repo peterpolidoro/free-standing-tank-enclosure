@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "key": "bowl-frame",
+  "length_unit": "mm",
+  "features": [
+    {"id": "underside", "kind": "plane", "point": [0.0, 5.48, 0.0], "normal": [0.0, 0.0, -1.0],
+     "note": "Lies on the acrylic sheet. A bowl in its seat stands on the sheet in this plane.",
+     "expect": [{"point": [0.0, 5.48, 0.3], "is": "material"}, {"point": [0.0, 5.48, -0.3], "is": "empty"}]},
+    {"id": "seat-1", "kind": "axis", "point": [-196.5, -80.52, 0.0], "direction": [0.0, 0.0, 1.0],
+     "note": "Lower row, left. A bowl's axis; its underside is at this point.",
+     "expect": [{"point": [-196.5, -80.52, 3.0], "is": "empty"}]},
+    {"id": "seat-2", "kind": "axis", "point": [0.0, -80.52, 0.0], "direction": [0.0, 0.0, 1.0],
+     "note": "Lower row, middle.",
+     "expect": [{"point": [0.0, -80.52, 3.0], "is": "empty"}]},
+    {"id": "seat-3", "kind": "axis", "point": [196.5, -80.52, 0.0], "direction": [0.0, 0.0, 1.0],
+     "note": "Lower row, right.",
+     "expect": [{"point": [196.5, -80.52, 3.0], "is": "empty"}]},
+    {"id": "seat-4", "kind": "axis", "point": [-196.5, 91.48, 0.0], "direction": [0.0, 0.0, 1.0],
+     "note": "Upper row, left.",
+     "expect": [{"point": [-196.5, 91.48, 3.0], "is": "empty"}]},
+    {"id": "seat-5", "kind": "axis", "point": [0.0, 91.48, 0.0], "direction": [0.0, 0.0, 1.0],
+     "note": "Upper row, middle.",
+     "expect": [{"point": [0.0, 91.48, 3.0], "is": "empty"}]},
+    {"id": "seat-6", "kind": "axis", "point": [196.5, 91.48, 0.0], "direction": [0.0, 0.0, 1.0],
+     "note": "Upper row, right.",
+     "expect": [{"point": [196.5, 91.48, 3.0], "is": "empty"}]}
+  ]
+}

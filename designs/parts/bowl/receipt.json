@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "key": "bowl",
+  "name": "Bowl, vacuum formed",
+  "step": {
+    "sha256": "a385a23093471ac3a3eb53a3a7f1a7aabcddacfd3ba8abacfd45e72007b71f34",
+    "data_sha256": "87598b97b692fae43e50d6a9741c71d370994528473558e8d15cdbf5c6f0521d",
+    "bytes": 11110,
+    "length_unit": "mm",
+    "header_normalised": true
+  },
+  "program": {
+    "file": "build.py",
+    "sha256": "6f8451adc0b7dc89e847d90cbbbb31f4b9284e3cd65491796305a2ea4354fc2c"
+  },
+  "parameters": {
+    "file": "parameters.json",
+    "sha256": "c7faf175bdf01b99dd9206f7a8e5dee88d397115f9a5bcec1596f432f7088d8a"
+  },
+  "tool": {
+    "name": "FreeCAD",
+    "version": "1.1.3",
+    "kernel": "OpenCASCADE",
+    "kernel_version": "7.9.3",
+    "integration": {
+      "method": "adaptive",
+      "relative_tolerance": 1e-07,
+      "bindings": "OCP",
+      "bindings_version": "7.9.3.1"
+    },
+    "library": {
+      "name": "build123d",
+      "version": "0.12.0",
+      "bindings": "OCP",
+      "bindings_version": "7.9.3.1"
+    }
+  },
+  "reimport": {
+    "passed": true,
+    "differences": [],
+    "tolerance": {
+      "relative": 1e-06,
+      "length_mm": 1e-06
+    }
+  }
+}
