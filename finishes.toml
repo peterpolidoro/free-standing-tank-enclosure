@@ -1,0 +1,102 @@
+# What a picture draws each part of this project with (mechanical-cad, docs/layout-specification.md, "Finishes").
+#
+# A draft, written on 2026-11-19 from what the records already say and nothing else: a part has a finish here
+# only where its name or the material CAD claims for it says what it is. Nobody has compared any of it with the
+# parts on the bench. The colours are a drawing's, chosen to read as the material; they are not measured.
+# A finish is not the record of what a part is made of: that is assembly/materials.json, where every row is
+# still the CAD claim.
+#
+# There is no default on purpose. A part without a line under [parts] is drawn plain, and `make validate` says
+# how many there are and which, so that what nobody has decided stays in view. Those parts are listed at the end.
+schema_version = 1
+
+[finishes.aluminium]
+color = "#ced0d3"
+metallic = 0.8
+roughness = 0.55
+note = "framing and machined plate; the numbers of the documentation renderer's aluminium"
+
+[finishes.zinc]
+color = "#a8abb0"
+metallic = 0.9
+roughness = 0.5
+note = "what CAD claims for two framing parts; not checked"
+
+[finishes.stainless]
+color = "#bcbcbf"
+metallic = 1.0
+roughness = 0.28
+
+[finishes.black-abs]
+color = "#272729"
+roughness = 0.48
+
+[finishes.black-rubber]
+color = "#1f1f20"
+roughness = 0.9
+
+[finishes.clear-acrylic]
+color = "#e3f1f6"
+roughness = 0.08
+opacity = 0.25
+
+[finishes.clear-plastic]
+color = "#e3f1f6"
+roughness = 0.08
+opacity = 0.25
+note = "the bowls: the brief says clear, the material is not chosen"
+
+[finishes.envelope]
+color = "#6fa3e0"
+roughness = 0.6
+opacity = 0.2
+note = "a volume kept for something, not a thing"
+
+[parts]
+# CAD claims aluminium
+47065t271-aluminum-t-slotted-framing-extrusion = "aluminium"
+camera-mount-plate = "aluminium"
+camera-mount-plate-teledyne-kinetix = "aluminium"
+caster-mounting-plate = "aluminium"
+mcmaster-3136n149-t-slotted-framing = "aluminium"
+mcmaster-47065t27-t-slotted-framing = "aluminium"
+mcmaster-47065t845-silver-corner-bracket = "aluminium"
+roller-mount-plate = "aluminium"
+sllb-enclosure-15in-47065t808-t-slotted-framing = "aluminium"
+sllb-enclosure-22in-47065t808-t-slotted-framing = "aluminium"
+sllb-enclosure-41in-47065t808-t-slotted-framing = "aluminium"
+spring-mount-plate = "aluminium"
+tank-support-bracket = "aluminium"
+# CAD says "Generic"; the same framing profile as the three lengths above, by the number in the name
+sllb-enclosure-2-5in-47065t808-t-slotted-framing = "aluminium"
+sllb-enclosure-44in-47065t808-t-slotted-framing = "aluminium"
+sllb-enclosure-96in-47065t808-t-slotted-framing = "aluminium"
+# CAD says "Generic"; named a T-slot extrusion
+tslot-extrusion-1x40-5-copy = "aluminium"
+# CAD claims zinc for these two, which are named T-slotted framing
+mcmaster-5537t293-t-slotted-framing = "zinc"
+mcmaster-5537t429-t-slotted-framing = "zinc"
+# stainless by CAD's claim (the washer) and by name (the screw)
+mcmaster-90313a107-18-8-stainless-steel-oversized-washer = "stainless"
+mcmaster-90265a164-18-8-stainless-steel-shoulder-screw = "stainless"
+# CAD claims black ABS for three; the left support is the other hand of the right one and is "Generic" in CAD
+panel-lower-support-right = "black-abs"
+panel-lower-support-left = "black-abs"
+spring-roller = "black-abs"
+toggle-clamp-mount = "black-abs"
+# natural rubber by name
+mcmaster-9378k24-natural-rubber-vibration-damping-sandwich-mount = "black-rubber"
+# CAD claims clear acrylic; the cover sheet is a stand-in for an acrylic sheet
+shulze-2w-353-tank = "clear-acrylic"
+tank-support-platform = "clear-acrylic"
+display-cover-sheet = "clear-acrylic"
+bowl = "clear-plastic"
+aw2725q-nominal-envelope = "envelope"
+
+# Without a finish, because no record says what they look like:
+#   enclosure-panel, enclosure-top-panel      aluminium composite by CAD's claim; the colour of its faces is not recorded
+#   holkie-leveling-caster, mcmaster-1950a67-unthreaded-hole-pull-handle, mcmaster-47065t245,
+#   mcmaster-5004a11-compact-hold-down-toggle-clamp, mcmaster-5972k164-ball-bearing,
+#   mcmaster-9293k121-constant-force-spring, t-slot-corner-47065t242      "Generic" in CAD
+#   aw2725q-monitor                           the monitor's colour is not in its drawing
+#   bowl-forming-plug, bowl-frame             materials not chosen (studies/bowls)

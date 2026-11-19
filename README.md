@@ -142,6 +142,11 @@ sketches, an extrusion, an edit and a restore) and stays available.
 - `vault-lock.json`: an index derived from the directories under
   `references/` and `designs/`; it shows what an import changed and repeats
   the verified publications.
+- `finishes.toml`: what a picture draws each part with, one hand-edited file
+  for the whole project. A draft: a part has a finish only where its name or
+  CAD's material claim says what it is, and `make validate` names the parts
+  that have none. It is not the record of what a part is made of
+  (`assembly/materials.json`).
 - `validation/`: geometry checks, acceptance decisions, and unresolved comparisons.
 - `.cache/`: ignored. Inventor originals, API probes, temporary conversions,
   the scene flattened from `references/` that the scripts and the manual
@@ -175,6 +180,7 @@ make bowls                       # the bowls, their plug and frame from studies/
 make bowl-show SET='depth=25'    # what would follow from another number, at once, without writing anything
 make part KEY=bowl               # build an authored part from its program; make picture KEY=bowl draws it
 make picture KEY=monitor-with-bowls COLOUR=1 CUT=-y   # cut open, every part in a colour of its own
+make picture KEY=free-standing-enclosure FINISH=1     # every part as finishes.toml says it looks
 make section KEY=bowl CUT=+y     # what a plane cuts, as a drawing to scale (SVG)
 make cut KEY=bowl-frame          # the drawing to cut a plate from, checked against the solid
 make print KEY=bowl-forming-plug # the mesh to print a part from, checked and shown to a slicer

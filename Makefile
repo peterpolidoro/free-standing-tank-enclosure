@@ -34,7 +34,9 @@ help:
 	@echo "  make picture KEY=K       pictures of a part, or of a built assembly, into .cache/pictures/"
 	@echo "                           [VIEWS=iso,below,+x] [UP=+Y]: where the camera stands, which axis is up"
 	@echo "                           [CUT=+y] [CUT=-x=12.5] [COLOUR=1]: cut open; every part in a colour of its own"
+	@echo "                           [FINISH=1]: every part as finishes.toml says, in place of COLOUR"
 	@echo "  make section KEY=K CUT=+y   what a plane cuts, as a drawing to scale with every part in its colour (SVG)"
+	@echo "                           [FINISH=1]: every part in the colour of its finish"
 	@echo "  make cut KEY=K           the drawing to cut a plate from sheet, into .cache/cut/, checked against the solid"
 	@echo "  make print KEY=K         the mesh to print a part from, into .cache/print/, checked and shown to a slicer"
 	@echo "  make print-check KEY=K   will the part print as it lies: the plate, overhangs, material that starts in mid-air"
@@ -145,14 +147,15 @@ open: mechanical-cad
 	@$(MECHANICAL_CAD_MAKE) open KEY="$(or $(KEY),$(ROOT_ASSEMBLY))"
 
 # Pictures without a window, for a person or an agent to look at: of a part from its part.step, of an
-# assembly from the file `make assembly` built.
+# assembly from the file `make assembly` built. FINISH=1 draws every part as finishes.toml says, the one
+# hand-edited file that gives the parts of this project what they look like.
 picture: mechanical-cad
-	@$(MECHANICAL_CAD_MAKE) picture KEY="$(KEY)" VIEWS="$(VIEWS)" UP="$(UP)" CUT="$(CUT)" COLOUR="$(COLOUR)"
+	@$(MECHANICAL_CAD_MAKE) picture KEY="$(KEY)" VIEWS="$(VIEWS)" UP="$(UP)" CUT="$(CUT)" COLOUR="$(COLOUR)" FINISH="$(FINISH)"
 
 # What a plane cuts of a part or an assembly, as a drawing in millimetres: CUT=+y is the middle seen from +Y,
 # CUT=-x=12.5 the plane X = 12.5 seen from -X.
 section: mechanical-cad
-	@$(MECHANICAL_CAD_MAKE) section KEY="$(KEY)" CUT="$(CUT)" UP="$(UP)"
+	@$(MECHANICAL_CAD_MAKE) section KEY="$(KEY)" CUT="$(CUT)" UP="$(UP)" FINISH="$(FINISH)"
 
 # The scene the scripts below and the manual read, flattened from references/ into the ignored
 # .cache/reference-scene/.

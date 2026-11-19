@@ -164,6 +164,39 @@ their evidence runs, are in .agents/HISTORY.md.
   holds no drawing for any version of the 44 files.
 - **Materials.** `assembly/materials.json` has 37 rows, 23 with a CAD claim and
   14 unknown; none is curated.
+- **Finishes (2026-11-19), a draft.** `finishes.toml` at the top of the
+  repository says what a picture draws each part with: the one hand-edited
+  file for that in the layout of `mechanical-cad` (Peter chose one file for
+  the project that day). It gives 31 of the 43 parts a finish, each only
+  where the part's name or CAD's material claim says what it is: aluminium
+  for the framing and the plates, zinc for the two framing parts CAD claims
+  it for, stainless, black ABS, black rubber, clear acrylic for the tanks,
+  their platforms and the cover sheet, clear for the bowls, and a
+  see-through blue for the monitor's envelope. Twelve have none and are
+  drawn plain; `make validate` names them: the two panels (aluminium
+  composite by CAD's claim, the colour of their faces recorded nowhere), the
+  caster, the pull handle, the toggle clamp, the bearing, the spring, two
+  framing accessories that are "Generic" in CAD, the monitor, the forming
+  plug and the bowl frame. The colours are a drawing's and nothing was held
+  against the parts on the bench. It is not `assembly/materials.json`: what
+  a part is made of stays there, uncurated. `make picture KEY=<key>
+  FINISH=1` and `make section KEY=<key> CUT=+y FINISH=1` draw with it. The
+  scene flattened with the file in place has the hash
+  `assembly/documentation.json` is pinned to: the finishes are written
+  beside the scene, not into it. The manual is not drawn with them: staging
+  (`assembly/prepare_documentation.py`) does not hand `finishes.json` on.
+  Drawn with it that day, all in the ignored `.cache/pictures/`: the whole
+  enclosure and the enclosure cut open at its middle, by `mechanical-cad`'s
+  viewer (`free-standing-enclosure-finish-*.png`,
+  `free-standing-enclosure-cut-minus-y-finish-*.png`); and by
+  `mechanical-docs`' renderer, from the scene flattened into a scratch
+  directory and meshed there (37 parts, every check passed), the whole
+  enclosure and one tank support frame alone
+  (`free-standing-enclosure-still-iso.png`,
+  `tank-support-frame-1-still-iso.png`; Cycles at preview quality). Cut
+  open, the framing reads as aluminium and the tanks and their platforms
+  are seen through. Closed, the enclosure is its panels, which have no
+  finish: plain in one tool, the default grey in the other.
 - **Size.** `docs/` is 141 MB of tracked files, almost all of it the manual
   package; `.git` is 229 MB. Each publication adds images, PDFs and viewer
   files.
@@ -426,6 +459,12 @@ their evidence runs, are in .agents/HISTORY.md.
 
 For Peter to settle:
 
+- The finishes (`finishes.toml`, a draft of 2026-11-19): the twelve parts
+  without one, the panels first, since they are most of what a picture of
+  the closed enclosure shows; whether zinc is right for the two framing
+  parts CAD claims it for; the colours. And whether the manual is to be
+  drawn with them, which is one line in staging and then a render of every
+  view that shows a part in its own look.
 - The README's licence scope statement. It says component models that
   originate from suppliers (for example the McMaster-Carr parts under
   `references/enclosure/assets/`) are not covered by the licence and remain
