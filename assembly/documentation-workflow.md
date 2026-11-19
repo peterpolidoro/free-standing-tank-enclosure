@@ -59,7 +59,8 @@ guix shell --pure -m .guix/manifest-publish.scm -- python3 -B -m mechanical_docs
 ```
 
 The mesh stage uses its default budget of 50 000 triangles a part. FreeCADCmd 1.1.3 takes a dashed option
-after `--pass` for its own and stops, so `--max-triangles` cannot be given this way (found 2026-11-12).
+after `--pass` for its own and stops (found 2026-11-12); since 2026-11-19 the mesh script takes its own options
+after a bare `--`: `--pass PROJECT MESHES -- --max-triangles 20000`.
 
 See mechanical-docs' `docs/environment.md` for Pixi initialization and host glibc
 detection when launching Pixi from inside Guix. Keep its lockfile. For a different

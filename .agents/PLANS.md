@@ -197,6 +197,25 @@ their evidence runs, are in .agents/HISTORY.md.
   open, the framing reads as aluminium and the tanks and their platforms
   are seen through. Closed, the enclosure is its panels, which have no
   finish: plain in one tool, the default grey in the other.
+- **Moving pictures (2026-11-19).** `mechanical-docs` now writes video
+  from the same scene (its `motion.py`): in `.cache/pictures/`, a turntable
+  of one tank support frame, a turntable of the whole enclosure, and the
+  enclosure's subassemblies moving apart and back
+  (`tank-support-frame-1-turntable.mp4`,
+  `free-standing-enclosure-turntable.mp4`,
+  `free-standing-enclosure-exploded.mp4`; three to four seconds each, 960
+  x 720, Cycles at preview quality, drawn with the draft finishes). And the
+  eighteen steps of `assembly/instructions.json` in their order, what each
+  adds arriving at its seat (`free-standing-enclosure-steps.mp4`, 19.5 s,
+  EEVEE): the order is the draft's, unreviewed, and the video shows it as
+  it is written, the conditional and the deferred steps included.
+- **The manual built again at preview quality (2026-11-19)**, from the
+  project as it stands and `mechanical-docs` as committed that morning, in
+  `.cache/manual-preview-2026-11-19/`: 86 views, a PDF of 59 pages as the
+  published one has, all 32 checks passed. Nothing was published. Beside
+  it, for the question of a manual with finishes: six of its views drawn
+  with the finishes at three exposures, on one sheet
+  (`.cache/pictures/manual-views-finishes-and-exposure.png`).
 - **Size.** `docs/` is 141 MB of tracked files, almost all of it the manual
   package; `.git` is 229 MB. Each publication adds images, PDFs and viewer
   files.
