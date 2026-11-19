@@ -216,6 +216,16 @@ their evidence runs, are in .agents/HISTORY.md.
   it, for the question of a manual with finishes: six of its views drawn
   with the finishes at three exposures, on one sheet
   (`.cache/pictures/manual-views-finishes-and-exposure.png`).
+- **Outlines for the views that have none (2026-11-19).** The manual's
+  overview, its exploded view and the steps that show more than the
+  budget of `assembly/render.json` are drawn without outlines, because
+  Freestyle takes half an hour on them. `mechanical-docs` can now draw
+  them with Line Art, behind a setting that is off: the overview with
+  outlines in 14 s with the faster engine. Four of this project's views
+  with and without, on one sheet
+  (`.cache/pictures/line-art-comparison.png`, the single pictures and
+  `line-art-other-views-eevee.png` beside it). `assembly/render.json` is
+  unchanged, and nothing was rendered for the manual.
 - **Size.** `docs/` is 141 MB of tracked files, almost all of it the manual
   package; `.git` is 229 MB. Each publication adds images, PDFs and viewer
   files.
@@ -484,6 +494,12 @@ For Peter to settle:
   parts CAD claims it for; the colours. And whether the manual is to be
   drawn with them, which is one line in staging and then a render of every
   view that shows a part in its own look.
+- Whether the manual gets outlines from Line Art where Freestyle draws
+  none: `"outliner": "mixed"` under `"lines"` in `assembly/render.json`,
+  then a render of those views. To decide by:
+  `.cache/pictures/line-art-comparison.png`. What it leaves as it is: the
+  framing's many edges run together into dark bands, and a step whose
+  additions lie behind installed parts gets no outline on them.
 - The README's licence scope statement. It says component models that
   originate from suppliers (for example the McMaster-Carr parts under
   `references/enclosure/assets/`) are not covered by the licence and remain
